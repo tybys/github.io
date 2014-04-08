@@ -1,0 +1,47 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+html body {
+  font: normal normal 12px 'Tahoma, sans-serif';
+  color: '#000000';
+  margin: 0 0 118px 0;
+}
+html body .head {
+  background: -moz-linear-gradient(top, #da0406 0%, rgba(218, 4, 6, 0.8) 20%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d2d5d6), color-stop(20%, rgba(239, 240, 240, 0.8)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(top, #d2d5d6 0%, rgba(239, 240, 240, 0.8) 20%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(top, #d2d5d6 0%, rgba(239, 240, 240, 0.8) 20%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(top, #d2d5d6 0%, rgba(239, 240, 240, 0.8) 20%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to top, #da0506 10%, rgba(236, 29, 38, 0.8) 75%, rgba(249, 48, 62, 0) 150%);
+}
+html body .foot {
+  border-top: 2px solid #eb1c24;
+  position: absolute;
+  bottom: 0;
+  height: 118px;
+  width: 100%;
+}
+.header h1 {
+  color: '#fff';
+}
+.header span {
+  color: '#fff';
+  color: #fff;
+}
+.footer p {
+  margin: 28px 0 0 0;
+}
+.footer ul {
+  margin: 28px 0 0 0;
+  text-align: right;
+}
+.footer ul li {
+  list-style: none;
+}
+.footer .social-likes {
+  margin: 8px 0 0 0;
+}
+.footer .social-likes .social-likes__widget {
+  margin: 0;
+}
