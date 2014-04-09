@@ -1,7 +1,3 @@
-.content .unit-centered {
-  border-left: 1px solid;
-  border-right: 1px solid;
-}
 html {
   position: relative;
   min-height: 100%;
@@ -140,16 +136,13 @@ html body .foot {
   text-align: left;
   width: 31.3333%;
   list-style: none;
-  border: 1px solid;
   min-height: 103px;
   display: inline-block;
 }
 .content-inner-popular ul li:nth-child(2) {
-  background: red;
   margin: 0 0 0 24.3833px;
 }
 .content-inner-popular ul li:nth-child(3) {
-  background: orange;
   margin: 0 0 0 24.3833px;
 }
 .content-inner-popular ul li img {

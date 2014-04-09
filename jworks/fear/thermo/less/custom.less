@@ -1,16 +1,4 @@
-// custom vars
-@black: #000000;
-@red: #eb1c24;
-@white: #fff;
-@bodyfont: Tahoma, sans-serif;
-@titlefont: Myriad Pro, sans-serif;
-
-// debug
-.content .unit-centered {
-	border-left: 1px solid;
-	border-right: 1px solid;
-}
-
+@import "custom-vars.less";
 html {
 	position: relative;
 	min-height: 100%;
@@ -176,15 +164,12 @@ html {
 			text-align: left;
 			width: 31.3333%;
 			list-style: none;
-			border: 1px solid;
 			min-height: 103px;
 			display: inline-block;
 			&:nth-child(2) {
-				background: red;
 				margin: 0 0 0 24.3833px;
 			}
 			&:nth-child(3) {
-				background: orange;
 				margin: 0 0 0 24.3833px;
 			}
 			img {
