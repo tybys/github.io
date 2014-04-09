@@ -2,6 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/img/cart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/img/head-background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/img/head-repeat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/img/item.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/img/promo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/blocks.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/buttons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/css/custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/custom.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/fear.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/forms.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/grid.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/helpers.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/css/import.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/css/kube.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/kube.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/css/kube.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/navigation.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/normalize.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/prettyprint.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/js/social-likes.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/css/social-likes_flat.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/tables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/typography.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/fly/catalog.html" afterPath="$PROJECT_DIR$/jworks/fear/fly/catalog.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="github.io.iws" />
@@ -203,6 +235,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="fear" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tybys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tybys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jworks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
