@@ -2,25 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/registration.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/img/key.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/img/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/custom-auth.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/custom-news.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/news.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/thermo/css/custom.css" afterPath="$PROJECT_DIR$/jworks/fear/thermo/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/thermo/css/import.css" afterPath="$PROJECT_DIR$/jworks/fear/thermo/css/import.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/thermo/index.html" afterPath="$PROJECT_DIR$/jworks/fear/thermo/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/thermo/css/kube.css" afterPath="$PROJECT_DIR$/jworks/fear/thermo/css/kube.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/thermo/registration.html" afterPath="$PROJECT_DIR$/jworks/fear/thermo/registration.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="github.io.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397071915933" ignored="false" />
-    <file path="/item.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1396820742872" ignored="false" />
-    <file path="$PROJECT_DIR$/../belinfin/static/src/less/custom.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1396806889513" ignored="false" />
-    <file path="/index.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397073620436" ignored="false" />
-    <file path="/custom.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397073215426" ignored="false" />
-    <file path="$PROJECT_DIR$/../belinfin/static/src/less/variables.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1396806830095" ignored="false" />
-    <file path="/variables.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1396893227020" ignored="false" />
-    <file path="/app.scss" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1396882561421" ignored="false" />
-    <file path="/import.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1396887635978" ignored="false" />
-    <file path="/a.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1396982823783" ignored="false" />
-    <file path="/a.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1396982943980" ignored="false" />
-    <file path="/fear.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1396987288460" ignored="false" />
-    <file path="/registration.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397074539459" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,23 +40,44 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="178" column="12" selection-start="7307" selection-end="7307" vertical-scroll-proportion="-24.28">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="160" column="37" selection-start="6522" selection-end="6522" vertical-scroll-proportion="0.0" vertical-offset="2397" max-vertical-offset="3366">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registration.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="registration.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/registration.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="78" selection-start="3501" selection-end="3501" vertical-scroll-proportion="0.7638191">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
-              </folding>
+            <state line="105" column="37" selection-start="3827" selection-end="3827" vertical-scroll-proportion="0.0" vertical-offset="1381" max-vertical-offset="2261">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/news.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="97" column="72" selection-start="3223" selection-end="3223" vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="2278">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom-news.less" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-news.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="14" selection-start="200" selection-end="200" vertical-scroll-proportion="0.2982456" vertical-offset="0" max-vertical-offset="855">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="106" column="37" selection-start="2989" selection-end="2989" vertical-scroll-proportion="0.0" vertical-offset="1398" max-vertical-offset="2278">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -67,16 +85,16 @@
       <file leaf-file-name="custom.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="165" column="29" selection-start="2598" selection-end="2598" vertical-scroll-proportion="-10.24">
+            <state line="244" column="12" selection-start="3821" selection-end="3850" vertical-scroll-proportion="-5.098039" vertical-offset="3888" max-vertical-offset="5253">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom-vars.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-vars.less">
+      <file leaf-file-name="custom-auth.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-auth.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="35" selection-start="127" selection-end="127" vertical-scroll-proportion="-3.2">
+            <state line="19" column="21" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1734">
               <folding />
             </state>
           </provider>
@@ -100,7 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/jworks/fear/thermo/item.html" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/stylesheets/app.css" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/scss/app.scss" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/css/import.less" />
@@ -109,16 +126,23 @@
         <option value="$PROJECT_DIR$/jworks/fear/thermo/fear.html" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/less/custom-vars.less" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/less/custom.less" />
+        <option value="$PROJECT_DIR$/jworks/fear/thermo/less/custom-auth" />
+        <option value="$PROJECT_DIR$/jworks/fear/thermo/less/custom-auth.less" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/index.html" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/registration.html" />
+        <option value="$PROJECT_DIR$/jworks/fear/thermo/news.html" />
+        <option value="$PROJECT_DIR$/jworks/fear/thermo/login.html" />
+        <option value="$PROJECT_DIR$/jworks/fear/thermo/less/custom-news" />
+        <option value="$PROJECT_DIR$/jworks/fear/thermo/less/custom-news.less" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1680" />
-    <option name="height" value="967" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1696" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -243,6 +267,58 @@
               <option name="myItemId" value="fear" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thermo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tybys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fear" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thermo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tybys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fear" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -293,7 +369,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="options.lastSelected" value="preferences.fileTypes" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/jworks/fear/thermo/css" />
     <property name="FullScreen" value="false" />
@@ -301,40 +377,9 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="PublishConfig">
-    <servers>
-      <server id="6c0cb210-c6b6-4530-9ae8-78e1b4225fa3">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="833129eb-4369-494b-af2b-9d2494b204e5">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="b3e6c99b-a96b-441e-8496-97365611b37e">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="bdb2b74b-511f-44eb-8225-7d03a5efd517">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-    </servers>
-  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\src\github\tybys\jworks\fear\thermo\img" />
       <recent name="$PROJECT_DIR$/jworks/fear/thermo" />
       <recent name="$PROJECT_DIR$/jworks/fear/thermo/img" />
       <recent name="$PROJECT_DIR$/jworks/fear/thermo/css" />
@@ -351,6 +396,9 @@
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
@@ -385,15 +433,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="967" extended-state="0" />
+    <frame x="1912" y="-8" width="1696" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17074664" sideWeight="0.67060214" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22202381" sideWeight="0.67060214" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -412,101 +461,121 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
-      <value>
-        <are-packages-shown value="false" />
-        <are-modules-shown value="false" />
-        <flatten-packages value="false" />
-        <is-autoscroll-to-source value="false" />
-      </value>
+      <TodoPanelSettings />
     </option>
-    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
-    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
-    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
-    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
-    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
-    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
-    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
-    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
-    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
-    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
-    <option name="LIMIT_HISTORY" value="true" />
-    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
-    <option name="UPDATE_FILTER_SCOPE_NAME" />
-    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
-    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
-    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
-    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
-    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
-    <option name="ACTIVE_VCS_NAME" />
-    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
-    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
-    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
-    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
-    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/css/kube.css">
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/news.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="3" selection-start="585" selection-end="585" vertical-scroll-proportion="0.76004875">
+        <state line="97" column="72" selection-start="3223" selection-end="3223" vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="2278">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-vars.less">
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-news.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="35" selection-start="127" selection-end="127" vertical-scroll-proportion="-3.2">
+        <state line="13" column="72" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="37" selection-start="2989" selection-end="2989" vertical-scroll-proportion="0.0" vertical-offset="1398" max-vertical-offset="2278">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="29" selection-start="2598" selection-end="2598" vertical-scroll-proportion="-10.24">
+        <state line="255" column="34" selection-start="3958" selection-end="3997" vertical-scroll-proportion="0.0" vertical-offset="4041" max-vertical-offset="5253">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-auth.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="21" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1734">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="12" selection-start="7307" selection-end="7307" vertical-scroll-proportion="-24.28">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="106" column="7" selection-start="3884" selection-end="3884" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1904">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/registration.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="78" selection-start="3501" selection-end="3501" vertical-scroll-proportion="0.7638191">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
+        <state line="89" column="78" selection-start="3501" selection-end="3501" vertical-scroll-proportion="0.0" vertical-offset="1258" max-vertical-offset="1258">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="165" column="29" selection-start="2753" selection-end="2753" vertical-scroll-proportion="0.0" vertical-offset="2805" max-vertical-offset="3026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/css/kube.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="3" selection-start="585" selection-end="585" vertical-scroll-proportion="0.76004875" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="160" column="37" selection-start="6522" selection-end="6522" vertical-scroll-proportion="0.0" vertical-offset="2397" max-vertical-offset="3366">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="37" selection-start="3827" selection-end="3827" vertical-scroll-proportion="0.0" vertical-offset="1381" max-vertical-offset="2261">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="72" selection-start="3223" selection-end="3223" vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="2278">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="37" selection-start="2989" selection-end="2989" vertical-scroll-proportion="0.0" vertical-offset="1398" max-vertical-offset="2278">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-auth.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="21" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1734">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="244" column="12" selection-start="3821" selection-end="3850" vertical-scroll-proportion="-5.098039" vertical-offset="3888" max-vertical-offset="5253">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-news.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="14" selection-start="200" selection-end="200" vertical-scroll-proportion="0.2982456" vertical-offset="0" max-vertical-offset="855">
+          <folding />
         </state>
       </provider>
     </entry>

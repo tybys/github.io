@@ -12,14 +12,17 @@
     <link rel="stylesheet" href="css/import.css" /><!-- core styles, just @import all less into one -->
     <link rel="stylesheet" href="css/social-likes_flat.css">
     <link rel="stylesheet" href="css/custom.css" />
+	<link rel="stylesheet" href="css/custom-auth.css" />
 </head>
 <body>
 <div style="position: absolute; z-index: 999;">
     <a href="index.html">index</a>
     <a href="registration.html">registration</a>
+	<a href="login.html">login</a>
+	<a href="news.html">news</a>
 </div>
 <div class="units-row толстота head">
-    <div class="unit-centered unit-80">
+    <div class="unit-centered unit-65">
         <div class="units-row header">
             <div class="unit-100">
                 <div class="units-row end">
@@ -44,7 +47,7 @@
 </div>
 <!-- -->
 <div class="units-row толстота menu">
-    <div class="unit-centered unit-80">
+    <div class="unit-centered unit-65">
         <div class="units-row nav">
             <div class="units-row end">
                 <div class="unit-70 menu">
@@ -74,20 +77,25 @@
 </div>
 <!-- -->
 <div class="units-row толстота content">
-    <div class="unit-centered unit-80">
+    <div class="unit-centered unit-65">
         <div class="units-row content-inner-registration">
             <h2>Регистрация</h2>
             <div class="unit-100">
-                <form>
+                <form class="forms">
                     <fieldset>
                         <!--legend></legend-->
-                        <label for="email">Почта</label>
-                        <input type="text" id="email" />
-                        <label for="pswd">Пароль</label>
-                        <input type="password" id="pswd" />
-                    </fieldset>
+						<div>
+							<label for="email">Почта</label>
+							<input type="text" id="email" />
+							<span class="error">Поле заполнено неккоректно.</span>
+						</div>
 
-                    <button class="btn btn-custom register">Зарегестрироваться</button>
+						<div>
+							<label for="pswd">Пароль</label>
+							<input type="password" id="pswd" />
+						</div>
+						<button class="btn btn-custom">Отправить запрос<i></i></button>
+                    </fieldset>
                 </form>
             </div>
         </div>
@@ -95,7 +103,7 @@
 </div>
 <!-- -->
 <div class="units-row толстота foot">
-    <div class="unit-centered unit-80">
+    <div class="unit-centered unit-65">
         <div class="units-row footer">
             <div class="unit-50">
                 <p>Copyright © 2007-2014, Thermo-rus.ru</p>
