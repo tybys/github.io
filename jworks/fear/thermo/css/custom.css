@@ -175,6 +175,40 @@ html body .foot {
   font-style: normal;
   color: #000000;
 }
+.pagination {
+  padding: 4px 0 !important;
+  background: #f4f4f4;
+}
+.pagination li {
+  background: white;
+  border: none;
+}
+.pagination li span {
+  background: #eb1c24;
+  color: #ffffff;
+  border-radius: 0;
+  border: none;
+}
+.pagination li span:after {
+  display: none !important;
+}
+.pagination li.next,
+.pagination li.prev {
+  background: transparent;
+}
+.pagination li.next a,
+.pagination li.prev a {
+  color: #c3c3c3;
+}
+.pagination li.next a:hover,
+.pagination li.prev a:hover {
+  background: transparent;
+  text-decoration: none;
+}
+.pagination li a:hover {
+  border-radius: 0;
+  text-decoration: underline;
+}
 .content-inner-news ul {
   padding: 0;
   margin: 0;

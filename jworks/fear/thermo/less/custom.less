@@ -206,6 +206,41 @@ html {
 	}
 }
 
+// pagination
+.pagination {
+	padding: 4px 0 !important;
+	li {
+		background: white;
+		border: none;
+		span {
+			background: @red;
+			color: @white;
+			border-radius: 0;
+			border: none;
+			&:after {
+				display: none !important;
+			}
+		}
+		// &.next a {background: url('../img/pag-right.png') no-repeat center;}
+		&.next, &.prev {
+			background: transparent;
+			a {
+				color: #c3c3c3;
+				&:hover {
+					background: transparent;
+					text-decoration: none;
+				}
+			}
+		}
+		a {
+			&:hover {
+				border-radius: 0;
+				text-decoration: underline;
+			}
+		}
+	}
+	background: #f4f4f4;
+}
 //news
 .content-inner-news {
 	ul {
