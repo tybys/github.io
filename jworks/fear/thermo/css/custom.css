@@ -234,21 +234,23 @@ html body .foot {
 .content-inner-promo .promo-block {
   position: relative;
   border: 3px solid #ffe7a8;
-  min-height: 316px;
 }
 .content-inner-promo .promo-block .left {
   width: 45.5%;
-  float: left;
+  display: inline-block;
+  vertical-align: top;
+  float: none;
 }
 .content-inner-promo .promo-block .left img {
   display: block;
-  position: absolute;
-  top: -3px;
-  left: -3px;
+  width: 100%;
+  margin: -3px;
 }
 .content-inner-promo .promo-block .right {
-  width: 51.5%;
+  width: 49.5%;
   display: inline-block;
+  float: none;
+  margin: 0 0 0 30px;
 }
 .content-inner-promo .promo-block .right h2 {
   margin: 40px 0 0 0;

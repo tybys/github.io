@@ -275,20 +275,27 @@ html {
 	.promo-block {
 		position: relative;
 		border: 3px solid #ffe7a8;
-		min-height: 316px;
+		//min-height: 316px;
 		.left {
 			width: 45.5%;
-			float: left;
+			// float: left;
+			display: inline-block;
+			vertical-align: top;
+			float: none;
 			img {
 				display: block;
-				position: absolute;
-				top: -3px;
-				left: -3px;
+				//position: absolute;
+				//top: -3px;
+				//left: -3px;
+				width: 100%;
+				margin: -3px;
 			}
 		}
 		.right {
-			width: 51.5%;
+			width: 49.5%;
 			display: inline-block;
+			float: none;
+			margin: 0 0 0 30px;
 			h2 {
 				margin: 40px 0 0 0;
 				a {

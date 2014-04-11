@@ -7,14 +7,16 @@
             bheight = $(window).outerHeight(),
             bbSum = (' width ' + bwidth + ' height ' + bheight);
 
+        var uwidth = $('.unit-centered').eq(0).outerWidth();
+
         var bodyCalc = function ()
         {
-            $('body').append('<div style="position: fixed; top: 15%; left: 5%;">'+ bbSum +'</div>');
+            $('body').append('<div id="bodycalc" style="position: fixed; top: 15%; left: 5%;">'+ 'content width ' + uwidth +'</div>');
         }();
 
         $(window).resize(function ()
         {
-            bodyCalc();
+//            $('#bodycalc').html(bbSum)
         });
     });
 })(jQuery);
