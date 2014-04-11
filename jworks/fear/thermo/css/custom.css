@@ -281,6 +281,11 @@ span.amount i {
   font-style: normal;
   color: #000;
 }
+span.sale-price i,
+span.new i {
+  font-style: normal;
+  text-decoration: line-through;
+}
 .footer p {
   margin: 28px 0 0 0;
 }

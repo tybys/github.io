@@ -68,6 +68,9 @@
 			padding: 0 0 14px 0;
 		}
 		.item {
+			position: relative;
+			top: 0;
+			left: 0;
 			&:first-child {
 				margin-left: 0;
 			}
@@ -90,6 +93,30 @@
 				&.amount {
 					display: inline-block;
 					margin: 0 auto;
+				}
+			}
+			&.sale,
+			&.new { // скидка, новинка
+				.item-widget {
+					position: absolute;
+					top: 0;
+					right: 0;
+
+					padding: 5px 6px 3px 6px;
+					background: #ffe7a8;
+					border: 1px solid #ffdb7c;
+					border-radius: 1px;
+					color: #31353d;
+					font-family: @titlefont;
+					font-size: 12px;
+					text-shadow: 1px 0 1px @white;
+					text-transform: uppercase;
+				}
+			}
+			&.new {
+				.item-widget {
+					background: #ddffa8;
+					border-color: #c1ea81;
 				}
 			}
 		}

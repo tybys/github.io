@@ -26,6 +26,9 @@
   padding: 0 0 14px 0;
 }
 .content-inner-catalog .unit-75 .item {
+  position: relative;
+  top: 0;
+  left: 0;
   margin-left: 1.2%;
   width: 24.1%;
   padding: 12px;
@@ -49,4 +52,23 @@
 .content-inner-catalog .unit-75 .item span.amount {
   display: inline-block;
   margin: 0 auto;
+}
+.content-inner-catalog .unit-75 .item.sale .item-widget,
+.content-inner-catalog .unit-75 .item.new .item-widget {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 6px 3px 6px;
+  background: #ffe7a8;
+  border: 1px solid #ffdb7c;
+  border-radius: 1px;
+  color: #31353d;
+  font-family: Myriad Pro, sans-serif;
+  font-size: 12px;
+  text-shadow: 1px 0 1px #ffffff;
+  text-transform: uppercase;
+}
+.content-inner-catalog .unit-75 .item.new .item-widget {
+  background: #ddffa8;
+  border-color: #c1ea81;
 }
