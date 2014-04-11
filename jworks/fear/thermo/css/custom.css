@@ -269,6 +269,18 @@ html body .foot {
   background: #eb1c24;
   color: #ffffff;
 }
+span.amount {
+  margin: 10px 0px 0px;
+  color: #FF3801;
+  border: 1px solid #FF3801;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 1px 5px;
+}
+span.amount i {
+  font-style: normal;
+  color: #000;
+}
 .footer p {
   margin: 28px 0 0 0;
 }

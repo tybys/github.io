@@ -1,0 +1,52 @@
+.content-inner-catalog .nav ul li {
+  padding: 0 0 0 10px;
+}
+.content-inner-catalog .nav ul li.heading {
+  font: normal normal 18px/22px Tahoma, sans-serif;
+  color: #eb1c24;
+  padding: 0;
+}
+.content-inner-catalog .nav ul li.selected {
+  padding: 0;
+  position: relative;
+}
+.content-inner-catalog .nav ul li.selected span {
+  padding: 0 0 0 10px;
+}
+.content-inner-catalog .nav ul li a {
+  font: normal normal 12px/22px Tahoma, sans-serif;
+  color: #272727;
+}
+.content-inner-catalog .nav ul li span {
+  background: #6d6d6d;
+  color: #ffffff;
+}
+.content-inner-catalog .unit-75 h2 {
+  border-bottom: 2px solid #eb1c24;
+  padding: 0 0 14px 0;
+}
+.content-inner-catalog .unit-75 .item {
+  margin-left: 1.2%;
+  width: 24.1%;
+  padding: 12px;
+  border: 2px solid #f8f8f8;
+}
+.content-inner-catalog .unit-75 .item:first-child {
+  margin-left: 0;
+}
+.content-inner-catalog .unit-75 .item img {
+  display: block;
+  margin: 0 auto;
+}
+.content-inner-catalog .unit-75 .item a {
+  display: block;
+  font-size: 12px;
+  margin: 5px auto 27px auto;
+}
+.content-inner-catalog .unit-75 .item span {
+  display: block;
+}
+.content-inner-catalog .unit-75 .item span.amount {
+  display: inline-block;
+  margin: 0 auto;
+}
