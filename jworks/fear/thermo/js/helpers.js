@@ -32,5 +32,17 @@
                 top: videoPanelHeight / 2 - 88+'px'
             });
         }();
+
+        // temporary menu
+        var rootMenu = $('<div id="sub" />').appendTo('body');
+        var menu = new Array("index", "registration","login","news","history","catalog","item","wishlist","orderbuild");
+        for (var i = 0; i < menu.length; i++)
+        {
+            var m = $('<a/>', {'href' : menu[i] + '.html'}).text(menu[i]);
+            $('#sub').append('<span style="float: left; margin-right: 5px;">'+i+'</span>',m);
+        }
+
+        rootMenu.css({position: 'fixed',top: '15%',left: '1%',zIndex: '999', width: '10%'});
+        rootMenu.find('a').css({display: 'block',padding: '0px',color: 'black'});
     });
 })(jQuery);
