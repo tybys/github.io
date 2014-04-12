@@ -69,6 +69,10 @@
   text-shadow: 1px 0 1px #ffffff;
   text-transform: uppercase;
 }
+.content-inner-catalog .unit-75 .item.sale .item-widget span,
+.content-inner-catalog .unit-75 .item.new .item-widget span {
+  margin: 0;
+}
 .content-inner-catalog .unit-75 .item.new .item-widget {
   background: #ddffa8;
   border-color: #c1ea81;

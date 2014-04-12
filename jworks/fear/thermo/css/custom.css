@@ -304,3 +304,8 @@ span.new i {
 .footer .social-likes .social-likes__widget {
   margin: 0;
 }
+.imp {
+  text-decoration: none;
+  background: white;
+  color: black;
+}
