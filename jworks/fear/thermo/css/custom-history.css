@@ -79,6 +79,9 @@
 .content-inner-history div.table .table-row.inprocess {
   border: 2px solid #ffe7a8;
 }
+.content-inner-history div.table .table-row.inprocess .status {
+  vertical-align: baseline;
+}
 .content-inner-history div.table .table-row.inprocess .status a {
   text-transform: capitalize;
   background: #ffe7a8;
@@ -103,6 +106,9 @@
   border: 2px solid #f6f6f6;
   border-top-color: #ffffff;
   background: #f6f6f6;
+}
+.content-inner-history div.table .table-row.delivered .status {
+  vertical-align: baseline;
 }
 .content-inner-history div.table .table-row.delivered .status a {
   text-transform: capitalize;
@@ -154,7 +160,7 @@
 }
 .content-inner-history div.table .table-row ul li a {
   vertical-align: middle;
-  line-height: 18px;
+  line-height: 22px !important;
 }
 .content-inner-history div.table .table-row ul li span.order {
   color: #525252;

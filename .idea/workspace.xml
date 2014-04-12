@@ -4,7 +4,6 @@
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/thermo/css/custom-history.css" afterPath="$PROJECT_DIR$/jworks/fear/thermo/css/custom-history.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/thermo/less/custom-history.less" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/custom-history.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/thermo/history.html" afterPath="$PROJECT_DIR$/jworks/fear/thermo/history.html" />
     </list>
     <ignored path="github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -13,7 +12,7 @@
     <file path="/news.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397156347752" ignored="false" />
     <file path="/custom.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397246023630" ignored="false" />
     <file path="/history.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397310145975" ignored="false" />
-    <file path="/custom-history.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397310180882" ignored="false" />
+    <file path="/custom-history.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397310532007" ignored="false" />
     <file path="/helpers.js" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397287073865" ignored="false" />
     <file path="/catalog.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397242277181" ignored="false" />
     <file path="/custom-catalog.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397243555835" ignored="false" />
@@ -63,7 +62,7 @@
       <file leaf-file-name="custom-history.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-history.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="174" column="45" selection-start="2885" selection-end="2885" vertical-scroll-proportion="0.2964824">
+            <state line="175" column="56" selection-start="2959" selection-end="2959" vertical-scroll-proportion="0.75879395">
               <folding />
             </state>
           </provider>
@@ -612,7 +611,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-history.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="45" selection-start="2885" selection-end="2885" vertical-scroll-proportion="0.2964824">
+        <state line="175" column="56" selection-start="2959" selection-end="2959" vertical-scroll-proportion="0.75879395">
           <folding />
         </state>
       </provider>
