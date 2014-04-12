@@ -1,3 +1,174 @@
-body {
-  color: red;
+.content-inner-history h2 {
+  font-family: #31353d;
+  font-size: 24px;
+  color: #31353d;
+}
+.content-inner-history table tr:nth-child(2n) td {
+  border-top: 2px solid #ffffff;
+}
+.content-inner-history table tr.inprocess {
+  border: 2px solid #ffe7a8;
+}
+.content-inner-history table tr.inprocess .status a {
+  text-transform: capitalize;
+  background: #ffe7a8;
+  color: #eb1c24;
+  width: 135px;
+  height: 36px;
+}
+.content-inner-history table tr.inprocess .start {
+  color: #525255;
+}
+.content-inner-history table tr.inprocess .start:after {
+  content: '→';
+  color: #676767;
+  font-size: 15px;
+  font-family: Arial;
+  margin: 0 10px;
+}
+.content-inner-history table tr.inprocess .end {
+  color: #eb1c24;
+}
+.content-inner-history table tr.delivered {
+  border: 2px solid #f6f6f6;
+  border-top-color: #ffffff;
+  background: #f6f6f6;
+}
+.content-inner-history table tr.delivered .status a {
+  text-transform: capitalize;
+  background: #ffffff;
+  color: #62a10f;
+  width: 135px;
+  height: 36px;
+}
+.content-inner-history table tr.delivered .start {
+  font-size: 14px;
+  color: #525255;
+}
+.content-inner-history table tr.delivered .start:after {
+  content: '←';
+  color: #676767;
+  font-size: 15px;
+  font-family: Arial;
+  margin: 0 10px;
+}
+.content-inner-history table tr.delivered .end {
+  color: #62a10f;
+}
+.content-inner-history table tr td {
+  vertical-align: middle;
+  font-size: 18px;
+  color: #000000;
+}
+.content-inner-history table tr td span.order {
+  color: #525252;
+}
+.content-inner-history table tr td span.order:after {
+  content: ' ';
+}
+.content-inner-history table tr td span.decor {
+  color: #eb1c24;
+}
+.content-inner-history table tr td span.decor:after {
+  content: ' ';
+}
+.content-inner-history table tr td span.start,
+.content-inner-history table tr td span.end {
+  font-size: 14px;
+}
+.content-inner-history div.table .table-row.inprocess {
+  border: 2px solid #ffe7a8;
+}
+.content-inner-history div.table .table-row.inprocess .status a {
+  text-transform: capitalize;
+  background: #ffe7a8;
+  color: #eb1c24;
+  width: 135px;
+  height: 36px;
+}
+.content-inner-history div.table .table-row.inprocess .start {
+  color: #525255;
+}
+.content-inner-history div.table .table-row.inprocess .start:after {
+  content: '→';
+  color: #676767;
+  font-size: 15px;
+  font-family: Arial;
+  margin: 0 10px;
+}
+.content-inner-history div.table .table-row.inprocess .end {
+  color: #eb1c24;
+}
+.content-inner-history div.table .table-row.delivered {
+  border: 2px solid #f6f6f6;
+  border-top-color: #ffffff;
+  background: #f6f6f6;
+}
+.content-inner-history div.table .table-row.delivered .status a {
+  text-transform: capitalize;
+  background: #ffffff;
+  color: #62a10f;
+  width: 135px;
+  height: 36px;
+}
+.content-inner-history div.table .table-row.delivered .start {
+  font-size: 14px;
+  color: #525255;
+}
+.content-inner-history div.table .table-row.delivered .start:after {
+  content: '←';
+  color: #676767;
+  font-size: 15px;
+  font-family: Arial;
+  margin: 0 10px;
+}
+.content-inner-history div.table .table-row.delivered .end {
+  color: #62a10f;
+}
+.content-inner-history div.table .table-row ul {
+  margin: 0;
+  padding: 0 15px;
+}
+.content-inner-history div.table .table-row ul li {
+  line-height: 50px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 24.5%;
+  font-size: 18px;
+  color: #000000;
+}
+.content-inner-history div.table .table-row ul li:nth-child(1) {
+  width: 18.5%;
+}
+.content-inner-history div.table .table-row ul li:nth-child(2) {
+  width: 30%;
+}
+.content-inner-history div.table .table-row ul li:nth-child(3) {
+  margin: 0 0 0 5.5%;
+}
+.content-inner-history div.table .table-row ul li:nth-child(4) {
+  width: 19%;
+}
+.content-inner-history div.table .table-row ul li:nth-child(4) a {
+  margin: 0 0 0 39px;
+}
+.content-inner-history div.table .table-row ul li a {
+  vertical-align: middle;
+  line-height: 18px;
+}
+.content-inner-history div.table .table-row ul li span.order {
+  color: #525252;
+}
+.content-inner-history div.table .table-row ul li span.order:after {
+  content: ' ';
+}
+.content-inner-history div.table .table-row ul li span.decor {
+  color: #eb1c24;
+}
+.content-inner-history div.table .table-row ul li span.decor:after {
+  content: ' ';
+}
+.content-inner-history div.table .table-row ul li span.start,
+.content-inner-history div.table .table-row ul li span.end {
+  font-size: 14px;
 }

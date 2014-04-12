@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/import.css" /><!-- core styles, just @import all less into one -->
     <link rel="stylesheet" href="css/social-likes_flat.css">
     <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/custom-history.css" />
 </head>
 <body>
 <div style="position: absolute; z-index: 999;">
@@ -86,19 +87,39 @@
             <div class="unit-100">
                 <table class="table-stripped width-100">
                     <tr class="inprocess">
-                        <td>Заказ: № 624568</td>
-                        <td>На сумму: 85 000 руб. (3 товара)</td>
-                        <td>22 марта 2014 ← 30 марта 2014</td>
-                        <td class="in-process"><a href="#" class="btn btn-custom" onclick="return false;">в обработке</a></td>
+                        <td><span class="order">Заказ:</span><span class="decor">№</span>624568</td>
+                        <td><span class="order">На сумму:</span><span class="decor">85 000</span> руб. (3 товара)</td>
+                        <td><span class="start">22 марта 2014</span><span class="end">30 марта 2014</span></td>
+                        <td class="status"><a href="#" class="btn btn-custom" onclick="return false;">в обработке</a></td>
                     </tr>
 
                     <tr class="delivered">
-                        <td>Заказ: № 624568</td>
-                        <td>На сумму: 85 000 руб. (3 товара)</td>
-                        <td>22 марта 2014 ← 30 марта 2014</td>
-                        <td class=""><a href="#" class="btn btn-custom" onclick="return false;">доставлен</a></td>
+                        <td><span class="order">Заказ:</span><span class="decor">№</span>624568</td>
+                        <td><span class="order">На сумму:</span><span class="decor">85 000</span> руб. (3 товара)</td>
+                        <td><span class="start">22 марта 2014</span><span class="end">30 марта 2014</span></td>
+                        <td class="status"><a href="#" class="btn btn-custom" onclick="return false;">доставлен</a></td>
                     </tr>
                 </table>
+
+                <div class="table">
+                    <div class="table-row inprocess">
+                        <ul>
+                            <li><span class="order">Заказ:</span><span class="decor">№</span>624568</li>
+                            <li><span class="order">На сумму:</span><span class="decor">85 000</span> руб. (3 товара)</li>
+                            <li><span class="start">22 марта 2014</span><span class="end">30 марта 2014</span></li>
+                            <li class="status"><a href="#" class="btn btn-custom" onclick="return false;">в обработке</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="table-row delivered">
+                        <ul>
+                            <li><span class="order">Заказ:</span><span class="decor">№</span>624568</li>
+                            <li><span class="order">На сумму:</span><span class="decor">85 000</span> руб. (3 товара)</li>
+                            <li><span class="start">22 марта 2014</span><span class="end">30 марта 2014</span></li>
+                            <li class="status"><a href="#" class="btn btn-custom" onclick="return false;">в обработке</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
