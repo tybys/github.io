@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Thermo history</title>
+    <title>Thermo order build</title>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/import.css" /><!-- core styles, just @import all less into one -->
     <link rel="stylesheet" href="css/social-likes_flat.css">
     <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/custom-history.css" />
+    <link rel="stylesheet" href="css/custom-orderbuild.css" />
 </head>
 <body>
 <div style="position: absolute; z-index: 999;">
@@ -25,7 +25,7 @@
     <a class="imp" href="catalog.html">catalog</a>
     <a class="imp" href="item.html">item</a>
     <a href="wishlist.html">wishlist</a>
-    <a href="orderbuild.html">order build</a>
+        <a href="orderbuild.html">order build</a>
 </div>
 <div class="units-row толстота head">
     <div class="unit-centered unit-65">
@@ -84,43 +84,76 @@
 <!-- -->
 <div class="units-row толстота content">
     <div class="unit-centered unit-65">
-        <div class="units-row content-inner-history">
-            <h2>История заказов</h2>
+        <div class="units-row content-inner-orderbuild">
+            <h2>Оформление заказа <span class="cart"></span></h2>
             <div class="unit-100">
-                <table class="table-stripped width-100">
-                    <tr class="inprocess">
-                        <td><span class="order">Заказ:</span><span class="decor">№</span>624568</td>
-                        <td><span class="order">На сумму:</span><span class="decor">85 000</span> руб. (3 товара)</td>
-                        <td><span class="start">22 марта 2014</span><span class="end">30 марта 2014</span></td>
-                        <td class="status"><a href="#" class="btn btn-custom" onclick="return false;">в обработке</a></td>
-                    </tr>
+                <form class="forms">
+                    <fieldset>
+                        <!--legend></legend-->
+                        <div>
+                            <label for="deliveryAddress">Адрес доставки</label>
+                            <input type="text" id="deliveryAddress" />
+                            <span class="error">Поле заполнено неккоректно.</span>
+                        </div>
 
-                    <tr class="delivered">
-                        <td><span class="order">Заказ:</span><span class="decor">№</span>624568</td>
-                        <td><span class="order">На сумму:</span><span class="decor">85 000</span> руб. (3 товара)</td>
-                        <td><span class="start">22 марта 2014</span><span class="end">30 марта 2014</span></td>
-                        <td class="status"><a href="#" class="btn btn-custom" onclick="return false;">доставлен</a></td>
-                    </tr>
-                </table>
+                        <div>
+                            <label>Способ оплаты</label>
+                            <select class="width-50">
+                                <option>visa</option>
+                            </select>
+                        </div>
 
-                <div class="table">
-                    <div class="table-row inprocess">
-                        <ul>
-                            <li><span class="order">Заказ:</span><span class="decor">№</span>624568</li>
-                            <li><span class="order">На сумму:</span><span class="decor">85 000</span> руб. (3 товара)</li>
-                            <li><span class="start">22 марта 2014</span><span class="end">30 марта 2014</span></li>
-                            <li class="status"><a href="#" class="btn btn-custom" onclick="return false;">в обработке</a></li>
-                        </ul>
-                    </div>
+                        <div class="checkboxes">
+                            <label>Дополнительные услуги checks</label>
 
-                    <div class="table-row delivered">
-                        <ul>
-                            <li><span class="order">Заказ:</span><span class="decor">№</span>624568</li>
-                            <li><span class="order">На сумму:</span><span class="decor">85 000</span> руб. (3 товара)</li>
-                            <li><span class="start">22 марта 2014</span><span class="end">30 марта 2014</span></li>
-                            <li class="status"><a href="#" class="btn btn-custom" onclick="return false;">в обработке</a></li>
-                        </ul>
-                    </div>
+                            <ul class="forms-list">
+                                <li>
+                                    <input type="checkbox" name="checkbox-1" id="checkbox-1">
+                                    <label for="checkbox-1">Check 1</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="checkbox-2" id="checkbox-2">
+                                    <label for="checkbox-2">Check 2</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="checkbox-3" id="checkbox-3">
+                                    <label for="checkbox-3">Check 3</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <label>Дополнительные услуги radio</label>
+                            <ul class="forms-list">
+                                <li>
+                                    <input type="radio" name="radio-1" id="radio-1">
+                                    <label for="radio-1">Option 1</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="radio-1" id="radio-2">
+                                    <label for="radio-2">Option 2</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="radio-1" id="radio-3">
+                                    <label for="radio-3">Option 3</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <label for="deliveryDate">Дата доставки</label>
+                            <input type="text" id="deliveryDate" />
+                        </div>
+                        <a href="#" class="btn btn-custom">Отправить запрос<i></i></a>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="units-row">
+                <div class="unit-50 back">
+                    <a href="#">Назад</a>
+                </div>
+                <div class="unit-50 build">
+                    <a href="#" class="btn btn-custom">Отправить запрос<i></i></a>
                 </div>
             </div>
         </div>

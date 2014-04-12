@@ -23,6 +23,7 @@ form.forms fieldset {
 form.forms fieldset label {
   display: inline-block;
   min-width: 150px;
+  max-width: 150px;
 }
 form.forms fieldset span.error {
   position: relative;
