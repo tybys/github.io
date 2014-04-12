@@ -18,5 +18,16 @@
         {
 //            $('#bodycalc').html(bbSum)
         });
+
+        // video link-panel
+        var videoPanel = $('.video a'),
+            videoPanelWidth = videoPanel.parent().outerWidth(),
+            videoPanelHeight = videoPanel.parent().outerHeight();
+
+        videoPanel.css
+        ({
+            left: videoPanelWidth / 4 - 18+'px',
+            top: videoPanelHeight / 2 - 88+'px'
+        });
     });
 })(jQuery);
