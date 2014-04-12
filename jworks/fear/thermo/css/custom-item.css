@@ -1,3 +1,26 @@
+.content-inner-item .nav ul li {
+  padding: 0 0 0 10px;
+}
+.content-inner-item .nav ul li.heading {
+  font: normal normal 18px/22px Tahoma, sans-serif;
+  color: #eb1c24;
+  padding: 0;
+}
+.content-inner-item .nav ul li.selected {
+  padding: 0;
+  position: relative;
+}
+.content-inner-item .nav ul li.selected span {
+  padding: 0 0 0 10px;
+}
+.content-inner-item .nav ul li a {
+  font: normal normal 12px/22px Tahoma, sans-serif;
+  color: #272727;
+}
+.content-inner-item .nav ul li span {
+  background: #6d6d6d;
+  color: #ffffff;
+}
 .content-inner-item .unit-75 > h2 {
   font-family: Myriad Pro, sans-serif;
   color: #31353d;
