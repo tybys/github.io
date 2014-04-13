@@ -329,6 +329,14 @@ span.new i {
   border-radius: 0;
   background: #efefef;
 }
+.popup form.forms fieldset a {
+  font-family: Myriad Pro, sans-serif;
+  color: #EB1C24;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 0px 20px;
+}
 .popup form.forms fieldset label {
   display: inline-block;
   min-width: 95px;
