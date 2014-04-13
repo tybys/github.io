@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Thermo cart</title>
+    <title>Thermo contacts</title>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/import.css" /><!-- core styles, just @import all less into one -->
     <link rel="stylesheet" href="css/social-likes_flat.css">
     <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/custom-cart.css" />
+    <link rel="stylesheet" href="css/custom-contacts.css" />
 </head>
 <body>
 <div class="units-row толстота head">
@@ -40,7 +40,6 @@
         </div>
     </div>
 </div>
-<!-- -->
 <div class="units-row толстота menu">
     <div class="unit-centered unit-65">
         <div class="units-row nav">
@@ -70,39 +69,42 @@
         </div>
     </div>
 </div>
+<!-- -->
 <div class="units-row толстота content">
     <div class="unit-centered unit-65">
-        <div class="units-row content-inner-cart">
-            <h2>Корзина<span></span></h2>
+        <div class="units-row content-inner-contacts">
+            <h2>Контакты</h2>
             <div class="unit-100">
-                <table class="table-simple width-100">
-                    <tr>
-                        <td><img src="img/item.jpg" /></td>
-                        <td>
-                            <a href="#">Терморегулятор Thermoreg Ti 950 (Швеция)</a>
-                        </td>
-                        <td>
-                            <input type="number" name="one" id="one" /> шт. <i class="math">X</i> <span class="amount simple">25 000<i>руб.</i></span>
-                        </td>
-                        <td><i class="math">=</i> <span class="amount">85 000<i>руб.</i></span></td>
-                    </tr>
+                <form class="forms">
+                    <fieldset>
+                        <!--legend></legend-->
+                        <a href="#">Обратная связь</a>
+                        <div>
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" />
+                        </div>
 
-                    <tr>
-                        <td><img src="img/item.jpg" /></td>
-                        <td>
-                            <a href="#">Терморегулятор Thermoreg Ti 950 (Швеция)</a>
-                        </td>
-                        <td>
-                            <!--input type="number" name="two" id="two" /--> шт. <i class="math">X</i> <span class="amount simple">25 000<i>руб.</i></span>
-                        </td>
-                        <td><i class="math">=</i> <span class="amount">85 000<i>руб.</i></span></td>
-                    </tr>
-                </table>
+                        <div>
+                            <label for="email">Почта</label>
+                            <input type="text" id="email" />
+                        </div>
 
-                <div class="total">
-                    Итого: <span class="amount big">85 000<i>руб.</i></span>
+                        <div>
+                            <label for="msg">Сообщение</label>
+                            <textarea id="msg"></textarea>
+                        </div>
+                        <button class="btn btn-custom">Отправить<i></i></button>
+                    </fieldset>
+                </form>
+                <ul>
+                    <li><strong>Адрес:</strong> г. Москва, ул. Ивановская 8</li>
+                    <li><strong>Телефоны:</strong> +495 322-65-65</li>
+                    <li><strong>E-mail:</strong>  mail@mail.ru</li>
+                </ul>
+                <p>Схема проезда:</p>
+                <div class="map-wrap">
+                    <script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-KcllV_-vJqUxK8MtuiOPSc7QOqVCFXe&width=100%&height=392"></script>
                 </div>
-                <a href="#" class="btn btn-custom build">Оформить заказ<i></i></a>
             </div>
         </div>
     </div>

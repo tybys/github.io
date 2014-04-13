@@ -1,0 +1,120 @@
+@import "custom-vars";
+
+.content-inner-contacts {
+	position: relative;
+	top: 0; left: 0;
+	h2 {
+		border-bottom: 2px solid @red;
+		padding: 0px 0px 14px;
+	}
+	ul {
+		padding: 0;
+		margin: 25px 0 0 0;
+		li {
+			list-style: none;
+			font-size: 14px;
+			line-height: 22px;
+		}
+	}
+	p {
+		margin: 25px 0 15px 0;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.map-wrap {
+//		box-shadow: 10px 10px 10px -10px rgba(0,0,0,0.7) inset;
+	}
+
+	form.forms {
+		z-index: 999;
+		position: absolute;
+		top: 55px;
+		right: 0;
+		width: 457px;
+		height: 342px;
+		legend {
+
+		}
+		fieldset {
+			padding: 30px;
+			border-radius: 0;
+			background: #efefef;
+			border: none;
+			a {
+				font-family: @titlefont;
+				color: @red;
+				font-size: 18px;
+				text-decoration: none;
+				border-bottom: 1px dashed;
+				display: inline-block;
+				margin: 0 0 20px 0;
+			}
+			label {
+				display: inline-block;
+				min-width: 95px;
+//				max-width: 150px;
+			}
+			span.error {
+				position: relative;
+				margin-left: 20px;
+				font-size: 13px;
+				color: #505050;
+				background: @white;
+				padding: 0.5em 0.7em;
+				&:before {
+					width: 0;
+					height: 0;
+					border: 1.2em solid #fc1049;
+					border-color: transparent @white transparent transparent;
+					content: '';
+					position: absolute;
+					left: -30px;
+				}
+			}
+			input[type="text"],
+			input[type="password"]
+			{
+				display: inline-block;
+				border: 1px solid #b0b0b0;
+				border-radius: 5px;
+				width: 292px;
+				height: 31px;
+			}
+			textarea {
+				display: inline-block;
+				border: 1px solid #b0b0b0;
+				border-radius: 5px;
+				width: 292px;
+				min-height: 103px;
+			}
+
+			.btn.btn-custom {
+				height: 2.2em;
+				margin: 15px 0 0 25%;
+				font-size: 15px;
+				color: @white;
+				background: @red;
+				border-radius: 0;
+				position: relative;
+
+				i {
+					background: none repeat scroll 0% 0% #E1161E;
+					position: absolute;
+					right: -33px;
+					top: 0px;
+					height: 2.2em;
+					width: 33px;
+					&:before {
+						content: '';
+						position: absolute;
+						top: 10px;
+						left: 10px;
+						background: url('../img/rarr.png') no-repeat center;
+						width: 14px;
+						height: 14px;
+					}
+				}
+			}
+		}
+	}
+}

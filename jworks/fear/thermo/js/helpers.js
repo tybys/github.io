@@ -38,7 +38,7 @@
 
         // temporary menu
         var rootMenu = $('<div id="sub" />').appendTo('body');
-        var menu = new Array("index", "registration","login","news","history","catalog","item","wishlist","orderbuild", "cart");
+        var menu = new Array("index", "registration","login","news","history","catalog","item","wishlist","orderbuild", "cart", "contacts");
         for (var i = 0; i < menu.length; i++)
         {
             var m = $('<a/>', {'href' : menu[i] + '.html'}).text(menu[i]);
@@ -61,7 +61,7 @@
          *   http://www.gnu.org/licenses/gpl.html
          *
          *
-         * author of this "implementation" of short method - Tabasov.K aka tybys
+         * author of this "implementation" method - Tabasov.K aka tybys
          */
         var init_number = function ()
         {
