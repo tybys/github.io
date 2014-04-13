@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/img/img.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/img/pdf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/custom-instructions.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/instructions.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/img/aarr.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/img/dark-trans.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/img/darr.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/img/faq.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/img/pipka.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/custom-faq.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/thermo/faq.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/thermo/css/custom.css" afterPath="$PROJECT_DIR$/jworks/fear/thermo/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/thermo/less/custom.less" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/custom.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/thermo/js/helpers.js" afterPath="$PROJECT_DIR$/jworks/fear/thermo/js/helpers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -14,7 +19,7 @@
     <file path="/Dummy.txt" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397370560034" ignored="false" />
     <file path="/custom-news.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397152210252" ignored="false" />
     <file path="/news.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397156347752" ignored="false" />
-    <file path="/custom.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397311422162" ignored="false" />
+    <file path="/custom.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397389594118" ignored="false" />
     <file path="/history.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397310145975" ignored="false" />
     <file path="/custom-history.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397310532007" ignored="false" />
     <file path="/helpers.js" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397373610591" ignored="false" />
@@ -36,6 +41,8 @@
     <file path="/contacts.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397383418789" ignored="false" />
     <file path="/custom-instructions.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397385052063" ignored="false" />
     <file path="/instructions.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397384924168" ignored="false" />
+    <file path="/custom-faq.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397388465164" ignored="false" />
+    <file path="/faq.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397389487430" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,35 +65,46 @@
       <file leaf-file-name="helpers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/js/helpers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="153" selection-start="1337" selection-end="1337" vertical-scroll-proportion="0.0">
+            <state line="40" column="160" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1397384027000" expanded="false" signature="568:604" placeholder="..." />
-                <marker date="1397384027000" expanded="false" signature="1515:1546" placeholder="..." />
+                <marker date="1397385312000" expanded="false" signature="568:604" placeholder="..." />
+                <marker date="1397385312000" expanded="false" signature="1522:1553" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="instructions.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/instructions.html">
+      <file leaf-file-name="faq.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/faq.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="202" column="22" selection-start="8333" selection-end="8333" vertical-scroll-proportion="0.93592966">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="17" column="18" selection-start="633" selection-end="633" vertical-scroll-proportion="-11.56">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom-instructions.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-instructions.less">
+      <file leaf-file-name="custom-contacts.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-contacts.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="30" selection-start="297" selection-end="297" vertical-scroll-proportion="-11.56">
+            <state line="88" column="13" selection-start="1469" selection-end="1607" vertical-scroll-proportion="-27.2">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom-faq.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-faq.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="102" column="1" selection-start="2049" selection-end="2049" vertical-scroll-proportion="-35.24">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.less" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="381" column="18" selection-start="5875" selection-end="5875" vertical-scroll-proportion="0.5301508">
               <folding />
             </state>
           </provider>
@@ -110,9 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/jworks/fear/thermo/index.html" />
-        <option value="$PROJECT_DIR$/jworks/fear/thermo/catalog.html" />
-        <option value="$PROJECT_DIR$/jworks/fear/thermo/history.html" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/item.html" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/login.html" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/news.html" />
@@ -123,9 +138,12 @@
         <option value="$PROJECT_DIR$/jworks/fear/thermo/less/custom-contacts.less" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/contacts.html" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/cart.html" />
-        <option value="$PROJECT_DIR$/jworks/fear/thermo/js/helpers.js" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/less/custom-instructions.less" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/instructions.html" />
+        <option value="$PROJECT_DIR$/jworks/fear/thermo/js/helpers.js" />
+        <option value="$PROJECT_DIR$/jworks/fear/thermo/less/custom-faq.less" />
+        <option value="$PROJECT_DIR$/jworks/fear/thermo/faq.html" />
+        <option value="$PROJECT_DIR$/jworks/fear/thermo/less/custom.less" />
       </list>
     </option>
   </component>
@@ -212,6 +230,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="thermo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tybys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fear" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thermo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -512,26 +556,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/item.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="6" selection-start="623" selection-end="623" vertical-scroll-proportion="-10.88" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="6" selection-start="597" selection-end="597" vertical-scroll-proportion="-10.88" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="6" selection-start="596" selection-end="596" vertical-scroll-proportion="-10.88" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/wishlist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="6" selection-start="631" selection-end="631" vertical-scroll-proportion="0.34170854" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/orderbuild.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="6" selection-start="636" selection-end="636" vertical-scroll-proportion="0.34170854" />
@@ -545,27 +569,6 @@
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-cart.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="154" column="71" selection-start="2824" selection-end="2824" vertical-scroll-proportion="-23.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/registration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="23" selection-start="3035" selection-end="3534" vertical-scroll-proportion="0.7248744">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-auth.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="385" selection-end="1888" vertical-scroll-proportion="0.16708542">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-contacts.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="35" selection-start="826" selection-end="826" vertical-scroll-proportion="-14.48">
           <folding />
         </state>
       </provider>
@@ -591,16 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/js/helpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="153" selection-start="1337" selection-end="1337" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1397384027000" expanded="false" signature="568:604" placeholder="..." />
-            <marker date="1397384027000" expanded="false" signature="1515:1546" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-instructions.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="30" selection-start="297" selection-end="297" vertical-scroll-proportion="-11.56">
@@ -610,7 +603,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/instructions.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="22" selection-start="8333" selection-end="8333" vertical-scroll-proportion="0.93592966">
+        <state line="202" column="22" selection-start="0" selection-end="9321" vertical-scroll-proportion="0.93592966">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -619,6 +612,65 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-item.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="94" selection-start="2037" selection-end="2103" vertical-scroll-proportion="-6.12">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="23" selection-start="3034" selection-end="3534" vertical-scroll-proportion="0.7487437">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-auth.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="385" selection-end="1888" vertical-scroll-proportion="0.17336683">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="18" selection-start="633" selection-end="633" vertical-scroll-proportion="-11.56">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-contacts.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="13" selection-start="1469" selection-end="1607" vertical-scroll-proportion="-27.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-faq.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="1" selection-start="2049" selection-end="2049" vertical-scroll-proportion="-35.24">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/js/helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="160" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1397385312000" expanded="false" signature="568:604" placeholder="..." />
+            <marker date="1397385312000" expanded="false" signature="1522:1553" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="381" column="18" selection-start="5875" selection-end="5875" vertical-scroll-proportion="0.5301508">
+          <folding />
         </state>
       </provider>
     </entry>
