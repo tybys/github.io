@@ -33,6 +33,9 @@
 .content-inner-cart table tr td:last-child {
   text-align: right;
 }
+.content-inner-cart table tr td span.amount i {
+  margin-left: 5px;
+}
 .content-inner-cart table tr td span.amount.simple {
   border: none;
 }
@@ -94,4 +97,46 @@
 .content-inner-cart .number-wrap .arr-down:hover {
   cursor: pointer;
   background-position: -13px -8px;
+}
+.content-inner-cart .total {
+  padding: 4px 0px !important;
+  background: none repeat scroll 0% 0% #F4F4F4;
+  font-size: 26px;
+  color: #525252;
+  text-align: right;
+}
+.content-inner-cart .total .amount.big {
+  border: none;
+  font-size: 26px;
+  margin-top: 0;
+}
+.content-inner-cart .total .amount.big i {
+  margin-left: 5px;
+}
+.content-inner-cart a.build {
+  height: 2.2em;
+  font-size: 15px;
+  color: #FFF;
+  background: none repeat scroll 0% 0% #EB1C24;
+  border-radius: 0px;
+  position: relative;
+  margin: 33px 33px 0px 0px;
+  float: right;
+}
+.content-inner-cart a.build i {
+  background: none repeat scroll 0% 0% #E1161E;
+  position: absolute;
+  right: -33px;
+  top: 0px;
+  height: 2.2em;
+  width: 33px;
+}
+.content-inner-cart a.build i:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: url('../img/rarr.png') no-repeat center;
+  width: 14px;
+  height: 14px;
 }
