@@ -1,0 +1,97 @@
+.content-inner-cart h2 {
+  font-family: #31353d;
+  color: #31353d;
+  font-size: 24px;
+  border-bottom: 2px solid #EB1C24;
+  padding: 0px 0px 14px;
+}
+.content-inner-cart h2 span {
+  display: inline-block;
+  width: 25px;
+  height: 24px;
+  margin: 0 0 0 20px;
+  vertical-align: middle;
+  background: url('../img/cart.png') no-repeat;
+}
+.content-inner-cart table tr {
+  display: inline-block;
+  width: 100%;
+  border: 2px solid #f8f8f8;
+}
+.content-inner-cart table tr td {
+  width: 33%;
+  font-size: 13px;
+  color: #737373;
+  vertical-align: middle;
+}
+.content-inner-cart table tr td:first-child {
+  width: 119px;
+}
+.content-inner-cart table tr td:nth-child(3) {
+  text-align: right;
+}
+.content-inner-cart table tr td:last-child {
+  text-align: right;
+}
+.content-inner-cart table tr td span.amount.simple {
+  border: none;
+}
+.content-inner-cart table tr td img {
+  vertical-align: middle;
+}
+.content-inner-cart table tr td a {
+  vertical-align: middle;
+  font-size: 13px;
+  color: #5b5b5b;
+}
+.content-inner-cart table tr td i.math {
+  font-family: Tahoma, sans-serif;
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  font-style: normal;
+  margin: 0 22px;
+}
+.content-inner-cart .number-wrap {
+  position: relative;
+  top: 0;
+  left: 0;
+  vertical-align: middle;
+  display: inline-block;
+}
+.content-inner-cart .number-wrap .numb-value {
+  display: block;
+  width: 42px;
+  height: 33px;
+  border-radius: 4px;
+  border: 1px solid #b0b0b0;
+  text-align: center;
+  line-height: 28px;
+}
+.content-inner-cart .number-wrap .arr-up {
+  position: absolute;
+  top: -13px;
+  left: calc(50% - 6.5px);
+  left: -webkit-calc(50% - 6.5px);
+  background: url('../img/numbers.png') no-repeat;
+  width: 13px;
+  height: 8px;
+}
+.content-inner-cart .number-wrap .arr-up:hover {
+  cursor: pointer;
+  background-position: -13px 0;
+}
+.content-inner-cart .number-wrap .arr-down {
+  position: absolute;
+  bottom: -13px;
+  left: calc(50% - 6.5px);
+  left: -webkit-calc(50% - 6.5px);
+  background: url('../img/numbers.png') no-repeat;
+  background-position: 0 -8px;
+  width: 13px;
+  height: 7px;
+}
+.content-inner-cart .number-wrap .arr-down:hover {
+  cursor: pointer;
+  background-position: -13px -8px;
+}
