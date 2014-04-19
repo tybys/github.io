@@ -1,0 +1,113 @@
+@arial:  Arial, sans-serif;
+body {
+	font-family: @arial;
+	color: white;
+}
+.row {
+	&.header {
+		.container {
+			position: relative;
+			top: 0; left: 0;
+//			padding: 93px 0 0 0;
+			.col-md-6 {
+				&.right {
+					text-transform: uppercase;
+					text-align: right;
+					div {
+						padding: 21px 0 0 0;
+						a {
+							font-size: 30px;
+							line-height: 24px;
+							color: white;
+							display: block;
+							&.callback {
+								font-size: 16px;
+								line-height: 43px;
+								border-bottom: 1px dashed white;
+								display: inline;
+								padding: 0 0 7px 0;
+							}
+						}
+					}
+				}
+				& > div {
+					padding: 7px 0 0 0;
+				}
+			}
+			img { // big picture
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: -1;
+			}
+			span {
+				text-transform: uppercase;
+				&.arabic {
+					font: bold normal 70px @arial;
+					float: left;
+					margin: 0 10px 0 0;
+				}
+				&.logotype {
+					display: inline-block;
+					font-size: 18px;
+					line-height: 20px;
+					font-weight: bold;
+					width: 37%;
+					margin: 10px 50px 0 0;
+					border-bottom: 1px solid white;
+				}
+				&.description {
+					display: inline-block;
+					font-size: 11px;
+					width: 45%;
+					text-transform: none;
+				}
+			}
+		}
+		&:after {
+			position: absolute;
+			top: 0; left: 0;
+			content: '';
+			width: 100%;
+			height: 93px;
+			background: rgba(0, 109, 185, 0.5);
+			z-index: -1;
+		}
+	}
+	&.anket-info {
+
+	}
+	&.organizators {
+
+	}
+	&.event-info {
+		background: rgb(0, 109, 185);
+	}
+	&.guest {
+		background: rgb(228, 228, 228);
+	}
+	&.rules {
+
+	}
+	&.photogallery {
+
+	}
+	&.scopes {
+		background: rgb(228, 228, 228);
+	}
+	&.it-parthners {
+
+	}
+	&.parthners {
+
+	}
+	&.submit {
+		background: rgb(228, 228, 228);
+	}
+	&.question {
+
+	}
+	&.footer {
+		background: rgb(228, 228, 228);
+	}
+}
