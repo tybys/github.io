@@ -2,21 +2,80 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/thermo/css/custom.css" afterPath="$PROJECT_DIR$/jworks/fear/thermo/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/thermo/less/custom.less" afterPath="$PROJECT_DIR$/jworks/fear/thermo/less/custom.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/img/a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/img/buisness.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/img/club.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/img/deal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/img/eye.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/img/hh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/img/hr.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/img/hrm.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/img/lecorp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/img/lopata.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/img/man.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/img/mask.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/img/neo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/img/photo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/img/rocknrolshik.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/img/trainings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/alerts.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/badges.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/bootstrap.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/breadcrumbs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/button-groups.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/buttons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/carousel.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/close.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/code.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/component-animations.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/dropdowns.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/forms.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/glyphicons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/grid.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/js/helpers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/input-groups.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/jumbotron.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/labels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/list-group.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/media.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/modals.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/navbar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/navs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/normalize.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/pager.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/pagination.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/panels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/popovers.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/print.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/progress-bars.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/responsive-utilities.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/scaffolding.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/tables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/theme.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/thumbnails.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/tooltip.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/type.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/utilities.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/wells.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/lessc/lessc.xml" afterPath="$PROJECT_DIR$/.idea/lessc/lessc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="github.io.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397370560034" ignored="false" />
+    <file path="/Dummy.txt" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397924726121" ignored="false" />
     <file path="/custom-news.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397152210252" ignored="false" />
     <file path="/news.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397156347752" ignored="false" />
     <file path="/custom.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397389705667" ignored="false" />
     <file path="/history.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397310145975" ignored="false" />
     <file path="/custom-history.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397310532007" ignored="false" />
-    <file path="/helpers.js" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397373610591" ignored="false" />
+    <file path="/helpers.js" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397896262512" ignored="false" />
     <file path="/catalog.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397242277181" ignored="false" />
     <file path="/custom-catalog.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397315424601" ignored="false" />
-    <file path="/index.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397311313385" ignored="false" />
+    <file path="/index.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397927716322" ignored="false" />
     <file path="/item.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397283664286" ignored="false" />
     <file path="/custom-item.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397286742814" ignored="false" />
     <file path="/custom-vars.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397278998909" ignored="false" />
@@ -34,6 +93,7 @@
     <file path="/instructions.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397384924168" ignored="false" />
     <file path="/custom-faq.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397388465164" ignored="false" />
     <file path="/faq.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397389487430" ignored="false" />
+    <file path="/import.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397894160682" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,50 +113,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="340" column="64" selection-start="14770" selection-end="14770" vertical-scroll-proportion="0.6934866">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="helpers.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/js/helpers.js">
+        <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/js/helpers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="160" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0">
+            <state line="51" column="0" selection-start="1813" selection-end="1813" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1397385312000" expanded="false" signature="568:604" placeholder="..." />
-                <marker date="1397385312000" expanded="false" signature="1522:1553" placeholder="..." />
+                <marker date="1397896685000" expanded="false" signature="552:588" placeholder="..." />
+                <marker date="1397896685000" expanded="true" signature="1520:1551" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="faq.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/faq.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="18" selection-start="633" selection-end="633" vertical-scroll-proportion="-11.56">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom-contacts.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-contacts.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="13" selection-start="1469" selection-end="1607" vertical-scroll-proportion="-27.2">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom-faq.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-faq.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="1" selection-start="2049" selection-end="2049" vertical-scroll-proportion="-35.24">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom.less" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="397" column="38" selection-start="6150" selection-end="6150" vertical-scroll-proportion="0.91457283">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -119,10 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/jworks/fear/thermo/item.html" />
-        <option value="$PROJECT_DIR$/jworks/fear/thermo/login.html" />
-        <option value="$PROJECT_DIR$/jworks/fear/thermo/news.html" />
-        <option value="$PROJECT_DIR$/jworks/fear/thermo/orderbuild.html" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/wishlist.html" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/registration.html" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/less/custom-cart.less" />
@@ -135,6 +164,10 @@
         <option value="$PROJECT_DIR$/jworks/fear/thermo/less/custom-faq.less" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/faq.html" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/less/custom.less" />
+        <option value="$PROJECT_DIR$/jworks/excentrics/promo/less/import.less" />
+        <option value="$PROJECT_DIR$/jworks/excentrics/promo/js/snippets.js" />
+        <option value="$PROJECT_DIR$/jworks/excentrics/promo/js/helpers.js" />
+        <option value="$PROJECT_DIR$/jworks/excentrics/promo/index.html" />
       </list>
     </option>
   </component>
@@ -143,6 +176,25 @@
     <option name="y" value="22" />
     <option name="width" value="1680" />
     <option name="height" value="967" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>XML</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -216,11 +268,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fear" />
+              <option name="myItemId" value="excentrics" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thermo" />
+              <option name="myItemId" value="promo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -238,11 +290,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fear" />
+              <option name="myItemId" value="excentrics" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thermo" />
+              <option name="myItemId" value="promo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -264,11 +316,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fear" />
+              <option name="myItemId" value="excentrics" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thermo" />
+              <option name="myItemId" value="promo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -290,11 +342,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fear" />
+              <option name="myItemId" value="excentrics" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thermo" />
+              <option name="myItemId" value="promo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -316,39 +368,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fear" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tybys" />
+              <option name="myItemId" value="excentrics" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tybys" />
+              <option name="myItemId" value="promo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jworks" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -369,9 +397,9 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/jworks/fear/thermo/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jworks/excentrics/promo/css" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
@@ -385,6 +413,9 @@
             <mapping local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
+      </server>
+      <server id="7abf3cad-5b65-45a5-9fc4-f8238747f8a2">
+        <serverdata />
       </server>
       <server id="833129eb-4369-494b-af2b-9d2494b204e5">
         <serverdata>
@@ -411,10 +442,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/jworks/excentrics/promo/img" />
+      <recent name="$PROJECT_DIR$/jworks/excentrics/promo/less" />
       <recent name="$PROJECT_DIR$/jworks/fear/thermo/img" />
       <recent name="D:\src\github\tybys\jworks\fear\thermo\img" />
       <recent name="$PROJECT_DIR$/jworks/fear/thermo" />
-      <recent name="$PROJECT_DIR$/jworks/fear/thermo/css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/jworks/fear/thermo/js" />
@@ -462,7 +494,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="967" extended-state="6" />
+    <frame x="0" y="22" width="1680" height="967" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -470,7 +502,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24235006" sideWeight="0.6713781" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2607099" sideWeight="0.6713781" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -547,120 +579,91 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/orderbuild.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="6" selection-start="636" selection-end="636" vertical-scroll-proportion="0.34170854" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-orderbuild.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="4" selection-start="53" selection-end="298" vertical-scroll-proportion="0.06030151" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-cart.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="71" selection-start="2824" selection-end="2824" vertical-scroll-proportion="-23.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1528" selection-end="2736" vertical-scroll-proportion="-4.08">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="6" selection-start="2792" selection-end="2792" vertical-scroll-proportion="0.9572864">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/contacts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="6" selection-start="0" selection-end="5403" vertical-scroll-proportion="0.95657724">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-instructions.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="30" selection-start="297" selection-end="297" vertical-scroll-proportion="-11.56">
-          <folding />
-        </state>
+        <state line="17" column="30" selection-start="297" selection-end="297" vertical-scroll-proportion="-11.56" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/instructions.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="22" selection-start="0" selection-end="9321" vertical-scroll-proportion="0.93592966">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state line="202" column="22" selection-start="0" selection-end="9321" vertical-scroll-proportion="0.93592966" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-item.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="94" selection-start="2037" selection-end="2103" vertical-scroll-proportion="-6.12">
-          <folding />
-        </state>
+        <state line="91" column="94" selection-start="2037" selection-end="2103" vertical-scroll-proportion="-6.12" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/registration.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="23" selection-start="3034" selection-end="3534" vertical-scroll-proportion="0.7487437">
-          <folding />
-        </state>
+        <state line="93" column="23" selection-start="3034" selection-end="3534" vertical-scroll-proportion="0.7487437" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-auth.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="385" selection-end="1888" vertical-scroll-proportion="0.17336683">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/faq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="18" selection-start="633" selection-end="633" vertical-scroll-proportion="-11.56">
-          <folding />
-        </state>
+        <state line="25" column="0" selection-start="385" selection-end="1888" vertical-scroll-proportion="0.17336683" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-contacts.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="13" selection-start="1469" selection-end="1607" vertical-scroll-proportion="-27.2">
-          <folding />
-        </state>
+        <state line="99" column="19" selection-start="1791" selection-end="1791" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="18" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-faq.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="1" selection-start="2049" selection-end="2049" vertical-scroll-proportion="-35.24">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/js/helpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="160" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1397385312000" expanded="false" signature="568:604" placeholder="..." />
-            <marker date="1397385312000" expanded="false" signature="1522:1553" placeholder="..." />
-          </folding>
-        </state>
+        <state line="102" column="1" selection-start="2049" selection-end="2049" vertical-scroll-proportion="0.88915956" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="397" column="38" selection-start="6150" selection-end="6150" vertical-scroll-proportion="0.91457283">
+        <state line="397" column="38" selection-start="6150" selection-end="6150" vertical-scroll-proportion="0.02314251" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/less/alerts.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/less/import.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="13" selection-start="771" selection-end="771" vertical-scroll-proportion="0.7637028" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/js/helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="160" selection-start="0" selection-end="3803" vertical-scroll-proportion="0.023514852" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/js/helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="1813" selection-end="1813" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1397896685000" expanded="false" signature="552:588" placeholder="..." />
+            <marker date="1397896685000" expanded="true" signature="1520:1551" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/img/lopata.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/css/import.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1207" column="2" selection-start="19063" selection-end="19063" vertical-scroll-proportion="0.3329208">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="340" column="64" selection-start="14770" selection-end="14770" vertical-scroll-proportion="0.6934866">
           <folding />
         </state>
       </provider>
