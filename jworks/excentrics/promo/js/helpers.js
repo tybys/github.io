@@ -19,7 +19,7 @@
 
             var uwidth = $('body').outerWidth();
 
-            $('body').append('<div id="bodycalc" style="position: fixed; top: 15%; left: 5%;">'+ 'content width ' + uwidth +'</div>');
+            //$('body').append('<div id="bodycalc" style="position: fixed; top: 15%; left: 5%;">'+ 'content width ' + uwidth +'</div>');
         }();
 
         // video link-panel
@@ -42,7 +42,7 @@
         for (var i = 0; i < menu.length; i++)
         {
             var m = $('<a/>', {'href' : '#'+menu[i]}).text(menu[i]);
-            $('#sub').append('<span style="float: left; margin-right: 5px;">'+i+'</span>',m);
+            //$('#sub').append('<span style="float: left; margin-right: 5px;">'+i+'</span>',m);
         }
 
         rootMenu.css({position: 'fixed',top: '15%',left: '1%',zIndex: '999', width: '10%'});
@@ -103,6 +103,5 @@
 //                clearInterval(press_interval);
 //            });
 //        }();
-
     });
 })(jQuery);
