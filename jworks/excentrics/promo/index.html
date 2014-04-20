@@ -42,9 +42,12 @@
 
     <div class="row anket-info">
         <div class="container">
-            <div class="col-md-6">
-                <h1><span>IV</span>Межрегиональный кадровый форум</h1>
-                <p>В преддверии профессионального праздника – Дня кадровика – приглашаем коллег обменяться опытом и повысить свой профессиональный уровень!</p>
+            <div class="col-md-6 left">
+                <div>
+                    <span class="arabic">IV</span>
+                    <span class="title">Межрегиональный кадровый форум</span>
+                    <p>В преддверии профессионального праздника – Дня кадровика – приглашаем коллег обменяться опытом и повысить свой профессиональный уровень!</p>
+                </div>
                 <div class="time">
                     <p>16.05.2014 года в 9.00. Начало 10.00.</p>
                 </div>
@@ -52,25 +55,27 @@
                     <p>г. Белгород, ул.Победы, 85, 12 корпус, 10 этаж.</p>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div>
-                    <h2>Заполните заявку</h2>
-                    <p>для участии на IV межрегиональный кадровом форуме:</p>
+            <div class="col-md-6 right">
+                <div class="form-wrapper">
+                    <div class="cap">
+                        <h2>Заполните заявку</h2>
+                        <p>для участии на IV межрегиональный кадровом форуме:</p>
+                    </div>
                     <form role="form">
                         <div class="form-group has-success has-feedback">
-                            <label class="control-label" for="inputSuccess2">Ваше имя:</label>
-                            <input type="text" class="form-control" id="inputSuccess2">
-                            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                            <!--label class="control-label" for="inputSuccess2">Ваше имя:</label-->
+                            <input type="text" class="form-control" id="inputSuccess2" placeholder="Ваше имя:">
+                            <span class="glyphicon user form-control-feedback"></span>
                         </div>
                         <div class="form-group has-warning has-feedback">
-                            <label class="control-label" for="inputWarning2">Ваш email:</label>
-                            <input type="text" class="form-control" id="inputWarning2">
-                            <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+                            <!--label class="control-label" for="inputWarning2">Ваш email:</label-->
+                            <input type="text" class="form-control" id="inputWarning2" placeholder="Ваш email:">
+                            <span class="glyphicon email form-control-feedback"></span>
                         </div>
                         <div class="form-group has-error has-feedback">
-                            <label class="control-label" for="inputError2">Ваш телефон:</label>
-                            <input type="text" class="form-control" id="inputError2">
-                            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                            <!--label class="control-label" for="inputError2">Ваш телефон:</label-->
+                            <input type="text" class="form-control" id="inputError2" placeholder="Ваш телефон:">
+                            <span class="glyphicon phone form-control-feedback"></span>
                         </div>
                         <button type="submit" class="btn btn-default">Отправить заявку</button>
                     </form>

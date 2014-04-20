@@ -2,6 +2,11 @@
 body {
 	font-family: @arial;
 	color: white;
+	.container {
+		width: 1280px;
+//		padding: 0 65px;
+		padding: 0 135px;
+	}
 }
 .row {
 	&.header {
@@ -17,7 +22,7 @@ body {
 						padding: 21px 0 0 0;
 						a {
 							font-size: 30px;
-							line-height: 24px;
+							line-height: 18px;
 							color: white;
 							display: block;
 							&.callback {
@@ -52,7 +57,8 @@ body {
 					font-size: 18px;
 					line-height: 20px;
 					font-weight: bold;
-					width: 37%;
+//					width: 37%;
+					width: 43%;
 					margin: 10px 50px 0 0;
 					border-bottom: 1px solid white;
 				}
@@ -75,7 +81,174 @@ body {
 		}
 	}
 	&.anket-info {
+		.col-md-6 {
+			&.left {
+				div {
+					margin: 27px 0 0 0;
+					&:first-child {
+						.arabic {
+							font-size: 90px;
+							font-weight: bold;
+							float: left;
+							margin: 0 31px 0 0;
+						}
+						.title {
+							margin: 23px 0 0 0;
+							font-size: 34px;
+							line-height: 40px;
+							display: inline-block;
+							width: 73%;
+							text-transform: uppercase;
+						}
+						p {
+							font-size: 18px;
+							line-height: 27px;
+							font-weight: bold;
+							clear: both;
+							margin-bottom: 40px;
+							margin-top: 34px;
+						}
+					}
+				}
+				p {
 
+				}
+				.time {
+					position: relative;
+					margin: 55px 0 11px 0;
+					&:after {
+						content: '';
+						width: 100%;
+						height: 54px;
+						background: rgba(0, 0, 0, 0.5);
+						position: absolute;
+						top: 0;
+						z-index: -1;
+					}
+					&:before {
+						content: '';
+						background: url('../img/time.png') no-repeat;
+						width: 31px;
+						height: 31px;
+						position: absolute;
+						top: 11px;
+						left: 11px;
+					}
+					p {
+						font-size: 20px;
+						line-height: 54px;
+						font-weight: bold;
+						text-indent: 70px;
+						margin: 0;
+					}
+				}
+				.location {
+					position: relative;
+					margin-top: 0;
+					&:after {
+						content: '';
+						width: 100%;
+						height: 54px;
+						background: rgba(0, 0, 0, 0.5);
+						position: absolute;
+						top: 0;
+						z-index: -1;
+					}
+					&:before {
+						content: '';
+						background: url('../img/loc.png') no-repeat;
+						width: 31px;
+						height: 31px;
+						position: absolute;
+						top: 11px;
+						left: 11px;
+					}
+					p {
+						font-size: 17px;
+						line-height: 54px;
+						font-weight: bold;
+						margin: 0;
+						text-indent: 70px;
+					}
+				}
+			}
+			&.right {
+				.form-wrapper {
+					position: relative;
+					width: 397px;
+					margin: 13% auto 0 16%;
+					.cap {
+						width: 320px;
+						margin: 0 auto;
+					}
+					h2 {
+						text-align: center;
+
+						text-transform: uppercase;
+						font-size: 30px;
+//						line-height: 18px;
+						font-weight: bold;
+						padding: 25px 0 15px 0;
+					}
+					p {
+						font-size: 16px;
+						line-height: 18px;
+						text-align: center;
+						padding: 0 0 10px 0;
+					}
+					&:after {
+						content: '';
+						width: 397px;
+						height: 359px;
+						background: rgba(0, 0, 0, 0.5);
+						position: absolute;
+						top: 0;
+						z-index: -1;
+					}
+					form {
+						width: 320px;
+						margin: 0 auto;
+						input {
+							text-indent: 20px;
+						}
+						.btn {
+							display: block;
+							margin: 0 auto;
+							font-size: 18px;
+							line-height: 30px;
+							text-transform: uppercase;
+							color: white;
+							text-shadow: 0 2px 2px black;
+							border-radius: 5px;
+							border: 5px solid rgb(73, 78,76);
+
+							background: rgb(50,122,143);
+							background: -moz-linear-gradient(top,  rgba(50,122,143,1) 0%, rgba(0,164,215,1) 2%, rgba(0,105,182,1) 50%, rgba(0,52,138,1) 100%);
+							background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(50,122,143,1)), color-stop(2%,rgba(0,164,215,1)), color-stop(50%,rgba(0,105,182,1)), color-stop(100%,rgba(0,52,138,1)));
+							background: -webkit-linear-gradient(top,  rgba(50,122,143,1) 0%,rgba(0,164,215,1) 2%,rgba(0,105,182,1) 50%,rgba(0,52,138,1) 100%);
+							background: -o-linear-gradient(top,  rgba(50,122,143,1) 0%,rgba(0,164,215,1) 2%,rgba(0,105,182,1) 50%,rgba(0,52,138,1) 100%);
+							background: -ms-linear-gradient(top,  rgba(50,122,143,1) 0%,rgba(0,164,215,1) 2%,rgba(0,105,182,1) 50%,rgba(0,52,138,1) 100%);
+							background: linear-gradient(to bottom,  rgba(50,122,143,1) 0%,rgba(0,164,215,1) 2%,rgba(0,105,182,1) 50%,rgba(0,52,138,1) 100%);
+							filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#327a8f', endColorstr='#00348a',GradientType=0 );
+						}
+						.has-feedback .form-control-feedback {
+							top: 10px;
+							left: 10px;
+								&.user {
+									background: url('../img/LP_03.png') no-repeat;
+								}
+								&.email {
+									background: url('../img/mail.png') no-repeat;
+								}
+								&.phone {
+									background: url('../img/phone.png') no-repeat;
+								}
+
+						}
+					}
+				}
+			}
+		}
 	}
 	&.organizators {
 
