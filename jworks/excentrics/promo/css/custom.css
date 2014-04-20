@@ -2,9 +2,33 @@ body {
   font-family: Arial, sans-serif;
   color: white;
 }
-body .container {
+body .row .container {
   width: 1280px;
   padding: 0 135px;
+}
+body .row.titled h2 {
+  background: white;
+  font-size: 30px;
+  line-height: 39px;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+body .row.titled h2:after,
+body .row.titled h2:before {
+  background: url('../img/title-decor.png') repeat-x;
+  content: " ";
+  position: absolute;
+  top: 45%;
+  width: 24.61%;
+  height: 5px;
+}
+body .row.titled h2:after {
+  right: 0;
+}
+body .row.titled h2:before {
+  left: 0;
 }
 .row.header .container {
   position: relative;
@@ -170,7 +194,7 @@ body .container {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: bold;
-  padding: 25px 0 15px 0;
+  padding: 20px 0 5px 0;
 }
 .row.anket-info .col-md-6.right .form-wrapper p {
   font-size: 16px;
@@ -193,10 +217,17 @@ body .container {
 }
 .row.anket-info .col-md-6.right .form-wrapper form input {
   text-indent: 20px;
+  height: 37px;
+}
+.row.anket-info .col-md-6.right .form-wrapper form input::-webkit-input-placeholder {
+  color: #000000;
+}
+.row.anket-info .col-md-6.right .form-wrapper form input:-moz-placeholder {
+  color: #000000;
 }
 .row.anket-info .col-md-6.right .form-wrapper form .btn {
   display: block;
-  margin: 0 auto;
+  margin: 22px auto 0 auto;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
@@ -226,11 +257,102 @@ body .container {
 .row.anket-info .col-md-6.right .form-wrapper form .has-feedback .form-control-feedback.phone {
   background: url('../img/phone.png') no-repeat;
 }
+.row.organizators {
+  margin-top: 52px;
+}
+.row.organizators h2 {
+  margin-top: 40px;
+}
+.row.organizators ul {
+  margin: 0 0 63px 0;
+  padding: 0;
+  text-align: center;
+}
+.row.organizators ul li {
+  margin: 0 18px;
+  list-style: none;
+  display: inline;
+}
+.row.organizators ul li img {
+  vertical-align: middle;
+}
 .row.event-info {
   background: #006db9;
 }
+.row.event-info:after {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(0, 109, 185, 0);
+  border-top-color: #006db9;
+  border-width: 15px;
+  margin-left: -15px;
+}
+.row.event-info .col-md-6.left div {
+  margin: 75px 0 0 0;
+}
+.row.event-info .col-md-6.left div:first-child .arabic {
+  font-size: 90px;
+  font-weight: bold;
+  float: left;
+  margin: 0 31px 0 0;
+}
+.row.event-info .col-md-6.left div:first-child .title {
+  margin: 23px 0 0 0;
+  font-size: 34px;
+  line-height: 40px;
+  display: inline-block;
+  width: 73%;
+  text-transform: uppercase;
+}
+.row.event-info .col-md-6.left div:first-child p {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: bold;
+  margin-bottom: 100px;
+  margin-top: 34px;
+}
+.row.event-info .col-md-6.right ul {
+  margin-top: 130px;
+}
+.row.event-info .col-md-6.right ul li {
+  margin: 20px 0;
+  padding: 0 0 0 10px;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 25px;
+  list-style-image: url('../img/check.png');
+}
 .row.guest {
   background: #e4e4e4;
+}
+.row.guest h2 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 40px;
+  color: #006db9;
+  text-transform: uppercase;
+  margin: 50px 0 0 0;
+}
+.row.guest ul {
+  margin: 0;
+  padding: 25px;
+}
+.row.guest ul li {
+  font-size: 18px;
+  line-height: 24px;
+  list-style-image: url('../img/bluelist.png');
+  margin: 20px 0;
+  color: black;
+}
+.row.guest img {
+  margin: 50px 0;
+  border: 2px solid #7c7878;
 }
 .row.scopes {
   background: #e4e4e4;
