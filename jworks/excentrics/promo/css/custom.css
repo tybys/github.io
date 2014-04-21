@@ -280,12 +280,12 @@ body .row.titled.parthners h2:before {
   margin-top: 40px;
 }
 .row.organizators ul {
-  margin: 0 0 63px 0;
+  margin: 45px 0 63px 0;
   padding: 0;
   text-align: center;
 }
 .row.organizators ul li {
-  margin: 0 18px;
+  margin: 0 13px;
   list-style: none;
   display: inline;
 }
@@ -335,10 +335,10 @@ body .row.titled.parthners h2:before {
   margin-top: 34px;
 }
 .row.event-info .col-md-6.right ul {
-  margin-top: 130px;
+  margin-top: 72px;
 }
 .row.event-info .col-md-6.right ul li {
-  margin: 20px 0;
+  margin: 28px 0;
   padding: 0 0 0 10px;
   font-size: 22px;
   font-weight: bold;
@@ -514,7 +514,7 @@ body .row.titled.parthners h2:before {
 }
 .row.it-parthners ul {
   padding: 0;
-  margin: 0;
+  margin: 50px 0 0 0;
   text-align: center;
 }
 .row.it-parthners ul li {
@@ -523,8 +523,8 @@ body .row.titled.parthners h2:before {
   margin: 0 8px;
 }
 .row.parthners ul {
-  padding: 0;
-  margin: 0;
+  padding: 0 0 25px 0;
+  margin: 50px 0 0 0;
   text-align: center;
 }
 .row.parthners ul li {
