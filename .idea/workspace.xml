@@ -2,43 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/excentrics/promo/css/custom.css" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/excentrics/promo/less/custom.less" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/custom.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/excentrics/promo/index.html" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/index.html" />
     </list>
     <ignored path="github.io.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398010939192" ignored="false" />
-    <file path="/custom-news.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397152210252" ignored="false" />
-    <file path="/news.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397156347752" ignored="false" />
-    <file path="/custom.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398059909496" ignored="false" />
-    <file path="/history.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397310145975" ignored="false" />
-    <file path="/custom-history.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397310532007" ignored="false" />
-    <file path="/helpers.js" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398021297586" ignored="false" />
-    <file path="/catalog.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397242277181" ignored="false" />
-    <file path="/custom-catalog.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397315424601" ignored="false" />
-    <file path="/index.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398059608542" ignored="false" />
-    <file path="/item.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397283664286" ignored="false" />
-    <file path="/custom-item.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397286742814" ignored="false" />
-    <file path="/custom-vars.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397278998909" ignored="false" />
-    <file path="/custom-wishlist.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397315980098" ignored="false" />
-    <file path="/wishlist.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397315581608" ignored="false" />
-    <file path="/orderbuild.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397322111632" ignored="false" />
-    <file path="/custom-orderbuild.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397322356806" ignored="false" />
-    <file path="/custom-auth.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397320030946" ignored="false" />
-    <file path="/registration.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397335071841" ignored="false" />
-    <file path="/custom-cart.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397380714161" ignored="false" />
-    <file path="/cart.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397380343642" ignored="false" />
-    <file path="/custom-contacts.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397383541560" ignored="false" />
-    <file path="/contacts.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397383418789" ignored="false" />
-    <file path="/custom-instructions.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397385052063" ignored="false" />
-    <file path="/instructions.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397384924168" ignored="false" />
-    <file path="/custom-faq.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397388465164" ignored="false" />
-    <file path="/faq.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397389487430" ignored="false" />
-    <file path="/import.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397894160682" ignored="false" />
-    <file path="$PROJECT_DIR$/../artprofil/static/src/less/variables.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397934042617" ignored="false" />
-    <file path="/variables.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1397934041645" ignored="false" />
-    <file path="$PROJECT_DIR$/../artprofil/static/src/less/custom.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398012414964" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,19 +28,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="103" selection-start="4762" selection-end="4762" vertical-scroll-proportion="-15.333333">
+            <state line="359" column="14" selection-start="15796" selection-end="15796" vertical-scroll-proportion="5.7647057" vertical-offset="1105" max-vertical-offset="6664">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.less" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="custom.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/less/custom.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="594" column="31" selection-start="11956" selection-end="11956" vertical-scroll-proportion="0.6138614">
+            <state line="787" column="31" selection-start="16717" selection-end="16717" vertical-scroll-proportion="-27.461538" vertical-offset="12665" max-vertical-offset="14280">
               <folding />
             </state>
           </provider>
@@ -79,13 +49,8 @@
       <file leaf-file-name="helpers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/js/helpers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="14" selection-start="1493" selection-end="1493" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#655#674#0" expanded="false" />
-                <element signature="e#2369#2408#0" expanded="false" />
-                <marker date="1398024008000" expanded="false" signature="554:590" placeholder="..." />
-                <marker date="1398024008000" expanded="false" signature="1524:1555" placeholder="..." />
-              </folding>
+            <state line="44" column="14" selection-start="1493" selection-end="1493" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="1904">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,9 +94,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1680" />
-    <option name="height" value="967" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1696" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -320,46 +286,18 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/jworks/excentrics/promo/css" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
-      <server id="6c0cb210-c6b6-4530-9ae8-78e1b4225fa3">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="7abf3cad-5b65-45a5-9fc4-f8238747f8a2">
+      <server id="b927969c-6696-48d7-96a3-28a8903398d7">
         <serverdata />
-      </server>
-      <server id="833129eb-4369-494b-af2b-9d2494b204e5">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="b3e6c99b-a96b-441e-8496-97365611b37e">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="bdb2b74b-511f-44eb-8225-7d03a5efd517">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
       </server>
     </servers>
   </component>
@@ -417,22 +355,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="967" extended-state="0" />
+    <frame x="1912" y="-8" width="1696" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19767442" sideWeight="0.6713781" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19761905" sideWeight="0.6713781" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286219" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -445,58 +383,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
-      <value>
-        <are-packages-shown value="false" />
-        <are-modules-shown value="false" />
-        <flatten-packages value="false" />
-        <is-autoscroll-to-source value="false" />
-      </value>
+      <TodoPanelSettings />
     </option>
-    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
-    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
-    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
-    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
-    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
-    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
-    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
-    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
-    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
-    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
-    <option name="LIMIT_HISTORY" value="true" />
-    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
-    <option name="UPDATE_FILTER_SCOPE_NAME" />
-    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
-    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
-    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
-    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
-    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
-    <option name="ACTIVE_VCS_NAME" />
-    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
-    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
-    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
-    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
-    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -509,7 +398,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/css/import.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1207" column="2" selection-start="19063" selection-end="19063" vertical-scroll-proportion="0.3329208" />
+        <state line="1207" column="2" selection-start="19063" selection-end="19063" vertical-scroll-proportion="0.3329208" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/img/time.png">
@@ -569,26 +458,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/js/helpers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="14" selection-start="1493" selection-end="1493" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#655#674#0" expanded="false" />
-            <element signature="e#2369#2408#0" expanded="false" />
-            <marker date="1398024008000" expanded="false" signature="554:590" placeholder="..." />
-            <marker date="1398024008000" expanded="false" signature="1524:1555" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="103" selection-start="4762" selection-end="4762" vertical-scroll-proportion="-15.333333">
+        <state line="44" column="14" selection-start="1493" selection-end="1493" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/less/custom.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="594" column="31" selection-start="11956" selection-end="11956" vertical-scroll-proportion="0.6138614">
+        <state line="787" column="31" selection-start="16717" selection-end="16717" vertical-scroll-proportion="-27.461538" vertical-offset="12665" max-vertical-offset="14280">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="359" column="14" selection-start="15796" selection-end="15796" vertical-scroll-proportion="5.7647057" vertical-offset="1105" max-vertical-offset="6664">
           <folding />
         </state>
       </provider>

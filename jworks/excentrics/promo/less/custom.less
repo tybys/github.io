@@ -41,6 +41,7 @@ body {
 			}
 			&.photogallery {
 				h2 {
+                  margin: 63px 0;
 					&:after,
 					&:before {
 						width: 30.61%;
@@ -419,6 +420,9 @@ body {
 		}
 	}
 	&.rules {
+      h2 {
+        margin: 48px 0 65px 0;
+      }
 		table {
 			tr {
 				&:first-child {
@@ -535,6 +539,7 @@ body {
 		}
 		background: rgb(228, 228, 228);
 		h2 {
+            margin: 45px 0;
 			font-size: 30px;
 			font-weight: bold;
 			line-height: 39px;
@@ -579,6 +584,9 @@ body {
 		}
 	}
 	&.it-parthners {
+        h2 {
+          margin: 58px 0 0 0;
+        }
 		ul {
 			padding: 0;
 			margin: 50px 0 0 0;
@@ -591,6 +599,9 @@ body {
 		}
 	}
 	&.parthners {
+        h2 {
+          margin: 58px 0 0 0;
+        }
 		ul {
 			padding: 0 0 25px 0;
 			margin: 50px 0 0 0;
@@ -706,31 +717,41 @@ body {
 		}
 	}
 	&.question {
-		.left {
-			h2 {
-				font-size: 45px;
-				line-height: 39px;
-				color: black;
-				& span {
-					color: rgb(69, 69, 69);
-				}
-			}
-		}
-		.right {
-			a {
-				font-size: 20px;
-				font-weight: bold;
-				line-height: 10px;
-				border-bottom: 1px dashed;
-				display: inline;
-				padding: 0 0 7px 0;
-				&:hover {
-					text-decoration: none;
-				}
-			}
-		}
+
+        h2 {
+            display: inline-block;
+            font-size: 45px;
+            font-weight: bold;
+            line-height: 39px;
+            color: black;
+            margin: 65px 0;
+            & span {
+                color: rgb(69, 69, 69);
+            }
+        }
+
+        .col-md-4{
+          text-align: right;
+        }
+        a {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 10px;
+            border-bottom: 1px dashed;
+            display: inline-block;
+            padding: 0 0 7px 0;
+            margin: 80px 0 0 0;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
 	}
 	&.footer {
+      .container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
 		background: rgb(228, 228, 228);
 		.left {
 			span {
@@ -748,13 +769,12 @@ body {
 					font-weight: bold;
 				//					width: 37%;
 					width: 68%;
-					margin: 10px 0 0 0;
-					border-bottom: 1px solid black;
+					margin: 12px 0 0 0;
+					border-bottom: 2px solid black;
 				}
 				&.description {
 					display: inline-block;
 					font-size: 11px;
-					width: 45%;
 					text-transform: none;
 				}
 			}
@@ -763,6 +783,10 @@ body {
 			font-size: 14px;
 			line-height: 15px;
 			color: black;
+            p {
+              margin-left: 53px;
+              margin-top: 29px;
+            }
 		}
 		.right {
 			text-align: right;

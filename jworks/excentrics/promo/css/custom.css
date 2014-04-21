@@ -34,6 +34,9 @@ body .row.titled.rules h2:after,
 body .row.titled.rules h2:before {
   width: 10.61%;
 }
+body .row.titled.photogallery h2 {
+  margin: 63px 0;
+}
 body .row.titled.photogallery h2:after,
 body .row.titled.photogallery h2:before {
   width: 30.61%;
@@ -371,6 +374,9 @@ body .row.titled.parthners h2:before {
   margin: 50px 0;
   border: 2px solid #7c7878;
 }
+.row.rules h2 {
+  margin: 48px 0 65px 0;
+}
 .row.rules table tr:first-child td strong {
   font-size: 20px;
 }
@@ -470,6 +476,7 @@ body .row.titled.parthners h2:before {
   margin-left: -15px;
 }
 .row.scopes h2 {
+  margin: 45px 0;
   font-size: 30px;
   font-weight: bold;
   line-height: 39px;
@@ -512,6 +519,9 @@ body .row.titled.parthners h2:before {
   background-position: top left;
   background-repeat: no-repeat;
 }
+.row.it-parthners h2 {
+  margin: 58px 0 0 0;
+}
 .row.it-parthners ul {
   padding: 0;
   margin: 50px 0 0 0;
@@ -521,6 +531,9 @@ body .row.titled.parthners h2:before {
   list-style: none;
   display: inline;
   margin: 0 8px;
+}
+.row.parthners h2 {
+  margin: 58px 0 0 0;
 }
 .row.parthners ul {
   padding: 0 0 25px 0;
@@ -636,27 +649,38 @@ body .row.titled.parthners h2:before {
 .row.submit .form-wrapper form .has-feedback .form-control-feedback.phone {
   background: url('../img/phone.png') no-repeat;
 }
-.row.question .left h2 {
+.row.question h2 {
+  display: inline-block;
   font-size: 45px;
+  font-weight: bold;
   line-height: 39px;
   color: black;
+  margin: 65px 0;
 }
-.row.question .left h2 span {
+.row.question h2 span {
   color: #454545;
 }
-.row.question .right a {
+.row.question .col-md-4 {
+  text-align: right;
+}
+.row.question a {
   font-size: 20px;
   font-weight: bold;
   line-height: 10px;
   border-bottom: 1px dashed;
-  display: inline;
+  display: inline-block;
   padding: 0 0 7px 0;
+  margin: 80px 0 0 0;
 }
-.row.question .right a:hover {
+.row.question a:hover {
   text-decoration: none;
 }
 .row.footer {
   background: #e4e4e4;
+}
+.row.footer .container {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .row.footer .left span {
   text-transform: uppercase;
@@ -673,19 +697,22 @@ body .row.titled.parthners h2:before {
   line-height: 20px;
   font-weight: bold;
   width: 68%;
-  margin: 10px 0 0 0;
-  border-bottom: 1px solid black;
+  margin: 12px 0 0 0;
+  border-bottom: 2px solid black;
 }
 .row.footer .left span.description {
   display: inline-block;
   font-size: 11px;
-  width: 45%;
   text-transform: none;
 }
 .row.footer .center {
   font-size: 14px;
   line-height: 15px;
   color: black;
+}
+.row.footer .center p {
+  margin-left: 53px;
+  margin-top: 29px;
 }
 .row.footer .right {
   text-align: right;
