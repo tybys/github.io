@@ -753,7 +753,7 @@ body .row.titled.parthners h2:before {
   background: linear-gradient(to bottom, #327a8f 0%, #00a4d7 2%, #0069b6 50%, #00348a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#327a8f', endColorstr='#00348a', GradientType=0);
 }
-@media screen and (min-width : 760px) and (max-width: 1024px) {
+@media screen and (min-width : 760px) and (max-width: 1024px) and (orientation:landscape) {
   .row .container {
     width: auto !important;
     padding: 0 !important;
@@ -854,5 +854,241 @@ body .row.titled.parthners h2:before {
   }
   .scopes .container {
     padding: 0 40px !important;
+  }
+}
+@media only screen and (min-device-width : 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  body .row .container {
+    width: auto;
+    padding: 0;
+  }
+  .row.anket-info .col-md-6.right .form-wrapper {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .row.anket-info .col-md-6.right .form-wrapper:after {
+    width: 100%;
+  }
+  .row.anket-info .col-md-6.right .form-wrapper form {
+    width: 95%;
+  }
+  .row.rules table tr:first-child td strong {
+    font-size: 12px;
+  }
+  .submit {
+    display: none;
+  }
+  .row.scopes h2 {
+    font-size: 25px;
+  }
+  body .row.titled h2:after,
+  body .row.titled h2:before {
+    display: none;
+  }
+  .row.scopes .col-md-6 {
+    padding: 0 28px !important;
+    margin: 0;
+  }
+  .row.scopes .col-md-6.members,
+  .row.scopes .col-md-6._scopes,
+  .row.scopes .col-md-6.vip,
+  .row.scopes .col-md-6.inthelist {
+    background-image: none;
+  }
+  .row.guest {
+    text-align: center;
+  }
+  .row.guest img {
+    margin: 0;
+  }
+  .row.guest .col-md-3 {
+    margin: 0;
+    padding: 0;
+  }
+  .row.event-info .col-md-6.left div:first-child .title {
+    font-size: 25px;
+  }
+  .row.event-info .col-md-6.left div:first-child .arabic {
+    font-size: 60px;
+  }
+  .row.event-info .col-md-6.left div {
+    margin-top: 30px;
+  }
+  .row.anket-info .col-md-6.right .form-wrapper .cap {
+    width: auto;
+  }
+  .row.anket-info {
+    color: black;
+  }
+  .row.anket-info .col-md-6.left div {
+    margin: 0;
+  }
+  .row.header .container span.logotype {
+    font-size: 14px;
+    line-height: 14px;
+    width: 54%;
+  }
+  .row.header .container .col-md-6.right div {
+    text-align: center;
+    margin-top: 17px;
+    padding: 0;
+  }
+  .row.header .container .col-md-6.right div a.callback {
+    font-size: 12px;
+    line-height: 12px;
+    border: none;
+  }
+  .row.header .container .col-md-6.right div a {
+    font-size: 21px;
+    border: none;
+  }
+  .row.anket-info .col-md-6.left div:first-child .title {
+    font-size: 22px;
+    width: auto;
+    margin: 0;
+  }
+  .row.anket-info .col-md-6.left .location p {
+    text-indent: 42px;
+    font-size: 10px;
+  }
+  .row.anket-info .col-md-6.left .time p {
+    font-size: 12px;
+    text-indent: 54px;
+  }
+  .row.anket-info .col-md-6.right .form-wrapper h2 {
+    font-size: 25px;
+  }
+  .row.rules table tr.custom-tr p {
+    font-size: 20px;
+  }
+  .row.scopes .col-md-6 h3 {
+    font-size: 15px;
+  }
+  .row.question h2 {
+    margin: 0;
+    text-align: center;
+  }
+  .row.question a {
+    display: block;
+    border: none;
+    text-align: center;
+    margin: 15px 0;
+  }
+}
+@media only screen and (min-device-width : 320px) and (max-device-width: 480px) and (orientation: landscape) {
+  body .row .container {
+    width: auto;
+    padding: 0;
+  }
+  .row.anket-info .col-md-6.right .form-wrapper {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .row.anket-info .col-md-6.right .form-wrapper:after {
+    width: 100%;
+  }
+  .row.anket-info .col-md-6.right .form-wrapper form {
+    width: 95%;
+  }
+  .row.rules table tr:first-child td strong {
+    font-size: 12px;
+  }
+  .submit {
+    display: none;
+  }
+  .row.scopes h2 {
+    font-size: 25px;
+  }
+  body .row.titled h2:after,
+  body .row.titled h2:before {
+    display: none;
+  }
+  .row.scopes .col-md-6 {
+    padding: 0 28px !important;
+    margin: 0;
+  }
+  .row.scopes .col-md-6.members,
+  .row.scopes .col-md-6._scopes,
+  .row.scopes .col-md-6.vip,
+  .row.scopes .col-md-6.inthelist {
+    background-image: none;
+  }
+  .row.guest {
+    text-align: center;
+  }
+  .row.guest img {
+    margin: 0;
+  }
+  .row.guest .col-md-3 {
+    margin: 0;
+    padding: 0;
+  }
+  .row.event-info .col-md-6.left div:first-child .title {
+    font-size: 25px;
+  }
+  .row.event-info .col-md-6.left div:first-child .arabic {
+    font-size: 60px;
+  }
+  .row.event-info .col-md-6.left div {
+    margin-top: 30px;
+  }
+  .row.anket-info .col-md-6.right .form-wrapper .cap {
+    width: auto;
+  }
+  .row.anket-info {
+    color: black;
+  }
+  .row.anket-info .col-md-6.left div {
+    margin: 0;
+  }
+  .row.header .container span.logotype {
+    font-size: 14px;
+    line-height: 14px;
+    width: 54%;
+  }
+  .row.header .container .col-md-6.right div {
+    text-align: center;
+    margin-top: 17px;
+    padding: 0;
+  }
+  .row.header .container .col-md-6.right div a.callback {
+    font-size: 12px;
+    line-height: 12px;
+    border: none;
+  }
+  .row.header .container .col-md-6.right div a {
+    font-size: 21px;
+    border: none;
+  }
+  .row.anket-info .col-md-6.left div:first-child .title {
+    font-size: 22px;
+    width: auto;
+    margin: 0;
+  }
+  .row.anket-info .col-md-6.left .location p {
+    text-indent: 42px;
+    font-size: 10px;
+  }
+  .row.anket-info .col-md-6.left .time p {
+    font-size: 12px;
+    text-indent: 54px;
+  }
+  .row.anket-info .col-md-6.right .form-wrapper h2 {
+    font-size: 25px;
+  }
+  .row.rules table tr.custom-tr p {
+    font-size: 20px;
+  }
+  .row.scopes .col-md-6 h3 {
+    font-size: 15px;
+  }
+  .row.question h2 {
+    margin: 0;
+    text-align: center;
+  }
+  .row.question a {
+    display: block;
+    border: none;
+    text-align: center;
+    margin: 15px 0;
   }
 }
