@@ -860,7 +860,7 @@ body .row.titled.parthners h2:before {
     padding: 0 40px !important;
   }
 }
-@media only screen and (min-device-width : 320px) and (max-device-width: 480px) and (orientation: portrait) {
+@media only screen and (min-width : 320px) and (max-width: 480px) and (orientation: portrait) {
   .row.anket-info .col-md-6 {
     margin: 0;
     padding: 0;
