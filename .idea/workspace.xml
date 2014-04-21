@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/excentrics/promo/css/custom.css" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/excentrics/promo/less/custom.less" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/custom.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/excentrics/promo/index.html" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,19 +28,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="359" column="14" selection-start="15796" selection-end="15796" vertical-scroll-proportion="5.7647057" vertical-offset="1105" max-vertical-offset="6664">
+            <state line="278" column="50" selection-start="11813" selection-end="11813" vertical-scroll-proportion="-29.384615" vertical-offset="3962" max-vertical-offset="12954">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.less" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="custom.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/less/custom.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="787" column="31" selection-start="16717" selection-end="16717" vertical-scroll-proportion="-27.461538" vertical-offset="12665" max-vertical-offset="14280">
+            <state line="966" column="30" selection-start="21258" selection-end="21258" vertical-scroll-proportion="0.9607843" vertical-offset="15589" max-vertical-offset="16558">
               <folding />
             </state>
           </provider>
@@ -49,7 +49,7 @@
       <file leaf-file-name="helpers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/js/helpers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="14" selection-start="1493" selection-end="1493" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="1904">
+            <state line="104" column="14" selection-start="3915" selection-end="3915" vertical-scroll-proportion="0.0" vertical-offset="964" max-vertical-offset="1904">
               <folding />
             </state>
           </provider>
@@ -205,78 +205,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="github.io" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tybys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tybys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jworks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tybys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jworks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="excentrics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="promo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tybys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jworks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="excentrics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="promo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -458,21 +386,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/js/helpers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="14" selection-start="1493" selection-end="1493" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/less/custom.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="787" column="31" selection-start="16717" selection-end="16717" vertical-scroll-proportion="-27.461538" vertical-offset="12665" max-vertical-offset="14280">
+        <state line="104" column="14" selection-start="3915" selection-end="3915" vertical-scroll-proportion="0.0" vertical-offset="964" max-vertical-offset="1904">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="359" column="14" selection-start="15796" selection-end="15796" vertical-scroll-proportion="5.7647057" vertical-offset="1105" max-vertical-offset="6664">
+        <state line="278" column="50" selection-start="11813" selection-end="11813" vertical-scroll-proportion="-29.384615" vertical-offset="3962" max-vertical-offset="12954">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/less/custom.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="966" column="30" selection-start="21258" selection-end="21258" vertical-scroll-proportion="0.9607843" vertical-offset="15589" max-vertical-offset="16558">
           <folding />
         </state>
       </provider>

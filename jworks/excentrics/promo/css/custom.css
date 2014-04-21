@@ -753,3 +753,106 @@ body .row.titled.parthners h2:before {
   background: linear-gradient(to bottom, #327a8f 0%, #00a4d7 2%, #0069b6 50%, #00348a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#327a8f', endColorstr='#00348a', GradientType=0);
 }
+@media screen and (min-width : 760px) and (max-width: 1024px) {
+  .row .container {
+    width: auto !important;
+    padding: 0 !important;
+  }
+}
+@media screen and (min-width : 760px) and (max-width: 1024px) and (orientation:portrait) {
+  h2 {
+    text-align: center;
+  }
+  body .row.titled h2:after,
+  body .row.titled h2:before {
+    display: none;
+  }
+  .submit {
+    display: none;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer .description {
+    display: block !important;
+  }
+  .row.footer .right {
+    text-align: center !important;
+  }
+  .question .col-md-8 {
+    text-align: center;
+  }
+  .row.question .col-md-4 {
+    text-align: center;
+  }
+  .row.question h2 {
+    margin-bottom: 15px;
+  }
+  .row.question a {
+    margin: 0 0 15px 0;
+  }
+  .row.footer .right a.callback {
+    margin: 0 auto;
+  }
+  .row.guest img {
+    margin: 0;
+  }
+  .event-info .left div {
+    text-align: center;
+  }
+  .row.event-info .col-md-6.left div:first-child .arabic {
+    float: none;
+    margin: 0;
+  }
+  .guest .col-md-3 {
+    text-align: center;
+  }
+  .header .col-md-6 {
+    margin-top: 5px;
+    text-align: center !important;
+  }
+  .row.anket-info .col-md-6.left div {
+    margin: 0;
+  }
+  .row.anket-info .col-md-6.left div:first-child .title {
+    text-align: center;
+    margin: 0;
+  }
+  .row.anket-info .col-md-6.left div:first-child p {
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+  .row.anket-info .col-md-6.left div:first-child .arabic {
+    line-height: 80px;
+  }
+  .row.anket-info .col-md-6.right .form-wrapper {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .row.anket-info .col-md-6.right .form-wrapper:after {
+    width: 100%;
+  }
+  .row.anket-info .col-md-6.right .form-wrapper form {
+    width: 95%;
+  }
+  .photogallery .row .col-md-3 {
+    margin-bottom: 15px;
+  }
+  .photogallery .row .col-md-3:last-of-type {
+    margin: 0;
+  }
+  .row.titled.photogallery h2 {
+    margin: 15px 0 15px 0 !important;
+  }
+}
+@media screen and (min-width : 760px) and (max-width: 1024px) and (orientation:landscape) {
+  .guest .col-md-9 {
+    width: 65%;
+  }
+  .submit .container {
+    padding: 50px 0 !important;
+  }
+  .scopes .container {
+    padding: 0 40px !important;
+  }
+}

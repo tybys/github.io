@@ -1,4 +1,13 @@
 @arial:  Arial, sans-serif;
+// For mobile:
+@mobile: ~"screen and (min-width : 480px)";
+// For iphone:
+@iphone: ~"only screen and (min-width : 320px) and (max-width: 480px)";
+//* For ipad:
+@ipad: ~"screen and (min-width : 760px) and (max-width: 1024px)";
+@ipadPortrait: ~"screen and (min-width : 760px) and (max-width: 1024px) and (orientation:portrait)";
+@ipadLandscape: ~"screen and (min-width : 760px) and (max-width: 1024px) and (orientation:landscape)";
+
 body {
 	font-family: @arial;
 	color: white;
@@ -832,4 +841,129 @@ body {
 			}
 		}
 	}
+}
+
+// medias
+@media @ipad {
+  .row .container {
+    width: auto !important;
+    padding: 0 !important;
+  }
+//  .row.header .container span.arabic {
+//    font-size: 65px;
+//  }
+//  .row.header .container span.logotype {
+//    font-size: 15px;
+//    width: 53%;
+//  }
+//  .row.anket-info .col-md-6.left div:first-child .arabic {
+//    margin: 0;
+//  }
+//  .row.anket-info .col-md-6.left div:first-child .title {
+//    margin: 20px 0 0 5px;
+//    font-size: 26px;
+//  }
+}
+@media @ipadPortrait {
+  h2 {
+    text-align: center;
+  }
+  body .row.titled h2:after, body .row.titled h2:before {
+    display: none;
+  }
+  .submit {
+    display: none;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer .description {
+    display: block !important;
+  }
+  .row.footer .right {
+    text-align: center !important;
+  }
+  .question .col-md-8 {
+    text-align: center;
+  }
+  .row.question .col-md-4 {
+    text-align: center;
+  }
+  .row.question h2 {
+    margin-bottom: 15px;
+  }
+
+  .row.question a {
+    margin: 0 0 15px 0;
+  }
+  .row.footer .right a.callback {
+    margin: 0 auto;
+  }
+  .row.guest img {
+    margin: 0;
+  }
+  .event-info .left div {
+    text-align: center;
+  }
+  .row.event-info .col-md-6.left div:first-child .arabic {
+    float: none;
+    margin: 0;
+  }
+  .guest .col-md-3 {
+    text-align: center;
+  }
+  .header .col-md-6 {
+    margin-top: 5px;
+    text-align: center !important;
+  }
+  .row.anket-info .col-md-6.left div {
+    margin: 0;
+  }
+  .row.anket-info .col-md-6.left div:first-child .title {
+    text-align: center;
+    margin: 0;
+  }
+  .row.anket-info .col-md-6.left div:first-child p {
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+  .row.anket-info .col-md-6.left div:first-child .arabic {
+    line-height: 80px;
+  }
+  .row.anket-info .col-md-6.right .form-wrapper {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .row.anket-info .col-md-6.right .form-wrapper:after {
+    width: 100%;
+  }
+
+  .row.anket-info .col-md-6.right .form-wrapper form {
+    width: 95%;
+  }
+  .photogallery {
+    .row {
+      .col-md-3 {
+        margin-bottom: 15px;
+        &:last-of-type {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .row.titled.photogallery h2 {
+    margin: 15px 0 15px 0 !important;
+  }
+}
+
+@media @ipadLandscape {
+  .guest .col-md-9 {
+    width: 65%;
+  }
+  .submit .container {
+    padding: 50px 0 !important;
+  }
+  .scopes .container {
+    padding: 0 40px !important;
+  }
 }
