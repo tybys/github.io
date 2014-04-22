@@ -74,6 +74,10 @@ body .row.titled.parthners h2:before {
   display: inline;
   padding: 0 0 7px 0;
 }
+.row.header .container .col-md-6.right div a:hover {
+  border: none;
+  text-decoration: none;
+}
 .row.header .container .col-md-6 > div {
   padding: 7px 0 0 0;
 }
