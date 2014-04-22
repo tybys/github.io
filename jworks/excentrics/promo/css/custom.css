@@ -1,3 +1,4 @@
+@iph only screen and (min-device-width : 320px) and (max-device-width : 480px);
 body {
   font-family: Arial, sans-serif;
   color: white;
@@ -1245,5 +1246,11 @@ body .row.titled.parthners h2:before {
   }
   .row.photogallery .col-md-3 .rollover {
     margin: 7.5px 0;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .row.header .container span.arabic {
+    font-size: 50px;
+    margin-top: 5px;
   }
 }
