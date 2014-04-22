@@ -984,17 +984,30 @@ body .row.titled.parthners h2:before {
   .row.header .container span.logotype {
     font-size: 14px;
     line-height: 14px;
-    width: 54%;
+    width: 60%;
+    margin: 14px 0 0 0;
+  }
+  .row.header .container span.description {
+    width: 60%;
   }
   .row.header .container .col-md-6.right div {
     text-align: center;
-    margin-top: 17px;
+    margin-top: 26px;
     padding: 0;
+  }
+  .row.header .container .col-md-6.right div a {
+    text-decoration: none;
+  }
+  .row.header .container .col-md-6.right div a:last-of-type {
+    border-bottom: 1px dashed;
+    padding: 0;
+  }
+  .row.header .container .col-md-6.right div a:last-of-type:hover {
+    border: none;
   }
   .row.header .container .col-md-6.right div a.callback {
     font-size: 12px;
     line-height: 12px;
-    border: none;
   }
   .row.header .container .col-md-6.right div a {
     font-size: 21px;
@@ -1037,6 +1050,9 @@ body .row.titled.parthners h2:before {
   }
 }
 @media only screen and (min-device-width : 320px) and (max-device-width: 480px) and (orientation: landscape) {
+  .anket-info {
+    margin-top: 15%;
+  }
   .rules table {
     width: 98%;
   }
@@ -1158,22 +1174,33 @@ body .row.titled.parthners h2:before {
     margin: 0;
   }
   .row.header .container span.logotype {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 14px;
-    width: 54%;
+    width: 40%;
+    margin: 14px 0 0 0;
+  }
+  .row.header .container span.description {
+    width: 60%;
   }
   .row.header .container .col-md-6.right div {
     text-align: center;
-    margin-top: 17px;
+    margin-top: 32px;
     padding: 0;
   }
-  .row.header .container .col-md-6.right div a.callback {
-    font-size: 12px;
-    line-height: 12px;
+  .row.header .container .col-md-6.right div a {
+    text-decoration: none;
+    font-size: 25px;
+  }
+  .row.header .container .col-md-6.right div a:last-of-type {
+    font-size: 16px;
+    line-height: 38px;
+    border-bottom: 1px dashed;
+    padding: 0;
+  }
+  .row.header .container .col-md-6.right div a:last-of-type:hover {
     border: none;
   }
   .row.header .container .col-md-6.right div a {
-    font-size: 21px;
     border: none;
   }
   .row.anket-info .col-md-6.left div:first-child .title {

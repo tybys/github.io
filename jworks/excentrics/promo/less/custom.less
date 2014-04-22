@@ -897,7 +897,6 @@ body {
   .row.question h2 {
     margin-bottom: 15px;
   }
-
   .row.question a {
     margin: 0 0 15px 0;
   }
@@ -1115,17 +1114,30 @@ body {
   .row.header .container span.logotype {
     font-size: 14px;
     line-height: 14px;
-    width: 54%;
+    width: 60%;
+    margin: 14px 0 0 0;
+  }
+  .row.header .container span.description {
+    width: 60%;
   }
   .row.header .container .col-md-6.right div {
     text-align: center;
-    margin-top: 17px;
+    margin-top: 26px;
     padding: 0;
+    a {
+      text-decoration: none;
+      &:last-of-type {
+        border-bottom: 1px dashed;
+        padding: 0;
+        &:hover {
+          border: none;
+        }
+      }
+    }
   }
   .row.header .container .col-md-6.right div a.callback {
     font-size: 12px;
     line-height: 12px;
-    border: none;
   }
   .row.header .container .col-md-6.right div a {
     font-size: 21px;
@@ -1172,199 +1184,218 @@ body {
 }
 
 @media @iphoneLandscape {
-	.rules table {
-		width: 98%;
-	}
-	.guest img {
-		width: 90%;
-	}
-	.row.anket-info .col-md-6 {
-		margin: 0;
-		padding: 0;
-	}
-	body .row .container {
-		width: auto;
-		padding: 0 15px;
-	}
-	.photogallery {
-		.row {
-			.col-md-3 {
-				margin-bottom: 15px;
-				&:last-of-type {
-					margin: 0;
-				}
-			}
-		}
-	}
-	.row.footer .center p {
-		margin-left: 0;
-		text-align: center;
-	}
-	.row.footer .right a.phone {
-		text-align: center;
-	}
-	.row.footer .right a.callback {
-		margin: 0 auto;
-	}
-	.row.it-parthners ul li,
-	.row.parthners ul li {
-		img {
-			margin: 10px 0;
-		}
-	}
+  .anket-info {
+    margin-top: 15%;
+  }
+  .rules table {
+    width: 98%;
+  }
+  .guest img {
+    width: 90%;
+  }
+  .row.anket-info .col-md-6 {
+    margin: 0;
+    padding: 0;
+  }
+  body .row .container {
+    width: auto;
+    padding: 0 15px;
+  }
+  .photogallery {
+    .row {
+      .col-md-3 {
+        margin-bottom: 15px;
+        &:last-of-type {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .row.footer .center p {
+    margin-left: 0;
+    text-align: center;
+  }
+  .row.footer .right a.phone {
+    text-align: center;
+  }
+  .row.footer .right a.callback {
+    margin: 0 auto;
+  }
+  .row.it-parthners ul li,
+  .row.parthners ul li {
+    img {
+      margin: 10px 0;
+    }
+  }
 
-//
-	.row.anket-info .col-md-6.right .form-wrapper {
-		margin: 0 auto;
-		width: 100%;
-	}
-	.row.anket-info .col-md-6.right .form-wrapper:after {
-		width: 100%;
-	}
-	.event-info {
-		.col-md-6 {
-			margin: 0;
-			padding: 0;
-		}
-	}
-	.row.anket-info .col-md-6.right .form-wrapper form {
-		width: 95%;
-	}
-//
-	.row.rules table tr:first-child td strong {
-		font-size: 12px;
-	}
-	.submit {
-		display: none;
-	}
-//
-	.row.scopes h2 {
-		font-size: 25px;
-	}
-	body .row.titled h2:after, body .row.titled h2:before {
-		display: none;
-	}
-//
-	.row.scopes .col-md-6 {
-		padding: 0 28px !important;
-		margin: 0;
-	}
-	.row.scopes .col-md-6.members,
-	.row.scopes .col-md-6._scopes,
-	.row.scopes .col-md-6.vip,
-	.row.scopes .col-md-6.inthelist {
-		background-image: none;
-	}
-//
-	.row.guest {
-		text-align: center;
-		img {
-			margin: 0;
-		}
-		.col-md-3 {
-			margin: 0;
-			padding: 0;
-		}
-	}
-//
-	.row.event-info .col-md-6.left div:first-child .title {
-		font-size: 22px;
-	}
-	.row.event-info .col-md-6.left div:first-child p {
-		font-size: 18px;
-	}
-	.row.event-info .col-md-6.right ul li {
-		font-size: 16px;
-	}
-	.row.rules table td strong {
-		font-size: 12px;
-	}
-	.row.rules table td p.price {
-		font-size: 16px;
-	}
-	.row.rules table td p  {
-		font-size: 12px;
-	}
-	body .row.titled h2 {
-		font-size: 28px;
-	}
-	.photogallery .col-xs-12 img {
-		margin: 7.5px 0;
-	}
-//
-	.row.event-info .col-md-6.left div:first-child .arabic {
-		font-size: 60px;
-	}
-//
-	.row.event-info .col-md-6.left div {
-		margin-top: 30px;
-	}
-//
-	.row.anket-info .col-md-6.right .form-wrapper .cap {
-		width: auto;
-	}
-	.row.anket-info {
-		color: black;
-	}
-	.row.anket-info .col-md-6.left div {
-		margin: 0;
-	}
-//
-	.row.header .container span.logotype {
-		font-size: 14px;
-		line-height: 14px;
-		width: 54%;
-	}
-	.row.header .container .col-md-6.right div {
-		text-align: center;
-		margin-top: 17px;
-		padding: 0;
-	}
-	.row.header .container .col-md-6.right div a.callback {
-		font-size: 12px;
-		line-height: 12px;
-		border: none;
-	}
-	.row.header .container .col-md-6.right div a {
-		font-size: 21px;
-		border: none;
-	}
-	.row.anket-info .col-md-6.left div:first-child .title {
-		font-size: 22px;
-		width: auto;
-		margin: 0;
-	}
-//
-	.row.anket-info .col-md-6.left .location p {
-		text-indent: 42px;
-		font-size: 10px;
-	}
-//
-	.row.anket-info .col-md-6.left .time p {
-		font-size: 12px;
-		text-indent: 54px;
-	}
-	.row.anket-info .col-md-6.right .form-wrapper h2 {
-		font-size: 25px;
-	}
-	.row.rules table tr.custom-tr p {
-		font-size: 20px;
-	}
-	.row.scopes .col-md-6 h3 {
-		font-size: 15px;
-	}
-	.row.question h2 {
-		margin: 0;
-		text-align: center;
-	}
-//
-	.row.question a {
-		display: block;
-		border: none;
-		text-align: center;
-		margin: 15px 0;
-	}
-	.row.photogallery .col-md-3 .rollover {
-		margin: 7.5px 0;
-	}
+  //
+  .row.anket-info .col-md-6.right .form-wrapper {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .row.anket-info .col-md-6.right .form-wrapper:after {
+    width: 100%;
+  }
+  .event-info {
+    .col-md-6 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .row.anket-info .col-md-6.right .form-wrapper form {
+    width: 95%;
+  }
+  //
+  .row.rules table tr:first-child td strong {
+    font-size: 12px;
+  }
+  .submit {
+    display: none;
+  }
+  //
+  .row.scopes h2 {
+    font-size: 25px;
+  }
+  body .row.titled h2:after, body .row.titled h2:before {
+    display: none;
+  }
+  //
+  .row.scopes .col-md-6 {
+    padding: 0 28px !important;
+    margin: 0;
+  }
+  .row.scopes .col-md-6.members,
+  .row.scopes .col-md-6._scopes,
+  .row.scopes .col-md-6.vip,
+  .row.scopes .col-md-6.inthelist {
+    background-image: none;
+  }
+  //
+  .row.guest {
+    text-align: center;
+    img {
+      margin: 0;
+    }
+    .col-md-3 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  //
+  .row.event-info .col-md-6.left div:first-child .title {
+    font-size: 22px;
+  }
+  .row.event-info .col-md-6.left div:first-child p {
+    font-size: 18px;
+  }
+  .row.event-info .col-md-6.right ul li {
+    font-size: 16px;
+  }
+  .row.rules table td strong {
+    font-size: 12px;
+  }
+  .row.rules table td p.price {
+    font-size: 16px;
+  }
+  .row.rules table td p  {
+    font-size: 12px;
+  }
+  body .row.titled h2 {
+    font-size: 28px;
+  }
+  .photogallery .col-xs-12 img {
+    margin: 7.5px 0;
+  }
+  //
+  .row.event-info .col-md-6.left div:first-child .arabic {
+    font-size: 60px;
+  }
+  //
+  .row.event-info .col-md-6.left div {
+    margin-top: 30px;
+  }
+  //
+  .row.anket-info .col-md-6.right .form-wrapper .cap {
+    width: auto;
+  }
+  .row.anket-info {
+    color: black;
+  }
+  .row.anket-info .col-md-6.left div {
+    margin: 0;
+  }
+  //
+  .row.header .container span.logotype {
+    font-size: 15px;
+    line-height: 14px;
+    width: 40%;
+    margin: 14px 0 0 0;
+  }
+  .row.header .container span.description {
+    width: 60%;
+  }
+  .row.header .container .col-md-6.right div {
+    text-align: center;
+    margin-top: 32px;
+    padding: 0;
+    a {
+      text-decoration: none;
+      font-size: 25px;
+      &:last-of-type {
+        font-size: 16px;
+        line-height: 38px;
+        border-bottom: 1px dashed;
+        padding: 0;
+        &:hover {
+          border: none;
+        }
+      }
+    }
+  }
+  .row.header .container .col-md-6.right div a.callback {
+//    font-size: 12px;
+//    line-height: 12px;
+  }
+  .row.header .container .col-md-6.right div a {
+//    font-size: 21px;
+    border: none;
+  }
+  .row.anket-info .col-md-6.left div:first-child .title {
+    font-size: 22px;
+    width: auto;
+    margin: 0;
+  }
+  //
+  .row.anket-info .col-md-6.left .location p {
+    text-indent: 42px;
+    font-size: 10px;
+  }
+  //
+  .row.anket-info .col-md-6.left .time p {
+    font-size: 12px;
+    text-indent: 54px;
+  }
+  .row.anket-info .col-md-6.right .form-wrapper h2 {
+    font-size: 25px;
+  }
+  .row.rules table tr.custom-tr p {
+    font-size: 20px;
+  }
+  .row.scopes .col-md-6 h3 {
+    font-size: 15px;
+  }
+  .row.question h2 {
+    margin: 0;
+    text-align: center;
+  }
+  //
+  .row.question a {
+    display: block;
+    border: none;
+    text-align: center;
+    margin: 15px 0;
+  }
+  .row.photogallery .col-md-3 .rollover {
+    margin: 7.5px 0;
+  }
 }
