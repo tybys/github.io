@@ -1032,6 +1032,9 @@ body .row.titled.parthners h2:before {
     text-align: center;
     margin: 15px 0;
   }
+  .row.photogallery .col-md-3 .rollover {
+    margin: 7.5px 0;
+  }
 }
 @media only screen and (min-device-width : 320px) and (max-device-width: 480px) and (orientation: landscape) {
   .rules table {
@@ -1204,5 +1207,8 @@ body .row.titled.parthners h2:before {
     border: none;
     text-align: center;
     margin: 15px 0;
+  }
+  .row.photogallery .col-md-3 .rollover {
+    margin: 7.5px 0;
   }
 }
