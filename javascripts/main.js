@@ -1,1 +1,13 @@
-console.log('This would be the main JS file.');
+(function ($)
+{
+    $(function ()
+    {
+        $.ajax({
+            url: ''
+        })
+        .done(function ()
+        {
+
+        });
+    });
+})(jQuery);
