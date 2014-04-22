@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="" />
+    <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/excentrics/promo/css/custom.css" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/excentrics/promo/less/custom.less" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/custom.less" />
+    </list>
     <ignored path="github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,7 +38,7 @@
       <file leaf-file-name="custom.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/less/custom.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="866" column="1" selection-start="19709" selection-end="19709" vertical-scroll-proportion="0.8788599" vertical-offset="13982" max-vertical-offset="26588">
+            <state line="864" column="25" selection-start="19713" selection-end="19713" vertical-scroll-proportion="0.39100346" vertical-offset="14349" max-vertical-offset="26588">
               <folding />
             </state>
           </provider>
@@ -395,7 +398,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/less/custom.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="866" column="1" selection-start="19709" selection-end="19709" vertical-scroll-proportion="0.8788599" vertical-offset="13982" max-vertical-offset="26588">
+        <state line="864" column="25" selection-start="19713" selection-end="19713" vertical-scroll-proportion="0.39100346" vertical-offset="14349" max-vertical-offset="26588">
           <folding />
         </state>
       </provider>
