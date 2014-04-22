@@ -101,7 +101,7 @@ body {
 								line-height: 43px;
 								border-bottom: 1px dashed white;
 								display: inline;
-								padding: 0 0 7px 0;
+								padding: 0 0 0px 0;
 							}
                           &:hover {
                             border: none;
@@ -239,11 +239,17 @@ body {
 						left: 11px;
 					}
 					p {
-						font-size: 17px;
-						line-height: 54px;
-						font-weight: bold;
-						margin: 0;
-						text-indent: 70px;
+//						font-size: 17px;
+//						line-height: 54px;
+//						font-weight: bold;
+//						margin: 0;
+//						text-indent: 70px;
+
+                        font-size: 17px;
+                        line-height: 25px;
+                        font-weight: bold;
+                        margin: 0;
+                        padding-left: 70px;
 					}
 				}
 			}
@@ -329,7 +335,8 @@ body {
 		}
 	}
 	&.organizators {
-		margin-top: 52px;
+//		margin-top: 52px;
+        margin-top: 15px;
 		h2 {
 			margin-top: 40px;
 		}
@@ -502,6 +509,7 @@ body {
 		}
 	}
 	&.photogallery {
+      margin-bottom: 15px;
 		.row {
 			margin-bottom: 18px;
 		}
@@ -509,6 +517,7 @@ body {
 			position: relative;
 			text-align: center;
 			vertical-align: middle;
+            margin: 7px 0;
 			.rollover {
 				opacity: 1;
 				-o-transition-duration: 1s;
@@ -858,10 +867,48 @@ body {
 }
 
 @media @ipadPortrait {
+  .row.header {
+    img {
+      display: none;
+      &.mob {
+        display: block !important;
+      }
+    }
+  }
 	.row .container {
 		width: auto !important;
 		padding: 0 !important;
 	}
+    .guest .col-md-5 {
+      text-align: center;
+      padding-bottom: 25px;
+    }
+    .row.event-info {
+      padding-top: 15px;
+      padding-bottom: 25px;
+    }
+    .row.event-info .col-md-6.left div {
+      margin: 0;
+    }
+    .row.event-info .col-md-6.left div:first-child p {
+      margin: 0;
+    }
+    .row.scopes {
+      .col-md-6 {
+        padding-bottom: 25px;
+        margin: 0 25px;
+        p {
+          max-width: 95%;
+        }
+        h3 {
+          line-height: 82px;
+          margin: 0;
+        }
+      }
+      h2 {
+        margin-bottom: 35px;
+      }
+    }
   h2 {
     text-align: center;
   }
@@ -965,6 +1012,14 @@ body {
 }
 
 @media @iphonePortrait {
+  .row.header {
+    img {
+      display: none;
+      &.mob {
+        display: block !important;
+      }
+    }
+  }
   .rules table {
     width: 98%;
   }
@@ -1226,6 +1281,14 @@ body {
 }
 
 @media @iphoneLandscape {
+  .row.header {
+    img {
+      display: none;
+      &.mob {
+        display: block !important;
+      }
+    }
+  }
   .anket-info {
     margin-top: 15%;
   }

@@ -73,7 +73,7 @@ body .row.titled.parthners h2:before {
   line-height: 43px;
   border-bottom: 1px dashed white;
   display: inline;
-  padding: 0 0 7px 0;
+  padding: 0 0 0px 0;
 }
 .row.header .container .col-md-6.right div a:hover {
   border: none;
@@ -199,10 +199,10 @@ body .row.titled.parthners h2:before {
 }
 .row.anket-info .col-md-6.left .location p {
   font-size: 17px;
-  line-height: 54px;
+  line-height: 25px;
   font-weight: bold;
   margin: 0;
-  text-indent: 70px;
+  padding-left: 70px;
 }
 .row.anket-info .col-md-6.right .form-wrapper {
   position: relative;
@@ -282,7 +282,7 @@ body .row.titled.parthners h2:before {
   background: url('../img/phone.png') no-repeat;
 }
 .row.organizators {
-  margin-top: 52px;
+  margin-top: 15px;
 }
 .row.organizators h2 {
   margin-top: 40px;
@@ -432,6 +432,9 @@ body .row.titled.parthners h2:before {
 .row.rules table td p.price {
   font-size: 24px;
 }
+.row.photogallery {
+  margin-bottom: 15px;
+}
 .row.photogallery .row {
   margin-bottom: 18px;
 }
@@ -439,6 +442,7 @@ body .row.titled.parthners h2:before {
   position: relative;
   text-align: center;
   vertical-align: middle;
+  margin: 7px 0;
 }
 .row.photogallery .col-md-3 .rollover {
   opacity: 1;
@@ -765,9 +769,43 @@ body .row.titled.parthners h2:before {
   }
 }
 @media screen and (min-width : 760px) and (max-width: 1024px) and (orientation:portrait) {
+  .row.header img {
+    display: none;
+  }
+  .row.header img.mob {
+    display: block !important;
+  }
   .row .container {
     width: auto !important;
     padding: 0 !important;
+  }
+  .guest .col-md-5 {
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  .row.event-info {
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+  .row.event-info .col-md-6.left div {
+    margin: 0;
+  }
+  .row.event-info .col-md-6.left div:first-child p {
+    margin: 0;
+  }
+  .row.scopes .col-md-6 {
+    padding-bottom: 25px;
+    margin: 0 25px;
+  }
+  .row.scopes .col-md-6 p {
+    max-width: 95%;
+  }
+  .row.scopes .col-md-6 h3 {
+    line-height: 82px;
+    margin: 0;
+  }
+  .row.scopes h2 {
+    margin-bottom: 35px;
   }
   h2 {
     text-align: center;
@@ -866,6 +904,12 @@ body .row.titled.parthners h2:before {
   }
 }
 @media only screen and (min-device-width : 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .row.header img {
+    display: none;
+  }
+  .row.header img.mob {
+    display: block !important;
+  }
   .rules table {
     width: 98%;
   }
@@ -1059,6 +1103,12 @@ body .row.titled.parthners h2:before {
   }
 }
 @media only screen and (min-device-width : 320px) and (max-device-width: 480px) and (orientation: landscape) {
+  .row.header img {
+    display: none;
+  }
+  .row.header img.mob {
+    display: block !important;
+  }
   .anket-info {
     margin-top: 15%;
   }

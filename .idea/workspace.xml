@@ -4,6 +4,7 @@
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/excentrics/promo/css/custom.css" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/excentrics/promo/less/custom.less" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/custom.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/excentrics/promo/index.html" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/index.html" />
     </list>
     <ignored path="github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +30,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="172" column="16" selection-start="7599" selection-end="7599" vertical-scroll-proportion="0.0" vertical-offset="2924" max-vertical-offset="12750">
+            <state line="39" column="49" selection-start="1538" selection-end="1538" vertical-scroll-proportion="-18.923077" vertical-offset="171" max-vertical-offset="12767">
               <folding />
             </state>
           </provider>
@@ -38,7 +39,7 @@
       <file leaf-file-name="custom.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/less/custom.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1494" column="3" selection-start="29694" selection-end="29694" vertical-scroll-proportion="0.9607843" vertical-offset="24565" max-vertical-offset="25517">
+            <state line="1290" column="3" selection-start="26694" selection-end="26694" vertical-scroll-proportion="0.49406177" vertical-offset="21514" max-vertical-offset="26588">
               <folding />
             </state>
           </provider>
@@ -47,7 +48,7 @@
       <file leaf-file-name="helpers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/js/helpers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="14" selection-start="3915" selection-end="3915" vertical-scroll-proportion="0.0" vertical-offset="1768" max-vertical-offset="1904">
+            <state line="104" column="14" selection-start="3915" selection-end="3915" vertical-scroll-proportion="0.0" vertical-offset="998" max-vertical-offset="1904">
               <folding />
             </state>
           </provider>
@@ -382,6 +383,13 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="49" selection-start="1538" selection-end="1538" vertical-scroll-proportion="-18.923077" vertical-offset="171" max-vertical-offset="12767">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/js/helpers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="104" column="14" selection-start="3915" selection-end="3915" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -389,16 +397,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="16" selection-start="7599" selection-end="7599" vertical-scroll-proportion="0.0" vertical-offset="2924" max-vertical-offset="12750">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jworks/excentrics/promo/less/custom.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1494" column="3" selection-start="29694" selection-end="29694" vertical-scroll-proportion="0.9607843" vertical-offset="24565" max-vertical-offset="25517">
+        <state line="1290" column="3" selection-start="26694" selection-end="26694" vertical-scroll-proportion="0.49406177" vertical-offset="21514" max-vertical-offset="26588">
           <folding />
         </state>
       </provider>
