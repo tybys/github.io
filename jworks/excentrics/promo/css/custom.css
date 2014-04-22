@@ -765,7 +765,7 @@ body .row.titled.parthners h2:before {
 @media screen and (min-width : 760px) and (max-width: 1024px) and (orientation:landscape) {
   .row .container {
     width: auto !important;
-    padding: 0 !important;
+    padding: 0;
   }
 }
 @media screen and (min-width : 760px) and (max-width: 1024px) and (orientation:portrait) {
@@ -777,7 +777,7 @@ body .row.titled.parthners h2:before {
   }
   .row .container {
     width: auto !important;
-    padding: 0 !important;
+    padding: 0 15px !important;
   }
   .guest .col-md-5 {
     text-align: center;
