@@ -10,6 +10,7 @@
 @ipadPortrait: ~"screen and (min-width : 760px) and (max-width: 1024px) and (orientation:portrait)";
 @ipadLandscape: ~"screen and (min-width : 760px) and (max-width: 1024px) and (orientation:landscape)";
 //
+@white: rgb(255, 255, 255);
 @pink: rgb(237, 5, 119);
 
 
@@ -27,7 +28,7 @@ body {
 	margin-bottom: 85px;
 }
 .container {
-	width: 1000px;
+	width: 1120px;
 }
 #footer {
 	position: absolute;
@@ -41,11 +42,79 @@ body {
 
 .row {
 	&.menu { // global
+		height: 110px;
+		.container {
+			height: 100%;
+		}
+		.col-md-4,
+		.col-md-8 {
+			margin: 0; padding: 0;
+			position: relative;
+			.lang {
+				position: absolute;
+				top: 25px;
+				right: 0;
+				a {
+					font-size: 12px;
+					text-transform: uppercase;
+					&:first-of-type {
+						&:after {
+							padding-left: 4px;
+							content: '|';
+						}
+					}
+					&.active {
+						color: @pink;
+					}
+				}
+			}
+		}
+		.col-md-4 img {
+			margin: 20px 0 0 0;
+		}
+		.col-md-8 .navbar {
+			margin: 56px 0 0 0;
+		}
+		ul {
+			li {
+				a {
+					padding: 5px 14px;
+					border-radius: 0;
+					color: rgb(77, 77, 79);
+					font-size: 15px;
+					text-transform: uppercase;
 
+					transition: all .10s ease-in; // just for fun
+				}
+				&.active a,
+				&:hover a {
+					background: @pink;
+					color: @white;
+				}
+			}
+		}
 	}
 	&.carousel { // main only
 		img {
-			max-height: 391px;
+//			max-height: 391px;
+		}
+	}
+	&.categories {
+		ul {
+			li {
+				a {
+					font-size: 19px;
+					color: @pink;
+					text-decoration: none;
+					text-transform: uppercase;
+					&.active {
+						font-size: 24px;
+						color: @white;
+						background: @pink;
+					}
+				}
+
+			}
 		}
 	}
 }
