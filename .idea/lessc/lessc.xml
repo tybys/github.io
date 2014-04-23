@@ -19,6 +19,22 @@
             </LessProfile>
           </value>
         </entry>
+        <entry key="1">
+          <value>
+            <LessProfile>
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="$PROJECT_DIR$/jworks/fear/ecopit/css" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="id" value="1" />
+              <option name="lessDirPath" value="$PROJECT_DIR$/jworks/fear/ecopit/less" />
+              <option name="name" value="ecopit" />
+            </LessProfile>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
