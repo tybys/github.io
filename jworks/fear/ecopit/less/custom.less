@@ -111,6 +111,7 @@ body {
 		}
 	}
 	&.carousel { // main only
+		.carousel-indicators {display: none}
 		img {
 //			max-height: 391px;
 		}
@@ -176,17 +177,16 @@ body {
 				-moz-transition-timing-function: ease-out;
 				-moz-transition-duration: 250ms;
 				background: white;
+				img {margin-top: 10px;}
 				&.active {
-					background: @pink;
-					border-top-color: white;
-
-
 					-webkit-transform: scale(1.05,1.07);
 					-webkit-transition-timing-function: ease-out;
 					-webkit-transition-duration: 250ms;
 					-moz-transform: scale(1.05,1.07);
 					-moz-transition-timing-function: ease-out;
 					-moz-transition-duration: 250ms;
+					background: @pink;
+					border-top-color: white;
 					background: @pink;
 					z-index: 999;
 					position: relative;
@@ -204,6 +204,7 @@ body {
 					-moz-transform: scale(1.05,1.07);
 					-moz-transition-timing-function: ease-out;
 					-moz-transition-duration: 250ms;
+					border-top-color: white;
 					background: @pink;
 					color: white;
 					z-index: 999;

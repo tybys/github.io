@@ -88,6 +88,9 @@ body {
   background: #ed0577;
   color: #ffffff;
 }
+.row.carousel .carousel-indicators {
+  display: none;
+}
 .row.carousel .glyphicon-chevron-left {
   background: url('../img/slider/left.png') no-repeat;
   width: 46px;
@@ -151,14 +154,17 @@ body {
   -moz-transition-duration: 250ms;
   background: white;
 }
+.row.categories ul li img {
+  margin-top: 10px;
+}
 .row.categories ul li.active {
-  border-top-color: white;
   -webkit-transform: scale(1.05, 1.07);
   -webkit-transition-timing-function: ease-out;
   -webkit-transition-duration: 250ms;
   -moz-transform: scale(1.05, 1.07);
   -moz-transition-timing-function: ease-out;
   -moz-transition-duration: 250ms;
+  border-top-color: white;
   background: #ed0577;
   z-index: 999;
   position: relative;
@@ -175,6 +181,7 @@ body {
   -moz-transform: scale(1.05, 1.07);
   -moz-transition-timing-function: ease-out;
   -moz-transition-duration: 250ms;
+  border-top-color: white;
   background: #ed0577;
   color: white;
   z-index: 999;
