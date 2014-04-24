@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/ecopit/inner_.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/ecopit/css/custom.css" afterPath="$PROJECT_DIR$/jworks/fear/ecopit/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/ecopit/less/custom.less" afterPath="$PROJECT_DIR$/jworks/fear/ecopit/less/custom.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/ecopit/ecopit.html" afterPath="$PROJECT_DIR$/jworks/fear/ecopit/ecopit.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="github.io.iws" />
@@ -15,11 +15,11 @@
     <file path="/test.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398189671291" ignored="false" />
     <file path="$PROJECT_DIR$/../retentiva/empty.tpl" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398198735077" ignored="false" />
     <file path="/empty.tpl" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398198627371" ignored="false" />
-    <file path="/ecopit.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398372987130" ignored="false" />
-    <file path="/custom.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398374386801" ignored="false" />
+    <file path="/ecopit.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398375541714" ignored="false" />
+    <file path="/custom.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398375569060" ignored="false" />
     <file path="/import.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398274053276" ignored="false" />
     <file path="/inner" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398373286599" ignored="false" />
-    <file path="/inner.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398373699429" ignored="false" />
+    <file path="/inner.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398374505363" ignored="false" />
     <file path="/inner_.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398374362302" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +43,7 @@
       <file leaf-file-name="custom.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/less/custom.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="281" column="13" selection-start="5719" selection-end="5719" vertical-scroll-proportion="0.46163216">
+            <state line="336" column="35" selection-start="6615" selection-end="6615" vertical-scroll-proportion="0.73081607">
               <folding />
             </state>
           </provider>
@@ -52,7 +52,7 @@
       <file leaf-file-name="inner.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/inner.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="10" selection-start="0" selection-end="7439" vertical-scroll-proportion="-27.461538">
+            <state line="84" column="10" selection-start="6583" selection-end="6583" vertical-scroll-proportion="-16.346153">
               <folding />
             </state>
           </provider>
@@ -70,7 +70,7 @@
       <file leaf-file-name="ecopit.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/ecopit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="21" selection-start="5783" selection-end="5987" vertical-scroll-proportion="-12.923077">
+            <state line="181" column="40" selection-start="7750" selection-end="7750" vertical-scroll-proportion="-18.307692">
               <folding />
             </state>
           </provider>
@@ -105,10 +105,10 @@
         <option value="$PROJECT_DIR$/javascripts/main.js" />
         <option value="$PROJECT_DIR$/works/test.html" />
         <option value="$PROJECT_DIR$/jworks/fear/ecopit/less/import.less" />
-        <option value="$PROJECT_DIR$/jworks/fear/ecopit/ecopit.html" />
         <option value="$PROJECT_DIR$/jworks/fear/ecopit/inner" />
-        <option value="$PROJECT_DIR$/jworks/fear/ecopit/inner.html" />
         <option value="$PROJECT_DIR$/jworks/fear/ecopit/inner_.html" />
+        <option value="$PROJECT_DIR$/jworks/fear/ecopit/inner.html" />
+        <option value="$PROJECT_DIR$/jworks/fear/ecopit/ecopit.html" />
         <option value="$PROJECT_DIR$/jworks/fear/ecopit/less/custom.less" />
       </list>
     </option>
@@ -485,47 +485,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-item.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-instructions.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-history.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-faq.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-contacts.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="17" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.37515226" />
+        <state line="74" column="17" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.37515226">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-catalog.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-cart.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-auth.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="9" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.35322776" />
+        <state line="59" column="9" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.35322776">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="13" selection-start="759" selection-end="759" vertical-scroll-proportion="0.35322776" />
+        <state line="46" column="13" selection-start="759" selection-end="759" vertical-scroll-proportion="0.35322776">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/js/carousel.js">
@@ -542,13 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/inner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="10" selection-start="0" selection-end="7439" vertical-scroll-proportion="-27.461538">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/inner_.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="32" selection-start="1773" selection-end="1773" vertical-scroll-proportion="-9.807693">
@@ -558,14 +569,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/ecopit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="21" selection-start="5783" selection-end="5987" vertical-scroll-proportion="-12.923077">
+        <state line="181" column="40" selection-start="7750" selection-end="7750" vertical-scroll-proportion="-18.307692">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/inner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="10" selection-start="6583" selection-end="6583" vertical-scroll-proportion="-16.346153">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/less/custom.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="281" column="13" selection-start="5719" selection-end="5719" vertical-scroll-proportion="0.46163216">
+        <state line="336" column="35" selection-start="6615" selection-end="6615" vertical-scroll-proportion="0.73081607">
           <folding />
         </state>
       </provider>
