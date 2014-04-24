@@ -2,23 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/ecopit/img/slider/1.jpg" afterPath="$PROJECT_DIR$/jworks/fear/ecopit/img/slider/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/ecopit/img/slider/2.jpg" afterPath="$PROJECT_DIR$/jworks/fear/ecopit/img/slider/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/ecopit/img/slider/3.jpg" afterPath="$PROJECT_DIR$/jworks/fear/ecopit/img/slider/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/ecopit/img/slider/left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/ecopit/img/slider/right.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/ecopit/css/custom.css" afterPath="$PROJECT_DIR$/jworks/fear/ecopit/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/ecopit/less/custom.less" afterPath="$PROJECT_DIR$/jworks/fear/ecopit/less/custom.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/ecopit/ecopit.html" afterPath="$PROJECT_DIR$/jworks/fear/ecopit/ecopit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="github.io.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398189461819" ignored="false" />
+    <file path="/Dummy.txt" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398354738548" ignored="false" />
     <file path="/index.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398187565531" ignored="false" />
     <file path="/main.js" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398189576657" ignored="false" />
     <file path="/test.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398189671291" ignored="false" />
     <file path="$PROJECT_DIR$/../retentiva/empty.tpl" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398198735077" ignored="false" />
     <file path="/empty.tpl" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398198627371" ignored="false" />
-    <file path="/ecopit.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398282967520" ignored="false" />
-    <file path="/custom.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398282945568" ignored="false" />
+    <file path="/ecopit.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398356415121" ignored="false" />
+    <file path="/custom.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398358563435" ignored="false" />
     <file path="/import.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398274053276" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,19 +39,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="custom.less" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="custom.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/less/custom.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="16" selection-start="2085" selection-end="2085" vertical-scroll-proportion="0.0">
+            <state line="231" column="24" selection-start="4488" selection-end="4488" vertical-scroll-proportion="0.5395859">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ecopit.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ecopit.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/ecopit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="36" selection-start="3613" selection-end="3613" vertical-scroll-proportion="0.2770781">
+            <state line="172" column="28" selection-start="7014" selection-end="7014" vertical-scroll-proportion="-21.11111">
               <folding />
             </state>
           </provider>
@@ -89,8 +89,8 @@
         <option value="$PROJECT_DIR$/javascripts/main.js" />
         <option value="$PROJECT_DIR$/works/test.html" />
         <option value="$PROJECT_DIR$/jworks/fear/ecopit/less/import.less" />
-        <option value="$PROJECT_DIR$/jworks/fear/ecopit/less/custom.less" />
         <option value="$PROJECT_DIR$/jworks/fear/ecopit/ecopit.html" />
+        <option value="$PROJECT_DIR$/jworks/fear/ecopit/less/custom.less" />
       </list>
     </option>
   </component>
@@ -145,6 +145,61 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tybys">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="jworks/excentrics/promo">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tybys">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="jworks/excentrics/promo">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="img">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tybys">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests" />
+        <subPane subId="Changed Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -261,32 +316,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="less" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tybys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jworks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fear" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecopit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -345,73 +374,18 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tybys">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="jworks/excentrics/promo">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tybys">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="jworks/excentrics/promo">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="img">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tybys">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Tests" />
-        <subPane subId="Changed Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="lessc" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/jworks/fear/ecopit/css" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -501,7 +475,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18421052" sideWeight="0.9129979" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1866585" sideWeight="0.9129979" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32979977" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -594,9 +568,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/js/carousel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/less/carousel.less">
@@ -608,9 +580,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/less/import.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="29" selection-start="830" selection-end="830" vertical-scroll-proportion="0.7673569">
-          <folding />
-        </state>
+        <state line="35" column="29" selection-start="830" selection-end="830" vertical-scroll-proportion="0.7673569" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/thermo/less/custom-item.less">
@@ -676,16 +646,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/less/custom.less">
+    <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/ecopit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="16" selection-start="2085" selection-end="2085" vertical-scroll-proportion="0.0">
+        <state line="172" column="28" selection-start="7014" selection-end="7014" vertical-scroll-proportion="-21.11111">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/ecopit.html">
+    <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/less/custom.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="36" selection-start="3613" selection-end="3613" vertical-scroll-proportion="0.2770781">
+        <state line="231" column="24" selection-start="4488" selection-end="4488" vertical-scroll-proportion="0.5395859">
           <folding />
         </state>
       </provider>
