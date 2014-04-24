@@ -216,6 +216,7 @@ body {
 }
 .row.categories-content .col-md-4 img {
   width: calc(100% - 15px);
+  width: -webkit-calc(100% - 15px);
 }
 .row.spamming .form-inline {
   background: #e0ddde;
@@ -244,17 +245,29 @@ body {
   text-transform: uppercase;
   margin-left: 12px;
 }
-.row.content-inner h1 {
+.row.content-inner h1,
+.row.content-news h1 {
   padding: 5px;
   background: #aaa8aa;
   color: white;
   font-size: 13px;
   text-transform: uppercase;
 }
-.row.content-inner img {
+.row.content-inner img,
+.row.content-news img {
   width: 100%;
   display: block;
   margin: 2px 0 10px 0;
+}
+.row.content-news .col-md-4 h2 {
+  text-align: left;
+  font-size: 24px;
+  line-height: 38px;
+  color: #ffffff;
+}
+.row.content-news .col-md-4 h2 span {
+  padding: 4px 0;
+  background: #535456;
 }
 /*
 margin-top: -65px;

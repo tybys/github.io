@@ -243,6 +243,7 @@ body {
 			}
 			img {
 				width: ~"calc(100% - 15px)";
+				width: ~"-webkit-calc(100% - 15px)";
 			}
 		}
 	}
@@ -277,7 +278,8 @@ body {
 	}
 
 	// inner page
-	&.content-inner {
+	&.content-inner,
+	&.content-news {
 		h1 {
 			padding: 5px;
 			background: rgb(170, 168, 170);
@@ -289,6 +291,21 @@ body {
 			width: 100%;
 			display: block;
 			margin: 2px 0 10px 0;
+		}
+	}
+	&.content-news {
+		.col-md-4 {
+			h2 {
+				text-align: left;
+				font-size: 24px;
+				line-height: 38px;
+				color: rgb(255, 255, 255);
+				span {
+					padding: 4px 0;
+					background: rgb(83, 84, 86);
+
+				}
+			}
 		}
 	}
 }
