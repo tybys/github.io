@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jworks/fear/ecopit/inner.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/excentrics/promo/less/alerts.less" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/alerts.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/ecopit/less/alerts.less" afterPath="$PROJECT_DIR$/jworks/fear/ecopit/less/alerts.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/ecopit/css/custom.css" afterPath="$PROJECT_DIR$/jworks/fear/ecopit/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/ecopit/less/custom.less" afterPath="$PROJECT_DIR$/jworks/fear/ecopit/less/custom.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/ecopit/ecopit.html" afterPath="$PROJECT_DIR$/jworks/fear/ecopit/ecopit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/excentrics/promo/less/normalize.less" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/normalize.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/ecopit/less/normalize.less" afterPath="$PROJECT_DIR$/jworks/fear/ecopit/less/normalize.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/excentrics/promo/less/popovers.less" afterPath="$PROJECT_DIR$/jworks/excentrics/promo/less/popovers.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/ecopit/less/popovers.less" afterPath="$PROJECT_DIR$/jworks/fear/ecopit/less/popovers.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="github.io.iws" />
@@ -16,8 +22,10 @@
     <file path="$PROJECT_DIR$/../retentiva/empty.tpl" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398198735077" ignored="false" />
     <file path="/empty.tpl" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398198627371" ignored="false" />
     <file path="/ecopit.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398372987130" ignored="false" />
-    <file path="/custom.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398373058328" ignored="false" />
+    <file path="/custom.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398373738189" ignored="false" />
     <file path="/import.less" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398274053276" ignored="false" />
+    <file path="/inner" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398373286599" ignored="false" />
+    <file path="/inner.html" changelist="7eb983bf-d621-46bf-9998-2e6e57d1cea0" time="1398373699429" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +45,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="custom.less" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="custom.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/less/custom.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="188" column="44" selection-start="3993" selection-end="3993" vertical-scroll-proportion="0.5237515">
+            <state line="290" column="28" selection-start="5861" selection-end="5861" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inner.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/inner.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="84" column="10" selection-start="6583" selection-end="6583" vertical-scroll-proportion="0.9130435">
               <folding />
             </state>
           </provider>
@@ -49,7 +66,7 @@
       <file leaf-file-name="ecopit.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/ecopit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="48" selection-start="4787" selection-end="4787" vertical-scroll-proportion="-7.1153846">
+            <state line="159" column="4" selection-start="6669" selection-end="7190" vertical-scroll-proportion="-5.076923">
               <folding />
             </state>
           </provider>
@@ -73,8 +90,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/jworks/fear/thermo/instructions.html" />
-        <option value="$PROJECT_DIR$/jworks/fear/thermo/js/helpers.js" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/less/custom-faq.less" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/faq.html" />
         <option value="$PROJECT_DIR$/jworks/fear/thermo/less/custom.less" />
@@ -88,7 +103,9 @@
         <option value="$PROJECT_DIR$/works/test.html" />
         <option value="$PROJECT_DIR$/jworks/fear/ecopit/less/import.less" />
         <option value="$PROJECT_DIR$/jworks/fear/ecopit/ecopit.html" />
+        <option value="$PROJECT_DIR$/jworks/fear/ecopit/inner" />
         <option value="$PROJECT_DIR$/jworks/fear/ecopit/less/custom.less" />
+        <option value="$PROJECT_DIR$/jworks/fear/ecopit/inner.html" />
       </list>
     </option>
   </component>
@@ -211,28 +228,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tybys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jworks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fear" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="ecopit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -259,85 +254,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tybys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jworks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fear" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecopit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tybys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jworks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fear" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecopit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tybys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jworks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="excentrics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="promo" />
+              <option name="myItemId" value="less" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -459,6 +376,13 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
@@ -496,10 +420,11 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286219" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1891065" sideWeight="0.9129979" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1891065" sideWeight="0.6713781" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32979977" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -509,7 +434,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286219" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -576,13 +500,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/css/import.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/less/carousel.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -654,14 +571,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/ecopit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="48" selection-start="4787" selection-end="4787" vertical-scroll-proportion="-7.1153846">
+        <state line="159" column="4" selection-start="6669" selection-end="7190" vertical-scroll-proportion="-5.076923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/less/custom.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="188" column="44" selection-start="3993" selection-end="3993" vertical-scroll-proportion="0.5237515">
+        <state line="290" column="28" selection-start="5861" selection-end="5861" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/inner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="10" selection-start="6583" selection-end="6583" vertical-scroll-proportion="0.9130435">
           <folding />
         </state>
       </provider>
