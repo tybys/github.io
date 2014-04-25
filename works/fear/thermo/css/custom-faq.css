@@ -1,0 +1,97 @@
+.content-inner-faq h2 {
+  border-bottom: 2px solid #eb1c24;
+  padding: 0px 0px 14px;
+}
+.content-inner-faq h2 span {
+  display: inline-block;
+  width: 25px;
+  height: 24px;
+  margin: 0px 0px 0px 20px;
+  vertical-align: middle;
+  background: url('../img/faq.png') no-repeat scroll 0% 0% transparent;
+}
+.content-inner-faq .question {
+  border-bottom: 2px solid #efefef;
+  padding-bottom: 15px;
+}
+.content-inner-faq .question .left-area {
+  width: 90px;
+  display: inline-block;
+  vertical-align: top;
+}
+.content-inner-faq .question .left-area span {
+  font-size: 14px;
+  font-weight: bold;
+}
+.content-inner-faq .question .left-area span:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 0px 0px 10px;
+  width: 1px;
+  height: 13px;
+  background: none repeat scroll 0% 0% #C4C4C4;
+}
+.content-inner-faq .question .right-area {
+  display: inline-block;
+  vertical-align: top;
+  width: 90%;
+}
+.content-inner-faq .question .right-area p {
+  font-size: 14px;
+}
+.content-inner-faq .question .right-area p.answer {
+  color: #424242;
+  background: #f4f4f4;
+  padding: 25px;
+  margin-bottom: 0;
+  position: relative;
+}
+.content-inner-faq .question .right-area p.answer:before {
+  content: "";
+  display: block;
+  background: url('../img/pipka.png') no-repeat;
+  position: absolute;
+  width: 9px;
+  height: 21px;
+  top: -19px;
+  left: 33px;
+}
+.content-inner-faq .question .right-area .btn.btn-custom {
+  height: 2.2em;
+  margin: 0px 0px 0px 0;
+  font-size: 15px;
+  color: #FFF;
+  background: none repeat scroll 0% 0% #EB1C24;
+  border-radius: 0px;
+  position: relative;
+}
+.content-inner-faq .question .right-area .btn.btn-custom i {
+  background: none repeat scroll 0% 0% #E1161E;
+  position: absolute;
+  right: -33px;
+  top: 0px;
+  height: 2.2em;
+  width: 33px;
+}
+.content-inner-faq .question .right-area .btn.btn-custom i:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: url('../img/aarr.png') no-repeat scroll center center transparent;
+  width: 14px;
+  height: 14px;
+}
+.content-inner-faq .ask {
+  text-align: right;
+}
+.content-inner-faq .ask .btn.btn-custom {
+  height: 2.2em;
+  margin: 30px 0px 0px 0;
+  font-size: 15px;
+  color: #FFF;
+  background: none repeat scroll 0% 0% #EB1C24;
+  border-radius: 0px;
+  position: relative;
+}

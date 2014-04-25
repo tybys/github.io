@@ -1,0 +1,120 @@
+@import "custom-vars";
+
+.content-inner-wishlist {
+	.pagination {
+		left: 0;
+	}
+	h2 {
+		font-family: @titlecolor;
+		color: @titlecolor;
+		font-size: 24px;
+
+		border-bottom: 2px solid #EB1C24;
+		padding: 0px 0px 14px;
+		span.favorites {
+			width: 22px;
+			height: 20px;
+			display: inline-block;
+			margin: 0 0 0 22px;
+			background: url('../img/star.png') no-repeat;
+			&:hover {
+				cursor: pointer;
+				background-position: -22px 0;
+			}
+		}
+	}
+
+	.item {
+		.to-cart {
+			color: red;
+			display: inline-block;
+			margin: 0;
+			position: absolute;
+			bottom: 15px;
+			right: 15px;
+			line-height: 19px;
+			&:hover {
+				cursor: pointer;
+			}
+			&:after {
+				margin: 0 0 0 5px;
+				content: '';
+				width: 16px;
+				height: 14px;
+				background: url('../img/cart.png') no-repeat;
+				background-size: 93%;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+		.item-widget-close {
+			width: 11px;
+			height: 11px;
+			position: absolute;
+			right: 7px;
+			top: 7px;
+			background: url('../img/star.png') no-repeat;
+			background-position: 0 -20px;
+			&:hover {
+				cursor: pointer;
+				background-position: -11px -20px;
+			}
+		}
+		position: relative;
+		top: 0;
+		left: 0;
+		&:first-child {
+			margin-left: 0;
+		}
+		margin-left: 1.2%;
+		//width: 24.1%;
+		width: 183px;
+		padding: 12px;
+		border: 2px solid #f8f8f8;
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+		a {
+			display: block;
+			font-size: 12px;
+			margin: 5px auto 27px auto;
+		}
+		span {
+			display: block;
+			margin: 0 0 8px 0;
+			&.amount {
+				display: inline-block;
+				margin: 0 auto;
+			}
+		}
+		&.sale,
+		&.new { // скидка, новинка
+			.item-widget {
+
+				span {
+					margin: 0;
+				}
+				position: absolute;
+				top: 0;
+				right: 0;
+
+				padding: 5px 6px 3px 6px;
+				background: #ffe7a8;
+				border: 1px solid #ffdb7c;
+				border-radius: 1px;
+				color: #31353d;
+				font-family: @titlefont;
+				font-size: 12px;
+				text-shadow: 1px 0 1px @white;
+				text-transform: uppercase;
+			}
+		}
+		&.new {
+			.item-widget {
+				background: #ddffa8;
+				border-color: #c1ea81;
+			}
+		}
+	}
+}

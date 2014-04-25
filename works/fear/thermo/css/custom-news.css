@@ -1,0 +1,54 @@
+.content-inner-news .each-news {
+  clear: both;
+  border-bottom: 2px solid #efefef;
+  margin: 25px 0 0;
+  padding: 0 0 25px 0;
+}
+.content-inner-news .each-news:last-child {
+  border: none;
+}
+.content-inner-news .each-news a.btn-custom.red {
+  font-size: 15px;
+  border-radius: 0;
+  background: #eb1c24;
+  color: #ffffff;
+}
+.content-inner-news .each-news .cap p span {
+  font-weight: bold;
+  font-size: 14px;
+}
+.content-inner-news .each-news .cap p span:after {
+  content: "";
+  display: inline-block;
+  margin: 0 10px;
+  width: 1px;
+  height: 13px;
+  background: none repeat scroll 0% 0% #C4C4C4;
+}
+.content-inner-news .each-news .cap p a {
+  font-size: 18px;
+  color: #eb1c24;
+}
+.content-inner-news .each-news .left {
+  width: 59.5%;
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+}
+.content-inner-news .each-news .left p {
+  font-size: 14px;
+}
+.content-inner-news .each-news .right {
+  width: 36.5%;
+  display: inline-block;
+  float: none;
+  margin: 0 0 0 29px;
+}
+.content-inner-news .each-news .right img {
+  float: right;
+  margin: -15px 0 0 0;
+  height: 148px;
+}
+.content-inner-news .each-news .controls {
+  clear: both;
+}
