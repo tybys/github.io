@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'futura';
+  src: url('../fonts/futurafuturislightc-webfont.eot');
+  src: url('../fonts/futurafuturislightc-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/futurafuturislightc-webfont.woff') format('woff'), url('../fonts/futurafuturislightc-webfont.ttf') format('truetype'), url('../fonts/futurafuturislightc-webfont.svg#futurafuturislightcregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 @iph only screen and (min-device-width : 320px) and (max-device-width : 480px);
 html {
   min-height: 100%;
@@ -6,6 +13,8 @@ html {
 body {
   height: 100%;
   background: #f6f6f6;
+  font-family: 'futura';
+  font-weight: 100;
 }
 .container-fluid {
   margin-bottom: 85px;
@@ -88,44 +97,45 @@ body {
   background: #ed0577;
   color: #ffffff;
 }
-.row.carousel .carousel-indicators {
+.row.carousel_ .carousel-indicators {
   display: none;
 }
-.row.carousel .glyphicon-chevron-left {
+.row.carousel_ .glyphicon-chevron-left {
   background: url('../img/slider/left.png') no-repeat;
   width: 46px;
   height: 65px;
   left: 16px;
 }
-.row.carousel .glyphicon-chevron-right {
+.row.carousel_ .glyphicon-chevron-right {
   background: url('../img/slider/right.png') no-repeat;
   width: 46px;
   height: 65px;
   right: 0;
 }
-.row.carousel .carousel-caption {
+.row.carousel_ .carousel-caption {
   position: absolute;
   text-align: left;
-  top: 27px;
+  top: 22px;
   max-width: 730px;
 }
-.row.carousel .carousel-caption .divider {
+.row.carousel_ .carousel-caption .divider {
   margin-bottom: 22px;
 }
-.row.carousel .carousel-caption h2 {
+.row.carousel_ .carousel-caption h2 {
   text-transform: uppercase;
   font-size: 36px;
-  line-height: 66px;
-  padding: 10px 0;
+  font-weight: 100;
+  line-height: 78px;
+  padding: 22px 0 12px 0;
   background: #ed0577;
   color: white;
   display: inline;
 }
-.row.carousel .carousel-caption p {
+.row.carousel_ .carousel-caption p {
   max-width: 435px;
   padding: 4px 0;
   font-size: 24px;
-  line-height: 38px;
+  line-height: 35px;
   display: inline;
   color: white;
   background: #535456;
@@ -204,15 +214,35 @@ body {
   text-align: center;
   padding: 0;
 }
+.row.categories-content .col-md-4:first-of-type {
+  text-align: left;
+}
+.row.categories-content .col-md-4:first-of-type h2,
+.row.categories-content .col-md-4:first-of-type p {
+  padding-left: 0;
+}
+.row.categories-content .col-md-4:last-of-type {
+  text-align: right;
+}
+.row.categories-content .col-md-4:last-of-type h2,
+.row.categories-content .col-md-4:last-of-type p {
+  padding-left: 16px;
+}
+.row.categories-content .col-md-4 h2,
+.row.categories-content .col-md-4 p {
+  padding-left: 8px;
+}
 .row.categories-content .col-md-4 h2 {
   text-align: left;
   font-size: 24px;
-  line-height: 38px;
+  line-height: 27px;
   color: #ffffff;
 }
 .row.categories-content .col-md-4 h2 span {
   padding: 4px 0;
   background: #535456;
+  font-weight: 100;
+  font-size: 18px;
 }
 .row.categories-content .col-md-4 img {
   width: calc(100% - 15px);
@@ -227,6 +257,7 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   color: #5a5a5f;
+  font-weight: 100;
 }
 .row.spamming .form-inline input {
   border: none;
@@ -234,6 +265,7 @@ body {
   background: #ffffff;
   height: 35px;
   width: 565px;
+  font-weight: 100;
 }
 .row.spamming .form-inline button {
   border: none;
@@ -244,6 +276,7 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   margin-left: 12px;
+  font-weight: 100;
 }
 .row.content-inner h1,
 .row.content-news h1 {
@@ -295,6 +328,7 @@ body {
 }
 .row.news-list .news-item div a.read-more {
   margin-left: 1%;
+  color: #333333;
 }
 /*
 margin-top: -65px;

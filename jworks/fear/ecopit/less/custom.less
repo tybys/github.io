@@ -1,3 +1,14 @@
+@font-face {
+	font-family: 'futura';
+	src: url('../fonts/futurafuturislightc-webfont.eot');
+	src: url('../fonts/futurafuturislightc-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/futurafuturislightc-webfont.woff') format('woff'),
+	url('../fonts/futurafuturislightc-webfont.ttf') format('truetype'),
+	url('../fonts/futurafuturislightc-webfont.svg#futurafuturislightcregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 @arial:  Arial, sans-serif;
 // For mobile:
 @mobile: ~"screen and (min-width : 480px)";
@@ -23,6 +34,8 @@ html {
 body {
 	height: 100%;
 	background: rgb(246, 246, 246);
+	font-family: 'futura';
+	font-weight: 100;
 }
 .container-fluid {
 	margin-bottom: 85px;
@@ -110,7 +123,7 @@ body {
 			}
 		}
 	}
-	&.carousel { // main only
+	&.carousel_ { // main only
 		.carousel-indicators {display: none}
 		img {
 //			max-height: 391px;
@@ -130,7 +143,7 @@ body {
 		.carousel-caption {
 			position: absolute;
 			text-align: left;
-			top: 27px;
+			top: 22px;
 			max-width: 730px;
 			.divider {
 				margin-bottom: 22px;
@@ -138,8 +151,9 @@ body {
 			h2 {
 				text-transform: uppercase;
 				font-size: 36px;
-				line-height: 66px;
-				padding: 10px 0;
+				font-weight: 100;
+				line-height: 78px;
+				padding: 22px 0 12px 0;
 				background: @pink;
 				color: white;
 				display: inline;
@@ -148,7 +162,7 @@ body {
 				max-width: 435px;
 				padding: 4px 0;
 				font-size: 24px;
-				line-height: 38px;
+				line-height: 35px;
 				display: inline;
 				color: white;
 				background: rgb(83, 84, 86);
@@ -230,14 +244,31 @@ body {
 		.col-md-4 {
 			text-align: center;
 			padding: 0;
+			&:first-of-type {
+				text-align: left;
+				h2, p {
+					padding-left: 0;
+				}
+			}
+			&:last-of-type {
+				text-align: right;
+				h2, p {
+					padding-left: 16px;
+				}
+			}
+			h2, p {
+				padding-left: 8px;
+			}
 			h2 {
 				text-align: left;
 				font-size: 24px;
-				line-height: 38px;
+				line-height: 27px;
 				color: rgb(255, 255, 255);
 				span {
 					padding: 4px 0;
 					background: rgb(83, 84, 86);
+					font-weight: 100;
+					font-size: 18px;
 
 				}
 			}
@@ -256,6 +287,7 @@ body {
 				font-size: 14px;
 				text-transform: uppercase;
 				color: rgb(90, 90, 95);
+				font-weight: 100;
 			}
 			input {
 				border: none;
@@ -263,6 +295,7 @@ body {
 				background: @white;
 				height: 35px;
 				width: 565px;
+				font-weight: 100;
 			}
 			button {
 				border: none;
@@ -273,6 +306,7 @@ body {
 				font-size: 18px;
 				text-transform: uppercase;
 				margin-left: 12px;
+				font-weight: 100;
 			}
 		}
 	}
@@ -335,6 +369,7 @@ body {
 				}
 				a.read-more {
 					margin-left: 1%;
+					color: rgb(51, 51, 51);
 				}
 			}
 		}
