@@ -15,7 +15,7 @@
 // For iphone:
 @iphoneLandscape: ~"only screen and (min-device-width : 320px) and (max-device-width: 480px) and (orientation: landscape)";
 @iphonePortrait: ~"only screen and (min-device-width : 320px) and (max-device-width: 480px) and (orientation: portrait)";
-@iph ~"only screen and (min-device-width : 320px) and (max-device-width : 480px)";
+//@iph ~"only screen and (min-device-width : 320px) and (max-device-width : 480px)";
 //* For ipad:
 @ipad: ~"screen and (min-width : 760px) and (max-width: 1024px) and (orientation:landscape)";
 @ipadPortrait: ~"screen and (min-width : 760px) and (max-width: 1024px) and (orientation:portrait)";
@@ -124,6 +124,11 @@ body {
 		}
 	}
 	&.carousel_ { // main only
+		.item {
+			img {
+				margin: 0 auto;
+			}
+		}
 		.carousel-indicators {display: none}
 		img {
 //			max-height: 391px;
@@ -204,7 +209,7 @@ body {
 					background: @pink;
 					z-index: 999;
 					position: relative;
-
+					box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 					a {
 						font-size: 24px;
 						color: @white;
@@ -223,6 +228,7 @@ body {
 					color: white;
 					z-index: 999;
 					position: relative;
+					box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 					a {
 						color: white;
 					}

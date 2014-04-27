@@ -5,7 +5,6 @@
   font-weight: normal;
   font-style: normal;
 }
-@iph only screen and (min-device-width : 320px) and (max-device-width : 480px);
 html {
   min-height: 100%;
   position: relative;
@@ -97,6 +96,9 @@ body {
   background: #ed0577;
   color: #ffffff;
 }
+.row.carousel_ .item img {
+  margin: 0 auto;
+}
 .row.carousel_ .carousel-indicators {
   display: none;
 }
@@ -178,6 +180,7 @@ body {
   background: #ed0577;
   z-index: 999;
   position: relative;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 .row.categories ul li.active a {
   font-size: 24px;
@@ -196,6 +199,7 @@ body {
   color: white;
   z-index: 999;
   position: relative;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 .row.categories ul li:hover a {
   color: white;
