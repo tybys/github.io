@@ -35,6 +35,23 @@
             </LessProfile>
           </value>
         </entry>
+        <entry key="2">
+          <value>
+            <LessProfile>
+              <option name="compressOutput" value="true" />
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="$PROJECT_DIR$/works/leform/css" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="id" value="2" />
+              <option name="lessDirPath" value="$PROJECT_DIR$/works/leform/less" />
+              <option name="name" value="leform" />
+            </LessProfile>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
