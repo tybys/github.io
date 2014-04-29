@@ -9,7 +9,29 @@
 @ipad: ~"screen and (min-width : 760px) and (max-width: 1024px) and (orientation:landscape)";
 @ipadPortrait: ~"screen and (min-width : 760px) and (max-width: 1024px) and (orientation:portrait)";
 @ipadLandscape: ~"screen and (min-width : 760px) and (max-width: 1024px) and (orientation:landscape)";
-//
+
+// leform vars
+// colors
+@red: 					~"rgba(244, 96, 95, 1)";
+@blue: 					~"rgba(97, 84, 255, 1)";
+@black: 				~"rgba(18, 18, 18, 0.5)";
+@gray: 					~"rgba(109, 109, 109)";
+@lightgray: 			~"rgba(142, 144, 146, 1)";
+@white: 				~"rgba(255, 255, 255, 1)";
+
+// grid
+
+/* fonts
+Контент
+Тизер — 				Fedra Serif B Pro / Book Italic
+Формы заполнения — 		Fedra Serif B Pro / Book Italic
+Гиперссылки — 			Fedra Serif B Pro / Book Italic
+Субзаголовок — 			Fedra Serif B Pro / Book Italic
+Заголовок — 			Fedra Sans Condensed Pro / Light
+Лиды — 					Fedra Sans Condensed Pro / Light
+Цена — 					Fedra Sans Condensed Pro / Light
+Основной текст и впомогательные обозначения — Fedra Sans Alt Pro / Book
+*/
 html {
 	position: relative;
 	min-height: 100%;
@@ -18,7 +40,32 @@ html {
 body {
 	background: rgba(255, 255, 255, 0);
 	height: 100%;
+	margin-bottom: 35px;
 	h1 {
 		background: transparent;
+	}
+}
+.container {
+	width: 958px;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+#footer {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: @black;
+	height: 35px;
+}
+
+.row {
+	&.content-area {
+		display: block;
+		text-indent: -9999px;
+		width: 1920px;
+		height: 1200px;
+		background: url('../img/big/main_first_opt.svg') no-repeat;
+		background-size: contain;
 	}
 }
