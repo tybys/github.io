@@ -7,6 +7,12 @@
         $('#toggle').click(function ()
         {
             $('#grid').fadeToggle();
-        })
+        });
+
+
+        if ($('body').outerWidth() < 600)
+        {
+//            $('.logotype').remove();
+        }
     });
 })(jQuery);
