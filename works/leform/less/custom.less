@@ -91,6 +91,11 @@ body {
 		}
 	}
 	.social {
+		.icons {
+			width: 160px;
+			height: 32px;
+			margin: 0 auto;
+		}
 		.icons a {
 			width: 32px;
 			height: 32px;
@@ -113,6 +118,12 @@ body {
 		.icons .twitter {background-position: -64px -32px;}
 		.icons .pinterest {background-position: -96px -32px;}
 		.icons .vkontakte {background-position: -128px -32px;}
+
+		.icons .instagramm.checked {background-position: 0 0;}
+		.icons .facebook {}
+		.icons .twitter {}
+		.icons .pinterest.checked {background-position: -96px 0;}
+		.icons .vkontakte {}
 	}
 	.copyright {
 		text-align: right;
@@ -197,5 +208,19 @@ body {
 				}
 			}
 		}
+	}
+	&.content-area {
+		.container {
+			position: relative;
+			top: 0; left: 0;
+			h1 {
+				position: absolute;
+				font-family: @CondensedLight;
+				font-size: 72px;
+				color: white;
+			}
+			img {}
+		}
+	;
 	}
 }
