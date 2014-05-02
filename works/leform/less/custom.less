@@ -299,6 +299,9 @@ body.debug .container {
 
 // mobile
 @media @_340to_640 {
+	body {
+//		margin-bottom: 0
+	}
 	.top {
 		.col-xs-6 {
 			padding: 0;
@@ -322,9 +325,19 @@ body.debug .container {
 	// img
 	.row {
 		&.content-area {
-			img {
-				width: 140%;
+			overflow-x: hidden;
+			img { // shit or not a shit, what is the question
+//				width: 140%;
+//				height: 416px;
+				display: none;
 			}
+			overflow-x: hidden;
+			background-image: url('../img/big/first.svg');
+			background-repeat: no-repeat;
+			background-size: auto 416px;
+			height: 416px;
+			min-width: 100%;
+			background-position: -100px !important;
 		}
 		&.menu {
 			.navbar-collapse {
@@ -344,8 +357,14 @@ body.debug .container {
 	}
 	#footer {
 		height: auto;
+//		position: static;
 		.brand, .copyright {
 			text-align: center;
+		}
+		.brand,
+		.copyright,
+		.social {
+			line-height: 32px;
 		}
 	}
 }
