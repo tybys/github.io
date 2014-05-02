@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/img/icons/arrows.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/css/custom.css" afterPath="$PROJECT_DIR$/works/leform/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/less/custom.less" afterPath="$PROJECT_DIR$/works/leform/less/custom.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/js/helper.js" afterPath="$PROJECT_DIR$/works/leform/js/helper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/index.html" afterPath="$PROJECT_DIR$/works/leform/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,19 +26,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="custom.less" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="custom.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/works/leform/less/custom.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="337" column="51" selection-start="6690" selection-end="6690" vertical-scroll-proportion="-34.96" vertical-offset="4518" max-vertical-offset="5712">
+            <state line="325" column="28" selection-start="6496" selection-end="6496" vertical-scroll-proportion="0.45253864" vertical-offset="4790" max-vertical-offset="5696">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/works/leform/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="42" selection-start="4111" selection-end="4111" vertical-scroll-proportion="0.3642384" vertical-offset="1222" max-vertical-offset="2128">
+            <state line="97" column="42" selection-start="4111" selection-end="4111" vertical-scroll-proportion="-13.2" vertical-offset="1222" max-vertical-offset="2128">
               <folding />
             </state>
           </provider>
@@ -103,8 +99,8 @@
         <option value="$PROJECT_DIR$/jworks/fear/ecopit/less/custom.less" />
         <option value="$PROJECT_DIR$/works/leform/less/import.less" />
         <option value="$PROJECT_DIR$/works/leform/js/helper.js" />
-        <option value="$PROJECT_DIR$/works/leform/less/custom.less" />
         <option value="$PROJECT_DIR$/works/leform/index.html" />
+        <option value="$PROJECT_DIR$/works/leform/less/custom.less" />
       </list>
     </option>
   </component>
@@ -737,16 +733,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/less/custom.less">
+    <entry file="file://$PROJECT_DIR$/works/leform/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="337" column="51" selection-start="6690" selection-end="6690" vertical-scroll-proportion="-34.96" vertical-offset="4518" max-vertical-offset="5712">
+        <state line="97" column="42" selection-start="4111" selection-end="4111" vertical-scroll-proportion="-13.2" vertical-offset="1222" max-vertical-offset="2128">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/index.html">
+    <entry file="file://$PROJECT_DIR$/works/leform/less/custom.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="42" selection-start="4111" selection-end="4111" vertical-scroll-proportion="0.3642384" vertical-offset="1222" max-vertical-offset="2128">
+        <state line="325" column="28" selection-start="6496" selection-end="6496" vertical-scroll-proportion="0.45253864" vertical-offset="4790" max-vertical-offset="5696">
           <folding />
         </state>
       </provider>
