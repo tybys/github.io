@@ -11,6 +11,7 @@
 @ipadLandscape: ~"screen and (min-width : 760px) and (max-width: 1024px) and (orientation:landscape)";
 
 @_1024to_1920: ~"screen and (min-width : 1024px) and (max-width: 1920px)";
+@_340to_640: ~"screen and (min-width : 320px) and (max-width: 640px)";
 // leform vars
 // colors
 @red: 					~"rgba(244, 96, 95, 1)";
@@ -59,6 +60,7 @@ body {
 		top: 0; left: 0;
 		width: 100%;
 		height: 100%;
+		z-index: -1;
 	}
 	#toggle {
 		position: fixed;
@@ -70,15 +72,6 @@ body.debug .container {
 	width: 958px;
 	border-right: 1px solid black;
 	border-left: 1px solid black;
-}
-
-@media @_1024to_1920 {
-	.container {
-		width: 960px;
-	}
-}
-.navbar-toggle .icon-bar {
-	background-color: rgba(0, 0, 0, 1);
 }
 
 #footer {
@@ -159,13 +152,9 @@ body.debug .container {
 		padding-top: 32px;
 
 		.container {
-			min-height: 81px;
+
 
 			.col-md-2 {
-//				width: ~"calc(192px - 30px)";
-				width: 192px;
-				line-height: 92px;
-				margin: 0; padding: 0;
 
 				a {
 					color: black;
@@ -196,7 +185,34 @@ body.debug .container {
 			}
 		}
 	}
+	&.logotype-mobile {
+		text-align: center;
+	}
 	&.menu {
+		.navbar-header {
+			text-align: center;
+			.navbar-toggle {
+				background: none;
+				border: none;
+				float: none;
+				&.down {
+					.arrows-sprite {
+						width: 16px;
+						height: 20px;
+						background: url('../img/icons/arrows.png') no-repeat;
+						display: block;
+					}
+				}
+				.arrows-sprite {
+					width: 16px;
+					height: 20px;
+					background: url('../img/icons/arrows.png') no-repeat;
+					display: block;
+					background-position: -17px 0;
+				}
+			}
+		}
+
 		.container {
 			padding: 0;
 
@@ -262,6 +278,75 @@ body.debug .container {
 			}
 			img {}
 		}
-	;
+	}
+}
+
+// desktop 1024 to 1920
+@media @_1024to_1920 {
+	.container {
+		width: 960px;
+		&.top {
+			min-height: 81px;
+		}
+	}
+	.col-md-2 {
+		// width: ~"calc(192px - 30px)";
+		width: 192px;
+		line-height: 92px;
+		margin: 0; padding: 0;
+	}
+}
+
+// mobile
+@media @_340to_640 {
+	.top {
+		.col-xs-6 {
+			padding: 0;
+		}
+		.phone,
+		.cabinet {
+			text-align: left;
+		}
+		.lang-switch,
+		.cart {
+			text-align: right;
+		}
+		.cabinet, .cart {
+			margin-top: 18px;
+		}
+	}
+	.logotype-mobile {
+		margin-top: 12px;
+	}
+
+	// img
+	.row {
+		&.content-area {
+			img {
+				width: 319px;
+				height: 460px;
+			}
+		}
+		&.menu {
+			.navbar-collapse {
+				background: black;
+				ul {
+					li {
+						background: none;
+						a {
+							background: none;
+							color: white !important;
+						}
+					}
+				}
+
+			}
+		}
+	}
+	#footer {
+		height: auto;
+		.brand, .copyright {
+			text-align: center;
+		}
 	}
 }

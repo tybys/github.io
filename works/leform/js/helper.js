@@ -14,5 +14,13 @@
         {
 //            $('.logotype').remove();
         }
+
+        $('.navbar-toggle').on('click', function ()
+        {
+            $(this).toggleClass('down');
+            $('#top_nav').slideToggle();
+        });
+
+
     });
 })(jQuery);
