@@ -280,6 +280,110 @@ body.debug .container {
 			img {}
 		}
 	}
+	&.order-history { // история заказов
+		.float-menu {
+			position: absolute;
+			top: 20%; left: 64px;
+			padding: 0; margin: 0;
+			li {
+				list-style: none;
+				&.heading {
+					font-family: @BBook;
+					font-size: 12px;
+					font-style: italic;
+					color: black;
+				}
+				a {
+					font-family: @AltDemi;
+					font-size: 12px;
+					color: black;
+				}
+			}
+		}
+		.history-items {
+			margin-left: 257px;
+			h2 {
+				font-family: @CondensedLight;
+				font-size: 64px;
+				text-transform: uppercase;
+				color: black;
+			}
+			.item {
+				width: 160px;
+				float: left;
+				margin-left: 32px;
+				&:first-of-type {margin-left: 0;} // remove margin for fist item
+				.cap {
+					font-family: @AltDemi;
+					font-weight: 100;
+					font-size: 12px;
+					color: rgb(128, 128, 128);
+					.articul {
+						float: left;
+						width: 50%;
+					}
+					.date {
+						float: left;
+						width: 50%;
+
+						text-align: right;
+					}
+
+				}
+				img {
+					width: 100%;
+				}
+				.color-sizes {
+					margin-top: 20px;
+					margin-bottom: 20px;
+					span {
+						width: 32px;
+						height: 32px;
+						display: inline-block;
+						vertical-align: top;
+
+						line-height: 32px;
+						text-align: center;
+					}
+					.brown {
+						background: rgb(179, 161, 139);
+					}
+					.size {
+						width: 31px;
+						height: 31px;
+
+						border: 1px solid black;
+						background: rgb(255, 255, 255);
+
+					}
+					.amount {
+
+					}
+				}
+				.brand {
+					font-family: @AltDemi;
+					font-weight: 100;
+					font-size: 12px;
+					color: black;
+				}
+				.price {
+					font-family: @AltDemi;
+					font-size: 24px;
+					color: black;
+
+					margin-bottom: 6px;
+					.valute {
+
+					}
+				}
+				.status {
+					font-family: @AltDemi;
+					font-size: 14px;
+					color: rgb(25, 24, 24);
+				}
+			}
+		}
+	}
 	&.contact-info {
 		.info {
 			padding: 0;
