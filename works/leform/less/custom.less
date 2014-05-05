@@ -75,6 +75,8 @@ body {
 	font-size: 64px;
 	color: rgb(0, 0, 0);
 	text-transform: uppercase;
+
+	margin-left: 28%;
 	&.date {
 		span {
 			display: inline-block;
@@ -115,6 +117,16 @@ body {
 	font-family: @FedraSansAlt;
 	font-size: 14px;
 	color: white;
+	border-radius: 0;
+
+	width: 144px;
+	height: 32px;
+}
+.simple-transparent {
+	background: transparent;
+	font-family: @FedraSansAlt;
+	font-size: 14px;
+	color: black;
 	border-radius: 0;
 
 	width: 144px;
@@ -180,6 +192,21 @@ form {
 	}
 	&.static {
 		position: static;
+	}
+	&.left {
+		text-align: left;
+		max-width: 300px;
+		margin: 0 auto 0 0;
+	}
+	&.right {
+		text-align: right;
+		max-width: 420px;
+		margin: 0 0 0 auto;
+	}
+	&.serif {
+		font-family: @FedraSerifBook;
+		font-size: 21px;
+		font-style: italic;
 	}
 }
 //
@@ -941,11 +968,38 @@ body.debug .container {
 
 				}
 			}
-			.status {
-				font-family: @FedraSansAlt;
-				font-size: 14px;
-				color: rgb(25, 24, 24);
+			.change {
+				font-family: @FedraSerifBook;
+				font-size: 12px;
+				font-style: italic;
+				color: black;
+				span {
+					&:first-of-type {
+						&:after {
+							content: '/';
+							padding-left: 5px;
+							color: black;
+						}
+					}
+				}
 			}
+		}
+	}
+	.cart-total {
+		margin-left: 28%;
+		.heading {
+			font-family: @FedraSansAlt;
+			font-size: 12px;
+			color: rgb(128, 128, 128);
+
+			display: block;
+		}
+		.total {
+			font-family: @FedraSansCondensedLight;
+			font-size: 64px;
+			text-transform: uppercase;
+
+			display: block;
 		}
 	}
 }
