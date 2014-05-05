@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>leform main</title>
+    <title>leform contacts</title>
 
     <!-- Bootstrap -->
     <link href="css/import.css" rel="stylesheet">
@@ -68,59 +68,95 @@
             </nav>
         </div>
     </div>
-    <div class="row content-area">
-        <div class="container">
-            <h1 class="motd">Для него<br/> Для неё<br/> Для дома<br/> Парфюм</h1>
-        </div>
-        <img src="img/big/first.svg" width="100%" />
-    </div>
-</div>
-<div class="row contact-info">
-    <div class="container">
-        <div class="col-md-3 info">
-            <p>Работаем ежедневно<br/> c 10 до 22 часов</p>
-            <a href="tel:+7 (495) 660 02 80">+7 (495) 660 02 80</a>
-            <a href="mailto:info@leform.ru">info@leform.ru</a>
-        </div>
-        <div class="col-md-2 bottom-menu">
-            <ul>
-                <li><a href="#">Салоны</a></li>
-                <li><a href="#">Пресса</a></li>
-                <li><a href="#">Акции</a></li>
-                <li><a href="#">Вакансии</a></li>
-            </ul>
-        </div>
-        <div class="col-md-4 bottom-form">
-            <!--<form role="form">-->
-                <!--<div class="form-group">    -->
-                    <!--<input type="email" class="form-control" id="exampleInputEmail1" placeholder="e-mail">-->
-                    <!--<span class="glyphicon glyphicon-arrow-right form-control-feedback"></span>-->
-                <!--</div>-->
-                <!--<div class="form-group">-->
-                    <!--<input type="text" class="form-control" id="exampleInputSearch" placeholder="search">-->
-                    <!--<span class="glyphicon glyphicon-search form-control-feedback"></span>-->
-                <!--</div>-->
-                <!--<button type="submit" class="btn btn-default" style="display: none;">Submit</button>-->
-            <!--</form>-->
 
-            <form role="form">
-                <div class="form-group has-feedback">
-                    <input type="text" class="form-control" id="inputSuccess2" placeholder="e-mail">
-                    <span class="glyphicon glyphicon-arrow-right form-control-feedback"></span>
+    <div class="row content-area contacts">
+        <div class="container">
+            <div class="map-area">
+                <ul class="left">
+                    <li><a href="#">Театральная</a></li>
+                    <li><a href="#">Баррикадная</a></li>
+                    <li><a href="#">Дмитровское<br/> шоссе</a></li>
+                </ul>
+                <img src="img/map.svg" />
+                <ul class="right">
+                    <li class="heading">Метро театральная</li>
+                    <li>Дмитровский пер., 7</li>
+                    <li>107031, Москва</li>
+                    <li class="pad">Россия</li>
+
+                    <li>+7 (495) 660 02 80</li>
+                    <li class="pad">mt@leform.ru</li>
+
+                    <li>с 9:00 до 21:00</li>
+                    <li>Без выходных</li>
+                </ul>
+                <a href="#" class="google-map">Перейти к карте Google</a>
+            </div>
+
+            <div class="callback">
+                <div class="col-md-3">
+                    <h3>Службка поддержки</h3>
+                    <a href="tel:+7 (495) 768 72 72">+7 (495) 768 72 72</a>
+                    <a href="mailto:client@leformshop.ru">client@leformshop.ru</a>
+                    <p>с 10:00 до 22:00</p>
                 </div>
-                <div class="form-group has-feedback">
-                    <input type="text" class="form-control" id="inputWarning2" placeholder="search">
-                    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                <div class="col-md-9">
+                    <h3>Отправить сообщение</h3>
+                    <form role="form">
+                        <div class="form-group has-feedback">
+                            <input type="text" class="form-control" id="inputSuccess2" placeholder="name">
+                        </div>
+                        <div class="form-group has-feedback">
+                            <input type="text" class="form-control" id="inputWarning2" placeholder="e-mail">
+                        </div>
+                        <div class="form-group has-feedback">
+                            <input type="text" class="form-control" id="inputWarning2" placeholder="phone">
+                        </div>
+                        <div class="form-group has-feedback">
+                            <textarea class="form-control" rows="3" placeholder="сообщение"></textarea>
+                        </div>
+                    </form>
                 </div>
-            </form>
+            </div>
         </div>
-        <div class="col-md-3 payment">
-            <span class="visa"></span>
-            <span class="master"></span>
-            <span class="paypal"></span>
+    </div>
+
+    <div class="row contact-info">
+        <div class="container">
+            <div class="col-md-3 info">
+                <p>Работаем ежедневно<br/> c 10 до 22 часов</p>
+                <a href="tel:+7 (495) 660 02 80">+7 (495) 660 02 80</a>
+                <a href="mailto:info@leform.ru">info@leform.ru</a>
+            </div>
+            <div class="col-md-2 bottom-menu">
+                <ul>
+                    <li><a href="#">Салоны</a></li>
+                    <li><a href="#">Пресса</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 bottom-form">
+                <form role="form">
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control" id="inputSuccess2" placeholder="e-mail">
+                        <span class="glyphicon glyphicon-arrow-right form-control-feedback"></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control" id="inputWarning2" placeholder="search">
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3 payment">
+                <span class="visa"></span>
+                <span class="master"></span>
+                <span class="paypal"></span>
+            </div>
         </div>
     </div>
 </div>
+
 <div id="footer">
     <div class="container">
         <div class="col-md-4 brand col-xs-12">
@@ -149,6 +185,10 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!--<script src="js/jquery.shapeshift.js"></script>-->
+<!--<script src="js/jquery.mosaicflow.js"></script>-->
+<!--<script src="js/jquery.grid-a-licious.js"></script>-->
+<!--<script src="js/jquery.nested.js"></script>-->
 <script src="js/helper.js"></script>
 <script src="js/collapse.js"></script>
 <script src="js/dropdown.js"></script>

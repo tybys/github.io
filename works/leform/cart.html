@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>leform main</title>
+    <title>leform personal info</title>
 
     <!-- Bootstrap -->
     <link href="css/import.css" rel="stylesheet">
@@ -69,16 +69,18 @@
         </div>
     </div>
 
-    <div class="row content-area order-history">
+    <div class="row content-area cart not-half">
         <div class="container">
-            <ul class="float-menu">
-                <li class="heading">Разделы</li>
-                <li><a href="#">История заказов</a></li>
-                <li><a href="#">Личный кабинет</a></li>
-                <li><a href="#">Выйти</a></li>
-            </ul>
-            <div class="history-items">
-                <h2>История заказов</h2>
+            <div class="col-md-5">
+                <h2 class="subtitle">Введите промо-код или номер карты клиента, чтобы получить скидку</h2>
+                <form role="form">
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control" id="inputWarning2" placeholder="search">
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-7 cart-items">
                 <div class="item"> <!-- full width image -->
                     <div class="cap">
                         <span class="articul">№101</span>
@@ -101,13 +103,56 @@
                         <p>Подтвержден, Ожидайте доставку</p>
                     </div>
                 </div>
-
-                <div class="item"> <!-- not full width image -->
+                <div class="item"> <!-- full width image -->
                     <div class="cap">
                         <span class="articul">№101</span>
                         <span class="date">25.03.2014</span>
                     </div>
-                    <img src="img/small/silver-shoes.svg" />
+                    <img src="img/small/brown-shoes.svg" />
+                    <div class="color-sizes">
+                        <span class="brown"></span>
+                        <span class="size">42</span>
+                        <span class="amount">1</span>
+                    </div>
+                    <div class="brand">
+                        <p>Rick Owens</p>
+                    </div>
+                    <div class="price">
+                        24 500
+                        <span class="valute">Р.</span>
+                    </div>
+                    <div class="status">
+                        <p>Подтвержден, Ожидайте доставку</p>
+                    </div>
+                </div>
+                <div class="item"> <!-- full width image -->
+                    <div class="cap">
+                        <span class="articul">№101</span>
+                        <span class="date">25.03.2014</span>
+                    </div>
+                    <img src="img/small/brown-shoes.svg" />
+                    <div class="color-sizes">
+                        <span class="brown"></span>
+                        <span class="size">42</span>
+                        <span class="amount">1</span>
+                    </div>
+                    <div class="brand">
+                        <p>Rick Owens</p>
+                    </div>
+                    <div class="price">
+                        24 500
+                        <span class="valute">Р.</span>
+                    </div>
+                    <div class="status">
+                        <p>Подтвержден, Ожидайте доставку</p>
+                    </div>
+                </div>
+                <div class="item"> <!-- full width image -->
+                    <div class="cap">
+                        <span class="articul">№101</span>
+                        <span class="date">25.03.2014</span>
+                    </div>
+                    <img src="img/small/brown-shoes.svg" />
                     <div class="color-sizes">
                         <span class="brown"></span>
                         <span class="size">42</span>
@@ -192,6 +237,10 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!--<script src="js/jquery.shapeshift.js"></script>-->
+<!--<script src="js/jquery.mosaicflow.js"></script>-->
+<!--<script src="js/jquery.grid-a-licious.js"></script>-->
+<!--<script src="js/jquery.nested.js"></script>-->
 <script src="js/helper.js"></script>
 <script src="js/collapse.js"></script>
 <script src="js/dropdown.js"></script>

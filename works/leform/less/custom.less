@@ -15,20 +15,18 @@
 @_340to_640: ~"screen and (min-width : 320px) and (max-width: 640px)";
 // leform vars
 // colors
-@red: 					~"rgba(244, 96, 95, 1)";
-@blue: 					~"rgba(97, 84, 255, 1)";
-@black: 				~"rgba(18, 18, 18, 1)";
-@gray: 					~"rgba(109, 109, 109)";
-@lightgray: 			~"rgba(142, 144, 146, 1)";
-@white: 				~"rgba(255, 255, 255, 1)";
+@red: 					  ~"rgba(244, 96, 95, 1)";
+@blue: 					  ~"rgba(97, 84, 255, 1)";
+@black: 				  ~"rgba(18, 18, 18, 1)";
+@gray: 					  ~"rgba(109, 109, 109)";
+@lightgray: 			  ~"rgba(142, 144, 146, 1)";
+@white: 				  ~"rgba(255, 255, 255, 1)";
 
 // fonts
-@BBook: "Fedra Serif B Book";
-@BDemi: "Fedra Serif B Demi";
-@BMedium: "Fedra Serif B Medium 11";
-@AltDemi: "Fedra Sans Alt Demi 11";
-@CondensedLight: "Fedra Sans Condensed Light 11";
-@CondensedBook: "Fedra Sans Condensed Book";
+@FedraSerifBook: 		  "Fedra Serif B Book"; // BBook
+@FedraSansAlt: 			  "Fedra Sans Alt Demi 11";
+@FedraSansCondensedLight: "Fedra Sans Condensed Light 11"; // CondensedLight
+@FedraSansCondensedBook:  "Fedra Sans Condensed Book";
 
 // grid
 
@@ -69,10 +67,126 @@ body {
 		z-index: 999;
 	}
 }
+//*************
+// set defaults
+//*************
+.page-title{ // big h1, h2 etc
+	font-family: "Fedra Sans Condensed Light 11";
+	font-size: 64px;
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	&.date {
+		span {
+			display: inline-block;
+			vertical-align: bottom;
+
+			font-family: @FedraSansAlt;
+			font-size: 14px;
+			text-transform: none;
+		}
+		h2 {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 auto;
+		}
+	}
+}
+.float-menu { // simple float menu
+	position: absolute;
+	top: 20%; left: 64px;
+	padding: 0; margin: 0;
+	li {
+		list-style: none;
+		&.heading {
+			font-family: @FedraSerifBook;
+			font-size: 12px;
+			font-style: italic;
+			color: black;
+		}
+		a {
+			font-family: @FedraSansAlt;
+			font-size: 12px;
+			color: black;
+		}
+	}
+}
+&.simple-black { // just black button & nothing else
+	background: black;
+	font-family: @FedraSansAlt;
+	font-size: 14px;
+	color: white;
+	border-radius: 0;
+
+	width: 144px;
+	height: 32px;
+}
+form {
+	.form-group {
+		margin-bottom: 39px;
+		.has-feedback .form-control-feedback {
+			top: 3.5px;
+			right: 30px;
+
+			width: 14px;
+			height: 14px;
+
+			line-height: 14px;
+		}
+		input,
+		textarea {
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			border-bottom: 1px solid black;
+			border-radius: 0;
+
+			box-shadow: none;
+
+			font-size: 12px;
+
+			padding: 0;
+			width: 288px;
+			height: 25px;
+			&::-webkit-input-placeholder {
+				font-family: @FedraSerifBook;
+				font-size: 12px;
+				font-style: italic;
+				color: black;
+			}
+			&:-moz-placeholder {}
+		}
+		textarea {
+			height: 64px;
+			resize: none;
+		}
+	}
+}
+.subtitle {
+	font-family: @FedraSerifBook;
+	font-size: 24px;
+	font-style: italic;
+
+	margin-top: 0;
+}
+.teaser {
+	font-family: @FedraSansAlt;
+	font-size: 14px;
+	&.largest {
+		position: relative;
+		left: -40%;
+		width: 800px;
+		font-family: @FedraSansCondensedLight;
+		font-size: 64px;
+	}
+	&.static {
+		position: static;
+	}
+}
+//
+
 body.debug .container {
-	width: 958px;
-	border-right: 1px solid black;
-	border-left: 1px solid black;
+	width: 1008px;
+	background: rgba(0,0,0,0.1);
 }
 
 #footer {
@@ -83,7 +197,7 @@ body.debug .container {
 	background: @black;
 	height: 35px;
 
-	font-family: @AltDemi;
+	font-family: @FedraSansAlt;
 	font-size: 10px;
 	color: white;
 
@@ -105,7 +219,7 @@ body.debug .container {
 		.icons a {
 			width: 32px;
 			height: 32px;
-			
+
 			float: left;
 			display: inline-block;
 //			padding: 4px 0 4px 25px;
@@ -146,7 +260,7 @@ body.debug .container {
 //		background-size: contain;
 	}
 	&.top {
-		font-family: @BBook;
+		font-family: @FedraSerifBook;
 		font-style: italic;
 		font-size: 12px;
 		text-align: center;
@@ -228,7 +342,7 @@ body.debug .container {
 					li {
 						text-align: center;
 						a {
-							font-family: @CondensedBook;
+							font-family: @FedraSansCondensedBook;
 							font-size: 18px;
 							color: black;
 							text-transform: uppercase;
@@ -265,16 +379,16 @@ body.debug .container {
 //				}
 //			}
 //		}
-		
+
 
 	}
 	&.content-area {
 		.container {
 			position: relative;
 			top: 0; left: 0;
-			h1 {
+			h1.motd {
 				position: absolute;
-				font-family: @CondensedLight;
+				font-family: @FedraSansCondensedLight;
 				font-size: 72px;
 				color: white;
 			}
@@ -289,13 +403,13 @@ body.debug .container {
 			li {
 				list-style: none;
 				&.heading {
-					font-family: @BBook;
+					font-family: @FedraSerifBook;
 					font-size: 12px;
 					font-style: italic;
 					color: black;
 				}
 				a {
-					font-family: @AltDemi;
+					font-family: @FedraSansAlt;
 					font-size: 12px;
 					color: black;
 				}
@@ -304,7 +418,7 @@ body.debug .container {
 		.history-items {
 			margin-left: 257px;
 			h2 {
-				font-family: @CondensedLight;
+				font-family: @FedraSansCondensedLight;
 				font-size: 64px;
 				text-transform: uppercase;
 				color: black;
@@ -315,7 +429,7 @@ body.debug .container {
 				margin-left: 32px;
 				&:first-of-type {margin-left: 0;} // remove margin for fist item
 				.cap {
-					font-family: @AltDemi;
+					font-family: @FedraSansAlt;
 					font-weight: 100;
 					font-size: 12px;
 					color: rgb(128, 128, 128);
@@ -362,13 +476,13 @@ body.debug .container {
 					}
 				}
 				.brand {
-					font-family: @AltDemi;
+					font-family: @FedraSansAlt;
 					font-weight: 100;
 					font-size: 12px;
 					color: black;
 				}
 				.price {
-					font-family: @AltDemi;
+					font-family: @FedraSansAlt;
 					font-size: 24px;
 					color: black;
 
@@ -378,7 +492,7 @@ body.debug .container {
 					}
 				}
 				.status {
-					font-family: @AltDemi;
+					font-family: @FedraSansAlt;
 					font-size: 14px;
 					color: rgb(25, 24, 24);
 				}
@@ -423,7 +537,7 @@ body.debug .container {
 			padding: 0;
 			margin-top: 25px;
 
-			font-family: @AltDemi;
+			font-family: @FedraSansAlt;
 			font-size: 10px;
 			line-height: 15px;
 
@@ -431,7 +545,7 @@ body.debug .container {
 				margin-bottom: 28px;
 			}
 			a {
-				font-family: @BBook;
+				font-family: @FedraSerifBook;
 				font-size: 12px;
 				font-style: italic;
 				color: black;
@@ -450,7 +564,7 @@ body.debug .container {
 					list-style: none;
 					line-height: 22px;
 					a {
-						font-family: @BBook;
+						font-family: @FedraSerifBook;
 						font-size: 12px;
 						font-style: italic;
 						color: black;
@@ -492,7 +606,7 @@ body.debug .container {
 					width: 288px;
 					height: 25px;
 					&::-webkit-input-placeholder {
-						font-family: @BBook;
+						font-family: @FedraSerifBook;
 						font-size: 12px;
 						font-style: italic;
 						color: black;
@@ -518,6 +632,320 @@ body.debug .container {
 			.visa {}
 			.master {background-position: -64px 0; margin-left: 16px;}
 			.paypal {background-position: -128px 0; margin-left: 14px;}
+		}
+	}
+	&.personal-info {
+		form {
+			margin-left: 15px;
+		}
+	}
+	&.journal {
+		.col-md-3 {
+			img {
+				margin-bottom: 15px;
+			}
+		}
+		.col-md-5 {
+			.share {
+				span {
+					position: relative;
+					width: 128px;
+					height: 96px;
+					display: block;
+					background: rgba(0, 0, 0, 0.5);
+					&.pinterest {
+						background: rgb(99,11,40);
+						background: -moz-linear-gradient(left,  rgba(99,11,40,1) 0%, rgba(128,2,42,1) 100%);
+						background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(99,11,40,1)), color-stop(100%,rgba(128,2,42,1)));
+						background: -webkit-linear-gradient(left,  rgba(99,11,40,1) 0%,rgba(128,2,42,1) 100%);
+						background: -o-linear-gradient(left,  rgba(99,11,40,1) 0%,rgba(128,2,42,1) 100%);
+						background: -ms-linear-gradient(left,  rgba(99,11,40,1) 0%,rgba(128,2,42,1) 100%);
+						background: linear-gradient(to right,  rgba(99,11,40,1) 0%,rgba(128,2,42,1) 100%);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#630b28', endColorstr='#80022a',GradientType=1 );
+
+						i {
+							background: url('../img/icons/pinterestw-share-icon.svg') no-repeat;
+
+							width: 14px;
+							height: 18px;
+							display: block;
+
+							position: absolute;
+							left: ~"calc(50% - 7.5px)";
+							top: ~"calc(50% - 9px)";
+
+							&:hover {
+								background: url('../img/icons/pinterestw-share-icon.svg') no-repeat;
+							}
+						}
+					}
+					&.facebook {
+						background: -moz-linear-gradient(left,  rgba(0,0,0,0.3) 0%, rgba(57,91,128,1) 100%);
+						background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.3)), color-stop(100%,rgba(57,91,128,1)));
+						background: -webkit-linear-gradient(left,  rgba(0,0,0,0.3) 0%,rgba(57,91,128,1) 100%);
+						background: -o-linear-gradient(left,  rgba(0,0,0,0.3) 0%,rgba(57,91,128,1) 100%);
+						background: -ms-linear-gradient(left,  rgba(0,0,0,0.3) 0%,rgba(57,91,128,1) 100%);
+						background: linear-gradient(to right,  rgba(0,0,0,0.3) 0%,rgba(57,91,128,1) 100%);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#395b80',GradientType=1 );
+
+						i {
+							background: url('../img/icons/facebookw-share-icon.svg') no-repeat;
+
+							width: 7px;
+							height: 15px;
+							display: block;
+
+							position: absolute;
+							left: ~"calc(50% - 3.5px)";
+							top: ~"calc(50% - 7.5px)";
+
+							&:hover {
+								background: url('../img/icons/facebookw-share-icon.svg') no-repeat;
+							}
+						}
+					}
+					&.twitter {
+						background: rgb(58,99,134);
+						background: -moz-linear-gradient(left,  rgba(58,99,134,1) 0%, rgba(73,127,176,1) 100%);
+						background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(58,99,134,1)), color-stop(100%,rgba(73,127,176,1)));
+						background: -webkit-linear-gradient(left,  rgba(58,99,134,1) 0%,rgba(73,127,176,1) 100%);
+						background: -o-linear-gradient(left,  rgba(58,99,134,1) 0%,rgba(73,127,176,1) 100%);
+						background: -ms-linear-gradient(left,  rgba(58,99,134,1) 0%,rgba(73,127,176,1) 100%);
+						background: linear-gradient(to right,  rgba(58,99,134,1) 0%,rgba(73,127,176,1) 100%);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a6386', endColorstr='#497fb0',GradientType=1 );
+
+						i {
+							background: url('../img/icons/twitter-share-icon.svg') no-repeat;
+
+							width: 20px;
+							height: 14px;
+							display: block;
+
+							position: absolute;
+							left: ~"calc(50% - 10px)";
+							top: ~"calc(50% - 7px)";
+
+							&:hover {
+								background: url('../img/icons/twitterw-share-icon.svg') no-repeat;
+							}
+						}
+					}
+
+					&.instagramm {
+						background: rgb(60,83,105);
+						background: -moz-linear-gradient(left,  rgba(60,83,105,1) 0%, rgba(71,103,136,1) 100%);
+						background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(60,83,105,1)), color-stop(100%,rgba(71,103,136,1)));
+						background: -webkit-linear-gradient(left,  rgba(60,83,105,1) 0%,rgba(71,103,136,1) 100%);
+						background: -o-linear-gradient(left,  rgba(60,83,105,1) 0%,rgba(71,103,136,1) 100%);
+						background: -ms-linear-gradient(left,  rgba(60,83,105,1) 0%,rgba(71,103,136,1) 100%);
+						background: linear-gradient(to right,  rgba(60,83,105,1) 0%,rgba(71,103,136,1) 100%);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c5369', endColorstr='#476788',GradientType=1 );
+
+						i {
+							background: url('../img/icons/instagramm-share-icon.svg') no-repeat;
+
+							width: 15px;
+							height: 15px;
+							display: block;
+
+							position: absolute;
+							left: ~"calc(50% - 7.5px)";
+							top: ~"calc(50% - 7.5px)";
+
+							&:hover {
+								background: url('../img/icons/instagrammw-share-icon.svg') no-repeat;
+							}
+						}
+					}
+
+					&.gplus {
+						background: rgb(60,83,105);
+						background: -moz-linear-gradient(left,  rgba(60,83,105,1) 0%, rgba(130,65,57,1) 0%, rgba(170,78,66,1) 100%);
+						background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(60,83,105,1)), color-stop(0%,rgba(130,65,57,1)), color-stop(100%,rgba(170,78,66,1)));
+						background: -webkit-linear-gradient(left,  rgba(60,83,105,1) 0%,rgba(130,65,57,1) 0%,rgba(170,78,66,1) 100%);
+						background: -o-linear-gradient(left,  rgba(60,83,105,1) 0%,rgba(130,65,57,1) 0%,rgba(170,78,66,1) 100%);
+						background: -ms-linear-gradient(left,  rgba(60,83,105,1) 0%,rgba(130,65,57,1) 0%,rgba(170,78,66,1) 100%);
+						background: linear-gradient(to right,  rgba(60,83,105,1) 0%,rgba(130,65,57,1) 0%,rgba(170,78,66,1) 100%);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c5369', endColorstr='#aa4e42',GradientType=1 );
+
+						i {
+							background: url('../img/icons/gplus-share-icon.svg') no-repeat;
+
+							width: 22px;
+							height: 19px;
+							display: block;
+
+							position: absolute;
+							left: ~"calc(50% - 11px)";
+							top: ~"calc(50% - 9.5px)";
+
+							&:hover {
+								background: url('../img/icons/gplusw-share-icon.svg') no-repeat;
+							}
+						}
+					}
+
+					&.tumblr {
+						background: rgb(60,83,105);
+						background: -moz-linear-gradient(left,  rgba(60,83,105,1) 0%, rgba(55,61,75,1) 0%, rgba(62,71,92,1) 100%);
+						background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(60,83,105,1)), color-stop(0%,rgba(55,61,75,1)), color-stop(100%,rgba(62,71,92,1)));
+						background: -webkit-linear-gradient(left,  rgba(60,83,105,1) 0%,rgba(55,61,75,1) 0%,rgba(62,71,92,1) 100%);
+						background: -o-linear-gradient(left,  rgba(60,83,105,1) 0%,rgba(55,61,75,1) 0%,rgba(62,71,92,1) 100%);
+						background: -ms-linear-gradient(left,  rgba(60,83,105,1) 0%,rgba(55,61,75,1) 0%,rgba(62,71,92,1) 100%);
+						background: linear-gradient(to right,  rgba(60,83,105,1) 0%,rgba(55,61,75,1) 0%,rgba(62,71,92,1) 100%);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c5369', endColorstr='#3e475c',GradientType=1 );
+
+						i {
+							background: url('../img/icons/tumblr-share-icon.svg') no-repeat;
+
+							width: 9px;
+							height: 15px;
+							display: block;
+
+							position: absolute;
+							left: ~"calc(50% - 4.5px)";
+							top: ~"calc(50% - 7.5px)";
+
+							&:hover {
+								background: url('../img/icons/tumblrw-share-icon.svg') no-repeat;
+							}
+						}
+					}
+
+					&.vk {
+						background: rgb(60,83,105);
+						background: -moz-linear-gradient(left,  rgba(60,83,105,1) 0%, rgba(72,84,98,1) 0%, rgba(86,106,126,1) 100%);
+						background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(60,83,105,1)), color-stop(0%,rgba(72,84,98,1)), color-stop(100%,rgba(86,106,126,1)));
+						background: -webkit-linear-gradient(left,  rgba(60,83,105,1) 0%,rgba(72,84,98,1) 0%,rgba(86,106,126,1) 100%);
+						background: -o-linear-gradient(left,  rgba(60,83,105,1) 0%,rgba(72,84,98,1) 0%,rgba(86,106,126,1) 100%);
+						background: -ms-linear-gradient(left,  rgba(60,83,105,1) 0%,rgba(72,84,98,1) 0%,rgba(86,106,126,1) 100%);
+						background: linear-gradient(to right,  rgba(60,83,105,1) 0%,rgba(72,84,98,1) 0%,rgba(86,106,126,1) 100%);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c5369', endColorstr='#566a7e',GradientType=1 );
+
+						i {
+							background: url('../img/icons/vk-share-icon.svg') no-repeat;
+
+							width: 19px;
+							height: 10px;
+							display: block;
+
+							color: white;
+
+							position: absolute;
+							left: ~"calc(50% - 8.5px)";
+							top: ~"calc(50% - 5px)";
+
+							&:hover {
+								background: url('../img/icons/vkw-share-icon.svg') no-repeat;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.journal-second {
+		position: relative;
+		.container {
+			padding: 0 80px;
+		}
+		.teaser:not(.largest) {
+			max-width: 440px;
+		}
+		.largest.static {
+			max-width: 640px;
+			margin: 0 auto;
+		}
+		.card {
+			text-align: center;
+		}
+	}
+	&.journal-third {
+		.container {
+			padding: 0 80px;
+			.largest.static {
+				max-width: 640px;
+				margin: 0 auto;
+			}
+		}
+	}
+	&.cart {
+		.item {
+			&:nth-child(3n+4) {
+				margin-left: 0;
+			}
+			width: 160px;
+			float: left;
+			margin-left: 32px;
+			&:first-of-type {margin-left: 0;} // remove margin for fist item
+			.cap {
+				font-family: @FedraSansAlt;
+				font-weight: 100;
+				font-size: 12px;
+				color: rgb(128, 128, 128);
+				.articul {
+					float: left;
+					width: 50%;
+				}
+				.date {
+					float: left;
+					width: 50%;
+
+					text-align: right;
+				}
+
+			}
+			img {
+				width: 100%;
+			}
+			.color-sizes {
+				margin-top: 20px;
+				margin-bottom: 20px;
+				span {
+					width: 32px;
+					height: 32px;
+					display: inline-block;
+					vertical-align: top;
+
+					line-height: 32px;
+					text-align: center;
+				}
+				.brown {
+					background: rgb(179, 161, 139);
+				}
+				.size {
+					width: 31px;
+					height: 31px;
+
+					border: 1px solid black;
+					background: rgb(255, 255, 255);
+
+				}
+				.amount {
+
+				}
+			}
+			.brand {
+				font-family: @FedraSansAlt;
+				font-weight: 100;
+				font-size: 12px;
+				color: black;
+			}
+			.price {
+				font-family: @FedraSansAlt;
+				font-size: 24px;
+				color: black;
+
+				margin-bottom: 6px;
+				.valute {
+
+				}
+			}
+			.status {
+				font-family: @FedraSansAlt;
+				font-size: 14px;
+				color: rgb(25, 24, 24);
+			}
 		}
 	}
 }
@@ -574,14 +1002,14 @@ body.debug .container {
 								padding: 0;
 							}
 							a {
-								font-family: @AltDemi;
+								font-family: @FedraSansAlt;
 								font-size: 12px;
 								color: black;
 							}
 						}
 					}
 					.articul {
-						font-family: @CondensedBook;
+//						font-family: @CondensedBook;
 						font-size: 12px;
 						color: rgb(128, 128, 128);
 						text-align: right;
@@ -593,13 +1021,13 @@ body.debug .container {
 				.price-size-color {
 					clear: left;
 					.price {
-						font-family: @CondensedLight;
+						font-family: @FedraSansCondensedLight;
 						font-size: 64px;
 						color: black;
 					}
 					.sizes {
 						height: 32px;
-						
+
 						margin: 0;
 						padding: 0;
 						li {
@@ -649,7 +1077,7 @@ body.debug .container {
 						button {
 							&.simple-black {
 								background: black;
-								font-family: @AltDemi;
+								font-family: @FedraSansAlt;
 								font-size: 14px;
 								color: white;
 								border-radius: 0;
@@ -665,13 +1093,88 @@ body.debug .container {
 
 			}
 		}
+		&.contacts {
+			.map-area {
+				position: relative;
+				img {
+					display: block;
+					margin: 85px auto 15px auto;
+				}
+				a.google-map {
+					font-family: @FedraSansAlt;
+					font-size: 14px;
+					color: black;
+
+					margin-top: 20px;
+					margin-left: 270px;
+				}
+				ul {
+					&.left {
+						position: absolute;
+						top: -50px;
+						left: 0;
+						margin: 0; padding: 0;
+						li {
+							list-style: none;
+							a {
+								font-family: @FedraSansCondensedLight;
+								font-size: 64px;
+								color: black;
+								text-transform: uppercase;
+							}
+						}
+					}
+					&.right {
+						position: absolute;
+						top: 15%;
+						right: 5%;
+						margin: 0; padding: 0;
+						li {
+							list-style: none;
+							&.heading {
+								font-family: @FedraSerifBook;
+								font-size: 21px;
+								font-style: italic;
+								color: black;
+							}
+							&.pad {
+								margin-bottom: 15px;
+							}
+							font-family: @FedraSansAlt;
+							font-size: 14px;
+							color: black;
+						}
+					}
+				}
+			}
+			.callback {
+				h3 {
+					font-family: @FedraSerifBook;
+					font-size: 21px;
+					font-style: italic;
+					color: black;
+				}
+				a {
+					font-family: @FedraSansAlt;
+					font-size: 14px;
+					color: black;
+					text-decoration: none;
+				}
+				p {
+					font-family: @FedraSansAlt;
+					font-size: 14px;
+					color: black;
+					text-decoration: none;
+				}
+			}
+		}
 	}
 }
 
 // desktop 1024 to 1920
 @media @_1024to_1920 {
 	.container {
-		width: 960px;
+		width: 1008px;
 		padding: 0;
 		&.top {
 			min-height: 81px;
