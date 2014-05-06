@@ -14,7 +14,22 @@
 
         // temporary menu
         var rootMenu = $('<div id="sub" />').appendTo('body');
-        var menu = new Array("index", "contacts", "history", "item", "item-wall", "journal", "personal-info", "cart", "ordering", "404", "posts", "video-post", "strange-article", "recruit");
+        var menu = new Array(
+            "index",
+            "contacts",
+            "history",
+            "item",
+            "item-wall",
+            "journal",
+            "personal-info",
+            "cart",
+            "ordering",
+            "404",
+            "posts",
+            "video-post",
+            "strange-article",
+            "recruit",
+            "index-mobile-details");
         for (var i = 0; i < menu.length; i++)
         {
             var m = $('<a/>', {'href' : menu[i] + '.html'}).text(menu[i]);
