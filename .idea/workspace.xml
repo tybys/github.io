@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/ordering.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/posts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/cart.html" afterPath="$PROJECT_DIR$/works/leform/cart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/css/custom.css" afterPath="$PROJECT_DIR$/works/leform/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/less/custom.less" afterPath="$PROJECT_DIR$/works/leform/less/custom.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/recruit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/strange-article.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/video-post.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/js/helper.js" afterPath="$PROJECT_DIR$/works/leform/js/helper.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -35,10 +32,10 @@
       <file leaf-file-name="helper.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="143" selection-start="645" selection-end="645" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1104">
+            <state line="16" column="176" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1104">
               <folding>
-                <marker date="1399317911000" expanded="true" signature="823:839" placeholder="..." />
-                <marker date="1399317911000" expanded="true" signature="1095:1108" placeholder="..." />
+                <marker date="1399357809000" expanded="true" signature="856:872" placeholder="..." />
+                <marker date="1399357809000" expanded="true" signature="1128:1141" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -87,10 +84,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="posts.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="posts.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/works/leform/posts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="64" selection-start="4910" selection-end="4910" vertical-scroll-proportion="0.853211" vertical-offset="792" max-vertical-offset="2896">
+            <state line="96" column="64" selection-start="0" selection-end="8135" vertical-scroll-proportion="-17.6" vertical-offset="1096" max-vertical-offset="2896">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="video-post.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/works/leform/video-post.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="86" column="57" selection-start="0" selection-end="10603" vertical-scroll-proportion="-20.16" vertical-offset="872" max-vertical-offset="2896">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recruit.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/works/leform/recruit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="88" column="48" selection-start="0" selection-end="8035" vertical-scroll-proportion="-20.16" vertical-offset="904" max-vertical-offset="2848">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strange-article.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/works/leform/strange-article.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="98" column="42" selection-start="6507" selection-end="6507" vertical-scroll-proportion="0.8130734" vertical-offset="859" max-vertical-offset="3008">
               <folding />
             </state>
           </provider>
@@ -157,8 +181,11 @@
         <option value="$PROJECT_DIR$/works/leform/less/custom.less" />
         <option value="$PROJECT_DIR$/works/leform/ordering.html" />
         <option value="$PROJECT_DIR$/works/leform/404.html" />
-        <option value="$PROJECT_DIR$/works/leform/js/helper.js" />
         <option value="$PROJECT_DIR$/works/leform/posts.html" />
+        <option value="$PROJECT_DIR$/works/leform/video-post.html" />
+        <option value="$PROJECT_DIR$/works/leform/recruit.html" />
+        <option value="$PROJECT_DIR$/works/leform/js/helper.js" />
+        <option value="$PROJECT_DIR$/works/leform/strange-article.html" />
       </list>
     </option>
   </component>
@@ -528,25 +555,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/applications.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="27" selection-start="608" selection-end="608" vertical-scroll-proportion="0.41034484" vertical-offset="0" max-vertical-offset="6290">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/less/custom.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="35" selection-start="2153" selection-end="2153" vertical-scroll-proportion="1.6473373" vertical-offset="0" max-vertical-offset="7296">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jworks/fear/ecopit/ecopit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="18" selection-start="935" selection-end="935" vertical-scroll-proportion="0.01923077" vertical-offset="416" max-vertical-offset="4288" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/img/big/main_first_opt.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="857" />
@@ -800,6 +808,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="43" selection-start="2885" selection-end="2885" vertical-scroll-proportion="-19.52" vertical-offset="648" max-vertical-offset="2544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/ordering.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="197" column="67" selection-start="10143" selection-end="10143" vertical-scroll-proportion="-91.08" vertical-offset="875" max-vertical-offset="4528">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/less/custom.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="203" column="26" selection-start="4572" selection-end="4572" vertical-scroll-proportion="-20.48" vertical-offset="1376" max-vertical-offset="19840">
@@ -823,27 +845,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/ordering.html">
+    <entry file="file://$PROJECT_DIR$/works/leform/posts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="197" column="67" selection-start="10143" selection-end="10143" vertical-scroll-proportion="-91.08" vertical-offset="875" max-vertical-offset="4528">
+        <state line="96" column="64" selection-start="0" selection-end="8135" vertical-scroll-proportion="-17.6" vertical-offset="1096" max-vertical-offset="2896">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/404.html">
+    <entry file="file://$PROJECT_DIR$/works/leform/video-post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="43" selection-start="2885" selection-end="2885" vertical-scroll-proportion="-19.52" vertical-offset="648" max-vertical-offset="2544">
+        <state line="86" column="57" selection-start="0" selection-end="10603" vertical-scroll-proportion="-20.16" vertical-offset="872" max-vertical-offset="2896">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
+    <entry file="file://$PROJECT_DIR$/works/leform/recruit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="143" selection-start="645" selection-end="645" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1104">
-          <folding>
-            <marker date="1399317911000" expanded="true" signature="823:839" placeholder="..." />
-            <marker date="1399317911000" expanded="true" signature="1095:1108" placeholder="..." />
-          </folding>
+        <state line="88" column="48" selection-start="0" selection-end="8035" vertical-scroll-proportion="-20.16" vertical-offset="904" max-vertical-offset="2848">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -854,9 +873,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/posts.html">
+    <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="64" selection-start="4910" selection-end="4910" vertical-scroll-proportion="0.853211" vertical-offset="792" max-vertical-offset="2896">
+        <state line="16" column="176" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1104">
+          <folding>
+            <marker date="1399357809000" expanded="true" signature="856:872" placeholder="..." />
+            <marker date="1399357809000" expanded="true" signature="1128:1141" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/strange-article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="42" selection-start="6507" selection-end="6507" vertical-scroll-proportion="0.8130734" vertical-offset="859" max-vertical-offset="3008">
           <folding />
         </state>
       </provider>

@@ -14,7 +14,7 @@
 
         // temporary menu
         var rootMenu = $('<div id="sub" hidden />').appendTo('body');
-        var menu = new Array("index", "contacts", "history", "item", "item-wall", "journal", "personal-info", "cart", "ordering", "404", "posts");
+        var menu = new Array("index", "contacts", "history", "item", "item-wall", "journal", "personal-info", "cart", "ordering", "404", "posts", "video-post", "strange-article");
         for (var i = 0; i < menu.length; i++)
         {
             var m = $('<a/>', {'href' : menu[i] + '.html'}).text(menu[i]);
