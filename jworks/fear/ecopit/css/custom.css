@@ -66,6 +66,7 @@ body {
 .row.menu .col-md-8 .lang a {
   font-size: 12px;
   text-transform: uppercase;
+  paddint: 0 2px;
 }
 .row.menu .col-md-4 .lang a:first-of-type:after,
 .row.menu .col-md-8 .lang a:first-of-type:after {

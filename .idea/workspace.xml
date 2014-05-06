@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/recruit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/strange-article.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/video-post.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/ecopit/css/custom.css" afterPath="$PROJECT_DIR$/jworks/fear/ecopit/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jworks/fear/thermo/css/custom.css" afterPath="$PROJECT_DIR$/jworks/fear/thermo/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/css/custom.css" afterPath="$PROJECT_DIR$/works/leform/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/less/custom.less" afterPath="$PROJECT_DIR$/works/leform/less/custom.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/js/helper.js" afterPath="$PROJECT_DIR$/works/leform/js/helper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/img/logotype.svg" afterPath="$PROJECT_DIR$/works/leform/img/logotype.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/strange-article.html" afterPath="$PROJECT_DIR$/works/leform/strange-article.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="github.io.iws" />
@@ -32,98 +35,25 @@
       <file leaf-file-name="helper.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="176" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1104">
-              <folding>
-                <marker date="1399357809000" expanded="true" signature="856:872" placeholder="..." />
-                <marker date="1399357809000" expanded="true" signature="1128:1141" placeholder="..." />
-              </folding>
+            <state line="16" column="187" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="952">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.less" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="custom.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/works/leform/less/custom.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="203" column="26" selection-start="4572" selection-end="4572" vertical-scroll-proportion="-20.48" vertical-offset="1376" max-vertical-offset="19840">
-              <folding>
-                <element signature="e#1997#2340#0" expanded="false" />
-                <element signature="e#2077#2108#0" expanded="false" />
-                <element signature="e#2116#2267#0" expanded="false" />
-                <element signature="e#2277#2338#0" expanded="false" />
-                <element signature="e#2903#3116#0" expanded="false" />
-                <element signature="e#2937#3035#0" expanded="false" />
-                <element signature="e#3040#3113#0" expanded="false" />
-                <element signature="e#3473#4103#0" expanded="false" />
-                <element signature="e#3488#4101#0" expanded="false" />
-                <element signature="e#3552#3645#0" expanded="false" />
-                <element signature="e#3666#4047#0" expanded="false" />
-                <element signature="e#3915#4018#0" expanded="false" />
-                <element signature="e#4059#4098#0" expanded="false" />
-                <element signature="e#4114#4204#0" expanded="false" />
-                <element signature="e#4273#4389#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ordering.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/works/leform/ordering.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="197" column="67" selection-start="10143" selection-end="10143" vertical-scroll-proportion="-91.08" vertical-offset="875" max-vertical-offset="4528">
+            <state line="1337" column="32" selection-start="29406" selection-end="29406" vertical-scroll-proportion="0.4701835" vertical-offset="18308" max-vertical-offset="19222">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="404.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/works/leform/404.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="43" selection-start="2885" selection-end="2885" vertical-scroll-proportion="-19.52" vertical-offset="648" max-vertical-offset="2544">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="posts.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/works/leform/posts.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="64" selection-start="0" selection-end="8135" vertical-scroll-proportion="-17.6" vertical-offset="1096" max-vertical-offset="2896">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="video-post.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/works/leform/video-post.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="57" selection-start="0" selection-end="10603" vertical-scroll-proportion="-20.16" vertical-offset="872" max-vertical-offset="2896">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recruit.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/works/leform/recruit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="48" selection-start="0" selection-end="8035" vertical-scroll-proportion="-20.16" vertical-offset="904" max-vertical-offset="2848">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strange-article.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="strange-article.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/works/leform/strange-article.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="42" selection-start="6507" selection-end="6507" vertical-scroll-proportion="0.8130734" vertical-offset="859" max-vertical-offset="3008">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cart.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/works/leform/cart.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="181" column="18" selection-start="7626" selection-end="8013" vertical-scroll-proportion="-28.8" vertical-offset="2176" max-vertical-offset="4240">
+            <state line="59" column="44" selection-start="2571" selection-end="2571" vertical-scroll-proportion="-28.608696" vertical-offset="168" max-vertical-offset="2744">
               <folding />
             </state>
           </provider>
@@ -147,29 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/jworks/fear/thermo/less/custom.less" />
-        <option value="$PROJECT_DIR$/jworks/excentrics/promo/less/import.less" />
-        <option value="$PROJECT_DIR$/jworks/excentrics/promo/js/snippets.js" />
-        <option value="$PROJECT_DIR$/jworks/excentrics/promo/js/helpers.js" />
-        <option value="$PROJECT_DIR$/jworks/excentrics/promo/index.html" />
-        <option value="$PROJECT_DIR$/jworks/excentrics/promo/less/custom.less" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/works/test.html" />
-        <option value="$PROJECT_DIR$/jworks/fear/ecopit/less/import.less" />
-        <option value="$PROJECT_DIR$/jworks/fear/ecopit/inner" />
-        <option value="$PROJECT_DIR$/jworks/fear/ecopit/inner_.html" />
-        <option value="$PROJECT_DIR$/jworks/fear/ecopit/inner.html" />
-        <option value="$PROJECT_DIR$/javascripts/main.js" />
-        <option value="$PROJECT_DIR$/javascripts/all.json" />
-        <option value="$PROJECT_DIR$/works/fear/ecopit/less/custom.less" />
-        <option value="$PROJECT_DIR$/jworks/fear/ecopit/ecopit.html" />
-        <option value="$PROJECT_DIR$/jworks/fear/ecopit/less/custom.less" />
-        <option value="$PROJECT_DIR$/works/leform/less/import.less" />
-        <option value="$PROJECT_DIR$/works/leform/js/jquery.shapeshift.js" />
-        <option value="$PROJECT_DIR$/works/leform/js/jquery.mosaicflow.js" />
-        <option value="$PROJECT_DIR$/works/leform/js/jquery.nested.js" />
-        <option value="$PROJECT_DIR$/works/leform/jounal.html" />
-        <option value="$PROJECT_DIR$/works/leform/img/icons/facebookw-share-icon.svg" />
         <option value="$PROJECT_DIR$/works/leform/contacts.html" />
         <option value="$PROJECT_DIR$/works/leform/index.html" />
         <option value="$PROJECT_DIR$/works/leform/item.html" />
@@ -178,7 +85,6 @@
         <option value="$PROJECT_DIR$/works/leform/personal-info.html" />
         <option value="$PROJECT_DIR$/works/leform/history.html" />
         <option value="$PROJECT_DIR$/works/leform/cart.html" />
-        <option value="$PROJECT_DIR$/works/leform/less/custom.less" />
         <option value="$PROJECT_DIR$/works/leform/ordering.html" />
         <option value="$PROJECT_DIR$/works/leform/404.html" />
         <option value="$PROJECT_DIR$/works/leform/posts.html" />
@@ -186,14 +92,16 @@
         <option value="$PROJECT_DIR$/works/leform/recruit.html" />
         <option value="$PROJECT_DIR$/works/leform/js/helper.js" />
         <option value="$PROJECT_DIR$/works/leform/strange-article.html" />
+        <option value="$PROJECT_DIR$/works/leform/less/custom.less" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1622" />
-    <option name="height" value="1028" />
+    <option name="x" value="-1688" />
+    <option name="y" value="-8" />
+    <option name="width" value="1696" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -201,6 +109,12 @@
         <expanded-state>
           <State>
             <id />
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
           </State>
           <State>
             <id>Spelling</id>
@@ -317,81 +231,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tybys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="works" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tybys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="works" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="icons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tybys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="works" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="big" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -428,41 +268,59 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="185" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="202" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="196" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/works/fear/ecopit/css" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="205" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="996" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1000" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="202" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="198" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
+    <property name="options.lastSelected" value="preferences.sourceCode.General" />
+    <property name="SearchEverywhereHistory" value="&#10;&lt;h&#10;.nav" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="SearchEverywhereHistory" value="&#10;&lt;h&#10;.nav" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="185" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="202" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="205" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1000" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="196" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="198" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="202" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="996" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
+  </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="b927969c-6696-48d7-96a3-28a8903398d7">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="e1a4cc69-604a-4892-ac66-e0b44cf6aa21">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\src\github\tybys\works\leform\img" />
       <recent name="$PROJECT_DIR$/works/leform/img/big" />
       <recent name="$PROJECT_DIR$/works/leform/img/icons" />
       <recent name="$PROJECT_DIR$/works/leform/img" />
       <recent name="$PROJECT_DIR$/works/leform/img/small" />
-      <recent name="$PROJECT_DIR$/works/leform/js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/jworks/fear/thermo/js" />
@@ -514,7 +372,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1622" height="1028" extended-state="6" />
+    <frame x="-1688" y="-8" width="1696" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32846716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -523,7 +381,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19177215" sideWeight="0.6713781" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18095239" sideWeight="0.6713781" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -555,337 +413,88 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/works/leform/img/big/main_first_opt.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="857" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/big/first.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="857" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/logotype.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="830" />
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/icons/social-normal.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1232" />
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/js/collapse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/js/dropdown.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2352">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/less/responsive-utilities.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1568">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/less/import.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="906" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/icons/payment-sprite.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1952" />
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/icons/payment-sprite_.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3408" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/less/bootstrap.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="20" selection-start="239" selection-end="239" vertical-scroll-proportion="0.21192053" vertical-offset="0" max-vertical-offset="906" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/small/silver-shoes.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/js/jquery.shapeshift.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="690" column="0" selection-start="35603" selection-end="35603" vertical-scroll-proportion="0.9788183" vertical-offset="10162" max-vertical-offset="11136" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/js/jquery.mosaicflow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="360" column="4" selection-start="12432" selection-end="12432" vertical-scroll-proportion="6.3296704" vertical-offset="0" max-vertical-offset="5856" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/js/jquery.grid-a-licious.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="49" selection-start="5456" selection-end="5456" vertical-scroll-proportion="-2.9063544" vertical-offset="5135" max-vertical-offset="6032" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/js/jquery.nested.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="576" column="11" selection-start="19292" selection-end="19292" vertical-scroll-proportion="0.9788183" vertical-offset="8338" max-vertical-offset="9312" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/big/big-side-shoes.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/small/small-side-shoes.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="85" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/map.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/big/big-journal-3.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="31" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/icons/pinterest-share-icon.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/big/big-top-shoes.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/icons/facebook-share-icon.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/icons/twitter-share-icon.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/icons/instagramm-share-icon.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/icons/gplus-share-icon.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/icons/tumblr-share-icon.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/icons/vk-share-icon.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="88" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/big/card10k.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/big/card-infinity.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="409856">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/big/strange-girl.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/big/strange-white-girl.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/img/icons/tumblrw-share-icon.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/fear/thermo/js/helpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="8" selection-start="1103" selection-end="1758" vertical-scroll-proportion="0.45714286" vertical-offset="192" max-vertical-offset="1760">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/personal-info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="50" selection-start="7534" selection-end="7534" vertical-scroll-proportion="0.85150814" vertical-offset="2034" max-vertical-offset="2896">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/contacts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="50" selection-start="8491" selection-end="8491" vertical-scroll-proportion="0.85536724" vertical-offset="2363" max-vertical-offset="3248">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="50" selection-start="6811" selection-end="6811" vertical-scroll-proportion="0.85536724" vertical-offset="1723" max-vertical-offset="2608">
-          <folding />
-        </state>
+        <state line="155" column="50" selection-start="6811" selection-end="6811" vertical-scroll-proportion="0.85536724" vertical-offset="1723" max-vertical-offset="2608" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/item.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="194" column="50" selection-start="8380" selection-end="8380" vertical-scroll-proportion="0.853211" vertical-offset="2360" max-vertical-offset="3232">
-          <folding />
-        </state>
+        <state line="194" column="50" selection-start="8380" selection-end="8380" vertical-scroll-proportion="0.853211" vertical-offset="2360" max-vertical-offset="3232" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/item-wall.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="218" column="50" selection-start="9787" selection-end="9787" vertical-scroll-proportion="0.85536724" vertical-offset="2731" max-vertical-offset="3616">
-          <folding />
-        </state>
+        <state line="218" column="50" selection-start="9787" selection-end="9787" vertical-scroll-proportion="0.85536724" vertical-offset="2731" max-vertical-offset="3616" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/img/icons/instagrammw-share-icon.svg">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/journal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="200" column="14" selection-start="0" selection-end="11228" vertical-scroll-proportion="0.625" vertical-offset="2655" max-vertical-offset="3552">
-          <folding />
-        </state>
+        <state line="200" column="14" selection-start="0" selection-end="11228" vertical-scroll-proportion="0.625" vertical-offset="2655" max-vertical-offset="3552" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/history.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="22" selection-start="3462" selection-end="4397" vertical-scroll-proportion="0.75706214" vertical-offset="962" max-vertical-offset="3296">
-          <folding />
-        </state>
+        <state line="102" column="22" selection-start="3462" selection-end="4397" vertical-scroll-proportion="0.75706214" vertical-offset="962" max-vertical-offset="3296" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="43" selection-start="2885" selection-end="2885" vertical-scroll-proportion="-19.52" vertical-offset="648" max-vertical-offset="2544">
-          <folding />
-        </state>
+        <state line="71" column="43" selection-start="2885" selection-end="2885" vertical-scroll-proportion="0.0" vertical-offset="1207" max-vertical-offset="2703" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/ordering.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="197" column="67" selection-start="10143" selection-end="10143" vertical-scroll-proportion="-91.08" vertical-offset="875" max-vertical-offset="4528">
+        <state line="197" column="67" selection-start="10143" selection-end="10143" vertical-scroll-proportion="0.0" vertical-offset="3349" max-vertical-offset="4811" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="64" selection-start="0" selection-end="8135" vertical-scroll-proportion="0.0" vertical-offset="1632" max-vertical-offset="3077" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/video-post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="57" selection-start="0" selection-end="10603" vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="3077" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="181" column="18" selection-start="7626" selection-end="8013" vertical-scroll-proportion="0.0" vertical-offset="3077" max-vertical-offset="4505" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/recruit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="48" selection-start="0" selection-end="8035" vertical-scroll-proportion="11.478261" vertical-offset="1496" max-vertical-offset="2492" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="187" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/img/logotype.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="70" selection-start="67" selection-end="70" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="895" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/strange-article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="44" selection-start="2571" selection-end="2571" vertical-scroll-proportion="-28.608696" vertical-offset="168" max-vertical-offset="2744">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/less/custom.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="203" column="26" selection-start="4572" selection-end="4572" vertical-scroll-proportion="-20.48" vertical-offset="1376" max-vertical-offset="19840">
-          <folding>
-            <element signature="e#1997#2340#0" expanded="false" />
-            <element signature="e#2077#2108#0" expanded="false" />
-            <element signature="e#2116#2267#0" expanded="false" />
-            <element signature="e#2277#2338#0" expanded="false" />
-            <element signature="e#2903#3116#0" expanded="false" />
-            <element signature="e#2937#3035#0" expanded="false" />
-            <element signature="e#3040#3113#0" expanded="false" />
-            <element signature="e#3473#4103#0" expanded="false" />
-            <element signature="e#3488#4101#0" expanded="false" />
-            <element signature="e#3552#3645#0" expanded="false" />
-            <element signature="e#3666#4047#0" expanded="false" />
-            <element signature="e#3915#4018#0" expanded="false" />
-            <element signature="e#4059#4098#0" expanded="false" />
-            <element signature="e#4114#4204#0" expanded="false" />
-            <element signature="e#4273#4389#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/posts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="64" selection-start="0" selection-end="8135" vertical-scroll-proportion="-17.6" vertical-offset="1096" max-vertical-offset="2896">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/video-post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="57" selection-start="0" selection-end="10603" vertical-scroll-proportion="-20.16" vertical-offset="872" max-vertical-offset="2896">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/recruit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="48" selection-start="0" selection-end="8035" vertical-scroll-proportion="-20.16" vertical-offset="904" max-vertical-offset="2848">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="18" selection-start="7626" selection-end="8013" vertical-scroll-proportion="-28.8" vertical-offset="2176" max-vertical-offset="4240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="176" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1104">
-          <folding>
-            <marker date="1399357809000" expanded="true" signature="856:872" placeholder="..." />
-            <marker date="1399357809000" expanded="true" signature="1128:1141" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/strange-article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="42" selection-start="6507" selection-end="6507" vertical-scroll-proportion="0.8130734" vertical-offset="859" max-vertical-offset="3008">
+        <state line="1337" column="32" selection-start="29406" selection-end="29406" vertical-scroll-proportion="0.4701835" vertical-offset="18308" max-vertical-offset="19222">
           <folding />
         </state>
       </provider>

@@ -294,39 +294,43 @@ body.debug .container {
 
 		padding-top: 32px;
 
-		.container {
+        .quart {
+            float: left;
+            line-height: 85px;
+          a {
+              color: black;
+          }
+          &.phone {
+//              background: rgba(255, 215, 108, 0.5);
+          }
+          &.lang-switch {
+//            background: rgba(0,0,0,0.5);
+            span {
+              &:first-of-type {
+                color: rgba(160, 162, 164, 1);
+                &:after {
+                  content: '/';
+                  padding-left: 5px;
+                  color: black;
+                }
+              }
+            }
+          }
+          &.logotype {}
+          &.cabinet { // text-overflow ellipsis
+              margin-left: 25px;
+              overflow-x: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              a {
 
+              }
+          }
+          &.cart {
 
-			.col-md-2 {
+          }
+        }
 
-				a {
-					color: black;
-				}
-			}
-		}
-		.logotype {
-			position: relative;
-			top: 0; left: 0;
-			width: 158px !important;
-			img {
-				position: absolute;
-				left: ~"calc(50% - 82px)";
-				left: ~"-webkit-calc(50% - 82px)";
-			}
-		}
-
-		.lang-switch {
-			span {
-				&:first-of-type {
-					color: rgba(160, 162, 164, 1);
-					&:after {
-						content: '/';
-						padding-left: 5px;
-						color: black;
-					}
-				}
-			}
-		}
 	}
 	&.logotype-mobile {
 		text-align: center;
@@ -363,10 +367,15 @@ body.debug .container {
 				background: none;
 				border: none;
 
+                .navbar-collapse {
+                    padding: 0;
+                }
+
 				ul {
-					margin: 0; padding: 0;
+					margin: 13px 0 0 0; padding: 0 15px;
 
 					li {
+                        width: auto;
 						text-align: center;
 						a {
 							font-family: @FedraSansCondensedBook;
@@ -375,11 +384,21 @@ body.debug .container {
 							text-transform: uppercase;
 
 							padding-left: 0;
-							padding-right: 0;
+							padding-right: 64.5px;
+//                            &:last-of-type {
+//                                padding-right: 0;
+//                            }
 							&:hover {
 								background: none;
+                                color: rgb(159, 161, 163);
 							}
+                            &.active {
+                                color: rgb(159, 161, 163);
+                            }
 						}
+                        &:last-of-type a {
+                          padding-right: 0;
+                        }
 					}
 				}
 			}
@@ -1230,15 +1249,33 @@ body.debug .container {
 	.container {
 		width: 1008px;
 		padding: 0;
-		&.top {
-			min-height: 81px;
-		}
 	}
+    .top {
+      .quart {
+        width: 20%;
+        &.phone {
+
+        }
+        &.lang-switch {
+          width: 19%;
+        }
+        &.logotype {}
+        &.cabinet { // text-overflow ellipsis
+          width: 15%;
+        }
+        &.cart {
+          width: 21%;
+          //              background: rgba(0,0,0,0.8);
+        }
+      }
+
+    }
 	.top {
 		.col-md-2 {
 			// width: ~"calc(192px - 30px)";
 			width: 192px;
-			line-height: 92px;
+//			line-height: 92px;
+            line-height: 87px;
 			margin: 0; padding: 0;
 		}
 	}
@@ -1249,25 +1286,34 @@ body.debug .container {
 
 // mobile
 @media @_340to_640 {
+    #sub {display: none;}
 	body {
 		margin-bottom: 0
 	}
-	.top {
-		.col-xs-6 {
-			padding: 0;
-		}
-		.phone,
-		.cabinet {
-			text-align: left;
-		}
-		.lang-switch,
-		.cart {
-			text-align: right;
-		}
-		.cabinet, .cart {
-			margin-top: 18px;
-		}
-	}
+    .row {
+        &.top {
+          padding-top: 0;
+          .quart {
+              line-height: inherit;
+              margin: 16px 0;
+            &.phone {
+                text-align: left;
+            }
+            &.cabinet {
+                text-align: left;
+                margin-left: 0;
+            }
+
+            &.lang-switch {
+                text-align: right;
+            }
+            &.cart {
+                text-align: right;
+            }
+          }
+        }
+    }
+
 	.logotype-mobile {
 		margin-top: 12px;
 	}
@@ -1277,8 +1323,6 @@ body.debug .container {
 		&.content-area {
 			overflow-x: hidden;
 			img { // shit or not a shit, what is the question
-//				width: 140%;
-//				height: 416px;
 				display: none;
 			}
 			overflow-x: hidden;
@@ -1290,6 +1334,9 @@ body.debug .container {
 			background-position: -100px !important;
 		}
 		&.menu {
+            .navbar-toggle {
+                margin-right: 0;
+            }
 			.navbar-collapse {
 				background: black;
 				ul {
@@ -1298,6 +1345,7 @@ body.debug .container {
 						a {
 							background: none;
 							color: white !important;
+                            padding-right: 0 !important;
 						}
 					}
 				}
@@ -1307,7 +1355,7 @@ body.debug .container {
 	}
 	#footer {
 		height: auto;
-		position: static;
+//		position: static;
 		.brand, .copyright {
 			text-align: center;
 		}
