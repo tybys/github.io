@@ -49,7 +49,10 @@ html {
 body {
 	background: rgba(255, 255, 255, 0);
 	height: 100%;
-	margin-bottom: 35px;
+	margin-bottom: 32px;
+	&.mobile-index-details {
+		margin-bottom: 35px;
+	}
 	h1 {
 		background: transparent;
 	}
@@ -139,9 +142,6 @@ form {
 			top: 3.5px;
 			right: 30px;
 
-			width: 14px;
-			height: 14px;
-
 			line-height: 14px;
 		}
 		input,
@@ -157,8 +157,6 @@ form {
 			font-size: 12px;
 
 			padding: 0;
-			width: 288px;
-			height: 25px;
 			&::-webkit-input-placeholder {
 				font-family: @FedraSerifBook;
 				font-size: 12px;
@@ -285,6 +283,11 @@ body.debug .container {
 //		height: 1200px;
 //		background: url('../img/big/main_first_opt.svg') no-repeat;
 //		background-size: contain;
+		&.index {
+			img {
+
+			}
+		}
 	}
 	&.top {
 		font-family: @FedraSerifBook;
@@ -632,9 +635,6 @@ body.debug .container {
 					top: 3.5px;
 					right: 30px;
 
-					width: 14px;
-					height: 14px;
-
 					line-height: 14px;
 				}
 				input {
@@ -649,8 +649,7 @@ body.debug .container {
 					font-size: 12px;
 
 					padding: 0;
-					width: 288px;
-					height: 25px;
+
 					&::-webkit-input-placeholder {
 						font-family: @FedraSerifBook;
 						font-size: 12px;
@@ -1246,6 +1245,52 @@ body.debug .container {
 
 // desktop 1024 to 1920
 @media @_1024to_1920 {
+	// some defaults (width height and rest box styles)
+	.bottom-form {
+		padding: 0;
+		margin-top: 19px;
+		margin-left: 15px;
+
+		width: 30.33333333333333%;
+		.form-group {
+			margin-bottom: 39px;
+		}
+		form {
+			.has-feedback .form-control-feedback {
+				top: 3.5px;
+				right: 30px;
+
+				width: 14px;
+				height: 14px;
+			}
+			input {
+				width: 288px;
+				height: 25px;
+			}
+		}
+	}
+	form {
+		.form-group {
+			margin-bottom: 39px;
+			.has-feedback .form-control-feedback {
+				top: 3.5px;
+				right: 30px;
+
+				width: 14px;
+				height: 14px;
+			}
+			input,
+			textarea {
+				width: 288px;
+				height: 25px;
+			}
+			textarea {
+				height: 64px;
+				resize: none;
+			}
+		}
+	}
+	//
 	.container {
 		width: 1008px;
 		padding: 0;
@@ -1286,14 +1331,52 @@ body.debug .container {
 
 // mobile
 @media @_340to_640 {
+	body.index-mobile-details {
+		margin-bottom: 125px;
+	}
     #sub {display: none;}
-	body {
-		margin-bottom: 0
+
+	.container-fluid.background {
+		h1.motd {
+			position: static !important;
+		}
+		overflow-x: hidden;
+		background-image: url('../img/big/first.svg');
+		background-repeat: no-repeat;
+		background-size: auto 416px;
+		height: 416px;
+		min-width: 100%;
+		background-position: -100px !important;
 	}
     .row {
+		margin: 0;
         &.top {
-          padding-top: 0;
-          .quart {
+	  		padding-top: 22px;
+			.container {
+				padding-left: 0; padding-right: 0;
+				a {
+					color: black;
+				}
+				.phone {
+					text-align: left;
+					padding-left: 0;
+					margin-bottom: 15px;
+				}
+				.cabinet {
+					text-align: left;
+					padding-left: 0;
+				}
+				.lang-switch {
+					text-align: right;
+					padding-right: 0;
+					margin-bottom: 15px;
+				}
+				.cart {
+					text-align: right;
+					padding-right: 0;
+				}
+			}
+          	.quart {
               line-height: inherit;
               margin: 16px 0;
             &.phone {
@@ -1311,33 +1394,41 @@ body.debug .container {
                 text-align: right;
             }
           }
+
         }
-    }
+		&.contact-info {
+			.bottom-form {
+				width: 100%;
+				margin-left: 0;
+			}
+			.payment {
+				margin-left: 0;
+				width: 100%;
+				span {
+					margin: 0 8%;
+				}
+			}
+		}
 
-	.logotype-mobile {
-		margin-top: 12px;
-	}
-
-	// img
-	.row {
-		&.content-area {
+		&.content-area.index {
 			overflow-x: hidden;
 			img { // shit or not a shit, what is the question
 				display: none;
 			}
-			overflow-x: hidden;
-			background-image: url('../img/big/first.svg');
-			background-repeat: no-repeat;
-			background-size: auto 416px;
-			height: 416px;
-			min-width: 100%;
-			background-position: -100px !important;
+//			overflow-x: hidden;
+//			background-image: url('../img/big/first.svg');
+//			background-repeat: no-repeat;
+//			background-size: auto 416px;
+//			height: 416px;
+//			min-width: 100%;
+//			background-position: -100px !important;
 		}
 		&.menu {
-            .navbar-toggle {
-                margin-right: 0;
-            }
+			.navbar-toggle {
+				margin-right: 0;
+			}
 			.navbar-collapse {
+				max-height: inherit;
 				background: black;
 				ul {
 					li {
@@ -1345,14 +1436,19 @@ body.debug .container {
 						a {
 							background: none;
 							color: white !important;
-                            padding-right: 0 !important;
+							padding-right: 0 !important;
 						}
 					}
 				}
 
 			}
 		}
+    } // top of top
+
+	.logotype-mobile {
+		margin-top: 12px;
 	}
+
 	#footer {
 		height: auto;
 //		position: static;
