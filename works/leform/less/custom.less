@@ -1336,6 +1336,7 @@ body.debug .container {
 	}
     #sub {display: none;}
 
+	.container-fluid {padding: 0;}
 	.container-fluid.background {
 		h1.motd {
 			position: static !important;
@@ -1347,6 +1348,7 @@ body.debug .container {
 		height: 416px;
 		min-width: 100%;
 		background-position: -100px !important;
+		margin: 0;
 	}
     .row {
 		margin: 0;
@@ -1415,13 +1417,6 @@ body.debug .container {
 			img { // shit or not a shit, what is the question
 				display: none;
 			}
-//			overflow-x: hidden;
-//			background-image: url('../img/big/first.svg');
-//			background-repeat: no-repeat;
-//			background-size: auto 416px;
-//			height: 416px;
-//			min-width: 100%;
-//			background-position: -100px !important;
 		}
 		&.menu {
 			.navbar-toggle {
@@ -1441,6 +1436,25 @@ body.debug .container {
 					}
 				}
 
+			}
+		}
+		&.order-history {
+			.float-menu {
+				position: static;
+			}
+			.history-items {
+				margin-left: 0;
+				h2 {
+					font-size: 46px;
+				}
+				.item {
+					img {
+						width: auto;
+					}
+					float: none;
+//					width: 100%;
+					margin-left: 0;
+				}
 			}
 		}
     } // top of top
