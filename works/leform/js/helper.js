@@ -33,11 +33,12 @@
         for (var i = 0; i < menu.length; i++)
         {
             var m = $('<a/>', {'href' : menu[i] + '.html'}).text(menu[i]);
-            $('#sub').append('<span style="display: inline;">'+i+'</span>',m);
+//            $('#sub').append('<span style="display: inline;background: black;color: white;;">/</span>', m);
+            $('#sub').append(m);
         }
 
         rootMenu.css({position: 'fixed',top: '1%',left: '1%',zIndex: '999'});
-        rootMenu.find('a').css({display: 'inline',paddingRight: '5px',color: 'black'});
+        rootMenu.find('a').css({display: 'inline',padding: '3px',color: 'white', background: 'black', margin: '0 1px', opacity: .5});
         $('.row .container').append("<div id='grid' style='display: none' />");
 //        $('.shapeshift-container')
 //        .shapeshift({
@@ -58,7 +59,7 @@
         $('#toggle').click(function ()
         {
             $('#grid').fadeToggle();
-            $('body').toggleClass('debug');
+//            $('body').toggleClass('debug');
         });
 
 
