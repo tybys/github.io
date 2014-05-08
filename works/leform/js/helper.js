@@ -59,14 +59,33 @@
         $('#toggle').click(function ()
         {
             $('#grid').fadeToggle();
-//            $('body').toggleClass('debug');
         });
 
-
-        if ($('body').outerWidth() < 600)
+        // second menu
+        var window_width = $(window).outerWidth();
+        var window_height = $(window).outerHeight();
+        var  sm = function ()
         {
-//            $('.logotype').remove();
-        }
+            var second_menu = $('#second_menu');
+
+            second_menu.css({
+                position: 'absolute',
+                top: window_height / 4
+            });
+        }();
+
+        // img resizer, bad idea, wait for fear
+        var ir = function ()
+        {
+            var img = $('.index');
+
+        }();
+
+        var cap_height = $('.top').outerHeight();
+        var menu_height = $('.menu').outerHeight();
+        var sum = window_height - (cap_height + menu_height)
+
+        $('.index').css('height', sum)
 
         $('.navbar-toggle').on('click', function ()
         {

@@ -16,6 +16,9 @@
 @FedraSansCondensedBook:  "Fedra Sans Condensed Book";
 
 // grid
+html, body, div.row, div.container-fluid {
+//    height: 100%;
+}
 html {
 	position: relative;
 	min-height: 100%;
@@ -23,7 +26,9 @@ html {
 	body {
 		background: rgba(255, 255, 255, 0);
 		height: 100%;
+        min-height: 100%;
 		margin-bottom: 32px;
+        overflow-y: hidden;
 		.container {
 			background: rgba(0,0,0,0.1);
 		}
@@ -77,6 +82,7 @@ body.debug .container {
 		}
 	}
 }
+
 .page-title{ // big h1, h2 etc
 	h2 {
 		font-family: "Fedra Sans Condensed Light 11";
@@ -107,6 +113,7 @@ body.debug .container {
 		}
 	}
 }
+//test
 .float-menu { // simple float menu
 	position: absolute;
 	top: 23%;
@@ -127,6 +134,16 @@ body.debug .container {
 			color: black;
 		}
 	}
+}
+#second_menu {
+    li {
+        list-style: none;
+        a {
+            color: white;
+            font-size: 72px;
+            font-family: @FedraSansCondensedLight;
+        }
+    }
 }
 &.simple-black { // just black button & nothing else
 	background: black;
@@ -245,8 +262,8 @@ form {
 }
 // end teaser
 
-
 .row {
+
 	&.content-area {
 //		display: block;
 //		text-indent: -9999px;
@@ -254,10 +271,19 @@ form {
 //		height: 1200px;
 //		background: url('../img/big/main_first_opt.svg') no-repeat;
 //		background-size: contain;
-		&.index {
-			img {
 
-			}
+		&.index {
+//          background: url(http://media02.hongkiat.com/oversized-background-image-design/demo/images/fotolia_34843570_bg.jpg) no-repeat center center;
+          background: url('../img/big/first.svg') no-repeat top center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://media02.hongkiat.com/oversized-background-image-design/bg.jpg', sizingMethod='scale')";
+          filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://media02.hongkiat.com/oversized-background-image-design/bg.jpg', sizingMethod='scale');
+          img {
+//              position: absolute;
+            }
 		}
 	}
 	&.top {
