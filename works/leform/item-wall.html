@@ -179,6 +179,26 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/jquery.shapeshift.js"></script>
+
+<script>
+    $(function ()
+    {
+        var mosaic = $('.shapeshift-container');
+        function mosaic_items ()
+        {
+            mosaic.shapeshift({
+                enableDrag: false,
+                enableCrossDrop: false,
+                minColumns: 3,
+                align: "left",
+                gutterX: 0,
+                gutterY: 0,
+                paddingX: 0,
+                paddingY: 0
+            });
+        };
+    });
+</script>
 <!--<script src="js/jquery.mosaicflow.js"></script>-->
 <!--<script src="js/jquery.grid-a-licious.js"></script>-->
 <!--<script src="js/jquery.nested.js"></script>-->
