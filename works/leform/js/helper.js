@@ -81,6 +81,18 @@
 
         }();
 
+        // short_shit_code for backgrounds
+        var img_arr = new Array('first','second','third','four');
+        var br = function ()
+        {
+            setInterval(function ()
+            {
+                $('.index').css({
+//                    backgroundImage:
+                })
+            }, 1000);
+        }
+
         var cap_height = $('.top').outerHeight();
         var menu_height = $('.menu').outerHeight();
         var sum = window_height - (cap_height + menu_height)
