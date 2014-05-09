@@ -40,20 +40,19 @@
         rootMenu.css({position: 'fixed',top: '1%',left: '1%',zIndex: '999'});
         rootMenu.find('a').css({display: 'inline',padding: '3px',color: 'white', background: 'black', margin: '0 1px', opacity: .5});
         $('.row .container').append("<div id='grid' style='display: none' />");
-//        $('.shapeshift-container')
-//        .shapeshift({
-//            enableDrag: false,
-//            enableCrossDrop: false,
-//
-//            align: "left",
-//            minColumns: 3,
-//            gutterX: 0,
-//            gutterY: 0,
-//            paddingX: 0,
-//            paddingY: 0
-//        });
 
 
+        $('.shapeshift-container')
+            .shapeshift({
+                enableDrag: false,
+                enableCrossDrop: false,
+                minColumns: 3,
+                align: "left",
+                gutterX: 0,
+                gutterY: 0,
+                paddingX: 0,
+                paddingY: 0
+            });
 
         $('body').append('<span id="toggle">toggle</span>')
         $('#toggle').click(function ()
