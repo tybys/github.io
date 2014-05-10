@@ -72,6 +72,8 @@ html {
 	}
 }
 
+// default animatin for btn
+
 .heading {
 	font-family: "Fedra Serif B Book";
 	font-style: normal;
@@ -83,10 +85,38 @@ html {
 	line-height: 27px;
 	margin-bottom: 27px;
 }
+.form-group {
+	&.news {
+		label.bootstrap-checkbox {
+			font-family: "Fedra Sans Alt Demi 11";
+			font-style: normal;
+			font-weight: normal;
+			font-stretch: normal;
+		}
+	}
+	label.bootstrap-checkbox {
+		padding-left: 0;
+		font-family: "Fedra Serif B Book";
+		font-style: italic;
+		font-weight: normal;
+		font-stretch: normal;
+		& > .label-checkbox {
+			padding-left: 0;
+			vertical-align: bottom;
+		}
+		.btn {
+			text-align: left;
+		}
+	}
+	&.idk {
+		margin-top: 35px;
+		margin-bottom: 40px;
+	}
+}
 
 .share-label {
 	color: @lightgray;
-	font-family: "Fedra Sans Condensed Book";
+	font-family: "Fedra Sans Alt Demi 11";
 	font-style: normal;
 	font-weight: normal;
 	font-stretch: normal;
@@ -95,6 +125,7 @@ html {
 }
 .share {
 	width: 256px;
+	margin-top: 10px;
 	span {
 		position: relative;
 		width: 128px;
@@ -279,7 +310,7 @@ html {
 .controls {
 	clear: both;
 
-	margin: 30px 0 0 0;
+	margin: 33px 0 0 0;
 	button {
 		//		&.simple-black {
 		//			background: black;
@@ -326,16 +357,18 @@ html {
 		overflow: hidden;
 		position: relative;
 		text-align: center;
-		text-transform: uppercase;
 		-webkit-transition: background-color 0.35s;
 		-moz-transition: background-color 0.35s;
 		transition: background-color 0.35s;
 		.text {
-			font: normal normal normal 14px/25px 'Fedra Sans Alt Demi 11';
+			font-family: "Fedra Sans Alt Demi 11";
+			font-style: normal;
+			font-weight: normal;
+			font-stretch: normal;
 
 			display: block;
 			height: 100%;
-			line-height: 25px;
+			line-height: 35px;
 			position: relative;
 			top: 0%;
 			-webkit-transition: top 0.35s;
@@ -352,16 +385,39 @@ html {
 	}
 	.simple-transparent {
 		background: transparent;
+		border: none;
 		font-family: @FedraSansAlt;
 		font-size: 14px;
 		color: black;
 		border-radius: 0;
 
+		text-align: left;
+		padding: 0;
+
 		width: 144px;
 		height: 32px;
 	}
+	&.transparent {
+		.simple-transparent {
+			margin-top: 55px;
+			&:after {
+				content: '';
+				background: url('../img/icons/input-arrow.svg') no-repeat;
+				width: 9px;
+				height: 6.7px;
+				float: right;
+			}
+		}
+	}
 }
-
+.glyphicon-arrow-right:before {
+	content: "";
+	background: url('../img/icons/input-arrow.svg') no-repeat;
+	display: block;
+	width: 9px;
+	height: 6.7px;
+	margin-top: 5px;
+}
 .float-menu { // simple float menu
 	position: absolute;
 	top: 23%;
@@ -375,6 +431,7 @@ html {
 			font-size: 12px;
 			font-style: italic;
 			color: black;
+			margin-bottom: 0;
 		}
 		a {
 			font-family: @FedraSansAlt;

@@ -351,7 +351,6 @@ form {
 			.item {
 				width: 160px;
 				float: left;
-//				margin-left: 32px;
 				margin-right: 32px;
 				&:first-of-type {margin-left: 0;} // remove margin for fist item
 				.cap {
@@ -581,7 +580,7 @@ form {
 	}
 	&.personal-info {
 		form {
-			margin-left: 15px;
+			margin-left: 19px;
 		}
 	}
 	&.journal {
@@ -591,179 +590,7 @@ form {
 			}
 		}
 		.col-md-5 {
-			.share {
-              width: 256px;
-				span {
-					position: relative;
-					width: 128px;
-					height: 96px;
-					display: block;
-                    background: white;
-                    float: left;
 
-					-webkit-transition: background 0.35s;
-					-moz-transition: background 0.35s;
-					transition: background 0.35s;
-					&:hover {
-						i {
-							filter: invert(1);
-							-webkit-filter: invert(1);
-							-moz-filter: invert(1);
-							-o-filter: invert(1);
-							-ms-filter: invert(1);
-						}
-					}
-					#background {
-						background: url('../img/trash/gradient.svg') no-repeat;
-						width: 128px;
-						height: 96px;
-						position: absolute;
-						top: 0;
-						left: 0;
-					}
-					&.active {
-
-					}
-					&.pinterest {
-                        &:hover {
-							background: rgba(151, 0, 38, 1);
-						}
-						i {
-							background: url('../img/icons/pinterest-share-icon.svg') no-repeat;
-
-							width: 14px;
-							height: 18px;
-							display: block;
-
-							position: absolute;
-							left: ~"calc(50% - 7.5px)";
-							top: ~"calc(50% - 9px)";
-
-
-//							filter: invert(1);
-//							-webkit-filter: invert(1);
-//							-moz-filter: invert(1);
-//							-o-filter: invert(1);
-//							-ms-filter: invert(1);
-							//&:hover {background: url('../img/icons/pinterestw-share-icon.svg') no-repeat;}
-						}
-					}
-					&.facebook {
-						&:hover {background: rgba(57, 91, 128, 1);}
-						i {
-							background: url('../img/icons/facebook-share-icon.svg') no-repeat;
-
-							width: 7px;
-							height: 15px;
-							display: block;
-
-							position: absolute;
-							left: ~"calc(50% - 3.5px)";
-							top: ~"calc(50% - 7.5px)";
-
-							//&:hover {background: url('../img/icons/facebookw-share-icon.svg') no-repeat;}
-						}
-					}
-					&.twitter {
-						&:hover {background: rgba(0, 128, 180, 1);}
-						i {
-							background: url('../img/icons/twitter-share-icon.svg') no-repeat;
-
-							width: 20px;
-							height: 14px;
-							display: block;
-
-							position: absolute;
-							left: ~"calc(50% - 10px)";
-							top: ~"calc(50% - 7px)";
-
-							//&:hover {background: url('../img/icons/twitterw-share-icon.svg') no-repeat;}
-						}
-					}
-					&.instagramm {
-						&:hover {background: rgba(48, 103, 138, 1);}
-						i {
-							background: url('../img/icons/instagramm-share-icon.svg') no-repeat;
-
-							width: 15px;
-							height: 15px;
-							display: block;
-
-							position: absolute;
-							left: ~"calc(50% - 7.5px)";
-							top: ~"calc(50% - 7.5px)";
-
-							//&:hover {background: url('../img/icons/instagrammw-share-icon.svg') no-repeat;}
-						}
-					}
-					&.gplus {
-						&:hover {background: rgba(196, 77, 64, 1);}
-						i {
-							background: url('../img/icons/gplus-share-icon.svg') no-repeat;
-
-							width: 22px;
-							height: 19px;
-							display: block;
-
-							position: absolute;
-							left: ~"calc(50% - 11px)";
-							top: ~"calc(50% - 9.5px)";
-
-							//&:hover {background: url('../img/icons/gplusw-share-icon.svg') no-repeat;}
-						}
-					}
-					&.tumblr {
-						&:hover {background: rgba(54, 70, 92, 1);}
-						i {
-							background: url('../img/icons/tumblr-share-icon.svg') no-repeat;
-
-							width: 9px;
-							height: 15px;
-							display: block;
-
-							position: absolute;
-							left: ~"calc(50% - 4.5px)";
-							top: ~"calc(50% - 7.5px)";
-
-							//&:hover {background: url('../img/icons/tumblrw-share-icon.svg') no-repeat;}
-						}
-					}
-					&.vk {
-						&:hover {background: rgba(75, 107, 128, 1);}
-						i {
-							background: url('../img/icons/vk-share-icon.svg') no-repeat;
-
-							width: 19px;
-							height: 10px;
-							display: block;
-
-							color: white;
-
-							position: absolute;
-							left: ~"calc(50% - 8.5px)";
-							top: ~"calc(50% - 5px)";
-
-							//&:hover {background: url('../img/icons/vkw-share-icon.svg') no-repeat;}
-						}
-					}
-                    &.cross {
-                        background: rgba(0, 0, 0, 0.5);
-                        i {
-                          background: url('../img/icons/cross.svg') no-repeat;
-
-                          width: 18px;
-                          height: 18px;
-                          display: block;
-
-                          color: white;
-
-                          position: absolute;
-                          left: ~"calc(50% - 9px)";
-                          top: ~"calc(50% - 9px)";
-                        }
-                    }
-				}
-			}
 		}
 		.article {
 			padding-left: 21px;
@@ -1004,6 +831,178 @@ form {
 					}
 				}
 			}
+		}
+	}
+	&.item {
+		position: relative;
+		.arrows {
+			width: 100%;
+			position: relative;
+			z-index: 101;
+			span {background: black; position: absolute; top: 190px; width: 48px; height: 48px; cursor: pointer;}
+			span {
+				&:after {
+					content: '';
+					background: url('../img/icons/item-arrow.svg') no-repeat;
+					width: 16px;
+					height: 26px;
+					display: block;
+					margin: ~"calc(50% - 13px)" 0 0 ~"calc(50% - 8px)";
+					margin: ~"-webkit-calc(50% - 13px)" 0 0 ~"calc(50% - 8px)";
+				}
+			}
+			#left_arrow {
+				left: 0;
+			}
+			#right_arrow {
+				right: 0;
+				&:after {
+					transform: rotate(180deg);
+					-ms-transform: rotate(180deg);
+					-webkit-transform: rotate(180deg);
+				}
+			}
+		}
+		.big {
+			position: relative;
+			.item-scroller {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			img {
+				width: 511px;
+				margin-top: 12px;
+			}
+			ul {
+				float: right;
+				margin: 0; padding: 0;
+				min-height: 160px;
+				li {
+					list-style: none;
+
+					float: left;
+					img {width: inherit;margin-top: 0;}
+					a {
+						img {
+
+						}
+					}
+				}
+			}
+		}
+
+		.description {
+			padding-left: 30px;
+			.top {
+				margin-top: 29px;
+			}
+		}
+		.price-size-color {
+			.price {
+				line-height: 49px;
+				margin-bottom: 25px;
+			}
+		}
+		.description-share {
+			h3 {
+				margin-top: 30px;
+			}
+			p {
+				line-height: 24px;
+				margin-bottom: 45px;
+			}
+		}
+		.constructor {
+			.top { // articul & breadcrubms
+				ol {
+
+					margin-bottom: 32px;
+					background: none;
+
+					padding: 0;
+					width: 50%;
+					float: left;
+					li {
+						&:before {
+							color: black;
+
+							padding: 0;
+						}
+						a {
+							font-family: @FedraSansAlt;
+							font-size: 12px;
+							color: black;
+						}
+					}
+				}
+				.articul {
+					// font-family: @CondensedBook;
+					font-size: 12px;
+					color: rgb(128, 128, 128);
+					text-align: right;
+
+					width: 50%;
+					float: left;
+				}
+			}
+			.price-size-color {
+				clear: left;
+				.price {
+					font-family: @FedraSansCondensedLight;
+					font-size: 64px;
+					letter-spacing: -4px;
+					color: black;
+				}
+				.sizes {
+					height: 32px;
+
+					margin: 0;
+					padding: 0;
+					li {
+						list-style: none;
+
+						width: 32px;
+						height: 32px;
+						float: left;
+						vertical-align: top;
+						line-height: 32px;
+						text-align: center;
+
+						&.sel {
+							border: 1px solid rgb(79, 79, 79);
+						}
+					}
+				}
+				.colors {
+					height: 32px;
+
+					margin: 15px 0 0 0;
+					padding: 0;
+
+					clear: both;
+					li {
+						list-style: none;
+
+						width: 32px;
+						height: 32px;
+						float: left;
+						vertical-align: top;
+						line-height: 32px;
+						text-align: center;
+
+						&.creme {
+							background: rgb(179, 161, 139);
+						}
+						&.brown {
+							background: rgb(128, 100, 78);
+						}
+					}
+				}
+			}
+		}
+		.share {
+
 		}
 	}
 	.cart-total {
@@ -1316,148 +1315,7 @@ form {
 		min-height: 160px;
 	}
 
-	.item {
-		.big {
-			position: relative;
-			//				width: 50%;
-			//				position: relative;
-			//				left: 0; top: 0;
-			.item-scroller {
-				position: absolute;
-				top: 0;
-				right: 0;
-			}
-			img {
-				width: 511px;
-				margin-top: 12px;
-			}
-			ul {
-				float: right;
-				margin: 0; padding: 0;
-				min-height: 160px;
-				li {
-					list-style: none;
-
-					float: left;
-					img {width: inherit}
-					a {
-						img {
-
-						}
-					}
-				}
-			}
-		}
-
-		.description {
-			padding-left: 32px;
-			.top {
-				margin-top: 33px;
-			}
-		}
-		.price-size-color {
-			.price {
-				line-height: 49px;
-				margin-bottom: 35px;
-			}
-		}
-		.description-share {
-			h3 {
-				margin-top: 30px;
-			}
-			p {
-				line-height: 24px;
-			}
-		}
-		.constructor {
-			.top { // articul & breadcrubms
-				ol {
-					background: none;
-
-					padding: 0;
-					width: 50%;
-					float: left;
-					li {
-						&:before {
-							color: black;
-
-							padding: 0;
-						}
-						a {
-							font-family: @FedraSansAlt;
-							font-size: 12px;
-							color: black;
-						}
-					}
-				}
-				.articul {
-					//						font-family: @CondensedBook;
-					font-size: 12px;
-					color: rgb(128, 128, 128);
-					text-align: right;
-
-					width: 50%;
-					float: left;
-				}
-			}
-			.price-size-color {
-				clear: left;
-				.price {
-					font-family: @FedraSansCondensedLight;
-					font-size: 64px;
-					color: black;
-				}
-				.sizes {
-					height: 32px;
-
-					margin: 0;
-					padding: 0;
-					li {
-						list-style: none;
-
-						width: 32px;
-						height: 32px;
-						float: left;
-						vertical-align: top;
-						line-height: 32px;
-						text-align: center;
-
-						&.sel {
-							border: 1px solid rgb(79, 79, 79);
-						}
-					}
-				}
-				.colors {
-					height: 32px;
-
-					margin: 15px 0 0 0;
-					padding: 0;
-
-					clear: both;
-					li {
-						list-style: none;
-
-						width: 32px;
-						height: 32px;
-						float: left;
-						vertical-align: top;
-						line-height: 32px;
-						text-align: center;
-
-						&.creme {
-							background: rgb(179, 161, 139);
-						}
-						&.brown {
-							background: rgb(128, 100, 78);
-						}
-					}
-				}
-			}
-		}
-		.share {
-
-		}
-	}
+	
 
 }
 @media @_340to_640 {

@@ -9,6 +9,8 @@
     <!-- Bootstrap -->
     <link href="css/import.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <link href="css/defaults.css" rel="stylesheet">
+    <link href="css/bootstrap-checkbox.css" rel="stylesheet">
     <link rel="stylesheet" href="https://s3.amazonaws.com/fonts.typotheque.com/WF-021765-002840.css" type="text/css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,20 +23,20 @@
 <div class="container-fluid">
     <div class="row header top">
         <div class="container">
-            <div class="col-md-2 col-xs-6 phone">
+            <div class="col-md-2 quart col-xs-6 phone">
                 <a href="tel:+7 (495) 660 02 80" title="">+7 (495) 660 02 80</a>
             </div>
-            <div class="col-md-2 col-md-offset-1 lang-switch col-xs-6">
+            <div class="col-md-2 quart col-md-offset-1 lang-switch col-xs-6">
                 <span id="ru">Рус</span>
                 <span id="eng">Eng</span>
             </div>
-            <div class="col-md-2 logotype hidden-xs">
+            <div class="col-md-2 quart logotype hidden-xs">
                 <img src="img/logotype.svg" alt="" />
             </div>
-            <div class="col-md-2 col-xs-6 cabinet">
+            <div class="col-md-2 quart col-xs-6 cabinet">
                 <a href="#" title="">Кабинет</a>
             </div>
-            <div class="col-md-2 col-xs-6 cart">
+            <div class="col-md-2 quart col-xs-6 cart">
                 <a href="#" title="">Корзина</a>
             </div>
         </div>
@@ -71,6 +73,9 @@
 
     <div class="row content-area personal-info">
         <div class="container">
+            <div class="page-title">
+                <h2>Личная информация</h2>
+            </div>
             <ul class="float-menu">
                 <li class="heading">Разделы</li>
                 <li><a href="#">История заказов</a></li>
@@ -78,9 +83,6 @@
                 <li><a href="#">Выйти</a></li>
             </ul>
             <div class="personal-info-form col-md-offset-5">
-                <div class="page-title">
-                    <h1>Личная информация</h1>
-                </div>
                 <form role="form">
                     <div class="form-group has-feedback">
                         <input type="text" class="form-control" id="inputSuccess2" placeholder="name">
@@ -91,8 +93,32 @@
                     <div class="form-group has-feedback">
                         <input type="text" class="form-control" id="inputWarning2" placeholder="phone">
                     </div>
-                    <div class="controls">
-                        <button class="btn btn-default simple-black">Сохранить</button>
+
+                    <div class="form-group has-feedback" style="width: 25%; margin: 15px 0 10px 0; display: inline-block;">
+                        <input type="checkbox" class="checkbox" id="inputWarning2" data-label="Он">
+                    </div>
+
+                    <div class="form-group has-feedback" style="width: 25%; margin: 15px 0 10px 0; display: inline-block;">
+                        <input type="checkbox" class="checkbox" id="inputWarning2" data-label="Она">
+                    </div>
+
+                    <div class="form-group has-feedback news">
+                        <input type="checkbox" class="checkbox" id="inputWarning2" data-label="Получать наши письма: новинки, скидки">
+                    </div>
+
+                    <div class="controls custom transparent">
+                        <button class="button simple-transparent input-icon">Сменить пароль</button>
+                    </div>
+
+                    <div class="form-group has-feedback idk">
+                        <input type="text" class="form-control" id="idk" placeholder="г. Москва, ул. Тверская, 9/7, офис  105-106">
+                    </div>
+
+                    <div class="controls custom">
+                        <div class="button black">
+                            <span class="text">Сохранить</span>
+                            <span class="text">Сохранить</span>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -163,6 +189,13 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap-checkbox.js"></script>
+<script>
+    $(function ()
+    {
+        $('.checkbox').checkbox();
+    });
+</script>
 <!--<script src="js/jquery.shapeshift.js"></script>-->
 <!--<script src="js/jquery.mosaicflow.js"></script>-->
 <!--<script src="js/jquery.grid-a-licious.js"></script>-->
