@@ -1,63 +1,4 @@
-@_1920: ~"screen and (min-width: 1920px)";
-@_1024to_1920: ~"screen and (min-width : 1024px) and (max-width: 1920px)";
-@_340to_640: ~"screen and (min-width : 320px) and (max-width: 640px)";
-// leform vars
-// colors
-@red: 					  ~"rgba(244, 96, 95, 1)";
-@blue: 					  ~"rgba(97, 84, 255, 1)";
-@black: 				  ~"rgba(18, 18, 18, 1)";
-@gray: 					  ~"rgba(109, 109, 109)";
-@lightgray: 			  ~"rgba(142, 144, 146, 1)";
-@white: 				  ~"rgba(255, 255, 255, 1)";
-
-// font: font-style font-variant font-weight font-size/line-height font-family;
-@FedraSerifBook: 		  "Fedra Serif B Book"; // BBook
-@FedraSansAlt: 			  "Fedra Sans Alt Demi 11";
-@FedraSansCondensedLight: "Fedra Sans Condensed Light 11"; // CondensedLight
-@FedraSansCondensedBook:  "Fedra Sans Condensed Book";
-
-html, body, div.row, div.container-fluid {
-//    height: 100%;
-}
-html {
-	position: relative;
-	min-height: 100%;
-//	background: url('../img/trash/grid.png') left top repeat #ffffff;
-	body {
-		background: rgba(255, 255, 255, 0);
-		height: 100%;
-        min-height: 100%;
-		margin-bottom: 32px;
-        overflow-y: hidden;
-;
-		.container {
-			background: rgba(0,0,0,0.1);
-		}
-		&.mobile-index-details {
-			margin-bottom: 35px;
-		}
-		h1 {
-			background: transparent;
-		}
-		#grid {
-			background: url('../img/trash/grid.png') left top repeat;
-			position: absolute;
-			top: 0; left: 0;
-			width: 100%;
-			height: 100%;
-			z-index: -1;
-		}
-		#toggle {
-			position: fixed;
-			top: 1%; right: 1%;
-			z-index: 999;
-		}
-	}
-}
-body.debug .container {
-//	width: 1008px;
-//	background: rgba(0,0,0,0.1);
-}
+@import "custom-vars.less";
 
 .journal {
 	.page-title.date {
@@ -82,274 +23,6 @@ body.debug .container {
 	}
 }
 
-.share-label {
-	color: @lightgray;
-	font-family: "Fedra Sans Condensed Book";
-	font-style: normal;
-	font-weight: normal;
-	font-stretch: normal;
-	font-size: 12px;
-	font-variant: tabular-nums;
-}
-.share {
-	width: 256px;
-	span {
-		position: relative;
-		width: 128px;
-		height: 96px;
-		display: block;
-		background: white;
-		float: left;
-
-		-webkit-transition: background 0.35s;
-		-moz-transition: background 0.35s;
-		transition: background 0.35s;
-		&:hover {
-			i {
-				filter: invert(1);
-				-webkit-filter: invert(1);
-				-moz-filter: invert(1);
-				-o-filter: invert(1);
-				-ms-filter: invert(1);
-			}
-		}
-		#background {
-			background: url('../img/trash/gradient.svg') no-repeat;
-			width: 128px;
-			height: 96px;
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
-		&.active {
-
-		}
-		&.pinterest {
-			&:hover {
-				background: rgba(151, 0, 38, 1);
-			}
-			i {
-				background: url('../img/icons/pinterest-share-icon.svg') no-repeat;
-
-				width: 14px;
-				height: 18px;
-				display: block;
-
-				position: absolute;
-				left: ~"calc(50% - 7.5px)";
-				top: ~"calc(50% - 9px)";
-
-
-				//							filter: invert(1);
-				//							-webkit-filter: invert(1);
-				//							-moz-filter: invert(1);
-				//							-o-filter: invert(1);
-				//							-ms-filter: invert(1);
-				//&:hover {background: url('../img/icons/pinterestw-share-icon.svg') no-repeat;}
-			}
-		}
-		&.facebook {
-			&:hover {background: rgba(57, 91, 128, 1);}
-			i {
-				background: url('../img/icons/facebook-share-icon.svg') no-repeat;
-
-				width: 7px;
-				height: 15px;
-				display: block;
-
-				position: absolute;
-				left: ~"calc(50% - 3.5px)";
-				top: ~"calc(50% - 7.5px)";
-
-				//&:hover {background: url('../img/icons/facebookw-share-icon.svg') no-repeat;}
-			}
-		}
-		&.twitter {
-			&:hover {background: rgba(0, 128, 180, 1);}
-			i {
-				background: url('../img/icons/twitter-share-icon.svg') no-repeat;
-
-				width: 20px;
-				height: 14px;
-				display: block;
-
-				position: absolute;
-				left: ~"calc(50% - 10px)";
-				top: ~"calc(50% - 7px)";
-
-				//&:hover {background: url('../img/icons/twitterw-share-icon.svg') no-repeat;}
-			}
-		}
-		&.instagramm {
-			&:hover {background: rgba(48, 103, 138, 1);}
-			i {
-				background: url('../img/icons/instagramm-share-icon.svg') no-repeat;
-
-				width: 15px;
-				height: 15px;
-				display: block;
-
-				position: absolute;
-				left: ~"calc(50% - 7.5px)";
-				top: ~"calc(50% - 7.5px)";
-
-				//&:hover {background: url('../img/icons/instagrammw-share-icon.svg') no-repeat;}
-			}
-		}
-		&.gplus {
-			&:hover {background: rgba(196, 77, 64, 1);}
-			i {
-				background: url('../img/icons/gplus-share-icon.svg') no-repeat;
-
-				width: 22px;
-				height: 19px;
-				display: block;
-
-				position: absolute;
-				left: ~"calc(50% - 11px)";
-				top: ~"calc(50% - 9.5px)";
-
-				//&:hover {background: url('../img/icons/gplusw-share-icon.svg') no-repeat;}
-			}
-		}
-		&.tumblr {
-			&:hover {background: rgba(54, 70, 92, 1);}
-			i {
-				background: url('../img/icons/tumblr-share-icon.svg') no-repeat;
-
-				width: 9px;
-				height: 15px;
-				display: block;
-
-				position: absolute;
-				left: ~"calc(50% - 4.5px)";
-				top: ~"calc(50% - 7.5px)";
-
-				//&:hover {background: url('../img/icons/tumblrw-share-icon.svg') no-repeat;}
-			}
-		}
-		&.vk {
-			&:hover {background: rgba(75, 107, 128, 1);}
-			i {
-				background: url('../img/icons/vk-share-icon.svg') no-repeat;
-
-				width: 19px;
-				height: 10px;
-				display: block;
-
-				color: white;
-
-				position: absolute;
-				left: ~"calc(50% - 8.5px)";
-				top: ~"calc(50% - 5px)";
-
-				//&:hover {background: url('../img/icons/vkw-share-icon.svg') no-repeat;}
-			}
-		}
-		&.cross {
-			background: rgba(159, 161, 163, 1);
-			text-align: center;
-			line-height: 100px;
-			i {
-//				background: url('../img/icons/cross.svg') no-repeat;
-//
-//				width: 18px;
-//				height: 18px;
-//				display: block;
-//
-//				color: white;
-//
-//				position: absolute;
-//				left: ~"calc(50% - 9px)";
-//				top: ~"calc(50% - 9px)";
-
-				font-family: "Fedra Sans Condensed Book";
-				font-style: normal;
-				font-weight: normal;
-				font-stretch: normal;
-				font-variant: small-caps;
-				font-size: 60px;
-				color: white;
-			}
-		}
-	}
-}
-.controls {
-	clear: both;
-
-	margin: 30px 0 0 0;
-	button {
-//		&.simple-black {
-//			background: black;
-//
-//			border-radius: 0;
-//
-//			width: 144px;
-//			height: 32px;
-//
-//			-webkit-transition: background-color 0.35s;
-//			-moz-transition: background-color 0.35s;
-//			transition: background-color 0.35s;
-//
-//			.label {
-//				font-family: @FedraSansAlt;
-//				font-size: 14px;
-//				line-height: 25px;
-//				color: white;
-//
-//				display: block;
-//				height: 32px;
-////				padding: 0 40px;
-//				position: relative;
-//				top: 0%;
-//				left: 0%;
-//				-webkit-transition: top 0.35s;
-//				-moz-transition: top 0.35s;
-//				transition: top 0.35s;
-//				width: 144px;
-//			}
-//			&:hover {
-//				color: black;
-//				background-color: @lightgray;
-//			}
-//		}
-	}
-	.button.black {
-		background-color: black;
-		color: white;
-		cursor: pointer;
-		display: inline-block;
-		height: 32px;
-		min-width: 144px;
-		overflow: hidden;
-		position: relative;
-		text-align: center;
-		text-transform: uppercase;
-		-webkit-transition: background-color 0.35s;
-		-moz-transition: background-color 0.35s;
-		transition: background-color 0.35s;
-		.text {
-			font: normal normal normal 14px/25px 'Fedra Sans Alt Demi 11';
-
-			display: block;
-			height: 100%;
-			line-height: 25px;
-			position: relative;
-			top: 0%;
-			-webkit-transition: top 0.35s;
-			-moz-transition: top 0.35s;
-			transition: top 0.35s;
-			width: 100%;
-		}
-		&:hover {
-			background-color: @lightgray;
-			.text {
-				top: -100%;
-			}
-		}
-	}
-}
-
 .page-title{ // big h1, h2 etc
 	h2 {
       font-family: "Fedra Sans Condensed Light 11";
@@ -368,13 +41,13 @@ body.debug .container {
 	&.normal h2 {margin-left: 0;}
 	&.date {
 		span {
+			font-family: "Fedra Sans Alt Demi 11";
+			font-style: normal;
+			font-weight: normal;
+			font-stretch: normal;
+
 			display: inline-block;
 			vertical-align: bottom;
-
-          font-family: "Fedra Sans Alt Demi 11";
-          font-style: normal;
-          font-weight: normal;
-          font-stretch: normal;
 			font-size: 14px;
 			line-height: 45px;
 			text-transform: none;
@@ -386,60 +59,11 @@ body.debug .container {
 		}
 	}
 }
-.float-menu { // simple float menu
-	position: absolute;
-	top: 23%;
-	left: 95px;
-	padding: 0; margin: 0;
-	li {
-		list-style: none;
-		line-height: 30px;
-		&.heading {
-			font-family: @FedraSerifBook;
-			font-size: 12px;
-			font-style: italic;
-			color: black;
-		}
-		a {
-			font-family: @FedraSansAlt;
-			font-size: 12px;
-			color: black;
-		}
-	}
-}
-#second_menu {
-    li {
-        list-style: none;
-        a {
-            color: white;
-            font-size: 72px;
-            font-family: @FedraSansCondensedLight;
-        }
-    }
-}
-&.simple-black { // just black button & nothing else
-	background: black;
-	font-family: @FedraSansAlt;
-	font-size: 14px;
-	color: white;
-	border-radius: 0;
 
-	width: 144px;
-	height: 32px;
-}
-.simple-transparent {
-	background: transparent;
-	font-family: @FedraSansAlt;
-	font-size: 14px;
-	color: black;
-	border-radius: 0;
 
-	width: 144px;
-	height: 32px;
-}
 form {
 	.form-group {
-		margin-bottom: 39px;
+//		margin-bottom: 39px;
 		.has-feedback .form-control-feedback {
 			top: 3.5px;
 			right: 30px;
@@ -488,7 +112,10 @@ form {
 }
 
 .teaser {
-	font-family: @FedraSansAlt;
+	font-family: "Fedra Sans Alt Demi 11";
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
 	font-size: 14px;
 	&:not(.largest) {
 		line-height: 24px;
@@ -1282,6 +909,103 @@ form {
 			}
 		}
 	}
+	&.contacts {
+		.map-area {
+			position: relative;
+			img {
+				display: block;
+				margin: 77px auto 18px auto;
+			}
+			a.google-map {
+				font-family: @FedraSansAlt;
+				font-size: 14px;
+				color: black;
+
+				margin-top: 20px;
+				margin-left: 288px;
+			}
+			ul {
+				&.left {
+					position: absolute;
+					top: -45px;
+					left: 30px;
+					margin: 0; padding: 0;
+					li {
+						list-style: none;
+						line-height: 68px;
+						a {
+							font-family: @FedraSansCondensedLight;
+							font-size: 64px;
+							color: black;
+							text-transform: uppercase;
+						}
+					}
+				}
+				&.right {
+					position: absolute;
+					top: 14%;
+					right: 10%;
+					margin: 0; padding: 0;
+					li {
+						list-style: none;
+						line-height: 27px;
+						&.heading {
+							font-family: @FedraSerifBook;
+							font-size: 21px;
+							font-style: italic;
+							color: black;
+
+							margin-bottom: 23px;
+						}
+						&.pad {
+							margin-bottom: 15px;
+						}
+						font-family: @FedraSansAlt;
+						font-size: 14px;
+						color: black;
+					}
+				}
+			}
+		}
+		.callback {
+			.col-md-4 {
+				padding-left: 20px;
+				h3 {
+					margin: 12% 0 25px 0;
+				}
+
+			}
+			.call-back {
+				position: absolute;
+				margin: 3.8% 0 0 5%;
+				li {
+					font-family: "Fedra Sans Alt Demi 11";
+					font-style: normal;
+					font-weight: normal;
+					font-stretch: normal;
+					font-size: 14px;
+					color: black;
+					text-decoration: none;
+					&.heading {
+						font-family: "Fedra Serif B Book";
+						font-style: normal;
+						font-weight: normal;
+						font-stretch: normal;
+						font-size: 21px;
+						font-style: italic;
+						color: black;
+						line-height: 27px;
+						margin-bottom: 27px;
+					}
+					a {
+						font-size: 14px;
+						color: black;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
 	.cart-total {
 		margin-left: 28%;
 		.heading {
@@ -1505,81 +1229,7 @@ form {
 
 			}
 		}
-		&.contacts {
-			.map-area {
-				position: relative;
-				img {
-					display: block;
-					margin: 85px auto 15px auto;
-				}
-				a.google-map {
-					font-family: @FedraSansAlt;
-					font-size: 14px;
-					color: black;
 
-					margin-top: 20px;
-					margin-left: 270px;
-				}
-				ul {
-					&.left {
-						position: absolute;
-						top: -50px;
-						left: 0;
-						margin: 0; padding: 0;
-						li {
-							list-style: none;
-							a {
-								font-family: @FedraSansCondensedLight;
-								font-size: 64px;
-								color: black;
-								text-transform: uppercase;
-							}
-						}
-					}
-					&.right {
-						position: absolute;
-						top: 15%;
-						right: 5%;
-						margin: 0; padding: 0;
-						li {
-							list-style: none;
-							&.heading {
-								font-family: @FedraSerifBook;
-								font-size: 21px;
-								font-style: italic;
-								color: black;
-							}
-							&.pad {
-								margin-bottom: 15px;
-							}
-							font-family: @FedraSansAlt;
-							font-size: 14px;
-							color: black;
-						}
-					}
-				}
-			}
-			.callback {
-				h3 {
-					font-family: @FedraSerifBook;
-					font-size: 21px;
-					font-style: italic;
-					color: black;
-				}
-				a {
-					font-family: @FedraSansAlt;
-					font-size: 14px;
-					color: black;
-					text-decoration: none;
-				}
-				p {
-					font-family: @FedraSansAlt;
-					font-size: 14px;
-					color: black;
-					text-decoration: none;
-				}
-			}
-		}
 	}
 }
 @media @_1024to_1920 {
@@ -1591,7 +1241,7 @@ form {
 
 		width: 30.33333333333333%;
 		.form-group {
-			margin-bottom: 39px;
+//			margin-bottom: 39px;
 		}
 		form {
 			.has-feedback .form-control-feedback {
@@ -1609,7 +1259,7 @@ form {
 	}
 	form {
 		.form-group {
-			margin-bottom: 39px;
+//			margin-bottom: 39px;
 			.has-feedback .form-control-feedback {
 				top: 3.5px;
 				right: 30px;
@@ -1808,81 +1458,7 @@ form {
 
 		}
 	}
-	.contacts {
-		.map-area {
-			position: relative;
-			img {
-				display: block;
-				margin: 85px auto 15px auto;
-			}
-			a.google-map {
-				font-family: @FedraSansAlt;
-				font-size: 14px;
-				color: black;
 
-				margin-top: 20px;
-				margin-left: 270px;
-			}
-			ul {
-				&.left {
-					position: absolute;
-					top: -50px;
-					left: 0;
-					margin: 0; padding: 0;
-					li {
-						list-style: none;
-						a {
-							font-family: @FedraSansCondensedLight;
-							font-size: 64px;
-							color: black;
-							text-transform: uppercase;
-						}
-					}
-				}
-				&.right {
-					position: absolute;
-					top: 15%;
-					right: 5%;
-					margin: 0; padding: 0;
-					li {
-						list-style: none;
-						&.heading {
-							font-family: @FedraSerifBook;
-							font-size: 21px;
-							font-style: italic;
-							color: black;
-						}
-						&.pad {
-							margin-bottom: 15px;
-						}
-						font-family: @FedraSansAlt;
-						font-size: 14px;
-						color: black;
-					}
-				}
-			}
-		}
-		.callback {
-			h3 {
-				font-family: @FedraSerifBook;
-				font-size: 21px;
-				font-style: italic;
-				color: black;
-			}
-			a {
-				font-family: @FedraSansAlt;
-				font-size: 14px;
-				color: black;
-				text-decoration: none;
-			}
-			p {
-				font-family: @FedraSansAlt;
-				font-size: 14px;
-				color: black;
-				text-decoration: none;
-			}
-		}
-	}
 }
 @media @_340to_640 {
 	body.index-mobile-details {

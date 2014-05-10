@@ -1,0 +1,395 @@
+@import "custom-vars.less";
+
+//font-family: "Fedra Sans Alt Demi 11";
+//font-style: normal;
+//font-weight: normal;
+//font-stretch: normal;
+
+//font-family: "Fedra Serif B Book";
+//font-style: normal;
+//font-weight: normal;
+//font-stretch: normal;
+
+//font-family: "Fedra Sans Condensed Light 11";
+//font-style: normal;
+//font-weight: normal;
+//font-stretch: normal;
+
+//font-family: "Fedra Sans Condensed Book";
+//font-style: normal;
+//font-weight: normal;
+//font-stretch: normal;
+html {
+	position: relative;
+	min-height: 100%;
+	//	background: url('../img/trash/grid.png') left top repeat #ffffff;
+	body {
+		background: rgba(255, 255, 255, 0);
+		height: 100%;
+		min-height: 100%;
+		margin-bottom: 32px;
+		overflow-y: hidden;
+		.container {
+			background: rgba(0,0,0,0.1);
+		}
+		&.mobile-index-details {
+			margin-bottom: 35px;
+		}
+		h1 {
+			background: transparent;
+		}
+		#grid {
+			background: url('../img/trash/grid.png') left top repeat;
+			position: absolute;
+			top: 0; left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+		}
+		#toggle {
+			position: fixed;
+			top: 1%; right: 1%;
+			z-index: 999;
+		}
+	}
+
+	a {
+		font-family: "Fedra Sans Alt Demi 11";
+		font-style: normal;
+		font-weight: normal;
+		font-stretch: normal;
+	}
+	p {
+		font-family: "Fedra Sans Alt Demi 11";
+		font-style: normal;
+		font-weight: normal;
+		font-stretch: normal;
+	}
+	ul {
+		li {
+			list-style: none;
+		}
+	}
+}
+
+.heading {
+	font-family: "Fedra Serif B Book";
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+	font-size: 21px;
+	font-style: italic;
+	color: rgb(0, 0, 0);
+	line-height: 27px;
+	margin-bottom: 27px;
+}
+
+.share-label {
+	color: @lightgray;
+	font-family: "Fedra Sans Condensed Book";
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+	font-size: 12px;
+	font-variant: tabular-nums;
+}
+.share {
+	width: 256px;
+	span {
+		position: relative;
+		width: 128px;
+		height: 96px;
+		display: block;
+		background: white;
+		float: left;
+
+		-webkit-transition: background 0.35s;
+		-moz-transition: background 0.35s;
+		transition: background 0.35s;
+		&:hover {
+			i {
+				filter: invert(1);
+				-webkit-filter: invert(1);
+				-moz-filter: invert(1);
+				-o-filter: invert(1);
+				-ms-filter: invert(1);
+			}
+		}
+		#background {
+			background: url('../img/trash/gradient.svg') no-repeat;
+			width: 128px;
+			height: 96px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		&.active {
+
+		}
+		&.pinterest {
+			&:hover {
+				background: rgba(151, 0, 38, 1);
+			}
+			i {
+				background: url('../img/icons/pinterest-share-icon.svg') no-repeat;
+
+				width: 14px;
+				height: 18px;
+				display: block;
+
+				position: absolute;
+				left: ~"calc(50% - 7.5px)";
+				top: ~"calc(50% - 9px)";
+
+
+				//							filter: invert(1);
+				//							-webkit-filter: invert(1);
+				//							-moz-filter: invert(1);
+				//							-o-filter: invert(1);
+				//							-ms-filter: invert(1);
+				//&:hover {background: url('../img/icons/pinterestw-share-icon.svg') no-repeat;}
+			}
+		}
+		&.facebook {
+			&:hover {background: rgba(57, 91, 128, 1);}
+			i {
+				background: url('../img/icons/facebook-share-icon.svg') no-repeat;
+
+				width: 7px;
+				height: 15px;
+				display: block;
+
+				position: absolute;
+				left: ~"calc(50% - 3.5px)";
+				top: ~"calc(50% - 7.5px)";
+
+				//&:hover {background: url('../img/icons/facebookw-share-icon.svg') no-repeat;}
+			}
+		}
+		&.twitter {
+			&:hover {background: rgba(0, 128, 180, 1);}
+			i {
+				background: url('../img/icons/twitter-share-icon.svg') no-repeat;
+
+				width: 20px;
+				height: 14px;
+				display: block;
+
+				position: absolute;
+				left: ~"calc(50% - 10px)";
+				top: ~"calc(50% - 7px)";
+
+				//&:hover {background: url('../img/icons/twitterw-share-icon.svg') no-repeat;}
+			}
+		}
+		&.instagramm {
+			&:hover {background: rgba(48, 103, 138, 1);}
+			i {
+				background: url('../img/icons/instagramm-share-icon.svg') no-repeat;
+
+				width: 15px;
+				height: 15px;
+				display: block;
+
+				position: absolute;
+				left: ~"calc(50% - 7.5px)";
+				top: ~"calc(50% - 7.5px)";
+
+				//&:hover {background: url('../img/icons/instagrammw-share-icon.svg') no-repeat;}
+			}
+		}
+		&.gplus {
+			&:hover {background: rgba(196, 77, 64, 1);}
+			i {
+				background: url('../img/icons/gplus-share-icon.svg') no-repeat;
+
+				width: 22px;
+				height: 19px;
+				display: block;
+
+				position: absolute;
+				left: ~"calc(50% - 11px)";
+				top: ~"calc(50% - 9.5px)";
+
+				//&:hover {background: url('../img/icons/gplusw-share-icon.svg') no-repeat;}
+			}
+		}
+		&.tumblr {
+			&:hover {background: rgba(54, 70, 92, 1);}
+			i {
+				background: url('../img/icons/tumblr-share-icon.svg') no-repeat;
+
+				width: 9px;
+				height: 15px;
+				display: block;
+
+				position: absolute;
+				left: ~"calc(50% - 4.5px)";
+				top: ~"calc(50% - 7.5px)";
+
+				//&:hover {background: url('../img/icons/tumblrw-share-icon.svg') no-repeat;}
+			}
+		}
+		&.vk {
+			&:hover {background: rgba(75, 107, 128, 1);}
+			i {
+				background: url('../img/icons/vk-share-icon.svg') no-repeat;
+
+				width: 19px;
+				height: 10px;
+				display: block;
+
+				color: white;
+
+				position: absolute;
+				left: ~"calc(50% - 8.5px)";
+				top: ~"calc(50% - 5px)";
+
+				//&:hover {background: url('../img/icons/vkw-share-icon.svg') no-repeat;}
+			}
+		}
+		&.cross {
+			background: rgba(159, 161, 163, 1);
+			text-align: center;
+			line-height: 100px;
+			i {
+				//				background: url('../img/icons/cross.svg') no-repeat;
+				//
+				//				width: 18px;
+				//				height: 18px;
+				//				display: block;
+				//
+				//				color: white;
+				//
+				//				position: absolute;
+				//				left: ~"calc(50% - 9px)";
+				//				top: ~"calc(50% - 9px)";
+
+				font-family: "Fedra Sans Condensed Book";
+				font-style: normal;
+				font-weight: normal;
+				font-stretch: normal;
+				font-variant: small-caps;
+				font-size: 60px;
+				color: white;
+			}
+		}
+	}
+}
+.controls {
+	clear: both;
+
+	margin: 30px 0 0 0;
+	button {
+		//		&.simple-black {
+		//			background: black;
+		//
+		//			border-radius: 0;
+		//
+		//			width: 144px;
+		//			height: 32px;
+		//
+		//			-webkit-transition: background-color 0.35s;
+		//			-moz-transition: background-color 0.35s;
+		//			transition: background-color 0.35s;
+		//
+		//			.label {
+		//				font-family: @FedraSansAlt;
+		//				font-size: 14px;
+		//				line-height: 25px;
+		//				color: white;
+		//
+		//				display: block;
+		//				height: 32px;
+		////				padding: 0 40px;
+		//				position: relative;
+		//				top: 0%;
+		//				left: 0%;
+		//				-webkit-transition: top 0.35s;
+		//				-moz-transition: top 0.35s;
+		//				transition: top 0.35s;
+		//				width: 144px;
+		//			}
+		//			&:hover {
+		//				color: black;
+		//				background-color: @lightgray;
+		//			}
+		//		}
+	}
+	.button.black {
+		background-color: black;
+		color: white;
+		cursor: pointer;
+		display: inline-block;
+		height: 32px;
+		min-width: 144px;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		text-transform: uppercase;
+		-webkit-transition: background-color 0.35s;
+		-moz-transition: background-color 0.35s;
+		transition: background-color 0.35s;
+		.text {
+			font: normal normal normal 14px/25px 'Fedra Sans Alt Demi 11';
+
+			display: block;
+			height: 100%;
+			line-height: 25px;
+			position: relative;
+			top: 0%;
+			-webkit-transition: top 0.35s;
+			-moz-transition: top 0.35s;
+			transition: top 0.35s;
+			width: 100%;
+		}
+		&:hover {
+			background-color: @lightgray;
+			.text {
+				top: -100%;
+			}
+		}
+	}
+	.simple-transparent {
+		background: transparent;
+		font-family: @FedraSansAlt;
+		font-size: 14px;
+		color: black;
+		border-radius: 0;
+
+		width: 144px;
+		height: 32px;
+	}
+}
+
+.float-menu { // simple float menu
+	position: absolute;
+	top: 23%;
+	left: 95px;
+	padding: 0; margin: 0;
+	li {
+		list-style: none;
+		line-height: 30px;
+		&.heading {
+			font-family: @FedraSerifBook;
+			font-size: 12px;
+			font-style: italic;
+			color: black;
+		}
+		a {
+			font-family: @FedraSansAlt;
+			font-size: 12px;
+			color: black;
+		}
+	}
+}
+#second_menu {
+	li {
+		list-style: none;
+		a {
+			color: white;
+			font-size: 72px;
+			font-family: @FedraSansCondensedLight;
+		}
+	}
+}
