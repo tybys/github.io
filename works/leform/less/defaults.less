@@ -384,6 +384,7 @@ html {
 		}
 	}
 	.simple-transparent {
+		vertical-align: top;
 		background: transparent;
 		border: none;
 		font-family: @FedraSansAlt;
@@ -396,21 +397,29 @@ html {
 
 		width: 144px;
 		height: 32px;
+		&:after {
+			content: '';
+			background: url('../img/icons/input-arrow.svg') no-repeat;
+			width: 9px;
+			height: 6.7px;
+			float: right;
+		}
 	}
 	&.transparent {
 		.simple-transparent {
 			margin-top: 55px;
 			&:after {
-				content: '';
-				background: url('../img/icons/input-arrow.svg') no-repeat;
-				width: 9px;
-				height: 6.7px;
-				float: right;
+//				content: '';
+//				background: url('../img/icons/input-arrow.svg') no-repeat;
+//				width: 9px;
+//				height: 6.7px;
+//				float: right;
 			}
 		}
 	}
 }
-.glyphicon-arrow-right:before {
+.glyphicon-arrow-right:before,
+.glyphicon-email:before {
 	content: "";
 	background: url('../img/icons/input-arrow.svg') no-repeat;
 	display: block;

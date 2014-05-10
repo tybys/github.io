@@ -97,5 +97,21 @@
             $('#background').remove();
         });
 
+        // cart total template
+        /*
+         <div class="cart-total">
+             <span class="heading">общая стоимость</span>
+             <span class="total">123123 р.</span>
+             <div class="controls custom few-buttons">
+                 <div class="button black">
+                     <span class="text">Оформить заказ</span>
+                     <span class="text">Оформить заказ</span>
+                 </div>
+
+                <button class="button simple-transparent input-icon">Обновить данные</button>
+             </div>
+         </div>
+         */
+
     });
 })(jQuery);

@@ -648,7 +648,16 @@ form {
 		}
 	}
 	&.cart {
+		.page-title {
+			.subtitle {
+				font-size: 18px;
+			}
+		}
+		.col-md-5 {
+			padding-left: 9%;
+		}
 		.item {
+			margin-top: 4px;
 			&:nth-child(3n+4) {
 				margin-left: 0;
 			}
@@ -657,10 +666,18 @@ form {
 			margin-left: 32px;
 			&:first-of-type {margin-left: 0;} // remove margin for fist item
 			.cap {
-				font-family: @FedraSansAlt;
-				font-weight: 100;
+				margin-bottom: 11px;
+				span {
+					font-family: "Fedra Sans Alt Demi 11";
+					font-style: normal;
+					font-weight: 100;
+					font-stretch: normal;
+					margin-bottom: 13px;
+				}
+
 				font-size: 12px;
 				color: rgb(128, 128, 128);
+
 				.articul {
 					float: left;
 					width: 50%;
@@ -680,6 +697,9 @@ form {
 				margin-top: 20px;
 				margin-bottom: 20px;
 				span {
+					&:first-of-type {
+						margin-left: 0;
+					}
 					width: 32px;
 					height: 32px;
 					display: inline-block;
@@ -687,6 +707,7 @@ form {
 
 					line-height: 32px;
 					text-align: center;
+					margin: 0 0 0 12px;
 				}
 				.brown {
 					background: rgb(179, 161, 139);
@@ -1007,6 +1028,7 @@ form {
 	}
 	.cart-total {
 		margin-left: 28%;
+		display: inline-block;
 		.heading {
 			font-family: @FedraSansAlt;
 			font-size: 12px;
