@@ -85,33 +85,54 @@ html {
 	line-height: 27px;
 	margin-bottom: 27px;
 }
-.form-group {
-	&.news {
-		label.bootstrap-checkbox {
-			font-family: "Fedra Sans Alt Demi 11";
-			font-style: normal;
-			font-weight: normal;
-			font-stretch: normal;
-		}
+
+.left-right-teaser {
+	.page-title h2 {
+		margin-bottom: 15px;
 	}
+	.teaser.left {
+		line-height: 31px;
+	}
+	.teaser.right {
+		margin: 0 16.8% 2% auto;
+		text-align: left;
+	}
+
+}
+
+.news {
 	label.bootstrap-checkbox {
-		padding-left: 0;
-		font-family: "Fedra Serif B Book";
-		font-style: italic;
+		font-family: "Fedra Sans Alt Demi 11";
+		font-style: normal;
 		font-weight: normal;
 		font-stretch: normal;
-		& > .label-checkbox {
-			padding-left: 0;
-			vertical-align: bottom;
-		}
-		.btn {
-			text-align: left;
-		}
 	}
-	&.idk {
-		margin-top: 35px;
-		margin-bottom: 40px;
+}
+.ordering {
+	label.bootstrap-checkbox {
+		font-family: "Fedra Sans Alt Demi 11";
+		font-style: normal;
+		font-weight: normal;
+		font-stretch: normal;
 	}
+}
+label.bootstrap-checkbox {
+	padding-left: 0;
+	font-family: "Fedra Serif B Book";
+	font-style: italic;
+	font-weight: normal;
+	font-stretch: normal;
+	& > .label-checkbox {
+		padding-left: 0;
+		vertical-align: bottom;
+	}
+	.btn {
+		text-align: left;
+	}
+}
+.idk {
+	margin-top: 35px;
+	margin-bottom: 40px;
 }
 
 .share-label {
@@ -399,7 +420,7 @@ html {
 		height: 32px;
 		&:after {
 			content: '';
-			background: url('../img/icons/input-arrow.svg') no-repeat;
+			background: url('../img/icons/arr.svg') no-repeat;
 			width: 9px;
 			height: 6.7px;
 			float: right;
@@ -418,15 +439,7 @@ html {
 		}
 	}
 }
-.glyphicon-arrow-right:before,
-.glyphicon-email:before {
-	content: "";
-	background: url('../img/icons/input-arrow.svg') no-repeat;
-	display: block;
-	width: 9px;
-	height: 6.7px;
-	margin-top: 5px;
-}
+
 .float-menu { // simple float menu
 	position: absolute;
 	top: 23%;
@@ -446,6 +459,83 @@ html {
 			font-family: @FedraSansAlt;
 			font-size: 12px;
 			color: black;
+		}
+	}
+}
+
+.password-form {
+	margin-left: 352px;
+}
+.form-group {
+	.glyphicon {
+
+	}
+}
+
+// GLYPHS
+.glyphicon-arrow-right:before,
+.glyphicon-email:before {
+	content: "";
+	background: url('../img/icons/input-arrow.svg') no-repeat;
+	display: block;
+	width: 9px;
+	height: 6.7px;
+	margin-top: 5px;
+	margin-left: 3px;
+}
+.float-form {
+	.glyphicon {
+//		top: 3.5px;
+//		right: 13px;
+//		line-height: 14px;
+		width: 16px;
+		height: 16px;
+		background: red;
+		top: 4.5px;
+		right: 4.5px;
+		&.glyphicon-search:before {
+			position: absolute;
+			top: -10px;
+			right: 0;
+		}
+	}
+	p {color: @lightgray;}
+}
+.completely-form {
+	.float-info {
+		float: left;
+		width: 300px;
+		margin-right: 34px;
+	}
+	form {
+		fieldset legend {
+			font-family: "Fedra Serif B Book";
+			font-style: italic;
+			font-weight: normal;
+			font-stretch: normal;
+
+			font-size: 21px;
+		}
+		.legeng-hint {
+			font-family: "Fedra Sans Alt Demi 11";
+			font-style: normal;
+			font-weight: normal;
+			font-stretch: normal;
+
+			font-size: 14px;
+
+			p {
+				font-family: "Fedra Sans Alt Demi 11";
+				font-style: normal;
+				font-weight: normal;
+				font-stretch: normal;
+				font-size: 14px;
+				color: black;
+				a {
+					color: @lightgray;
+				}
+			}
+
 		}
 	}
 }

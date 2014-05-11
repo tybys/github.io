@@ -97,9 +97,9 @@
             $('#background').remove();
         });
 
-        // cart total template
+        // cart total template, LOL
         /*
-         <div class="cart-total">
+         <<div class="cart-total">>
              <span class="heading">общая стоимость</span>
              <span class="total">123123 р.</span>
              <div class="controls custom few-buttons">
@@ -111,7 +111,28 @@
                 <button class="button simple-transparent input-icon">Обновить данные</button>
              </div>
          </div>
+
+
+         var $wrapper = $("<div/>", { class: "wrapper" }),
+         $inner = $("<div/>", { class: "inner" }),
+         $text = $("<span/>", { text: "Some text" });
+         Then put it all together with append et al:
+
+         $wrapper.append($inner.append($text)).appendTo("#whatever");
          */
+        var wrapper = $('<div/>', {'class' : 'cart-total', 'style': 'width: 325px;'}),
+            wrapper_buttons = $('<div/>', {'class' : 'controls custom few-buttons'}),
+            wrapper_buttons_ = $('<div/>', {'class' : 'button black'}),
+            heading = $('<span/>', {'class' : 'heading'}).text('общая стоимость'),
+            total = $('<span/>', {'class' : 'total'}).text('123123 р.'),
+            btn_text = $('<span/>', {'class' : 'text'}).text('Оформить заказ'),
+            btn = $('<button/>', {'class' : 'button simple-transparent input-icon', 'style': 'margin-left: 25px'}).text('Обновить данные');
+
+        var items_parent = $('.cart-items');
+        var item = items_parent.find('.item').last();
+
+        wrapper.append(heading, total, wrapper_buttons).appendTo(item)
+        wrapper_buttons.append(wrapper_buttons_.append(btn_text)).after().append(btn)
 
     });
 })(jQuery);

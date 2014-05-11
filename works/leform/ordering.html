@@ -9,6 +9,8 @@
     <!-- Bootstrap -->
     <link href="css/import.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <link href="css/defaults.css" rel="stylesheet">
+    <link href="css/bootstrap-checkbox.css" rel="stylesheet">
     <link rel="stylesheet" href="https://s3.amazonaws.com/fonts.typotheque.com/WF-021765-002840.css" type="text/css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,20 +23,20 @@
 <div class="container-fluid">
     <div class="row header top">
         <div class="container">
-            <div class="col-md-2 col-xs-6 phone">
+            <div class="col-md-2 quart col-xs-6 phone">
                 <a href="tel:+7 (495) 660 02 80" title="">+7 (495) 660 02 80</a>
             </div>
-            <div class="col-md-2 col-md-offset-1 lang-switch col-xs-6">
+            <div class="col-md-2 quart col-md-offset-1 lang-switch col-xs-6">
                 <span id="ru">Рус</span>
                 <span id="eng">Eng</span>
             </div>
-            <div class="col-md-2 logotype hidden-xs">
+            <div class="col-md-2 quart logotype hidden-xs">
                 <img src="img/logotype.svg" alt="" />
             </div>
-            <div class="col-md-2 col-xs-6 cabinet">
+            <div class="col-md-2 quart col-xs-6 cabinet">
                 <a href="#" title="">Кабинет</a>
             </div>
-            <div class="col-md-2 col-xs-6 cart">
+            <div class="col-md-2 quart col-xs-6 cart">
                 <a href="#" title="">Корзина</a>
             </div>
         </div>
@@ -69,16 +71,20 @@
         </div>
     </div>
 
-    <div class="row content-area ordering not-half">
+    <div class="row content-area left-right-teaser ordering completely-form not-half">
         <div class="container">
-            <div class="page-title">Оформление заказа</div>
-            <form>
+            <div class="page-title">
+                <h2>Оформление заказа</h2>
+            </div>
+            <form class="float-form order-form" role="form">
                 <fieldset>
-                    <legend>1. Контактная информация</legend>
-                    <div class="legeng-hint">
-                        <p>Уже есть аккаунт на нашем сайте? <a href="#">Войдите</a>, чтобы оформить заказ еще быстрее!</p>
+                    <div class="float-info">
+                        <legend>1. Контактная информация</legend>
+                        <div class="legeng-hint">
+                            <p>Уже есть аккаунт на нашем сайте? <a href="#">Войдите</a>, чтобы оформить заказ еще быстрее!</p>
+                        </div>
                     </div>
-                    <div class="col-md-7 col-md-offset-5">
+                    <div class="col-md-7">
                         <div class="form-group has-feedback">
                             <input type="text" class="form-control" id="inputSuccess2" placeholder="name">
                             <span class="glyphicon glyphicon-arrow-right form-control-feedback"></span>
@@ -94,80 +100,36 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>2. Способ получения</legend>
-                    <div class="col-md-7 col-md-offset-5">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="">
-                                Получать наши письма: новинки, скидки
-                            </label>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="">
-                                Самовывоз из пункта выдачи:  1–2 дня, бесплатно
-                            </label>
-                            <p>Вы сможете забрать покупку на второй день после оформления заказа. Заказ будет храниться в пункте выдачи в течении 5 дней.</p>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="">
-                                Курьерская доставка: 1 день, от 200 р.
-                            </label>
-                            <p>Москва в пределах МКАД. При заказе на сумму от 1500 р. доставка по Москве бесплатно!</p>
-                        </div>
+                    <div class="float-info">
+                        <legend style="margin-top: 65px;">2. Способ получения</legend>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="ch"><input type="checkbox" class="checkbox" data-label="Получать наши письма: новинки, скидки"></div>
 
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="">
-                                Почта России: 0–20 дней, от 150 р.
-                            </label>
-                        </div>
-                        <div class="form-group has-feedback">
+                        <div class="ch"><input type="checkbox" class="checkbox" value="" data-label="Самовывоз из пункта выдачи:  1–2 дня, бесплатно"></div>
+
+                        <p style="margin: 15px 0 30px 0;">Вы сможете забрать покупку на второй день после оформления заказа. Заказ будет храниться в пункте выдачи в течении 5 дней.</p>
+                        <div class="ch"><input type="checkbox" class="checkbox" value="" data-label="Курьерская доставка: 1 день, от 200 р."></div>
+
+                        <p style="margin: 15px 0 30px 0;">Москва в пределах МКАД. При заказе на сумму от 1500 р. доставка по Москве бесплатно!</p>
+                        <div class="ch"><input type="checkbox" class="checkbox" value="" data-label="Почта России: 0–20 дней, от 150 р."></div>
+
+                        <div class="form-group has-feedback" style="margin-top: 78px;">
                             <input type="text" class="form-control" id="inputWarning2" placeholder="Город, улица, дом, корпус, квартира">
-                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>3. Способ оплаты и подтверждение</legend>
-                    <div class="col-md-7 col-md-offset-5">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="">
-                                Оплата наличными при получении заказа
-                            </label>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="">
-                                Квитанция Сбербанка
-                            </label>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="">
-                                QIWI кошелек
-                            </label>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="">
-                                WebMoney
-                            </label>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="">
-                                Яндекс.Деньги
-                            </label>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="">
-                                Банковская карта(Visa, MasterCard)
-                            </label>
-                        </div>
+                    <div class="float-info">
+                        <legend style="margin-top: 23px;">3. Способ оплаты и подтверждение</legend>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="ch_"><input type="checkbox" class="checkbox" value="" data-label="Оплата наличными при получении заказа"></div>
+                        <div class="ch_"><input type="checkbox" class="checkbox" value="" data-label="Квитанция Сбербанка"></div>
+                        <div class="ch_"><input type="checkbox" class="checkbox" value="" data-label="QIWI кошелек"></div>
+                        <div class="ch_"><input type="checkbox" class="checkbox" value="" data-label="WebMoney"></div>
+                        <div class="ch_"><input type="checkbox" class="checkbox" value="" data-label="Яндекс.Деньги"></div>
+                        <div class="ch_"><input type="checkbox" class="checkbox" value="" data-label="Банковская карта(Visa, MasterCard)"></div>
                     </div>
                 </fieldset>
             </form>
@@ -176,26 +138,31 @@
                 <span class="total">123123 р.</span>
                 <p class="teaser">Пожалуйста, проверьте введенные данные и нажмите «Подтвердить заказ» для завершения оформления.</p>
                 <div class="controls custom">
-                    <button class="btn simple-black">Подтвердить</button>
+                    <div class="button black">
+                        <span class="text">Сохранить</span>
+                        <span class="text">Сохранить</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="page-title">Спасибо!</div>
+            <hr>
+            <div class="page-title"><h2>Спасибо!</h2></div>
                 <p class="teaser serif left">Ваш заказ успешно оформлен. Номер заказа — 2063</p>
                 <p class="teaser right">Информация выслана на ваш email. В ближайшее время вам перезвонит наш специалист и подтвердит заказ.</p>
                 <p class="teaser serif left">Сохраните введенные данные, и следующая покупка займет у вас всего пару секунд</p>
                 <p class="teaser right">Регистрация позволит вам отслеживать статус заказа, оформлять новые заказы быстрее и сохранять понравившиеся вещи в "Вишлист".  Для завершения регистрации вам осталось только ввести пароль.</p>
-                <form role="form">
+                <form role="form" class="password-form">
                     <div class="form-group has-feedback">
                         <input type="password" class="form-control" id="inputSuccess2" placeholder="пароль">
-                        <span class="glyphicon glyphicon-arrow-right form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">
                         <input type="password" class="form-control" id="inputWarning2" placeholder="пароль еще раз">
-                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
                     </div>
-                    <div class="controls">
-                        <button class="btn btn-default simple-black">Сохранить</button>
+                    <div class="controls custom">
+                        <div class="button black">
+                            <span class="text">Сохранить</span>
+                            <span class="text">Сохранить</span>
+                        </div>
                     </div>
                 </form>
         </div>
@@ -265,14 +232,16 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<!--<script src="js/jquery.shapeshift.js"></script>-->
-<!--<script src="js/jquery.mosaicflow.js"></script>-->
-<!--<script src="js/jquery.grid-a-licious.js"></script>-->
-<!--<script src="js/jquery.nested.js"></script>-->
+<script src="js/bootstrap-checkbox.js"></script>
+<script>
+    $(function ()
+    {
+        $('.checkbox').checkbox();
+    });
+</script>
 <script src="js/helper.js"></script>
 <script src="js/collapse.js"></script>
 <script src="js/dropdown.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<!--<script src="js/bootstrap.min.js"></script>-->
 </body>
 </html>
