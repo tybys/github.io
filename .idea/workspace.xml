@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/controls.html" afterPath="$PROJECT_DIR$/works/leform/controls.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/css/defaults.css" afterPath="$PROJECT_DIR$/works/leform/css/defaults.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/less/defaults.less" afterPath="$PROJECT_DIR$/works/leform/less/defaults.less" />
     </list>
     <ignored path="github.io.iws" />
@@ -28,7 +30,7 @@
       <file leaf-file-name="helper.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="137" column="0" selection-start="4569" selection-end="4569" vertical-scroll-proportion="0.0" vertical-offset="1918" max-vertical-offset="2002">
+            <state line="137" column="0" selection-start="4569" selection-end="4569" vertical-scroll-proportion="0.0" vertical-offset="984" max-vertical-offset="2002">
               <folding />
             </state>
           </provider>
@@ -46,7 +48,7 @@
       <file leaf-file-name="defaults.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/works/leform/less/defaults.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="190" selection-end="190" vertical-scroll-proportion="0.098492466" vertical-offset="0" max-vertical-offset="7994">
+            <state line="45" column="25" selection-start="719" selection-end="719" vertical-scroll-proportion="0.63316584" vertical-offset="0" max-vertical-offset="8876">
               <folding />
             </state>
           </provider>
@@ -64,7 +66,7 @@
       <file leaf-file-name="controls.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/works/leform/controls.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="119" selection-start="323" selection-end="323" vertical-scroll-proportion="-4.2608695" vertical-offset="0" max-vertical-offset="616">
+            <state line="9" column="119" selection-start="441" selection-end="441" vertical-scroll-proportion="-5.478261" vertical-offset="0" max-vertical-offset="798">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -103,8 +105,8 @@
         <option value="$PROJECT_DIR$/works/leform/ordering.html" />
         <option value="$PROJECT_DIR$/works/leform/404.html" />
         <option value="$PROJECT_DIR$/works/leform/posts.html" />
-        <option value="$PROJECT_DIR$/works/leform/controls.html" />
         <option value="$PROJECT_DIR$/works/leform/less/custom.less" />
+        <option value="$PROJECT_DIR$/works/leform/controls.html" />
         <option value="$PROJECT_DIR$/works/leform/less/defaults.less" />
       </list>
     </option>
@@ -469,21 +471,14 @@
         <state line="166" column="23" selection-start="9410" selection-end="9410" vertical-scroll-proportion="1.3853211" vertical-offset="1448" max-vertical-offset="4032" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="0" selection-start="4569" selection-end="4569" vertical-scroll-proportion="0.0" vertical-offset="1918" max-vertical-offset="2002">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/item.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="136" column="26" selection-start="5545" selection-end="6191" vertical-scroll-proportion="0.92201835" vertical-offset="1372" max-vertical-offset="3552" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/posts.html">
+    <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="64" selection-start="478" selection-end="478" vertical-scroll-proportion="-7.304348" vertical-offset="0" max-vertical-offset="2800">
+        <state line="137" column="0" selection-start="4569" selection-end="4569" vertical-scroll-proportion="0.0" vertical-offset="1918" max-vertical-offset="2002">
           <folding />
         </state>
       </provider>
@@ -495,9 +490,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="64" selection-start="478" selection-end="478" vertical-scroll-proportion="-7.304348" vertical-offset="0" max-vertical-offset="2800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/controls.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="119" selection-start="323" selection-end="323" vertical-scroll-proportion="-4.2608695" vertical-offset="0" max-vertical-offset="616">
+        <state line="9" column="119" selection-start="441" selection-end="441" vertical-scroll-proportion="-5.478261" vertical-offset="0" max-vertical-offset="798">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -506,7 +508,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/less/defaults.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="190" selection-end="190" vertical-scroll-proportion="0.098492466" vertical-offset="0" max-vertical-offset="7994">
+        <state line="45" column="25" selection-start="719" selection-end="719" vertical-scroll-proportion="0.63316584" vertical-offset="0" max-vertical-offset="8876">
           <folding />
         </state>
       </provider>
