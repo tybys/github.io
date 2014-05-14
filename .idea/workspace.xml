@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/controls.html" afterPath="$PROJECT_DIR$/works/leform/controls.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/css/defaults.css" afterPath="$PROJECT_DIR$/works/leform/css/defaults.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/less/defaults.less" afterPath="$PROJECT_DIR$/works/leform/less/defaults.less" />
     </list>
@@ -45,28 +44,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="defaults.less" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="defaults.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/works/leform/less/defaults.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="17" selection-start="1791" selection-end="1791" vertical-scroll-proportion="-35.304348" vertical-offset="756" max-vertical-offset="9492">
+            <state line="116" column="59" selection-start="2672" selection-end="2672" vertical-scroll-proportion="0.8301508" vertical-offset="798" max-vertical-offset="9450">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="posts.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/works/leform/posts.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="64" selection-start="478" selection-end="478" vertical-scroll-proportion="-7.304348" vertical-offset="0" max-vertical-offset="2800">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controls.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="controls.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/works/leform/controls.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="0" selection-start="1975" selection-end="1975" vertical-scroll-proportion="0.7035176" vertical-offset="0" max-vertical-offset="995">
+            <state line="50" column="0" selection-start="1975" selection-end="1975" vertical-scroll-proportion="-30.434782" vertical-offset="0" max-vertical-offset="854">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -106,8 +96,8 @@
         <option value="$PROJECT_DIR$/works/leform/404.html" />
         <option value="$PROJECT_DIR$/works/leform/posts.html" />
         <option value="$PROJECT_DIR$/works/leform/less/custom.less" />
-        <option value="$PROJECT_DIR$/works/leform/less/defaults.less" />
         <option value="$PROJECT_DIR$/works/leform/controls.html" />
+        <option value="$PROJECT_DIR$/works/leform/less/defaults.less" />
       </list>
     </option>
   </component>
@@ -483,13 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/less/custom.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="7" selection-start="333" selection-end="466" vertical-scroll-proportion="-16.434782" vertical-offset="0" max-vertical-offset="22834">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/posts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="64" selection-start="478" selection-end="478" vertical-scroll-proportion="-7.304348" vertical-offset="0" max-vertical-offset="2800">
@@ -497,19 +480,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/less/defaults.less">
+    <entry file="file://$PROJECT_DIR$/works/leform/less/custom.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="17" selection-start="1791" selection-end="1791" vertical-scroll-proportion="-35.304348" vertical-offset="756" max-vertical-offset="9492">
+        <state line="27" column="7" selection-start="333" selection-end="466" vertical-scroll-proportion="-16.434782" vertical-offset="0" max-vertical-offset="22834">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/controls.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="1975" selection-end="1975" vertical-scroll-proportion="0.7035176" vertical-offset="0" max-vertical-offset="995">
+        <state line="50" column="0" selection-start="1975" selection-end="1975" vertical-scroll-proportion="-30.434782" vertical-offset="0" max-vertical-offset="854">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/less/defaults.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="59" selection-start="2672" selection-end="2672" vertical-scroll-proportion="0.8301508" vertical-offset="798" max-vertical-offset="9450">
+          <folding />
         </state>
       </provider>
     </entry>
