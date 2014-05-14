@@ -25,11 +25,8 @@
 
 .page-title{ // big h1, h2 etc
 	h2 {
-//      font-family: "Fedra Sans Condensed Light 11";
-//      font-style: normal;
-//      font-weight: normal;
-//      font-stretch: normal;
-		font-size: 64px;
+		font: normal normal normal 64px @sans_condensed_book_light;
+
 		color: rgb(0, 0, 0);
 		text-transform: uppercase;
 
@@ -190,11 +187,8 @@ form {
 			float: left;
 			line-height: 95px;
           a {
-            font-family: "Fedra Serif B Book";
-            font-style: italic;
-            font-weight: normal;
-            font-stretch: normal;
-            color: black;
+			  	font: normal normal normal 12px @serif_italic;
+				color: black;
           }
 			&.phone {
 			//              background: rgba(255, 215, 108, 0.5);
@@ -206,6 +200,7 @@ form {
 
               }
 			span {
+				font: normal normal normal 12px @serif_italic;
 			  &:first-of-type {
 				color: rgba(160, 162, 164, 1);
 				&:after {
@@ -276,10 +271,7 @@ form {
                         width: auto;
 						text-align: center;
 						a {
-                          font-family: "Fedra Sans Condensed Book";
-                          font-style: normal;
-                          font-weight: normal;
-                          font-stretch: normal;
+							font: normal normal normal 18px @sans_condensed_book_light;
 
 							font-size: 18px;
 							color: black;
