@@ -87,9 +87,11 @@
                     <li><a href="#">Шорты</a></li>
                 </ul>
             </div>
+
             <div data-ss-colspan="1">
                 <img src="img/big/big-top-shoes.svg" />
             </div>
+
             <div data-ss-colspan="2">
                 <img src="img/big/big-man.svg" />
             </div>
@@ -181,31 +183,31 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/jquery.shapeshift.js"></script>
 
-<script>
-    $(function ()
-    {
-        var mosaic = $('.shapeshift-container');
-        function mosaic_items ()
-        {
-            mosaic.shapeshift({
-                enableDrag: false,
-                enableCrossDrop: false,
-                minColumns: 3,
-                align: "left",
-                gutterX: 0,
-                gutterY: 0,
-                paddingX: 0,
-                paddingY: 0
-            });
-        };
-    });
-</script>
+
 <!--<script src="js/jquery.mosaicflow.js"></script>-->
 <!--<script src="js/jquery.grid-a-licious.js"></script>-->
 <!--<script src="js/jquery.nested.js"></script>-->
 <script src="js/helper.js"></script>
 <script src="js/collapse.js"></script>
 <script src="js/dropdown.js"></script>
+<script>
+	$(function ()
+	{
+		var mosaic = $('.shapeshift-container');
+
+		mosaic.shapeshift({
+			enableDrag: false,
+			enableCrossDrop: false,
+			minColumns: 3,
+			align: "left",
+			gutterX: 0,
+			gutterY: 0,
+			paddingX: 0,
+			paddingY: 0
+		});
+
+	});
+</script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <!--<script src="js/bootstrap.min.js"></script>-->
 </body>
