@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/img/testserif.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/controls.html" afterPath="$PROJECT_DIR$/works/leform/controls.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/less/custom-vars.less" afterPath="$PROJECT_DIR$/works/leform/less/custom-vars.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/css/custom.css" afterPath="$PROJECT_DIR$/works/leform/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/css/defaults.css" afterPath="$PROJECT_DIR$/works/leform/css/defaults.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/less/defaults.less" afterPath="$PROJECT_DIR$/works/leform/less/defaults.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,10 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="defaults.less" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="defaults.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/works/leform/less/defaults.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="16" selection-start="225" selection-end="225" vertical-scroll-proportion="0.20289855" vertical-offset="0" max-vertical-offset="9030">
+            <state line="17" column="1" selection-start="289" selection-end="289" vertical-scroll-proportion="-10.347826" vertical-offset="0" max-vertical-offset="9030">
               <folding />
             </state>
           </provider>
@@ -65,17 +69,19 @@
       <file leaf-file-name="custom-vars.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/works/leform/less/custom-vars.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="47" selection-start="1983" selection-end="1983" vertical-scroll-proportion="-29.217392" vertical-offset="0" max-vertical-offset="756">
+            <state line="26" column="15" selection-start="1005" selection-end="1005" vertical-scroll-proportion="-15.826087" vertical-offset="0" max-vertical-offset="784">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controls.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="controls.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/works/leform/controls.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="43" selection-start="1211" selection-end="1211" vertical-scroll-proportion="-19.47826" vertical-offset="0" max-vertical-offset="854">
-              <folding />
+            <state line="39" column="35" selection-start="1502" selection-end="1502" vertical-scroll-proportion="0.5275362" vertical-offset="0" max-vertical-offset="1035">
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,10 +116,10 @@
         <option value="$PROJECT_DIR$/works/leform/ordering.html" />
         <option value="$PROJECT_DIR$/works/leform/404.html" />
         <option value="$PROJECT_DIR$/works/leform/posts.html" />
-        <option value="$PROJECT_DIR$/works/leform/controls.html" />
-        <option value="$PROJECT_DIR$/works/leform/less/custom-vars.less" />
         <option value="$PROJECT_DIR$/works/leform/less/custom.less" />
         <option value="$PROJECT_DIR$/works/leform/less/defaults.less" />
+        <option value="$PROJECT_DIR$/works/leform/less/custom-vars.less" />
+        <option value="$PROJECT_DIR$/works/leform/controls.html" />
       </list>
     </option>
   </component>
@@ -274,6 +280,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tybys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="works" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -327,11 +355,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\src\github\tybys\works\leform\img" />
       <recent name="$PROJECT_DIR$/works/leform/img/big" />
       <recent name="$PROJECT_DIR$/works/leform/img/icons" />
       <recent name="$PROJECT_DIR$/works/leform/css" />
       <recent name="$PROJECT_DIR$/works/leform/js" />
-      <recent name="$PROJECT_DIR$/works/leform/img/trash" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/jworks/fear/thermo/js" />
@@ -486,16 +514,16 @@
         <state line="12" column="64" selection-start="478" selection-end="478" vertical-scroll-proportion="-7.304348" vertical-offset="0" max-vertical-offset="2800" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/controls.html">
+    <entry file="file://$PROJECT_DIR$/works/leform/less/custom-vars.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="43" selection-start="1211" selection-end="1211" vertical-scroll-proportion="-19.47826" vertical-offset="0" max-vertical-offset="854">
+        <state line="26" column="15" selection-start="1005" selection-end="1005" vertical-scroll-proportion="-15.826087" vertical-offset="0" max-vertical-offset="784">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/less/custom-vars.less">
+    <entry file="file://$PROJECT_DIR$/works/leform/less/defaults.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="47" selection-start="1983" selection-end="1983" vertical-scroll-proportion="-29.217392" vertical-offset="0" max-vertical-offset="756">
+        <state line="17" column="1" selection-start="289" selection-end="289" vertical-scroll-proportion="-10.347826" vertical-offset="0" max-vertical-offset="9030">
           <folding />
         </state>
       </provider>
@@ -516,10 +544,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/less/defaults.less">
+    <entry file="file://$PROJECT_DIR$/works/leform/controls.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="16" selection-start="225" selection-end="225" vertical-scroll-proportion="0.20289855" vertical-offset="0" max-vertical-offset="9030">
-          <folding />
+        <state line="39" column="35" selection-start="1502" selection-end="1502" vertical-scroll-proportion="0.5275362" vertical-offset="0" max-vertical-offset="1035">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
