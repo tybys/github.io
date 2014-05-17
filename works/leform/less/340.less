@@ -1,0 +1,146 @@
+@import "custom-vars.less";
+
+body.index-mobile-details {
+	margin-bottom: 125px;
+}
+#sub {display: none;}
+
+.container-fluid {padding: 0;}
+.container-fluid.background {
+	h1.motd {
+		position: static !important;
+	}
+	overflow-x: hidden;
+	background-image: url('../img/big/first.svg');
+	background-repeat: no-repeat;
+	background-size: auto 416px;
+	height: 416px;
+	min-width: 100%;
+	background-position: -100px !important;
+	margin: 0;
+}
+.row {
+	margin: 0;
+	&.top {
+		padding-top: 22px;
+		.container {
+			padding-left: 0; padding-right: 0;
+			a {
+				color: black;
+			}
+			.phone {
+				text-align: left;
+				padding-left: 0;
+				margin-bottom: 15px;
+			}
+			.cabinet {
+				text-align: left;
+				padding-left: 0;
+			}
+			.lang-switch {
+				text-align: right;
+				padding-right: 0;
+				margin-bottom: 15px;
+			}
+			.cart {
+				text-align: right;
+				padding-right: 0;
+			}
+		}
+		.quart {
+			line-height: inherit;
+			margin: 16px 0;
+			&.phone {
+				text-align: left;
+			}
+			&.cabinet {
+				text-align: left;
+				margin-left: 0;
+			}
+
+			&.lang-switch {
+				text-align: right;
+			}
+			&.cart {
+				text-align: right;
+			}
+		}
+
+	}
+	&.contact-info {
+		.bottom-form {
+			width: 100%;
+			margin-left: 0;
+		}
+		.payment {
+			margin-left: 0;
+			width: 100%;
+			span {
+				margin: 0 8%;
+			}
+		}
+	}
+
+	&.content-area.index {
+		overflow-x: hidden;
+		img { // shit or not a shit, what is the question
+			display: none;
+		}
+	}
+	&.menu {
+		.navbar-toggle {
+			margin-right: 0;
+		}
+		.navbar-collapse {
+			max-height: inherit;
+			background: black;
+			ul {
+				li {
+					background: none;
+					a {
+						background: none;
+						color: white !important;
+						padding-right: 0 !important;
+					}
+				}
+			}
+
+		}
+	}
+	&.order-history {
+		.float-menu {
+			position: static;
+		}
+		.history-items {
+			margin-left: 0;
+			h2 {
+				font-size: 46px;
+			}
+			.item {
+				img {
+					width: auto;
+				}
+				float: none;
+				//					width: 100%;
+				margin-left: 0;
+			}
+		}
+	}
+} // top of top
+
+.logotype-mobile {
+	margin-top: 12px;
+}
+
+#footer {
+	height: auto;
+	//		position: static;
+	.brand, .copyright {
+		text-align: center;
+	}
+	.brand,
+	.copyright,
+	.social {
+		line-height: 32px;
+	}
+}

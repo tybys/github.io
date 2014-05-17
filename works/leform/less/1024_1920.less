@@ -1,0 +1,84 @@
+@import "custom-vars.less";
+
+// some defaults (width height and rest box styles)
+.bottom-form {
+	padding: 0;
+	margin-top: 19px;
+	margin-left: 15px;
+
+	width: 30.33333333333333%;
+	.form-group {
+		//			margin-bottom: 39px;
+	}
+	form {
+		.has-feedback .form-control-feedback {
+			top: 3.5px;
+			right: 30px;
+
+			width: 14px;
+			height: 14px;
+		}
+		input {
+			width: 288px;
+			height: 25px;
+		}
+	}
+}
+form {
+	.form-group {
+		//			margin-bottom: 39px;
+		.has-feedback .form-control-feedback {
+			top: 3.5px;
+			right: 30px;
+
+			width: 14px;
+			height: 14px;
+		}
+		input,
+		textarea {
+			width: 288px;
+			height: 25px;
+		}
+		textarea {
+			height: 64px;
+			resize: none;
+		}
+	}
+}
+//
+.container {
+	width: 1024px;
+	padding: 0;
+}
+.top {
+	.quart {
+		width: 20%;
+		&.phone {
+
+		}
+		&.lang-switch {
+			width: 19%;
+		}
+		&.logotype {}
+		&.cabinet { // text-overflow ellipsis
+			width: 15%;
+		}
+		&.cart {
+			width: 21%;
+			//              background: rgba(0,0,0,0.8);
+		}
+	}
+
+}
+.top {
+	.col-md-2 {
+		// width: ~"calc(192px - 30px)";
+		width: 204px;
+		//			line-height: 92px;
+		line-height: 95px;
+		margin: 0; padding: 0;
+	}
+}
+.contact-info {
+	min-height: 160px;
+}

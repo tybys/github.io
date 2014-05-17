@@ -1,5 +1,66 @@
 @import "custom-vars.less";
 
+// global font section for main elemets
+// top links
+.top {
+	.quart {
+		a {
+			font: italic normal normal 12px @serif_italic;
+		}
+	}
+}
+// main menu
+.menu {
+	.nav {
+		a {
+			font: normal normal normal 18px @sans_condensed_book_light;
+		}
+	}
+}
+// title
+.page-title {
+	h2 {
+		font: normal normal normal 64px @sans_condensed_book_light;
+		letter-spacing: -1.2px;
+	}
+	&.date {
+		span {
+			font: normal normal normal 14px/45px @sans_alt_demi;
+		}
+	}
+}
+// subtitle
+.subtitle {
+	font: italic normal normal 21px @serif_italic_oldnumber;
+}
+// links in container
+.container {
+	a {
+		font: italic normal normal 12px @serif_italic;
+		color: black;
+		text-decoration: none;
+
+		&.simple-transparent {
+			margin: 15px 0 0 0;
+			padding-left: 0;
+			font: normal normal normal 14px @sans_alt_demi;
+			position: relative;
+			&:after {
+				content: "";
+				background: url('../img/icons/input-arrow.svg') no-repeat;
+				display: block;
+				width: 9px;
+				height: 6.7px;
+				margin-top: 5px;
+				margin-left: 3px;
+				position: absolute;
+				top: 3.34px;
+				right: 0;
+			}
+		}
+	}
+}
+
 .one {
 	margin-left: 5%;
 	font-family: "Fedra Serif B Demi";
@@ -68,18 +129,17 @@
 }
 .price {
 	margin: 0 0 0 5%;
-//	font-size: 64px;
-//	letter-spacing: -1.2px;
-//
-//	font-family: "Fedra Sans Condensed Book";
-//	font-style: normal;
-//	font-weight: normal;
-//	font-stretch: normal;
-
 	letter-spacing: -1.2px;
 	font: normal normal normal 64px @sans_condensed_book_light;
 
 	text-transform: uppercase;
+}
+#second_menu {
+	a {
+		font: normal normal normal 64px @sans_condensed_book_light;
+		letter-spacing: -1.2px;
+		color: white;
+	}
 }
 .paragraph {
 	margin: 0 0 0 5%;
