@@ -33,6 +33,39 @@
 .subtitle {
 	font: italic normal normal 21px @serif_italic_oldnumber;
 }
+
+.page-title { // big h1, h2 etc
+	h2 {
+		//		font: normal normal normal 64px @sans_condensed_book_light;
+
+		color: rgb(0, 0, 0);
+		text-transform: uppercase;
+
+		margin-top: 40px;
+		margin-left: 28%;
+		margin-bottom: 18px;
+
+	}
+	&.normal h2 {margin-left: 0;}
+	&.date {
+		span {
+			//			font-family: "Fedra Sans Alt Demi 11";
+			//			font-style: normal;
+			//			font-weight: normal;
+			//			font-stretch: normal;
+
+			display: inline-block;
+			vertical-align: bottom;
+			//			font-size: 14px;
+			text-transform: none;
+		}
+		h2 {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 auto;
+		}
+	}
+}
 // links in container
 .container {
 	a {
@@ -105,6 +138,52 @@
 	text-transform: lowercase;
 }
 
+.teaser {
+	font-family: "Fedra Sans Alt Demi 11";
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+	font-size: 14px;
+	&:not(.largest) {
+		line-height: 24px;
+	}
+	&.largest {
+		position: relative;
+		left: -37%;
+		top: -13px;
+		width: 800px;
+
+		text-transform: uppercase;
+		font-family: @FedraSansCondensedLight;
+		font-size: 64px;
+		line-height: 80px;
+	}
+	&.static {
+		position: static;
+	}
+	&.left {
+		text-align: left;
+		max-width: 300px;
+		margin: 0 auto 0 0;
+	}
+	&.right {
+		text-align: right;
+		max-width: 420px;
+		margin: 0 0 0 auto;
+	}
+	&.serif {
+		font-family: @FedraSerifBook;
+		font-size: 21px;
+		font-style: italic;
+	}
+	&.first-letter {
+		&:first-letter {
+			font-family: @FedraSansCondensedLight;
+			font-size: 64px;
+		}
+	}
+}
+
 .menuSample {
 	color: black;
 	margin: 0 0 0 5%;
@@ -121,7 +200,13 @@
 
 	text-transform: uppercase;
 }
+.subtitle {
+	font-family: @FedraSerifBook;
+	font-size: 24px;
+	font-style: italic;
 
+	margin-top: 0;
+}
 .date {
 	margin: 0 0 0 5%;
 
@@ -149,25 +234,43 @@
 	text-transform: none;
 }
 
-//font-family: "Fedra Sans Alt Demi 11";
-//font-style: normal;
-//font-weight: normal;
-//font-stretch: normal;
+form {
+	.form-group {
+		//		margin-bottom: 39px;
+		.has-feedback .form-control-feedback {
+			top: 3.5px;
+			right: 30px;
 
-//font-family: "Fedra Serif B Book";
-//font-style: normal;
-//font-weight: normal;
-//font-stretch: normal;
+			line-height: 14px;
+		}
+		input,
+		textarea {
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			border-bottom: 1px solid black;
+			border-radius: 0;
 
-//font-family: "Fedra Sans Condensed Light 11";
-//font-style: normal;
-//font-weight: normal;
-//font-stretch: normal;
+			box-shadow: none;
 
-//font-family: "Fedra Sans Condensed Book";
-//font-style: normal;
-//font-weight: normal;
-//font-stretch: normal;
+			font-size: 12px;
+
+			padding: 0;
+			&::-webkit-input-placeholder {
+				font-family: @FedraSerifBook;
+				font-size: 12px;
+				font-style: italic;
+				color: black;
+			}
+			&:-moz-placeholder {}
+		}
+		textarea {
+			height: 64px;
+			resize: none;
+		}
+	}
+}
+
 html {
 	position: relative;
 	min-height: 100%;
