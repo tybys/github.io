@@ -9,7 +9,8 @@
     <link href="css/import.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/defaults.css" rel="stylesheet">
-    <link href="css/defaults.css" rel="stylesheet">
+    <link href="css/jquery.formChanger.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="all and (min-width: 1920px)" href="css/1920.css"><!--1920-->
     <link rel="stylesheet" type="text/css" media="screen and (min-width : 1024px) and (max-width: 1920px)" href="css/1024_1920.css"><!--1024 > 1920-->
     <link rel="stylesheet" type="text/css" media="screen and (min-width : 320px) and (max-width: 640px)" href="css/340.css"><!--iphone-->
@@ -78,7 +79,7 @@
             <div class="page-title">
                 <h2>Оформление заказа</h2>
             </div>
-            <form class="float-form order-form" role="form">
+            <form class="float-form order-form niceform" role="form">
                 <fieldset>
                     <div class="float-info">
                         <legend>1. Контактная информация</legend>
@@ -106,16 +107,13 @@
                         <legend style="margin-top: 65px;">2. Способ получения</legend>
                     </div>
                     <div class="col-md-7">
-                        <div class="ch"><input type="checkbox" class="checkbox" data-label="Получать наши письма: новинки, скидки"></div>
 
-                        <div class="ch"><input type="checkbox" class="checkbox" value="" data-label="Самовывоз из пункта выдачи:  1–2 дня, бесплатно"></div>
-
+                        <div class="ch"><label><input type="checkbox" class="checkbox">Получать наши письма: новинки, скидки</label></div>
+                        <div class="ch"><label><input type="checkbox" class="checkbox" value="">Самовывоз из пункта выдачи:  1–2 дня, бесплатно</label></div>
                         <p style="margin: 15px 0 30px 0;">Вы сможете забрать покупку на второй день после оформления заказа. Заказ будет храниться в пункте выдачи в течении 5 дней.</p>
-                        <div class="ch"><input type="checkbox" class="checkbox" value="" data-label="Курьерская доставка: 1 день, от 200 р."></div>
-
+                        <div class="ch"><label><input type="checkbox" class="checkbox" value="">Курьерская доставка: 1 день, от 200 р.</label></div>
                         <p style="margin: 15px 0 30px 0;">Москва в пределах МКАД. При заказе на сумму от 1500 р. доставка по Москве бесплатно!</p>
-                        <div class="ch"><input type="checkbox" class="checkbox" value="" data-label="Почта России: 0–20 дней, от 150 р."></div>
-
+                        <div class="ch"><label><input type="checkbox" class="checkbox" value="">Почта России: 0–20 дней, от 150 р.</label></div>
                         <div class="form-group has-feedback" style="margin-top: 78px;">
                             <input type="text" class="form-control" id="inputWarning2" placeholder="Город, улица, дом, корпус, квартира">
                         </div>
@@ -126,12 +124,13 @@
                         <legend style="margin-top: 23px;">3. Способ оплаты и подтверждение</legend>
                     </div>
                     <div class="col-md-7">
-                        <div class="ch_"><input type="checkbox" class="checkbox" value="" data-label="Оплата наличными при получении заказа"></div>
-                        <div class="ch_"><input type="checkbox" class="checkbox" value="" data-label="Квитанция Сбербанка"></div>
-                        <div class="ch_"><input type="checkbox" class="checkbox" value="" data-label="QIWI кошелек"></div>
-                        <div class="ch_"><input type="checkbox" class="checkbox" value="" data-label="WebMoney"></div>
-                        <div class="ch_"><input type="checkbox" class="checkbox" value="" data-label="Яндекс.Деньги"></div>
-                        <div class="ch_"><input type="checkbox" class="checkbox" value="" data-label="Банковская карта(Visa, MasterCard)"></div>
+
+                        <div class="ch"><label><input type="checkbox" class="checkbox" value="" data-label="">Оплата наличными при получении заказа</label></div>
+                        <div class="ch"><label><input type="checkbox" class="checkbox" value="" data-label="">Квитанция Сбербанка</label></div>
+                        <div class="ch"><label><input type="checkbox" class="checkbox" value="" data-label="">QIWI кошелек</label></div>
+                        <div class="ch"><label><input type="checkbox" class="checkbox" value="" data-label="">WebMoney</label></div>
+                        <div class="ch"><label><input type="checkbox" class="checkbox" value="" data-label="">Яндекс.Деньги</label></div>
+                        <div class="ch"><label><input type="checkbox" class="checkbox" value="" data-label="">Банковская карта(Visa, MasterCard)</label></div>
                     </div>
                 </fieldset>
             </form>
@@ -233,11 +232,11 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/bootstrap-checkbox.js"></script>
+<script src="js/jquery.formChanger.js"></script>
 <script>
     $(function ()
     {
-        $('.checkbox').checkbox();
+        $("input[type='radio'], input[type='checkbox']").applyChanger()
     });
 </script>
 <script src="js/helper.js"></script>

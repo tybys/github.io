@@ -184,7 +184,7 @@
 	}
 }
 
-.menuSample {
+.menuSample_ {
 	color: black;
 	margin: 0 0 0 5%;
 
@@ -192,7 +192,7 @@
 
 	text-transform: uppercase;
 }
-.title {
+.title_ {
 	margin: 0 0 0 5%;
 	letter-spacing: -1.2px;
 
@@ -200,33 +200,33 @@
 
 	text-transform: uppercase;
 }
-.subtitle {
+.subtitle_ {
 	font-family: @FedraSerifBook;
 	font-size: 24px;
 	font-style: italic;
 
 	margin-top: 0;
 }
-.date {
+.date_ {
 	margin: 0 0 0 5%;
 
 	font: normal normal normal 14px @sans_alt_demi;
 }
-.price {
+.price_ {
 	margin: 0 0 0 5%;
 	letter-spacing: -1.2px;
 	font: normal normal normal 64px @sans_condensed_book_light;
 
 	text-transform: uppercase;
 }
-#second_menu {
+#second_menu_ {
 	a {
 		font: normal normal normal 64px @sans_condensed_book_light;
 		letter-spacing: -1.2px;
 		color: white;
 	}
 }
-.paragraph {
+.paragraph_ {
 	margin: 0 0 0 5%;
 
 	font: italic normal normal 12px @serif_italic_b_demi_2;
@@ -800,4 +800,279 @@ label.bootstrap-checkbox {
 			font-family: @FedraSansCondensedLight;
 		}
 	}
+}
+
+
+// modal
+.modal {
+	.item {
+		width: 160px;
+		float: left;
+		margin-right: 32px;
+		&:first-of-type {margin-left: 0;} // remove margin for fist item
+		.cap {
+			font-family: @FedraSansAlt;
+			font-weight: 100;
+			font-size: 12px;
+			color: rgb(128, 128, 128);
+			.articul {
+				float: left;
+				width: 100%;
+			}
+			.date {
+				float: left;
+				width: 50%;
+
+				text-align: right;
+			}
+
+		}
+		.change {
+			span {
+				font: italic normal normal 12px @serif_italic;
+				color: black;
+				&:first-of-type {
+					&:after {
+						content: '/';
+						margin-left: 5px;
+					}
+				}
+			}
+		}
+		img {
+			//					width: 100%;
+			width: auto;
+			margin-top: 11px;
+
+		}
+		.color-sizes {
+			margin-top: 23px;
+			margin-bottom: 20px;
+			span {
+				width: 32px;
+				height: 32px;
+				display: inline-block;
+				vertical-align: top;
+
+				line-height: 32px;
+				text-align: center;
+
+				margin: 0 0 0 12px;
+				&:first-of-type {
+					margin: 0;
+				}
+			}
+			.brown {
+				background: rgb(179, 161, 139);
+			}
+			.size {
+				width: 31px;
+				height: 31px;
+
+				border: 1px solid black;
+				background: rgb(255, 255, 255);
+
+			}
+			.amount {
+
+			}
+		}
+		.brand {
+			font-family: @FedraSansAlt;
+			font-weight: 100;
+			font-size: 12px;
+			color: black;
+
+			p {margin: 0;}
+		}
+		.price {
+			font-family: @FedraSansAlt;
+			font-size: 24px;
+			color: black;
+
+			margin-bottom: 6px;
+			.valute {
+
+			}
+		}
+		.status {
+			font-family: @FedraSansAlt;
+			font-size: 14px;
+			color: rgb(25, 24, 24);
+
+			p {
+				padding-top: 2px;
+				line-height: 25px;
+			}
+		}
+	}
+	form {
+		input:not('input[type="checkbox"]') {
+			width: 289px !important;
+		}
+		&.authorization {
+			.chCheckboxW {
+				margin-right: 15px;
+			}
+		}
+		.ch.half {
+			float: left;
+			width: 50%;
+			margin-bottom: 5%;
+		}
+	}
+	.teaser.serif {
+		margin-bottom: 17%;
+	}
+	.modal-dialog {width: 640px;}
+	.modal-content {border-radius: 0;}
+	.left {
+		display: inline-block;
+		vertical-align: top;
+		width: 49.5%;
+	}
+	.right {
+		display: inline-block;
+		vertical-align: top;
+		width: 49.5%;
+		.fb {
+			display: inline-block;
+			width: 49.2%;
+			vertical-align: top;
+			&:after {
+				content: '';
+				width: 7px;
+				height: 15px;
+				display: block;
+				text-align: center;
+				background: url('../img/icons/facebook-modal.svg') no-repeat;
+				margin: 0 auto;
+				&:hover {
+					cursor: pointer;
+				}
+			}
+		}
+		.vk {
+			display: inline-block;
+			width: 49.2%;
+			vertical-align: top;
+			&:after {
+				cursor: pointer;
+				content: '';
+				width: 10px;
+				height: 12px;
+				display: block;
+				background: url('../img/icons/vk-modal.svg') no-repeat;
+				margin: 0 auto;
+				&:hover {
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	.controls {
+		.close-modal {
+			float: left;
+
+		}
+	}
+	.modal-header {
+		-webkit-filter: blur(0);
+		filter: blur(0);
+		h4 {
+			font: normal normal normal 64px @sans_condensed_book_light;
+			letter-spacing: -1.2px;
+			display: inline-block;
+			text-transform: uppercase;
+			margin-right: 25px;
+		}
+		a {
+			font: normal normal normal 18px @sans_condensed_book_light;
+			text-transform: uppercase;
+			color: black;
+			text-decoration: none;
+			display: inline-block;
+			position: relative;
+			&:after {
+				content: "";
+				background: url('../img/icons/input-arrow.svg') no-repeat;
+				display: block;
+				width: 9px;
+				height: 6.7px;
+				margin-top: 5px;
+				margin-left: 3px;
+				position: absolute;
+				top: 3.34px;
+				right: -10px;
+			}
+		}
+	}
+	.retrieve {
+		margin-left: 35px;
+	}
+	.cart-total {
+		.controls {margin-top: 0;}
+		margin-left: 28%;
+		display: inline-block;
+		.heading {
+			font-family: "Fedra Sans Alt Demi 11";
+			font-style: normal;
+			font-weight: normal;
+			font-stretch: normal;
+
+			font-size: 12px;
+			color: rgb(128, 128, 128);
+
+			display: block;
+			margin-bottom: 5px;
+		}
+		.total {
+			font-family: @FedraSansCondensedLight;
+			font-size: 64px;
+			text-transform: uppercase;
+
+			display: block;
+		}
+	}
+	.cart-total {
+		.simple-transparent {
+			margin-top: 0;
+		}
+	}
+	.simple-transparent {
+		color: black;
+		margin: 15px 0 0 0;
+		padding-left: 0;
+		font: normal normal normal 14px @sans_alt_demi;
+		position: relative;
+		&:after {
+			content: "";
+			background: url('../img/icons/input-arrow.svg') no-repeat;
+			display: block;
+			width: 9px;
+			height: 6.7px;
+			margin-top: 5px;
+			margin-left: 3px;
+			position: absolute;
+			top: 3.34px;
+			right: 0;
+		}
+	}
+}
+button.close {
+	background: url('../img/trash/close.svg') no-repeat;
+	opacity: 1;
+	width: 34px;
+	height: 34px;
+}
+body.modal-open .container {
+//	-webkit-filter: blur(3px);
+}
+.modal {
+//	-webkit-filter: blur(0);
+	z-index: 1060 !important;
+}
+.modal-backdrop {
+	background: url('../img/trash/trans.png');
+//	-webkit-filter: blur(10px);
 }

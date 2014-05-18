@@ -9,6 +9,8 @@
     <link href="css/import.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/defaults.css" rel="stylesheet">
+    <link href="css/jquery.formChanger.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="all and (min-width: 1920px)" href="css/1920.css"><!--1920-->
     <link rel="stylesheet" type="text/css" media="screen and (min-width : 1024px) and (max-width: 1920px)" href="css/1024_1920.css"><!--1024 > 1920-->
     <link rel="stylesheet" type="text/css" media="screen and (min-width : 320px) and (max-width: 640px)" href="css/340.css"><!--iphone-->
@@ -35,10 +37,10 @@
                 <img src="img/logotype.svg" alt="" />
             </div>
             <div class="col-md-2 quart col-xs-6 cabinet">
-                <a href="#" title="">Кабинет</a>
+                <a href="#authorization" data-toggle="modal" data-target="#authorization" title="">Кабинет</a>
             </div>
             <div class="col-md-2 quart col-xs-6 cart">
-                <a href="#" title="">Корзина</a>
+                <a href="#active_cart" data-toggle="modal" data-target="#active_cart" title="">Корзина</a>
             </div>
         </div>
     </div>
@@ -200,5 +202,120 @@
 <script src="js/helper.js"></script>
 <script src="js/collapse.js"></script>
 <script src="js/dropdown.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/jquery.formChanger.js"></script>
+<script>
+    $(function () {
+        $('#active_cart').modal();
+        $("input[type='radio'], input[type='checkbox']").applyChanger()
+    })
+</script>
+<!-- Modal -->
+<!--<div class="modal fade" id="authorization" tabindex="-1" role="dialog" aria-labelledby="authorizationLabel" aria-hidden="true">-->
+    <!--<div class="modal-dialog">-->
+        <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+                <!--&lt;!&ndash;<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>&ndash;&gt;-->
+                <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>-->
+                <!--<h4 class="modal-title" id="myModalLabel">ВХОД</h4>-->
+                <!--<a href="#">регистрация</a>-->
+            <!--</div>-->
+            <!--<div class="modal-body">-->
+                <!--<div class="left">-->
+                    <!--<form role="form" class="authorization">-->
+                        <!--<div class="form-group has-feedback">-->
+                            <!--<input type="text" class="form-control" id="inputSuccess2" placeholder="e-mail">-->
+                        <!--</div>-->
+                        <!--<div class="form-group has-feedback">-->
+                            <!--<input type="text" class="form-control" id="inputWarning2" placeholder="search">-->
+                        <!--</div>-->
+                        <!--<div class="ch"><label><input type="checkbox" class="checkbox">Запомнить меня</label></div>-->
+                        <!--<div class="ch retrieve"><a href="#" class="btn simple-transparent">Напомнить пароль</a></div>-->
+
+                        <!--<hr/>-->
+                        <!--<div class="ch half"><label><input type="checkbox" class="checkbox">Он</label></div>-->
+                        <!--<div class="ch half"><label><input type="checkbox" class="checkbox">Она</label></div>-->
+                        <!--<div class="ch"><label><input type="checkbox" class="checkbox">Получать наши письма: новинки, скидки, новости</label></div>-->
+                    <!--</form>-->
+                <!--</div>-->
+                <!--<div class="right">-->
+                    <!--<p class="teaser serif">-->
+                        <!--Синхронизировать с моим аккаунтом Facebook или Вконтакте-->
+                    <!--</p>-->
+                    <!--<span class="fb"></span>-->
+                    <!--<span class="vk"></span>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="modal-footer">-->
+                <!--&lt;!&ndash;<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>&ndash;&gt;-->
+                <!--<div class="controls custom">-->
+                    <!--<div class="button black close-modal">-->
+                        <!--<span class="text">Войти</span>-->
+                        <!--<span class="text">Войти</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<div class="modal fade" id="active_cart" tabindex="-1" role="dialog" aria-labelledby="active_cartLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                <h4 class="modal-title" id="myModalLabel">В корзине <span id="amount">1</span> товар</h4>
+            </div>
+            <div class="modal-body">
+                <div class="left">
+                    <div class="item"> <!-- full width image -->
+                        <div class="cap">
+                            <span class="articul">1234å101</span>
+                            <div class="change">
+                                <span class="modify">Изменить</span>
+                                <span class="delete">Удалить</span>
+                            </div>
+                        </div>
+                        <img src="img/small/brown-shoes.svg" />
+                        <div class="color-sizes">
+                            <span class="brown"></span>
+                            <span class="size">42</span>
+                            <span class="amount">1</span>
+                        </div>
+                        <div class="brand">
+                            <p>Rick Owens</p>
+                        </div>
+                        <div class="price">
+                            24 500
+                            <span class="valute">Р.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="cart-total">
+                        <span class="heading">общая стоимость</span>
+                        <span class="total">123123 р.</span>
+                        <div class="controls custom few-buttons">
+                            <div class="button black">
+                                <span class="text">Оформить заказ</span>
+                                <span class="text">Оформить заказ</span>
+                            </div>
+                            <button class="button simple-transparent input-icon">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <!--<div class="controls custom">-->
+                    <!--<div class="button black close-modal">-->
+                        <!--<span class="text">Войти</span>-->
+                        <!--<span class="text">Войти</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

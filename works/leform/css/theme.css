@@ -1,0 +1,15 @@
+.chCheckboxW {
+    width: 16px;
+    height: 16px;
+    border-radius: 0;
+    border: 1px solid black;
+    background: white;
+    vertical-align: top;
+    margin-right: 5px;
+}
+.chCheckboxCh {
+    background: black;
+}
+.chCheckboxW input {
+    opacity: 0;
+}
