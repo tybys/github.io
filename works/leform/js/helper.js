@@ -38,7 +38,7 @@
             $('#sub').append(m);
         }
 
-        rootMenu.css({position: 'fixed',top: '1%',left: '0.3%',zIndex: '999'});
+        rootMenu.css({position: 'fixed',top: '1%',right: '0.3%',zIndex: '999'});
         rootMenu.find('a').css({display: 'block',padding: '3px',color: 'white', background: 'black', margin: '0 1px', opacity: .5});
         $('.row .container').append("<div id='grid' style='display: none' />");
 
