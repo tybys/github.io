@@ -1,8 +1,12 @@
 {
-    "projectName": "test",
-    "projectSkills": {
-        "first": "first",
-        "second": "second"
-    },
-    "anotherProperty": "another property"
+    "projects":[
+        {
+            "name":"Ray",
+            "skills":"Villalobos"
+        },
+        {
+            "name":"John",
+            "skills":"Jones"
+        }
+    ]
 }

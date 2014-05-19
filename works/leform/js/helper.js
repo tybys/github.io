@@ -89,6 +89,11 @@
         var sum = window_height - (cap_height + menu_height)
         $('.index').css('height', sum)
 
+        $(window).resize(function ()
+        {
+//            $('.index').css('height', sum)
+        });
+
         $('.share span').hover(function ()
         {
             $(this).prepend('<span id="background" />');
