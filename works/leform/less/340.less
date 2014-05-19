@@ -1,5 +1,7 @@
 @import "custom-vars.less";
-
+body {
+	margin-bottom: 0 !important;
+}
 body.index-mobile-details {
 	margin-bottom: 125px;
 }
@@ -20,6 +22,9 @@ body.index-mobile-details {
 	margin: 0;
 }
 .row {
+	.container {
+		padding: 0 16px !important;
+	}
 	margin: 0;
 	&.top {
 		padding-top: 22px;
@@ -50,19 +55,24 @@ body.index-mobile-details {
 		.quart {
 			line-height: inherit;
 			margin: 16px 0;
-			&.phone {
+			&.phone,
+			&.cabinet {
 				text-align: left;
+				a {
+					padding-left: 16px;
+				}
 			}
 			&.cabinet {
 				text-align: left;
-				margin-left: 0;
 			}
 
-			&.lang-switch {
-				text-align: right;
-			}
+			&.lang-switch,
 			&.cart {
 				text-align: right;
+				a,
+				span:not(#ru) {
+					padding-right: 16px;
+				}
 			}
 		}
 
@@ -73,10 +83,11 @@ body.index-mobile-details {
 			margin-left: 0;
 		}
 		.payment {
+			margin-bottom: 32px;
 			margin-left: 0;
 			width: 100%;
 			span {
-				margin: 0 8%;
+				margin: 0 5%;
 			}
 		}
 	}
@@ -126,6 +137,9 @@ body.index-mobile-details {
 			}
 		}
 	}
+	&.history {
+
+	}
 } // top of top
 
 .logotype-mobile {
@@ -134,13 +148,23 @@ body.index-mobile-details {
 
 #footer {
 	height: auto;
-	//		position: static;
+	position: static;
+	.container {
+		padding: 0 16px;
+	}
 	.brand, .copyright {
 		text-align: center;
 	}
 	.brand,
 	.copyright,
 	.social {
+		.icons {
+			margin: 0 auto;
+		}
 		line-height: 32px;
 	}
+}
+
+.modal {
+	display: none;
 }
