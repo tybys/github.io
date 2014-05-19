@@ -4,7 +4,7 @@
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/css/340.css" afterPath="$PROJECT_DIR$/works/leform/css/340.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/less/340.less" afterPath="$PROJECT_DIR$/works/leform/less/340.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/history.html" afterPath="$PROJECT_DIR$/works/leform/history.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/item.html" afterPath="$PROJECT_DIR$/works/leform/item.html" />
     </list>
     <ignored path="github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -252,36 +252,60 @@
       <file leaf-file-name="340.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/works/leform/less/340.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="152" column="24" selection-start="2264" selection-end="2264" vertical-scroll-proportion="0.5947776" vertical-offset="0" max-vertical-offset="1034">
+            <state line="162" column="16" selection-start="2509" selection-end="2509" vertical-scroll-proportion="0.6528046" vertical-offset="0" max-vertical-offset="1034">
               <folding>
+                <element signature="e#33#66#0" expanded="false" />
                 <element signature="e#93#119#0" expanded="false" />
                 <element signature="e#202#467#0" expanded="false" />
                 <element signature="e#213#248#0" expanded="false" />
-                <element signature="e#541#1267#0" expanded="false" />
+                <element signature="e#487#521#0" expanded="false" />
                 <element signature="e#577#951#0" expanded="false" />
                 <element signature="e#622#646#0" expanded="false" />
                 <element signature="e#657#731#0" expanded="false" />
                 <element signature="e#744#793#0" expanded="false" />
                 <element signature="e#810#886#0" expanded="false" />
                 <element signature="e#896#947#0" expanded="false" />
+                <element signature="e#961#1263#0" expanded="false" />
+                <element signature="e#1032#1099#0" expanded="false" />
+                <element signature="e#1062#1094#0" expanded="false" />
+                <element signature="e#1113#1141#0" expanded="false" />
+                <element signature="e#1171#1259#0" expanded="false" />
+                <element signature="e#1221#1254#0" expanded="false" />
+                <element signature="e#1284#1453#0" expanded="false" />
                 <element signature="e#1301#1341#0" expanded="false" />
+                <element signature="e#1353#1450#0" expanded="false" />
+                <element signature="e#1422#1446#0" expanded="false" />
                 <element signature="e#1477#1577#0" expanded="false" />
                 <element signature="e#1507#1574#0" expanded="false" />
-                <element signature="e#1586#1862#0" expanded="false" />
-                <element signature="e#1605#1630#0" expanded="false" />
-                <element signature="e#1650#1859#0" expanded="false" />
-                <element signature="e#1704#1854#0" expanded="false" />
-                <element signature="e#1713#1849#0" expanded="false" />
-                <element signature="e#1745#1843#0" expanded="false" />
-                <element signature="e#1880#2112#0" expanded="false" />
-                <element signature="e#1896#1922#0" expanded="false" />
-                <element signature="e#1940#2109#0" expanded="false" />
-                <element signature="e#1967#1994#0" expanded="false" />
-                <element signature="e#2004#2105#0" expanded="false" />
-                <element signature="e#2014#2039#0" expanded="false" />
-                <element signature="e#2164#2186#0" expanded="false" />
-                <element signature="e#2288#2314#0" expanded="false" />
+                <element signature="e#1643#1668#0" expanded="false" />
+                <element signature="e#1688#1897#0" expanded="false" />
+                <element signature="e#1742#1892#0" expanded="false" />
+                <element signature="e#1751#1887#0" expanded="false" />
+                <element signature="e#1783#1881#0" expanded="false" />
+                <element signature="e#1918#2150#0" expanded="false" />
+                <element signature="e#1934#1960#0" expanded="false" />
+                <element signature="e#1978#2147#0" expanded="false" />
+                <element signature="e#2005#2032#0" expanded="false" />
+                <element signature="e#2042#2143#0" expanded="false" />
+                <element signature="e#2052#2077#0" expanded="false" />
+                <element signature="e#2162#2167#0" expanded="false" />
+                <element signature="e#2712#2734#0" expanded="false" />
+                <element signature="e#2744#2955#0" expanded="false" />
+                <element signature="e#2792#2815#0" expanded="false" />
+                <element signature="e#2836#2862#0" expanded="false" />
+                <element signature="e#2894#2953#0" expanded="false" />
+                <element signature="e#2905#2929#0" expanded="false" />
+                <element signature="e#2964#2983#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="item.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/works/leform/item.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="125" column="55" selection-start="5586" selection-end="5586" vertical-scroll-proportion="-33.791668" vertical-offset="1064" max-vertical-offset="3705">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -313,7 +337,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/works/leform/css/niceforms-default.css" />
         <option value="$PROJECT_DIR$/works/leform/js/niceforms.js" />
         <option value="$PROJECT_DIR$/works/leform/css/jquery.formChanger.css" />
         <option value="$PROJECT_DIR$/works/leform/js/jquery.formChanger.js" />
@@ -328,15 +351,16 @@
         <option value="$PROJECT_DIR$/works/leform/js/helper.js" />
         <option value="$PROJECT_DIR$/works/leform/less/defaults.less" />
         <option value="$PROJECT_DIR$/works/leform/history.html" />
+        <option value="$PROJECT_DIR$/works/leform/item.html" />
         <option value="$PROJECT_DIR$/works/leform/less/340.less" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1928" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="1874" />
     <option name="height" value="1216" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -584,7 +608,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1216" extended-state="6" />
+    <frame x="-8" y="-8" width="1874" height="1216" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32846716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -593,7 +617,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.134375" sideWeight="0.6713781" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13885899" sideWeight="0.6713781" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -625,11 +649,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/works/leform/img/icons/facebook-modal.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="910" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/img/icons/vk-modal.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="910" />
@@ -902,37 +921,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/item.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="55" selection-start="5586" selection-end="5586" vertical-scroll-proportion="-33.791668" vertical-offset="1064" max-vertical-offset="3705">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/less/340.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="24" selection-start="2264" selection-end="2264" vertical-scroll-proportion="0.5947776" vertical-offset="0" max-vertical-offset="1034">
+        <state line="162" column="16" selection-start="2509" selection-end="2509" vertical-scroll-proportion="0.6528046" vertical-offset="0" max-vertical-offset="1034">
           <folding>
+            <element signature="e#33#66#0" expanded="false" />
             <element signature="e#93#119#0" expanded="false" />
             <element signature="e#202#467#0" expanded="false" />
             <element signature="e#213#248#0" expanded="false" />
-            <element signature="e#541#1267#0" expanded="false" />
+            <element signature="e#487#521#0" expanded="false" />
             <element signature="e#577#951#0" expanded="false" />
             <element signature="e#622#646#0" expanded="false" />
             <element signature="e#657#731#0" expanded="false" />
             <element signature="e#744#793#0" expanded="false" />
             <element signature="e#810#886#0" expanded="false" />
             <element signature="e#896#947#0" expanded="false" />
+            <element signature="e#961#1263#0" expanded="false" />
+            <element signature="e#1032#1099#0" expanded="false" />
+            <element signature="e#1062#1094#0" expanded="false" />
+            <element signature="e#1113#1141#0" expanded="false" />
+            <element signature="e#1171#1259#0" expanded="false" />
+            <element signature="e#1221#1254#0" expanded="false" />
+            <element signature="e#1284#1453#0" expanded="false" />
             <element signature="e#1301#1341#0" expanded="false" />
+            <element signature="e#1353#1450#0" expanded="false" />
+            <element signature="e#1422#1446#0" expanded="false" />
             <element signature="e#1477#1577#0" expanded="false" />
             <element signature="e#1507#1574#0" expanded="false" />
-            <element signature="e#1586#1862#0" expanded="false" />
-            <element signature="e#1605#1630#0" expanded="false" />
-            <element signature="e#1650#1859#0" expanded="false" />
-            <element signature="e#1704#1854#0" expanded="false" />
-            <element signature="e#1713#1849#0" expanded="false" />
-            <element signature="e#1745#1843#0" expanded="false" />
-            <element signature="e#1880#2112#0" expanded="false" />
-            <element signature="e#1896#1922#0" expanded="false" />
-            <element signature="e#1940#2109#0" expanded="false" />
-            <element signature="e#1967#1994#0" expanded="false" />
-            <element signature="e#2004#2105#0" expanded="false" />
-            <element signature="e#2014#2039#0" expanded="false" />
-            <element signature="e#2164#2186#0" expanded="false" />
-            <element signature="e#2288#2314#0" expanded="false" />
+            <element signature="e#1643#1668#0" expanded="false" />
+            <element signature="e#1688#1897#0" expanded="false" />
+            <element signature="e#1742#1892#0" expanded="false" />
+            <element signature="e#1751#1887#0" expanded="false" />
+            <element signature="e#1783#1881#0" expanded="false" />
+            <element signature="e#1918#2150#0" expanded="false" />
+            <element signature="e#1934#1960#0" expanded="false" />
+            <element signature="e#1978#2147#0" expanded="false" />
+            <element signature="e#2005#2032#0" expanded="false" />
+            <element signature="e#2042#2143#0" expanded="false" />
+            <element signature="e#2052#2077#0" expanded="false" />
+            <element signature="e#2162#2167#0" expanded="false" />
+            <element signature="e#2712#2734#0" expanded="false" />
+            <element signature="e#2744#2955#0" expanded="false" />
+            <element signature="e#2792#2815#0" expanded="false" />
+            <element signature="e#2836#2862#0" expanded="false" />
+            <element signature="e#2894#2953#0" expanded="false" />
+            <element signature="e#2905#2929#0" expanded="false" />
+            <element signature="e#2964#2983#0" expanded="false" />
           </folding>
         </state>
       </provider>
