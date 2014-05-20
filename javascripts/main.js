@@ -2,37 +2,39 @@
 {
     $(function ()
     {
-        $.getJSON("javascripts/all.json", function(data)
-        {
+//        $.getJSON("javascripts/all.json", function(data)
+//        {
+//            //console.log(data)
+//            var items = []
+//            $.each(data, function (index, val) {
+//                items.push(val)
+//            })
+//            console.log(items)
+//
+//            var name = items[0][0].name
+//            var skills = items[0][0].skills
+//
+//
+//            $('tr').append($('<td/>', {text: name}))
+//        });
 
-            items = [];
-            $.each(data, function(key, val)
+        var content = [
             {
-                //items.push("<li id='" + key + "'>" + val + "</li>");
-                items.push(key)
-//                $.each(data.projectSkills, function (i, subkey)
-//                {
-//                    //console.log(subkey)
-//                });
-                console.log(data)
-            });
+                title: 'first',
+                skills: 'html css',
+            },
+            {
+                title: 'second',
+                skills: 'js php',
+            }
+        ],
+        template = $.trim($('#blogTemplate').html());
 
-            //$("<ul/>", {"class": "my-new-list", html: items.join("")}).appendTo("body");
-//            console.log(data.projectName)
-//            console.log(data.anotherProperty)
-//            console.log(data.projectSkill.subkey)
-            //console.log(items)
-            //var projectName = $("<span/>", {html: items[0]});
-            //var projectSkills = $("<span/>", {html: items[1].first});
-            //var projectInfo = $("<span/>", {html: items[2]});
-            //console.log(items)
-            //console.log(data)
-            $("tr")
-                .append($("<td/>", {
-//                    html: '<p>'+'projectName'+'</p>'+'<p>'+'projectInfo'+'</p>'
-                }
-                ));
+        $.each(content, function (index, obj) {
+            var temp = template.replace(/{{title}}/ig, obj.title)
 
-        });
+            $(document.body).append(temp)
+        })
+
     });
 })(jQuery);
