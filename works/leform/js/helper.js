@@ -46,7 +46,7 @@
         // mosaic block wall items-wall.html
 
 
-        //$('body').append('<span id="toggle">toggle</span>')
+        $('body').append('<span id="toggle">toggle</span>')
         $('#toggle').click(function ()
         {
             $('#grid').fadeToggle();
