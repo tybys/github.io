@@ -665,9 +665,21 @@
 	&.contacts {
 		.map-area {
 			position: relative;
-			img {
+			.map_ {
 				display: block;
 				margin: 77px auto 18px auto;
+				position: relative;
+				.office {
+					position: absolute;
+					top: ~"calc(50% - 20.5px)";
+					top: ~"-webkit-calc(50% - 20.5px)";
+
+					left: ~"calc(50% - 17px)";
+					left: ~"-webkit-calc(50% - 17px)";
+					width: 34px;
+					height: 41px;
+					background: url('../img/icons/map-sprite.svg') no-repeat;
+				}
 			}
 			a.google-map {
 				font-family: @FedraSansAlt;
@@ -678,6 +690,13 @@
 				margin-left: 288px;
 			}
 			ul {
+				-webkit-user-select: none;  /* Chrome all / Safari all */
+				-moz-user-select: none;     /* Firefox all */
+				-ms-user-select: none;      /* IE 10+ */
+
+				/* No support for these yet, use at own risk */
+				-o-user-select: none;
+				user-select: none;
 				&.left {
 					position: absolute;
 					top: -45px;
