@@ -2,6 +2,23 @@
 {
     $(function ()
     {
+
+        // fonts builder, lol
+        var link = new Array(
+            "https://s3.amazonaws.com/fonts.typotheque.com/WF-021765-007124",
+            "http://fonts.typotheque.com/WF-021765-007125",
+            "http://fonts.typotheque.com/WF-021765-007127",
+            "http://fonts.typotheque.com/WF-021765-007128",
+            "http://fonts.typotheque.com/WF-021765-007129",
+            "http://fonts.typotheque.com/WF-021765-007130"
+        );
+        for (var i = 0; i < link.length; i++)
+        {
+            var link_font = $('<link/>', {'href' : link[i] + '.css', 'type': 'text/css', 'rel': 'stylesheet'});
+//            $('#sub').append('<span style="display: inline;background: black;color: white;;">/</span>', m);
+            $('head').append(link_font);
+        }
+
         var itemHeight = $('.item-scroller').outerHeight();
         $('.big').css('height', itemHeight)
 
@@ -139,6 +156,5 @@
 
         wrapper.append(heading, total, wrapper_buttons).appendTo(item)
         wrapper_buttons.append(wrapper_buttons_.append(btn_text)).after().append(btn)
-
     });
 })(jQuery);
