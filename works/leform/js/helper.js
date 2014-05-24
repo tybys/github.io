@@ -168,5 +168,9 @@
         $.when( $(document) ).then(function() {
             $('body').show()
         });
+
+//        supportsSvg: function () {
+
+//        }
     });
 })(jQuery);
