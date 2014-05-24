@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/history.html" afterPath="$PROJECT_DIR$/works/leform/history.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/index.html" afterPath="$PROJECT_DIR$/works/leform/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/css/1024_1920.css" afterPath="$PROJECT_DIR$/works/leform/css/1024_1920.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/less/1024_1920.less" afterPath="$PROJECT_DIR$/works/leform/less/1024_1920.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/css/ipad_portrait.css" afterPath="$PROJECT_DIR$/works/leform/css/ipad_portrait.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/less/ipad_portrait.less" afterPath="$PROJECT_DIR$/works/leform/less/ipad_portrait.less" />
     </list>
     <ignored path="github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -231,10 +233,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ipad_portrait.less" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="1024_1920.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/works/leform/less/1024_1920.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="28" selection-start="112" selection-end="112" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="1410">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ipad_portrait.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/works/leform/less/ipad_portrait.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="42" selection-start="819" selection-end="819" vertical-scroll-proportion="-32.958332" vertical-offset="139" max-vertical-offset="1080">
+            <state line="3" column="29" selection-start="63" selection-end="63" vertical-scroll-proportion="0.050790068" vertical-offset="0" max-vertical-offset="1140">
               <folding />
             </state>
           </provider>
@@ -260,10 +271,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="history.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="history.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/works/leform/history.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="57" selection-start="4347" selection-end="4347" vertical-scroll-proportion="0.25395033" vertical-offset="1155" max-vertical-offset="5010">
+            <state line="92" column="57" selection-start="4347" selection-end="4347" vertical-scroll-proportion="-9.375" vertical-offset="1155" max-vertical-offset="5010">
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -312,15 +323,15 @@
         <option value="$PROJECT_DIR$/works/leform/recruit.html" />
         <option value="$PROJECT_DIR$/works/leform/journal.html" />
         <option value="$PROJECT_DIR$/works/leform/strange-article.html" />
-        <option value="$PROJECT_DIR$/works/leform/less/1024_1920.less" />
         <option value="$PROJECT_DIR$/works/leform/less/1920.less" />
         <option value="$PROJECT_DIR$/works/leform/less/custom-vars.less" />
-        <option value="$PROJECT_DIR$/works/leform/less/ipad_portrait.less" />
         <option value="$PROJECT_DIR$/works/leform/js/helper.js" />
         <option value="$PROJECT_DIR$/works/leform/less/defaults.less" />
         <option value="$PROJECT_DIR$/works/leform/less/custom.less" />
         <option value="$PROJECT_DIR$/works/leform/index.html" />
         <option value="$PROJECT_DIR$/works/leform/history.html" />
+        <option value="$PROJECT_DIR$/works/leform/less/1024_1920.less" />
+        <option value="$PROJECT_DIR$/works/leform/less/ipad_portrait.less" />
       </list>
     </option>
   </component>
@@ -1516,37 +1527,9 @@
         <state line="113" column="52" selection-start="8000" selection-end="8000" vertical-scroll-proportion="-8.32" vertical-offset="1600" max-vertical-offset="3088" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/less/1024_1920.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="10" selection-start="38" selection-end="38" vertical-scroll-proportion="0.018079096" vertical-offset="0" max-vertical-offset="1456" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/less/1920.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="27" selection-start="0" selection-end="27" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2400" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/less/custom-vars.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="121" selection-start="208" selection-end="311" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/less/ipad_portrait.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="42" selection-start="819" selection-end="819" vertical-scroll-proportion="-32.958332" vertical-offset="139" max-vertical-offset="1080">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="0" selection-start="6146" selection-end="6146" vertical-scroll-proportion="0.0" vertical-offset="194" max-vertical-offset="2715">
-          <folding>
-            <marker date="1400953882000" expanded="true" signature="5795:5808" placeholder="..." />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/less/defaults.less">
@@ -1743,13 +1726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/less/custom.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="33" selection-start="308" selection-end="308" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="16635">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="49" selection-start="153" selection-end="153" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="2460">
@@ -1759,10 +1735,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/history.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="57" selection-start="4347" selection-end="4347" vertical-scroll-proportion="0.25395033" vertical-offset="1155" max-vertical-offset="5010">
+        <state line="92" column="57" selection-start="4347" selection-end="4347" vertical-scroll-proportion="-9.375" vertical-offset="1155" max-vertical-offset="5010">
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/less/custom.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="33" selection-start="308" selection-end="308" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="16635">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="172" column="0" selection-start="6146" selection-end="6146" vertical-scroll-proportion="0.0" vertical-offset="194" max-vertical-offset="2715">
+          <folding>
+            <marker date="1400953882000" expanded="true" signature="5795:5808" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/less/custom-vars.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="121" selection-start="208" selection-end="311" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/less/1024_1920.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="28" selection-start="112" selection-end="112" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="1410">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/less/ipad_portrait.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="29" selection-start="63" selection-end="63" vertical-scroll-proportion="0.050790068" vertical-offset="0" max-vertical-offset="1140">
+          <folding />
         </state>
       </provider>
     </entry>
