@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/cart.html" afterPath="$PROJECT_DIR$/works/leform/cart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/contacts.html" afterPath="$PROJECT_DIR$/works/leform/contacts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/less/custom-vars.less" afterPath="$PROJECT_DIR$/works/leform/less/custom-vars.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/css/custom.css" afterPath="$PROJECT_DIR$/works/leform/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/less/custom.less" afterPath="$PROJECT_DIR$/works/leform/less/custom.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/css/defaults.css" afterPath="$PROJECT_DIR$/works/leform/css/defaults.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/less/defaults.less" afterPath="$PROJECT_DIR$/works/leform/less/defaults.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/css/1024_1920.css" afterPath="$PROJECT_DIR$/works/leform/css/1024_1920.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/less/1024_1920.less" afterPath="$PROJECT_DIR$/works/leform/less/1024_1920.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/js/helper.js" afterPath="$PROJECT_DIR$/works/leform/js/helper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/history.html" afterPath="$PROJECT_DIR$/works/leform/history.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/item.html" afterPath="$PROJECT_DIR$/works/leform/item.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/journal.html" afterPath="$PROJECT_DIR$/works/leform/journal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/posts.html" afterPath="$PROJECT_DIR$/works/leform/posts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/recruit.html" afterPath="$PROJECT_DIR$/works/leform/recruit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/strange-article.html" afterPath="$PROJECT_DIR$/works/leform/strange-article.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/video-post.html" afterPath="$PROJECT_DIR$/works/leform/video-post.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="defaults.less" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="defaults.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/works/leform/less/defaults.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="265" column="24" selection-start="4415" selection-end="4415" vertical-scroll-proportion="0.35254237" vertical-offset="392" max-vertical-offset="2672">
+            <state line="265" column="24" selection-start="4415" selection-end="4415" vertical-scroll-proportion="-12.48" vertical-offset="392" max-vertical-offset="2672">
               <folding>
                 <element signature="e#88#166#0" expanded="false" />
                 <element signature="e#98#164#0" expanded="false" />
@@ -228,31 +215,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="helper.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="helper.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="4" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="160">
+            <state line="157" column="10" selection-start="5755" selection-end="5755" vertical-scroll-proportion="0.7714286" vertical-offset="1810" max-vertical-offset="2720">
               <folding>
-                <element signature="e#38#5936#0" expanded="false" />
-                <element signature="e#279#979#0" expanded="false" />
-                <element signature="e#793#969#0" expanded="false" />
-                <element signature="e#1055#1148#0" expanded="false" />
-                <element signature="e#1249#1658#0" expanded="false" />
-                <element signature="e#1485#1646#0" expanded="false" />
-                <element signature="e#1808#2054#0" expanded="false" />
-                <element signature="e#1986#2044#0" expanded="false" />
-                <element signature="e#2143#2489#0" expanded="false" />
-                <element signature="e#2417#2477#0" expanded="false" />
-                <element signature="e#2555#2788#0" expanded="false" />
-                <element signature="e#2616#2692#0" expanded="false" />
-                <element signature="e#2718#2776#0" expanded="false" />
-                <element signature="e#2837#3663#0" expanded="false" />
-                <element signature="e#4552#4554#0" expanded="false" />
-                <element signature="e#4673#5740#0" expanded="false" />
-                <element signature="e#5292#5423#0" expanded="false" />
-                <element signature="e#5853#5901#0" expanded="false" />
-                <marker date="1400910982000" expanded="false" signature="5710:5723" placeholder="..." />
+                <marker date="1400931062000" expanded="true" signature="5710:5723" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1024_1920.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/works/leform/less/1024_1920.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="10" selection-start="38" selection-end="38" vertical-scroll-proportion="-0.64" vertical-offset="0" max-vertical-offset="1456">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -557,7 +535,6 @@
         <option value="$PROJECT_DIR$/works/leform/personal-info.html" />
         <option value="$PROJECT_DIR$/works/leform/less/fonts.less" />
         <option value="$PROJECT_DIR$/works/leform/item.html" />
-        <option value="$PROJECT_DIR$/works/leform/js/helper.js" />
         <option value="$PROJECT_DIR$/works/leform/less/custom-vars.less" />
         <option value="$PROJECT_DIR$/works/leform/contacts.html" />
         <option value="$PROJECT_DIR$/works/leform/posts.html" />
@@ -569,6 +546,8 @@
         <option value="$PROJECT_DIR$/works/leform/less/custom.less" />
         <option value="$PROJECT_DIR$/works/leform/history.html" />
         <option value="$PROJECT_DIR$/works/leform/less/defaults.less" />
+        <option value="$PROJECT_DIR$/works/leform/less/1024_1920.less" />
+        <option value="$PROJECT_DIR$/works/leform/js/helper.js" />
       </list>
     </option>
   </component>
@@ -1575,33 +1554,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="4" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="160">
-          <folding>
-            <element signature="e#38#5936#0" expanded="false" />
-            <element signature="e#279#979#0" expanded="false" />
-            <element signature="e#793#969#0" expanded="false" />
-            <element signature="e#1055#1148#0" expanded="false" />
-            <element signature="e#1249#1658#0" expanded="false" />
-            <element signature="e#1485#1646#0" expanded="false" />
-            <element signature="e#1808#2054#0" expanded="false" />
-            <element signature="e#1986#2044#0" expanded="false" />
-            <element signature="e#2143#2489#0" expanded="false" />
-            <element signature="e#2417#2477#0" expanded="false" />
-            <element signature="e#2555#2788#0" expanded="false" />
-            <element signature="e#2616#2692#0" expanded="false" />
-            <element signature="e#2718#2776#0" expanded="false" />
-            <element signature="e#2837#3663#0" expanded="false" />
-            <element signature="e#4552#4554#0" expanded="false" />
-            <element signature="e#4673#5740#0" expanded="false" />
-            <element signature="e#5292#5423#0" expanded="false" />
-            <element signature="e#5853#5901#0" expanded="false" />
-            <marker date="1400910982000" expanded="false" signature="5710:5723" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/less/custom.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1053" column="38" selection-start="18858" selection-end="18928" vertical-scroll-proportion="-28.36" vertical-offset="347" max-vertical-offset="1232">
@@ -1872,16 +1824,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/less/custom-vars.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="99" selection-start="2389" selection-end="2441" vertical-scroll-proportion="-30.28" vertical-offset="139" max-vertical-offset="1024">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/less/defaults.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="265" column="24" selection-start="4415" selection-end="4415" vertical-scroll-proportion="0.35254237" vertical-offset="392" max-vertical-offset="2672">
+        <state line="265" column="24" selection-start="4415" selection-end="4415" vertical-scroll-proportion="-12.48" vertical-offset="392" max-vertical-offset="2672">
           <folding>
             <element signature="e#88#166#0" expanded="false" />
             <element signature="e#98#164#0" expanded="false" />
@@ -2052,6 +1997,29 @@
             <element signature="e#18411#18444#0" expanded="false" />
             <element signature="e#18520#18571#0" expanded="false" />
             <element signature="e#18591#18669#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/less/custom-vars.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="99" selection-start="2389" selection-end="2441" vertical-scroll-proportion="-30.28" vertical-offset="139" max-vertical-offset="1024">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/less/1024_1920.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="10" selection-start="38" selection-end="38" vertical-scroll-proportion="-0.64" vertical-offset="0" max-vertical-offset="1456">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="157" column="10" selection-start="5755" selection-end="5755" vertical-scroll-proportion="0.7714286" vertical-offset="1810" max-vertical-offset="2720">
+          <folding>
+            <marker date="1400931062000" expanded="true" signature="5710:5723" placeholder="..." />
           </folding>
         </state>
       </provider>

@@ -155,11 +155,11 @@
             $('.row .container').append("<div id='grid' style='display: none' />");
         }();
 
-        $('body').append('<span id="toggle">toggle</span>');
+        //$('body').append('<span id="toggle">toggle</span>');
         $('#toggle').click(function ()
         {
             $('#grid').fadeToggle();
         });
-        $('#grid').show();
+       // $('#grid').show();
     });
 })(jQuery);
