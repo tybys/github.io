@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/css/1024_1920.css" afterPath="$PROJECT_DIR$/works/leform/css/1024_1920.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/less/1024_1920.less" afterPath="$PROJECT_DIR$/works/leform/less/1024_1920.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/css/custom.css" afterPath="$PROJECT_DIR$/works/leform/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/less/custom.less" afterPath="$PROJECT_DIR$/works/leform/less/custom.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/js/helper.js" afterPath="$PROJECT_DIR$/works/leform/js/helper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -218,9 +219,9 @@
       <file leaf-file-name="helper.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="10" selection-start="5755" selection-end="5755" vertical-scroll-proportion="0.7714286" vertical-offset="1810" max-vertical-offset="2720">
+            <state line="57" column="54" selection-start="2085" selection-end="2085" vertical-scroll-proportion="0.4021978" vertical-offset="546" max-vertical-offset="2736">
               <folding>
-                <marker date="1400931062000" expanded="true" signature="5710:5723" placeholder="..." />
+                <marker date="1400932245000" expanded="true" signature="5768:5781" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -238,12 +239,15 @@
       <file leaf-file-name="custom.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/works/leform/less/custom.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1053" column="38" selection-start="18858" selection-end="18928" vertical-scroll-proportion="-28.36" vertical-offset="347" max-vertical-offset="1232">
+            <state line="1072" column="46" selection-start="19199" selection-end="19199" vertical-scroll-proportion="-10.88" vertical-offset="0" max-vertical-offset="832">
               <folding>
+                <element signature="e#34#18956#0" expanded="false" />
                 <element signature="e#52#824#0" expanded="false" />
                 <element signature="e#67#239#0" expanded="false" />
                 <element signature="e#123#235#0" expanded="false" />
                 <element signature="e#250#821#0" expanded="false" />
+                <element signature="e#847#1626#0" expanded="false" />
+                <element signature="e#908#1622#0" expanded="false" />
                 <element signature="e#960#1038#0" expanded="false" />
                 <element signature="e#1050#1114#0" expanded="false" />
                 <element signature="e#1132#1435#0" expanded="false" />
@@ -450,8 +454,11 @@
                 <element signature="e#16430#16478#0" expanded="false" />
                 <element signature="e#16493#16540#0" expanded="false" />
                 <element signature="e#16572#16578#0" expanded="false" />
+                <element signature="e#16601#17098#0" expanded="false" />
+                <element signature="e#16616#17051#0" expanded="false" />
                 <element signature="e#16657#16715#0" expanded="false" />
                 <element signature="e#16675#16710#0" expanded="false" />
+                <element signature="e#16731#16797#0" expanded="false" />
                 <element signature="e#16813#16863#0" expanded="false" />
                 <element signature="e#16881#16998#0" expanded="false" />
                 <element signature="e#16913#16993#0" expanded="false" />
@@ -486,15 +493,12 @@
                 <element signature="e#18525#18582#0" expanded="false" />
                 <element signature="e#18538#18578#0" expanded="false" />
                 <element signature="e#18595#18618#0" expanded="false" />
-                <element signature="e#18965#20324#0" expanded="false" />
-                <element signature="e#19135#19246#0" expanded="false" />
-                <element signature="e#19160#19243#0" expanded="false" />
-                <element signature="e#19278#19341#0" expanded="false" />
+                <element signature="e#18635#18954#0" expanded="false" />
+                <element signature="e#18722#18843#0" expanded="false" />
+                <element signature="e#18853#18951#0" expanded="false" />
                 <element signature="e#19319#19338#0" expanded="false" />
-                <element signature="e#19351#20284#0" expanded="false" />
                 <element signature="e#19362#19427#0" expanded="false" />
                 <element signature="e#19439#19822#0" expanded="false" />
-                <element signature="e#20297#20322#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -543,10 +547,10 @@
         <option value="$PROJECT_DIR$/works/leform/recruit.html" />
         <option value="$PROJECT_DIR$/works/leform/journal.html" />
         <option value="$PROJECT_DIR$/works/leform/strange-article.html" />
-        <option value="$PROJECT_DIR$/works/leform/less/custom.less" />
         <option value="$PROJECT_DIR$/works/leform/history.html" />
         <option value="$PROJECT_DIR$/works/leform/less/defaults.less" />
         <option value="$PROJECT_DIR$/works/leform/less/1024_1920.less" />
+        <option value="$PROJECT_DIR$/works/leform/less/custom.less" />
         <option value="$PROJECT_DIR$/works/leform/js/helper.js" />
       </list>
     </option>
@@ -1189,10 +1193,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="1098" column="37" selection-start="19684" selection-end="19684" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1648">
           <folding>
+            <element signature="e#34#18956#0" expanded="false" />
             <element signature="e#52#824#0" expanded="false" />
             <element signature="e#67#239#0" expanded="false" />
             <element signature="e#123#235#0" expanded="false" />
             <element signature="e#250#821#0" expanded="false" />
+            <element signature="e#847#1626#0" expanded="false" />
+            <element signature="e#908#1622#0" expanded="false" />
             <element signature="e#960#1038#0" expanded="false" />
             <element signature="e#1050#1114#0" expanded="false" />
             <element signature="e#1132#1435#0" expanded="false" />
@@ -1399,8 +1406,11 @@
             <element signature="e#16430#16478#0" expanded="false" />
             <element signature="e#16493#16540#0" expanded="false" />
             <element signature="e#16572#16578#0" expanded="false" />
+            <element signature="e#16601#17098#0" expanded="false" />
+            <element signature="e#16616#17051#0" expanded="false" />
             <element signature="e#16657#16715#0" expanded="false" />
             <element signature="e#16675#16710#0" expanded="false" />
+            <element signature="e#16731#16797#0" expanded="false" />
             <element signature="e#16813#16863#0" expanded="false" />
             <element signature="e#16881#16998#0" expanded="false" />
             <element signature="e#16913#16993#0" expanded="false" />
@@ -1435,15 +1445,12 @@
             <element signature="e#18525#18582#0" expanded="false" />
             <element signature="e#18538#18578#0" expanded="false" />
             <element signature="e#18595#18618#0" expanded="false" />
-            <element signature="e#18965#20324#0" expanded="false" />
-            <element signature="e#19135#19246#0" expanded="false" />
-            <element signature="e#19160#19243#0" expanded="false" />
-            <element signature="e#19278#19341#0" expanded="false" />
+            <element signature="e#18635#18954#0" expanded="false" />
+            <element signature="e#18722#18843#0" expanded="false" />
+            <element signature="e#18853#18951#0" expanded="false" />
             <element signature="e#19319#19338#0" expanded="false" />
-            <element signature="e#19351#20284#0" expanded="false" />
             <element signature="e#19362#19427#0" expanded="false" />
             <element signature="e#19439#19822#0" expanded="false" />
-            <element signature="e#20297#20322#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1554,14 +1561,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/less/1024_1920.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="10" selection-start="38" selection-end="38" vertical-scroll-proportion="-0.64" vertical-offset="0" max-vertical-offset="1456">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/less/custom.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1053" column="38" selection-start="18858" selection-end="18928" vertical-scroll-proportion="-28.36" vertical-offset="347" max-vertical-offset="1232">
+        <state line="1072" column="46" selection-start="19199" selection-end="19199" vertical-scroll-proportion="-10.88" vertical-offset="0" max-vertical-offset="832">
           <folding>
+            <element signature="e#34#18956#0" expanded="false" />
             <element signature="e#52#824#0" expanded="false" />
             <element signature="e#67#239#0" expanded="false" />
             <element signature="e#123#235#0" expanded="false" />
             <element signature="e#250#821#0" expanded="false" />
+            <element signature="e#847#1626#0" expanded="false" />
+            <element signature="e#908#1622#0" expanded="false" />
             <element signature="e#960#1038#0" expanded="false" />
             <element signature="e#1050#1114#0" expanded="false" />
             <element signature="e#1132#1435#0" expanded="false" />
@@ -1768,8 +1785,11 @@
             <element signature="e#16430#16478#0" expanded="false" />
             <element signature="e#16493#16540#0" expanded="false" />
             <element signature="e#16572#16578#0" expanded="false" />
+            <element signature="e#16601#17098#0" expanded="false" />
+            <element signature="e#16616#17051#0" expanded="false" />
             <element signature="e#16657#16715#0" expanded="false" />
             <element signature="e#16675#16710#0" expanded="false" />
+            <element signature="e#16731#16797#0" expanded="false" />
             <element signature="e#16813#16863#0" expanded="false" />
             <element signature="e#16881#16998#0" expanded="false" />
             <element signature="e#16913#16993#0" expanded="false" />
@@ -1804,15 +1824,12 @@
             <element signature="e#18525#18582#0" expanded="false" />
             <element signature="e#18538#18578#0" expanded="false" />
             <element signature="e#18595#18618#0" expanded="false" />
-            <element signature="e#18965#20324#0" expanded="false" />
-            <element signature="e#19135#19246#0" expanded="false" />
-            <element signature="e#19160#19243#0" expanded="false" />
-            <element signature="e#19278#19341#0" expanded="false" />
+            <element signature="e#18635#18954#0" expanded="false" />
+            <element signature="e#18722#18843#0" expanded="false" />
+            <element signature="e#18853#18951#0" expanded="false" />
             <element signature="e#19319#19338#0" expanded="false" />
-            <element signature="e#19351#20284#0" expanded="false" />
             <element signature="e#19362#19427#0" expanded="false" />
             <element signature="e#19439#19822#0" expanded="false" />
-            <element signature="e#20297#20322#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2008,18 +2025,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/less/1024_1920.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="10" selection-start="38" selection-end="38" vertical-scroll-proportion="-0.64" vertical-offset="0" max-vertical-offset="1456">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="10" selection-start="5755" selection-end="5755" vertical-scroll-proportion="0.7714286" vertical-offset="1810" max-vertical-offset="2720">
+        <state line="57" column="54" selection-start="2085" selection-end="2085" vertical-scroll-proportion="0.4021978" vertical-offset="546" max-vertical-offset="2736">
           <folding>
-            <marker date="1400931062000" expanded="true" signature="5710:5723" placeholder="..." />
+            <marker date="1400932245000" expanded="true" signature="5768:5781" placeholder="..." />
           </folding>
         </state>
       </provider>

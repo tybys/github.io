@@ -55,6 +55,7 @@
             if (window_height <= 560)
             {
                 second_menu.css({top: 0});
+                second_menu.find('a').css({fontSize: 52})
             }
         }();
 
