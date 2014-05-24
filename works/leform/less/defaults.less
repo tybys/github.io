@@ -1,11 +1,12 @@
 @import "custom-vars.less";
 
+
 // global font section for main elemets
 // top links
 .top {
 	.quart {
 		a {
-			font: italic normal normal 12px @serif_italic;
+//			font: italic normal normal 12px @serif_italic;
 		}
 	}
 }
@@ -13,25 +14,25 @@
 .menu {
 	.nav {
 		a {
-			font: normal normal normal 18px @sans_condensed_book_light;
+//			font: normal normal normal 18px @sans_condensed_book_light;
 		}
 	}
 }
 // title
 .page-title {
 	h2 {
-		font: normal normal normal 64px @sans_condensed_book_light;
-		letter-spacing: -1.2px;
+//		font: normal normal normal 64px @sans_condensed_book_light;
+		font: normal normal normal 64px/80px @fscplu;
 	}
 	&.date {
 		span {
-			font: normal normal normal 64px @sans_condensed_book_light;
+
 		}
 	}
 }
 // subtitle
 .subtitle {
-	font: italic normal normal 21px @serif_italic_oldnumber;
+//	font: italic normal normal 21px @serif_italic_oldnumber;
 }
 
 .page-title { // big h1, h2 etc
@@ -49,12 +50,7 @@
 	&.normal h2 {margin-left: 0;}
 	&.date {
 		span {
-			//			font-family: "Fedra Sans Alt Demi 11";
-			//			font-style: normal;
-			//			font-weight: normal;
-			//			font-stretch: normal;
-
-			font: normal normal normal 14px/47px @sans_alt_demi;
+			font: normal normal normal 14px/50px @fsabu;
 			display: inline-block;
 			vertical-align: bottom;
 			//			font-size: 14px;
@@ -70,7 +66,7 @@
 // links in container
 .container {
 	a {
-		font: italic normal normal 12px @serif_italic;
+//		font: italic normal normal 12px @serif_italic;
 		color: black;
 		text-decoration: none;
 
@@ -140,11 +136,7 @@
 }
 
 .teaser {
-	font-family: "Fedra Sans Alt Demi 11";
-	font-style: normal;
-	font-weight: normal;
-	font-stretch: normal;
-	font-size: 14px;
+	font: normal normal normal 14px @fsabu;
 	&:not(.largest) {
 		line-height: 24px;
 	}
@@ -155,9 +147,7 @@
 		width: 800px;
 
 		text-transform: uppercase;
-		font-family: @FedraSansCondensedLight;
-		font-size: 64px;
-		line-height: 80px;
+		font: normal normal normal 64px/80px @fscplu;
 	}
 	&.static {
 		position: static;
@@ -173,14 +163,14 @@
 		margin: 0 0 0 auto;
 	}
 	&.serif {
-		font-family: @FedraSerifBook;
-		font-size: 21px;
-		font-style: italic;
+		font: normal normal normal 21px @fsbbil;
+		a {
+			font: normal normal normal 12px @fsbbil;
+		}
 	}
 	&.first-letter {
 		&:first-letter {
-			font-family: @FedraSansCondensedLight;
-			font-size: 64px;
+			font: normal normal normal 64px/24px @fscplu;
 		}
 	}
 }
@@ -222,8 +212,9 @@
 }
 #second_menu_ {
 	a {
-		font: normal normal normal 64px @sans_condensed_book_light;
-		letter-spacing: -1.2px;
+		font: normal normal normal 64px @fscplu;
+		text-transform: uppercase;
+//		letter-spacing: -1.2px;
 		color: white;
 	}
 }
@@ -271,7 +262,9 @@ form {
 		}
 	}
 }
-
+.contact-info {
+	margin-bottom: 35px;
+}
 html {
 	position: relative;
 	min-height: 100%;
@@ -281,7 +274,7 @@ html {
 		height: 100%;
 		min-height: 100%;
 		//margin-bottom: 32px;
-		margin-bottom: 20px;
+//		margin-bottom: 20px;
 //		overflow-y: hidden;
 		.container {
 			background: rgba(0,0,0,0.1);
@@ -293,6 +286,7 @@ html {
 			background: transparent;
 		}
 		#grid {
+			display: none;
 			background: url('../img/trash/grid.png') left top repeat;
 			position: absolute;
 			top: 0; left: 0;
@@ -308,10 +302,10 @@ html {
 	}
 
 	a {
-		font-family: "Fedra Sans Alt Demi 11";
-		font-style: normal;
-		font-weight: normal;
-		font-stretch: normal;
+//		font-family: "Fedra Sans Alt Demi 11";
+//		font-style: normal;
+//		font-weight: normal;
+//		font-stretch: normal;
 	}
 	p {
 //		font-family: "Fedra Sans Alt Demi 11";
@@ -329,12 +323,7 @@ html {
 // default animatin for btn
 
 .heading {
-	font-family: "Fedra Serif B Book";
-	font-style: normal;
-	font-weight: normal;
-	font-stretch: normal;
-	font-size: 21px;
-	font-style: italic;
+	font: normal normal normal 21px @fsbbil;
 	color: rgb(0, 0, 0);
 	line-height: 27px;
 	margin-bottom: 27px;
@@ -379,6 +368,7 @@ label.bootstrap-checkbox {
 	& > .label-checkbox {
 		padding-left: 0;
 		vertical-align: bottom;
+		font: normal normal normal 12px @fsbbiu;
 	}
 	.btn {
 		text-align: left;
@@ -391,11 +381,7 @@ label.bootstrap-checkbox {
 
 .share-label {
 	color: @lightgray;
-	font-family: "Fedra Sans Alt Demi 11";
-	font-style: normal;
-	font-weight: normal;
-	font-stretch: normal;
-	font-size: 12px;
+	font: normal normal normal 12px @fsabl;
 	font-variant: tabular-nums;
 }
 .share {
@@ -636,10 +622,7 @@ label.bootstrap-checkbox {
 		-moz-transition: background-color 0.35s;
 		transition: background-color 0.35s;
 		.text {
-			font-family: "Fedra Sans Alt Demi 11";
-			font-style: normal;
-			font-weight: normal;
-			font-stretch: normal;
+			font: normal normal normal 14px @fsabl;
 
 			display: block;
 			height: 100%;
@@ -662,8 +645,7 @@ label.bootstrap-checkbox {
 		vertical-align: top;
 		background: transparent;
 		border: none;
-		font-family: @FedraSansAlt;
-		font-size: 14px;
+		font: normal normal normal 14px @fsabl;
 		color: black;
 		border-radius: 0;
 
@@ -703,15 +685,12 @@ label.bootstrap-checkbox {
 		list-style: none;
 		line-height: 30px;
 		&.heading {
-			font-family: @FedraSerifBook;
-			font-size: 12px;
-			font-style: italic;
+			font: normal normal normal 12px @fsbbiu;
 			color: black;
 			margin-bottom: 0;
 		}
 		a {
-			font-family: @FedraSansAlt;
-			font-size: 12px;
+			font: normal normal normal 12px @fsabl;
 			color: black;
 		}
 	}
@@ -763,27 +742,12 @@ label.bootstrap-checkbox {
 	}
 	form {
 		fieldset legend {
-			font-family: "Fedra Serif B Book";
-			font-style: italic;
-			font-weight: normal;
-			font-stretch: normal;
-
-			font-size: 21px;
+			font: normal normal normal 21px @fsbbil;
 		}
 		.legeng-hint {
-			font-family: "Fedra Sans Alt Demi 11";
-			font-style: normal;
-			font-weight: normal;
-			font-stretch: normal;
-
-			font-size: 14px;
+			font: normal normal normal 14px @fsabl;
 
 			p {
-				font-family: "Fedra Sans Alt Demi 11";
-				font-style: normal;
-				font-weight: normal;
-				font-stretch: normal;
-				font-size: 14px;
 				color: black;
 				a {
 					color: @lightgray;
@@ -797,14 +761,18 @@ label.bootstrap-checkbox {
 	li {
 		list-style: none;
 		a {
+			font: normal normal normal 64px @fscplu;
+			text-transform: uppercase;
 			color: white;
 			font-size: 72px;
-			font-family: @FedraSansCondensedLight;
+
 		}
 	}
 }
 
-
+.item .color-sizes span {
+ 	line-height: 31px !important;
+}
 // modal
 .modal {
 	.item {
@@ -813,9 +781,7 @@ label.bootstrap-checkbox {
 		margin-right: 32px;
 		&:first-of-type {margin-left: 0;} // remove margin for fist item
 		.cap {
-			font-family: @FedraSansAlt;
-			font-weight: 100;
-			font-size: 12px;
+			font: normal normal normal 12px @fsabl;
 			color: rgb(128, 128, 128);
 			.articul {
 				float: left;
@@ -831,7 +797,7 @@ label.bootstrap-checkbox {
 		}
 		.change {
 			span {
-				font: italic normal normal 12px @serif_italic;
+				font: normal normal normal 12px @fsbbil;
 				color: black;
 				&:first-of-type {
 					&:after {
@@ -868,6 +834,7 @@ label.bootstrap-checkbox {
 				background: rgb(179, 161, 139);
 			}
 			.size {
+				font: normal normal normal 12px @fsabl;
 				width: 31px;
 				height: 31px;
 
@@ -880,16 +847,13 @@ label.bootstrap-checkbox {
 			}
 		}
 		.brand {
-			font-family: @FedraSansAlt;
-			font-weight: 100;
-			font-size: 12px;
+			font: normal normal normal 12px @fsabl;
 			color: black;
 
 			p {margin: 0;}
 		}
 		.price {
-			font-family: @FedraSansAlt;
-			font-size: 24px;
+			font: normal normal normal 24px @fscplu;
 			color: black;
 
 			margin-bottom: 6px;
@@ -931,12 +895,12 @@ label.bootstrap-checkbox {
 	.left {
 		display: inline-block;
 		vertical-align: top;
-		width: 49.5%;
+		width: 40%;
 	}
 	.right {
 		display: inline-block;
 		vertical-align: top;
-		width: 49.5%;
+		width: 58.5%;
 		.fb {
 			display: inline-block;
 			width: 49.2%;
@@ -982,14 +946,13 @@ label.bootstrap-checkbox {
 		-webkit-filter: blur(0);
 		filter: blur(0);
 		h4 {
-			font: normal normal normal 64px @sans_condensed_book_light;
-			letter-spacing: -1.2px;
+			font: normal normal normal 64px @fscplu;
 			display: inline-block;
 			text-transform: uppercase;
 			margin-right: 25px;
 		}
 		a {
-			font: normal normal normal 18px @sans_condensed_book_light;
+			font: normal normal normal 18px @fscplu;
 			text-transform: uppercase;
 			color: black;
 			text-decoration: none;
@@ -1010,17 +973,17 @@ label.bootstrap-checkbox {
 		}
 	}
 	.retrieve {
-		margin-left: 35px;
+		margin-left: 30px;
+		a {
+			font: normal normal normal 14px @fsabl;
+		}
 	}
 	.cart-total {
 		.controls {margin-top: 0;}
-		margin-left: 28%;
+//		margin-left: 28%;
 		display: inline-block;
 		.heading {
-			font-family: "Fedra Sans Alt Demi 11";
-			font-style: normal;
-			font-weight: normal;
-			font-stretch: normal;
+			font: normal normal normal 12px @fsabl;
 
 			font-size: 12px;
 			color: rgb(128, 128, 128);
@@ -1029,8 +992,7 @@ label.bootstrap-checkbox {
 			margin-bottom: 5px;
 		}
 		.total {
-			font-family: @FedraSansCondensedLight;
-			font-size: 64px;
+			font: normal normal normal 64px @fscplu;
 			text-transform: uppercase;
 
 			display: block;
@@ -1073,8 +1035,11 @@ body.modal-open .container {
 .modal {
 //	-webkit-filter: blur(0);
 	z-index: 1060 !important;
+	.ch label {
+		font: normal normal normal 14px/24px @fsabl;
+	}
 }
-.modal-backdrop {
+.modal-backdrop 	{
 	background: url('../img/trash/trans.png');
 //	-webkit-filter: blur(10px);
 }

@@ -120,6 +120,7 @@
 
 							padding-left: 0;
 							padding-right: 62.5px;
+							white-space: nowrap;
 							&:hover {
 								background: none;
                                 color: rgb(159, 161, 163);
@@ -138,20 +139,12 @@
 	} //menu
 	&.order-history { // история заказов
 		.float-menu {
-//			position: absolute;
-//			top: 20%; left: 64px;
-//			padding: 0; margin: 0;
 			li {
 				list-style: none;
 				&.heading {
-					font-family: @FedraSerifBook;
-					font-size: 12px;
-					font-style: italic;
 					color: black;
 				}
 				a {
-					font-family: @FedraSansAlt;
-					font-size: 12px;
 					color: black;
 				}
 			}
@@ -164,10 +157,10 @@
 				margin-right: 32px;
 				&:first-of-type {margin-left: 0;} // remove margin for fist item
 				.cap {
-					font-family: @FedraSansAlt;
-					font-weight: 100;
-					font-size: 12px;
 					color: rgb(128, 128, 128);
+					span {
+						font: normal normal normal 12px @fsabu;
+					}
 					.articul {
 						float: left;
 						width: 50%;
@@ -187,6 +180,7 @@
 
 				}
 				.color-sizes {
+					font: normal normal normal 12px @fsabl;
 					margin-top: 23px;
 					margin-bottom: 20px;
 					span {
@@ -219,16 +213,13 @@
 					}
 				}
 				.brand {
-					font-family: @FedraSansAlt;
-					font-weight: 100;
-					font-size: 12px;
+					font: normal normal normal 12px @fsabu;
 					color: black;
 
 					p {margin: 0;}
 				}
 				.price {
-					font-family: @FedraSansAlt;
-					font-size: 24px;
+					font: normal normal normal 24px @fscplu;
 					color: black;
 
 					margin-bottom: 6px;
@@ -237,8 +228,7 @@
 					}
 				}
 				.status {
-					font-family: @FedraSansAlt;
-					font-size: 14px;
+					font: normal normal normal 14px @fsabu;
 					color: rgb(25, 24, 24);
 
 					p {
@@ -351,17 +341,14 @@
 			padding: 0;
 			margin-top: 25px;
 
-			font-family: @FedraSansAlt;
-			font-size: 10px;
+			font: normal normal normal 10px @fsabl;
 			line-height: 15px;
 
 			p {
 				margin-bottom: 28px;
 			}
 			a {
-				font-family: @FedraSerifBook;
-				font-size: 12px;
-				font-style: italic;
+				font: normal normal normal 12px @fsbbiu;
 				color: black;
 				line-height: 25px;
 
@@ -416,12 +403,14 @@
 					padding: 0;
 
 					&::-webkit-input-placeholder {
-						font-family: @FedraSerifBook;
-						font-size: 12px;
-						font-style: italic;
+						font: normal normal normal 12px @fsbbiu;
+						color: black;
+						line-height: 20px;
+					}
+					&:-moz-placeholder {
+						font: normal normal normal 12px @fsbbiu;
 						color: black;
 					}
-					&:-moz-placeholder {}
 				}
 			}
 		}
@@ -450,6 +439,9 @@
 		}
 	} //personal-info
 	&.journal {
+		.subtitle {
+			margin-top: 0;
+		}
 		.page-title.date {
 			margin-top: 40px;
 			h2 {
@@ -540,8 +532,9 @@
 		.col-md-5 {
 			padding-left: 9%;
 			h2 {
-				font-size: 18px;
-				line-height: 28px;
+//				font-size: 18px;
+//				line-height: 28px;
+				margin-top: 0;
 				margin-bottom: 25px;
 			}
 		}
@@ -565,10 +558,7 @@
 					}
 				}
 				span {
-					font-family: "Fedra Sans Alt Demi 11";
-					font-style: normal;
-					font-weight: 100;
-					font-stretch: normal;
+					font: normal normal normal 12px @fsabu;
 					margin-bottom: 13px;
 				}
 
@@ -591,6 +581,7 @@
 				width: 100%;
 			}
 			.color-sizes {
+				font: normal normal normal 12px @fsabl;
 				margin-top: 20px;
 				margin-bottom: 20px;
 				span {
@@ -622,14 +613,11 @@
 				}
 			}
 			.brand {
-				font-family: @FedraSansAlt;
-				font-weight: 100;
-				font-size: 12px;
+				font: normal normal normal 12px @fsabu;
 				color: black;
 			}
 			.price {
-				font-family: @FedraSansAlt;
-				font-size: 24px;
+				font: normal normal normal 24px @fscplu;
 				color: black;
 
 				margin-bottom: 6px;
@@ -638,11 +626,10 @@
 				}
 			}
 			.change {
-				font-family: @FedraSerifBook;
-				font-size: 12px;
-				font-style: italic;
+				clear: both;
 				color: black;
 				span {
+					font: normal normal normal 12px @fsbbil;
 					&:first-of-type {
 						&:after {
 							content: '/';
@@ -661,6 +648,13 @@
 				display: block;
 				margin: 77px auto 18px auto;
 				position: relative;
+				small a {
+					font: normal normal normal 14px @fsabl;
+					color: black;
+
+					margin-top: 20px;
+					margin-left: 288px;
+				}
 				.office {
 					position: absolute;
 					top: ~"calc(50% - 20.5px)";
@@ -672,14 +666,6 @@
 					height: 41px;
 					background: url('../img/icons/map-sprite.svg') no-repeat;
 				}
-			}
-			a.google-map {
-				font-family: @FedraSansAlt;
-				font-size: 14px;
-				color: black;
-
-				margin-top: 20px;
-				margin-left: 288px;
 			}
 			ul {
 				-webkit-user-select: none;  /* Chrome all / Safari all */
@@ -694,12 +680,12 @@
 					top: -45px;
 					left: 30px;
 					margin: 0; padding: 0;
+					z-index: 999;
 					li {
 						list-style: none;
 						line-height: 68px;
 						a {
-							font-family: @FedraSansCondensedLight;
-							font-size: 64px;
+							font: normal normal normal 64px @fscplu;
 							color: black;
 							text-transform: uppercase;
 						}
@@ -713,10 +699,9 @@
 					li {
 						list-style: none;
 						line-height: 27px;
+						font: normal normal normal 14px @fsabl;
 						&.heading {
-							font-family: @FedraSerifBook;
-							font-size: 21px;
-							font-style: italic;
+							font: normal normal normal 21px @fsbbil;
 							color: black;
 
 							margin-bottom: 23px;
@@ -724,8 +709,6 @@
 						&.pad {
 							margin-bottom: 15px;
 						}
-						font-family: @FedraSansAlt;
-						font-size: 14px;
 						color: black;
 					}
 				}
@@ -743,20 +726,11 @@
 				position: absolute;
 				margin: 3.8% 0 0 5%;
 				li {
-					font-family: "Fedra Sans Alt Demi 11";
-					font-style: normal;
-					font-weight: normal;
-					font-stretch: normal;
-					font-size: 14px;
+					font: normal normal normal 14px/24px @fsabl;
 					color: black;
 					text-decoration: none;
 					&.heading {
-						font-family: "Fedra Serif B Book";
-						font-style: normal;
-						font-weight: normal;
-						font-stretch: normal;
-						font-size: 21px;
-						font-style: italic;
+						font: normal normal normal 21px @fsbbil;
 						color: black;
 						line-height: 27px;
 						margin-bottom: 27px;
@@ -861,21 +835,20 @@
 					width: 50%;
 					float: left;
 					li {
+						font: normal normal normal 12px @fsabu;
 						&:before {
 							color: black;
 
 							padding: 0;
 						}
 						a {
-							font-family: @FedraSansAlt;
-							font-size: 12px;
+							font: normal normal normal 12px @fsabu;
 							color: black;
 						}
 					}
 				}
 				.articul {
-					// font-family: @CondensedBook;
-					font-size: 12px;
+					font: normal normal normal 12px @fsabu;
 					color: rgb(128, 128, 128);
 					text-align: right;
 
@@ -886,12 +859,11 @@
 			.price-size-color {
 				clear: left;
 				.price {
-					font-family: @FedraSansCondensedLight;
-					font-size: 64px;
-					letter-spacing: -4px;
+					font: normal normal normal 64px @fscplu;
 					color: black;
 				}
 				.sizes {
+					font: normal normal normal 12px @fsabl;
 					height: 32px;
 
 					margin: 0;
@@ -956,10 +928,14 @@
 				margin-top: 2%;
 				width: 375px;
 			}
+			.col-md-7 p {
+				font: normal normal normal 14px @fsabl;
+			}
 			.col-md-7 .ch {
 				margin-top: 17px;
 				div {
 					display: inline-block;
+					font: normal normal normal 14px @fsabl;
 				}
 			}
 			.col-md-7 .ch_ {
@@ -989,19 +965,14 @@
 			.info {
 				padding-left: 21px;
 				h3 {
-					margin-top: 11px;
+					margin-top: 0px;
 				}
 				p {
 					max-width: 80%;
 					margin-bottom: 25px;
 				}
 				a {
-					font-family: "Fedra Serif B Book";
-					font-style: italic;
-					font-weight: normal;
-					font-stretch: normal;
-
-					font-size: 12px;
+					font: normal normal normal 12px @fsbbil;
 					color: black;
 				}
 			}
@@ -1035,6 +1006,14 @@
 			margin-top: 5%;
 		}
 	} //strange-article
+	&.recruit {
+		.subtitle {
+			margin-top: 0;
+		}
+		.controls {
+			margin-top: 0;
+		}
+	}
 	&.video-posts {
 		.container {
 			position: relative;
@@ -1055,28 +1034,24 @@
 				&.largest {position: static;}
 			}
 		}
+		.subtitle {
+			margin-top: 0;
+		}
 	}
 	.cart-total {
 		.controls {margin-top: 0;}
 		margin-left: 28%;
 		display: inline-block;
 		.heading {
-			font-family: "Fedra Sans Alt Demi 11";
-			font-style: normal;
-			font-weight: normal;
-			font-stretch: normal;
-
-			font-size: 12px;
+			font: normal normal normal 12px @fsabl;
 			color: rgb(128, 128, 128);
 
 			display: block;
 			margin-bottom: 5px;
 		}
 		.total {
-			font-family: @FedraSansCondensedLight;
-			font-size: 64px;
+			font: normal normal normal 64px @fscplu;
 			text-transform: uppercase;
-
 			display: block;
 		}
 	}
@@ -1095,7 +1070,7 @@
 	.container {
 		padding: 0 32px;
 		p {
-			font: normal normal normal 10px @fsabu;
+			font: normal normal normal 10px/37px @fsabu;
 			text-transform: uppercase;
 		}
 	}
