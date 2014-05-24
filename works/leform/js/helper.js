@@ -2,6 +2,8 @@
 {
     $(function ()
     {
+        $('body').hide();
+
         // some global vars
         var window_width = $(window).outerWidth();
         var window_height = $(window).outerHeight();
@@ -161,6 +163,10 @@
         {
             $('#grid').fadeToggle();
         });
-       // $('#grid').show();
+        $('#grid').show();
+
+        $.when( $(document) ).then(function() {
+            $('body').show()
+        });
     });
 })(jQuery);

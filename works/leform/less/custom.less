@@ -7,7 +7,7 @@
 			top: 0; left: 0;
 			h1.motd {
 				position: absolute;
-				font-family: @FedraSansCondensedLight;
+
 				font-size: 72px;
 				color: white;
 			}
@@ -25,51 +25,43 @@
 	&.top {
 		text-align: center;
 		padding-top: 32px;
-
-        .quart {
+		.quart {
 			float: left;
 			line-height: 95px;
-          a {
-			  	font: normal normal normal 12px @fsbbiu;
+			a {
+				font: normal normal normal 12px @fsbbiu;
 				color: black;
-          }
-			&.phone {
-			//              background: rgba(255, 215, 108, 0.5);
-
 			}
-			&.lang-switch {
-			//            background: rgba(0,0,0,0.5);
-              a {
-
-              }
-			span {
-				font: normal normal normal 12px @serif_italic;
-			  &:first-of-type {
-				color: rgba(160, 162, 164, 1);
-				&:after {
-				  content: '/';
-				  padding-left: 5px;
-				  color: black;
+			&.phone {}
+				&.lang-switch {
+					a {}
+					span {
+						font: normal normal normal 12px @fsbbil;
+						&:first-of-type {
+						color: rgba(160, 162, 164, 1);
+						&:after {
+						  content: '/';
+						  padding-left: 5px;
+						  color: black;
+						}
+					  }
+					}
 				}
+				&.logotype {
+					img {margin: -10px 0 0 14px}
+				}
+				&.cabinet { // text-overflow ellipsis
+
+				  a {
+
+				  }
+				}
+				&.cart {
+				  a {
+
+				  }
 			  }
 			}
-			}
-			&.logotype {
-				img {margin: -10px 0 0 14px}
-			}
-			&.cabinet { // text-overflow ellipsis
-
-			  a {
-
-			  }
-			}
-			&.cart {
-              a {
-
-              }
-          }
-        }
-
 	} //top
 	&.logotype-mobile {
 		text-align: center;
@@ -268,13 +260,11 @@
 				li {
 					margin-bottom: 20px;
 					&.heading {
-						font: italic normal normal 12px @serif_italic;
 						color: black;
 						margin-bottom: 20px;
 					}
 					&.all {
 						a {
-							font: normal normal normal 12px @sans_alt_demi;
 							color: rgb(128, 128, 128);
 						}
 					}
@@ -282,7 +272,6 @@
 						margin: 0;
 					}
 					a {
-						font: normal normal normal 12px @sans_alt_demi;
 						color: black;
 					}
 				}
@@ -294,40 +283,33 @@
 				}
 				.price {
 					display: block;
-					font: normal normal normal 24px @sans_alt_demi;
 					color: white;
 				}
 				.brand {
 					display: block;
-					font: normal normal normal 14px @sans_alt_demi;
 					color: white;
 				}
 				.item-type {
 					display: block;
-					font: normal normal normal 12px @sans_condensed_book_light;
 					color: white;
 				}
 				.sizes {
 					display: block;
-					font: normal normal normal 12px @sans_alt_demi;
 					color: white;
 				}
 
 				// second type
 				.date {
 					display: block;
-					font: normal normal normal 14px @sans_alt_demi;
 					color: white;
 				}
 				.title {
 					display: block;
-					font: normal normal normal 24px @sans_condensed_book_light;
 					color: white;
 					text-transform: uppercase;
 				}
 				.teaser {
 					display: block;
-					font: normal normal normal 14px @sans_alt_demi;
 					color: white;
 				}
 			}
@@ -365,9 +347,7 @@
 					list-style: none;
 					line-height: 22px;
 					a {
-						font-family: @FedraSerifBook;
-						font-size: 12px;
-						font-style: italic;
+						font: normal normal normal 12px @fsbbil;
 						color: black;
 					}
 				}
@@ -1064,7 +1044,6 @@
 	background: @black;
 	height: 32px;
 
-	font-family: @FedraSansAlt;
 	font-size: 10px;
 	color: white;
 	.container {

@@ -1,6 +1,9 @@
 @_1920: ~"screen and (min-width: 1920px)";
 @_1024to_1920: ~"screen and (min-width : 1024px) and (max-width: 1920px)";
 @_340to_640: ~"screen and (min-width : 320px) and (max-width: 640px)";
+
+@ipad_portraid: ~"only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)";
+
 // leform vars
 // colors
 @red: 					  ~"rgba(244, 96, 95, 1)";
@@ -9,43 +12,6 @@
 @gray: 					  ~"rgba(109, 109, 109)";
 @lightgray: 			  ~"rgba(142, 144, 146, 1)";
 @white: 				  ~"rgba(255, 255, 255, 1)";
-
-// font: font-style font-variant font-weight font-size/line-height font-family;
-@FedraSerifBook: 		  "Fedra Serif B Book"; // BBook
-@FedraSansAlt: 			  "Fedra Sans Alt Demi 11";
-@FedraSansCondensedLight: "Fedra Sans Condensed Light 11"; // CondensedLight
-@FedraSansCondensedBook:  "Fedra Sans Condensed Book";
-
-// fedra serif italic (link in top, bottom menu, links)
-// base font: font-style font-variant font-weight font-size/line-height font-family;
-// font: italic normal normal 12px @serif_italic;
-// 'Fedra Serif B Book Italic'
-@serif_italic: "Fedra Serif B Book";
-
-// fedra serif italic 21px, but not bold (serif teasers, middle titles)
-// font: italic normal normal 12px @serif_italic;
-@serif_italic_oldnumber: "Fedra Serif B Demi 2";
-
-// fedra sans condensed book (main menu)
-// font: normal normal normal 18px @sans_condensed_book_light
-@sans_condensed_book_light: "Fedra Sans Condensed Book";
-
-// fedra sans condensed book /w letter-spacing (page-title, big teasers)
-// font: normal normal normal 64px @sans_condensed_book_light
-@sans_condensed_book_light: "Fedra Sans Condensed Book";
-
-// fedra Sans Alt Demi 11 (date)
-// font: normal normal normal 14px @sans_alt_demi
-@sans_alt_demi: "Fedra Sans Alt Demi 11";
-
-// fedra sans condensed book (price)
-// font: normal normal normal 18px @sans_condensed_book_light
-@sans_condensed_book_light: "Fedra Sans Condensed Book";
-
-// fedra serif b demi 2 (links in article)
-// font: italic normal normal 12px @serif_italic_b_demi_2
-@serif_italic_b_demi_2: "Fedra Serif B Demi 2";
-
 
 // the new fonts, fuck
 @fsbbiu: "Fedra Serif B Book Italic";		// font: normal normal normal 12px @fsbbiu // uppercase
