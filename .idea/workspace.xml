@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/works/leform/js/dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/works/leform/js/ion.checkRadio.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/works/leform/js/jquery.fs.picker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/works/leform/js/jquery.grid-a-licious.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/works/leform/js/jquery.mosaicflow.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/works/leform/js/jquery.nested.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/works/leform/js/niceforms.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/404.html" afterPath="$PROJECT_DIR$/works/leform/404.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/js/bootstrap-checkbox.js" afterPath="$PROJECT_DIR$/works/leform/js/bootstrap-checkbox.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/js/carousel.js" afterPath="$PROJECT_DIR$/works/leform/js/carousel.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/cart.html" afterPath="$PROJECT_DIR$/works/leform/cart.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/contacts.html" afterPath="$PROJECT_DIR$/works/leform/contacts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/js/helper.js" afterPath="$PROJECT_DIR$/works/leform/js/helper.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/history.html" afterPath="$PROJECT_DIR$/works/leform/history.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/css/import.css" afterPath="$PROJECT_DIR$/works/leform/css/import.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/less/import.less" afterPath="$PROJECT_DIR$/works/leform/less/import.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/index-mobile-details.html" afterPath="$PROJECT_DIR$/works/leform/index-mobile-details.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/index.html" afterPath="$PROJECT_DIR$/works/leform/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/css/ipad_portrait.css" afterPath="$PROJECT_DIR$/works/leform/css/ipad_portrait.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/less/ipad_portrait.less" afterPath="$PROJECT_DIR$/works/leform/less/ipad_portrait.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/item-wall.html" afterPath="$PROJECT_DIR$/works/leform/item-wall.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/item.html" afterPath="$PROJECT_DIR$/works/leform/item.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/journal.html" afterPath="$PROJECT_DIR$/works/leform/journal.html" />
@@ -42,92 +52,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ipad_portrait.less" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/works/leform/less/ipad_portrait.less">
+      <file leaf-file-name="helper.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="197" column="37" selection-start="2739" selection-end="2739" vertical-scroll-proportion="0.7084746" vertical-offset="0" max-vertical-offset="885">
-              <folding>
-                <element signature="e#35#66#0" expanded="false" />
-                <element signature="e#87#118#0" expanded="false" />
-                <element signature="e#126#443#0" expanded="false" />
-                <element signature="e#141#440#0" expanded="false" />
-                <element signature="e#154#191#0" expanded="false" />
-                <element signature="e#205#246#0" expanded="false" />
-                <element signature="e#215#241#0" expanded="false" />
-                <element signature="e#257#436#0" expanded="false" />
-                <element signature="e#452#633#0" expanded="false" />
-                <element signature="e#467#630#0" expanded="false" />
-                <element signature="e#488#626#0" expanded="false" />
-                <element signature="e#497#621#0" expanded="false" />
-                <element signature="e#533#615#0" expanded="false" />
-                <element signature="e#543#608#0" expanded="false" />
-                <element signature="e#650#724#0" expanded="false" />
-                <element signature="e#667#721#0" expanded="false" />
-                <element signature="e#675#717#0" expanded="false" />
-                <element signature="e#683#712#0" expanded="false" />
-                <element signature="e#737#1132#0" expanded="false" />
-                <element signature="e#751#1024#0" expanded="false" />
-                <element signature="e#767#895#0" expanded="false" />
-                <element signature="e#909#1020#0" expanded="false" />
-                <element signature="e#988#1015#0" expanded="false" />
-                <element signature="e#1038#1129#0" expanded="false" />
-                <element signature="e#1053#1125#0" expanded="false" />
-                <element signature="e#1062#1120#0" expanded="false" />
-                <element signature="e#1076#1114#0" expanded="false" />
-                <element signature="e#1149#1511#0" expanded="false" />
-                <element signature="e#1164#1508#0" expanded="false" />
-                <element signature="e#1195#1269#0" expanded="false" />
-                <element signature="e#1286#1360#0" expanded="false" />
-                <element signature="e#1377#1410#0" expanded="false" />
-                <element signature="e#1423#1504#0" expanded="false" />
-                <element signature="e#1531#1639#0" expanded="false" />
-                <element signature="e#1546#1636#0" expanded="false" />
-                <element signature="e#1567#1632#0" expanded="false" />
-                <element signature="e#1648#1702#0" expanded="false" />
-                <element signature="e#1663#1699#0" expanded="false" />
-                <element signature="e#1750#1837#0" expanded="false" />
-                <element signature="e#1845#1868#0" expanded="false" />
-                <element signature="e#1894#2002#0" expanded="false" />
-                <element signature="e#1909#1999#0" expanded="false" />
-                <element signature="e#1930#1995#0" expanded="false" />
-                <element signature="e#2020#2333#0" expanded="false" />
-                <element signature="e#2035#2330#0" expanded="false" />
-                <element signature="e#2056#2121#0" expanded="false" />
-                <element signature="e#2138#2178#0" expanded="false" />
-                <element signature="e#2148#2173#0" expanded="false" />
-                <element signature="e#2196#2326#0" expanded="false" />
-                <element signature="e#2206#2231#0" expanded="false" />
-                <element signature="e#2252#2321#0" expanded="false" />
-                <element signature="e#2351#2410#0" expanded="false" />
-                <element signature="e#2366#2407#0" expanded="false" />
-                <element signature="e#2383#2403#0" expanded="false" />
-                <element signature="e#2423#2548#0" expanded="false" />
-                <element signature="e#2438#2545#0" expanded="false" />
-                <element signature="e#2475#2502#0" expanded="false" />
-                <element signature="e#2518#2541#0" expanded="false" />
-                <element signature="e#2769#2905#0" expanded="false" />
-                <element signature="e#2783#2903#0" expanded="false" />
-                <element signature="e#2810#2836#0" expanded="false" />
-                <element signature="e#2847#2900#0" expanded="false" />
-                <element signature="e#2859#2896#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="video-post.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/works/leform/video-post.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="41" selection-start="7049" selection-end="7049" vertical-scroll-proportion="-15.96" vertical-offset="1539" max-vertical-offset="3515">
+            <state line="203" column="10" selection-start="7935" selection-end="7935" vertical-scroll-proportion="0.0" vertical-offset="3042" max-vertical-offset="4009">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ipad_land.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/works/leform/less/ipad_land.less">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/works/leform/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="9" selection-start="110" selection-end="168" vertical-scroll-proportion="-7.6" vertical-offset="0" max-vertical-offset="361">
+            <state line="12" column="4" selection-start="428" selection-end="1300" vertical-scroll-proportion="0.2614679" vertical-offset="0" max-vertical-offset="3135">
               <folding />
             </state>
           </provider>
@@ -161,24 +98,25 @@
         <option value="$PROJECT_DIR$/works/leform/less/custom.less" />
         <option value="$PROJECT_DIR$/works/leform/less/ipad_landscape.less" />
         <option value="$PROJECT_DIR$/works/leform/controls.html" />
-        <option value="$PROJECT_DIR$/works/leform/js/helper.js" />
-        <option value="$PROJECT_DIR$/works/leform/history.html" />
+        <option value="$PROJECT_DIR$/works/leform/less/ipad_land.less" />
+        <option value="$PROJECT_DIR$/works/leform/less/ipad_portrait.less" />
+        <option value="$PROJECT_DIR$/works/leform/less/import.less" />
         <option value="$PROJECT_DIR$/works/leform/404.html" />
+        <option value="$PROJECT_DIR$/works/leform/cart.html" />
         <option value="$PROJECT_DIR$/works/leform/contacts.html" />
-        <option value="$PROJECT_DIR$/works/leform/index.html" />
-        <option value="$PROJECT_DIR$/works/leform/index-mobile-details.html" />
+        <option value="$PROJECT_DIR$/works/leform/history.html" />
+        <option value="$PROJECT_DIR$/works/leform/item.html" />
         <option value="$PROJECT_DIR$/works/leform/item-wall.html" />
+        <option value="$PROJECT_DIR$/works/leform/journal.html" />
+        <option value="$PROJECT_DIR$/works/leform/ordering.html" />
+        <option value="$PROJECT_DIR$/works/leform/personal-info.html" />
         <option value="$PROJECT_DIR$/works/leform/posts.html" />
         <option value="$PROJECT_DIR$/works/leform/recruit.html" />
         <option value="$PROJECT_DIR$/works/leform/strange-article.html" />
-        <option value="$PROJECT_DIR$/works/leform/item.html" />
-        <option value="$PROJECT_DIR$/works/leform/journal.html" />
-        <option value="$PROJECT_DIR$/works/leform/less/ipad_land.less" />
-        <option value="$PROJECT_DIR$/works/leform/personal-info.html" />
-        <option value="$PROJECT_DIR$/works/leform/cart.html" />
-        <option value="$PROJECT_DIR$/works/leform/ordering.html" />
         <option value="$PROJECT_DIR$/works/leform/video-post.html" />
-        <option value="$PROJECT_DIR$/works/leform/less/ipad_portrait.less" />
+        <option value="$PROJECT_DIR$/works/leform/index-mobile-details.html" />
+        <option value="$PROJECT_DIR$/works/leform/js/helper.js" />
+        <option value="$PROJECT_DIR$/works/leform/index.html" />
       </list>
     </option>
   </component>
@@ -533,20 +471,20 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32846716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14873418" sideWeight="0.6706642" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295099" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14873418" sideWeight="0.6706642" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -570,22 +508,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="19" selection-start="6391" selection-end="6391" vertical-scroll-proportion="0.0" vertical-offset="2655" max-vertical-offset="2805">
-          <folding>
-            <marker date="1401032431000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/journal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="49" selection-start="8787" selection-end="8787" vertical-scroll-proportion="0.0" vertical-offset="2175" max-vertical-offset="3360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/less/custom.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="19" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="16620">
@@ -889,9 +811,7 @@
     <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="172" column="0" selection-start="6146" selection-end="6253" vertical-scroll-proportion="0.0" vertical-offset="1922" max-vertical-offset="2896">
-          <folding>
-            <marker date="1401032431000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1191,9 +1111,7 @@
     <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="172" column="0" selection-start="6146" selection-end="6253" vertical-scroll-proportion="0.0" vertical-offset="1922" max-vertical-offset="2896">
-          <folding>
-            <marker date="1401032431000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1656,32 +1574,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="14" selection-start="7726" selection-end="7726" vertical-scroll-proportion="0.0" vertical-offset="3123" max-vertical-offset="4123">
-          <folding>
-            <marker date="1401032431000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/controls.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="181" selection-start="1051" selection-end="1051" vertical-scroll-proportion="-11.4" vertical-offset="0" max-vertical-offset="1672">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/fonts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="887">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="6" selection-start="6416" selection-end="6416" vertical-scroll-proportion="-32.44" vertical-offset="2001" max-vertical-offset="3078">
           <folding />
         </state>
       </provider>
@@ -1693,114 +1588,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/history.html">
+    <entry file="file://$PROJECT_DIR$/works/leform/js/carousel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="200" column="6" selection-start="9210" selection-end="9210" vertical-scroll-proportion="0.88810366" vertical-offset="3046" max-vertical-offset="6384">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="6" selection-start="6746" selection-end="6746" vertical-scroll-proportion="-23.32" vertical-offset="2305" max-vertical-offset="3154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/strange-article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="181" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.30504587" vertical-offset="0" max-vertical-offset="3705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/recruit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="181" selection-start="781" selection-end="1143" vertical-scroll-proportion="0.30504587" vertical-offset="0" max-vertical-offset="3629">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/posts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="6" selection-start="10062" selection-end="10062" vertical-scroll-proportion="0.7190367" vertical-offset="3078" max-vertical-offset="3952">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/item-wall.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="203" column="6" selection-start="9382" selection-end="9382" vertical-scroll-proportion="0.73394495" vertical-offset="3217" max-vertical-offset="4465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/contacts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="192" column="6" selection-start="9307" selection-end="9307" vertical-scroll-proportion="0.69495416" vertical-offset="3042" max-vertical-offset="3914">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/index-mobile-details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="6" selection-start="6559" selection-end="6559" vertical-scroll-proportion="0.69495416" vertical-offset="2130" max-vertical-offset="3002">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/item.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="96" selection-start="7034" selection-end="7034" vertical-scroll-proportion="0.5642202" vertical-offset="2244" max-vertical-offset="4712">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/journal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="45" selection-start="8551" selection-end="8551" vertical-scroll-proportion="-25.08" vertical-offset="2071" max-vertical-offset="4294">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/personal-info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="74" selection-start="4307" selection-end="4307" vertical-scroll-proportion="-9.28" vertical-offset="1402" max-vertical-offset="4009">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="41" selection-start="4490" selection-end="4490" vertical-scroll-proportion="-0.27866971" vertical-offset="1934" max-vertical-offset="3686">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/less/ipad_land.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="9" selection-start="110" selection-end="168" vertical-scroll-proportion="-7.6" vertical-offset="0" max-vertical-offset="361">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/ordering.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="181" selection-start="916" selection-end="1278" vertical-scroll-proportion="0.37041286" vertical-offset="0" max-vertical-offset="4864">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/video-post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="41" selection-start="7049" selection-end="7049" vertical-scroll-proportion="-15.96" vertical-offset="1539" max-vertical-offset="3515">
-          <folding />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4009">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/less/ipad_portrait.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="197" column="37" selection-start="2739" selection-end="2739" vertical-scroll-proportion="0.7084746" vertical-offset="0" max-vertical-offset="885">
+        <state line="197" column="37" selection-start="2739" selection-end="2739" vertical-scroll-proportion="1.0866551" vertical-offset="0" max-vertical-offset="874">
           <folding>
             <element signature="e#35#66#0" expanded="false" />
             <element signature="e#87#118#0" expanded="false" />
@@ -1866,6 +1665,139 @@
             <element signature="e#2847#2900#0" expanded="false" />
             <element signature="e#2859#2896#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/less/import.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="315" selection-end="315" vertical-scroll-proportion="0.5268631" vertical-offset="0" max-vertical-offset="1026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/less/ipad_land.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="9" selection-start="110" selection-end="168" vertical-scroll-proportion="0.32928944" vertical-offset="0" max-vertical-offset="577">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="153" column="38" selection-start="6646" selection-end="6646" vertical-scroll-proportion="-16.48" vertical-offset="2495" max-vertical-offset="3059">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="176" column="14" selection-start="8106" selection-end="8106" vertical-scroll-proportion="-9.64" vertical-offset="3103" max-vertical-offset="3667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/contacts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="197" column="38" selection-start="9537" selection-end="9537" vertical-scroll-proportion="-16.48" vertical-offset="3331" max-vertical-offset="3895">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/controls.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="181" selection-start="1051" selection-end="1051" vertical-scroll-proportion="-0.76" vertical-offset="266" max-vertical-offset="1672">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/history.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="205" column="38" selection-start="9440" selection-end="9440" vertical-scroll-proportion="-6.6" vertical-offset="3730" max-vertical-offset="6365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="199" column="38" selection-start="10229" selection-end="10229" vertical-scroll-proportion="0.82568806" vertical-offset="3061" max-vertical-offset="3933">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/recruit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="182" column="38" selection-start="8980" selection-end="8980" vertical-scroll-proportion="0.82824856" vertical-offset="2725" max-vertical-offset="3610">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/strange-article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="186" column="38" selection-start="12023" selection-end="12023" vertical-scroll-proportion="0.82568806" vertical-offset="2814" max-vertical-offset="3686">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/index-mobile-details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="38" selection-start="6789" selection-end="6789" vertical-scroll-proportion="0.82824856" vertical-offset="2098" max-vertical-offset="2983">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/video-post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="176" column="38" selection-start="11295" selection-end="11295" vertical-scroll-proportion="0.82568806" vertical-offset="2624" max-vertical-offset="3496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/personal-info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="201" column="38" selection-start="9336" selection-end="9336" vertical-scroll-proportion="0.82824856" vertical-offset="3086" max-vertical-offset="3971">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/ordering.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="247" column="38" selection-start="13296" selection-end="13296" vertical-scroll-proportion="0.82568806" vertical-offset="3973" max-vertical-offset="4845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/journal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="217" column="38" selection-start="12034" selection-end="12034" vertical-scroll-proportion="0.82568806" vertical-offset="3403" max-vertical-offset="4275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/item.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="239" column="38" selection-start="11087" selection-end="11087" vertical-scroll-proportion="0.82568806" vertical-offset="3821" max-vertical-offset="4693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/item-wall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="208" column="38" selection-start="9597" selection-end="9597" vertical-scroll-proportion="0.4418079" vertical-offset="3561" max-vertical-offset="4446">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="203" column="10" selection-start="7935" selection-end="7935" vertical-scroll-proportion="0.0" vertical-offset="3042" max-vertical-offset="4009">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="4" selection-start="428" selection-end="1300" vertical-scroll-proportion="0.2614679" vertical-offset="0" max-vertical-offset="3135">
+          <folding />
         </state>
       </provider>
     </entry>

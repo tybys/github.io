@@ -3,24 +3,9 @@
     $(function ()
     {
         $('body').hide();
-
-        // some global vars
-        var window_width = $(window).outerWidth();
-        var window_height = $(window).outerHeight();
-
         // css builder, delete after
         var stylesheet_builder = function ()
         {
-            /*
-             <link href="css/import.css" rel="stylesheet">
-             <link href="css/custom.css" rel="stylesheet">
-             <link href="css/defaults.css" rel="stylesheet">
-             <link rel="stylesheet" type="text/css" media="all and (min-width: 1920px)" href="css/1920.css"><!--1920-->
-             <link rel="stylesheet" type="text/css" media="screen and (min-width : 1024px) and (max-width: 1920px)" href="css/1024_1920.css"><!--1024 > 1920-->
-             <link rel="stylesheet" type="text/css" media="screen and (min-width : 320px) and (max-width: 640px)" href="css/340.css"><!--iphone-->
-             <link rel="stylesheet" type="text/css" media="only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)" href="css/ipad_portrait.css">
-             <link rel="stylesheet" type="text/css" media="only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)" href="css/ipad_land.css">
-             */
             stylesheet = [
                 ["css/import.css", "stylesheet", "all"],
                 ["css/custom.css", "stylesheet", "all"],
@@ -31,12 +16,19 @@
                 ["css/ipad_portrait.css", "stylesheet", "only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)"],
                 ["css/ipad_land.css", "stylesheet", "only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)"]
             ];
+
             for (var i = 0; i < stylesheet.length; i++)
             {
-                var stylesheet_tag = $('<link/>', {'href' : stylesheet[i] + '.css', 'type': 'text/css', 'rel': 'stylesheet'});
-                $('head').append(stylesheet_tag);
+                var stylesheet_tag = $('<link/>', {'href' : stylesheet[i][0], 'type': 'text/css', 'rel': stylesheet[i][1], 'media': stylesheet[i][2]});
+                $('head').append(stylesheet_tag)
             }
-        }
+
+        };
+
+
+        // some global vars
+        var window_width = $(window).outerWidth();
+        var window_height = $(window).outerHeight();
 
         // fonts builder, for faer, do something plase (:
         var fonts_builder = function ()
@@ -54,7 +46,7 @@
                 var link_font = $('<link/>', {'href' : link[i] + '.css', 'type': 'text/css', 'rel': 'stylesheet'});
                 $('head').append(link_font);
             }
-        }();
+        };
 
         //
         $('.navbar-toggle').on('click', function ()
@@ -97,8 +89,6 @@
             }
         }();
 
-
-
         var social_background_toggling = function ()
         {
             $('.share span').hover(function ()
@@ -124,7 +114,6 @@
                 <button class="button simple-transparent input-icon">Обновить данные</button>
              </div>
          </div>
-
 
          var $wrapper = $("<div/>", { class: "wrapper" }),
          $inner = $("<div/>", { class: "inner" }),
@@ -154,26 +143,27 @@
         var temp_menu = function ()
         {
             var rootMenu = $('<div id="sub" />').appendTo('body');
-            var menu = new Array(
-                "index",
-                "contacts",
-                "history",
-                "item",
-                "item-wall",
-                "journal",
-                "personal-info",
-                "cart",
-                "ordering",
-                "404",
-                "posts",
-                "video-post",
-                "strange-article",
-                "recruit",
-                "index-mobile-details",
-                "controls");
+            var menu = [
+                ["index", "главная"],
+                ["contacts", "контакты"],
+                ["history", "история"],
+                ["item", "товар"],
+                ["item-wall", "товар плиткой"],
+                ["journal", "журналы"],
+                ["personal-info", "личная информация"],
+                ["cart", "корзина"],
+                ["ordering", "заказ"],
+                ["404", ""],
+                ["posts", "пост"],
+                ["video-post", "видео-пост"],
+                ["strange-article", "статья"],
+                ["recruit", "вакансии"],
+                ["index-mobile-details", 'главная+'],
+                ["controls", "формы"]
+            ]
             for (var i = 0; i < menu.length; i++)
             {
-                var m = $('<a/>', {'href' : menu[i] + '.html'}).text(menu[i]);
+                var m = $('<a/>', {'href' : menu[i][0] + '.html'}).text(menu[i][1]);
                 $('#sub').append(m);
             }
 
@@ -190,8 +180,10 @@
         $('#grid').show();
 
         $.when( $(document) ).then(function() {
+            fonts_builder();
             $('body').show()
         });
+
 
         // index backround sizer
         var background_sizer = function ()
@@ -208,5 +200,7 @@
                 // $('.index').css('height', sum)
             });
         }();
+
+        //stylesheet_builder();
     });
 })(jQuery);
