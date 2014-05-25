@@ -8,6 +8,36 @@
         var window_width = $(window).outerWidth();
         var window_height = $(window).outerHeight();
 
+        // css builder, delete after
+        var stylesheet_builder = function ()
+        {
+            /*
+             <link href="css/import.css" rel="stylesheet">
+             <link href="css/custom.css" rel="stylesheet">
+             <link href="css/defaults.css" rel="stylesheet">
+             <link rel="stylesheet" type="text/css" media="all and (min-width: 1920px)" href="css/1920.css"><!--1920-->
+             <link rel="stylesheet" type="text/css" media="screen and (min-width : 1024px) and (max-width: 1920px)" href="css/1024_1920.css"><!--1024 > 1920-->
+             <link rel="stylesheet" type="text/css" media="screen and (min-width : 320px) and (max-width: 640px)" href="css/340.css"><!--iphone-->
+             <link rel="stylesheet" type="text/css" media="only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)" href="css/ipad_portrait.css">
+             <link rel="stylesheet" type="text/css" media="only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)" href="css/ipad_land.css">
+             */
+            stylesheet = [
+                ["css/import.css", "stylesheet", "all"],
+                ["css/custom.css", "stylesheet", "all"],
+                ["css/defaults.css","stylesheet", "all"],
+                ["css/1920.css", "stylesheet", "all and (min-width: 1920px)"],
+                ["css/1024_1920.css", "stylesheet", "screen and (min-width : 1024px) and (max-width: 1920px)"],
+                ["css/340.css", "stylesheet", "screen and (min-width : 320px) and (max-width: 640px)"],
+                ["css/ipad_portrait.css", "stylesheet", "only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)"],
+                ["css/ipad_land.css", "stylesheet", "only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)"]
+            ];
+            for (var i = 0; i < stylesheet.length; i++)
+            {
+                var stylesheet_tag = $('<link/>', {'href' : stylesheet[i] + '.css', 'type': 'text/css', 'rel': 'stylesheet'});
+                $('head').append(stylesheet_tag);
+            }
+        }
+
         // fonts builder, for faer, do something plase (:
         var fonts_builder = function ()
         {
@@ -149,7 +179,7 @@
 
             rootMenu.css({position: 'fixed',top: '1%',right: '0.3%',zIndex: '999'});
             rootMenu.find('a').css({display: 'block',padding: '3px',color: 'white', background: 'black', margin: '0 1px', opacity: .5});
-            $('.row .container').append("<div id='grid' style='display: none' />");
+            //$('.row .container').append("<div id='grid' style='display: none' />");
         }();
 
         //$('body').append('<span id="toggle">toggle</span>');
