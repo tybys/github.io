@@ -61,19 +61,7 @@
             }
         }();
 
-        // index backround sizer
-        var background_sizer = function ()
-        {
-            var cap_height = $('.top').outerHeight();
-            var menu_height = $('.menu').outerHeight();
-            var sum = window_height - (cap_height + menu_height)
-            $('.index').css('height', sum)
 
-            $(window).resize(function ()
-            {
-//            $('.index').css('height', sum)
-            });
-        }();
 
         var social_background_toggling = function ()
         {
@@ -169,6 +157,21 @@
             $('body').show()
         });
 
+        // index backround sizer
+        var background_sizer = function ()
+        {
+            var cap_height = $('.top').outerHeight();
+            var menu_height = $('.menu').outerHeight();
+            var sum = window_height - (cap_height + menu_height)
+
+            console.log('window height' + window_height, 'cap height' + cap_height, 'menu height' + menu_height, 'sum' + sum)
+            $('.index').css('height', sum) // must be 749
+
+            $(window).resize(function ()
+            {
+//            $('.index').css('height', sum)
+            });
+        }();
 //        supportsSvg: function () {
 
 //        }
