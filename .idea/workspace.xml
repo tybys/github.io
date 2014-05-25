@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/less/ipad_land.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/404.html" afterPath="$PROJECT_DIR$/works/leform/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/cart.html" afterPath="$PROJECT_DIR$/works/leform/cart.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/contacts.html" afterPath="$PROJECT_DIR$/works/leform/contacts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/controls.html" afterPath="$PROJECT_DIR$/works/leform/controls.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/js/helper.js" afterPath="$PROJECT_DIR$/works/leform/js/helper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/history.html" afterPath="$PROJECT_DIR$/works/leform/history.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/index-mobile-details.html" afterPath="$PROJECT_DIR$/works/leform/index-mobile-details.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/index.html" afterPath="$PROJECT_DIR$/works/leform/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/item-wall.html" afterPath="$PROJECT_DIR$/works/leform/item-wall.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/item.html" afterPath="$PROJECT_DIR$/works/leform/item.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/journal.html" afterPath="$PROJECT_DIR$/works/leform/journal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/ordering.html" afterPath="$PROJECT_DIR$/works/leform/ordering.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/personal-info.html" afterPath="$PROJECT_DIR$/works/leform/personal-info.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/posts.html" afterPath="$PROJECT_DIR$/works/leform/posts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/recruit.html" afterPath="$PROJECT_DIR$/works/leform/recruit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/strange-article.html" afterPath="$PROJECT_DIR$/works/leform/strange-article.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/video-post.html" afterPath="$PROJECT_DIR$/works/leform/video-post.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/css/ipad_portrait.css" afterPath="$PROJECT_DIR$/works/leform/css/ipad_portrait.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/less/ipad_portrait.less" afterPath="$PROJECT_DIR$/works/leform/less/ipad_portrait.less" />
     </list>
     <ignored path="github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,10 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="helper.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="helper.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="181" column="14" selection-start="7726" selection-end="7726" vertical-scroll-proportion="0.3522854" vertical-offset="3123" max-vertical-offset="4123">
+            <state line="181" column="14" selection-start="7726" selection-end="7726" vertical-scroll-proportion="0.0" vertical-offset="3123" max-vertical-offset="4123">
               <folding>
                 <marker date="1401032431000" expanded="false" signature="7777:7790" placeholder="..." />
               </folding>
@@ -63,10 +47,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/works/leform/index.html">
+      <file leaf-file-name="ipad_portrait.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/works/leform/less/ipad_portrait.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="181" selection-start="428" selection-end="1300" vertical-scroll-proportion="-14.44" vertical-offset="0" max-vertical-offset="3135">
+            <state line="94" column="33" selection-start="1368" selection-end="1368" vertical-scroll-proportion="-21.28" vertical-offset="0" max-vertical-offset="779">
+              <folding>
+                <element signature="e#35#66#0" expanded="false" />
+                <element signature="e#87#118#0" expanded="false" />
+                <element signature="e#126#443#0" expanded="false" />
+                <element signature="e#141#440#0" expanded="false" />
+                <element signature="e#154#191#0" expanded="false" />
+                <element signature="e#205#246#0" expanded="false" />
+                <element signature="e#215#241#0" expanded="false" />
+                <element signature="e#257#436#0" expanded="false" />
+                <element signature="e#452#633#0" expanded="false" />
+                <element signature="e#467#630#0" expanded="false" />
+                <element signature="e#488#626#0" expanded="false" />
+                <element signature="e#497#621#0" expanded="false" />
+                <element signature="e#533#615#0" expanded="false" />
+                <element signature="e#543#608#0" expanded="false" />
+                <element signature="e#650#724#0" expanded="false" />
+                <element signature="e#667#721#0" expanded="false" />
+                <element signature="e#675#717#0" expanded="false" />
+                <element signature="e#683#712#0" expanded="false" />
+                <element signature="e#737#1027#0" expanded="false" />
+                <element signature="e#751#1024#0" expanded="false" />
+                <element signature="e#1418#1554#0" expanded="false" />
+                <element signature="e#1432#1552#0" expanded="false" />
+                <element signature="e#1459#1485#0" expanded="false" />
+                <element signature="e#1496#1549#0" expanded="false" />
+                <element signature="e#1508#1545#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contacts.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/works/leform/contacts.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="188" column="37" selection-start="9198" selection-end="9198" vertical-scroll-proportion="0.60779816" vertical-offset="3042" max-vertical-offset="3914">
               <folding />
             </state>
           </provider>
@@ -96,7 +115,6 @@
         <option value="$PROJECT_DIR$/works/leform/less/custom-vars.less" />
         <option value="$PROJECT_DIR$/works/leform/less/defaults.less" />
         <option value="$PROJECT_DIR$/works/leform/less/1024_1920.less" />
-        <option value="$PROJECT_DIR$/works/leform/less/ipad_portrait.less" />
         <option value="$PROJECT_DIR$/works/leform/image.html" />
         <option value="$PROJECT_DIR$/works/leform/less/custom.less" />
         <option value="$PROJECT_DIR$/works/leform/less/ipad_landscape.less" />
@@ -112,12 +130,13 @@
         <option value="$PROJECT_DIR$/works/leform/index-mobile-details.html" />
         <option value="$PROJECT_DIR$/works/leform/history.html" />
         <option value="$PROJECT_DIR$/works/leform/controls.html" />
-        <option value="$PROJECT_DIR$/works/leform/contacts.html" />
         <option value="$PROJECT_DIR$/works/leform/cart.html" />
         <option value="$PROJECT_DIR$/works/leform/404.html" />
         <option value="$PROJECT_DIR$/works/leform/index.html" />
         <option value="$PROJECT_DIR$/works/leform/less/ipad_land.less" />
         <option value="$PROJECT_DIR$/works/leform/js/helper.js" />
+        <option value="$PROJECT_DIR$/works/leform/less/ipad_portrait.less" />
+        <option value="$PROJECT_DIR$/works/leform/contacts.html" />
       </list>
     </option>
   </component>
@@ -757,7 +776,33 @@
     <entry file="file://$PROJECT_DIR$/works/leform/less/ipad_portrait.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="62" column="42" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0" vertical-offset="139" max-vertical-offset="1152">
-          <folding />
+          <folding>
+            <element signature="e#35#66#0" expanded="false" />
+            <element signature="e#87#118#0" expanded="false" />
+            <element signature="e#126#443#0" expanded="false" />
+            <element signature="e#141#440#0" expanded="false" />
+            <element signature="e#154#191#0" expanded="false" />
+            <element signature="e#205#246#0" expanded="false" />
+            <element signature="e#215#241#0" expanded="false" />
+            <element signature="e#257#436#0" expanded="false" />
+            <element signature="e#452#633#0" expanded="false" />
+            <element signature="e#467#630#0" expanded="false" />
+            <element signature="e#488#626#0" expanded="false" />
+            <element signature="e#497#621#0" expanded="false" />
+            <element signature="e#533#615#0" expanded="false" />
+            <element signature="e#543#608#0" expanded="false" />
+            <element signature="e#650#724#0" expanded="false" />
+            <element signature="e#667#721#0" expanded="false" />
+            <element signature="e#675#717#0" expanded="false" />
+            <element signature="e#683#712#0" expanded="false" />
+            <element signature="e#737#1027#0" expanded="false" />
+            <element signature="e#751#1024#0" expanded="false" />
+            <element signature="e#1418#1554#0" expanded="false" />
+            <element signature="e#1432#1552#0" expanded="false" />
+            <element signature="e#1459#1485#0" expanded="false" />
+            <element signature="e#1496#1549#0" expanded="false" />
+            <element signature="e#1508#1545#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -995,7 +1040,33 @@
     <entry file="file://$PROJECT_DIR$/works/leform/less/ipad_portrait.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="62" column="42" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0" vertical-offset="139" max-vertical-offset="1152">
-          <folding />
+          <folding>
+            <element signature="e#35#66#0" expanded="false" />
+            <element signature="e#87#118#0" expanded="false" />
+            <element signature="e#126#443#0" expanded="false" />
+            <element signature="e#141#440#0" expanded="false" />
+            <element signature="e#154#191#0" expanded="false" />
+            <element signature="e#205#246#0" expanded="false" />
+            <element signature="e#215#241#0" expanded="false" />
+            <element signature="e#257#436#0" expanded="false" />
+            <element signature="e#452#633#0" expanded="false" />
+            <element signature="e#467#630#0" expanded="false" />
+            <element signature="e#488#626#0" expanded="false" />
+            <element signature="e#497#621#0" expanded="false" />
+            <element signature="e#533#615#0" expanded="false" />
+            <element signature="e#543#608#0" expanded="false" />
+            <element signature="e#650#724#0" expanded="false" />
+            <element signature="e#667#721#0" expanded="false" />
+            <element signature="e#675#717#0" expanded="false" />
+            <element signature="e#683#712#0" expanded="false" />
+            <element signature="e#737#1027#0" expanded="false" />
+            <element signature="e#751#1024#0" expanded="false" />
+            <element signature="e#1418#1554#0" expanded="false" />
+            <element signature="e#1432#1552#0" expanded="false" />
+            <element signature="e#1459#1485#0" expanded="false" />
+            <element signature="e#1496#1549#0" expanded="false" />
+            <element signature="e#1508#1545#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1460,13 +1531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/less/ipad_portrait.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="29" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1140">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/less/1024_1920.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="27" selection-start="0" selection-end="27" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1410">
@@ -1544,13 +1608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/contacts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="181" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.32683486" vertical-offset="0" max-vertical-offset="3895">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/cart.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3686">
@@ -1593,13 +1650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="181" selection-start="428" selection-end="1300" vertical-scroll-proportion="-14.44" vertical-offset="0" max-vertical-offset="3135">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/less/ipad_land.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="28" selection-start="164" selection-end="164" vertical-scroll-proportion="-6.84" vertical-offset="0" max-vertical-offset="361">
@@ -1609,10 +1659,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="14" selection-start="7726" selection-end="7726" vertical-scroll-proportion="0.3522854" vertical-offset="3123" max-vertical-offset="4123">
+        <state line="181" column="14" selection-start="7726" selection-end="7726" vertical-scroll-proportion="0.0" vertical-offset="3123" max-vertical-offset="4123">
           <folding>
             <marker date="1401032431000" expanded="false" signature="7777:7790" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="181" selection-start="428" selection-end="1300" vertical-scroll-proportion="0.41399083" vertical-offset="0" max-vertical-offset="3135">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/less/ipad_portrait.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="33" selection-start="1368" selection-end="1368" vertical-scroll-proportion="-21.28" vertical-offset="0" max-vertical-offset="779">
+          <folding>
+            <element signature="e#35#66#0" expanded="false" />
+            <element signature="e#87#118#0" expanded="false" />
+            <element signature="e#126#443#0" expanded="false" />
+            <element signature="e#141#440#0" expanded="false" />
+            <element signature="e#154#191#0" expanded="false" />
+            <element signature="e#205#246#0" expanded="false" />
+            <element signature="e#215#241#0" expanded="false" />
+            <element signature="e#257#436#0" expanded="false" />
+            <element signature="e#452#633#0" expanded="false" />
+            <element signature="e#467#630#0" expanded="false" />
+            <element signature="e#488#626#0" expanded="false" />
+            <element signature="e#497#621#0" expanded="false" />
+            <element signature="e#533#615#0" expanded="false" />
+            <element signature="e#543#608#0" expanded="false" />
+            <element signature="e#650#724#0" expanded="false" />
+            <element signature="e#667#721#0" expanded="false" />
+            <element signature="e#675#717#0" expanded="false" />
+            <element signature="e#683#712#0" expanded="false" />
+            <element signature="e#737#1027#0" expanded="false" />
+            <element signature="e#751#1024#0" expanded="false" />
+            <element signature="e#1418#1554#0" expanded="false" />
+            <element signature="e#1432#1552#0" expanded="false" />
+            <element signature="e#1459#1485#0" expanded="false" />
+            <element signature="e#1496#1549#0" expanded="false" />
+            <element signature="e#1508#1545#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/contacts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="188" column="37" selection-start="9198" selection-end="9198" vertical-scroll-proportion="0.60779816" vertical-offset="3042" max-vertical-offset="3914">
+          <folding />
         </state>
       </provider>
     </entry>
