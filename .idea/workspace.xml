@@ -2,33 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/img/journal/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/img/journal/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/img/journal/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/img/journal/_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/img/journal/_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/img/journal/_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/img/journal/_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/img/journal/_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/img/journal/__1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/img/journal/__2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/img/journal/__3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/img/journal/card.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/img/journal/card_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/img/journal/card_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/img/big/four_index.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/img/big/second_index.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/works/leform/img/big/third_index.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/works/leform/img/big/first.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/works/leform/img/big/first.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/works/leform/img/big/first_mini.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/works/leform/img/big/four.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/works/leform/img/big/second.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/works/leform/img/big/third.svg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/img/big/first_index.jpg" afterPath="$PROJECT_DIR$/works/leform/img/big/first_index.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/js/helper.js" afterPath="$PROJECT_DIR$/works/leform/js/helper.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/works/leform/img/journal/__1.jpg" afterPath="$PROJECT_DIR$/works/leform/img/journal/_1_.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/works/leform/img/journal/__2.jpg" afterPath="$PROJECT_DIR$/works/leform/img/journal/_2_.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/works/leform/img/journal/__3.jpg" afterPath="$PROJECT_DIR$/works/leform/img/journal/_3_.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/journal.html" afterPath="$PROJECT_DIR$/works/leform/journal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -288,7 +265,7 @@
       <file leaf-file-name="journal.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/works/leform/journal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="49" selection-start="8749" selection-end="8749" vertical-scroll-proportion="0.22941177" vertical-offset="1980" max-vertical-offset="3360">
+            <state line="145" column="45" selection-start="8745" selection-end="8745" vertical-scroll-proportion="0.28235295" vertical-offset="1935" max-vertical-offset="3360">
               <folding />
             </state>
           </provider>
@@ -3216,7 +3193,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/journal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="49" selection-start="8749" selection-end="8749" vertical-scroll-proportion="0.22941177" vertical-offset="1980" max-vertical-offset="3360">
+        <state line="145" column="45" selection-start="8745" selection-end="8745" vertical-scroll-proportion="0.28235295" vertical-offset="1935" max-vertical-offset="3360">
           <folding />
         </state>
       </provider>
