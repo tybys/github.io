@@ -53,11 +53,17 @@
         var  sm = function ()
         {
             var second_menu = $('#second_menu');
+
             second_menu.css({position: 'absolute', top: window_height / 4});
-            if (window_height <= 560 || window_height <= 1024)
+            if (window_height <= 560)
             {
                 second_menu.css({top: 0});
-                second_menu.find('a').css({fontSize: 52})
+                second_menu.find('a').css({fontSize: 52});
+            }
+            else if (window_height <= 1024)
+            {
+                second_menu.css({top: window_height / 4.5});
+                second_menu.find('a').css({fontSize: 52});
             }
         }();
 
@@ -169,11 +175,8 @@
 
             $(window).resize(function ()
             {
-//            $('.index').css('height', sum)
+                // $('.index').css('height', sum)
             });
         }();
-//        supportsSvg: function () {
-
-//        }
     });
 })(jQuery);
