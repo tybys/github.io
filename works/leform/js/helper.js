@@ -54,7 +54,7 @@
         {
             var second_menu = $('#second_menu');
             second_menu.css({position: 'absolute', top: window_height / 4});
-            if (window_height <= 560)
+            if (window_height <= 560 || window_height <= 1024)
             {
                 second_menu.css({top: 0});
                 second_menu.find('a').css({fontSize: 52})
