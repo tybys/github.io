@@ -76,7 +76,7 @@
         {
             var second_menu = $('#second_menu');
 
-            second_menu.css({position: 'absolute', top: window_height / 4});
+            second_menu.css({position: 'absolute', top: window_height / 4 + 100+'px'});
             if (window_height <= 560)
             {
                 second_menu.css({top: 0});

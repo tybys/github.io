@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eb983bf-d621-46bf-9998-2e6e57d1cea0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/css/defaults.css" afterPath="$PROJECT_DIR$/works/leform/css/defaults.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/less/defaults.less" afterPath="$PROJECT_DIR$/works/leform/less/defaults.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works/leform/js/helper.js" afterPath="$PROJECT_DIR$/works/leform/js/helper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="helper.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="helper.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="19" selection-start="6953" selection-end="6953" vertical-scroll-proportion="0.0" vertical-offset="2128" max-vertical-offset="3165">
+            <state line="78" column="83" selection-start="3192" selection-end="3192" vertical-scroll-proportion="0.3780135" vertical-offset="778" max-vertical-offset="3165">
               <folding />
             </state>
           </provider>
@@ -333,10 +333,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="defaults.less" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="defaults.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/works/leform/less/defaults.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="256" column="23" selection-start="4208" selection-end="4208" vertical-scroll-proportion="0.38598225" vertical-offset="404" max-vertical-offset="1620">
+            <state line="256" column="23" selection-start="4208" selection-end="4208" vertical-scroll-proportion="-16.291666" vertical-offset="404" max-vertical-offset="1620">
               <folding>
                 <element signature="e#87#165#0" expanded="false" />
                 <element signature="e#97#163#0" expanded="false" />
@@ -558,8 +558,8 @@
         <option value="$PROJECT_DIR$/works/leform/index-mobile-details.html" />
         <option value="$PROJECT_DIR$/works/leform/index.html" />
         <option value="$PROJECT_DIR$/works/leform/less/1024_1920.less" />
-        <option value="$PROJECT_DIR$/works/leform/js/helper.js" />
         <option value="$PROJECT_DIR$/works/leform/less/defaults.less" />
+        <option value="$PROJECT_DIR$/works/leform/js/helper.js" />
       </list>
     </option>
   </component>
@@ -1334,16 +1334,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="19" selection-start="6953" selection-end="6953" vertical-scroll-proportion="0.0" vertical-offset="2128" max-vertical-offset="3165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/works/leform/less/defaults.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="256" column="23" selection-start="4208" selection-end="4208" vertical-scroll-proportion="0.38598225" vertical-offset="404" max-vertical-offset="1620">
+        <state line="256" column="23" selection-start="4208" selection-end="4208" vertical-scroll-proportion="-16.291666" vertical-offset="404" max-vertical-offset="1620">
           <folding>
             <element signature="e#87#165#0" expanded="false" />
             <element signature="e#97#163#0" expanded="false" />
@@ -1529,6 +1522,13 @@
             <element signature="e#17704#17755#0" expanded="false" />
             <element signature="e#17775#17853#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works/leform/js/helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="83" selection-start="3192" selection-end="3192" vertical-scroll-proportion="0.3780135" vertical-offset="778" max-vertical-offset="3165">
+          <folding />
         </state>
       </provider>
     </entry>
