@@ -193,9 +193,14 @@
 		color: white;
 	}
 }
+
 .paragraph_ {
 	margin: 0 0 0 5%;
 	text-transform: none;
+}
+
+form:not(.order-form) {
+	width: 291px;
 }
 
 form {
@@ -204,6 +209,24 @@ form {
 			top: 3.5px;
 			right: 30px;
 			line-height: 14px;
+		}
+		input {
+			&.email {
+				position: absolute;
+				top: 8px;
+				right: 15px;
+				width: inherit;
+				height: inherit;
+				border: none;
+			}
+			&.search {
+				position: absolute;
+				top: 2px;
+				right: 10px;
+				width: inherit;
+				height: inherit;
+				border: none;
+			}
 		}
 		input,
 		textarea {
@@ -217,7 +240,7 @@ form {
 
 			font-size: 12px;
 
-			padding: 0;
+			padding: 0 !important;
 			&::-webkit-input-placeholder {
 				color: black;
 			}

@@ -34,17 +34,20 @@
 			}
 			&.phone {}
 				&.lang-switch {
-					a {}
+					a {
+						&:first-of-type {
+							&:after {
+								content: '/';
+								padding-left: 5px;
+								color: black;
+							}
+						}
+						&.active {
+							color: rgba(160, 162, 164, 1);
+						}
+					}
 					span {
 						font: normal normal normal 12px @fsbbil;
-						&:first-of-type {
-						color: rgba(160, 162, 164, 1);
-						&:after {
-						  content: '/';
-						  padding-left: 5px;
-						  color: black;
-						}
-					  }
 					}
 				}
 				&.logotype {
@@ -375,14 +378,11 @@
 					border-right: none;
 					border-bottom: 1px solid black;
 					border-radius: 0;
-
 					box-shadow: none;
-
 					font-size: 12px;
-
-					padding: 0;
-
-					&::-webkit-input-placeholder {
+					position: relative;
+					padding: 0 !important;
+					&:-webkit-input-placeholder {
 						font: normal normal normal 12px @fsbbiu;
 						color: black;
 						line-height: 20px;
@@ -390,6 +390,23 @@
 					&:-moz-placeholder {
 						font: normal normal normal 12px @fsbbiu;
 						color: black;
+					}
+
+					&.email {
+						position: absolute;
+						top: 8px;
+						right: 15px;
+						width: inherit;
+						height: inherit;
+						border: none;
+					}
+					&.search {
+						position: absolute;
+						top: 2px;
+						right: 10px;
+						width: inherit;
+						height: inherit;
+						border: none;
 					}
 				}
 			}
