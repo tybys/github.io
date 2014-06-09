@@ -75,6 +75,7 @@
   border: none;
   min-height: inherit;
   margin-bottom: 0;
+  box-shadow: none;
 }
 .row.menu .container .navbar-default .navbar-collapse {
   padding: 0;
@@ -925,17 +926,11 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  background: rgba(18, 18, 18, 1);
-  height: 32px;
   font-size: 10px;
   color: white;
 }
 #footer .container {
   padding: 0 32px;
-}
-#footer .container p {
-  font: normal normal normal 10px/32px "Fedra Sans Alt Book";
-  text-transform: uppercase;
 }
 #footer .brand,
 #footer .social,
@@ -987,4 +982,114 @@
 }
 #footer .copyright {
   text-align: right;
+}
+#footer .contact-info .container {
+  padding: 0 32px;
+}
+#footer .contact-info .info {
+  padding: 0;
+  margin-top: 25px;
+  font: normal normal normal 10px "Fedra Sans Alt Book 2";
+  line-height: 15px;
+}
+#footer .contact-info .info p {
+  color: rgba(18, 18, 18, 1);
+  font: normal normal normal 10px "Fedra Sans Alt Book 2";
+  margin-bottom: 28px;
+}
+#footer .contact-info .info a {
+  font: normal normal normal 12px "Fedra Serif B Book Italic";
+  color: black;
+  line-height: 25px;
+  display: block;
+}
+#footer .contact-info .bottom-menu {
+  padding: 0;
+  margin-top: 21px;
+}
+#footer .contact-info .bottom-menu ul {
+  padding: 0;
+  margin-left: 15px;
+}
+#footer .contact-info .bottom-menu ul li {
+  list-style: none;
+  line-height: 22px;
+}
+#footer .contact-info .bottom-menu ul li a {
+  font: normal normal normal 12px "Fedra Serif B Book Italic 2";
+  color: black;
+}
+#footer .contact-info .bottom-form {
+  padding: 0;
+  margin-top: 19px;
+  margin-left: 15px;
+  width: 30.33333333333333%;
+}
+#footer .contact-info .bottom-form .form-group {
+  margin-bottom: 39px;
+}
+#footer .contact-info .bottom-form form .has-feedback .form-control-feedback {
+  top: 3.5px;
+  right: 13px;
+  line-height: 14px;
+}
+#footer .contact-info .bottom-form form input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 12px;
+  position: relative;
+  padding: 0 !important;
+}
+#footer .contact-info .bottom-form form input:-webkit-input-placeholder {
+  font: normal normal normal 12px "Fedra Serif B Book Italic";
+  color: black;
+  line-height: 20px;
+}
+#footer .contact-info .bottom-form form input:-moz-placeholder {
+  font: normal normal normal 12px "Fedra Serif B Book Italic";
+  color: black;
+}
+#footer .contact-info .bottom-form form input.email {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  width: inherit;
+  height: inherit;
+  border: none;
+}
+#footer .contact-info .bottom-form form input.search {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  width: inherit;
+  height: inherit;
+  border: none;
+}
+#footer .contact-info .payment {
+  padding: 0;
+  margin-top: 18px;
+  margin-left: 30px;
+  width: auto;
+}
+#footer .contact-info .payment span {
+  background: url('../img/icons/payment-sprite.svg') no-repeat;
+  float: left;
+  width: 64px;
+  height: 32px;
+}
+#footer .contact-info .payment .master {
+  background-position: -64px 0;
+  margin-left: 16px;
+}
+#footer .contact-info .payment .paypal {
+  background-position: -128px 0;
+  margin-left: 14px;
+}
+#footer .color-footer {
+  background: black;
+  height: 32px;
 }

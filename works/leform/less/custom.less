@@ -101,6 +101,7 @@
 				border: none;
 				min-height: inherit;
 				margin-bottom: 0;
+				box-shadow: none;
                 .navbar-collapse {padding: 0;}
 				ul {
 					margin: 9px 0 0 0; //padding: 0 15px;
@@ -1058,18 +1059,12 @@
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	background: @black;
-	height: 32px;
+
+	//	height: 32px;
 
 	font-size: 10px;
 	color: white;
-	.container {
-		padding: 0 32px;
-		p {
-			font: normal normal normal 10px/32px @fsabu;
-			text-transform: uppercase;
-		}
-	}
+	.container {padding: 0 32px;}
 	.brand,
 	.social,
 	.copyright {
@@ -1116,5 +1111,124 @@
 	}
 	.copyright {
 		text-align: right;
+	}
+
+	.contact-info {
+		.container {
+			padding: 0 32px;
+		}
+		.info {
+			padding: 0;
+			margin-top: 25px;
+
+			font: normal normal normal 10px @fsabl;
+			line-height: 15px;
+
+			p {
+				color: @black;
+				font: normal normal normal 10px @fsabl;
+				margin-bottom: 28px;
+			}
+			a {
+				font: normal normal normal 12px @fsbbiu;
+				color: black;
+				line-height: 25px;
+
+				display: block;
+			}
+		}
+		.bottom-menu {
+			padding: 0;
+			margin-top: 21px;
+			ul {
+				padding: 0;
+				margin-left: 15px;
+				li {
+					list-style: none;
+					line-height: 22px;
+					a {
+						font: normal normal normal 12px @fsbbil;
+						color: black;
+					}
+				}
+			}
+		}
+		.bottom-form {
+			padding: 0;
+			margin-top: 19px;
+			margin-left: 15px;
+
+			width: 30.33333333333333%;
+			.form-group {
+				margin-bottom: 39px;
+			}
+			form {
+				.has-feedback .form-control-feedback {
+					top: 3.5px;
+					right: 13px;
+
+					line-height: 14px;
+				}
+				input {
+					border-top: none;
+					border-left: none;
+					border-right: none;
+					border-bottom: 1px solid black;
+					border-radius: 0;
+					box-shadow: none;
+					font-size: 12px;
+					position: relative;
+					padding: 0 !important;
+					&:-webkit-input-placeholder {
+						font: normal normal normal 12px @fsbbiu;
+						color: black;
+						line-height: 20px;
+					}
+					&:-moz-placeholder {
+						font: normal normal normal 12px @fsbbiu;
+						color: black;
+					}
+
+					&.email {
+						position: absolute;
+						top: 8px;
+						right: 15px;
+						width: inherit;
+						height: inherit;
+						border: none;
+					}
+					&.search {
+						position: absolute;
+						top: 2px;
+						right: 10px;
+						width: inherit;
+						height: inherit;
+						border: none;
+					}
+				}
+			}
+		}
+		.payment {
+			padding: 0;
+			margin-top: 18px;
+			margin-left: 30px;
+
+			width: auto;
+			span {
+				background: url('../img/icons/payment-sprite.svg') no-repeat;
+
+				float: left;
+				width: 64px;
+				height: 32px;
+
+			}
+			.visa {}
+			.master {background-position: -64px 0; margin-left: 16px;}
+			.paypal {background-position: -128px 0; margin-left: 14px;}
+		}
+	}
+	.color-footer {
+		background: black;
+		height: 32px;
 	}
 }

@@ -181,7 +181,7 @@ form .form-group textarea {
   resize: none;
 }
 .contact-info {
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 html {
   position: relative;
@@ -191,6 +191,7 @@ html body {
   background: rgba(255, 255, 255, 0);
   height: 100%;
   min-height: 100%;
+  margin-bottom: 271px;
 }
 html body .container {
   background: rgba(0, 0, 0, 0.1);
@@ -681,10 +682,6 @@ label.bootstrap-checkbox .btn {
 .modal .controls .close-modal {
   float: left;
 }
-.modal .modal-header {
-  -webkit-filter: blur(0);
-  filter: blur(0);
-}
 .modal .modal-header h4 {
   font: normal normal normal 64px "Fedra Sans Condensed Light 12";
   display: inline-block;
@@ -761,6 +758,8 @@ button.close {
   opacity: 1;
   width: 34px;
   height: 34px;
+  border: none;
+  float: right;
 }
 .modal {
   z-index: 1060 !important;
