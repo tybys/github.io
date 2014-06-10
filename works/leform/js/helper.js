@@ -100,6 +100,24 @@
             });
         }();
 
+        $('.share img').hover(function ()
+        {
+            $(this).animate({
+                top: "-96"
+            })
+            $(this).next().animate({
+                top: "0"
+            })
+        }, function ()
+        {
+            $(this).animate({
+                top: "0"
+            })
+            $(this).next().animate({
+                top: "96"
+            })
+        });
+
         // cart total template, LOL
         /*
          <<div class="cart-total">>

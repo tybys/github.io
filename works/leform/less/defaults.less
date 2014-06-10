@@ -379,8 +379,20 @@ label.bootstrap-checkbox {
 .share {
 	width: 256px;
 	margin-top: 10px;
-	span {
+	a {
 		position: relative;
+		float: left;
+		overflow: hidden;
+		width: 128px;
+		height: 96px;
+	}
+	img {
+		position: relative;
+		z-index: 999;
+	}
+	span {
+		top: 96px;
+		position: absolute;
 		width: 128px;
 		height: 96px;
 		display: block;
@@ -435,7 +447,7 @@ label.bootstrap-checkbox {
 			}
 		}
 		&.facebook {
-			&:hover {background: rgba(57, 91, 128, 1);}
+			background: rgba(57, 91, 128, 1);
 			i {
 				background: url('../img/icons/facebook-share-icon.svg') no-repeat;
 
@@ -536,6 +548,7 @@ label.bootstrap-checkbox {
 			background: rgba(159, 161, 163, 1);
 			text-align: center;
 			line-height: 100px;
+			top: 0;
 			i {
 				//				background: url('../img/icons/cross.svg') no-repeat;
 				//
@@ -565,40 +578,7 @@ label.bootstrap-checkbox {
 
 	margin: 33px 0 0 0;
 	button {
-		//		&.simple-black {
-		//			background: black;
-		//
-		//			border-radius: 0;
-		//
-		//			width: 144px;
-		//			height: 32px;
-		//
-		//			-webkit-transition: background-color 0.35s;
-		//			-moz-transition: background-color 0.35s;
-		//			transition: background-color 0.35s;
-		//
-		//			.label {
-		//				font-family: @FedraSansAlt;
-		//				font-size: 14px;
-		//				line-height: 25px;
-		//				color: white;
-		//
-		//				display: block;
-		//				height: 32px;
-		////				padding: 0 40px;
-		//				position: relative;
-		//				top: 0%;
-		//				left: 0%;
-		//				-webkit-transition: top 0.35s;
-		//				-moz-transition: top 0.35s;
-		//				transition: top 0.35s;
-		//				width: 144px;
-		//			}
-		//			&:hover {
-		//				color: black;
-		//				background-color: @lightgray;
-		//			}
-		//		}
+
 	}
 	.button.black {
 		background-color: black;
@@ -610,6 +590,7 @@ label.bootstrap-checkbox {
 		overflow: hidden;
 		position: relative;
 		text-align: center;
+		border: none;
 		-webkit-transition: background-color 0.35s;
 		-moz-transition: background-color 0.35s;
 		transition: background-color 0.35s;
@@ -618,7 +599,7 @@ label.bootstrap-checkbox {
 
 			display: block;
 			height: 100%;
-			line-height: 35px;
+			line-height: 32px;
 			position: relative;
 			top: 0%;
 			-webkit-transition: top 0.35s;
@@ -658,11 +639,7 @@ label.bootstrap-checkbox {
 		.simple-transparent {
 			margin-top: 55px;
 			&:after {
-//				content: '';
-//				background: url('../img/icons/input-arrow.svg') no-repeat;
-//				width: 9px;
-//				height: 6.7px;
-//				float: right;
+
 			}
 		}
 	}
