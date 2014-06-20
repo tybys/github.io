@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test page</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="test.css" />
+
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<script>
+		$(function () {
+
+
+			new function() {
+				(0, window.$)(".pretty_button").on("mouseenter", function() {
+					var a = (0, window.$)(this), c = a.outerWidth(), d = a.outerHeight(), c = -400 + c + d;
+					a.stop().animate({"background-position": c + " 0"}, 500)
+				}).on("mouseleave", function() {
+							(0, window.$)(this).stop().animate({"background-position": "-400 0"}, 500)
+						})
+			};
+
+//			var a = $(this),
+//					c = a.outerWidth(),
+//					d = a.outerHeight(),
+//					c = -400 + c + d;
+			$('.pretty').hover(function () {
+					a = $(this),
+					c = a.outerWidth(),
+					d = a.outerHeight(),
+					c = -400 + c + d;
+
+				$(this).stop().animate({
+					"background-position": c + 0
+				}, 500)
+			}, function () {
+				$(this).stop().animate({
+					"background-position": -400
+				}, 500)
+			});
+
+
+
+		});
+	</script>
+</head>
+<body>
+<div style="width: 500px; margin: 300px auto 0 auto;">
+	<button class="pretty">
+		test
+	</button>
+
+	<button class="pretty">
+		test test
+	</button>
+
+	<button class="pretty">
+		test test test
+	</button>
+</div>
+</body>
+</html>
