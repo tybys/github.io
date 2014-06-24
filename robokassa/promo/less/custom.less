@@ -1,0 +1,64 @@
+html {
+	body {
+
+	}
+}
+
+.row {
+	&.head {
+		position: relative;
+		padding: 30px 0;
+		background: rgba(58, 60, 63, 0.80);
+		ul {
+			padding: 0;
+			margin: 0;
+
+			li {
+				position: relative;
+				list-style: none;
+				float: left;
+				min-width: 190px;
+				padding: 0 55px;
+				a {
+					color: white;
+
+
+					strong {
+						display: block;
+					}
+				}
+				&.personal-cabinet {
+					&:before {
+						content: '';
+						width: 39px;
+						height: 40px;
+						display: inline-block;
+						float: left;
+						background: url('../img/first.svg') no-repeat;
+					}
+				}
+				&.app-store {
+					&:before {
+						content: '';
+						width: 39px;
+						height: 44px;
+						display: inline-block;
+						float: left;
+						background: url('../img/second.svg') no-repeat;
+					}
+
+				}
+				&.google-play {
+					&:before {
+						content: '';
+						width: 38px;
+						height: 42px;
+						display: inline-block;
+						float: left;
+						background: url('../img/third.svg') no-repeat;
+					}
+				}
+			}
+		}
+	}
+}
