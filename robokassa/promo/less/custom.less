@@ -206,7 +206,16 @@ html {
 //				line-height: 138px;
 			}
 		}
-		background: url('../img/first-slide.jpg') no-repeat center top;
+		background-image: url('../img/first-slide.jpg');
+		background-attachment: scroll;
+		background-repeat: no-repeat;
+		background-position: right center;
+
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+
+		background-size: cover;
 		h1 {
 			background: @red;
 			display: inline-block;
