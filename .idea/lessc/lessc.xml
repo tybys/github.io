@@ -9,12 +9,12 @@
               <option name="cssDirectories">
                 <list>
                   <CssDirectory>
-                    <option name="path" value="D:\src\github\tybys\jworks\excentrics\promo\css" />
+                    <option name="path" value="$PROJECT_DIR$/works/briklaer/css" />
                   </CssDirectory>
                 </list>
               </option>
               <option name="id" value="0" />
-              <option name="lessDirPath" value="D:\src\github\tybys\works\leform\less" />
+              <option name="lessDirPath" value="$PROJECT_DIR$/works/briklaer/less" />
               <option name="name" value="default" />
             </LessProfile>
           </value>
@@ -42,12 +42,12 @@
               <option name="cssDirectories">
                 <list>
                   <CssDirectory>
-                    <option name="path" value="D:\src\github\tybys\works\leform\css" />
+                    <option name="path" value="$PROJECT_DIR$/works/leform/css" />
                   </CssDirectory>
                 </list>
               </option>
               <option name="id" value="2" />
-              <option name="lessDirPath" value="D:\src\github\tybys\works\leform\less" />
+              <option name="lessDirPath" value="$PROJECT_DIR$/works/leform/less" />
               <option name="name" value="leform" />
             </LessProfile>
           </value>
@@ -68,20 +68,19 @@
             </LessProfile>
           </value>
         </entry>
-        <entry key="4">
+        <entry key="5">
           <value>
             <LessProfile>
-              <option name="compressOutput" value="true" />
               <option name="cssDirectories">
                 <list>
                   <CssDirectory>
-                    <option name="path" value="$PROJECT_DIR$/robokassa/promo/css" />
+                    <option name="path" value="$PROJECT_DIR$/works/briklaer/css" />
                   </CssDirectory>
                 </list>
               </option>
-              <option name="id" value="4" />
-              <option name="lessDirPath" value="$PROJECT_DIR$/robokassa/promo/less" />
-              <option name="name" value="robokassa" />
+              <option name="id" value="5" />
+              <option name="lessDirPath" value="$PROJECT_DIR$/works/briklaer/less" />
+              <option name="name" value="briklaer" />
             </LessProfile>
           </value>
         </entry>
