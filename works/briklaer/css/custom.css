@@ -370,3 +370,14 @@ html:after {
 .row.options .right ul li#max {
   background-position: 0 -37px;
 }
+.row.news .container {
+  padding: 0;
+}
+.row.news .left {
+  float: left;
+  width: 40%;
+}
+.row.news .right {
+  display: inline-block;
+  width: 60%;
+}
