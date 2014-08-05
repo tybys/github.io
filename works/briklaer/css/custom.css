@@ -12,10 +12,10 @@ html:before {
 }
 html:after {
   content: '';
-  background: url("../images/flower-middle.png") center right fixed no-repeat;
+  background: url("../images/flower-middle.png") top right fixed no-repeat;
   display: block;
   width: 431px;
-  height: 522px;
+  height: 552px;
   position: absolute;
   top: 0;
   right: 0;
@@ -28,7 +28,13 @@ html:after {
 }
 .container.top {
   padding-top: 30px;
+  padding-bottom: 12px;
   min-height: 138px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.container.top .col-md-4 {
+  padding: 0;
 }
 .footer .rest {
   clear: both;
@@ -90,6 +96,14 @@ html:after {
   margin-left: 34px;
 }
 .row.header .top .phones a {
+  margin-left: 47px !important;
+}
+.row.header .top .phones a,
+.row.header .top .phones span {
+  margin-left: 99px;
+}
+.row.header .top .phones a {
+  margin-bottom: 8px;
   font-size: 33px;
   color: #36140a;
   display: block;
@@ -106,6 +120,7 @@ html:after {
   background: url("../images/mail-ico.png") left center no-repeat;
 }
 .row.header .top .phones span a {
+  margin: 0 !important;
   text-decoration: underline;
   font-family: Arial;
   font-style: italic;
@@ -115,10 +130,14 @@ html:after {
 .row.header .top .times .left {
   float: left;
   width: 50%;
+  background: lightcoral;
 }
 .row.header .top .times .right {
   display: inline-block;
   width: 50%;
+  background: khaki;
+  padding-left: 33px;
+  padding-top: 24px;
 }
 .row.header .top .times .right img {
   float: left;
@@ -137,6 +156,7 @@ html:after {
 .row.header .top .times ul {
   margin: 0;
   padding: 0;
+  margin-left: 78px;
 }
 .row.header .top .times ul li {
   color: #36140a;
@@ -147,18 +167,25 @@ html:after {
   color: #eb2b2f;
 }
 .row.header .menu {
-  display: table;
+  padding: 0;
   border-bottom: 1px solid #38160c;
 }
 .row.header .menu ul {
-  display: table-row;
+  width: 100%;
   margin: 0;
   padding: 0;
+  display: table;
 }
 .row.header .menu ul li {
   display: table-cell;
+  white-space: pre;
   text-align: center;
-  list-style: none;
+}
+.row.header .menu ul li.first {
+  text-align: left;
+}
+.row.header .menu ul li.last {
+  text-align: right;
 }
 .row.header .menu ul li.active a {
   color: #eb2b2f;
@@ -166,6 +193,7 @@ html:after {
 .row.header .menu ul li a {
   color: #36140a;
   font-size: 18px;
+  display: block;
 }
 .row.header .menu ul li a:hover {
   color: #eb2b2f;

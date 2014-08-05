@@ -19,10 +19,10 @@ html {
 	}
 	&:after {
 		content: '';
-		background: url("../images/flower-middle.png") center right fixed no-repeat;
+		background: url("../images/flower-middle.png") top right fixed no-repeat;
 		display: block;
 		width: 431px;
-		height: 522px;
+		height: 552px;
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -38,7 +38,13 @@ html {
 
 	&.top {
 		padding-top: 30px;
+		padding-bottom: 12px;
 		min-height: 138px;
+		padding-left: 0;
+		padding-right: 0;
+		.col-md-4 {
+			padding: 0;
+		}
 	}
 }
 
@@ -121,8 +127,16 @@ html {
 			.logotype {
 
 			}
+
 			.phones {
 				a {
+					margin-left: 47px !important;
+				}
+				a, span {
+					margin-left: 99px;
+				}
+				a {
+					margin-bottom: 8px;
 					font-size: 33px;
 					color: @brown;
 					display: block;
@@ -138,7 +152,7 @@ html {
 						background: url("../images/mail-ico.png") left center no-repeat;
 					}
 					a {
-
+						margin: 0 !important;
 						text-decoration: underline;
 //						font-family: 'franklin_gothic_bookitalic';
 						font-family: Arial;
@@ -155,10 +169,15 @@ html {
 				.left {
 					float: left;
 					width: 50%;
+					background: lightcoral;
 				}
 				.right {
 					display: inline-block;
 					width: 50%;
+					background: khaki;
+
+					padding-left: 33px;
+					padding-top: 24px;
 					img {
 						float: left;
 					}
@@ -179,6 +198,7 @@ html {
 				ul {
 					margin: 0;
 					padding: 0;
+					margin-left: 78px;
 					li {
 						color: @brown;
 						font-size: 14px;
@@ -191,16 +211,28 @@ html {
 			}
 		}
 		.menu {
-			display: table;
+			padding: 0;
+//			display: table;
 			border-bottom: 1px solid @brown_dark;
 			ul {
-				display: table-row;
+				width: 100%;
 				margin: 0;
 				padding: 0;
+				display: table;
 				li {
 					display: table-cell;
+//					width: 20%;
+					white-space: pre;
 					text-align: center;
-					list-style: none;
+					&.first, &.last, &.tight {
+//						width: 1%;
+					}
+					&.first {
+						text-align: left;
+					}
+					&.last {
+						text-align: right;
+					}
 					&.active {
 						a {
 							color: @red;
@@ -209,6 +241,7 @@ html {
 					a {
 						color: @brown;
 						font-size: 18px;
+						display: block;
 						&:hover {
 							color: @red;
 						}
