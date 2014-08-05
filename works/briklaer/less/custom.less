@@ -49,16 +49,33 @@ html {
 }
 
 .footer {
+	.container, .left, .right {
+		padding: 0;
+	}
 	.rest {
 		clear: both;
 		img {
 			float: left;
-			margin-right: 8%;
+			margin-right: 14.3%;
+			margin-top: 10px;
 		}
 		ul {
+			margin-top: 13px;
+			display: inline-block;
+			clear: both;
+			&:nth-child(2) {
+				padding-left: 0;
+				background: transparent;
+			}
 			float: none;
 			width: auto;
 			li {
+				&:first-of-type {
+					font-size: 12px;
+					margin-right: 6px;
+					margin-top: 9px;
+				}
+				margin-right: 5px;
 				display: inline-block;
 				vertical-align: middle;
 			}
@@ -70,6 +87,21 @@ html {
 		padding: 0;
 		float: left;
 		width: 25%;
+		&:nth-child(1) {
+			background: lightgoldenrodyellow;
+		}
+		&:nth-child(2) {
+			background: greenyellow;
+			padding-left: 2px;
+		}
+		&:nth-child(3) {
+			background: yellowgreen;
+			padding-left: 30px;
+		}
+		&:nth-child(4) {
+			background: yellow;
+			padding-left: 8.5%;
+		}
 		li {
 			list-style: none;
 			a {
@@ -83,13 +115,15 @@ html {
 		font-size: 11px;
 		color: black;
 		padding-top: 20px;
+		padding-left: 8%;
 		div {
 			&:first-of-type {
 //				margin-top: 30px;
 			}
 		}
 		& > div {
-			margin-bottom: 18px;
+			margin-bottom: 11px;
+			margin-top: 11px;
 		}
 		img {
 			float: left;

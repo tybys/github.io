@@ -36,20 +36,39 @@ html:after {
 .container.top .col-md-4 {
   padding: 0;
 }
+.footer .container,
+.footer .left,
+.footer .right {
+  padding: 0;
+}
 .footer .rest {
   clear: both;
 }
 .footer .rest img {
   float: left;
-  margin-right: 8%;
+  margin-right: 14.3%;
+  margin-top: 10px;
 }
 .footer .rest ul {
+  margin-top: 13px;
+  display: inline-block;
+  clear: both;
   float: none;
   width: auto;
 }
+.footer .rest ul:nth-child(2) {
+  padding-left: 0;
+  background: transparent;
+}
 .footer .rest ul li {
+  margin-right: 5px;
   display: inline-block;
   vertical-align: middle;
+}
+.footer .rest ul li:first-of-type {
+  font-size: 12px;
+  margin-right: 6px;
+  margin-top: 9px;
 }
 .footer ul {
   margin: 0;
@@ -57,6 +76,21 @@ html:after {
   padding: 0;
   float: left;
   width: 25%;
+}
+.footer ul:nth-child(1) {
+  background: lightgoldenrodyellow;
+}
+.footer ul:nth-child(2) {
+  background: greenyellow;
+  padding-left: 2px;
+}
+.footer ul:nth-child(3) {
+  background: yellowgreen;
+  padding-left: 30px;
+}
+.footer ul:nth-child(4) {
+  background: yellow;
+  padding-left: 8.5%;
 }
 .footer ul li {
   list-style: none;
@@ -70,9 +104,11 @@ html:after {
   font-size: 11px;
   color: black;
   padding-top: 20px;
+  padding-left: 8%;
 }
 .footer .right > div {
-  margin-bottom: 18px;
+  margin-bottom: 11px;
+  margin-top: 11px;
 }
 .footer .right img {
   float: left;
