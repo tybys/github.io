@@ -26,12 +26,147 @@ html:after {
   max-width: 1150px;
   background: white;
 }
+.container.top {
+  padding-top: 30px;
+  min-height: 138px;
+}
+.footer .rest {
+  clear: both;
+}
+.footer .rest img {
+  float: left;
+  margin-right: 8%;
+}
+.footer .rest ul {
+  float: none;
+  width: auto;
+}
+.footer .rest ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer ul {
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+  float: left;
+  width: 25%;
+}
+.footer ul li {
+  list-style: none;
+}
+.footer ul li a {
+  color: #013dff;
+  font-size: 12px;
+  text-decoration: underline;
+}
+.footer .right {
+  font-size: 11px;
+  color: black;
+  padding-top: 20px;
+}
+.footer .right > div {
+  margin-bottom: 18px;
+}
+.footer .right img {
+  float: left;
+}
+.footer .right .first p {
+  margin: 0;
+}
+.footer .right .first div {
+  margin-left: 34px;
+}
+.footer .right .second p {
+  margin: 0;
+}
+.footer .right .second div {
+  margin-left: 34px;
+}
+.footer .right .third p {
+  margin: 0;
+}
+.footer .right .third div {
+  margin-left: 34px;
+}
 .row.header .top .phones a {
   font-size: 33px;
   color: #36140a;
+  display: block;
+  line-height: 25px;
+}
+.row.header .top .phones span {
+  display: block;
+  padding: 6px 1px 6px 35px;
+}
+.row.header .top .phones span.callback {
+  background: url("../images/callback-ico.png") left center no-repeat;
+}
+.row.header .top .phones span.mail {
+  background: url("../images/mail-ico.png") left center no-repeat;
 }
 .row.header .top .phones span a {
-  font-family: 'franklin_gothic_bookitalic';
-  color: blue;
-  font-size: 14pxs;
+  text-decoration: underline;
+  font-family: Arial;
+  font-style: italic;
+  color: #013dff;
+  font-size: 14px;
+}
+.row.header .top .times .left {
+  float: left;
+  width: 50%;
+}
+.row.header .top .times .right {
+  display: inline-block;
+  width: 50%;
+}
+.row.header .top .times .right img {
+  float: left;
+}
+.row.header .top .times .right div span {
+  color: #36140a;
+  font-size: 22px;
+}
+.row.header .top .times .right div span:first-of-type {
+  font-family: 'franklin_gothic_mediumitalic';
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  display: block;
+}
+.row.header .top .times ul {
+  margin: 0;
+  padding: 0;
+}
+.row.header .top .times ul li {
+  color: #36140a;
+  font-size: 14px;
+  list-style: none;
+}
+.row.header .top .times ul li:last-of-type {
+  color: #eb2b2f;
+}
+.row.header .menu {
+  display: table;
+  border-bottom: 1px solid #38160c;
+}
+.row.header .menu ul {
+  display: table-row;
+  margin: 0;
+  padding: 0;
+}
+.row.header .menu ul li {
+  display: table-cell;
+  text-align: center;
+  list-style: none;
+}
+.row.header .menu ul li.active a {
+  color: #eb2b2f;
+}
+.row.header .menu ul li a {
+  color: #36140a;
+  font-size: 18px;
+}
+.row.header .menu ul li a:hover {
+  color: #eb2b2f;
 }

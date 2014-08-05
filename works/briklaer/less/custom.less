@@ -1,6 +1,9 @@
 @import "../css/fonts.css";
 
 @brown: #36140a;
+@brown_dark: #38160c;
+@red: #eb2b2f;
+@blue: #013dff;
 
 html {
 	&:before {
@@ -32,6 +35,84 @@ html {
 	max-width: 1150px;
 
 	background: white;
+
+	&.top {
+		padding-top: 30px;
+		min-height: 138px;
+	}
+}
+
+.footer {
+	.rest {
+		clear: both;
+		img {
+			float: left;
+			margin-right: 8%;
+		}
+		ul {
+			float: none;
+			width: auto;
+			li {
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+	ul {
+		margin: 0;
+		margin-top: 30px;
+		padding: 0;
+		float: left;
+		width: 25%;
+		li {
+			list-style: none;
+			a {
+				color: @blue;
+				font-size: 12px;
+				text-decoration: underline;
+			}
+		}
+	}
+	.right {
+		font-size: 11px;
+		color: black;
+		padding-top: 20px;
+		div {
+			&:first-of-type {
+//				margin-top: 30px;
+			}
+		}
+		& > div {
+			margin-bottom: 18px;
+		}
+		img {
+			float: left;
+		}
+		.first {
+			p {
+				margin: 0;
+			}
+			div {
+				margin-left: 34px;
+			}
+		}
+		.second {
+			p {
+				margin: 0;
+			}
+			div {
+				margin-left: 34px;
+			}
+		}
+		.third {
+			p {
+				margin: 0;
+			}
+			div {
+				margin-left: 34px;
+			}
+		}
+	}
 }
 
 .row {
@@ -44,21 +125,96 @@ html {
 				a {
 					font-size: 33px;
 					color: @brown;
+					display: block;
+					line-height: 25px;
 				}
 				span {
+					display: block;
+					padding: 6px 1px 6px 35px;
+					&.callback {
+						background: url("../images/callback-ico.png") left center no-repeat;
+					}
+					&.mail {
+						background: url("../images/mail-ico.png") left center no-repeat;
+					}
 					a {
-						font-family: 'franklin_gothic_bookitalic';
-						color: blue;
+
+						text-decoration: underline;
+//						font-family: 'franklin_gothic_bookitalic';
+						font-family: Arial;
+						font-style: italic;
+						color: @blue;
 						font-size: 14px;
+
+//						font: normal italic 14px/25px Arial, sans-serif;
+
 					}
 				}
 			}
 			.times {
-
+				.left {
+					float: left;
+					width: 50%;
+				}
+				.right {
+					display: inline-block;
+					width: 50%;
+					img {
+						float: left;
+					}
+					div {
+						span {
+							color: @brown;
+							font-size: 22px;
+							&:first-of-type {
+								font-family: 'franklin_gothic_mediumitalic';
+								font-size: 14px;
+								line-height: 14px;
+								text-align: center;
+								display: block;
+							}
+						}
+					}
+				}
+				ul {
+					margin: 0;
+					padding: 0;
+					li {
+						color: @brown;
+						font-size: 14px;
+						list-style: none;
+						&:last-of-type {
+							color: @red;
+						}
+					}
+				}
 			}
 		}
 		.menu {
-
+			display: table;
+			border-bottom: 1px solid @brown_dark;
+			ul {
+				display: table-row;
+				margin: 0;
+				padding: 0;
+				li {
+					display: table-cell;
+					text-align: center;
+					list-style: none;
+					&.active {
+						a {
+							color: @red;
+						}
+					}
+					a {
+						color: @brown;
+						font-size: 18px;
+						&:hover {
+							color: @red;
+						}
+					}
+				}
+			}
 		}
 	}
 }
