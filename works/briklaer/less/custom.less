@@ -293,6 +293,7 @@ html {
 		.left {
 			background: midnightblue;
 			width: 70%;
+			float: left;
 			ul {
 				padding: 0;
 				margin: 0;
@@ -330,7 +331,38 @@ html {
 			}
 		}
 		.right {
-
+			display: inline-block;
+			width: 30%;
+			background: olive;
+			.controls {
+				width: 302px;
+				margin: 0 0 0 auto;
+				& > span {
+					margin-top: -4px;
+					display: block;
+				}
+				& > div {
+					margin: 12px 0;
+					background: white;
+					border: 1px solid @brown_dark;
+					border-radius: 5px;
+					min-height: 30px;
+					&:first-of-type {
+						margin-top: 8px;
+					}
+					div {
+						text-indent: 16px;
+						border-radius: 5px 0 0 5px;
+						background: #feedcf;
+						width: 114px;
+						font-size: 14px;
+						color: @brown_dark;
+						min-height: 30px;
+						line-height: 30px;
+						box-shadow: 2px 4px 0 rgba(178, 178, 178, 0.5);
+					}
+				}
+			}
 		}
 	}
 }

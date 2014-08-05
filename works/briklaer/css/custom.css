@@ -243,6 +243,7 @@ html:after {
 .row.filter .left {
   background: midnightblue;
   width: 70%;
+  float: left;
 }
 .row.filter .left ul {
   padding: 0;
@@ -276,4 +277,38 @@ html:after {
   background: goldenrod;
   font-size: 12px;
   color: #010000;
+}
+.row.filter .right {
+  display: inline-block;
+  width: 30%;
+  background: olive;
+}
+.row.filter .right .controls {
+  width: 302px;
+  margin: 0 0 0 auto;
+}
+.row.filter .right .controls > span {
+  margin-top: -4px;
+  display: block;
+}
+.row.filter .right .controls > div {
+  margin: 12px 0;
+  background: white;
+  border: 1px solid #38160c;
+  border-radius: 5px;
+  min-height: 30px;
+}
+.row.filter .right .controls > div:first-of-type {
+  margin-top: 8px;
+}
+.row.filter .right .controls > div div {
+  text-indent: 16px;
+  border-radius: 5px 0 0 5px;
+  background: #feedcf;
+  width: 114px;
+  font-size: 14px;
+  color: #38160c;
+  min-height: 30px;
+  line-height: 30px;
+  box-shadow: 2px 4px 0 rgba(178, 178, 178, 0.5);
 }
