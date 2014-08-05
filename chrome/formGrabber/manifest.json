@@ -4,7 +4,8 @@
     "manifest_version": 2,
     "content_scripts": [
         {
-            "matches": [ "http://*/*" ],
+            //"matches": [ "http://*/*" ],
+            "matches": ["http://www.yandex.ru/"],
             "js": [ "jquery.js", "background.js" ],
             "run_at": "document_end"
         }

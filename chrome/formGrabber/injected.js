@@ -10,10 +10,26 @@ function injected_main() {
 //
 //    }
 
-    $("body").click(function (e) {
+    $("<div id='info' />").css({
+        background: "#000000",
+        color: "#ffffff",
+        position: "fixed",
+        top: "5%",
+        left: "10%",
+        padding: 5,
+        border: "1px solid gray",
+        borderRadius: 5
+    }).appendTo("body");
 
-        //e.target == $('input') ? alert("yes") : alert("no")
-        console.log(e.target);
+    $("body").click(function (e) {
+        $("<div/>",
+            {
+                "id": e.target.tagName,
+                html: (e.target.hasAttribute("id") ? "#" +  e.target.getAttribute("id") : "#empty")
+            }
+        ).appendTo("#info");
+
+        console.log(e.target)
         e.preventDefault();
     });
 

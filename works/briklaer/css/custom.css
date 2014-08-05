@@ -1,0 +1,37 @@
+@import "../css/fonts.css";
+html:before {
+  content: '';
+  background: url("../images/flower-top.png") top left fixed no-repeat;
+  display: block;
+  width: 431px;
+  height: 388px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+html:after {
+  content: '';
+  background: url("../images/flower-middle.png") center right fixed no-repeat;
+  display: block;
+  width: 431px;
+  height: 522px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.container {
+  min-width: 780px;
+  max-width: 1150px;
+  background: white;
+}
+.row.header .top .phones a {
+  font-size: 33px;
+  color: #36140a;
+}
+.row.header .top .phones span a {
+  font-family: 'franklin_gothic_bookitalic';
+  color: blue;
+  font-size: 14pxs;
+}
