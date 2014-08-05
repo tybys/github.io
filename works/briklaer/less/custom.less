@@ -284,4 +284,53 @@ html {
 			}
 		}
 	}
+
+	&.filter {
+		padding-top: 40px;
+		.container {
+			padding: 0;
+		}
+		.left {
+			background: midnightblue;
+			width: 70%;
+			ul {
+				padding: 0;
+				margin: 0;
+				
+				li {
+					background: hotpink;
+					text-align: center;
+					list-style: none;
+					float: left;
+					width: 23.3%;
+					span {
+						display: block;
+						line-height: 13px;
+						padding-bottom: 12px;
+						text-indent: -4%;
+					}
+					img {
+						display: block;
+						box-shadow: 4px 2px 0px #c2c2c2;
+						border-radius: 0 0 10px 10px;
+						border: 1px solid @brown_dark;
+
+						&:hover {
+							border: 1px solid @red;
+						}
+					}
+				}
+			}
+			p {
+				clear: both;
+				padding-top: 21px;
+				background: goldenrod;
+				font-size: 12px;
+				color: #010000;
+			}
+		}
+		.right {
+
+		}
+	}
 }

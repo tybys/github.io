@@ -234,3 +234,46 @@ html:after {
 .row.header .menu ul li a:hover {
   color: #eb2b2f;
 }
+.row.filter {
+  padding-top: 40px;
+}
+.row.filter .container {
+  padding: 0;
+}
+.row.filter .left {
+  background: midnightblue;
+  width: 70%;
+}
+.row.filter .left ul {
+  padding: 0;
+  margin: 0;
+}
+.row.filter .left ul li {
+  background: hotpink;
+  text-align: center;
+  list-style: none;
+  float: left;
+  width: 23.3%;
+}
+.row.filter .left ul li span {
+  display: block;
+  line-height: 13px;
+  padding-bottom: 12px;
+  text-indent: -4%;
+}
+.row.filter .left ul li img {
+  display: block;
+  box-shadow: 4px 2px 0px #c2c2c2;
+  border-radius: 0 0 10px 10px;
+  border: 1px solid #38160c;
+}
+.row.filter .left ul li img:hover {
+  border: 1px solid #eb2b2f;
+}
+.row.filter .left p {
+  clear: both;
+  padding-top: 21px;
+  background: goldenrod;
+  font-size: 12px;
+  color: #010000;
+}
