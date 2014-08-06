@@ -2,6 +2,7 @@
 
 @brown: #36140a;
 @brown_dark: #38160c;
+@brown_light: #fef8ee;
 @red: #eb2b2f;
 @blue: #013dff;
 
@@ -374,9 +375,12 @@ html {
 			width: 70%;
 			float: left;
 			ul {
+				border-top: 1px solid @brown_dark;
+
 				padding: 0;
 				margin: 0;
-				margin-top: 10px;
+				/*margin-top: 10px;*/
+				padding-top: 10px;
 				li {
 					font-size: 12px;
 					color: @brown_dark;
@@ -426,14 +430,65 @@ html {
 	&.news {
 		.container {
 			padding: 0;
+			border-top: 1px solid @brown_dark;
+			h2 {
+				font-size: 24px;
+				color: @brown;
+			}
 		}
 		.left {
 			float: left;
 			width: 40%;
+			.rolls {
+				padding: 29px;
+				width: 367px;
+				height: 378px;
+				overflow-y: scroll;
+				background: @brown_light;
+				box-shadow: inset 3px 3px 0 #c2c2c2;
+				border: 1px solid #c2bdbd;
+				p {
+					font-size: 12px;
+					color: #010000;
+				}
+			}
 		}
 		.right {
 			display: inline-block;
 			width: 60%;
+		}
+	}
+	&.grid {
+		.container {
+			padding: 0;
+		}
+		.five {
+			li {
+				width: 228px;
+
+			}
+		}
+		ul {
+			padding: 0;
+			margin: 0;
+			li {
+				list-style: none;
+				float: left;
+				span {
+					&.lot-name {
+
+					}
+					&.old-price {
+
+					}
+					&.actual-price {
+
+					}
+				}
+				a {
+
+				}
+			}
 		}
 	}
 }

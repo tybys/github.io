@@ -323,9 +323,12 @@ html:after {
   float: left;
 }
 .row.options .left ul {
+  border-top: 1px solid #38160c;
   padding: 0;
   margin: 0;
-  margin-top: 10px;
+  /*margin-top: 10px;*/
+
+  padding-top: 10px;
 }
 .row.options .left ul li {
   font-size: 12px;
@@ -372,12 +375,44 @@ html:after {
 }
 .row.news .container {
   padding: 0;
+  border-top: 1px solid #38160c;
+}
+.row.news .container h2 {
+  font-size: 24px;
+  color: #36140a;
 }
 .row.news .left {
   float: left;
   width: 40%;
 }
+.row.news .left .rolls {
+  padding: 29px;
+  width: 367px;
+  height: 378px;
+  overflow-y: scroll;
+  background: #fef8ee;
+  box-shadow: inset 3px 3px 0 #c2c2c2;
+  border: 1px solid #c2bdbd;
+}
+.row.news .left .rolls p {
+  font-size: 12px;
+  color: #010000;
+}
 .row.news .right {
   display: inline-block;
   width: 60%;
+}
+.row.grid .container {
+  padding: 0;
+}
+.row.grid .five li {
+  width: 228px;
+}
+.row.grid ul {
+  padding: 0;
+  margin: 0;
+}
+.row.grid ul li {
+  list-style: none;
+  float: left;
 }
