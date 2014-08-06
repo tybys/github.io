@@ -412,16 +412,25 @@ html {
 						margin: 0;
 					}
 					&:hover {
-						background-position: 0 0 !important;
+//						background-position: 0 0 !important;
 					}
 					&#min {
 						background-position: 0 -37px;
+						&:hover {
+							background-position: 0 0;
+						}
 					}
 					&#middle {
-						background-position: 0 -37px;
+						background-position: -107px -37px;
+						&:hover {
+							background-position: -107px 0;
+						}
 					}
 					&#max {
-						background-position: 0 -37px;
+						background-position: -213px -37px;
+						&:hover {
+							background-position: -213px 0;
+						}
 					}
 				}
 			}
@@ -456,37 +465,95 @@ html {
 		.right {
 			display: inline-block;
 			width: 60%;
+			p {
+				font-size: 12px;
+				color: @brown;
+			}
 		}
 	}
 	&.grid {
 		.container {
 			padding: 0;
 		}
-		.five {
-			li {
-				width: 228px;
 
+
+		.five {
+			.img-wrap {
+				height: 200px !important;
+			}
+			li {
+				width: 230px;
+			}
+		}
+		.four {
+			.img-wrap {
+
+			}
+			li {
+				width: 287px;
+			}
+		}
+		.three {
+			.img-wrap {
+
+			}
+			li {
+				width: 383px;
 			}
 		}
 		ul {
 			padding: 0;
 			margin: 0;
+
 			li {
+				padding: 12px;
+//				border-top: 1px solid #a9b1b6;
+//				border-left: 1px solid #a9b1b6;
+//				border-right: 1px solid #e5e8ea;
+//				border-bottom: 1px solid #e5e8ea;
+
 				list-style: none;
 				float: left;
+				img {
+					display: block;
+					margin: 0 auto;
+				}
+				div:not(.img-wrap) {
+					width: 206px;
+					margin: 0 auto;
+				}
 				span {
-					&.lot-name {
-
+					display: block;
+					text-align: center;
+					&.item-name {
+						font-size: 16px;
+						color: #939da4;
+						b {
+							color: @brown;
+							font-weight: normal;
+						}
 					}
 					&.old-price {
-
+						font-size: 16px;
+						color: #939da4;
+						text-decoration: line-through;
 					}
 					&.actual-price {
-
+						font-size: 22px;
+						color: @brown;
 					}
 				}
 				a {
-
+					display: block;
+					text-align: center;
+					font-size: 24px;
+					color: @brown_dark;
+					border: 1px solid @brown_dark;
+					background: #fef8ee;
+					border-radius: 5px;
+					&:hover{
+						text-decoration: none;
+					}
 				}
 			}
 		}

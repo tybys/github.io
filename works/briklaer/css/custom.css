@@ -327,7 +327,6 @@ html:after {
   padding: 0;
   margin: 0;
   /*margin-top: 10px;*/
-
   padding-top: 10px;
 }
 .row.options .left ul li {
@@ -361,17 +360,23 @@ html:after {
 .row.options .right ul li:last-of-type {
   margin: 0;
 }
-.row.options .right ul li:hover {
-  background-position: 0 0 !important;
-}
 .row.options .right ul li#min {
   background-position: 0 -37px;
 }
+.row.options .right ul li#min:hover {
+  background-position: 0 0;
+}
 .row.options .right ul li#middle {
-  background-position: 0 -37px;
+  background-position: -107px -37px;
+}
+.row.options .right ul li#middle:hover {
+  background-position: -107px 0;
 }
 .row.options .right ul li#max {
-  background-position: 0 -37px;
+  background-position: -213px -37px;
+}
+.row.options .right ul li#max:hover {
+  background-position: -213px 0;
 }
 .row.news .container {
   padding: 0;
@@ -402,17 +407,72 @@ html:after {
   display: inline-block;
   width: 60%;
 }
+.row.news .right p {
+  font-size: 12px;
+  color: #36140a;
+}
 .row.grid .container {
   padding: 0;
 }
+.row.grid .five .img-wrap {
+  height: 200px !important;
+}
 .row.grid .five li {
-  width: 228px;
+  width: 230px;
+}
+.row.grid .four li {
+  width: 287px;
+}
+.row.grid .three li {
+  width: 383px;
 }
 .row.grid ul {
   padding: 0;
   margin: 0;
 }
 .row.grid ul li {
+  padding: 12px;
   list-style: none;
   float: left;
+}
+.row.grid ul li img {
+  display: block;
+  margin: 0 auto;
+}
+.row.grid ul li div:not(.img-wrap) {
+  width: 206px;
+  margin: 0 auto;
+}
+.row.grid ul li span {
+  display: block;
+  text-align: center;
+}
+.row.grid ul li span.item-name {
+  font-size: 16px;
+  color: #939da4;
+}
+.row.grid ul li span.item-name b {
+  color: #36140a;
+  font-weight: normal;
+}
+.row.grid ul li span.old-price {
+  font-size: 16px;
+  color: #939da4;
+  text-decoration: line-through;
+}
+.row.grid ul li span.actual-price {
+  font-size: 22px;
+  color: #36140a;
+}
+.row.grid ul li a {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  color: #38160c;
+  border: 1px solid #38160c;
+  background: #fef8ee;
+  border-radius: 5px;
+}
+.row.grid ul li a:hover {
+  text-decoration: none;
 }
