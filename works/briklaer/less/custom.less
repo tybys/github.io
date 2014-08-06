@@ -168,6 +168,31 @@ html {
 			}
 
 			.phones {
+				position: relative;
+				.block {
+					display: none;
+					// #fbebcf
+					// #fef8ee
+					position: absolute;
+					top: -5px;
+					left: 25px;
+
+					border-radius: 5px;
+					background: #fbebcf;
+					background: -moz-linear-gradient(top,  #fbebcf 0%, #fbebcf 50%, #fef8ee 51%, #fef8ee 100%);
+					background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbebcf), color-stop(50%,#fbebcf), color-stop(51%,#fef8ee), color-stop(100%,#fef8ee));
+					background: -webkit-linear-gradient(top,  #fbebcf 0%,#fbebcf 50%,#fef8ee 51%,#fef8ee 100%);
+					background: -o-linear-gradient(top,  #fbebcf 0%,#fbebcf 50%,#fef8ee 51%,#fef8ee 100%);
+					background: -ms-linear-gradient(top,  #fbebcf 0%,#fbebcf 50%,#fef8ee 51%,#fef8ee 100%);
+					background: linear-gradient(to bottom,  #fbebcf 0%,#fbebcf 50%,#fef8ee 51%,#fef8ee 100%);
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbebcf', endColorstr='#fef8ee',GradientType=0 );
+					font-size: 21px;
+					color: #010000;
+					width: 299px;
+					height: 36px;
+					border: 1px solid @brown;
+					text-align: center;
+				}
 				a {
 					margin-left: 47px !important;
 				}

@@ -1,6 +1,7 @@
 (function ($) {
     $(function () {
 
+        // grid stuff
         var grid_options = $(".options ul li");
 
         grid_options.on("click", function () {
@@ -20,6 +21,15 @@
 
             }
 
+        });
+
+        // callback switcher
+        $(".phones > a").hover(function () {
+            $(".block").show();
+        });
+
+        $(".block").mouseleave(function () {
+            $(this).hide();
         });
 
     });
