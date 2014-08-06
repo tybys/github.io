@@ -327,6 +327,7 @@ html:after {
   padding: 0;
   margin: 0;
   /*margin-top: 10px;*/
+
   padding-top: 10px;
 }
 .row.options .left ul li {
@@ -411,20 +412,61 @@ html:after {
   font-size: 12px;
   color: #36140a;
 }
+.row.grid {
+  /*.container {
+			padding: 0;
+		}
+		img {
+			width: 100%;
+		}
+
+
+		.five {
+			.img-wrap {
+				height: 200px !important;
+			}
+			li {
+				width: 230px;
+			}
+		}
+		.four {
+			.img-wrap {
+
+			}
+			li {
+				width: 287px;
+			}
+		}
+		.three {
+			.img-wrap {
+				width: 269px;
+				height: 292px;
+				margin: 0 auto;
+			}
+			div:not(.img-wrap) {
+				width: 269px;
+				margin: 0 auto;
+			}
+			li {
+				width: 383px;
+			}
+		}*/
+
+}
 .row.grid .container {
   padding: 0;
 }
-.row.grid .five .img-wrap {
-  height: 200px !important;
+.row.grid .container img {
+  display: block;
 }
-.row.grid .five li {
-  width: 230px;
+.row.grid .container div.three li {
+  width: 383px;
 }
-.row.grid .four li {
+.row.grid .container div.four li {
   width: 287px;
 }
-.row.grid .three li {
-  width: 383px;
+.row.grid .container div.five li {
+  width: 230px;
 }
 .row.grid ul {
   padding: 0;

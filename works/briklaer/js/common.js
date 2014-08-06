@@ -7,15 +7,17 @@
            $(this).attr("id") == "min" ? "" : "";
 
             if ($(this).attr("id") == "max") {
-                $("#items").attr("class", "five")
+                $("#items").attr("class", "five").find("img").attr("height", "200");
             }
 
             if ($(this).attr("id") == "middle") {
-                $("#items").attr("class", "four")
+                $("#items").attr("class", "four").find("img").attr("height", "238");
             }
 
             if ($(this).attr("id") == "min") {
-                $("#items").attr("class", "three")
+                $("#items").attr("class", "three").find("img").attr("height", "292");
+
+
             }
 
         });

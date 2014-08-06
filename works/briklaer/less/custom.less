@@ -472,8 +472,11 @@ html {
 		}
 	}
 	&.grid {
-		.container {
+		/*.container {
 			padding: 0;
+		}
+		img {
+			width: 100%;
 		}
 
 
@@ -495,10 +498,39 @@ html {
 		}
 		.three {
 			.img-wrap {
-
+				width: 269px;
+				height: 292px;
+				margin: 0 auto;
+			}
+			div:not(.img-wrap) {
+				width: 269px;
+				margin: 0 auto;
 			}
 			li {
 				width: 383px;
+			}
+		}*/
+		.container {
+			padding: 0;
+			img {
+				display: block;
+			}
+			div {
+				&.three {
+					li {
+						width: 383px;
+					}
+				}
+				&.four {
+					li {
+						width: 287px;
+					}
+				}
+				&.five {
+					li {
+						width: 230px;
+					}
+				}
 			}
 		}
 		ul {
@@ -507,11 +539,6 @@ html {
 
 			li {
 				padding: 12px;
-//				border-top: 1px solid #a9b1b6;
-//				border-left: 1px solid #a9b1b6;
-//				border-right: 1px solid #e5e8ea;
-//				border-bottom: 1px solid #e5e8ea;
-
 				list-style: none;
 				float: left;
 				img {
