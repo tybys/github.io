@@ -5,6 +5,10 @@
 @brown_light: #fef8ee;
 @red: #eb2b2f;
 @blue: #013dff;
+@book_italic: "franklin_gothic_bookitalic";
+@book_regular: "franklin_gothic_bookregular";
+@book_medium_italic: "franklin_gothic_mediumitalic";
+@book_medium_regular: "franklin_gothic_mediumregular";
 
 html {
 	&:before {
@@ -213,19 +217,68 @@ html {
 
 					padding-left: 33px;
 					padding-top: 24px;
+
 					img {
 						float: left;
 					}
 					div {
+						position: relative;
 						span {
 							color: @brown;
 							font-size: 22px;
 							&:first-of-type {
-								font-family: 'franklin_gothic_mediumitalic';
+								font-family: @book_medium_regular;
 								font-size: 14px;
 								line-height: 14px;
 								text-align: center;
 								display: block;
+							}
+							&:last-of-type {
+								position: absolute;
+								top: 27px;
+								right: 0;
+							}
+						}
+						&.empty {
+
+						}
+						&.in-progress {
+							span {
+								&#amount {
+									font-size: 22px;
+									line-height: 32px;
+									background: @red;
+									border-radius: 100px;
+									display: inline-block;
+									width: 32px;
+									height: 32px;
+									color: white;
+
+									position: absolute;
+									left: 40px;
+									top: -10px;
+								}
+								&.summary {
+									font-size: 16px;
+									color: @brown;
+									padding-left: 15px;
+								}
+							}
+						}
+						&.full {
+							span {
+								&.letsgo {
+									color: white;
+									font-size: 18px;
+									background: @red;
+									border-radius: 5px;
+									display: inline-block;
+									padding: 8px 12px;
+									position: absolute;
+									top: -13px;
+									right: 0px;
+									width: 67%;
+								}
 							}
 						}
 					}

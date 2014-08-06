@@ -178,16 +178,54 @@ html:after {
 .row.header .top .times .right img {
   float: left;
 }
+.row.header .top .times .right div {
+  position: relative;
+}
 .row.header .top .times .right div span {
   color: #36140a;
   font-size: 22px;
 }
 .row.header .top .times .right div span:first-of-type {
-  font-family: 'franklin_gothic_mediumitalic';
+  font-family: "franklin_gothic_mediumregular";
   font-size: 14px;
   line-height: 14px;
   text-align: center;
   display: block;
+}
+.row.header .top .times .right div span:last-of-type {
+  position: absolute;
+  top: 27px;
+  right: 0;
+}
+.row.header .top .times .right div.in-progress span#amount {
+  font-size: 22px;
+  line-height: 32px;
+  background: #eb2b2f;
+  border-radius: 100px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  color: white;
+  position: absolute;
+  left: 40px;
+  top: -10px;
+}
+.row.header .top .times .right div.in-progress span.summary {
+  font-size: 16px;
+  color: #36140a;
+  padding-left: 15px;
+}
+.row.header .top .times .right div.full span.letsgo {
+  color: white;
+  font-size: 18px;
+  background: #eb2b2f;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 8px 12px;
+  position: absolute;
+  top: -13px;
+  right: 0px;
+  width: 67%;
 }
 .row.header .top .times ul {
   margin: 0;
