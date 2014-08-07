@@ -1,4 +1,7 @@
 @import "../css/fonts.css";
+p {
+  font-family: franklingothicbookcregular;
+}
 html:before {
   content: '';
   background: url("../images/flower-top.png") top left fixed no-repeat;
@@ -389,7 +392,6 @@ html:after {
   padding: 0;
   margin: 0;
   /*margin-top: 10px;*/
-
   padding-top: 10px;
 }
 .row.options .left ul li {
@@ -473,6 +475,7 @@ html:after {
 .row.news .right p {
   font-size: 12px;
   color: #36140a;
+  font-family: franklin_gothic_bookitalic;
 }
 .row.grid {
   /*.container {
@@ -513,7 +516,6 @@ html:after {
 				width: 383px;
 			}
 		}*/
-
 }
 .row.grid .container {
   padding: 0;
