@@ -14,8 +14,12 @@ p {
 @book_medium_italic: "franklin_gothic_mediumitalic";
 @book_medium_regular: "franklin_gothic_mediumregular";
 
+* {
+	/*background: black;*/
+}
+
 html {
-	&:before {
+	/*&:before {
 		content: '';
 		background: url("../images/flower-top.png") top left fixed no-repeat;
 		display: block;
@@ -36,6 +40,10 @@ html {
 		top: 0;
 		right: 0;
 		z-index: -1;
+	}*/
+	body {
+		background: url("../images/roses_03.jpg") no-repeat center fixed;
+		background-size: 100%;
 	}
 }
 
@@ -47,7 +55,6 @@ html {
 
 	&.top {
 		padding-top: 30px;
-		padding-bottom: 12px;
 		min-height: 138px;
 		padding-left: 0;
 		padding-right: 0;
@@ -92,23 +99,24 @@ html {
 	}
 	ul {
 		margin: 0;
-		margin-top: 30px;
+		margin-top: 23px;
+		margin-bottom: 7px;
 		padding: 0;
 		float: left;
 		width: 25%;
 		&:nth-child(1) {
-			background: lightgoldenrodyellow;
+			/*background: lightgoldenrodyellow;*/
 		}
 		&:nth-child(2) {
-			background: greenyellow;
+			/*background: greenyellow;*/
 			padding-left: 2px;
 		}
 		&:nth-child(3) {
-			background: yellowgreen;
+			/*background: yellowgreen;*/
 			padding-left: 30px;
 		}
 		&:nth-child(4) {
-			background: yellow;
+			/*background: yellow;*/
 			padding-left: 8.5%;
 		}
 		li {
@@ -125,11 +133,6 @@ html {
 		color: black;
 		padding-top: 20px;
 		padding-left: 8%;
-		div {
-			&:first-of-type {
-//				margin-top: 30px;
-			}
-		}
 		& > div {
 			margin-bottom: 11px;
 			margin-top: 11px;
@@ -168,9 +171,10 @@ html {
 	&.header {
 		.top {
 			.logotype {
-
+				img {
+					width: 100%;
+				}
 			}
-
 			.phones {
 				position: relative;
 				.block {
@@ -205,14 +209,15 @@ html {
 				}
 				a {
 					margin-bottom: 8px;
-					font-size: 33px;
+					/*font-size: 33px;*/
+					font-size: 2vw;
 					color: @brown;
 					display: block;
 					line-height: 25px;
 				}
 				span {
 					display: block;
-					padding: 6px 1px 6px 35px;
+					padding: 9px 1px 4px 35px;
 					&.callback {
 						background: url("../images/callback-ico.png") left center no-repeat;
 					}
@@ -237,12 +242,12 @@ html {
 				.left {
 					float: left;
 					width: 50%;
-					background: lightcoral;
+					/*background: lightcoral;*/
 				}
 				.right {
 					display: inline-block;
 					width: 50%;
-					background: khaki;
+					/*background: khaki;*/
 
 					padding-left: 33px;
 					padding-top: 24px;
@@ -316,6 +321,10 @@ html {
 					margin: 0;
 					padding: 0;
 					margin-left: 78px;
+					position: relative;
+					top: -5px;
+					line-height: 17px;
+					margin-bottom: 15px;
 					li {
 						color: @brown;
 						font-size: 14px;
@@ -329,21 +338,17 @@ html {
 		}
 		.menu {
 			padding: 0;
-//			display: table;
 			border-bottom: 1px solid @brown_dark;
 			ul {
 				width: 100%;
 				margin: 0;
 				padding: 0;
 				display: table;
+				padding-bottom: 4px;
 				li {
 					display: table-cell;
-//					width: 20%;
 					white-space: pre;
 					text-align: center;
-					&.first, &.last, &.tight {
-//						width: 1%;
-					}
 					&.first {
 						text-align: left;
 					}
@@ -369,12 +374,12 @@ html {
 	}
 
 	&.filter {
-		padding-top: 40px;
+		margin-top: 40px;
 		.container {
 			padding: 0;
 		}
 		.left {
-			background: midnightblue;
+			/*background: midnightblue;*/
 			width: 70%;
 			float: left;
 			ul {
@@ -382,7 +387,7 @@ html {
 				margin: 0;
 				
 				li {
-					background: hotpink;
+					/*background: hotpink;*/
 					text-align: center;
 					list-style: none;
 					float: left;
@@ -408,7 +413,7 @@ html {
 			p {
 				clear: both;
 				padding-top: 21px;
-				background: goldenrod;
+				/*background: goldenrod;*/
 				font-size: 12px;
 				color: #010000;
 			}
@@ -416,7 +421,7 @@ html {
 		.right {
 			display: inline-block;
 			width: 30%;
-			background: olive;
+			/*background: olive;*/
 			.controls {
 				width: 302px;
 				margin: 0 0 0 auto;

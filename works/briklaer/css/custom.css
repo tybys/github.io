@@ -2,27 +2,38 @@
 p {
   font-family: franklingothicbookcregular;
 }
-html:before {
-  content: '';
-  background: url("../images/flower-top.png") top left fixed no-repeat;
-  display: block;
-  width: 431px;
-  height: 388px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+* {
+  /*background: black;*/
+
 }
-html:after {
-  content: '';
-  background: url("../images/flower-middle.png") top right fixed no-repeat;
-  display: block;
-  width: 431px;
-  height: 552px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
+html {
+  /*&:before {
+		content: '';
+		background: url("../images/flower-top.png") top left fixed no-repeat;
+		display: block;
+		width: 431px;
+		height: 388px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+	&:after {
+		content: '';
+		background: url("../images/flower-middle.png") top right fixed no-repeat;
+		display: block;
+		width: 431px;
+		height: 552px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: -1;
+	}*/
+
+}
+html body {
+  background: url("../images/roses_03.jpg") no-repeat center fixed;
+  background-size: 100%;
 }
 .container {
   min-width: 780px;
@@ -31,7 +42,6 @@ html:after {
 }
 .container.top {
   padding-top: 30px;
-  padding-bottom: 12px;
   min-height: 138px;
   padding-left: 0;
   padding-right: 0;
@@ -75,24 +85,29 @@ html:after {
 }
 .footer ul {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 23px;
+  margin-bottom: 7px;
   padding: 0;
   float: left;
   width: 25%;
 }
 .footer ul:nth-child(1) {
-  background: lightgoldenrodyellow;
+  /*background: lightgoldenrodyellow;*/
+
 }
 .footer ul:nth-child(2) {
-  background: greenyellow;
+  /*background: greenyellow;*/
+
   padding-left: 2px;
 }
 .footer ul:nth-child(3) {
-  background: yellowgreen;
+  /*background: yellowgreen;*/
+
   padding-left: 30px;
 }
 .footer ul:nth-child(4) {
-  background: yellow;
+  /*background: yellow;*/
+
   padding-left: 8.5%;
 }
 .footer ul li {
@@ -134,6 +149,9 @@ html:after {
 .footer .right .third div {
   margin-left: 34px;
 }
+.row.header .top .logotype img {
+  width: 100%;
+}
 .row.header .top .phones {
   position: relative;
 }
@@ -167,14 +185,16 @@ html:after {
 }
 .row.header .top .phones a {
   margin-bottom: 8px;
-  font-size: 33px;
+  /*font-size: 33px;*/
+
+  font-size: 2vw;
   color: #36140a;
   display: block;
   line-height: 25px;
 }
 .row.header .top .phones span {
   display: block;
-  padding: 6px 1px 6px 35px;
+  padding: 9px 1px 4px 35px;
 }
 .row.header .top .phones span.callback {
   background: url("../images/callback-ico.png") left center no-repeat;
@@ -193,12 +213,14 @@ html:after {
 .row.header .top .times .left {
   float: left;
   width: 50%;
-  background: lightcoral;
+  /*background: lightcoral;*/
+
 }
 .row.header .top .times .right {
   display: inline-block;
   width: 50%;
-  background: khaki;
+  /*background: khaki;*/
+
   padding-left: 33px;
   padding-top: 24px;
 }
@@ -258,6 +280,10 @@ html:after {
   margin: 0;
   padding: 0;
   margin-left: 78px;
+  position: relative;
+  top: -5px;
+  line-height: 17px;
+  margin-bottom: 15px;
 }
 .row.header .top .times ul li {
   color: #36140a;
@@ -276,6 +302,7 @@ html:after {
   margin: 0;
   padding: 0;
   display: table;
+  padding-bottom: 4px;
 }
 .row.header .menu ul li {
   display: table-cell;
@@ -300,13 +327,14 @@ html:after {
   color: #eb2b2f;
 }
 .row.filter {
-  padding-top: 40px;
+  margin-top: 40px;
 }
 .row.filter .container {
   padding: 0;
 }
 .row.filter .left {
-  background: midnightblue;
+  /*background: midnightblue;*/
+
   width: 70%;
   float: left;
 }
@@ -315,7 +343,8 @@ html:after {
   margin: 0;
 }
 .row.filter .left ul li {
-  background: hotpink;
+  /*background: hotpink;*/
+
   text-align: center;
   list-style: none;
   float: left;
@@ -339,14 +368,16 @@ html:after {
 .row.filter .left p {
   clear: both;
   padding-top: 21px;
-  background: goldenrod;
+  /*background: goldenrod;*/
+
   font-size: 12px;
   color: #010000;
 }
 .row.filter .right {
   display: inline-block;
   width: 30%;
-  background: olive;
+  /*background: olive;*/
+
 }
 .row.filter .right .controls {
   width: 302px;
@@ -392,6 +423,7 @@ html:after {
   padding: 0;
   margin: 0;
   /*margin-top: 10px;*/
+
   padding-top: 10px;
 }
 .row.options .left ul li {
@@ -516,6 +548,7 @@ html:after {
 				width: 383px;
 			}
 		}*/
+
 }
 .row.grid .container {
   padding: 0;
