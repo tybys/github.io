@@ -271,6 +271,7 @@ html {
 								position: absolute;
 								top: 27px;
 								right: 0;
+								
 							}
 						}
 						&.empty {
@@ -438,7 +439,7 @@ html {
 					&:first-of-type {
 						margin-top: 8px;
 					}
-					div {
+					.name {
 						text-indent: 16px;
 						border-radius: 5px 0 0 5px;
 						background: #feedcf;
@@ -448,9 +449,18 @@ html {
 						min-height: 30px;
 						line-height: 30px;
 						box-shadow: 2px 4px 0 rgba(178, 178, 178, 0.5);
+						display: inline-block;
+						vertical-align: middle;
+					}
+					.value {
+						display: inline-block;
 					}
 				}
 			}
+		}
+		// SLIDER!
+		.layout-slider {
+			display: inline-block;
 		}
 	}
 	&.options {

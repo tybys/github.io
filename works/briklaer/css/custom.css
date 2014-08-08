@@ -397,7 +397,7 @@ html body {
 .row.filter .right .controls > div:first-of-type {
   margin-top: 8px;
 }
-.row.filter .right .controls > div div {
+.row.filter .right .controls > div .name {
   text-indent: 16px;
   border-radius: 5px 0 0 5px;
   background: #feedcf;
@@ -407,6 +407,14 @@ html body {
   min-height: 30px;
   line-height: 30px;
   box-shadow: 2px 4px 0 rgba(178, 178, 178, 0.5);
+  display: inline-block;
+  vertical-align: middle;
+}
+.row.filter .right .controls > div .value {
+  display: inline-block;
+}
+.row.filter .layout-slider {
+  display: inline-block;
 }
 .row.options {
   height: 37px;

@@ -31,6 +31,5 @@
         $(".block").mouseleave(function () {
             $(this).hide();
         });
-
     });
 })(jQuery);
