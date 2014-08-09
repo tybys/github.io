@@ -177,8 +177,8 @@
           '<div class="<%=className%>-pointer"></div>' +
           '<div class="<%=className%>-pointer <%=className%>-pointer-to"></div>' +
         
-          '<div class="<%=className%>-label"><span><%=settings.from%></span></div>' +
-          '<div class="<%=className%>-label <%=className%>-label-to"><span><%=settings.to%></span><%=settings.dimension%></div>' +
+          //'<div class="<%=className%>-label"><span><%=settings.from%></span></div>' +
+          //'<div class="<%=className%>-label <%=className%>-label-to"><span><%=settings.to%></span><%=settings.dimension%></div>' +
 
           '<div class="<%=className%>-value"><span></span><%=settings.dimension%></div>' +
           '<div class="<%=className%>-value <%=className%>-value-to"><span></span><%=settings.dimension%></div>' +

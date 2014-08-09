@@ -31,5 +31,11 @@
         $(".block").mouseleave(function () {
             $(this).hide();
         });
+
+		// price
+		$('#price').on("hover", function () {
+			$(this).removeClass("background");
+			$(".value").show();
+		});
     });
 })(jQuery);
