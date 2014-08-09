@@ -418,11 +418,11 @@ html body {
 .row.filter .right .controls #price.background {
   background: url("../images/slider.png") no-repeat 89% 59%;
 }
-.row.filter .right .controls #price.background .value {
-  display: none;
-}
 .row.filter .layout-slider {
   display: inline-block;
+}
+.row.filter .layout-slider #slider {
+  width: 116px;
 }
 .row.options {
   height: 37px;

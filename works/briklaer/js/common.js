@@ -34,8 +34,8 @@
 
 		// price
 		$('#price').on("hover", function () {
-			$(this).removeClass("background");
-			$(".value").show();
+			//$(this).removeClass("background");
+			//$(".value").show();
 		});
     });
 })(jQuery);
