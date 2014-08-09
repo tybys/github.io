@@ -423,7 +423,6 @@ html {
 		.right {
 			display: inline-block;
 			width: 30%;
-			/*background: olive;*/
 			.controls {
 				width: 302px;
 				margin: 0 0 0 auto;
@@ -432,6 +431,7 @@ html {
 					display: block;
 				}
 				& > div {
+					position: relative;
 					margin: 12px 0;
 					background: white;
 					border: 1px solid @brown_dark;
@@ -440,7 +440,8 @@ html {
 					&:first-of-type {
 						margin-top: 8px;
 					}
-					.name {
+					.name,
+					.size {
 						text-indent: 16px;
 						border-radius: 5px 0 0 5px;
 						background: #feedcf;
@@ -462,8 +463,53 @@ html {
 					&.background {
 						background: url("../images/slider.png") no-repeat 89% 59%;
 						.value {
+							display: none;
+						}
+					}
+					&.active {
+						.name {
+							background: @red;
+							color: white;
+						}
+						.value {
+							position: absolute;
+							top: -1px;
+							right: -2px;
+							z-index: 1;
+							background: rgba(255, 255, 255, 0.9);
+							width: 186px;
+							height: 63px;
+							border: 1px solid @red;
+							border-radius: 5px;
+							display: none;
+						}
+					}
+				}
+				#size {
+					&.background {
+					//	background: url("../images/range.png") no-repeat 89% 59%;
+						.value {
 							//display: none;
 						}
+					}
+					.value {
+						position: absolute;
+						top: -1px;
+						right: -2px;
+						z-index: 1;
+						background: rgba(255, 255, 255, 0.9);
+						width: 186px;
+						height: 63px;
+						border: 1px solid @red;
+						border-radius: 5px;
+						//display: none;
+					}
+					.cont {
+						width: 160px !important;
+						margin-left: 6px !important;
+					}
+					#sliderStep {
+						width: 155px !important;
 					}
 				}
 			}
@@ -471,8 +517,98 @@ html {
 		// SLIDER!
 		.layout-slider {
 			display: inline-block;
-			#slider {
+			position: relative;
+			height: 100%;
+			.cont {
+				position: absolute;
+				top: ~"calc(50% - 7px)";
+				top: ~"-webkit-calc(50% - 7px)";
+			}
+			span:not(.ui-slider-pip span) {
+				position: absolute;
+				top: ~"calc(50% - 7px)";
+				top: ~"-webkit-calc(50% - 7px)";
+			}
+			#slider,
+			#sliderStep {
 				width: 116px;
+				background: none;
+				border: none;
+				.ui-slider-range {
+					height: 1px;
+					background: #898989;
+
+					top: ~"calc(50% - 1px)";
+					top: ~"-webkit-calc(50% - 1px)";
+				}
+				.ui-slider-handle {
+					background: #898989;
+					width: 6px;
+					height: 6px;
+					border-radius: 15px;
+					top: ~"calc(50% - 3px)";
+					top: ~"-webkit-calc(50% - 3px)";
+					margin: 0;
+					&:focus {
+						outline: none;
+					}
+				}
+			}
+			#sliderStep {
+				/*span {
+					&.ui-slider-pip {
+						&:first-child {
+							&:after {
+								display: none;
+							}
+						}
+						&:last-of-type {
+							&:after {
+								display: none;
+							}
+						}
+					}
+				}*/
+				.ui-slider-pip {
+					font-size: 10px;
+					color: #898989;
+					margin: 0 -6px;
+					line-height: 35px;
+					position: relative;
+					&:first-of-type {
+						&:after {
+							display: none;
+						}
+					}
+					&:after {
+						width: 6px;
+						height: 6px;
+						content: '';
+						position: absolute;
+						top: -6px;
+						border-radius: 5px;
+						background: #898989;
+					}
+				}
+				&:after {
+					content: '';
+					position: absolute;
+					top: 5px;
+					left: 0;
+					width: 100%;
+					height: 1px;
+					background: #898989;
+
+				}
+			}
+			#min, #max {
+			    width: 50px;
+			    text-align: center;
+			    color: #898989;
+			    font-size: 12px;
+				font-weight: normal;
+				line-height: 13px;
+				margin-top: 7px;
 			}
 		}
 	}
@@ -489,7 +625,6 @@ html {
 
 				padding: 0;
 				margin: 0;
-				/*margin-top: 10px;*/
 				padding-top: 10px;
 				li {
 					font-size: 12px;

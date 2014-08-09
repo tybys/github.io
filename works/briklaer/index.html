@@ -136,8 +136,15 @@
 						<div>Стиль</div>
 					</div>
 
-					<div id="size">
-						<div>Размер</div>
+					<div id="size" class="background">
+						<div class="name">Размер</div>
+						<div class="value">
+							<div class="layout-slider">
+					      		<span class="cont" style="display: inline-block; width: 116px; padding: 0 5px;">
+									<div id="sliderStep"></div>
+						      	</span>
+						    </div>
+						</div>
 					</div>
 
 					<div id="color">
@@ -148,10 +155,8 @@
 						<div class="name">Цена</div>
 						<div class="value">
 							<div class="layout-slider">
-					      		<span style="display: inline-block; width: 116px; padding: 0 5px; margin: 0 0 0 25px;">
+					      		<span class="cont" style="display: inline-block; width: 116px; padding: 0 5px; margin: 0 0 0 25px;">
 									<div id="slider"></div>
-					      			<!--input id="Slider1" type="slider" name="price" value="30000.5;60000" /-->
-									<!--input id="Slider1" type="slider" name="price" value="30000.5;60000" /-->
 						      	</span>
 						    </div>
 						</div>
@@ -523,6 +528,8 @@
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="js/ui/jquery-ui.js"></script>
+<!-- jq.ui extended -->
+<script src="http://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/jquery-ui-slider-pips.js"></script>
 <!--
 <script type="text/javascript" src="js/jquery/jshashtable-2.1_src.js"></script>
 <script type="text/javascript" src="js/jquery/jquery.numberformatter-1.2.3.js"></script>
@@ -533,25 +540,69 @@
 -->
 <script src="js/common.js"></script>
 <script>
-$( "#slider" ).slider({
-	range: true,
-	values: [ 17, 67 ]
-});	
-</script>
+$(function () {
+	// price slider
+	$( "#slider" ).slider({
+		range: true,
+	    min: 3000,
+	    max: 50000,
+	    step: 10,
+	    values: [0, 50000],
+		slide: function(event, ui) {
+	        var delay = function() {
+	            var handleIndex = $(ui.handle).data('index.uiSliderHandle');
+	            var label = handleIndex == 0 ? "#min" : "#max";
+	            $(label).html(ui.value + "&nbsp;руб.").position({
+	                my: 'center top',
+	                at: 'center bottom',
+	                of: ui.handle,
+	                offset: "0, 10"
+	            });
+	        };
 
-<script type="text/javascript" charset="utf-8">
-	/*$("#Slider1").slider({
-		from: 3000, 
-		to: 50000, 
-		step: 10, 
-		smooth: true, 
-		round: 0, 
-		dimension: "&nbsp;руб.", 
-		skin: "plastic",
-		scale: ""*/
+	        // wait for the ui.handle to set its position
+	        setTimeout(delay, 5);
+	    }
+	});	
+
+	$("<div>", {"id": "min"}).appendTo($(".ui-slider-handle").eq(0));
+	$("<div>", {"id": "max"}).appendTo($(".ui-slider-handle").eq(1));
+
+	$("min").html("руб." + $("#slider").slider("values", 0)).position({
+	    my: "center top",
+	    at: "center bottom",
+	    of: $("#slider a:eq(0)"),
+	    offset: "0, 10"
 	});
 
-	$()
+	$("#max").html($("#slider").slider("values", 1) + "&nbsp;руб.").position({
+	    my: "center top",
+	    at: "center bottom",
+	    of: $("#slider a:eq(1)"),
+	    offset: "0, 10"
+	});
+
+	// size slider
+	$( "#sliderStep" ).slider({
+      value: 40,
+      min: 40,
+      max: 120,
+      step: 10,
+      slide: function( event, ui ) {
+        //$( "#amount" ).val( "$" + ui.value );
+      }
+    });
+    // var $slider2 = $("#sliderStep").slider({
+    // 	min: 40,
+    // 	max: 120,
+    // 	value: 10
+    // });
+
+	// and then we can apply pips to it!
+	$("#sliderStep").slider("pips", {
+		rest: "sdflabel"
+	});
+});
 </script>
 </body>
 </html>
