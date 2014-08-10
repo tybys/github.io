@@ -33,7 +33,7 @@
         });
 
 		// price
-		$('#price').on("hover", function () {
+		$('#price, #color').on("hover", function () {
 			$(this).removeClass("background").addClass("active");
 			$(".value", $(this)).show();
 		});

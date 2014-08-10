@@ -415,6 +415,49 @@ html body {
   width: 60%;
   display: inline-block;
 }
+.row.filter .right .controls #color.background {
+  background: url("../images/select.png") no-repeat 95% 59%;
+}
+.row.filter .right .controls #color.active .name {
+  background: #eb2b2f;
+  color: white;
+}
+.row.filter .right .controls #color .value {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.9);
+  width: 186px;
+  border: 1px solid #eb2b2f;
+  border-radius: 5px;
+  display: none;
+}
+.row.filter .right .controls #color .value ul {
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+.row.filter .right .controls #color .value ul li {
+  border-radius: 5px;
+  border: 1px solid #898989;
+  width: 35px;
+  height: 35px;
+  list-style: none;
+  float: left;
+  margin: 0 0 15px 15px;
+}
+.row.filter .right .controls #color .value ul li:hover {
+  border-color: #eb2b2f;
+  border-width: 2px;
+}
+.row.filter .right .controls #color .value ul li img {
+  border-radius: none;
+  display: block;
+  width: 100%;
+}
+.row.filter .right .controls #color .value ul li img:hover {
+  box-shadow: inset 0 0 1px #eb2b2f;
+}
 .row.filter .right .controls #price.background {
   background: url("../images/slider.png") no-repeat 89% 59%;
 }
@@ -435,6 +478,9 @@ html body {
   height: 63px;
   border: 1px solid #eb2b2f;
   border-radius: 5px;
+  display: none;
+}
+.row.filter .right .controls #size.background .value {
   display: none;
 }
 .row.filter .right .controls #size .value {
