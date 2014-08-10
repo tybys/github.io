@@ -497,41 +497,35 @@ html body {
 .row.filter .layout-slider #sliderStep .ui-slider-handle:focus {
   outline: none;
 }
-.row.filter .layout-slider #sliderStep {
-  /*span {
-					&.ui-slider-pip {
-						&:first-child {
-							&:after {
-								display: none;
-							}
-						}
-						&:last-of-type {
-							&:after {
-								display: none;
-							}
-						}
-					}
-				}*/
+.row.filter .layout-slider #sliderStep .ui-slider-handle {
+  /*display: none*/
 
 }
 .row.filter .layout-slider #sliderStep .ui-slider-pip {
   font-size: 10px;
   color: #898989;
-  margin: 0 -6px;
+  margin: 0 -6px 0 0;
   line-height: 35px;
   position: relative;
+  float: left;
+  width: 1px;
+}
+.row.filter .layout-slider #sliderStep .ui-slider-pip .ui-slider-label {
+  float: left;
+  width: 1px;
 }
 .row.filter .layout-slider #sliderStep .ui-slider-pip:first-of-type:after {
   display: none;
 }
 .row.filter .layout-slider #sliderStep .ui-slider-pip:after {
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   content: '';
   position: absolute;
-  top: -6px;
+  top: 2.9px;
   border-radius: 5px;
   background: #898989;
+  right: -3px;
 }
 .row.filter .layout-slider #sliderStep:after {
   content: '';

@@ -583,6 +583,7 @@ $(function () {
 	});
 
 	// size slider
+	console.log($(".ui-slider-handle").attr("style"))
 	$( "#sliderStep" ).slider({
       value: 40,
       min: 40,
@@ -590,6 +591,10 @@ $(function () {
       step: 10,
       slide: function( event, ui ) {
         //$( "#amount" ).val( "$" + ui.value );
+        console.log($(".ui-slider-handle").attr("style"))
+        if ($(".ui-slider-handle").attr("style") == "left: 12.5%") {
+
+        }
       }
     });
     // var $slider2 = $("#sliderStep").slider({
