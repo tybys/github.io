@@ -37,5 +37,80 @@
 			$(this).removeClass("background").addClass("active");
 			$(".value", $(this)).show();
 		});
+
+        // price slider
+        $( "#slider" ).slider({
+            range: true,
+            min: 3000,
+            max: 50000,
+            step: 10,
+            values: [0, 50000],
+            slide: function(event, ui) {
+                var delay = function() {
+                    var handleIndex = $(ui.handle).data('index.uiSliderHandle');
+                    var label = handleIndex == 0 ? "#min" : "#max";
+                    $(label).html(ui.value + "&nbsp;руб.").position({
+                        my: 'center top',
+                        at: 'center bottom',
+                        of: ui.handle,
+                        offset: "0, 10"
+                    });
+                };
+
+                // wait for the ui.handle to set its position
+                setTimeout(delay, 5);
+            }
+        }); 
+
+        $("<div>", {"id": "min"}).appendTo($(".ui-slider-handle").eq(0));
+        $("<div>", {"id": "max"}).appendTo($(".ui-slider-handle").eq(1));
+
+        $("min").html("руб." + $("#slider").slider("values", 0)).position({
+            my: "center top",
+            at: "center bottom",
+            of: $("#slider a:eq(0)"),
+            offset: "0, 10"
+        });
+
+        $("#max").html($("#slider").slider("values", 1) + "&nbsp;руб.").position({
+            my: "center top",
+            at: "center bottom",
+            of: $("#slider a:eq(1)"),
+            offset: "0, 10"
+        });
+
+        // size slider
+        $( "#sliderStep" ).slider({
+          value: 40,
+          min: 40,
+          max: 120,
+          step: 10,
+          slide: function( event, ui ) {
+            //$( "#amount" ).val( "$" + ui.value );
+            console.log($(".ui-slider-handle").attr("style"))
+            if ($(".ui-slider-handle").attr("style") == "left: 12.5%") {
+
+            }
+          }
+        });
+
+        // and then we can apply pips to it!
+        $("#sliderStep").slider("pips", {
+            rest: "sdflabel"
+        });
+
+        // selects…
+         $("select").multipleSelect({
+            onOpen: function () {
+                console.log($(this))
+                $("#specs").addClass("active")
+            },
+            onClose: function () {
+                $("#specs").removeClass("active")
+            }
+         });
+         $(".ms-drop.bottom").mouseleave(function () {
+            $(this).hide();
+         })
     });
 })(jQuery);

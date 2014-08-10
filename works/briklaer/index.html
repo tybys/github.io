@@ -135,7 +135,16 @@
 				<div class="controls">
 					<span>Подобрать</span>
 					<div id="style">
-						<div>Стиль</div>
+						<div class="name">Стиль</div>
+						<div class="value">
+							<select name="specs" id="specs_">
+								<option></option>
+								<option value="ground">Напольная</option>
+								<option value="sky">Навесной</option>
+								<option value="withTrash">С корзиной</option>
+								<option value="withoutTrash">Без корзины</option>
+							</select>
+						</div>
 					</div>
 
 					<div id="size" class="background">
@@ -150,7 +159,7 @@
 					</div>
 
 					<div id="color">
-						<div>Цвет</div>
+						<div class="name">Цвет</div>
 					</div>
 
 					<div id="price" class="background">
@@ -165,19 +174,28 @@
 					</div>
 
 					<div id="collection">
-						<div>Коллекция</div>
+						<div class="name">Коллекция</div>
+						<div class="value">
+							<select name="specs" id="specs_">
+								<option></option>
+								<option value="ground">Напольная</option>
+								<option value="sky">Навесной</option>
+								<option value="withTrash">С корзиной</option>
+								<option value="withoutTrash">Без корзины</option>
+							</select>
+						</div>
 					</div>
 
 					<div id="specs" class="background">
 						<div class="name">Конструкция</div>
 						<div class="value">
-						<select name="specs" id="specs_">
-							<option></option>
-							<option value="ground">Напольная</option>
-							<option value="sky">Навесной</option>
-							<option value="withTrash">С корзиной</option>
-							<option value="withoutTrash">Без корзины</option>
-						</select>
+							<select name="specs" id="specs_">
+								<option></option>
+								<option value="ground">Напольная</option>
+								<option value="sky">Навесной</option>
+								<option value="withTrash">С корзиной</option>
+								<option value="withoutTrash">Без корзины</option>
+							</select>
 						</div>
 					</div>
 				</div>
@@ -551,93 +569,5 @@
 <script type="text/javascript" src="js/jquery/jquery.slider.js"></script>
 -->
 <script src="js/common.js"></script>
-<script>
-$(function () {
-	// price slider
-	$( "#slider" ).slider({
-		range: true,
-	    min: 3000,
-	    max: 50000,
-	    step: 10,
-	    values: [0, 50000],
-		slide: function(event, ui) {
-	        var delay = function() {
-	            var handleIndex = $(ui.handle).data('index.uiSliderHandle');
-	            var label = handleIndex == 0 ? "#min" : "#max";
-	            $(label).html(ui.value + "&nbsp;руб.").position({
-	                my: 'center top',
-	                at: 'center bottom',
-	                of: ui.handle,
-	                offset: "0, 10"
-	            });
-	        };
-
-	        // wait for the ui.handle to set its position
-	        setTimeout(delay, 5);
-	    }
-	});	
-
-	$("<div>", {"id": "min"}).appendTo($(".ui-slider-handle").eq(0));
-	$("<div>", {"id": "max"}).appendTo($(".ui-slider-handle").eq(1));
-
-	$("min").html("руб." + $("#slider").slider("values", 0)).position({
-	    my: "center top",
-	    at: "center bottom",
-	    of: $("#slider a:eq(0)"),
-	    offset: "0, 10"
-	});
-
-	$("#max").html($("#slider").slider("values", 1) + "&nbsp;руб.").position({
-	    my: "center top",
-	    at: "center bottom",
-	    of: $("#slider a:eq(1)"),
-	    offset: "0, 10"
-	});
-
-	// size slider
-	console.log($(".ui-slider-handle").attr("style"))
-	$( "#sliderStep" ).slider({
-      value: 40,
-      min: 40,
-      max: 120,
-      step: 10,
-      slide: function( event, ui ) {
-        //$( "#amount" ).val( "$" + ui.value );
-        console.log($(".ui-slider-handle").attr("style"))
-        if ($(".ui-slider-handle").attr("style") == "left: 12.5%") {
-
-        }
-      }
-    });
-    // var $slider2 = $("#sliderStep").slider({
-    // 	min: 40,
-    // 	max: 120,
-    // 	value: 10
-    // });
-
-	// and then we can apply pips to it!
-	$("#sliderStep").slider("pips", {
-		rest: "sdflabel"
-	});
-
-	// selects…
-	 $("select").multipleSelect({
-	 	onOpen: function () {
-	 		$("#specs").addClass("active")
-	 	},
-	 	onClose: function () {
-	 		$("#specs").removeClass("active")
-	 	}
-	 });
-	 $(".ms-drop.bottom").mouseleave(function () {
-	 	// $(this).hide();
-	 })
-
-	 // $("#specs .value").on("click", function () {
-	 	
-	 // 	$(".ms-parent").find("button").trigger("click")
-	 // });
-});
-</script>
 </body>
 </html>
