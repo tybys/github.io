@@ -14,6 +14,7 @@
 	<link href="css/fonts.css" rel="stylesheet">
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/ui/jquery-ui.css" rel="stylesheet">
+	<link href="css/ui/multiple-select.css" rel="stylesheet">
 	
 	<!--
 	<link rel="stylesheet" href="css/jquery/jslider.css" type="text/css">
@@ -27,6 +28,7 @@
 	<link href="css/custom-footer.css" rel="stylesheet">
 
 	<link href="css/medias.css" rel="stylesheet">
+
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -166,8 +168,17 @@
 						<div>Коллекция</div>
 					</div>
 
-					<div id="specs">
-						<div>Конструкция</div>
+					<div id="specs" class="background">
+						<div class="name">Конструкция</div>
+						<div class="value">
+						<select name="specs" id="specs_">
+							<option></option>
+							<option value="ground">Напольная</option>
+							<option value="sky">Навесной</option>
+							<option value="withTrash">С корзиной</option>
+							<option value="withoutTrash">Без корзины</option>
+						</select>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -528,6 +539,7 @@
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="js/ui/jquery-ui.js"></script>
+<script src="js/ui/jquery.multiple.select.js"></script>
 <!-- jq.ui extended -->
 <script src="http://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/jquery-ui-slider-pips.js"></script>
 <!--
@@ -607,6 +619,24 @@ $(function () {
 	$("#sliderStep").slider("pips", {
 		rest: "sdflabel"
 	});
+
+	// selects…
+	 $("select").multipleSelect({
+	 	onOpen: function () {
+	 		$("#specs").addClass("active")
+	 	},
+	 	onClose: function () {
+	 		$("#specs").removeClass("active")
+	 	}
+	 });
+	 $(".ms-drop.bottom").mouseleave(function () {
+	 	// $(this).hide();
+	 })
+
+	 // $("#specs .value").on("click", function () {
+	 	
+	 // 	$(".ms-parent").find("button").trigger("click")
+	 // });
 });
 </script>
 </body>

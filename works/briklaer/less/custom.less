@@ -512,6 +512,52 @@ html {
 						width: 155px !important;
 					}
 				}
+				#specs {
+					&.background {
+						background: url("../images/select.png") no-repeat 95% 59%;
+					}
+					&.active {
+						.name {
+							background: @red;
+							color: white;
+						}
+					}
+					.value {
+						.ms-parent {
+							width: ~"calc(100% + 5px)" !important;
+						}
+						.ms-choice {
+							outline: none;
+							border: none;
+							background: transparent;
+							div {
+								background: none;
+							}
+						}
+						.ms-drop.bottom {
+							top: -2px;
+							left: -2px;
+							border-color: @red;
+							li {
+								text-align: left;
+								margin-left: 5px;
+								&.selected {
+									label {
+										color: @red;
+									}
+								}
+								input {
+									opacity: 0;
+								}
+								label {
+									cursor: pointer;
+									font-size: 14px;
+									color: #898989;
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 		// SLIDER!
