@@ -455,39 +455,59 @@ html body {
 .row.filter .right .controls #size #sliderStep {
   width: 155px !important;
 }
+.row.filter .right .controls #style.background,
+.row.filter .right .controls #collection.background,
 .row.filter .right .controls #specs.background {
   background: url("../images/select.png") no-repeat 95% 59%;
 }
+.row.filter .right .controls #style.active .name,
+.row.filter .right .controls #collection.active .name,
 .row.filter .right .controls #specs.active .name {
   background: #eb2b2f;
   color: white;
 }
+.row.filter .right .controls #style .value .ms-parent,
+.row.filter .right .controls #collection .value .ms-parent,
 .row.filter .right .controls #specs .value .ms-parent {
   width: calc(100% + 5px) !important;
 }
+.row.filter .right .controls #style .value .ms-choice,
+.row.filter .right .controls #collection .value .ms-choice,
 .row.filter .right .controls #specs .value .ms-choice {
   outline: none;
   border: none;
   background: transparent;
 }
+.row.filter .right .controls #style .value .ms-choice div,
+.row.filter .right .controls #collection .value .ms-choice div,
 .row.filter .right .controls #specs .value .ms-choice div {
   background: none;
 }
+.row.filter .right .controls #style .value .ms-drop.bottom,
+.row.filter .right .controls #collection .value .ms-drop.bottom,
 .row.filter .right .controls #specs .value .ms-drop.bottom {
   top: -2px;
   left: -2px;
   border-color: #eb2b2f;
 }
+.row.filter .right .controls #style .value .ms-drop.bottom li,
+.row.filter .right .controls #collection .value .ms-drop.bottom li,
 .row.filter .right .controls #specs .value .ms-drop.bottom li {
   text-align: left;
   margin-left: 5px;
 }
+.row.filter .right .controls #style .value .ms-drop.bottom li.selected label,
+.row.filter .right .controls #collection .value .ms-drop.bottom li.selected label,
 .row.filter .right .controls #specs .value .ms-drop.bottom li.selected label {
   color: #eb2b2f;
 }
+.row.filter .right .controls #style .value .ms-drop.bottom li input,
+.row.filter .right .controls #collection .value .ms-drop.bottom li input,
 .row.filter .right .controls #specs .value .ms-drop.bottom li input {
   opacity: 0;
 }
+.row.filter .right .controls #style .value .ms-drop.bottom li label,
+.row.filter .right .controls #collection .value .ms-drop.bottom li label,
 .row.filter .right .controls #specs .value .ms-drop.bottom li label {
   cursor: pointer;
   font-size: 14px;

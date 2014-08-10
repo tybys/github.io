@@ -100,17 +100,27 @@
         });
 
         // selects…
+
          $("select").multipleSelect({
             onOpen: function () {
-                console.log($(this))
-                $("#specs").addClass("active")
+                /*
+                style
+                collection
+                specs
+                */
+                //$("#specs").addClass("active");
             },
             onClose: function () {
-                $("#specs").removeClass("active")
+                //$("#specs").removeClass("active");
             }
          });
          $(".ms-drop.bottom").mouseleave(function () {
             $(this).hide();
-         })
+         });
+
+        $(".ms-choice").click(function (e) {
+            console.log($(this).parents(".parr"))
+            $(this).parents(".parr").addClass("active")
+        });
     });
 })(jQuery);
