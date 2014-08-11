@@ -36,6 +36,9 @@ html body {
   background-size: 100%;
   color: red;
 }
+html p {
+  font-family: pf_agora_sans_proitalic;
+}
 .container {
   min-width: 780px;
   max-width: 1150px;
@@ -200,14 +203,18 @@ html body {
 .row.header .top .phones span.callback {
   background: url("../images/callback-ico.png") left center no-repeat;
 }
+.row.header .top .phones span.callback a {
+  font-family: pf_agora_sans_proitalic;
+}
 .row.header .top .phones span.mail {
   background: url("../images/mail-ico.png") left center no-repeat;
+}
+.row.header .top .phones span.mail a {
+  font-family: pf_agora_sans_proitalic;
 }
 .row.header .top .phones span a {
   margin: 0 !important;
   text-decoration: underline;
-  font-family: Arial;
-  font-style: italic;
   color: #013dff;
   font-size: 14px;
 }
@@ -323,6 +330,7 @@ html body {
   color: #36140a;
   font-size: 18px;
   display: block;
+  font-family: pf_agora_sans_proregular;
 }
 .row.header .menu ul li a:hover {
   color: #eb2b2f;

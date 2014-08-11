@@ -46,6 +46,9 @@ html {
 		background-size: 100%;
 		color: red;
 	}
+	p {
+		font-family: pf_agora_sans_proitalic;
+	}
 }
 
 .container {
@@ -221,16 +224,19 @@ html {
 					padding: 9px 1px 4px 35px;
 					&.callback {
 						background: url("../images/callback-ico.png") left center no-repeat;
+						a {
+							font-family: pf_agora_sans_proitalic;
+						}
 					}
 					&.mail {
 						background: url("../images/mail-ico.png") left center no-repeat;
+						a {
+							font-family: pf_agora_sans_proitalic;
+						}
 					}
 					a {
 						margin: 0 !important;
 						text-decoration: underline;
-//						font-family: 'franklin_gothic_bookitalic';
-						font-family: Arial;
-						font-style: italic;
 						color: @blue;
 						font-size: 14px;
 
@@ -366,6 +372,7 @@ html {
 						color: @brown;
 						font-size: 18px;
 						display: block;
+						font-family: pf_agora_sans_proregular;
 						&:hover {
 							color: @red;
 						}
