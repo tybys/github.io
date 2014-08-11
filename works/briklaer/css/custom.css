@@ -37,8 +37,7 @@ html body {
   color: red;
 }
 html p {
-  font-family: pf_agora_sans_proitalic;
-  color: violet;
+  font-family: 'Roboto', sans-serif;
 }
 .container {
   min-width: 780px;
@@ -205,13 +204,15 @@ html p {
   background: url("../images/callback-ico.png") left center no-repeat;
 }
 .row.header .top .phones span.callback a {
-  font-family: pf_agora_sans_proitalic;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
 }
 .row.header .top .phones span.mail {
   background: url("../images/mail-ico.png") left center no-repeat;
 }
 .row.header .top .phones span.mail a {
-  font-family: pf_agora_sans_proitalic;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
 }
 .row.header .top .phones span a {
   margin: 0 !important;
@@ -331,7 +332,7 @@ html p {
   color: #36140a;
   font-size: 18px;
   display: block;
-  font-family: pf_agora_sans_proregular;
+  font-family: 'Roboto', sans-serif;
 }
 .row.header .menu ul li a:hover {
   color: #eb2b2f;
