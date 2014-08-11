@@ -36,8 +36,8 @@ html body {
   background-size: 100%;
   color: red;
 }
-html p {
-  font-family: 'Open Sans', sans-serif;
+#style .name {
+  font-style: italic;
 }
 .container {
   min-width: 780px;
@@ -205,12 +205,14 @@ html p {
 }
 .row.header .top .phones span.callback a {
   font-family: 'Open Sans', sans-serif;
+  font-style: italic;
 }
 .row.header .top .phones span.mail {
   background: url("../images/mail-ico.png") left center no-repeat;
 }
 .row.header .top .phones span.mail a {
   font-family: 'Open Sans', sans-serif;
+  font-style: italic;
 }
 .row.header .top .phones span a {
   margin: 0 !important;
