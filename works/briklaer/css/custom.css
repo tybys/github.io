@@ -37,7 +37,7 @@ html body {
   color: red;
 }
 html p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .container {
   min-width: 780px;
@@ -204,15 +204,13 @@ html p {
   background: url("../images/callback-ico.png") left center no-repeat;
 }
 .row.header .top .phones span.callback a {
-  font-family: 'Roboto', sans-serif;
-  font-style: italic;
+  font-family: 'Open Sans', sans-serif;
 }
 .row.header .top .phones span.mail {
   background: url("../images/mail-ico.png") left center no-repeat;
 }
 .row.header .top .phones span.mail a {
-  font-family: 'Roboto', sans-serif;
-  font-style: italic;
+  font-family: 'Open Sans', sans-serif;
 }
 .row.header .top .phones span a {
   margin: 0 !important;
@@ -332,7 +330,7 @@ html p {
   color: #36140a;
   font-size: 18px;
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .row.header .menu ul li a:hover {
   color: #eb2b2f;
