@@ -38,6 +38,7 @@ html body {
 }
 html p {
   font-family: pf_agora_sans_proitalic;
+  color: violet;
 }
 .container {
   min-width: 780px;
