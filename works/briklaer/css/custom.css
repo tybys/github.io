@@ -207,16 +207,8 @@ html body {
 .row.header .top .phones span.callback {
   background: url("../images/callback-ico.png") left center no-repeat;
 }
-.row.header .top .phones span.callback a {
-  font-family: 'Open Sans', sans-serif;
-  font-style: italic;
-}
 .row.header .top .phones span.mail {
   background: url("../images/mail-ico.png") left center no-repeat;
-}
-.row.header .top .phones span.mail a {
-  font-family: 'Open Sans', sans-serif;
-  font-style: italic;
 }
 .row.header .top .phones span a {
   margin: 0 !important;
