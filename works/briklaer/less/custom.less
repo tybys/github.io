@@ -5,54 +5,25 @@
 @brown_light: #fef8ee;
 @red: #eb2b2f;
 @blue: #013dff;
-@book_italic: "franklin_gothic_bookitalic";
-@book_regular: "franklin_gothic_bookregular";
-@book_medium_italic: "franklin_gothic_mediumitalic";
-@book_medium_regular: "franklin_gothic_mediumregular";
+@fira: 'Fira Sans';
 
 * {
-	/*background: black;*/
+
 }
 p, a, h2 {
-	font-family: 'Fira Sans', sans-serif;
+	
 }
 
 html {
-	/*&:before {
-		content: '';
-		background: url("../images/flower-top.png") top left fixed no-repeat;
-		display: block;
-		width: 431px;
-		height: 388px;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: -1;
-	}
-	&:after {
-		content: '';
-		background: url("../images/flower-middle.png") top right fixed no-repeat;
-		display: block;
-		width: 431px;
-		height: 552px;
-		position: absolute;
-		top: 0;
-		right: 0;
-		z-index: -1;
-	}*/
 	body {
 		background: url("../images/roses_03.jpg") no-repeat center fixed;
 		background-size: 100%;
 		color: red;
-	}
-	p {
-		
+		font-family: @fira;
 	}
 }
 #style {
-	.name {
-		font-style: italic;
-	}
+	
 }
 .container {
 	min-width: 780px;
@@ -79,7 +50,7 @@ html {
 		clear: both;
 		img {
 			float: left;
-			margin-right: 14.3%;
+			margin-right: 14.2%;
 			margin-top: 10px;
 		}
 		ul {
@@ -188,7 +159,7 @@ html {
 					display: none;
 					// #fbebcf
 					// #fef8ee
-					font-family: 'Fira Sans', sans-serif;
+					
 					position: absolute;
 					top: -5px;
 					left: 25px;
@@ -206,12 +177,13 @@ html {
 					color: #010000;
 					width: 299px;
 					height: 36px;
+					line-height: 36px;
 					border: 1px solid @brown;
 					text-align: center;
 				}
 				a {
 					margin-left: 47px !important;
-					font-family: 'Fira Sans', sans-serif;
+					
 				}
 				a, span {
 					margin-left: 99px;
@@ -219,7 +191,7 @@ html {
 				a {
 					margin-bottom: 8px;
 					/*font-size: 33px;*/
-					font-size: 2vw;
+					font-size: 1.8vw;
 					color: @brown;
 					display: block;
 					line-height: 25px;
@@ -230,14 +202,14 @@ html {
 					&.callback {
 						background: url("../images/callback-ico.png") left center no-repeat;
 						a {
-							font-family: 'Fira Sans', sans-serif;
+							
 							font-style: italic;
 						}
 					}
 					&.mail {
 						background: url("../images/mail-ico.png") left center no-repeat;
 						a {
-							font-family: 'Fira Sans', sans-serif;
+							
 							font-style: italic;
 						}
 					}
@@ -272,7 +244,6 @@ html {
 							color: @brown;
 							font-size: 22px;
 							&:first-of-type {
-								font-family: @book_medium_regular;
 								font-size: 14px;
 								line-height: 14px;
 								text-align: center;
@@ -290,7 +261,7 @@ html {
 						}
 						&.in-progress {
 							span {
-								font-family: 'Fira Sans', sans-serif;
+								
 								&#amount {
 									font-size: 22px;
 									line-height: 32px;
@@ -306,7 +277,7 @@ html {
 									top: -10px;
 								}
 								&.summary {
-									font-family: 'Fira Sans', sans-serif;
+									
 									font-size: 16px;
 									color: @brown;
 									padding-left: 15px;
@@ -343,7 +314,7 @@ html {
 						color: @brown;
 						font-size: 14px;
 						list-style: none;
-						font-family: 'Fira Sans', sans-serif;
+						
 
 						&:last-of-type {
 							color: @red;
@@ -380,7 +351,7 @@ html {
 						color: @brown;
 						font-size: 18px;
 						display: block;
-						font-family: 'Fira Sans', sans-serif;
+						
 						&:hover {
 							color: @red;
 						}
@@ -414,7 +385,7 @@ html {
 						line-height: 13px;
 						padding-bottom: 12px;
 						text-indent: -4%;
-						font-family: 'Fira Sans', sans-serif;
+						
 					}
 					img {
 						display: block;
@@ -458,7 +429,7 @@ html {
 					}
 					.name,
 					.size {
-						font-family: 'Fira Sans', sans-serif;
+						
 						text-indent: 16px;
 						border-radius: 5px 0 0 5px;
 						background: #feedcf;
@@ -829,7 +800,7 @@ html {
 			p {
 				font-size: 12px;
 				color: @brown;
-				font-family: 'Fira Sans', sans-serif;
+				
 			}
 		}
 	}
