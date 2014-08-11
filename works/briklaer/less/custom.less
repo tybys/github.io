@@ -1,9 +1,5 @@
 @import "../css/fonts.css";
 
-p {
-	font-family:  franklingothicbookcregular;
-}
-
 @brown: #36140a;
 @brown_dark: #38160c;
 @brown_light: #fef8ee;
@@ -16,6 +12,9 @@ p {
 
 * {
 	/*background: black;*/
+}
+p, a, h2 {
+	font-family: 'Fira Sans', sans-serif;
 }
 
 html {
@@ -189,6 +188,7 @@ html {
 					display: none;
 					// #fbebcf
 					// #fef8ee
+					font-family: 'Fira Sans', sans-serif;
 					position: absolute;
 					top: -5px;
 					left: 25px;
@@ -211,6 +211,7 @@ html {
 				}
 				a {
 					margin-left: 47px !important;
+					font-family: 'Fira Sans', sans-serif;
 				}
 				a, span {
 					margin-left: 99px;
@@ -292,6 +293,7 @@ html {
 						}
 						&.in-progress {
 							span {
+								font-family: 'Fira Sans', sans-serif;
 								&#amount {
 									font-size: 22px;
 									line-height: 32px;
@@ -307,6 +309,7 @@ html {
 									top: -10px;
 								}
 								&.summary {
+									font-family: 'Fira Sans', sans-serif;
 									font-size: 16px;
 									color: @brown;
 									padding-left: 15px;
@@ -343,6 +346,8 @@ html {
 						color: @brown;
 						font-size: 14px;
 						list-style: none;
+						font-family: 'Fira Sans', sans-serif;
+
 						&:last-of-type {
 							color: @red;
 						}
@@ -378,7 +383,7 @@ html {
 						color: @brown;
 						font-size: 18px;
 						display: block;
-						font-family: 'Open Sans', sans-serif;
+						font-family: 'Fira Sans', sans-serif;
 						&:hover {
 							color: @red;
 						}
@@ -412,6 +417,7 @@ html {
 						line-height: 13px;
 						padding-bottom: 12px;
 						text-indent: -4%;
+						font-family: 'Fira Sans', sans-serif;
 					}
 					img {
 						display: block;
@@ -826,7 +832,7 @@ html {
 			p {
 				font-size: 12px;
 				color: @brown;
-				font-family: franklin_gothic_bookitalic;
+				font-family: 'Fira Sans', sans-serif;
 			}
 		}
 	}

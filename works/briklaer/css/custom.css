@@ -1,10 +1,12 @@
 @import "../css/fonts.css";
-p {
-  font-family: franklingothicbookcregular;
-}
 * {
   /*background: black;*/
 
+}
+p,
+a,
+h2 {
+  font-family: 'Fira Sans', sans-serif;
 }
 html {
   /*&:before {
@@ -161,6 +163,7 @@ html body {
 }
 .row.header .top .phones .block {
   display: none;
+  font-family: 'Fira Sans', sans-serif;
   position: absolute;
   top: -5px;
   left: 25px;
@@ -182,6 +185,7 @@ html body {
 }
 .row.header .top .phones a {
   margin-left: 47px !important;
+  font-family: 'Fira Sans', sans-serif;
 }
 .row.header .top .phones a,
 .row.header .top .phones span {
@@ -256,6 +260,9 @@ html body {
   top: 27px;
   right: 0;
 }
+.row.header .top .times .right div.in-progress span {
+  font-family: 'Fira Sans', sans-serif;
+}
 .row.header .top .times .right div.in-progress span#amount {
   font-size: 22px;
   line-height: 32px;
@@ -270,6 +277,7 @@ html body {
   top: -10px;
 }
 .row.header .top .times .right div.in-progress span.summary {
+  font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
   color: #36140a;
   padding-left: 15px;
@@ -299,6 +307,7 @@ html body {
   color: #36140a;
   font-size: 14px;
   list-style: none;
+  font-family: 'Fira Sans', sans-serif;
 }
 .row.header .top .times ul li:last-of-type {
   color: #eb2b2f;
@@ -332,7 +341,7 @@ html body {
   color: #36140a;
   font-size: 18px;
   display: block;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 .row.header .menu ul li a:hover {
   color: #eb2b2f;
@@ -366,6 +375,7 @@ html body {
   line-height: 13px;
   padding-bottom: 12px;
   text-indent: -4%;
+  font-family: 'Fira Sans', sans-serif;
 }
 .row.filter .left ul li img {
   display: block;
@@ -758,7 +768,7 @@ html body {
 .row.news .right p {
   font-size: 12px;
   color: #36140a;
-  font-family: franklin_gothic_bookitalic;
+  font-family: 'Fira Sans', sans-serif;
 }
 .row.grid {
   /*.container {
