@@ -826,3 +826,47 @@ html body {
 .row.grid ul li a:hover {
   text-decoration: none;
 }
+.row.item-full .photo-description {
+  padding-top: 39px;
+}
+.row.item-full .photo-description .col-md-7 img {
+  display: block;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.row.item-full .photo-description .col-md-5 .left {
+  float: left;
+  width: 50%;
+}
+.row.item-full .photo-description .col-md-5 .left h3 {
+  font-size: 30px;
+  color: #38160c;
+}
+.row.item-full .photo-description .col-md-5 .left h3 span {
+  display: block;
+  font-size: 21px;
+  color: #939da4;
+}
+.row.item-full .photo-description .col-md-5 .right {
+  width: 50%;
+  float: right;
+}
+.row.item-full .photo-description .col-md-5 .right .actual-price {
+  font-size: 22px;
+  color: #36140a;
+}
+.row.item-full .photo-description .col-md-5 .right a {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  color: #38160c;
+  border: 1px solid #38160c;
+  background: #fef8ee;
+  border-radius: 5px;
+}
+.row.item-full .photo-description .col-md-5 .info {
+  clear: both;
+}
+.row.item-full .photo-description .col-md-5 .info p {
+  font-size: 14px;
+}
