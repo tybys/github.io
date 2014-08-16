@@ -870,3 +870,49 @@ html body {
 .row.item-full .photo-description .col-md-5 .info p {
   font-size: 14px;
 }
+.row.item-full .photo-description .col-md-5 .dimensions {
+  font-size: 14px;
+  position: relative;
+  height: 173px;
+}
+.row.item-full .photo-description .col-md-5 .dimensions .parts-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 120px;
+}
+.row.item-full .photo-description .col-md-5 .dimensions > ul {
+  background: rgba(251, 235, 206, 0.5);
+  border-top: 1px solid black;
+  padding: 0 0 0 40px;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.row.item-full .photo-description .col-md-5 .dimensions > ul li {
+  list-style: none;
+}
+.row.item-full .photo-description .col-md-5 .dimensions .parts {
+  float: left;
+  width: 93px;
+  height: 173px;
+  background: rgba(251, 235, 206, 0.5);
+  border-radius: 5px;
+  margin: 0 12px;
+}
+.row.item-full .photo-description .col-md-5 .dimensions .parts span {
+  display: block;
+  height: 50%;
+}
+.row.item-full .photo-description .col-md-5 .dimensions .parts img {
+  display: block;
+  margin: 0 auto;
+}
+.row.item-full .photo-description .col-md-5 .dimensions .parts ul {
+  margin: 0;
+  padding: 0 20px 0 24px;
+}
+.row.item-full .photo-description .col-md-5 .dimensions .parts ul li {
+  list-style: none;
+}
