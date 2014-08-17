@@ -122,5 +122,16 @@
             console.log($(this).parents(".parr"))
             $(this).parents(".parr").addClass("active")
         });
+        
+        //
+        $(".icons li").hover(function () {
+            $(this).addClass("hovered");
+        }, function ()  {
+            $(this).removeClass("hovered");
+        });
+        
+        $('#cartAccordion').collapse({
+            show: true
+        });
     });
 })(jQuery);
