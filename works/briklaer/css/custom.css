@@ -1402,7 +1402,166 @@ html body {
   width: 50%;
   float: left;
   text-align: left;
+  font-size: 30px;
+  color: #38160c;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body table tr#summary td .left i,
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body table tr#summary td .right i {
+  color: rgba(56, 23, 12, 0.5);
+  font-size: 21px;
+  font-style: normal;
 }
 .row.panel-cart .panel-group .panel .panel-collapse .panel-body table tr#summary td .right {
   text-align: right;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body table tr#summary td .right i {
+  color: inherit;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body table tr.thead th {
+  font-size: 14px;
+  color: #939da4;
+  font-style: italic;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body table tr td.img img {
+  border: 1px solid #38160c;
+  width: 96px;
+  height: 96px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body table tr td.item .title {
+  font-size: 16px;
+  color: #38160c;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body table tr td.item .options {
+  display: block;
+  font-size: 16px;
+  color: rgba(56, 23, 12, 0.5);
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body table tr td.price span {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 44px;
+  color: #38160c;
+  border: 1px solid #38160c;
+  background: #fef8ee;
+  border-radius: 5px;
+  width: 90%;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body table tr td.amount .calc {
+  width: 152px;
+  height: 45px;
+  position: relative;
+  background: #fef8ee;
+  border: 1px solid #38160c;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 90%;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body table tr td.amount .calc span {
+  position: absolute;
+  height: 45px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body table tr td.amount .calc span.left {
+  top: 0;
+  left: 0;
+  width: 35%;
+  font-size: 40px;
+  text-align: center;
+  line-height: 51px;
+  cursor: pointer;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body table tr td.amount .calc span.right {
+  right: 0;
+  width: 35%;
+  font-size: 40px;
+  text-align: center;
+  line-height: 51px;
+  cursor: pointer;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body table tr td.amount .calc span.amount {
+  left: calc(50% - 13px);
+  left: -webkit-calc(50% - 13px);
+  top: calc(50% - 17px);
+  top: -webkit-calc(50% - 17px);
+  font-size: 22px;
+  line-height: 36px;
+  background: #eb2b2f;
+  border-radius: 100px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  color: #ffffff;
+  text-align: center;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body table tr td.total-price span {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 44px;
+  color: #38160c;
+  border: 1px solid #38160c;
+  background: #fef8ee;
+  border-radius: 5px;
+  width: 90%;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body .hot-deals {
+  width: 55%;
+  float: left;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body .hot-deals h3 {
+  font-size: 30px;
+  color: red;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body .hot-deals p {
+  font-size: 16px;
+  color: #38160c;
+  max-width: 550px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body .hot-deals p span {
+  color: red;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body .hot-deals p a {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 44px;
+  color: #38160c;
+  border: 1px solid #38160c;
+  background: #fef8ee;
+  border-radius: 5px;
+  width: 35%;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body table.what-difference-is-the-question td.no-active a {
+  opacity: 0.5;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body table.what-difference-is-the-question td img {
+  width: 153px;
+  height: 153px;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #38160c;
+  border-radius: 10px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body table.what-difference-is-the-question td h5 {
+  font-size: 16px;
+  color: #38160c;
+  padding: 0 5px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body table.what-difference-is-the-question td p {
+  font-size: 12px;
+  color: #38160c;
+  padding: 0 5px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body table.what-difference-is-the-question td a {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  line-height: 32px;
+  color: #38160c;
+  border: 1px solid #38160c;
+  background: #fef8ee;
+  border-radius: 5px;
+  width: 90%;
 }

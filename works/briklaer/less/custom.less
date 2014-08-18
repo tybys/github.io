@@ -1526,39 +1526,185 @@ html {
                                             width: 50%;
                                             float: left;
                                             text-align: left;
+                                            font-size: 30px;
+                                            color: @brown_dark;
                                             i {
-                                                
+                                                color: rgba(56, 23, 12, 0.5);
+                                                font-size: 21px;
+                                                font-style: normal;
                                             }
                                         }
                                         .right {
                                             text-align: right;
                                             i {
-                                                
+                                                color: inherit;
                                             }
                                         }
                                     }
                                 }
-                                &.head {
+                                &.thead {
                                     th {
-                                        
+                                        font-size: 14px;
+                                        color: #939da4;
+                                        font-style: italic;
                                     }
                                 }
                                 td {
                                     &.img {
-                                        
+                                        img {
+                                            border: 1px solid @brown_dark;
+                                            width: 96px;
+                                            height: 96px;
+                                        }
                                     }
                                     &.item {
-                                        
+                                        .title {
+                                            font-size: 16px;
+                                            color: @brown_dark;
+                                        }
+                                        .options {
+                                            display: block;
+                                            font-size: 16px;
+                                            color: rgba(56, 23, 12, 0.5);
+                                        }
                                     }
-                                    &.price {
-                                        
+                                    &.price span {
+                                        display: block; 
+                                        text-align: center;
+                                        font-size: 16px;
+                                        line-height: 44px;
+                                        color: rgb(56, 22, 12);
+                                        border: 1px solid rgb(56, 22, 12);
+                                        background: rgb(254, 248, 238);
+                                        border-radius: 5px;
+                                        width: 90%;
                                     }
                                     &.amount {
-                                        
+                                        .calc {
+                                            width: 152px;
+                                            height: 45px;
+                                            position: relative;
+                                            background: rgb(254, 248, 238);
+                                            border: 1px solid rgb(56, 22, 12);
+                                            border-radius: 5px;
+                                            display: inline-block;
+                                            vertical-align: middle;
+                                            width: 90%;
+                                            span {
+                                                position: absolute;
+                                                height: 45px;
+                                                &.left {
+                                                    top: 0;
+                                                    left: 0;
+                                                    width: 35%;
+                                                    font-size: 40px;
+                                                    text-align: center;
+                                                    line-height: 51px;
+                                                    cursor: pointer;
+                                                }
+                                                &.right {
+                                                    right: 0;
+                                                    width: 35%;
+                                                    font-size: 40px;
+                                                    text-align: center;
+                                                    line-height: 51px;
+                                                    cursor: pointer;
+                                                }
+                                                &.amount {
+                                                    left: ~"calc(50% - 13px)";
+                                                    left: ~"-webkit-calc(50% - 13px)";
+                                                    top: ~"calc(50% - 17px)";
+                                                    top: ~"-webkit-calc(50% - 17px)";
+                                                    font-size: 22px;
+                                                    line-height: 36px;
+                                                    background: rgb(235, 43, 47);
+                                                    border-radius: 100px;
+                                                    display: inline-block;
+                                                    width: 32px;
+                                                    height: 32px;
+                                                    color: rgb(255, 255, 255);
+                                                    text-align: center;
+                                                }
+                                            }
+                                        }
                                     }
-                                    &.total-price {
-                                        
+                                    &.total-price span {
+                                        display: block; 
+                                        text-align: center;
+                                        font-size: 16px;
+                                        line-height: 44px;
+                                        color: rgb(56, 22, 12);
+                                        border: 1px solid rgb(56, 22, 12);
+                                        background: rgb(254, 248, 238);
+                                        border-radius: 5px;
+                                        width: 90%;
                                     }
+                                }
+                            }
+                        }
+                        .hot-deals {
+                            width: 55%;
+                            float: left;
+                            h3 {
+                                font-size: 30px;
+                                color: red;
+                            }
+                            p {
+                                font-size: 16px;
+                                color: @brown_dark;
+                                max-width: 550px;
+                                span {
+                                    color: red;
+                                }
+                                a {
+                                    display: block; 
+                                    text-align: center;
+                                    font-size: 16px;
+                                    line-height: 44px;
+                                    color: rgb(56, 22, 12);
+                                    border: 1px solid rgb(56, 22, 12);
+                                    background: rgb(254, 248, 238);
+                                    border-radius: 5px;
+                                    width: 35%;
+                                }
+                            }
+                        }
+                        table.what-difference-is-the-question {
+                            td {
+                                &.no-active {
+                                    a {
+                                        opacity: 0.5;
+                                    }
+                                }
+                                img {
+                                    width: 153px;
+                                    height: 153px;
+                                    margin: 0 auto;
+                                    display: block;
+                                    border: 1px solid @brown_dark;
+                                    border-radius: 10px;
+                                }
+                                h5 {
+                                    font-size: 16px;
+                                    color: @brown_dark;
+                                    padding: 0 5px;
+                                }
+                                p {
+                                    font-size: 12px;
+                                    color: @brown_dark;
+                                    padding: 0 5px;
+                                }
+                                a {
+                                    display: block;
+                                    margin: 0 auto;
+                                    text-align: center;
+                                    font-size: 16px;
+                                    line-height: 32px;
+                                    color: rgb(56, 22, 12);
+                                    border: 1px solid rgb(56, 22, 12);
+                                    background: rgb(254, 248, 238);
+                                    border-radius: 5px;
+                                    width: 90%;
                                 }
                             }
                         }
