@@ -1377,11 +1377,28 @@ html body {
   border-radius: 5px 5px 0 0;
 }
 .row.panel-cart .panel-group .panel .panel-heading h4 {
+  position: relative;
   line-height: 70px;
 }
 .row.panel-cart .panel-group .panel .panel-heading h4 a {
   font-size: 24px;
   color: #38160c;
+}
+.row.panel-cart .panel-group .panel .panel-heading h4 a.custom-anchor {
+  background: #fbebce;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+  line-height: 41px;
+  color: #38160c;
+  border: 1px solid #38160c;
+  border-radius: 5px;
+  width: 202px;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 20px);
+  top: -webkit-calc(50% - 20px);
 }
 .row.panel-cart .panel-group .panel .panel-heading h4 a span {
   font-size: 22px;

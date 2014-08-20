@@ -1496,10 +1496,29 @@ html {
                     border: 1px solid @brown_dark;
                     border-radius: 5px 5px 0 0;
                     h4 {
+                        position: relative;
                         line-height: 70px;
                         a {
                             font-size: 24px;
                             color: @brown_dark;
+                            &.custom-anchor {
+                                background: #fbebce;
+                                
+                                display: block;
+                                margin: 0 auto;
+                                text-align: center;
+                                font-size: 24px;
+                                line-height: 41px;
+                                color: rgb(56, 22, 12);
+                                border: 1px solid rgb(56, 22, 12);
+                                border-radius: 5px;
+                                width: 202px;
+                                
+                                position: absolute;
+                                right: 0;
+                                top: ~"calc(50% - 20px)";
+                                top: ~"-webkit-calc(50% - 20px)";
+                            }
                             span {
                                 font-size: 22px;
                                 line-height: 36px;

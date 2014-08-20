@@ -111,9 +111,10 @@
                             <div class="panel-heading">
                                 <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Шаг <span>1</span> Проверьте вашу Корзину</a>
+                                    <a href="#" class="custom-anchor">Правка</a>
                                 </h4>
                             </div>
-                            <div id="collapseOne" class="panel-collapse collapse in">
+                            <div id="collapseOne" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <table border="1" width="100%">
                                         <tbody>
@@ -187,6 +188,61 @@
                                         </tbody>
                                     </table>
                                     
+                                    <table border="1" width="100%">
+                                        <tbody>
+                                            <tr id="summary">
+                                                <td colspan="5">
+                                                    <span class="left">Хоккайдо 75 <i>Серая девественница</i></span>
+                                                </td>
+                                            </tr>
+                                            <tr class="thead">
+                                                <th>Фото</th>
+                                                <th>Наименования товара</th>
+                                                <th align="center" width="15%">Количество</th>
+                                                <th width="15%">Сумма</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="img">
+                                                    <img src="images/item-photo-thumb.png">
+                                                </td>
+                                                <td class="item">
+                                                    <span class="title">Тумба с раковиной Хоккайдо 75</span>
+                                                    <span class="options">Серая лиственница | Правая</span>
+                                                </td>
+                                                <td class="amount" align="center">
+                                                    1
+                                                </td>
+                                                <td class="total-price"><span>11 200 руб.</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="img">
+                                                    <img src="images/item-photo-thumb.png">
+                                                </td>
+                                                <td class="item">
+                                                    <span class="title">Тумба с раковиной Хоккайдо 75</span>
+                                                    <span class="options">Серая лиственница | Правая</span>
+                                                </td>
+                                                <td align="center" class="amount">
+                                                    2
+                                                </td>
+                                                <td class="total-price"><span>11 200 руб.</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="img">
+                                                    <img src="images/item-photo-thumb.png">
+                                                </td>
+                                                <td class="item">
+                                                    <span class="title">Тумба с раковиной Хоккайдо 75</span>
+                                                    <span class="options">Серая лиственница | Правая</span>
+                                                </td>
+                                                <td align="center" class="amount">
+                                                    3
+                                                </td>
+                                                <td class="total-price"><span>11 200 руб.</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
                                     <div class="hot-deals">
                                         <h3>Мы дарим подарки!</h3>
                                         
@@ -229,10 +285,124 @@
                                 <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Шаг <span>2</span> Заполните все обязательные поля</a>
                                 </h4>
+                                <ul>
+                                    <li>Ошибка</li>
+                                    <li>Ошбика</li>
+                                    <li>Ошбика</li>
+                                    <li>Ошибка</li>
+                                </ul>
                             </div>
-                            <div id="collapseTwo" class="panel-collapse collapse">
+                            <div id="collapseTwo" class="panel-collapse collapse in">
                                 <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    <form>
+                                        <fieldset>
+                                            <legend>Введите контактную информацию</legend>
+                                            <div class="form-wrap">
+                                                <div>
+                                                    <label>имя отправителя</label>
+                                                    <input type="text" />
+                                                </div>
+
+                                                <div>
+                                                    <label>мобильный телефон</label>
+                                                    <input type="text" />
+                                                </div>
+
+                                                <div>
+                                                    <label>электронная почта</label>
+                                                    <input type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <h6>Текст о доставке</h6>
+                                                <p>
+                                                    Наш курьер доставит заказ по указанному адресу с 9:00 до 23:00. После
+                                                    предварительного звонка оператора курьер дополнительно свяжется
+                                                    для предупреждения о выезде по адресу доставки (ориентировочно за 1 час).
+                                                    При оплате картой курьер интернет-магазина приедет с товаром и переносным
+                                                    терминалом, с помощью которого можно будет осуществить оплату. Внимание!
+                                                    Только в пределах МКАД.
+                                                    Доставка за пределы МКАД осуществляется на следующий день после
+                                                    оформления заказа.
+                                                </p>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset>
+                                            <legend>Выберите удобный способ доставки</legend>
+                                            <a class="act" href="#">Доставка</a>
+                                            <a class="no-act" href="#">Самовывоз</a>
+                                            <div class="additional-form-wrapper">
+                                                <div>
+                                                    <label>Город</label>
+                                                    <a href="#">Москва</a>
+                                                    <span>ya</span>
+                                                </div>
+                                                <div>
+                                                    <label>Улица</label>
+                                                    <input type="text" />
+                                                </div>
+                                                <div>
+                                                    <label>Метро</label>
+                                                    <input type="text" />
+                                                </div>
+                                                
+                                                <div class="dom">
+                                                    <div class="left">
+                                                        <label>Дом</label>
+                                                        <input type="text" />
+                                                    </div>
+                                                    <div class="right">
+                                                        <label>Корпус / Строение</label>
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="padik">
+                                                    <div class="left">
+                                                        <label>Подъезд</label>
+                                                        <input type="text" />
+                                                    </div>
+                                                    <div class="right">
+                                                        <label>Этаж</label>
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="xata">
+                                                    <div class="left">
+                                                        <label>Квартира</label>
+                                                        <input type="text" />
+                                                    </div>
+                                                    <div class="right">
+                                                        <label>Домафон</label>
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <span>Комментарий к заказу, пожелания время доставки</span>
+                                            <div class="additional-form-wrapper">
+                                                <textarea></textarea>
+                                            </div>
+                                            
+                                            <div class="">
+                                                <h6>Подъем</h6>
+                                                <p>
+                                                    Наш курьер доставит заказ по указанному адресу
+                                                    с 9:00 до 23:00. После предварительного звонка
+                                                    оператора курьер дополнительно свяжется для
+                                                    предупреждения о выезде по адресу доставки
+                                                    (ориентировочно за 1 час).
+                                                </p>
+                                                
+                                                <h6>Конфенедциальность</h6>
+                                                <p>
+                                                    Текст о защите данных и о не передавании
+                                                    их третьим лицам и прочая жесть
+                                                </p>
+                                            </div>
+                                        </fieldset>
+                                    </form>
                                 </div>
                             </div>
                         </div>
