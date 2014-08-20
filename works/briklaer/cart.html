@@ -114,7 +114,7 @@
                                     <a href="#" class="custom-anchor">Правка</a>
                                 </h4>
                             </div>
-                            <div id="collapseOne" class="panel-collapse collapse">
+                            <div id="collapseOne" class="panel-collapse collapse in">
                                 <div class="panel-body">
                                     <table border="1" width="100%">
                                         <tbody>
@@ -299,7 +299,7 @@
                                             <legend>Введите контактную информацию</legend>
                                             <div class="form-wrap">
                                                 <div>
-                                                    <label>имя отправителя</label>
+                                                    <label>имя отправителя <span class="required">*</span></label>
                                                     <input type="text" />
                                                 </div>
 
@@ -313,7 +313,7 @@
                                                     <input type="text" />
                                                 </div>
                                             </div>
-                                            <div class="">
+                                            <div class="form-wrap-info">
                                                 <h6>Текст о доставке</h6>
                                                 <p>
                                                     Наш курьер доставит заказ по указанному адресу с 9:00 до 23:00. После
@@ -327,82 +327,139 @@
                                                 </p>
                                             </div>
                                         </fieldset>
-                                        <fieldset>
+                                        <fieldset class="box-form">
                                             <legend>Выберите удобный способ доставки</legend>
-                                            <a class="act" href="#">Доставка</a>
-                                            <a class="no-act" href="#">Самовывоз</a>
+                                            <span class="legend-custom">
+                                                <a class="act" href="#">Курьерская доставка</a>
+                                                <a class="no-act" href="#">Самовывоз</a>
+                                            </span>
                                             <div class="additional-form-wrapper">
-                                                <div>
-                                                    <label>Город</label>
-                                                    <a href="#">Москва</a>
-                                                    <span>ya</span>
-                                                </div>
-                                                <div>
-                                                    <label>Улица</label>
-                                                    <input type="text" />
-                                                </div>
-                                                <div>
-                                                    <label>Метро</label>
-                                                    <input type="text" />
-                                                </div>
-                                                
-                                                <div class="dom">
-                                                    <div class="left">
-                                                        <label>Дом</label>
-                                                        <input type="text" />
+                                                <div class="forms">
+                                                    <div class="additional-form kubic-form">
+                                                        <div class="simple">
+                                                            <label>Город</label>
+                                                            <a href="#">Москва</a>
+                                                            <span>ya</span>
+                                                        </div>
+                                                        <div class="simple">
+                                                            <label>Улица</label>
+                                                            <input type="text" />
+                                                        </div>
+                                                        <div class="simple">
+                                                            <label>Метро</label>
+                                                            <input type="text" />
+                                                        </div>
+
+                                                        <div class="dom">
+                                                            <div class="left">
+                                                                <label>Дом</label>
+                                                                <input type="text" />
+                                                            </div>
+                                                            <div class="right">
+                                                                <label>Корпус /<br/>Строение</label>
+                                                                <input type="text" />
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="padik">
+                                                            <div class="left">
+                                                                <label>Подъезд</label>
+                                                                <input type="text" />
+                                                            </div>
+                                                            <div class="right">
+                                                                <label>Этаж</label>
+                                                                <input type="text" />
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="xata">
+                                                            <div class="left">
+                                                                <label>Квартира</label>
+                                                                <input type="text" />
+                                                            </div>
+                                                            <div class="right">
+                                                                <label>Домафон</label>
+                                                                <input class="domofon" type="text" />
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="right">
-                                                        <label>Корпус / Строение</label>
-                                                        <input type="text" />
+
+                                                    <div class="additional-form textarea">
+                                                        <span class="legend-custom">Комментарий к заказу,<br/>пожелания время<br/>доставки</span>
+                                                        <textarea></textarea>
                                                     </div>
                                                 </div>
-                                                
-                                                <div class="padik">
-                                                    <div class="left">
-                                                        <label>Подъезд</label>
-                                                        <input type="text" />
-                                                    </div>
-                                                    <div class="right">
-                                                        <label>Этаж</label>
-                                                        <input type="text" />
-                                                    </div>
+                                                <div class="box-form-info">
+                                                    <h6>Подъем</h6>
+                                                    <p>
+                                                        Наш курьер доставит заказ по указанному адресу
+                                                        с 9:00 до 23:00. После предварительного звонка
+                                                        оператора курьер дополнительно свяжется для
+                                                        предупреждения о выезде по адресу доставки
+                                                        (ориентировочно за 1 час).
+                                                    </p>
+
+                                                    <h6>Конфенедциальность</h6>
+                                                    <p>
+                                                        Текст о защите данных и о не передавании
+                                                        их третьим лицам и прочая жесть
+                                                    </p>
                                                 </div>
-                                                
-                                                <div class="xata">
-                                                    <div class="left">
-                                                        <label>Квартира</label>
-                                                        <input type="text" />
-                                                    </div>
-                                                    <div class="right">
-                                                        <label>Домафон</label>
-                                                        <input type="text" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <span>Комментарий к заказу, пожелания время доставки</span>
-                                            <div class="additional-form-wrapper">
-                                                <textarea></textarea>
-                                            </div>
-                                            
-                                            <div class="">
-                                                <h6>Подъем</h6>
-                                                <p>
-                                                    Наш курьер доставит заказ по указанному адресу
-                                                    с 9:00 до 23:00. После предварительного звонка
-                                                    оператора курьер дополнительно свяжется для
-                                                    предупреждения о выезде по адресу доставки
-                                                    (ориентировочно за 1 час).
-                                                </p>
-                                                
-                                                <h6>Конфенедциальность</h6>
-                                                <p>
-                                                    Текст о защите данных и о не передавании
-                                                    их третьим лицам и прочая жесть
-                                                </p>
                                             </div>
                                         </fieldset>
+                                        
+                                        <fieldset class="radios">
+                                            <legend>Способ оплаты</legend>
+                                            <label>
+                                                <input type="radio" name="payment">
+                                                Наличный расчет
+                                                <p>Расплатиться наличными можно непосредственно с курьером, когда он доставит заказ, либо
+                                                в офисе при самовывозе.</p>
+                                            </label>
+                                            
+                                            <label>
+                                                <input type="radio" name="payment">
+                                                Оплата платежной картой при получении заказа <img src="images/cards.png">
+                                                <p>Курьер интернет-магазина приедет с товаром и переносным терминалом, с помощью которого
+                                                можно будет осуществить оплату. В случае выбора самовывоза в качестве способа доставки картой
+                                                можно расплатиться в пункте выдачи товара.
+                                                </p>
+                                            </label>
+                                            
+                                            <label>
+                                                <input type="radio" name="payment">
+                                                Безналичный расчет
+                                                <p>Оплата товара по безналичному расчёту возможна всеми юридическими и физическими лицами.
+                                                После получения заказа Вам высылается счёт по электронной почте или по факсу.</p>
+                                            </label>
+                                            
+                                            <label>
+                                                <input type="radio" name="payment">
+                                                Онлайн-оплата платежной картой у нас на сайте <img src="images/cards.png">
+                                                <p>При заказе на сайте к оплате принимаются только карты VISA и MasterCard.</p>
+                                            </label>
+                                        </fieldset>
                                     </form>
+                                    
+                                    <div class="confirm">
+                                        <h6>Введите контакнтную информацию</h6>
+                                        <p>
+                                            <strong>Контактная информация</strong>
+                                            Олег , +7 (674) 457-46-35, oa_100rozhevskih@mail.ru
+                                        </p>
+                                        <p>
+                                            <strong>Оплата</strong>
+                                            Онлайн-оплата платежной картой
+                                        </p>
+                                        <p>
+                                            <strong>Способ доставки</strong>
+                                            Самовывоз,<br/>
+                                            ТЦ «Галион»<br/>
+                                            Московская область, г. Балашиха, шоссе Энтузиастов, дом 54А, 3 этаж, павильон 310<br/>
+                                            тел.: +7 (926) 911-90-08, 988-22-52 доб.1<br/>
+                                            время работы: с 10.00 до 21.00 ежедневно 
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -412,9 +469,18 @@
                                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Шаг <span>3</span> Отправьте заказ. Мы доставим вовремя!</a>
                                 </h4>
                             </div>
-                            <div id="collapseThree" class="panel-collapse collapse">
+                            <div id="collapseThree" class="panel-collapse collapse in third">
                                 <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    <span class="left">
+                                        <a href="#">Введите промокод</a>
+                                    </span>
+                                    <span class="right">
+                                        <label>
+                                            <input type="checkbox" />
+                                            C условиями договора оферты ознакомился и согласен
+                                        </label>
+                                        <a href="#" class="custom-anchor">Продолжить</a>
+                                    </span>
                                 </div>
                             </div>
                         </div>

@@ -1362,7 +1362,8 @@ html body {
   padding: 0;
 }
 .row.panel-cart .collapsing {
-  -webkit-transform: rotate(20deg);
+  /*-webkit-transform: rotate(20deg);*/
+
 }
 .row.panel-cart .panel-group {
   border: 1px solid #38160c;
@@ -1375,6 +1376,15 @@ html body {
   background: #fef8ee;
   border: 1px solid #38160c;
   border-radius: 5px 5px 0 0;
+  padding: 75px;
+}
+.row.panel-cart .panel-group .panel .panel-heading ul {
+  padding: 0;
+  margin: 0;
+}
+.row.panel-cart .panel-group .panel .panel-heading ul li {
+  list-style: none;
+  color: red;
 }
 .row.panel-cart .panel-group .panel .panel-heading h4 {
   position: relative;
@@ -1412,6 +1422,7 @@ html body {
   text-align: center;
 }
 .row.panel-cart .panel-group .panel .panel-collapse .panel-body {
+  padding: 75px;
   border-top: 0 !important;
 }
 .row.panel-cart .panel-group .panel .panel-collapse .panel-body table tr#summary td .left,
@@ -1581,4 +1592,256 @@ html body {
   background: #fef8ee;
   border-radius: 5px;
   width: 90%;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset legend {
+  border: none;
+  font-size: 24px;
+  color: #38160c;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset .required {
+  color: red;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset label {
+  font-size: 14px;
+  color: #38160c;
+  width: 169px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset h6 {
+  font-size: 18px;
+  color: #38160c;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset p {
+  font-size: 14px;
+  color: #38160c;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset input {
+  border: 1px solid #939da4;
+  border-radius: 5px;
+  width: 238px;
+  height: 33px;
+  margin: 5.5px 0;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.radios {
+  margin-top: 11.5%;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.radios label {
+  width: auto;
+  font-size: 18px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.radios input {
+  margin-right: 35px;
+  width: auto;
+  height: auto;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.radios p {
+  margin-left: 56px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset .form-wrap {
+  display: inline-block;
+  vertical-align: top;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset .form-wrap-info {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  margin-left: 51px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset .form-wrap-info p {
+  line-height: 19px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset .form-wrap-info h6 {
+  margin-top: 5px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form {
+  margin-top: 13px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form legend {
+  margin-bottom: 22px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .forms {
+  display: inline-block;
+  width: 42%;
+  vertical-align: top;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .box-form-info {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  margin-left: 8%;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .box-form-info h6 {
+  margin-top: 0;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .legend-custom {
+  float: left;
+  font-size: 14px;
+  color: #38160c;
+  margin-right: 32px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .legend-custom a {
+  display: block;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .legend-custom a.act {
+  font-size: 14px;
+  color: #38160c;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .legend-custom a.no-act {
+  text-decoration: underline;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form {
+  border: 1px solid #939da4;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 5px;
+  padding: 24px 28px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.textarea {
+  padding-left: 0;
+  border: none;
+  border-raduis: none;
+  position: relative;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.textarea .legend-custom {
+  position: absolute;
+  left: -175px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.textarea textarea {
+  border: 1px solid #939da4;
+  border-radius: 5px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.kubic-form {
+  padding: 24px 0 24px 28px;
+  margin-top: 5px;
+  width: 462px;
+  height: 284px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.kubic-form .simple label {
+  width: 85px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.kubic-form input {
+  width: 236px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.kubic-form .dom input {
+  width: 51px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.kubic-form .dom .left {
+  display: inline-block;
+  width: 148px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.kubic-form .dom .left label {
+  min-width: 85px;
+  width: auto;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.kubic-form .dom .right {
+  margin-left: 33px;
+  display: inline-block;
+  width: 148px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.kubic-form .dom .right label {
+  min-width: 85px;
+  line-height: 14px;
+  vertical-align: text-top;
+  width: auto;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.kubic-form .padik input {
+  width: 51px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.kubic-form .padik .left {
+  display: inline-block;
+  width: 148px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.kubic-form .padik .left label {
+  min-width: 85px;
+  width: auto;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.kubic-form .padik .right {
+  margin-left: 33px;
+  display: inline-block;
+  width: 148px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.kubic-form .padik .right label {
+  min-width: 85px;
+  width: auto;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.kubic-form .xata input {
+  width: 51px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.kubic-form .xata .left {
+  display: inline-block;
+  width: 148px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.kubic-form .xata .left label {
+  min-width: 85px;
+  width: auto;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.kubic-form .xata .right {
+  margin-left: 33px;
+  position: relative;
+  display: inline-block;
+  width: 148px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.kubic-form .xata .right label {
+  min-width: 85px;
+  width: auto;
+  vertical-align: text-top;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form.kubic-form .xata .right .domofon {
+  position: absolute;
+  top: -10px;
+  right: -65px;
+  width: 125px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form:nth-child(2) label {
+  vertical-align: top;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form .additional-form textarea {
+  border: none;
+  resize: none;
+  width: 460px;
+  height: 113px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body form fieldset.box-form legend ~ a {
+  display: block;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body .confirm h6 {
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body .confirm p {
+  font-size: 16px;
+  color: #757474;
+  margin-bottom: 25px;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body .confirm p strong {
+  display: block;
+  color: #38160c;
+}
+.row.panel-cart .panel-group .panel .panel-collapse .panel-body .custom-anchor {
+  background: #fbebce;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+  line-height: 41px;
+  color: #38160c;
+  border: 1px solid #38160c;
+  border-radius: 5px;
+  width: 202px;
+  position: absolute;
+  right: 0;
+  top: calc(30%);
+  top: -webkit-calc(30%);
+}
+.row.panel-cart .panel-group .panel .third .left {
+  width: 20%;
+  float: left;
+}
+.row.panel-cart .panel-group .panel .third .right {
+  width: 70%;
+  float: right;
+  text-align: right;
+}
+.row.panel-cart .panel-group .panel .third .custom-anchor {
+  display: inline-block !important;
+  position: static !important;
 }
