@@ -1,0 +1,315 @@
+.container {
+  width: 670px;
+}
+.special-hr {
+  background: #f7f7f7;
+  height: 2px;
+  margin: 0;
+}
+h1 {
+  font-size: 13px;
+  font-weight: bold;
+  color: #3677ba;
+  margin: 0;
+  padding: 0;
+}
+.row.head .container {
+  padding: 25px 25px 15px 25px;
+}
+.row.head .col-md-8 span {
+  font-size: 11px;
+  color: #979797;
+}
+.row.head .col-md-4 {
+  text-align: right;
+}
+.row.head .col-md-12 p {
+  margin-top: 20px;
+  font-size: 11px;
+  color: black;
+}
+.row.slider {
+  margin-bottom: 25px;
+  height: 140px;
+}
+.row.slider .container {
+  height: 100%;
+}
+.row.slider .water {
+  background-color: #3677ba;
+  width: 426px;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.row.slider .water #beacon {
+  background: url("../images/beacon.svg");
+  width: 22px;
+  height: 61px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.row.slider .water #ship {
+  background: url("../images/ship.svg");
+  width: 238px;
+  height: 55px;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.row.slider .water #yacht {
+  background: url("../images/yacht.svg");
+  width: 128px;
+  height: 64px;
+  position: absolute;
+  top: 25%;
+  right: 10%;
+}
+.row.slider .water #firstWave {
+  background: url("../images/first-wave.svg");
+  width: 124px;
+  height: 120px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: wave1;
+  -webkit-animation-duration: 5.5s;
+}
+@-webkit-keyframes wave1 {
+  0% {
+    top: 10px;
+  }
+  30% {
+    top: 20px;
+  }
+  60% {
+    top: 15px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+.row.slider .water #secondWave {
+  background: url("../images/second-wave.svg");
+  width: 91px;
+  height: 110px;
+  position: absolute;
+  top: 10px;
+  right: 124px;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: wave2;
+  -webkit-animation-duration: 5.5s;
+  -webkit-animation-delay: 1s;
+}
+@-webkit-keyframes wave2 {
+  0% {
+    top: 10px;
+  }
+  30% {
+    top: 20px;
+  }
+  60% {
+    top: 15px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+.row.slider .water #thirdWave {
+  background: url("../images/third-wave.svg");
+  width: 80px;
+  height: 109px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: wave3;
+  -webkit-animation-duration: 5.5s;
+  -webkit-animation-delay: 2s;
+}
+@-webkit-keyframes wave3 {
+  0% {
+    top: 10px;
+  }
+  30% {
+    top: 20px;
+  }
+  60% {
+    top: 15px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+.row.slider .ground {
+  width: calc(100% - 426px);
+  width: -webkit-calc(100% - 426px);
+  margin: 0 0 0 auto;
+  background: #fbb03b;
+  height: 100%;
+  position: relative;
+}
+.row.slider .ground .house-green-left {
+  background: url("../images/house-green.svg");
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.row.slider .ground .house-red-left {
+  background: url("../images/house-red.svg");
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  top: 30%;
+}
+.row.slider .ground .house-blue-left {
+  background: url("../images/house-blue.svg");
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  top: 60%;
+}
+.row.slider .ground .building {
+  background: url("../images/building.svg");
+  width: 75px;
+  height: 110px;
+  margin: 0 auto;
+}
+.row.slider .ground .house-blue-right {
+  background: url("../images/house-blue.svg");
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  top: 0%;
+}
+.row.slider .ground .house-red-right {
+  background: url("../images/house-red.svg");
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  top: 30%;
+}
+.row.slider .ground .house-green-right {
+  background: url("../images/house-green.svg");
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  top: 60%;
+}
+.row.slider .ground .people {
+  background: url("../images/people.svg");
+  width: 76px;
+  height: 13px;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+}
+.row.content .col-md-4 p {
+  color: #555555;
+  font-size: 11px;
+  line-height: 13px;
+  height: 38px;
+}
+.row.content .col-md-4 span {
+  margin-bottom: 20px;
+  display: inline-block;
+  background: none;
+  font-weight: normal;
+  font-size: 11px;
+}
+.row.content .col-md-4 span.label-danger {
+  border: 1px dashed #cd5252;
+  color: #cd5252;
+}
+.row.content .col-md-4 span.label-default {
+  border: 1px dashed #c3cbd4;
+  color: #c3cbd4;
+}
+.row.content .col-md-4 a {
+  font-size: 11px;
+  color: white;
+  line-height: 11px;
+  background: #0070cd;
+  padding: 10px;
+  border-radius: 0;
+  position: relative;
+  border: none;
+}
+.row.content .col-md-4 a:after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #cdd4f2;
+  display: block;
+}
+.row.pre-footer .col-md-4 {
+  margin-bottom: 15px;
+}
+.row.pre-footer .col-md-4 h2 {
+  color: #555555;
+  font-size: 11px;
+}
+.row.pre-footer .col-md-4.contract ul {
+  margin: 0;
+  padding: 0;
+}
+.row.pre-footer .col-md-4.contract ul li {
+  color: #3677ba;
+  font-size: 11px;
+  background: url("../images/doc.svg") no-repeat left center;
+  list-style: none;
+  margin: 0 0 15px 0;
+  padding: 0 0 0 20px;
+  line-height: 25px;
+}
+.row.pre-footer .col-md-4.info ul {
+  padding: 0;
+  margin: 0;
+}
+.row.pre-footer .col-md-4.info ul li {
+  list-style: none;
+  font-size: 11px;
+  color: black;
+}
+.row.pre-footer .col-md-4.info ul li span {
+  display: block;
+  font-size: 9px;
+  color: #555555;
+}
+.row.pre-footer .col-md-4.callback {
+  font-size: 11px;
+  color: #555555;
+}
+.row.pre-footer .col-md-4.callback p {
+  margin-top: 20px;
+}
+.row.pre-footer .col-md-4.callback a {
+  color: #3677ba;
+  text-decoration: none;
+}
+.row.pre-footer .special-hr {
+  width: calc(100% - 25px);
+  width: -webkit-calc(100% - 25px);
+  margin: 0 auto;
+}
+.row.pre-footer .special-hr:first-of-type {
+  margin: 45px 0 20px 0;
+}
+.row.pre-footer .special-hr:last-of-type {
+  margin-bottom: 20px;
+}
+.row.footer .container {
+  padding: 25px;
+}
