@@ -4,377 +4,454 @@
 @water: @blue;
 @gray: rgb(85, 85, 85);
 
+// animation
+.water {
+    &.start {
+        #ship {
+            -webkit-animation-iteration-count: 1;
+            -webkit-animation-fill-mode: forwards;
+            -webkit-animation-name: ship;
+            -webkit-animation-duration: 7.5s;
+            -webkit-animation-delay: 2s;
+
+            @-webkit-keyframes ship {
+                from {
+                    left: -30%;
+                }
+                to {
+                    left: 0%;
+                }
+            }
+        }
+        #yacht {
+            -webkit-animation-iteration-count: 1;
+            -webkit-animation-fill-mode: forwards;
+            -webkit-animation-name: yacht;
+            -webkit-animation-duration: 3.5s;
+            -webkit-animation-delay: 2s;
+
+            z-index: 222;
+
+            @-webkit-keyframes yacht {
+                from {
+                    right: -20%;
+                }
+                to {
+                    right: 10%;
+                }
+            }
+        }
+        #firstWave {
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-name: wave1;
+            -webkit-animation-duration: 5.5s;
+
+            @-webkit-keyframes wave1 {
+                0% {
+                    top: 10px;
+                }
+                30% {
+                    top: 20px;
+                }
+                60% {
+                    top: 15px;
+                }
+                100% {
+                    top: 10px;
+                }
+            }
+        }
+        #secondWave {
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-name: wave2;
+            -webkit-animation-duration: 5.5s;
+            -webkit-animation-delay: 1s;
+
+            @-webkit-keyframes wave2 {
+                0% {
+                    top: 10px;
+                }
+                30% {
+                    top: 20px;
+                }
+                60% {
+                    top: 15px;
+                }
+                100% {
+                    top: 10px;
+                }
+            }
+        }
+        #thirdWave {
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-name: wave3;
+            -webkit-animation-duration: 5.5s;
+            -webkit-animation-delay: 2s;
+
+            @-webkit-keyframes wave3 {
+                0% {
+                    top: 10px;
+                }
+                30% {
+                    top: 20px;
+                }
+                60% {
+                    top: 15px;
+                }
+                100% {
+                    top: 10px;
+                }
+            }
+        }
+    }
+}
+
+
 .container {
-	width: 670px; // + 15 + 15px paddings, actual size 640
+    width: 670px; // + 15 + 15px paddings, actual size 640
 }
 
 .special-hr {
-	background: rgb(247, 247, 247);
-	height: 2px;
-	margin: 0;
+    background: rgb(247, 247, 247);
+    height: 2px;
+    margin: 0;
 }
 
 h1 {
-	font-size: 13px;
-	font-weight: bold;
-	color: @blue;
-	margin: 0;
-	padding: 0;
+    font-size: 13px;
+    font-weight: bold;
+    color: @blue;
+    margin: 0;
+    padding: 0;
 }
 
 .row {
-	&.head {
-		.container {
-			padding: 25px 25px 15px 25px;
-		}
-		.col-md-8 {
-			span {
-				font-size: 11px;
-				color: rgb(151, 151, 151);
-			}
-		}
-		.col-md-4 {
-			text-align: right;
-		}
-		.col-md-12 {
-			p {
-				margin-top: 20px;
-				font-size: 11px;
-				color: black;
-			}
-		}
-	}
-	// header
-	&.slider {
-		margin-bottom: 25px;
-		.container {
-			height: 100%;
-		}
-		// wtf?!
-		height: 140px;
-		.water {
-			background-color: @blue;
-			width: 426px;
-			height: 100%;
-			float: left;
-			position: relative;
+    &.head {
+        .container {
+            padding: 25px 25px 15px 25px;
+        }
+        .col-md-8 {
+            span {
+                font-size: 11px;
+                color: rgb(151, 151, 151);
+            }
+        }
+        .col-md-4 {
+            text-align: right;
+        }
+        .col-md-12 {
+            p {
+                margin-top: 20px;
+                font-size: 11px;
+                color: black;
+            }
+        }
+    }
+    // header
+    &.slider {
+        margin-bottom: 25px;
+        .container {
+            height: 100%;
+        }
+        // wtf?!
+        height: 140px;
+        .water {
+            background-color: @blue;
+            width: 426px;
+            height: 100%;
+            float: left;
+            position: relative;
+            overflow: hidden;
+            #beacon {
+                background: url("../images/beacon.svg");
+                width: 22px;
+                height: 61px;
 
-			#beacon {
-				background: url("../images/beacon.svg");
-				width: 22px;
-				height: 61px;
+                position: absolute;
+                top: -10%;
+                right: 10%;
+                
+                z-index: 111;
+            }
+            #ship {
+                background: url("../images/ship.svg");
+                width: 238px;
+                height: 55px;
 
-				position: absolute;
-				top: 0;
-				right: 0;
-			}
-			#ship {
-				background: url("../images/ship.svg");
-				width: 238px;
-				height: 55px;
+                position: absolute;
+                top: 10%;
+                left: -30%;
+            }
+            #yacht {
+                background: url("../images/yacht.svg");
+                width: 128px;
+                height: 64px;
 
-				position: absolute;
-				top: 10%;
-				left: 5%;
-			}
-			#yacht {
-				background: url("../images/yacht.svg");
-				width: 128px;
-				height: 64px;
+                position: absolute;
+                top: 25%;
+                right: -20%;
+            }
 
-				position: absolute;
-				top: 25%;
-				right: 10%;
-			}
+            // waves
+            #firstWave {
+                background: url("../images/first-wave.svg");
+                width: 124px;
+                height: 120px;
 
-			// waves
-			#firstWave {
-				background: url("../images/first-wave.svg");
-				width: 124px;
-				height: 120px;
+                position: absolute;
+                top: 10px;
+                right: 0;   
+            }
+            #secondWave {
+                background: url("../images/second-wave.svg");
+                width: 91px;
+                height: 110px;
 
-				position: absolute;
-				top: 10px;
-				right: 0;
+                position: absolute;
+                top: 10px;
+                right: 124px;
+            }
+            #thirdWave {
+                background: url("../images/third-wave.svg");
+                width: 80px;
+                height: 109px;
 
-				-webkit-animation-iteration-count: infinite;
-				-webkit-animation-name: wave1;
-				-webkit-animation-duration: 5.5s;
+                position: absolute;
+                top: 10px;
+                left: 0;
+            }
+        }
+        .ground {
+            width: ~"calc(100% - 426px)";
+            width: ~"-webkit-calc(100% - 426px)";
+            margin: 0 0 0 auto;
+            background: rgb(251, 176, 59);
+            height: 100%;
 
-				@-webkit-keyframes wave1 {
-					0% {
-						top: 10px;
-					}
-					30% {
-						top: 20px;
-					}
-					60% {
-						top: 15px;
-					}
-					100% {
-						top: 10px;
-					}
-				}
-			}
-			#secondWave {
-				background: url("../images/second-wave.svg");
-				width: 91px;
-				height: 110px;
+            position: relative;
+            
+            z-index: 333;
 
-				position: absolute;
-				top: 10px;
-				right: 124px;
+            .house-green-left {
+                background: url("../images/house-green.svg");
+                width: 25px;
+                height: 25px;
 
-				-webkit-animation-iteration-count: infinite;
-				-webkit-animation-name: wave2;
-				-webkit-animation-duration: 5.5s;
-				-webkit-animation-delay: 1s;
+                position: absolute;
+                left: 11%;
+                top: 12%;
+            }
+            .house-red-left {
+                background: url("../images/house-red.svg");
+                width: 25px;
+                height: 25px;
 
-				@-webkit-keyframes wave2 {
-					0% {
-						top: 10px;
-					}
-					30% {
-						top: 20px;
-					}
-					60% {
-						top: 15px;
-					}
-					100% {
-						top: 10px;
-					}
-				}
-			}
-			#thirdWave {
-				background: url("../images/third-wave.svg");
-				width: 80px;
-				height: 109px;
+                position: absolute;
+                left: 8%;
+                top: 40%;
+            }
+            .house-blue-left {
+                background: url("../images/house-blue.svg");
+                width: 25px;
+                height: 25px;
 
-				position: absolute;
-				top: 10px;
-				left: 0;
+                position: absolute;
+                left: 5%;
+                top: 70%;
+            }
 
-				-webkit-animation-iteration-count: infinite;
-				-webkit-animation-name: wave3;
-				-webkit-animation-duration: 5.5s;
-				-webkit-animation-delay: 2s;
+            .building {
+                background: url("../images/building.svg");
+                width: 75px;
+                height: 110px;
+                margin: 0 auto;
+                
+                position: relative;
+                top: 7px;
+            }
 
-				@-webkit-keyframes wave3 {
-					0% {
-						top: 10px;
-					}
-					30% {
-						top: 20px;
-					}
-					60% {
-						top: 15px;
-					}
-					100% {
-						top: 10px;
-					}
-				}
-			}
-		}
-		.ground {
-			width: ~"calc(100% - 426px)";
-			width: ~"-webkit-calc(100% - 426px)";
-			margin: 0 0 0 auto;
-			background: rgb(251, 176, 59);
-			height: 100%;
+            .house-blue-right {
+                background: url("../images/house-blue.svg");
+                width: 25px;
+                height: 25px;
 
-			position: relative;
+                position: absolute;
+                right: 11%;
+                top: 12%;
+            }
+            .house-red-right {
+                background: url("../images/house-red.svg");
+                width: 25px;
+                height: 25px;
 
-			.house-green-left {
-				background: url("../images/house-green.svg");
-				width: 25px;
-				height: 25px;
+                position: absolute;
+                right: 8%;
+                top: 40%;
+            }
+            .house-green-right {
+                background: url("../images/house-green.svg");
+                width: 25px;
+                height: 25px;
 
-				position: absolute;
-				left: 0;
-				top: 0;
-			}
-			.house-red-left {
-				background: url("../images/house-red.svg");
-				width: 25px;
-				height: 25px;
+                position: absolute;
+                right: 5%;
+                top: 70%;
+            }
 
-				position: absolute;
-				left: 0;
-				top: 30%;
-			}
-			.house-blue-left {
-				background: url("../images/house-blue.svg");
-				width: 25px;
-				height: 25px;
+            .people {
+                background: url("../images/people.svg");
+                width: 76px;
+                height: 13px;
 
-				position: absolute;
-				left: 0;
-				top: 60%;
-			}
+                position: absolute;
+                bottom: 3%;
+                left: 32%;
+            }
+        }
+    }
+    // wave of relaxation, enjoy
+    &.content {
+        .col-md-4 {
+            p {
+                color: @gray;
+                font-size: 11px;
+                line-height: 13px;
+                height: 38px;
+            }
+            span {
+                margin-bottom: 20px;
+                display: inline-block;
+                background: none;
+                font-weight: normal;
+                font-size: 11px;
+                &.label-danger {
+                    border: 1px dashed rgb(205, 82, 82);
+                    color: rgb(205, 82, 82);
+                }
+                &.label-default {
+                    border: 1px dashed rgb(195, 203, 212);
+                    color: rgb(195, 203, 212);
+                }
+            }
+            a.btn {
+                font-size: 11px;
+                color: white;
+                line-height: 11px;
+                background: rgb(0, 112, 205);
+                padding: 10px;
 
-			.building {
-				background: url("../images/building.svg");
-				width: 75px;
-				height: 110px;
-				margin: 0 auto;
-			}
+                // clearing bootstrap styles
 
-			.house-blue-right {
-				background: url("../images/house-blue.svg");
-				width: 25px;
-				height: 25px;
-
-				position: absolute;
-				right: 0;
-				top: 0%;
-			}
-			.house-red-right {
-				background: url("../images/house-red.svg");
-				width: 25px;
-				height: 25px;
-
-				position: absolute;
-				right: 0;
-				top: 30%;
-			}
-			.house-green-right {
-				background: url("../images/house-green.svg");
-				width: 25px;
-				height: 25px;
-
-				position: absolute;
-				right: 0;
-				top: 60%;
-			}
-
-			.people {
-				background: url("../images/people.svg");
-				width: 76px;
-				height: 13px;
-
-				position: absolute;
-				bottom: 0;
-				left: 25%
-			}
-		}
-	}
-	// wave of relaxation, enjoy
-	&.content {
-		.col-md-4 {
-			p {
-				color: @gray;
-				font-size: 11px;
-				line-height: 13px;
-				height: 38px;
-			}
-			span {
-				margin-bottom: 20px;
-				display: inline-block;
-				background: none;
-				font-weight: normal;
-				font-size: 11px;
-				&.label-danger {
-					border: 1px dashed rgb(205, 82, 82);
-					color: rgb(205, 82, 82);
-				}
-				&.label-default {
-					border: 1px dashed rgb(195, 203, 212);
-					color: rgb(195, 203, 212);
-				}
-			}
-			a {
-				font-size: 11px;
-				color: white;
-				line-height: 11px;
-				background: rgb(0, 112, 205);
-				padding: 10px;
-
-				// clearing bootstrap styles
-
-				border-radius: 0;
-				position: relative;
-				border: none;
-				&:after {
-					position: absolute;
-					bottom: -2px;
-					left: 0;
-					content: '';
-					width: 100%;
-					height: 2px;
-					background: rgb(205, 212, 242);
-					display: block;
-				}
-			}
-		}
-	}
-	// content
-	&.pre-footer {
-		.container {
-		}
-		.col-md-4 {
-			margin-bottom: 15px;
-			h2 {
-				color: @gray;
-				font-size: 11px;
-			}
-			&.contract {
-				ul {
-					margin: 0;
-					padding: 0;
-					li {
-						color: @blue;
-						font-size: 11px;
-						background: url("../images/doc.svg") no-repeat left center;
-						list-style: none;
-						margin: 0 0 15px 0;
-						padding: 0 0 0 20px;
-						line-height: 25px;
-					}
-				}
-			}
-			&.info {
-				ul {
-					padding: 0;
-					margin: 0;
-					li {
-						list-style: none;
-						font-size: 11px;
-						color: black;
-						span {
-							display: block;
-							font-size: 9px;
-							color: @gray;
-						}
-					}
-				}
-			}
-			&.callback {
-				p {
-					margin-top: 20px;
-				}
-				font-size: 11px;
-				color: @gray;
-				a {
-					color: @blue;
-					text-decoration: none;
-				}
-			}
-		}
-		.special-hr {
-			width: ~"calc(100% - 25px)";
-			width: ~"-webkit-calc(100% - 25px)";
-			margin: 0 auto;
-			&:first-of-type {
-				margin: 45px 0 20px 0;
-			}
-			&:last-of-type {
-				margin-bottom: 20px;
-			}
-		}
-	}
-	&.footer {
-		.container {
-			padding: 25px;
-		}
-	}
+                border-radius: 0;
+                position: relative;
+                border: none;
+                &:after {
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    content: '';
+                    width: 100%;
+                    height: 2px;
+                    background: rgb(205, 212, 242);
+                    display: block;
+                }
+                &:hover {
+                    background: rgb(22, 99, 172);
+                    color: white;
+                    &:after {
+                        background: rgba(0, 112, 205, 0.25);
+                    }
+                    &:before {
+                        position: absolute;
+                        bottom: -1px;
+                        left: 0;
+                        content: '';
+                        width: 100%;
+                        height: 2px;
+                        display: block;
+                        background: rgba(0, 112, 205, 0.25);
+                    }
+                }
+                &:active {
+                    background: rgb(37, 112, 203);
+                }
+            }
+            a {
+                color: @gray;
+                &:hover {
+                    color: rgb(83, 142, 199);
+                    text-decoration: none;
+                }
+            }
+        }
+    } // content
+    &.pre-footer {
+        .container {
+        }
+        .col-md-4 {
+            margin-bottom: 15px;
+            h2 {
+                color: @gray;
+                font-size: 11px;
+            }
+            &.contract {
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    li {
+                        color: @blue;
+                        font-size: 11px;
+                        background: url("../images/doc.svg") no-repeat left center;
+                        list-style: none;
+                        margin: 0 0 15px 0;
+                        padding: 0 0 0 20px;
+                        line-height: 25px;
+                    }
+                }
+            }
+            &.info {
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        list-style: none;
+                        font-size: 11px;
+                        color: black;
+                        span {
+                            display: block;
+                            font-size: 9px;
+                            color: @gray;
+                        }
+                    }
+                }
+            }
+            &.callback {
+                p {
+                    margin-top: 20px;
+                }
+                font-size: 11px;
+                color: @gray;
+                a {
+                    color: @blue;
+                    text-decoration: none;
+                }
+            }
+        }
+        .special-hr {
+            width: ~"calc(100% - 25px)";
+            width: ~"-webkit-calc(100% - 25px)";
+            margin: 0 auto;
+            &:first-of-type {
+                margin: 45px 0 20px 0;
+            }
+            &:last-of-type {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &.footer {
+        .container {
+            padding: 25px;
+        }
+    }
 }

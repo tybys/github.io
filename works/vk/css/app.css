@@ -1,3 +1,93 @@
+.water.start #ship {
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-name: ship;
+  -webkit-animation-duration: 7.5s;
+  -webkit-animation-delay: 2s;
+}
+@-webkit-keyframes ship {
+  from {
+    left: -30%;
+  }
+  to {
+    left: 0%;
+  }
+}
+.water.start #yacht {
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-name: yacht;
+  -webkit-animation-duration: 3.5s;
+  -webkit-animation-delay: 2s;
+  z-index: 222;
+}
+@-webkit-keyframes yacht {
+  from {
+    right: -20%;
+  }
+  to {
+    right: 10%;
+  }
+}
+.water.start #firstWave {
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: wave1;
+  -webkit-animation-duration: 5.5s;
+}
+@-webkit-keyframes wave1 {
+  0% {
+    top: 10px;
+  }
+  30% {
+    top: 20px;
+  }
+  60% {
+    top: 15px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+.water.start #secondWave {
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: wave2;
+  -webkit-animation-duration: 5.5s;
+  -webkit-animation-delay: 1s;
+}
+@-webkit-keyframes wave2 {
+  0% {
+    top: 10px;
+  }
+  30% {
+    top: 20px;
+  }
+  60% {
+    top: 15px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+.water.start #thirdWave {
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: wave3;
+  -webkit-animation-duration: 5.5s;
+  -webkit-animation-delay: 2s;
+}
+@-webkit-keyframes wave3 {
+  0% {
+    top: 10px;
+  }
+  30% {
+    top: 20px;
+  }
+  60% {
+    top: 15px;
+  }
+  100% {
+    top: 10px;
+  }
+}
 .container {
   width: 670px;
 }
@@ -41,14 +131,16 @@ h1 {
   height: 100%;
   float: left;
   position: relative;
+  overflow: hidden;
 }
 .row.slider .water #beacon {
   background: url("../images/beacon.svg");
   width: 22px;
   height: 61px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -10%;
+  right: 10%;
+  z-index: 111;
 }
 .row.slider .water #ship {
   background: url("../images/ship.svg");
@@ -56,7 +148,7 @@ h1 {
   height: 55px;
   position: absolute;
   top: 10%;
-  left: 5%;
+  left: -30%;
 }
 .row.slider .water #yacht {
   background: url("../images/yacht.svg");
@@ -64,7 +156,7 @@ h1 {
   height: 64px;
   position: absolute;
   top: 25%;
-  right: 10%;
+  right: -20%;
 }
 .row.slider .water #firstWave {
   background: url("../images/first-wave.svg");
@@ -73,23 +165,6 @@ h1 {
   position: absolute;
   top: 10px;
   right: 0;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-name: wave1;
-  -webkit-animation-duration: 5.5s;
-}
-@-webkit-keyframes wave1 {
-  0% {
-    top: 10px;
-  }
-  30% {
-    top: 20px;
-  }
-  60% {
-    top: 15px;
-  }
-  100% {
-    top: 10px;
-  }
 }
 .row.slider .water #secondWave {
   background: url("../images/second-wave.svg");
@@ -98,24 +173,6 @@ h1 {
   position: absolute;
   top: 10px;
   right: 124px;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-name: wave2;
-  -webkit-animation-duration: 5.5s;
-  -webkit-animation-delay: 1s;
-}
-@-webkit-keyframes wave2 {
-  0% {
-    top: 10px;
-  }
-  30% {
-    top: 20px;
-  }
-  60% {
-    top: 15px;
-  }
-  100% {
-    top: 10px;
-  }
 }
 .row.slider .water #thirdWave {
   background: url("../images/third-wave.svg");
@@ -124,24 +181,6 @@ h1 {
   position: absolute;
   top: 10px;
   left: 0;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-name: wave3;
-  -webkit-animation-duration: 5.5s;
-  -webkit-animation-delay: 2s;
-}
-@-webkit-keyframes wave3 {
-  0% {
-    top: 10px;
-  }
-  30% {
-    top: 20px;
-  }
-  60% {
-    top: 15px;
-  }
-  100% {
-    top: 10px;
-  }
 }
 .row.slider .ground {
   width: calc(100% - 426px);
@@ -150,68 +189,71 @@ h1 {
   background: #fbb03b;
   height: 100%;
   position: relative;
+  z-index: 333;
 }
 .row.slider .ground .house-green-left {
   background: url("../images/house-green.svg");
   width: 25px;
   height: 25px;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 11%;
+  top: 12%;
 }
 .row.slider .ground .house-red-left {
   background: url("../images/house-red.svg");
   width: 25px;
   height: 25px;
   position: absolute;
-  left: 0;
-  top: 30%;
+  left: 8%;
+  top: 40%;
 }
 .row.slider .ground .house-blue-left {
   background: url("../images/house-blue.svg");
   width: 25px;
   height: 25px;
   position: absolute;
-  left: 0;
-  top: 60%;
+  left: 5%;
+  top: 70%;
 }
 .row.slider .ground .building {
   background: url("../images/building.svg");
   width: 75px;
   height: 110px;
   margin: 0 auto;
+  position: relative;
+  top: 7px;
 }
 .row.slider .ground .house-blue-right {
   background: url("../images/house-blue.svg");
   width: 25px;
   height: 25px;
   position: absolute;
-  right: 0;
-  top: 0%;
+  right: 11%;
+  top: 12%;
 }
 .row.slider .ground .house-red-right {
   background: url("../images/house-red.svg");
   width: 25px;
   height: 25px;
   position: absolute;
-  right: 0;
-  top: 30%;
+  right: 8%;
+  top: 40%;
 }
 .row.slider .ground .house-green-right {
   background: url("../images/house-green.svg");
   width: 25px;
   height: 25px;
   position: absolute;
-  right: 0;
-  top: 60%;
+  right: 5%;
+  top: 70%;
 }
 .row.slider .ground .people {
   background: url("../images/people.svg");
   width: 76px;
   height: 13px;
   position: absolute;
-  bottom: 0;
-  left: 25%;
+  bottom: 3%;
+  left: 32%;
 }
 .row.content .col-md-4 p {
   color: #555555;
@@ -234,7 +276,7 @@ h1 {
   border: 1px dashed #c3cbd4;
   color: #c3cbd4;
 }
-.row.content .col-md-4 a {
+.row.content .col-md-4 a.btn {
   font-size: 11px;
   color: white;
   line-height: 11px;
@@ -244,7 +286,7 @@ h1 {
   position: relative;
   border: none;
 }
-.row.content .col-md-4 a:after {
+.row.content .col-md-4 a.btn:after {
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -253,6 +295,33 @@ h1 {
   height: 2px;
   background: #cdd4f2;
   display: block;
+}
+.row.content .col-md-4 a.btn:hover {
+  background: #1663ac;
+  color: white;
+}
+.row.content .col-md-4 a.btn:hover:after {
+  background: rgba(0, 112, 205, 0.25);
+}
+.row.content .col-md-4 a.btn:hover:before {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  display: block;
+  background: rgba(0, 112, 205, 0.25);
+}
+.row.content .col-md-4 a.btn:active {
+  background: #2570cb;
+}
+.row.content .col-md-4 a {
+  color: #555555;
+}
+.row.content .col-md-4 a:hover {
+  color: #538ec7;
+  text-decoration: none;
 }
 .row.pre-footer .col-md-4 {
   margin-bottom: 15px;
