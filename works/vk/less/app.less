@@ -328,6 +328,12 @@ h1 {
                     border: 1px dashed rgb(205, 82, 82);
                     color: rgb(205, 82, 82);
                 }
+				&.label-success {
+					background: rgb(110, 182, 97);
+					font-weight: bold;
+					color: white;
+					border: none;
+				}
                 &.label-default {
                     border: 1px dashed rgb(195, 203, 212);
                     color: rgb(195, 203, 212);
@@ -374,6 +380,7 @@ h1 {
                 }
                 &:active {
                     background: rgb(37, 112, 203);
+					box-shadow: none;
                 }
             }
             a {
@@ -384,7 +391,211 @@ h1 {
                 }
             }
         }
+
+		.col-md-8,
+		.col-md-12 {
+			.btn {
+				width: ~"calc(100% - 10px)";
+				width: ~"-webkit-calc(100% - 10px)";
+				border-radius: 0;
+				border: none;
+				//background: url("../images/large.png") no-repeat left top;
+				background-color: #6EB661;
+				padding-top: 5px;
+				padding-bottom: 5px;
+
+				position: relative;
+				span {
+					width: 100%;
+					height: 2px;
+					position: absolute;
+					bottom: -2px;
+					left: 0;
+					background: rgba(110, 182, 97, 0.25);
+				}
+				&:after {
+					content: '';
+					width: 65px;
+					height: 30px;
+
+					position: absolute;
+					right: 0;
+					top: 0;
+
+					background: url("../images/solid-arrow.png") repeat;
+				}
+				&:before {
+					content: '';
+					width: ~"calc(100% - 65px)";
+					width: ~"-webkit-calc(100% - 65px)";
+					height: 30px;
+
+					position: absolute;
+					left: 0;
+					top: 0;
+
+					background: url("../images/trans-arrow.png") repeat;
+				}
+				&:hover {
+					background-color: #58924E;
+					&:after {
+						width: 60px;
+						background-position-x: 0;
+					}
+					&:before {
+						background-position-x: 5px;
+						width: ~"calc(100% - 60x)";
+						width: ~"-webkit-calc(100% - 60px)";
+					}
+				}
+				&:active {
+					background: #84C179;
+					box-shadow: none;
+					span {
+						background: rgb(110, 182, 97);
+					}
+				}
+			}
+		}
     } // content
+
+	&.forms {
+
+		#fileWrap {
+			position: relative;
+		}
+		i {
+			position: relative;
+			top: 2px;
+			&.icon-paperclip:before {
+				color: #3196db;
+			}
+			&.icon-trash {
+				cursor: pointer;
+			}
+			&.icon-trash:before {
+				color: #c72d38;
+			}
+		}
+
+		#fileUpload {
+			position: absolute;
+			left: -9999px;
+		}
+		label[for="fileUpload"] {
+			padding-left: 0 !important;
+//			padding: 0.5em;
+			display: inline-block;
+			cursor: pointer;
+		}
+		#filename {
+			vertical-align: middle;
+			white-space: nowrap;
+			overflow: hidden;
+			span {
+				background: #E8AB57;
+				color: white;
+				border-radius: 0;
+				padding: 5px 12px;
+				font-size: 11px;
+			}
+		}
+
+		.container {
+			padding: 0 60px; // 20 from prev container and 40 for forms
+		}
+		.back {
+			display: block;
+			cursor: pointer;
+			background: url("../images/back.svg") no-repeat;
+			width: 20px;
+			height: 20px;
+		}
+		.address {
+			input {
+				margin: 5px 0 5px 5px !important;
+			}
+			.addr_index {
+				width: ~"calc(25% - 5px)";
+				width: ~"-webkit-calc(25% - 5px)";
+				margin-left: 0 !important;
+			}
+			.addr_country {
+				width: ~"calc(75% - 10px)";
+				width: ~"-webkit-calc(75% - 10px)";
+			}
+			.addr_city {
+				width: ~"calc(30% - 2px)";
+				width: ~"-webkit-calc(30% - 2px)";
+				margin-left: 0 !important;
+			}
+			.addr_street {
+				width: ~"calc(70% - 2px)";
+				width: ~"-webkit-calc(70% - 13px)";
+			}
+
+			.addr_house {
+				margin-left: 0 !important;
+			}
+			.addr_house,
+			.addr_korpus,
+			.addr_stroenie,
+			.addr_flat,
+			.addr_office {
+				width: ~"calc(25% - 27px)";
+				width: ~"-webkit-calc(25% - 27px)";
+			}
+		}
+		.passport {
+			input {
+				&:first-of-type {
+					width: 41px;
+				}
+				&:last-of-type {
+					width: 87px;
+				}
+			}
+		}
+		select {
+			&.day {
+				width: 55px;
+				margin-right: 5px;
+			}
+			&.month {
+				width: 94px;
+				margin-right: 5px;
+			}
+			&.year {
+				width: 64px;
+			}
+		}
+		fieldset {
+			& > div {
+
+			}
+		}
+		label {
+			font-size: 11px;
+			color: @gray;
+		}
+		label:not(.custom) {
+			display: block;
+
+		}
+		input[type="text"], select {
+			background: rgb(255, 255, 255);
+			color: rgb(0, 0, 0);
+			border: 1px solid rgb(195, 203, 212);
+			padding: 3px;
+			margin: 0px;
+			font-size: 12px;
+			height: 29px;
+			margin-bottom: 10px;
+
+			width: 231px;
+		}
+	}
+
     &.pre-footer {
         .container {
         }
