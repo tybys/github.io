@@ -395,12 +395,26 @@ h1 {
 .row.content .col-md-12 .btn:active span {
   background: #6eb661;
 }
+.row.forms .special-hr {
+  margin: 25px 0;
+}
+.row.forms .col-md-6 > div {
+  height: 59px;
+}
 .row.forms #fileWrap {
   position: relative;
 }
 .row.forms i {
   position: relative;
   top: 2px;
+  font-style: normal;
+  font-size: 11px;
+  color: #555555;
+  vertical-align: super;
+}
+.row.forms i.cleaner {
+  color: red;
+  padding-left: 0;
 }
 .row.forms i.icon-paperclip:before {
   color: #3196db;
@@ -424,13 +438,23 @@ h1 {
   vertical-align: middle;
   white-space: nowrap;
   overflow: hidden;
+  display: inline-block;
 }
 .row.forms #filename span {
-  background: #E8AB57;
+  background: url("../images/orange-button.svg") repeat-x;
   color: white;
   border-radius: 0;
-  padding: 5px 12px;
+  padding: 7.5px 12px;
   font-size: 11px;
+  line-height: 15px;
+  position: relative;
+}
+.row.forms #filename span.ass {
+  background: none;
+  max-width: 165px;
+  color: #0070cd;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .row.forms .container {
   padding: 0 60px;
@@ -474,6 +498,12 @@ h1 {
   width: calc(25% - 27px);
   width: -webkit-calc(25% - 27px);
 }
+.row.forms .second-address label:first-of-type {
+  color: #555555;
+}
+.row.forms .second-address label:last-of-type {
+  color: black;
+}
 .row.forms .passport input:first-of-type {
   width: 41px;
 }
@@ -491,7 +521,21 @@ h1 {
 .row.forms select.year {
   width: 64px;
 }
+.row.forms fieldset.text span {
+  text-align: center;
+  font-size: 11px;
+  display: block;
+  color: #555555;
+}
+.row.forms fieldset.text p {
+  color: #858585;
+  font-size: 9px;
+}
+.row.forms fieldset.text label {
+  color: black;
+}
 .row.forms label {
+  font-weight: normal;
   font-size: 11px;
   color: #555555;
 }
