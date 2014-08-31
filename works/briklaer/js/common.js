@@ -130,8 +130,8 @@
             $(this).removeClass("hovered");
         });
         
-        $('#cartAccordion').collapse({
-            show: true
-        });
+        // $('#cartAccordion').collapse({
+        //     show: true
+        // });
     });
 })(jQuery);

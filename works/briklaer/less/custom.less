@@ -14,6 +14,92 @@ p, a, h2 {
 
 }
 
+.row.filter .right .controls #color .value ul li.active {
+	 border-color: rgb(235, 43, 47);
+	 border-width: 2px;
+ }
+
+.modal-dialog {
+	margin-top: 89px;
+	width: 344px;
+	height: 320px;
+	.modal-content {
+		box-shadow: none;
+		border-color: @brown_dark;
+	}
+	.modal-header {
+		h4 {
+			margin-top: 10px;
+			font-size: 18px;
+			padding-left: 11px;
+			padding-right: 11px;
+		}
+	}
+	.modal-body {
+		padding: 27px;
+		padding-bottom: 0;
+		padding-top: 15px;
+
+		p {
+			font-size: 12px;
+		}
+		input {
+			width: 100%;
+			border: 1px solid gray;
+			border-radius: 5px;
+			height: 36px;
+			line-height: 36px;
+			text-indent: 5px;
+			margin: 9px 0;
+		}
+	}
+	.modal-footer {
+		margin-top: 0;
+		margin-bottom: 8px;
+		text-align: center;
+		button {
+			height: 36px;
+			line-height: 24px;
+			font-size: 16px;
+			background: #fbebce;
+			border-radius: 15px;
+			border: 1px solid @brown_dark;
+			color: black;
+		}
+	}
+	.modal-header, .modal-footer {
+		border: none;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+a {
+	&.in-cart {
+		font-size: 18px !important;
+		border: none !important;
+		background: none !important;
+		position: relative;
+		text-align: left !important;
+		text-indent: 25px;
+		#itemAmount {
+			font-size: 22px;
+			line-height: 32px;
+			background: rgb(235, 43, 47);
+			border-radius: 100px;
+			display: inline-block;
+			width: 32px;
+			height: 32px;
+			color: rgb(255, 255, 255);
+			position: absolute;
+			top: ~"calc(50% - 16px)";
+			top: ~"webkit-calc(50% - 16px)";
+			right: 0;
+			text-indent: 0;
+		}
+	}
+}
+
 html {
     body {
         background: url("../images/roses_03.jpg") no-repeat center fixed;

@@ -51,7 +51,7 @@
                         <div class="block">Онлайн звонок в магазин</div>
                         <a href="tel:+7(499)216-74-11">+7 (499) 216-74-11</a>
                         <span class="callback">
-                            <a href="#">Закажите обратный звонок</a>
+                            <a href="#" data-toggle="modal" data-target="#callback">Закажите обратный звонок</a>
                         </span>
                         <span class="mail">
                             <a href="mailto:zakaz@bricklaer.ru">zakaz@bricklaer.ru</a>
@@ -285,5 +285,30 @@
         <script type="text/javascript" src="js/jquery/jquery.slider.js"></script>
         -->
         <script src="js/common.js"></script>
+
+		<!-- Modal -->
+		<div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: block; opacity: 1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<h4 class="modal-title" id="myModalLabel">Мы перезвоним</h4>
+					</div>
+					<div class="modal-body">
+						<p>Консультант с приятным голосом расскажет вам
+						всё, что знает. Главное, укажите ваш телефон
+						и время, когда вам будет удобно поговорить.</p>
+						<form>
+							<input type="text" placeholder="Ваше имя">
+							<input type="text" placeholder="Ваш телефн">
+							<input type="text" placeholder="Удобное для вас время звонка">
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">Заказать звонок</button>
+					</div>
+				</div>
+			</div>
+		</div>
     </body>
 </html>
