@@ -1,0 +1,130 @@
+.box-faq {
+    .grid-9 {
+        & > p {
+            margin-top: 0;
+            margin-bottom: 27px;
+        }
+        
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                transition: background 1s ease;
+                &.active {
+                    background: url("../images/question.png") no-repeat left top;
+                    padding: 0 0 24px 0;
+                    div {
+                        position: relative;
+                        background: #f3f2ef;
+                        border: 1px solid #e5e4dc;
+                        padding: 0 19px;
+                        margin-left: 60px;
+                        &:after, &:before {
+                            right: 100%;
+                            top: 10%;
+                            border: solid transparent;
+                            content: " ";
+                            height: 0;
+                            width: 0;
+                            position: absolute;
+                            pointer-events: none;
+                        }
+                        &:after {
+                            border-color: rgba(243, 242, 239, 0);
+                            border-right-color: #f3f2ef;
+                            border-width: 9px;
+                            margin-top: -9px;
+                        }
+                        &:before {
+                            border-color: rgba(229, 228, 220, 0);
+                            border-right-color: #e5e4dc;
+                            border-width: 10px;
+                            margin-top: -10px;
+                        }
+                        h4 {
+                            font-size: 18px;
+                            margin-top: 9px;
+                            margin-bottom: 6px;
+                        }
+                        p {
+                            font-size: 14px;
+                            margin-top: 0;
+                        }
+                    }
+                }
+
+                &:not(.active) {
+                    div {
+                        padding: 0 19px;
+                        margin-left: 60px;
+                        background: white;
+                        border: 1px solid white;
+                        h4 {
+                            cursor: pointer;
+                            display: inline-block;
+                            font-size: 18px;
+                            font-weight: normal;
+                            margin: 0 0 9px 0;
+                            span {
+                                border-bottom: 2px dashed #dfddc8;
+                                padding-right: 5px;
+                            }
+                        }
+                        p {
+                            display: none;
+                        }
+                    }
+                }
+
+
+                list-style: none;
+            }
+        }
+    }
+    .grid-3 {
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                margin-bottom: 18px;
+                &.super {
+                    a div {
+                        &:after {
+                            background: url("../images/lent.png") no-repeat;
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 85px;
+                            height: 91px;
+                        }
+                    }
+                }
+                a {
+                    display: block;
+                    color: black;
+                    text-decoration: none;
+                    div {
+                        position: relative;
+                        display: inline-block;
+                    }
+                    img {
+                        box-shadow: 0 0 3px rgba(78, 78, 78, 0.3);
+                        border-bottom: 1px solid #a7a7a7;
+                        border-left: 1px solid rgb(216, 213, 213);
+                        border-right: 1px solid rgb(216, 213, 213);
+                        border-top: 1px solid rgb(216, 213, 213);
+                    }
+                    span {
+                        font-size: 14px;
+                        display: inline-block;
+                        border-bottom: 1px solid #dad8cb
+                    }
+                }
+                text-align: center;
+                list-style: none;
+            }
+        }
+    }
+    
+}
