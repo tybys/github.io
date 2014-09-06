@@ -112,3 +112,65 @@
   display: inline-block;
   border-bottom: 1px solid #dad8cb;
 }
+.box-photo-wall {
+  width: 100%;
+}
+.box-photo-wall .brick {
+  width: 164px;
+}
+.box-photo-wall img {
+  /*        display: block;
+        max-width: 100%;*/
+
+}
+.box-photo-wall a {
+  color: #5D5D5D;
+  text-decoration: none;
+}
+.box-photo-wall a:hover {
+  text-decoration: underline;
+}
+.box-photo-wall ul {
+  margin: 0;
+  font-size: 0;
+  padding: 0;
+}
+.box-photo-wall li {
+  color: #D2D2D2;
+  display: inline-block;
+  font: 10px/1.5 Trebuchet MS, Verdana, sans-serif;
+  list-style: none;
+  margin: 2% 2% 30px 0;
+  vertical-align: top;
+  width: 18%;
+  /* (100% - (5*2%)) / 5 = 18% */
+
+}
+@media only screen and (min-width: 721px) and (max-width: 940px) {
+  .box-photo-wall .container li {
+    width: 23%;
+    /* (100% - (4*2%)) / 4 = 21% */
+  
+  }
+}
+@media only screen and (min-width: 531px) and (max-width: 720px) {
+  .box-photo-wall .container li {
+    width: 31.333%;
+    /* (100% - (3*2%)) / 3 = 31.333% */
+  
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 530px) {
+  .box-photo-wall .container li {
+    width: 48%;
+    /* (100% - (2*2%)) / 2 = 48% */
+  
+  }
+}
+@media only screen and (max-width: 320px) {
+  .box-photo-wall .container li {
+    width: 96%;
+    /* 100% - (1*4%)= 46% */
+  
+  }
+}
