@@ -174,3 +174,161 @@
   
   }
 }
+.box-reviews .load-more-reviews {
+  text-align: center;
+}
+.box-reviews .load-more-reviews a {
+  color: #5d5c4f;
+  text-decoration: none;
+  font-size: 14px;
+  border-bottom: 1px dashed #dad8cb;
+  position: relative;
+}
+.box-reviews .load-more-reviews a:before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  left: -22px;
+  top: 1px;
+  background: url("../images/refresh.png") no-repeat left top;
+}
+.box-reviews .box-heading {
+  position: relative;
+}
+.box-reviews .box-heading.box-heading-bottom .btn-add {
+  width: 307px;
+  height: 41px;
+  line-height: 38px;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 1.5% auto 0 auto;
+  display: block;
+}
+.box-reviews .box-heading.box-heading-bottom .btn-add:after {
+  content: '';
+  position: absolute;
+  right: -12px;
+  top: 0;
+  height: 41px;
+  width: 10px;
+  background: white;
+}
+.box-reviews .box-heading.box-heading-bottom .btn-add:before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 0;
+  height: 41px;
+  width: 10px;
+  background: white;
+}
+.box-reviews .btn-add {
+  position: absolute;
+  right: 0;
+  bottom: 25%;
+  font-size: 13px;
+  text-decoration: none;
+  line-height: 26px;
+  height: 30px;
+  width: 126px;
+  font-weight: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid #e4e4e4;
+  text-align: center;
+  color: #171717;
+  background-color: #ffffff;
+}
+.box-reviews .review-wrapper {
+  width: 307px;
+}
+.box-reviews .review-wrapper .author {
+  display: block;
+  margin: 18px 0 0 17px;
+}
+.box-reviews .review-wrapper .author i {
+  font-style: normal;
+  display: block;
+}
+.box-reviews .review-wrapper.with-answer .answer-wrapper .answer {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #ffde00;
+  border-radius: 5px 5px 0 0;
+  padding: 13px;
+  margin-top: 11px;
+  text-align: right;
+}
+.box-reviews .review-wrapper.with-answer .answer-wrapper .answer:after,
+.box-reviews .review-wrapper.with-answer .answer-wrapper .answer:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.box-reviews .review-wrapper.with-answer .answer-wrapper .answer:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #ffffff;
+  border-width: 5px;
+  margin-left: -5px;
+}
+.box-reviews .review-wrapper.with-answer .answer-wrapper .answer:before {
+  border-color: rgba(255, 222, 0, 0);
+  border-top-color: #ffde00;
+  border-width: 6px;
+  margin-left: -6px;
+}
+.box-reviews .review-wrapper.with-answer .answer-wrapper .answer p {
+  padding-left: 10%;
+}
+.box-reviews .review-wrapper.with-answer .answer-wrapper .moderator {
+  text-align: right;
+  font-style: italic;
+  display: block;
+  margin-top: 11px;
+}
+.box-reviews .review {
+  position: relative;
+  background: #f3f2ef;
+  border: 1px solid #e5e4dc;
+  padding: 22px 15px 15px 15px;
+  border-radius: 5px 5px 0 0;
+}
+.box-reviews .review p {
+  margin: 0;
+}
+.box-reviews .review img {
+  margin: 11px 0 0 0;
+  box-shadow: 0 0 3px gray;
+}
+.box-reviews .review:after,
+.box-reviews .review:before {
+  top: 100%;
+  left: 10%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.box-reviews .review:after {
+  border-color: rgba(243, 242, 239, 0);
+  border-top-color: #f3f2ef;
+  border-width: 8px;
+  margin-left: -8px;
+}
+.box-reviews .review:before {
+  border-color: rgba(229, 228, 220, 0);
+  border-top-color: #e5e4dc;
+  border-width: 9px;
+  margin-left: -9px;
+}
