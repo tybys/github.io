@@ -5,6 +5,13 @@
            //$(".water").addClass("start");
        }, 3000);
 
+        var formHeight = $(".moveto:visible").outerHeight();
+        $("form").css("height", formHeight + 16);
+
+        $("#scopes input").change(function () {
+           
+        });
+
         $('#fileUpload').change(function () {
             var filepath = this.value;
             m = filepath.match(/([^\/\\]+)$/),

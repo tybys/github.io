@@ -34,19 +34,18 @@
             </div>
 
             <div class="row forms">
-
                 <div class="container">
-                    <span class="back"></span>
                     <form>
-                        <fieldset>
+                        <fieldset id="scopes">
                             <div class="col-md-6">
+                                <span class="back"></span>
                                 <label class="custom">Регистрация</label>
                                 <label class="custom">
-                                    <input type="radio" name="reg" checked>
+                                    <input type="radio" name="reg" checked data-scope="#physicalPerson">
                                     физлица
                                 </label>
                                 <label class="custom">
-                                    <input type="radio" name="reg">
+                                    <input type="radio" name="reg" data-scope="#legalPerson">
                                     юр.лица, ИП
                                 </label>
                             </div>
@@ -58,130 +57,237 @@
                             </div>
                         </fieldset>
 
-                        <div></div>
-                        <fieldset>
-                            <div class="col-md-6">
-                                <div>
-                                    <label>Имя и фамилия:</label>
-                                    <input type="text">
-                                </div>
+                        <div id="physicalPerson" class="moveto">
+                            <fieldset>
+                                <div class="col-md-6">
+                                    <div>
+                                        <label>Имя и фамилия:</label>
+                                        <input type="text">
+                                    </div>
 
-                                <div>
-                                    <label>Отчество (если указано в паспорте):</label>
-                                    <input type="text">
-                                </div>
+                                    <div>
+                                        <label>Отчество (если указано в паспорте):</label>
+                                        <input type="text">
+                                    </div>
 
-                                <div class="birthday">
-                                    <label>Дата рождения:</label>
-                                    <select class="day">
-                                        <option>10</option>
-                                    </select>
-                                    <select class="month">
-                                        <option>сентября</option>
-                                    </select>
-                                    <select class="year">
-                                        <option>1987</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label>Место рождения:</label>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div>
-                                    <label>Скан паспорта:</label>
-                                    <div id="fileWrap">
-                                        
-                                        <label for="fileUpload" id="filename">
-                                            <span class="btn">Прикрепить</span>
-                                            <input type="file" id="fileUpload">
-                                        </label>
-                                        <i id="cleaner" class="icon-paperclip">(страница с фотографией)</i>
+                                    <div class="birthday">
+                                        <label>Дата рождения:</label>
+                                        <select class="day">
+                                            <option>10</option>
+                                        </select>
+                                        <select class="month">
+                                            <option>сентября</option>
+                                        </select>
+                                        <select class="year">
+                                            <option>1987</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>Место рождения:</label>
+                                        <input type="text">
                                     </div>
                                 </div>
+                                <div class="col-md-6">
+                                    <div>
+                                        <label>Скан паспорта:</label>
+                                        <div id="fileWrap">
 
-                                <div class="passport">
-                                    <label>Серия и номер паспорта</label>
-                                    <input type="text">
+                                            <label for="fileUpload" id="filename">
+                                                <span class="btn">Прикрепить</span>
+                                                <input type="file" id="fileUpload">
+                                            </label>
+                                            <i id="cleaner" class="icon-paperclip">(страница с фотографией)</i>
+                                        </div>
+                                    </div>
+
+                                    <div class="passport">
+                                        <label>Серия и номер паспорта</label>
+                                        <input type="text">
+                                        <input type="text">
+                                    </div>
+
+                                    <div>
+                                        <label>Кем выдан:</label>
+                                        <input type="text">
+                                    </div>
+
+                                    <div class="passport-date">
+                                        <label>Дата выдачи:</label>
+                                        <select class="day">
+                                            <option>10</option>
+                                        </select>
+                                        <select class="month">
+                                            <option>сентября</option>
+                                        </select>
+                                        <select class="year">
+                                            <option>1987</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <hr class="special-hr">
+
+                            <fieldset>
+                                <div class="col-md-6 address">
+                                    <input class="addr_index" placeholder="Индекс" title="Индекс" type="text" value="">
+                                    <input class="addr_country" placeholder="Страна" title="Страна" type="text" value="">
+                                    <input class="addr_city input-validation-error" placeholder="Город" title="Город" type="text" value="">
+                                    <input class="addr_street" placeholder="Улица" title="Улица" type="text" value="">
+                                    <input class="addr_house" placeholder="Дом" title="Дом" type="text" value="">
+                                    <input class="addr_korpus" placeholder="Корп" title="Корпус" type="text" value="">
+                                    <input class="addr_stroenie" placeholder="Стр" title="Строение" type="text" value="">
+                                    <input class="addr_flat" placeholder="Кв" title="Квартира" type="text" value="">
+                                    <input class="addr_office" data-val="true" placeholder="Офис" title="Квартира" type="text" value="">
+                                </div>
+                                <div class="col-md-6 second-address">
+                                    <label class="custom">Адрес проживания:</label>
+                                    <label class="custom">
+                                        <input type="checkbox">
+                                        как в регистрации
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <hr class="special-hr">
+
+                            <fieldset>
+                                <div class="col-md-6">
+                                    <label>ИНН:</label>
                                     <input type="text">
                                 </div>
-
-                                <div>
-                                    <label>Кем выдан:</label>
+                                <div class="col-md-6">
+                                    <label>СНИЛС:</label>
                                     <input type="text">
                                 </div>
+                            </fieldset>
 
-                                <div class="passport-date">
-                                    <label>Дата выдачи:</label>
-                                    <select class="day">
-                                        <option>10</option>
-                                    </select>
-                                    <select class="month">
-                                        <option>сентября</option>
-                                    </select>
-                                    <select class="year">
-                                        <option>1987</option>
-                                    </select>
+                            <fieldset>
+                                <div class="col-md-6">
+                                    <label>Номер мобильного телефона:</label>
+                                    <input type="text">
                                 </div>
-                            </div>
-                        </fieldset>
+                            </fieldset>
 
-                        <hr class="special-hr">
+                            <hr class="special-hr">
+                        
+                            <fieldset class="text">
+                                <div class="col-md-12">
+                                    <span>Согласие на обработку персональных данных</span>
+                                    <p>Настоящим пользователь выражает свое согласие на обработку персональных данных в порядке и на условиях, определенных Федеральным законом от 27 июля 2006 года No. 152-ФЗ <<о персональных данных>> (далее Закон). Целью обработки персональных данных является оказание ЗАО <<Центр Интернет платежей>> (далее - Robox) услуг пользователю. Пользователь предоставляет Robox право обрабатывать свои персональные данные любым способом, предусмотренным Законом и (или) выбранным по усмотрению Robox. Отзыв согласия может быть осуществлен при условии письменного уведомления Robox за 3 (три) месяца до момента отзыва согласия. Согласие действует до момента прекращения последнего из договоров, заключенных между пользователем и Robox.</p>
+                                    <label>
+                                        <input type="checkbox">
+                                        я согласен на обработку своих персональных данных и согласен с <a href="#">договором оферты</a>
+                                    </label>
+                                </div>
+                            </fieldset>
 
-                        <fieldset>
-                            <div class="col-md-6 address">
-                                <input class="addr_index" placeholder="Индекс" title="Индекс" type="text" value="">
-                                <input class="addr_country" placeholder="Страна" title="Страна" type="text" value="">
-                                <input class="addr_city input-validation-error" placeholder="Город" title="Город" type="text" value="">
-                                <input class="addr_street" placeholder="Улица" title="Улица" type="text" value="">
-                                <input class="addr_house" placeholder="Дом" title="Дом" type="text" value="">
-                                <input class="addr_korpus" placeholder="Корп" title="Корпус" type="text" value="">
-                                <input class="addr_stroenie" placeholder="Стр" title="Строение" type="text" value="">
-                                <input class="addr_flat" placeholder="Кв" title="Квартира" type="text" value="">
-                                <input class="addr_office" data-val="true" placeholder="Офис" title="Квартира" type="text" value="">
-                            </div>
-                            <div class="col-md-6 second-address">
-                                <label class="custom">Адрес проживания:</label>
-                                <label class="custom">
-                                    <input type="checkbox">
-                                    как в регистрации
-                                </label>
-                            </div>
-                        </fieldset>
+                            <fieldset class="text">
+                                <div class="col-md-12 controls">
+                                    <input type="submit" value="Зарегестрироваться" class="btn btn-default">
+                                    <a href="#" class="btn btn-gray">Отменить</a>
+                                </div>
 
-                        <hr class="special-hr">
+                                <div class="col-md-12">
+                                    <p>извините, но в этой форме нет полей, заполнение которых было бы необязательным или допускало бы неточности. проверьте, правильно ли заполнены все поля и завершите регистрацию.</p>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div id="legalPerson" class="moveto" hidden>
+                            <fieldset>
+                                <div class="col-md-12">
+                                    <label>Название юрлица или ИП:</label>
+                                    <input type="text">
+                                </div>
+                            </fieldset>
 
-                        <fieldset>
-                            <div class="col-md-6">
-                                <label>ИНН:</label>
-                                <input type="text">
-                            </div>
-                            <div class="col-md-6">
-                                <label>СНИЛС:</label>
-                                <input type="text">
-                            </div>
-                        </fieldset>
+                            <fieldset>
+                                <div class="col-md-6">
+                                    <div>
+                                        <label>№ счета:</label>
+                                        <input type="text">
+                                    </div>
+                                    <div>
+                                        <label>Наименование банка:</label>
+                                        <input type="text">
+                                    </div>
+                                    <div>
+                                        <label>Корр. счет:</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div>
+                                        <label>БИК:</label>
+                                        <input type="text">
+                                    </div>
+                                    <div>
+                                        <label>ИНН:</label>
+                                        <input type="text">
+                                    </div>
+                                    <div>
+                                        <label>КПП:</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </fieldset>
 
-                        <fieldset>
-                            <div class="col-md-6">
-                                <label>Номер мобильного телефона:</label>
-                                <input type="text">
-                            </div>
-                        </fieldset>
+                            <hr class="special-hr">
 
-                        <hr class="special-hr">
+                            <fieldset>
+                                <div class="col-md-6">
+                                    <div>
+                                        <label>ФИО лица, подписывающего договор:</label>
+                                        <input type="text">
+                                    </div>
+                                    <div>
+                                        <label>Контактный номер телефона:</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div>
+                                        <label>Email бухгалтерии (для отчетов):</label>
+                                        <input type="text">
+                                    </div>
+                                    <div>
+                                        <label>Контактный Email:</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </fieldset>
 
-                        <fieldset class="text">
-                            <div class="col-md-12">
-                                <span>Согласие на обработку персональных данных</span>
-                                <p>Настоящим пользователь выражает свое согласие на обработку персональных данных в порядке и на условиях, определенных Федеральным законом от 27 июля 2006 года No. 152-ФЗ <<о персональных данных>> (далее Закон). Целью обработки персональных данных является оказание ЗАО <<Центр Интернет платежей>> (далее - Robox) услуг пользователю. Пользователь предоставляет Robox право обрабатывать свои персональные данные любым способом, предусмотренным Законом и (или) выбранным по усмотрению Robox. Отзыв согласия может быть осуществлен при условии письменного уведомления Robox за 3 (три) месяца до момента отзыва согласия. Согласие действует до момента прекращения последнего из договоров, заключенных между пользователем и Robox.</p>
-                                <label>
-                                    <input type="checkbox">
-                                    я согласен на обработку своих персональных данных и согласен с <a href="#">договором оферты</a>
-                                </label>
-                            </div>
+                            <fieldset class="text">
+                                <div class="col-md-12">
+                                    <span>Согласие на обработку персональных данных</span>
+                                    <p>Настоящим пользователь выражает свое согласие на обработку персональных данных в порядке и на условиях, определенных Федеральным законом от 27 июля 2006 года No. 152-ФЗ <<о персональных данных>> (далее Закон). Целью обработки персональных данных является оказание ЗАО <<Центр Интернет платежей>> (далее - Robox) услуг пользователю. Пользователь предоставляет Robox право обрабатывать свои персональные данные любым способом, предусмотренным Законом и (или) выбранным по усмотрению Robox. Отзыв согласия может быть осуществлен при условии письменного уведомления Robox за 3 (три) месяца до момента отзыва согласия. Согласие действует до момента прекращения последнего из договоров, заключенных между пользователем и Robox.</p>
+                                    <label>
+                                        <input type="checkbox">
+                                        я согласен на обработку своих персональных данных
+                                    </label>
 
+                                </div>
+                                <div class="contract">
+                                    <ul>
+                                        <li>Договор для юр. лиц и ИП <i>нужно подписать</i></li>
+                                    </ul>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="text">
+                                <div class="col-md-12 controls">
+                                    <input type="submit" value="Зарегестрироваться" class="btn btn-default">
+                                    <a href="#" class="btn btn-gray">Отменить</a>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <p>извините, но в этой форме нет полей, заполнение которых было бы необязательным или допускало бы неточности. проверьте, правильно ли заполнены все поля и завершите регистрацию.</p>
+                                </div>
+                            </fieldset>
+
+                        </div hidden>
+                        
+                        <!--fieldset class="text">
                             <div class="col-md-12 controls">
                                 <input type="submit" value="Зарегестрироваться" class="btn btn-default">
                                 <a href="#" class="btn btn-gray">Отменить</a>
@@ -190,7 +296,7 @@
                             <div class="col-md-12">
                                 <p>извините, но в этой форме нет полей, заполнение которых было бы необязательным или допускало бы неточности. проверьте, правильно ли заполнены все поля и завершите регистрацию.</p>
                             </div>
-                        </fieldset>
+                        </fieldset--> <!-- controls there -->
                     </form>
                 </div>
             </div>
@@ -227,8 +333,6 @@
                     <hr class="special-hr" style="clear: both;" />
                 </div>
             </div>
-
-
             <div class="row footer">
                 <div class="container">
                     <a href="#">Robokassa</a>

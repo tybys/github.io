@@ -421,6 +421,10 @@ h1 {
 .row.content .col-md-12 .btn:active span {
   background: #6eb661;
 }
+.row.forms .col-md-12 input[type="text"] {
+  width: calc(100% - 15px) !important;
+  width: -webkit-calc(100% - 15px) !important;
+}
 .row.forms .special-hr {
   margin: 25px 0;
 }
@@ -486,6 +490,8 @@ h1 {
   padding: 0 60px;
 }
 .row.forms .back {
+  float: left;
+  margin-right: 5px;
   display: block;
   cursor: pointer;
   background: url("../images/back.svg") no-repeat;
@@ -547,8 +553,37 @@ h1 {
 .row.forms select.year {
   width: 64px;
 }
+.row.forms form {
+  position: relative;
+}
+.row.forms .moveto {
+  position: absolute;
+  top: 25px;
+}
 .row.forms fieldset .controls {
   margin: 20px 0 30px 0;
+}
+.row.forms fieldset.text .contract {
+  clear: both;
+}
+.row.forms fieldset.text .contract ul {
+  margin: 0;
+  padding: 0;
+  margin-left: 15px;
+}
+.row.forms fieldset.text .contract ul li {
+  color: #3677ba;
+  font-size: 11px;
+  background: url("../images/doc.svg") no-repeat left center;
+  list-style: none;
+  margin: 0 0 15px 0;
+  padding: 0 0 0 20px;
+  line-height: 25px;
+}
+.row.forms fieldset.text .contract ul li i {
+  color: black;
+  font-style: normal;
+  line-height: 25px;
 }
 .row.forms fieldset.text span {
   text-align: center;

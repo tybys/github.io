@@ -488,6 +488,16 @@ h1 {
     } // content
 
     &.forms {
+		.col-md-12 {
+			input[type="text"] {
+				width: ~"calc(100% - 15px)" !important;
+				width: ~"-webkit-calc(100% - 15px)" !important;
+			}
+		}
+        #first {
+//            display: none;
+        }
+        
         .special-hr {
             margin: 25px 0;
         }
@@ -559,6 +569,8 @@ h1 {
             padding: 0 60px; // 20 from prev container and 40 for forms
         }
         .back {
+			float: left;
+			margin-right: 5px;
             display: block;
             cursor: pointer;
             background: url("../images/back.svg") no-repeat;
@@ -633,11 +645,41 @@ h1 {
                 width: 64px;
             }
         }
+		form {
+			position: relative;
+		}
+		.moveto {
+			position: absolute;
+			top: 25px;
+		}
         fieldset {
             .controls {
                 margin: 20px 0 30px 0;
             }
             &.text {
+				.contract {
+					clear: both;
+					ul {
+						margin: 0;
+						padding: 0;
+
+						margin-left: 15px;
+						li {
+							i {
+								color: black;
+								font-style: normal;
+								line-height: 25px;
+							}
+							color: @blue;
+							font-size: 11px;
+							background: url("../images/doc.svg") no-repeat left center;
+							list-style: none;
+							margin: 0 0 15px 0;
+							padding: 0 0 0 20px;
+							line-height: 25px;
+						}
+					}
+				}
                 span {
                     text-align: center;
                     font-size: 11px;
