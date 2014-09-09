@@ -119,10 +119,11 @@
   width: 100%;
 }
 .box-photo-wall .brick {
-  width: 164px;
+  width: 188px;
 }
 .box-photo-wall img {
   display: block;
+  width: 100%;
 }
 .box-photo-wall a {
   color: #5D5D5D;
