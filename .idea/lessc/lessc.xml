@@ -87,6 +87,7 @@
         <entry key="6">
           <value>
             <LessProfile>
+              <option name="compileAutomatically" value="false" />
               <option name="cssDirectories">
                 <list>
                   <CssDirectory>
