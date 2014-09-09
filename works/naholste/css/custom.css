@@ -1,6 +1,10 @@
+.box-faq .box-heading:first-of-type {
+  font-size: 24px;
+}
 .box-faq .grid-9 > p {
   margin-top: 0;
   margin-bottom: 27px;
+  font-size: 14px;
 }
 .box-faq .grid-9 ul {
   padding: 0;
@@ -170,6 +174,12 @@
     width: 96%;
     /* 100% - (1*4%)= 46% */
   }
+}
+.box-reviews .box-heading {
+  font-size: 24px;
+}
+.box-reviews .grid-12 p {
+  font-size: 14px;
 }
 .box-reviews .load-more-reviews {
   text-align: center;
