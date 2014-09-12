@@ -4,6 +4,55 @@
 @water: @blue;
 @gray: rgb(85, 85, 85);
 
+a {
+	color: @gray;
+	&:hover {
+		color: rgb(83, 142, 199);
+		text-decoration: none;
+	}
+}
+.row.content a.btn-join {
+	font-size: 11px;
+	color: white;
+	line-height: 11px;
+	background: #0070cd;
+	padding: 10px;
+	border-radius: 0;
+	position: relative;
+	border: none;
+	display: inline-block;
+	&:after {
+		position: absolute;
+		bottom: -2px;
+		left: 0;
+		content: '';
+		width: 100%;
+		height: 2px;
+		background: rgb(205, 212, 242);
+		display: block;
+	}
+	&:hover {
+		background: rgb(22, 99, 172);
+		color: white;
+		&:after {
+			background: rgba(0, 112, 205, 0.25);
+		}
+		&:before {
+			position: absolute;
+			bottom: -1px;
+			left: 0;
+			content: '';
+			width: 100%;
+			height: 2px;
+			display: block;
+			background: rgba(0, 112, 205, 0.25);
+		}
+	}
+	&:active {
+		background: rgb(37, 112, 203);
+		box-shadow: none;
+	}
+}
 // some btn override
 .btn-gray {
     background: rgb(245, 245, 245);
@@ -336,9 +385,140 @@ h1 {
                 left: 32%;
             }
         }
+		&.fireworks {
+			#sky {
+				position: relative;
+				height: 100%;
+				background: #1663ac;
+				overflow: hidden;
+                
+                .fireworks {
+                    position: absolute;
+					display: block;
+					width: 100px;
+					height: 100px;
+					&.one {
+						background: url("../images/fire1.svg") no-repeat;
+                        background-size: cover;
+						width: 94px;
+						height: 96px;
+                        
+                        top: 20%;
+                        left: 2.5%;
+					}
+                    
+					&.two {
+						background: url("../images/fire2.svg") no-repeat;
+                        background-size: cover;
+						width: 106px;
+						height: 94px;
+                        
+                        top: 25%;
+                        left: 12%;
+					}
+					&.three {
+						background: url("../images/fire3.svg") no-repeat;
+                        background-size: cover;
+						width: 115px;
+						height: 126px;
+                        
+                        top: 8%;
+                        left: 20%;
+					}
+					&.four {
+						background: url("../images/fire4.svg") no-repeat;
+                        background-size: cover;
+						width: 97px;
+						height: 95px;
+                        
+                        top: 20%;
+                        left: 30%;
+					}
+					&.five {
+						background: url("../images/fire5.svg") no-repeat;
+                        background-size: cover;
+						width: 108px;
+						height: 101px;
+                        
+                        top: 25%;
+                        left: 40%;
+					}
+
+				}
+			}
+
+			.beacon {
+				position: absolute;
+				bottom: -6px;
+				left: 15px;
+			}
+
+			.big-cloud-first {
+				position: absolute;
+				top: 2px;
+				left: 3px;
+			}
+			.big-cloud-second {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+			}
+			.big-cloud-third {
+				position: absolute;
+				top: 60%;
+				left: 80%;
+			}
+
+			.small-cloud-first {
+				position: absolute;
+				top: 40%;
+				left: 60%;
+			}
+			.small-cloud-second {
+				position: absolute;
+				top: 50%;
+				left: 90%;
+			}
+
+			.fly {
+				&.first {
+					position: absolute;
+					top: 60%;
+					left: 10%;
+				}
+				&.second {
+					position: absolute;
+					top: 40%;
+					left: 30%;
+				}
+				&.third {
+					position: absolute;
+					top: 30%;
+					right: 30%;
+				}
+				&.four {
+					position: absolute;
+					top: 10%;
+					right: 10%;
+				}
+			}
+		}
     }
     // wave of relaxation, enjoy
     &.content {
+		.congrat {
+			p {
+				width: 70%;
+				float: left;
+			}
+			a {
+				float: right;
+			}
+		}
+		p {
+			font-size: 11px;
+			line-height: 13px;
+		}
         .col-md-4 {
             p {
                 color: @gray;
@@ -367,57 +547,55 @@ h1 {
                     color: rgb(195, 203, 212);
                 }
             }
-            a.btn {
-                font-size: 11px;
-                color: white;
-                line-height: 11px;
-                background: rgb(0, 112, 205);
-                padding: 10px;
-
-                // clearing bootstrap styles
-
-                border-radius: 0;
-                position: relative;
-                border: none;
-                &:after {
-                    position: absolute;
-                    bottom: -2px;
-                    left: 0;
-                    content: '';
-                    width: 100%;
-                    height: 2px;
-                    background: rgb(205, 212, 242);
-                    display: block;
-                }
-                &:hover {
-                    background: rgb(22, 99, 172);
-                    color: white;
-                    &:after {
-                        background: rgba(0, 112, 205, 0.25);
-                    }
-                    &:before {
-                        position: absolute;
-                        bottom: -1px;
-                        left: 0;
-                        content: '';
-                        width: 100%;
-                        height: 2px;
-                        display: block;
-                        background: rgba(0, 112, 205, 0.25);
-                    }
-                }
-                &:active {
-                    background: rgb(37, 112, 203);
-                    box-shadow: none;
-                }
-            }
-            a {
-                color: @gray;
-                &:hover {
-                    color: rgb(83, 142, 199);
-                    text-decoration: none;
-                }
-            }
+//            a.btn {
+//                font-size: 11px;
+//                color: white;
+//                line-height: 11px;
+//                background: rgb(0, 112, 205);
+//                padding: 10px;
+//
+//                border-radius: 0;
+//                position: relative;
+//                border: none;
+//                &:after {
+//                    position: absolute;
+//                    bottom: -2px;
+//                    left: 0;
+//                    content: '';
+//                    width: 100%;
+//                    height: 2px;
+//                    background: rgb(205, 212, 242);
+//                    display: block;
+//                }
+//                &:hover {
+//                    background: rgb(22, 99, 172);
+//                    color: white;
+//                    &:after {
+//                        background: rgba(0, 112, 205, 0.25);
+//                    }
+//                    &:before {
+//                        position: absolute;
+//                        bottom: -1px;
+//                        left: 0;
+//                        content: '';
+//                        width: 100%;
+//                        height: 2px;
+//                        display: block;
+//                        background: rgba(0, 112, 205, 0.25);
+//                    }
+//                }
+//                &:active {
+//                    background: rgb(37, 112, 203);
+//                    box-shadow: none;
+//                }
+//            }
+//            a {
+//                color: @gray;
+//                &:hover {
+//                    color: rgb(83, 142, 199);
+//                    text-decoration: none;
+//                }
+//            }
         }
 
         .col-md-8,
@@ -502,8 +680,30 @@ h1 {
             margin: 25px 0;
         }
         .col-md-6 {
+			.as-reg {
+				position: relative;
+				top: -15px;
+			}
+			.second-address {
+				position: relative;
+				top: -27px;
+			}
+			.not-resident {
+				display: none;
+				position: relative;
+				top: -15px;
+				label {
+					margin-bottom: 0;
+					&.indent {
+						margin-left: 5%;
+					}
+					&.disabled {
+						opacity: 0.5;
+					}
+				}
+			}
             & > div {
-                height: 59px;
+//                height: 59px;
             }
         }
         #fileWrap {
@@ -649,8 +849,12 @@ h1 {
 			position: relative;
 		}
 		.moveto {
-			position: absolute;
-			top: 25px;
+//			position: absolute;
+//			top: 25px;
+			display: none;
+			&.active {
+				display: block;
+			}
 		}
         fieldset {
             .controls {
@@ -697,10 +901,21 @@ h1 {
             }
         }
         label {
+			input[type="radio"] {
+				margin-right: 5px;
+			}
+			&.checked {
+				font-weight: bold;
+			}
             font-weight: normal;
             font-size: 11px;
             color: @gray;
         }
+		span.title {
+			font-weight: normal;
+			font-size: 11px;
+			color: @gray;
+		}
         label:not(.custom) {
             display: block;
 

@@ -41,23 +41,23 @@
                                 <span class="back"></span>
                                 <label class="custom">Регистрация</label>
                                 <label class="custom">
-                                    <input type="radio" name="reg" checked data-scope="#physicalPerson">
+                                    <input type="radio" name="reg" checked data-scope="physicalPerson">
                                     физлица
                                 </label>
                                 <label class="custom">
-                                    <input type="radio" name="reg" data-scope="#legalPerson">
+                                    <input type="radio" name="reg" data-scope="legalPerson">
                                     юр.лица, ИП
                                 </label>
                             </div>
                             <div class="col-md-6">
                                 <label>
-                                    <input type="checkbox">
+                                    <input type="checkbox" checked>
                                     Российское гражданство
                                 </label>
                             </div>
                         </fieldset>
 
-                        <div id="physicalPerson" class="moveto">
+                        <div id="physicalPerson" class="active moveto">
                             <fieldset>
                                 <div class="col-md-6">
                                     <div>
@@ -128,7 +128,7 @@
 
                             <hr class="special-hr">
 
-                            <fieldset>
+                            <fieldset class="as-register">
                                 <div class="col-md-6 address">
                                     <input class="addr_index" placeholder="Индекс" title="Индекс" type="text" value="">
                                     <input class="addr_country" placeholder="Страна" title="Страна" type="text" value="">
@@ -140,12 +140,54 @@
                                     <input class="addr_flat" placeholder="Кв" title="Квартира" type="text" value="">
                                     <input class="addr_office" data-val="true" placeholder="Офис" title="Квартира" type="text" value="">
                                 </div>
-                                <div class="col-md-6 second-address">
-                                    <label class="custom">Адрес проживания:</label>
-                                    <label class="custom">
-                                        <input type="checkbox">
-                                        как в регистрации
-                                    </label>
+                                <div class="col-md-6 address">
+                                    <div class="as-reg">
+                                        <label class="custom">Адрес проживания:</label>
+                                        <label class="custom">
+                                            <input type="checkbox" checked>
+                                            как в регистрации
+                                        </label>
+                                    </div>
+                                    <div class="not-resident">
+                                        <div>
+                                            <span class="title">Регистрация в РФ</span>
+                                            <label class="checked">
+                                                <input type="radio" name="register" checked>
+                                                не зарегестрирован в РФ
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="register">
+                                                зарегестрирован в РФ
+                                            </label>
+                                        </div>
+
+                                        <div>
+                                            <span class="title">Проживание в РФ</span>
+                                            <label class="checked">
+                                                <input type="radio" name="living" checked>
+                                                не проживаю в РФ
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="living">
+                                                указать адрес
+                                            </label>
+                                            <label class="indent disabled">
+                                                <input type="checkbox" disabled>
+                                                совпадает с адресом регистрации
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="second-address">
+                                        <input class="addr_index" placeholder="Индекс" title="Индекс" type="text" value="">
+                                        <input class="addr_country" placeholder="Страна" title="Страна" type="text" value="">
+                                        <input class="addr_city input-validation-error" placeholder="Город" title="Город" type="text" value="">
+                                        <input class="addr_street" placeholder="Улица" title="Улица" type="text" value="">
+                                        <input class="addr_house" placeholder="Дом" title="Дом" type="text" value="">
+                                        <input class="addr_korpus" placeholder="Корп" title="Корпус" type="text" value="">
+                                        <input class="addr_stroenie" placeholder="Стр" title="Строение" type="text" value="">
+                                        <input class="addr_flat" placeholder="Кв" title="Квартира" type="text" value="">
+                                        <input class="addr_office" data-val="true" placeholder="Офис" title="Квартира" type="text" value="">
+                                    </div>
                                 </div>
                             </fieldset>
 
@@ -193,7 +235,7 @@
                                 </div>
                             </fieldset>
                         </div>
-                        <div id="legalPerson" class="moveto" hidden>
+                        <div id="legalPerson" class="moveto">
                             <fieldset>
                                 <div class="col-md-12">
                                     <label>Название юрлица или ИП:</label>

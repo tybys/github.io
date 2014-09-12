@@ -5,12 +5,17 @@
            //$(".water").addClass("start");
        }, 3000);
 
-        var formHeight = $(".moveto:visible").outerHeight();
-        $("form").css("height", formHeight + 16);
-
-        $("#scopes input").change(function () {
-           
-        });
+//        var formHeight = $(".moveto:visible").outerHeight();
+//        $("form").css("height", formHeight + 16);
+//
+//        $("#scopes input").change(function () {
+//            var currentValue = $(this).attr("data-scope");
+//            var partForm = $(this).parents("fieldset").nextAll(".active").attr("id");
+//
+//            if (currentValue == partForm) {
+//                $(".moveto").removeClass("active");
+//            }
+//        });
 
         $('#fileUpload').change(function () {
             var filepath = this.value;
