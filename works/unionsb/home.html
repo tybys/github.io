@@ -9,7 +9,7 @@
         <!-- Bootstrap -->
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
+        <link rel="stylesheet" href="css/app.css">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -20,40 +20,48 @@
     <body>
         <div class="container-fluid head">
             <div class="row">
-                <div class="col-md-4 logotype">
-                
-                </div>
-                <div class="col-md-4 address">
-                    <a class="tel" href="tel:+7(495)9780916">+7 (495) 978-09-16</a>
-                    <span class="left">пн-пт, с 09.00 до 19.00</span>
-                    <span class="right">
-                        <a class="email" href="mailto:info@union-sb.ru">info@union-sb.ru</a>
-                    </span>
-                    <p>г. Москва, ул. Электролитный проезд, д.3, стр.2</p>
-                </div>
-                <div class="col-md-4 search">
-                    <div class="top">
-                        
-                        <span>Товаров: <i>5</i></span>
-                        <div class="auth">
-                            <a href="#">Вход</a>
-                            <a href="#">Регистрация</a>
-                        </div>
+                <div class="container">
+                    <div class="col-md-4 logotype">
+                        <a href="#">
+                            <img src="images/logotype.png">
+                        </a>
                     </div>
-                    <div class="bottom search">
-                        <form>
-                            <input type="text">
-                            <button>Найти</button>
-                        </form>
+                    <div class="col-md-4 address">
+                        <a class="tel" href="tel:+7(495)9780916">+7 (495) 978-09-16</a>
+                        <span class="left">
+<!--                            <i class="glyphicon glyphicon-time"></i>-->
+                            пн-пт, с 09.00 до 19.00
+                        </span>
+                        <span class="right">
+                            <a class="email" href="mailto:info@union-sb.ru">
+<!--                                <i class="glyphicon glyphicon-envelope"></i>-->
+                                info@union-sb.ru</a>
+                        </span>
+                        <p>г. Москва, ул. Электролитный проезд, д.3, стр.2</p>
+                    </div>
+                    <div class="col-md-4 search">
+                        <div class="top">
+                            <span>Товаров: <i>5</i></span>
+                            <div class="auth">
+                                <a href="#">Вход</a>
+                                <a href="#">Регистрация</a>
+                            </div>
+                        </div>
+                        <div class="bottom search">
+                            <form>
+                                <input type="text">
+                                <button>Найти</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         
         <div class="container">
-            <div class="row content">
+            <div class="row content" hidden="">
                 <div class="col-md-2">
-                    <a class="btn btn-success">Обратный звонок</a>
+                    <a class="btn btn-success glyphicon glyphicon-earphone">Обратный звонок</a>
                     <div class="menu">
                         <h2>Каталог товаров</h2>
                         <ul>
@@ -78,35 +86,30 @@
                         </ul>
                     </div>
                     <div class="advertise">
-                    
+                        <img src="images/banner.jpg">
                     </div>
                 </div>
                 <div class="col-md-10">
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li class="active"><a href="#catalog" role="tab" data-toggle="tab">Каталог</a></li>
-                        <li><a href="#setup" role="tab" data-toggle="tab">Монтаж</a></li>
-                        <li><a href="#delivery" role="tab" data-toggle="tab">Доставка</a></li>
+                    <ul>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Монтаж</a></li>
+                        <li><a href="#">Доставка</a></li>
                     </ul>
 
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="catalog">
-                            <img class="tab-image" src="">
-                            <h2>Популярные товары</h2>
-                            <div>
-                                <input type="checkbox">
-                                <img src="">
-                                <div class="bottom">
-                                    <span class="price">2200 <i>руб.</i></span>
-                                    <a href="#" class="btn btn-warning">Купить</a>
-                                </div>
-                                <strong class="title">Копак внутренний для видеокамеры Panasonic Wv-Q157</strong>
-                                <p>Копак внутренний для видеокамеры</p>
-                                <a href="#">подбробнее…</a>
+                    <div class="">
+                        <img class="tab-image" src="images/slider.jpg">
+                        <h2>Популярные товары</h2>
+                        <div>
+                            <input type="checkbox">
+                            <img src="images/samsung.jpg">
+                            <div class="bottom">
+                                <span class="price">2200 <i>руб.</i></span>
+                                <a href="#" class="btn btn-warning">Купить</a>
                             </div>
+                            <strong class="title">Копак внутренний для видеокамеры Panasonic Wv-Q157</strong>
+                            <p>Копак внутренний для видеокамеры</p>
+                            <a href="#">подбробнее…</a>
                         </div>
-                        <div class="tab-pane" id="setup">...</div>
-                        <div class="tab-pane" id="delivery">...</div>
                     </div>
                 </div>
             </div>
@@ -127,8 +130,8 @@
                 </div>
                 
                 <div class="col-md-6">
-                    <p>г. Москва, ул. Электролитный проезд, д.3, стр.2</p>
-                    <p>000 «Юнион СБ», 2009-2014</p>
+                    <p class="glyphicon glyphicon-map-marker">г. Москва, ул. Электролитный проезд, д.3, стр.2</p>
+                    <p class="glyphicon glyphicon-copyright-mark">000 «Юнион СБ», 2009-2014</p>
                 </div>
                 <div class="col-md-6">
                     <a href="tel:+7 (495) 978-09-16">+7 (495) 978-09-16</a>

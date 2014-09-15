@@ -1,0 +1,68 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300&subset=latin,cyrillic-ext);
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic-ext);
+.head:after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-image: repeating-linear-gradient(#adadad, #ebebeb 100%);
+  display: block;
+}
+.head .top span {
+  background: url("../images/cart.png") no-repeat;
+}
+.head .address {
+  background-position: left;
+  background-repeat: no-repeat;
+  padding-right: 10px;
+  font-family: "Verdana";
+  font-size: 13px;
+  color: #545454;
+}
+.head .address a {
+  color: inherit;
+}
+.head .address a.tel {
+  font: normal normal 34px "Verdana";
+  letter-spacing: -0.3px;
+  color: #ff8500;
+  display: block;
+  margin-top: 4px;
+}
+.head .address a:hover {
+  text-decoration: none;
+}
+.head .address span {
+  margin-top: 3px;
+}
+.head .address span.left {
+  float: left;
+  width: 60%;
+  background: yellow;
+}
+.head .address span.left:after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  float: left;
+  background: url("http://union-sb.ru/templates/union/elements/clock.png") no-repeat;
+  margin-right: 8px;
+}
+.head .address span.right {
+  background: red;
+  float: left;
+  width: 40%;
+}
+.head .address span.right a:after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  float: left;
+  background: url("http://union-sb.ru/templates/union/elements/letter.png") no-repeat;
+  margin-right: 8px;
+}
+.head .address p {
+  clear: both;
+  padding-top: 3px;
+  padding-left: 5px;
+}
