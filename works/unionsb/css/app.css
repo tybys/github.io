@@ -1,6 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300&subset=latin,cyrillic-ext);
 
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic-ext);
+.btn.btn-warning {
+  background: #fbfaf8;
+  background: -moz-linear-gradient(top, #fbfaf8 0%, #ffda5a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fbfaf8), color-stop(100%, #ffda5a));
+  background: -webkit-linear-gradient(top, #fbfaf8 0%, #ffda5a 100%);
+  background: -o-linear-gradient(top, #fbfaf8 0%, #ffda5a 100%);
+  background: -ms-linear-gradient(top, #fbfaf8 0%, #ffda5a 100%);
+  background: linear-gradient(to bottom, #fbfaf8 0%, #ffda5a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbfaf8', endColorstr='#ffda5a', GradientType=0);
+}
 .head:after {
   content: '';
   width: 100%;
@@ -8,8 +18,92 @@
   background-image: repeating-linear-gradient(#adadad, #ebebeb 100%);
   display: block;
 }
+.head .logotype a {
+  display: block;
+  line-height: 99px;
+}
+.head .top {
+  min-height: 27px;
+  margin-top: 13px;
+}
 .head .top span {
+  min-height: 27px;
+  line-height: 30px;
   background: url("../images/cart.png") no-repeat;
+  float: left;
+  width: 50%;
+  padding-left: 46px;
+  font-family: "Verdana";
+  font-size: 13px;
+}
+.head .top span i {
+  color: #00ad00;
+  font-style: normal;
+}
+.head .auth {
+  float: left;
+  width: 50%;
+  line-height: 30px;
+}
+.head .auth a {
+  font-size: 13px;
+  font-family: "Verdana";
+  color: #262626;
+  border-bottom: 1px dashed #262626;
+}
+.head .auth a:first-child:after {
+  content: '/';
+  margin-left: 6px;
+}
+.head .bottom.search {
+  clear: both;
+  margin-top: 18px;
+}
+.head .bottom.search input[type="text"] {
+  height: 28px;
+  border: 1px solid #ff8500;
+  border-radius: 5px;
+  padding-left: 9px;
+  font-family: "Verdana";
+  font-size: 10px;
+  width: 245px;
+  /* Firefox 19+ */
+
+  /* Firefox 18- */
+
+}
+.head .bottom.search input[type="text"]::-webkit-input-placeholder {
+  color: #ff8500;
+  font-style: italic;
+  font-weight: normal;
+  font-family: "Verdana";
+}
+.head .bottom.search input[type="text"]::-moz-placeholder {
+  color: #ff8500;
+  font-style: italic;
+  font-weight: normal;
+  font-family: "Verdana";
+}
+.head .bottom.search input[type="text"]:-moz-placeholder {
+  color: #ff8500;
+  font-style: italic;
+  font-weight: normal;
+  font-family: "Verdana";
+}
+.head .bottom.search input[type="text"]:-ms-input-placeholder {
+  color: #ff8500;
+  font-style: italic;
+  font-weight: normal;
+  font-family: "Verdana";
+}
+.head .bottom.search button {
+  border: 1px solid #ff8500;
+  font-size: 13px;
+  font-family: "Verdana";
+  color: black;
+  line-height: 15px;
+  height: 28px;
+  margin-left: 4px;
 }
 .head .address {
   background-position: left;

@@ -12,6 +12,19 @@
 @orangeColor: rgba(255, 133, 0, 1);
 @grayColor: rgba(38, 38, 38, 1);
 
+.btn {
+    &.btn-warning {
+        background: #fbfaf8;
+        background: -moz-linear-gradient(top,  #fbfaf8 0%, #ffda5a 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbfaf8), color-stop(100%,#ffda5a));
+        background: -webkit-linear-gradient(top,  #fbfaf8 0%,#ffda5a 100%);
+        background: -o-linear-gradient(top,  #fbfaf8 0%,#ffda5a 100%);
+        background: -ms-linear-gradient(top,  #fbfaf8 0%,#ffda5a 100%);
+        background: linear-gradient(to bottom,  #fbfaf8 0%,#ffda5a 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfaf8', endColorstr='#ffda5a',GradientType=0 );
+    }
+}
+
 .head {
     &:after {
         content: '';
@@ -20,10 +33,73 @@
         background-image: repeating-linear-gradient(#adadad, #ebebeb 100%);
         display: block;
     }
-    .top {
-        span {
-            background: url("../images/cart.png") no-repeat;
+    .logotype {
+        a {
+            display: block;
+            line-height: 99px;
         }
+    }
+    .top {
+        min-height: 27px;
+        margin-top: 13px;
+        span {
+            min-height: 27px;
+            line-height: 30px;
+            background: url("../images/cart.png") no-repeat;
+            float: left;
+            width: 50%;
+            padding-left: 46px;
+            font-family: @verdana;
+            font-size: 13px;
+            i {
+                color: #00ad00;
+                font-style: normal;
+            }
+        }
+    }
+    .auth {
+        float: left;
+        width: 50%;
+        line-height: 30px;
+        a {
+            font-size: 13px;
+            font-family: @verdana;
+            color: @grayColor;
+            border-bottom: 1px dashed @grayColor;
+            &:first-child {
+                &:after {
+                    content: '/';
+                    margin-left: 6px;
+                }
+            }
+        }
+    }
+    .bottom.search {
+        clear: both;
+        margin-top: 18px;
+        input[type="text"] {
+            height: 28px;
+            border: 1px solid @orangeColor;
+            border-radius: 5px;
+            padding-left: 9px;
+            font-family: @verdana;
+            font-size: 10px;
+            width: 245px;
+            &::-webkit-input-placeholder {color: @orangeColor; font-style: italic; font-weight: normal; font-family: @verdana;}
+            &::-moz-placeholder          {color: @orangeColor; font-style: italic; font-weight: normal; font-family: @verdana;}/* Firefox 19+ */
+            &:-moz-placeholder           {color: @orangeColor; font-style: italic; font-weight: normal; font-family: @verdana;}/* Firefox 18- */
+            &:-ms-input-placeholder      {color: @orangeColor; font-style: italic; font-weight: normal; font-family: @verdana;}
+        }
+        button {
+            border: 1px solid @orangeColor;
+            font-size: 13px;
+            font-family: @verdana;
+            color: black;
+            line-height: 15px;
+            height: 28px;
+            margin-left: 4px;
+        }
+        
     }
     .address {
         background-position: left;
