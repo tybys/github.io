@@ -160,3 +160,28 @@
   padding-top: 3px;
   padding-left: 5px;
 }
+.footer {
+  background: #ff8500;
+}
+.footer .col-md-12 a {
+  font-family: "Verdana";
+  font-size: 13px;
+  color: white;
+  text-decoration: underline;
+}
+.footer .col-md-9 p {
+  color: black;
+  font-family: "Verdana";
+  font-size: 15px;
+}
+.footer .col-md-9 p:first-of-type {
+  font-size: 14px;
+}
+.footer .col-md-9 p:first-of-type:before {
+  margin-right: 5px;
+  content: '';
+  background: url("http://union-sb.ru/templates/union/elements/point.png") no-repeat;
+  width: 14px;
+  height: 17px;
+  float: left;
+}

@@ -165,5 +165,31 @@
 }
 
 .footer {
-    
+    background: @orangeColor;
+    .col-md-12 {
+        a {
+            font-family: @verdana;
+            font-size: 13px;
+            color: white;
+            text-decoration: underline;
+        }
+    }
+    .col-md-9 {
+        p {
+            color: black;
+            font-family: @verdana;
+            font-size: 15px;
+            &:first-of-type {
+                font-size: 14px;
+                &:before {
+                    margin-right: 5px;
+                    content: '';
+                    background: url("http://union-sb.ru/templates/union/elements/point.png") no-repeat;
+                    width: 14px;
+                    height: 17px;
+                    float: left;
+                }
+            }
+        }
+    }
 }
