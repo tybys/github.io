@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,7 +8,8 @@
     
     <!-- Custom Google Web Font -->
     <!-- Add custom CSS here -->
-    <link href="css/landing-page.css" rel="stylesheet">
+<!--    <link href="css/landing-page.css" rel="stylesheet">-->
+    <link rel="stylesheet" type="text/css" href="css/app.css"
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="js/jquery.interactive_bg.js"></script>
@@ -16,6 +17,14 @@
     <script>
         
         $(document).ready(function () {
+            
+            var windowWidth = $(window).outerWidth();
+            var windowHeight = $(window).outerHeight();
+            
+            var sectionHeight = $("section");
+            
+            sectionHeight.css("height", windowHeight);
+            
             function get_name_browser() {
                 // получаем данные userAgent
                 var ua = navigator.userAgent;
@@ -101,15 +110,15 @@
             });
 
             
-            $('section[data-type="background"]').each(function () {
-                var $bgobj = $(this);
-                var x=$window.scrollTop()
-                $(window).scroll(function () {
-                    var yPos = -( x / $bgobj.data('speed'));                    
-                    var coords = 'center ' + yPos + 'px';
-                    $bgobj.css({ backgroundPosition: coords });
-                });
-            });
+//            $('section[data-type="background"]').each(function () {
+//                var $bgobj = $(this);
+//                var x=$window.scrollTop()
+//                $(window).scroll(function () {
+//                    var yPos = -( x / $bgobj.data('speed'));                    
+//                    var coords = 'center ' + yPos + 'px';
+//                    $bgobj.css({ backgroundPosition: coords });
+//                });
+//            });
             $(".obl").interactive_bg();
         });
     </script>
@@ -155,7 +164,7 @@
         </div>
     </div>
     <section id="top" class='top' data-type="background" data-speed="10">
-        <div class="wrapper">
+        <div class="wrapper" style="display: none;">
             <div class="desc">
                 <img src="img/top-logo.svg">
                 <div class='title'>20 000 Интернет-магазинов ждут Вас!</div>
@@ -190,14 +199,13 @@
 
 
         </div>
-        <div class="slide">
-            
-                <img class="downb" href="#middle" src="img/down.svg" />
-            
+        <div class="slide" style="display: none;">
+            <img class="downb" href="#middle" src="img/down.svg" />
         </div>
     </section>
+    
     <section id="middle" class='middle' data-type="background" data-speed="10">
-        <div class="wrapper">
+        <div class="wrapper" style="display: none;">
             <div class="obl">
             </div>
             <img class="img-responsive test" src="img/middle-pic.png" alt="">
@@ -221,13 +229,11 @@
                     
                 </div>
             </div>
-
-
         </div>
     </section>
+    
     <section id="bottom" class='bottom' data-type="background" data-speed="10">
-        <div class="wrapper">
-
+        <div class="wrapper" style="display: none">
             <div class="desc">
                 <img src="img/logo-bottom.svg" class="logo">
                 <div class='title'>Вся история Ваших платежей</div>
