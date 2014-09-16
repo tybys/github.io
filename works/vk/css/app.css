@@ -344,15 +344,23 @@ h1 {
 }
 .row.slider.fireworks #sky .fireworks.one {
   background: url("../images/fire1.svg") no-repeat;
-  background-size: cover;
+  background-size: 100%;
   width: 94px;
   height: 96px;
   top: 20%;
   left: 2.5%;
 }
+.row.slider.fireworks #sky .fireworks.one .cricket {
+  width: 3px;
+  height: 20px;
+  background: red;
+  box-shadow: 0 0 5px red;
+  display: block;
+  border-radius: 5px 5px 0 0;
+}
 .row.slider.fireworks #sky .fireworks.two {
   background: url("../images/fire2.svg") no-repeat;
-  background-size: cover;
+  background-size: 100%;
   width: 106px;
   height: 94px;
   top: 25%;
@@ -360,7 +368,7 @@ h1 {
 }
 .row.slider.fireworks #sky .fireworks.three {
   background: url("../images/fire3.svg") no-repeat;
-  background-size: cover;
+  background-size: 100%;
   width: 115px;
   height: 126px;
   top: 8%;
@@ -368,7 +376,7 @@ h1 {
 }
 .row.slider.fireworks #sky .fireworks.four {
   background: url("../images/fire4.svg") no-repeat;
-  background-size: cover;
+  background-size: 100%;
   width: 97px;
   height: 95px;
   top: 20%;
@@ -376,7 +384,7 @@ h1 {
 }
 .row.slider.fireworks #sky .fireworks.five {
   background: url("../images/fire5.svg") no-repeat;
-  background-size: cover;
+  background-size: 100%;
   width: 108px;
   height: 101px;
   top: 25%;
