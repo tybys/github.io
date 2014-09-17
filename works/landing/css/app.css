@@ -33,40 +33,31 @@ body {
 ul {
   list-style: none;
 }
+footer {
+  text-align: center;
+}
+footer div {
+  padding: 40px 0;
+  font-size: 20px;
+  color: black;
+}
+footer div a {
+  color: #0070CD;
+}
 a:hover,
 a {
   text-decoration: none;
   font-family: RobotoLight, sans-serif;
 }
 .wrapper {
-  width: 100%;
-  display: table;
-}
-.wrapper > div {
-  display: table-cell;
-  vertical-align: middle;
+  height: calc(100% - 100px);
+  height: -webkit-calc(100% - 100px);
+  margin-top: 100px;
+  position: relative;
 }
 .top {
   background: url(../img/top-bg.png) top right no-repeat fixed;
   background-size: 100%;
-}
-.top .desc img {
-  top: 49%;
-  width: 30.3%;
-  width: 33.8%;
-  top: 50%;
-  width: 30.5%;
-  top: 42.5%;
-  width: 38.3%;
-  display: block;
-  top: 44%;
-  position: absolute;
-}
-.top .downb {
-  width: 4%;
-  width: 4.3%;
-  width: 3.8%;
-  width: 5%;
 }
 .middle {
   background: url(../img/middle-bg.png) center 0 repeat fixed, url(../img/line-middle.png) no-repeat 0 0.66px;
@@ -90,21 +81,6 @@ a {
   width: 71%;
   right: 36.2%;
   margin-top: -8.2%;
-}
-.middle .desc {
-  margin-left: 58.4%;
-  margin-top: 17.1%;
-  margin-left: 58.1%;
-  margin-top: 18.7%;
-  padding-bottom: 16.5%;
-  margin-left: 53.4%;
-  margin-top: 7.1%;
-  padding-bottom: 15.5%;
-  margin-left: 55%;
-  width: 43%;
-  margin-top: 9.1%;
-  padding-bottom: 13.5%;
-  display: block;
 }
 .middle .logo {
   width: 84%;
@@ -152,16 +128,6 @@ a {
   padding-top: 14.3%;
   padding-top: 15.3%;
 }
-.bottom .desc {
-  margin-left: 75px;
-  margin-left: 58px;
-  margin-left: 43px;
-  margin-top: -33px;
-  width: 43%;
-  margin-left: 3px;
-  margin-top: -38px;
-  position: absolute;
-}
 .bottom img.img-responsive {
   margin-left: -12px;
   width: 41.4%;
@@ -192,12 +158,6 @@ a {
   margin-left: 4px;
   margin-top: -7px;
 }
-.bottom .title {
-  width: 78%;
-  margin-bottom: 37px;
-  width: 94%;
-  margin-bottom: 25px;
-}
 .bottom .info {
   width: 75%;
   width: 109%;
@@ -215,56 +175,35 @@ a {
   margin-top: 1.4%;
 }
 .title {
-  width: 85.3%;
+  display: inline-block;
   font-family: RobotoBlack, sans-serif;
+  line-height: 67px;
   font-size: 3.6vh;
   background: #EB0028;
-  width: 89.3%;
-  margin-bottom: 28px;
   color: white;
-  padding-top: 8px;
-  padding-left: 14px;
-  padding-bottom: 8px;
-  width: 88.3%;
+  padding-left: 15px;
+  padding-right: 100px;
+  position: absolute;
+  bottom: calc(37.5% - 40px);
+  bottom: -webkit-calc(37.5% - 40px);
 }
 .info {
+  display: inline-block;
   font-size: 2vh;
-  width: 83%;
   margin-left: 9px;
   color: white;
   font-family: RobotoLight, sans-serif;
-  width: 91%;
+  position: absolute;
+  bottom: calc(27.5% - 20px);
+  bottom: -webkit-calc(27.5% - 20px);
 }
 .info span {
   background: #0070CD;
   outline: #0070CD solid 9px;
 }
-.desc {
-  width: 50%;
-  width: 65%;
-}
-.links {
-  margin-top: -0.5%;
-  margin-left: 3.6%;
-  margin-top: -3.9%;
-  position: absolute;
-}
-.links img {
-  width: 34%;
-  width: 28%;
-}
 .reg {
   margin-left: 9%;
   margin-left: 0;
-}
-.look,
-.reg {
-  display: inline-block;
-  vertical-align: middle;
-  width: 43%;
-  display: block;
-  width: 72%;
-  padding-bottom: 10px;
 }
 .look a,
 .reg a {
@@ -278,10 +217,16 @@ a {
   display: inline-block;
   vertical-align: middle;
 }
-.look span,
-.reg span {
-  width: 61%;
-  width: 64%;
+.links {
+  position: absolute;
+  bottom: 27%;
+  left: 54%;
+}
+.links div {
+  display: inline-block;
+}
+.links div:first-of-type {
+  margin-right: 130px;
 }
 .middle > div,
 .middle .test {
@@ -372,16 +317,6 @@ a {
   display: inline-block;
   vertical-align: middle;
 }
-.slide {
-  padding-bottom: 9.2%;
-  padding-bottom: 8.4%;
-  padding-bottom: 9.8%;
-  margin-top: 3%;
-  padding-bottom: 12.2%;
-  margin-top: 4.2%;
-  padding-bottom: 15.2%;
-  width: 100%;
-}
 .slide > div {
   display: inline-block;
   vertical-align: middle;
@@ -465,15 +400,50 @@ a {
   height: 100%;
   background-size: contain;
 }
+@media all and (min-width: 1900px) {
+  .menu-links li span {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .menu-links li img {
+    min-height: 31px;
+  }
+  .wrapper {
+    width: 1700px;
+    margin: 0 auto;
+  }
+  .slide.downb {
+    position: absolute;
+    bottom: 109px;
+    left: 109px;
+  }
+}
 @media all and (min-width: 1600px) {
+  .menu {
+    height: 80px;
+  }
   .menu .logo {
+    margin-left: 20px;
     border-right: 1px solid rgba(255, 255, 255, 0.25);
     border-left: 1px solid rgba(255, 255, 255, 0.25);
+    line-height: 107px;
+  }
+  .menu .logo img {
+    padding: 0 40px;
+  }
+  .wrapper {
+    height: calc(100% - 80px);
+    height: -webkit-calc(100% - 80px);
+    margin-top: 80px;
   }
   .menu-links {
     width: auto;
     min-width: 591px;
     margin-right: 20px;
+    font-size: 17px;
+  }
+  .menu-links img {
+    max-height: 28px;
   }
   .menu-links ul li {
     display: inline-block;
@@ -490,16 +460,6 @@ a {
     display: block;
     top: 50%;
     position: absolute;
-  }
-  .wrapper {
-    width: 100%;
-    display: table;
-    margin-top: -47px;
-  }
-  .slide {
-    margin-top: 4.2%;
-    padding-bottom: 8.4%;
-    width: 100%;
   }
   .bottom img.img-responsive {
     width: 41.4%;
@@ -549,7 +509,7 @@ a {
     font-size: 17px;
     float: right;
     width: auto;
-    min-width: 591px;
+    min-width: 592px;
     margin-right: 15px;
   }
   .menu-links ul li {
@@ -566,12 +526,13 @@ a {
     position: absolute;
   }
   .top {
-    background-size: cover;
+    background-position: center top;
+    background-size: 120%;
   }
   .wrapper {
-    width: 100%;
-    display: table;
-    margin-top: 14px;
+    height: calc(100% - 60px);
+    height: -webkit-calc(100% - 60px);
+    margin-top: 60px;
   }
   .title {
     font-family: RobotoBlack, sans-serif;
@@ -658,6 +619,10 @@ a {
     margin-right: 15px;
     min-width: 591px;
   }
+  .top {
+    background-size: 150% !important;
+    background-position: center;
+  }
   .top .desc img {
     width: 30.5%;
     display: block;
@@ -665,9 +630,9 @@ a {
     position: absolute;
   }
   .wrapper {
-    width: 100%;
-    display: table;
-    margin-top: -50px;
+    height: calc(100% - 60px);
+    height: -webkit-calc(100% - 60px);
+    margin-top: 60px;
   }
   .title {
     width: 88.3%;
@@ -761,6 +726,11 @@ a {
     margin-right: 10px;
     max-height: 28px;
   }
+  .wrapper {
+    height: calc(100% - 60px);
+    height: -webkit-calc(100% - 60px);
+    margin-top: 60px;
+  }
   .buttons img {
     width: 3vh;
     margin-right: 10px;
@@ -792,12 +762,8 @@ a {
     position: absolute;
   }
   .top {
-    background-size: cover;
-    /*background: url(../img/top-bg.png) -138px -64px repeat fixed;*/
-  
-  }
-  .desc {
-    width: 65%;
+    background-size: 135%;
+    background-position: center;
   }
   .look,
   .reg {
@@ -816,9 +782,6 @@ a {
   .look span,
   .reg span {
     width: 64%;
-  }
-  .top .downb {
-    width: 5%;
   }
   .slide {
     margin-top: 4.2%;

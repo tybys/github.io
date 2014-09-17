@@ -24,7 +24,9 @@
             var sectionHeight = $("section");
             
             sectionHeight.css("height", windowHeight);
-            
+
+
+
             function get_name_browser() {
                 // получаем данные userAgent
                 var ua = navigator.userAgent;
@@ -95,9 +97,13 @@
 
 
 
-            $('.slide .downb').click(function () {
-                var target = $(this).attr('href');
-                $('html, body').animate({ scrollTop: $(target).offset().top }, 1500);
+            $(".slide .downb").click(function () {
+                var target = $(this).attr("href");
+
+                $("html, body").animate({
+                    scrollTop: $(target).offset().top
+                }, 1500);
+                
                 return false;
 
             });
@@ -164,13 +170,13 @@
         </div>
     </div>
     <section id="top" class='top' data-type="background" data-speed="10">
-        <div class="wrapper" style="display: none;">
+        <div class="wrapper">
             <div class="desc">
                 <img src="img/top-logo.svg">
                 <div class='title'>20 000 Интернет-магазинов ждут Вас!</div>
                 <div class='info'>
                     <span>
-                        К сервису ROBOKASSA подключено более 20 000 магазинов и сервисов,
+                        К сервису ROBOKASSA подключено более 20 000 магазинов и сервисов,<br/>
                         в которых Вы можете приобрести любой товар и найти нужную услугу!
                     </span>
                 </div>
@@ -178,9 +184,9 @@
             <div class="links">
                 <div class='look'>
                     <a href="#">
-                        <img src="img/look.svg" width="140">
+                        <img src="img/look.svg" width="120">
                         <span>
-                            Посмотреть каталог
+                            Посмотреть каталог<br />
                             магазинов
                         </span>
                     </a>
@@ -188,7 +194,7 @@
                 <div class='reg'>
                     <a href="#">
 
-                        <img src="img/reg.svg" width="140">
+                        <img src="img/reg.svg" width="120">
                         <span>
                             Зарегистрировать<br />
                             20 001 магазин
@@ -196,11 +202,9 @@
                     </a>
                 </div>
             </div>
-
-
         </div>
-        <div class="slide" style="display: none;">
-            <img class="downb" href="#middle" src="img/down.svg" />
+        <div class="slide downb">
+            <img class="downb" href="#middle" src="img/down.svg" width="86" />
         </div>
     </section>
     
@@ -231,7 +235,6 @@
             </div>
         </div>
     </section>
-    
     <section id="bottom" class='bottom' data-type="background" data-speed="10">
         <div class="wrapper" style="display: none">
             <div class="desc">
