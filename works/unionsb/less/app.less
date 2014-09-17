@@ -446,6 +446,9 @@ html {
         }    
 
     }
+    .nav-tabs > li {
+        margin-right: 2px;
+    }
     .nav-tabs {
         li {
             &.active {
@@ -461,6 +464,10 @@ html {
                 font-size: 16px;
                 color: #727272;
                 position: relative;
+                
+                border: 1px solid rgb(221, 221, 221);
+                border-bottom-color: rgba(0, 0, 0, 0);
+                
                 &:after {
                     content: '';
                     width: ~"calc(100% - 30px)";
@@ -487,7 +494,35 @@ html {
                 font-family: @openSans;
                 font-size: 14px;
             }
+            &.delivery {
+                strong {
+                    display: inline !important;
+                }
+            }
         }
+    }
+}
+.delivery {
+    display: none;
+    p {
+        &:last-of-type {
+            
+        }
+    }
+}
+#contacts {
+    .mini-title {
+        display: block;
+        font-family: @robotoCondensed;
+    }
+    .vcard {
+        font-family: @openSans;
+    }
+    strong {
+        font-size: 14px;
+    }
+    a {
+        color: @orangeColor;
     }
 }
 

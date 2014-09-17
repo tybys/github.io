@@ -407,6 +407,9 @@ html body {
   border-bottom: 1px solid transparent;
   background: #ff8100;
 }
+.content .nav-tabs > li {
+  margin-right: 2px;
+}
 .content .nav-tabs li.active a {
   color: black;
 }
@@ -418,6 +421,8 @@ html body {
   font-size: 16px;
   color: #727272;
   position: relative;
+  border: 1px solid #dddddd;
+  border-bottom-color: rgba(0, 0, 0, 0);
 }
 .content .nav-tabs li a:after {
   content: '';
@@ -441,6 +446,25 @@ html body {
 .content.tabs-page .tab-pane p {
   font-family: 'Open Sans';
   font-size: 14px;
+}
+.content.tabs-page .tab-pane.delivery strong {
+  display: inline !important;
+}
+.delivery {
+  display: none;
+}
+#contacts .mini-title {
+  display: block;
+  font-family: "Roboto Condensed";
+}
+#contacts .vcard {
+  font-family: 'Open Sans';
+}
+#contacts strong {
+  font-size: 14px;
+}
+#contacts a {
+  color: #ff8500;
 }
 .footer {
   background: #ff8500;
