@@ -30,6 +30,21 @@
 body {
   overflow-x: hidden;
 }
+.parallax {
+  -webkit-perspective: 1px;
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax .top {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.parallax .middle {
+  -webkit-transform: translateZ(-1px);
+  transform: translateZ(-1px);
+}
 ul {
   list-style: none;
 }
@@ -58,6 +73,8 @@ a {
 .top {
   background: url(../img/top-bg.png) top right no-repeat fixed;
   background-size: 100%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 .middle {
   background: url(../img/middle-bg.png) center 0 repeat fixed, url(../img/line-middle.png) no-repeat 0 0.66px;
@@ -175,6 +192,8 @@ a {
   margin-top: 1.4%;
 }
 .title {
+  -webkit-transform: translateZ(-5px);
+  transform: translateZ(-5px);
   display: inline-block;
   font-family: RobotoBlack, sans-serif;
   line-height: 67px;
@@ -432,6 +451,8 @@ a {
     padding: 0 40px;
   }
   .wrapper {
+    width: 1425px;
+    margin: 0 auto;
     height: calc(100% - 80px);
     height: -webkit-calc(100% - 80px);
     margin-top: 80px;
@@ -453,7 +474,34 @@ a {
     padding: 3.5% 5.5% 2.7% 5%;
   }
   .top {
-    background-size: cover;
+    background-size: 150%;
+    background-position: center;
+  }
+  .title {
+    padding-right: 80px;
+    font-size: 33px;
+    bottom: calc(37.5% - 33px);
+    bottom: -webkit-calc(37.5% - 33px);
+  }
+  .links {
+    white-space: nowrap;
+    bottom: 30%;
+  }
+  .links img {
+    max-width: 100px;
+  }
+  .links div:first-of-type {
+    margin-right: 105px;
+  }
+  .slide.downb {
+    position: absolute;
+    bottom: 109px;
+    left: 90px;
+  }
+  .info {
+    font-size: 17px;
+    bottom: calc(27.5% - 7px);
+    bottom: -webkit-calc(27.5% - 7px);
   }
   .top .desc img {
     width: 30.3%;

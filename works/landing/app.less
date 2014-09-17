@@ -34,8 +34,31 @@
 }
 
 body {
+
     overflow-x: hidden;
 }
+.parallax {
+	-webkit-perspective: 1px;
+	perspective: 1px;
+	perspective: 1px;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	section {
+//		padding: 100vh 0;
+	}
+	.top {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+	}
+	.middle {
+		-webkit-transform: translateZ(-1px);
+		transform: translateZ(-1px);
+	}
+}
+
+
 ul {
     list-style: none;
 }
@@ -66,6 +89,8 @@ a:hover, a {
 .top {
     background: url(../img/top-bg.png) top right no-repeat fixed;
     background-size: 100%;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
     .downb {
 
     }
@@ -215,6 +240,8 @@ a:hover, a {
 }
 
 .title {
+	-webkit-transform: translateZ(-5px);
+	transform: translateZ(-5px);
 	display: inline-block;
     font-family: RobotoBlack, sans-serif;
 	line-height: 67px;
@@ -524,6 +551,8 @@ a:hover, a {
 		}
 	}
 	.wrapper {
+		width: 1425px;
+		margin: 0 auto;
 		height: ~"calc(100% - 80px)";
 		height: ~"-webkit-calc(100% - 80px)";
 		margin-top: 80px;
@@ -540,7 +569,6 @@ a:hover, a {
 			max-height: 28px;
 		}
 	}
-
 	.menu-links ul li {
 		display: inline-block;
 		vertical-align: middle;
@@ -548,53 +576,73 @@ a:hover, a {
 		margin-left: -0.8%;
 		padding: 3.5% 5.5% 2.7% 5%;
 	}
-
 	.top {
-		background-size: cover;
+		background-size: 150%;
+		background-position: center;
 	}
-
+	.title {
+		padding-right: 80px;
+		font-size: 33px;
+		bottom: ~"calc(37.5% - 33px)";
+		bottom: ~"-webkit-calc(37.5% - 33px)";
+	}
+	.links {
+		white-space: nowrap;
+		bottom: 30%;
+		img {
+			max-width: 100px;
+		}
+		div {
+			&:first-of-type {
+				margin-right: 105px;
+			}
+		}
+	}
+	.slide {
+		&.downb {
+			position: absolute;
+			bottom: 109px;
+			left: 90px;
+		}
+	}
+	.info {
+		font-size: 17px;
+		bottom: ~"calc(27.5% - 7px)";
+		bottom: ~"-webkit-calc(27.5% - 7px)";
+	}
 	.top .desc img {
 		width: 30.3%;
 		display: block;
 		top: 50%;
 		position: absolute;
 	}
-
-
-
 	.bottom img.img-responsive {
 		width: 41.4%;
 		margin-top: -21px;
 		margin-left: -1px;
 	}
-
 	.bottom-down {
 		display: table;
 		width: 100%;
 		margin-top: 54px;
 	}
-
 	.bottom img.topb {
 		width: 8.6%;
 		margin-left: 59px;
 		margin-top: -8px;
 	}
-
 	.bottom-down .slide {
 		width: 46.9%;
 	}
-
 	.bottom .desc {
 		width: 43%;
 		margin-left: 58px;
 		margin-top: -38px;
 	}
-
 	.buttons ul li a {
 		padding: 15px 7px 20px 16px;
 		border-radius: 15px;
 	}
-
 	.buttons ul li {
 		display: inline-block;
 		vertical-align: middle;
