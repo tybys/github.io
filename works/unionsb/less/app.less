@@ -1,13 +1,15 @@
 // defaults
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300&subset=latin,cyrillic-ext); // Ubuntu
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic-ext); // Roboto Condensed
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic-ext); // open sans condensed
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,cyrillic-ext); // open sans condensed
+@import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext); // open sans
 
 @robotoCondensed: "Roboto Condensed";
 @arial: "Arial";
 @verdana: "Verdana";
 @ubuntu: "Ubuntu";
 @openSansCondensed: 'Open Sans Condensed', sans-serif;
+@openSans: 'Open Sans';
 
 @defaultColor: rgba(255, 255,255, 1);
 @titleColor: rgba(114, 114, 114, 1);
@@ -36,6 +38,18 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008c00', endColorstr='#00d000',GradientType=0 );
         
         box-shadow: 0 1px 3px gray;
+        &.callback {
+            &:before {
+                content: '';
+                width: 14px;
+                height: 18px;
+                display: inline-block;
+                background: url("../images/callback-btn.png") no-repeat;
+                position: relative;
+                top: 3px;
+                margin-right: 5px;
+            }
+        }
     }
     &.btn-byu {
         background: #ff8400;
@@ -51,6 +65,37 @@
         border: none;
         box-shadow: 0 1px 3px gray;
         text-transform: uppercase;
+        line-height: 22px;
+        
+        &:after {
+            content: '';
+            width: 22px;
+            height: 19px;
+            float: left;
+            background: url("../images/cart-btn.png") no-repeat;
+            margin-right: 5px;
+        }
+    }
+}
+.breadcrumb>li+li:before {
+    color: black;
+}
+.breadcrumb {
+    padding-left: 0;
+    background: none;
+    li {
+        a {
+            font-family: @verdana;
+            font-size: 13px;
+            color: black;
+            text-decoration: underline;
+        }
+
+        &.active {
+            font-family: @verdana;
+            font-size: 13px;
+            color: #ff7e00;
+        }
     }
 }
 
@@ -374,9 +419,75 @@ html {
                 line-height: 35px;
                 color: black;
                 text-decoration: none;
+                border: 1px solid transparent;
+                display: block;
                 text-transform: uppercase;
+                
+                transition: all 0.4s ease;
+            }
+            &.active {
+                a {
+                    border-radius: 5px 5px 0 0;
+                    display: block;
+                    border: 1px solid #ffcd2c;
+                    border-bottom: 1px solid transparent;
+                    background: #ff8100;
+                }
+            }
+            &:hover {
+                a {
+                    border-radius: 5px 5px 0 0;
+                    display: block;
+                    border: 1px solid #ffcd2c;
+                    border-bottom: 1px solid transparent;
+                    background: #ff8100;
+                }
             }
         }    
+
+    }
+    .nav-tabs {
+        li {
+            &.active {
+                a {
+                    color: black;
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+            a {
+                font-family: @verdana;
+                font-size: 16px;
+                color: #727272;
+                position: relative;
+                &:after {
+                    content: '';
+                    width: ~"calc(100% - 30px)";
+                    width: ~"-webkit-calc(100% - 30px)";
+                    height: 1px;
+                    border-bottom: 1px dashed;
+                    position: absolute;
+                    bottom: 10px;
+                    left: 15px;
+                }
+            }
+        }
+    }
+    &.tabs-page {
+        .tab-pane {
+            padding-top: 40px;
+            strong {
+                font-size: 14px;
+                font-family: @openSansCondensed;
+                font-weight: bold;
+                display: block;
+            }
+            p {
+                font-family: @openSans;
+                font-size: 14px;
+            }
+        }
     }
 }
 
