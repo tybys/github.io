@@ -57,7 +57,7 @@
         </div>
         
         <div class="container">
-            <div class="row content">
+            <div class="row content cart">
                 <div class="col-md-2">
                     <a class="btn btn-success callback">Обратный звонок</a>
                     <div class="menu">
@@ -111,21 +111,21 @@
                             </label>
                         </fieldset>
                         
-                        <fieldset>
-                            <table>
+                        <fieldset class="m-table">
+                            <table class="main-table" cellpadding="0" cellspacing="0">
                                 <tr>
                                     <th>Пункт</th>
                                     <th>Наименование</th>
                                     <th>Кол-во</th>
                                     <th>Цена</th>
                                 </tr>
-                                <tr>
+                                <tr class="items">
                                     <td>1</td>
                                     <td>Карта EM-Marine толстая <a href="#">(удалить)</a></td>
                                     <td><input type="text"></td>
                                     <td>100 руб.</td>
                                 </tr>
-                                <tr>
+                                <tr class="total">
                                     <td></td>
                                     <td colspan="2">Общая сумма:</td>
                                     <td>100 руб.</td>
@@ -145,6 +145,37 @@
                                 <input type="radio" name="personal">
                                 Юридическое лицо
                             </label>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <legend>Контактное лицо</legend>
+                            <table class="secondary-table">
+                                <tr>
+                                    <td>Имя:</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Фамилия:</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Отчество:</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>E-mail:</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Телефон:</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        
+                        <fieldset>
+                            * поля обязательные для заполнения
+                            <button class="btn btn-warning">Отправить заказ</button>
                         </fieldset>
                     </form>
                 </div>
