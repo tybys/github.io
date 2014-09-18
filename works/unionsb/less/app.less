@@ -508,6 +508,29 @@ html {
         }
     }
     &.cart {
+        .itemsSimiliar {
+            .item {
+                float: none;
+                margin: 0;
+                padding: 0;
+                height: 230px;
+                min-height: 230px;
+                -webkit-transform: scale(0.7);
+                -webkit-filter: grayscale(100%);
+                transition: all 0.5s ease;
+                &:hover {
+                    border-radius: 5px;
+                    box-shadow: 0 0 15px orange;
+                    -webkit-transform: scale(1);
+                    -webkit-filter: grayscale(0);
+                    position: relative;
+                    z-index: 1;
+                    .title {
+                        background: white;
+                    }
+                }
+            }
+        }
         form {
             width: 682px;
             fieldset {

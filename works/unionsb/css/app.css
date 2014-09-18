@@ -459,6 +459,27 @@ html body {
 .content.tabs-page .tab-pane.delivery strong {
   display: inline !important;
 }
+.content.cart .itemsSimiliar .item {
+  float: none;
+  margin: 0;
+  padding: 0;
+  height: 230px;
+  min-height: 230px;
+  -webkit-transform: scale(0.7);
+  -webkit-filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+.content.cart .itemsSimiliar .item:hover {
+  border-radius: 5px;
+  box-shadow: 0 0 15px orange;
+  -webkit-transform: scale(1);
+  -webkit-filter: grayscale(0);
+  position: relative;
+  z-index: 1;
+}
+.content.cart .itemsSimiliar .item:hover .title {
+  background: white;
+}
 .content.cart form {
   width: 682px;
 }
