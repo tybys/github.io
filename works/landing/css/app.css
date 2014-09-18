@@ -30,21 +30,6 @@
 body {
   overflow-x: hidden;
 }
-.parallax {
-  -webkit-perspective: 1px;
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.parallax .top {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-}
-.parallax .middle {
-  -webkit-transform: translateZ(-1px);
-  transform: translateZ(-1px);
-}
 ul {
   list-style: none;
 }
@@ -73,8 +58,6 @@ a {
 .top {
   background: url(../img/top-bg.png) top right no-repeat fixed;
   background-size: 100%;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
 }
 .middle {
   background: url(../img/middle-bg.png) center 0 repeat fixed, url(../img/line-middle.png) no-repeat 0 0.66px;
@@ -192,8 +175,6 @@ a {
   margin-top: 1.4%;
 }
 .title {
-  -webkit-transform: translateZ(-5px);
-  transform: translateZ(-5px);
   display: inline-block;
   font-family: RobotoBlack, sans-serif;
   line-height: 67px;
