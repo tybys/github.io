@@ -36,7 +36,8 @@
   top: 3px;
   margin-right: 5px;
 }
-.btn.btn-byu {
+.btn.btn-byu,
+.btn.btn-cart {
   background: #ff8400;
   background: -moz-linear-gradient(top, #ff8400 0%, #ffa100 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff8400), color-stop(100%, #ffa100));
@@ -51,13 +52,21 @@
   text-transform: uppercase;
   line-height: 22px;
 }
-.btn.btn-byu:after {
+.btn.btn-byu:after,
+.btn.btn-cart:after {
   content: '';
   width: 22px;
   height: 19px;
   float: left;
   background: url("../images/cart-btn.png") no-repeat;
   margin-right: 5px;
+}
+.btn.btn-cart {
+  display: block;
+  margin: 0 auto;
+}
+.btn.btn-cart:after {
+  display: none;
 }
 .breadcrumb > li + li:before {
   color: black;
@@ -450,10 +459,40 @@ html body {
 .content.tabs-page .tab-pane.delivery strong {
   display: inline !important;
 }
+.content.cart form {
+  width: 682px;
+}
+.content.cart form fieldset:first-of-type,
+.content.cart form fieldset.personal {
+  margin-bottom: 30px;
+  padding-left: 25px;
+}
+.content.cart form fieldset.personal {
+  margin-top: 30px;
+}
+.content.cart form fieldset:last-of-type {
+  margin: 40px 0 20px 0;
+}
+.content.cart form fieldset:last-of-type p {
+  display: block;
+}
+.content.cart label {
+  font-size: 15px;
+  font-family: 'Open Sans';
+  color: #262626;
+  margin-right: 10px;
+}
+.content.cart label input {
+  margin-right: 5px;
+  vertical-align: top;
+}
 .content.cart .m-table {
   border: 1px solid #d3d3d3;
   border-radius: 10px;
   display: inline-block;
+}
+.content.cart .secondary-table {
+  width: 520px;
 }
 .content.cart .secondary-table td {
   font-size: 13px;
@@ -472,6 +511,19 @@ html body {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   padding-left: 10px;
+}
+.content.cart .main-table .amountUp,
+.content.cart .main-table .amountDown {
+  position: relative;
+  top: -5px;
+  text-decoration: none !important;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0) url("http://union-sb.ru/templates/union/images/arrow_up.png") center no-repeat scroll;
+}
+.content.cart .main-table .amountDown {
+  background-image: url("http://union-sb.ru/templates/union/images/arrow_down.png");
 }
 .content.cart .main-table .items {
   background: #f7f7f7;
@@ -493,9 +545,10 @@ html body {
   font-size: 17px;
 }
 .content.cart .main-table tr:last-of-type td {
-  color: #262626;
+  color: #b0b0b0;
 }
 .content.cart .main-table th {
+  padding: 6px;
   border: 1px solid #d3d3d3;
   font-family: 'Open Sans';
   font-size: 14px;
@@ -511,6 +564,7 @@ html body {
   border-right: none;
 }
 .content.cart .main-table td {
+  padding: 20px;
   min-height: 60px;
   border: 1px solid #d3d3d3;
   font-family: 'Open Sans';

@@ -51,7 +51,8 @@
             }
         }
     }
-    &.btn-byu {
+    &.btn-byu,
+    &.btn-cart {
         background: #ff8400;
         background: -moz-linear-gradient(top,  #ff8400 0%, #ffa100 100%);
         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff8400), color-stop(100%,#ffa100));
@@ -75,6 +76,11 @@
             background: url("../images/cart-btn.png") no-repeat;
             margin-right: 5px;
         }
+    }
+    &.btn-cart {
+        display: block;
+        margin: 0 auto;
+        &:after {display: none;}
     }
 }
 .breadcrumb>li+li:before {
@@ -502,12 +508,42 @@ html {
         }
     }
     &.cart {
+        form {
+            width: 682px;
+            fieldset {
+                &:first-of-type,
+                &.personal {
+                    margin-bottom: 30px;
+                    padding-left: 25px;
+                }
+                &.personal {
+                    margin-top: 30px;
+                }
+                &:last-of-type {
+                    margin: 40px 0 20px 0;
+                    p {
+                        display: block;
+                    }
+                }
+            }
+        }
+        label {
+            font-size: 15px;
+            font-family: @openSans;
+            color: @grayColor;
+            margin-right: 10px;
+            input {
+                margin-right: 5px;
+                vertical-align: top;
+            }
+        }
         .m-table {
             border: 1px solid #d3d3d3;
             border-radius: 10px;
             display: inline-block;
         }
         .secondary-table {
+            width: 520px;
             td {
                 font-size: 13px;
                 width: 50%;
@@ -531,6 +567,20 @@ html {
 //            border: 1px solid #d3d3d3;
 //            border-radius: 10px;
 //            border-collapse: separate;
+            .amountUp, .amountDown {
+                position: relative;
+                top: -5px;
+                text-decoration: none !important;
+                width: 24px;
+                height: 24px;
+                display: inline-block;
+                background: rgba(0, 0, 0, 0) url("http://union-sb.ru/templates/union/images/arrow_up.png") center no-repeat scroll;
+            }
+            .amountDown {
+                background-image: url("http://union-sb.ru/templates/union/images/arrow_down.png");
+            }
+
+
             .items {
                 background: #f7f7f7;
                 input {
@@ -556,12 +606,13 @@ html {
             tr {
                 &:last-of-type {
                     td {
-                        color: @grayColor;    
+                        color: #b0b0b0;    
                     }
                     
                 }
             }
             th {
+                padding: 6px;
                 border: 1px solid #d3d3d3;
                 font-family: @openSans;
                 font-size: 14px;
@@ -577,6 +628,7 @@ html {
                 }
             }
             td {
+                padding: 20px;
                 min-height: 60px;
                 border: 1px solid #d3d3d3;
                 font-family: @openSans;
