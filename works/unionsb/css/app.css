@@ -454,6 +454,14 @@ html body {
   bottom: 10px;
   left: 15px;
 }
+.content.category .compare a:not(.btn) {
+  font-family: "Verdana";
+  font-size: 12px;
+  color: black;
+  text-decoration: underline;
+  margin-bottom: 15px;
+  display: block;
+}
 .content.category .item-category-wrapper h3 {
   font-family: "Verdana";
   font-size: 14px;
