@@ -395,6 +395,9 @@ footer div a {
     left: 109px;
   }
 }
+@media all and (min-width: 1900px) and (height: 1200px) {
+  
+}
 @media all and (min-width: 1600px) {
   .menu {
     height: 80px;
@@ -415,8 +418,45 @@ footer div a {
     height: -webkit-calc(100% - 80px);
     margin-top: 80px;
   }
+  .wrapper .desc {
+    bottom: -7.5vh;
+    height: 450px;
+  }
+  .wrapper .desc > img {
+    max-height: 58px;
+  }
   .wrapper .title {
     font-size: 33px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    padding: 10px;
+  }
+  .wrapper .links {
+    white-space: nowrap;
+    bottom: 65%;
+    left: calc(100% + 100px);
+    left: -webkit-calc(100% + 100px);
+  }
+  .wrapper .links span {
+    font-size: 17px !important;
+  }
+  .wrapper .links img {
+    max-width: 100px;
+  }
+  .wrapper .links div:first-of-type {
+    margin-right: 105px;
+  }
+  .wrapper .slide.downb {
+    position: absolute;
+    bottom: 15%;
+  }
+  .wrapper .slide.downb img {
+    width: 70px;
+  }
+  .wrapper .info {
+    font-size: 17px;
+    width: 125%;
   }
   .menu-links {
     width: auto;
@@ -433,7 +473,7 @@ footer div a {
     vertical-align: middle;
     border-right: 1px solid rgba(255, 255, 255, 0.25);
     margin-left: -0.8%;
-    padding: 3.5% 5.5% 2.7% 5%;
+    padding: 2.6% 5.5% 3.5% 5%;
   }
   .menu-links ul li span {
     line-height: 15px;
@@ -444,24 +484,6 @@ footer div a {
   .top {
     background-size: 150%;
     background-position: center;
-  }
-  .links {
-    white-space: nowrap;
-    bottom: 30%;
-  }
-  .links img {
-    max-width: 100px;
-  }
-  .links div:first-of-type {
-    margin-right: 105px;
-  }
-  .slide.downb img {
-    width: 70px;
-  }
-  .info {
-    font-size: 17px;
-    bottom: calc(27.5% - 7px);
-    bottom: -webkit-calc(27.5% - 7px);
   }
   .bottom img.img-responsive {
     width: 41.4%;
@@ -520,6 +542,7 @@ footer div a {
     border-right: 1px solid rgba(255, 255, 255, 0.25);
     margin-left: -0.8%;
     padding: 3% 5.5% 2.7% 5%;
+    line-height: 43px;
   }
   .menu-links ul li span {
     line-height: 15px;
@@ -543,16 +566,36 @@ footer div a {
     font-size: 3.6vh;
     background: #EB0028;
     color: white;
+    padding: 10px;
+    font-size: 33px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
   }
   .wrapper .info {
-    bottom: calc(19% - 51px);
-    bottom: -webkit-calc(19% - 51px);
+    font-size: 17px;
+  }
+  .wrapper .links {
+    left: 110%;
+    bottom: 57%;
+    width: 100%;
   }
   .wrapper .links img {
     max-width: 100px;
   }
   .wrapper .links div:first-of-type {
     margin-right: 85px;
+  }
+  .wrapper .desc {
+    bottom: -40px;
+    height: 350px;
+  }
+  .wrapper .desc .downb {
+    position: absolute;
+    bottom: 0;
+  }
+  .wrapper .desc > img {
+    max-height: 58px;
   }
   .slide {
     display: inline-block;
@@ -651,30 +694,44 @@ footer div a {
     margin: 0 auto;
   }
   .wrapper .title {
-    bottom: calc(40.5% - 70px);
-    bottom: -webkit-calc(40.5% - 70px);
-    padding-right: 50px;
+    font-size: 28px;
+    width: 539px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    padding: 5px;
   }
   .wrapper .info {
-    bottom: calc(29% - 35px);
-    bottom: -webkit-calc(29% - 35px);
+    font-size: 16px;
+    width: 125%;
   }
   .wrapper .links {
     position: absolute;
-    bottom: 30%;
-    left: 60%;
-    width: 45%;
+    bottom: 50%;
+    left: 110%;
+    width: 100%;
   }
   .wrapper .links span {
     font-size: 16px;
   }
   .wrapper .links div:first-of-type {
-    margin-right: 0;
+    margin-right: 60px;
   }
   .wrapper .links img {
     max-width: 70px;
   }
-  .slide.downb img {
+  .wrapper .desc {
+    bottom: 5%;
+    height: 405px;
+  }
+  .wrapper .desc > img {
+    max-height: 45px;
+  }
+  .wrapper .slide.downb {
+    position: absolute;
+    bottom: 15%;
+  }
+  .wrapper .slide.downb img {
     max-width: 45px;
   }
   .middle .test {

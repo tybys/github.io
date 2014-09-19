@@ -1,3 +1,4 @@
+
 // defaults
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300&subset=latin,cyrillic-ext); // Ubuntu
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic-ext); // Roboto Condensed
@@ -508,6 +509,44 @@ html {
                 margin-bottom: 15px;
                 display: block;
             }
+			form {
+				border: 1px solid #a1a1a1;
+				border-radius: 10px;
+				font-family: @openSans;
+				font-weight: normal;
+				fieldset {
+					padding: 0 22px;
+					&:first-of-type {
+						padding: 0 12px;
+						input {
+							width: 50px;
+							height: 20px;
+							border: 1px solid #a9a9a9;
+						}
+					}
+				}
+				ul {
+					padding: 0;
+					margin: 0;
+					li {
+						list-style: none;
+					}
+				}
+				legend {
+					border: none;
+					font-size: 13px;
+
+					font-weight: bold;
+				}
+				label {
+					font-size: 13px;
+					font-weight: normal;
+					input[type="radio"] {
+						margin-right: 8px;
+					}
+				}
+			}
+
         }
         .item-category-wrapper {
             h3 {

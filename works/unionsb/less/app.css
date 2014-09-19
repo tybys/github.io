@@ -454,6 +454,9 @@ html body {
   bottom: 10px;
   left: 15px;
 }
+.content.category .compare {
+  display: none;
+}
 .content.category .compare a:not(.btn) {
   font-family: "Verdana";
   font-size: 12px;
@@ -461,42 +464,6 @@ html body {
   text-decoration: underline;
   margin-bottom: 15px;
   display: block;
-}
-.content.category .compare form {
-  border: 1px solid #a1a1a1;
-  border-radius: 10px;
-  font-family: 'Open Sans';
-  font-weight: normal;
-}
-.content.category .compare form fieldset {
-  padding: 0 22px;
-}
-.content.category .compare form fieldset:first-of-type {
-  padding: 0 12px;
-}
-.content.category .compare form fieldset:first-of-type input {
-  width: 50px;
-  height: 20px;
-  border: 1px solid #a9a9a9;
-}
-.content.category .compare form ul {
-  padding: 0;
-  margin: 0;
-}
-.content.category .compare form ul li {
-  list-style: none;
-}
-.content.category .compare form legend {
-  border: none;
-  font-size: 13px;
-  font-weight: bold;
-}
-.content.category .compare form label {
-  font-size: 13px;
-  font-weight: normal;
-}
-.content.category .compare form label input[type="radio"] {
-  margin-right: 8px;
 }
 .content.category .item-category-wrapper h3 {
   font-family: "Verdana";

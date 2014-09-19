@@ -18,6 +18,9 @@
             var sectionHeight = $("section");
             
             sectionHeight.css("height", windowHeight);
+            if (windowHeight >= 1083 && windowWidth == 1600) {
+                $(".top .desc").css("bottom", 50);
+            }
 
             function get_name_browser() {
                 // получаем данные userAgent
