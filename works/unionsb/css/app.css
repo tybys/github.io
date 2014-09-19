@@ -5,6 +5,9 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,cyrillic-ext);
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext);
+form .btn-compare {
+  margin-left: 22px !important;
+}
 .btn.btn-warning {
   background: #fbfaf8;
   background: -moz-linear-gradient(top, #fbfaf8 0%, #ffda5a 100%);
@@ -35,6 +38,16 @@
   position: relative;
   top: 3px;
   margin-right: 5px;
+}
+.btn.btn-compare {
+  font-size: 13px;
+  line-height: 6px;
+  color: black;
+  text-transform: none !important;
+  display: inline-block !important;
+}
+.btn.btn-compare:last-of-type {
+  margin: 15px 0 15px 0;
 }
 .btn.btn-byu,
 .btn.btn-cart {
@@ -248,9 +261,24 @@ html body {
 .content {
   padding-top: 15px;
 }
-.content .col-md-2 {
+.content .tab-image {
+  width: 100%;
+}
+.content.cart .col-md-2 {
   width: calc(16.66666667% + 50px);
   width: -webkit-calc(16.66666667% + 50px);
+}
+.content.cart .col-md-10 {
+  width: calc(83.33333333% - 50px);
+  width: -webkit-calc(83.33333333% - 50px);
+}
+.content.category .col-md-2.compare {
+  width: calc(16.66666667% + 84px);
+  width: -webkit-calc(16.66666667% + 84px);
+}
+.content.category .col-md-10.compare {
+  width: calc(83.33333333% - 84px);
+  width: -webkit-calc(83.33333333% - 84px);
 }
 .content .col-md-2.itemsSimiliar {
   width: calc(16.66666667% + 95px);
@@ -262,10 +290,6 @@ html body {
   margin-left: 0;
   margin-right: 0;
   text-align: center;
-}
-.content .col-md-10 {
-  width: calc(83.33333333% - 50px);
-  width: -webkit-calc(83.33333333% - 50px);
 }
 .content .menu ul {
   padding: 0 0 0 15px;
@@ -468,16 +492,40 @@ html body {
   font-family: 'Open Sans';
   font-weight: normal;
 }
-.content.category .compare form fieldset {
+.content.category .compare form fieldset ul,
+.content.category .compare form fieldset span {
   padding: 0 22px;
 }
 .content.category .compare form fieldset:first-of-type {
-  padding: 0 12px;
+  text-align: center;
+}
+.content.category .compare form fieldset:first-of-type span {
+  font-size: 11px;
+}
+.content.category .compare form fieldset:first-of-type legend {
+  text-align: left;
 }
 .content.category .compare form fieldset:first-of-type input {
   width: 50px;
   height: 20px;
   border: 1px solid #a9a9a9;
+  margin: 0 3.5px;
+}
+.content.category .compare form fieldset.short-tech-info legend span {
+  border-bottom: 1px dashed;
+  padding: 0;
+}
+.content.category .compare form fieldset.brand li {
+  float: left;
+  width: 49%;
+}
+.content.category .compare form fieldset.brand li label {
+  font-size: 11px;
+}
+.content.category .compare form fieldset.brand span i {
+  font-size: 11px;
+  font-style: normal;
+  border-bottom: 1px dotted;
 }
 .content.category .compare form ul {
   padding: 0;
@@ -490,13 +538,22 @@ html body {
   border: none;
   font-size: 13px;
   font-weight: bold;
+  padding: 13px 0 7px 0;
+  margin: 0;
+  background: url("../images/legend-normal.png") no-repeat 4% 60%;
+  text-indent: 20px;
+}
+.content.category .compare form legend.selected {
+  background: url("../images/legend-selected.png") no-repeat 4.5% 60%;
 }
 .content.category .compare form label {
   font-size: 13px;
   font-weight: normal;
 }
 .content.category .compare form label input[type="radio"] {
-  margin-right: 8px;
+  width: 12px;
+  height: 12px;
+  margin-right: 3.5px;
 }
 .content.category .item-category-wrapper h3 {
   font-family: "Verdana";

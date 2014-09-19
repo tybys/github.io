@@ -17,6 +17,11 @@
 @orangeColor: rgba(255, 133, 0, 1);
 @grayColor: rgba(38, 38, 38, 1);
 
+form {
+    .btn-compare {
+        margin-left: 22px !important;
+    }
+}
 .btn {
     &.btn-warning {
         background: #fbfaf8;
@@ -50,6 +55,16 @@
                 top: 3px;
                 margin-right: 5px;
             }
+        }
+    }
+    &.btn-compare {
+        font-size: 13px;
+        line-height: 6px;
+        color: black;
+        text-transform: none !important;
+        display: inline-block !important;
+        &:last-of-type {
+            margin: 15px 0 15px 0;
         }
     }
     &.btn-byu,
@@ -255,10 +270,30 @@ html {
 
 .content {
     padding-top: 15px;
-    .col-md-2 {
-        width: ~"calc(16.66666667% + 50px)";
-        width: ~"-webkit-calc(16.66666667% + 50px)";
+    .tab-image {
+        width: 100%;
     }
+    &.cart {
+        .col-md-2 {
+            width: ~"calc(16.66666667% + 50px)";
+            width: ~"-webkit-calc(16.66666667% + 50px)";
+        }
+        .col-md-10 {
+            width: ~"calc(83.33333333% - 50px)";
+            width: ~"-webkit-calc(83.33333333% - 50px)";
+        }
+    }
+    &.category {
+        .col-md-2.compare {
+            width: ~"calc(16.66666667% + 84px)";
+            width: ~"-webkit-calc(16.66666667% + 84px)";
+        }
+        .col-md-10.compare {
+        width: ~"calc(83.33333333% - 84px)";
+        width: ~"-webkit-calc(83.33333333% - 84px)";
+        }
+    }
+
     .col-md-2.itemsSimiliar {
         width: ~"calc(16.66666667% + 95px)";
         width: ~"-webkit-calc(16.66666667% + 95px)";
@@ -270,10 +305,7 @@ html {
         margin-right: 0;
         text-align: center;
     }
-    .col-md-10 {
-        width: ~"calc(83.33333333% - 50px)";
-        width: ~"-webkit-calc(83.33333333% - 50px)";
-    }
+
     .menu {
         ul {
             padding: 0 0 0 15px;
@@ -515,15 +547,52 @@ html {
 				font-family: @openSans;
 				font-weight: normal;
 				fieldset {
-					padding: 0 22px;
+//					padding: 0 22px;
+                    ul, span {
+                        padding: 0 22px;
+                    }
 					&:first-of-type {
-						padding: 0 12px;
+                        text-align: center;
+//						padding: 0 12px;
+                        span {
+                            font-size: 11px;
+                        }
+                        legend {
+                            text-align: left;
+                        }
 						input {
 							width: 50px;
 							height: 20px;
 							border: 1px solid #a9a9a9;
+                            margin: 0 3.5px;
 						}
 					}
+                    &.short-tech-info {
+                        legend {
+                            span {
+                                border-bottom: 1px dashed;
+                                padding: 0;
+                            }
+
+                        }
+                    }
+                    &.brand {
+                        li {
+                            label {
+                                font-size: 11px;
+                            }
+                            float: left;
+                            width: 49%;
+                        }
+                        span {
+                            i {
+                                font-size: 11px;
+                                font-style: normal;
+                                border-bottom: 1px dotted;
+                            }
+
+                        }
+                    }
 				}
 				ul {
 					padding: 0;
@@ -537,12 +606,35 @@ html {
 					font-size: 13px;
 
 					font-weight: bold;
+                    padding: 13px 0 7px 0;
+//                    margin-left: -10px !important;
+                    margin: 0;
+                    background: url("../images/legend-normal.png") no-repeat 4% 60%;
+                    text-indent: 20px;
+                    &.selected {
+                        background: url("../images/legend-selected.png") no-repeat 4.5% 60%;
+                    }
+                    &:before {
+//                        content: '';
+//                        width: 0;
+//                        height: 0;
+//                        border-left: 4px solid rgba(0, 0, 0, 0);
+//                        border-right: 4px solid rgba(0, 0, 0, 0);
+//                        border-top: 5px solid #516b94;
+//                        vertical-align: baseline;
+//                        display: inline-block;
+//                        position: relative;
+//                        top: -1.5px;
+//                        left: -4px;
+                    }
 				}
 				label {
 					font-size: 13px;
 					font-weight: normal;
 					input[type="radio"] {
-						margin-right: 8px;
+                        width: 12px;
+                        height: 12px;
+						margin-right: 3.5px;
 					}
 				}
 			}
@@ -618,16 +710,6 @@ html {
     &.cart {
         .itemsSimiliar {
             .item {
-//                float: none;
-//                margin: auto;
-//                margin: 0;
-//                padding: 0;
-//                height: 230px;
-//                min-height: 230px;
-//                -webkit-transform: scale(0.7);
-//                -webkit-filter: grayscale(100%);
-//                transition: all 0.5s ease;
-                
                 width: 160px;
                 float: none;
                 margin: 0 0 0 auto;
@@ -660,18 +742,6 @@ html {
                         }
                     }
                     
-                }
-                &:hover {
-//                    border-radius: 5px;
-//                    box-shadow: 0 0 15px orange;
-//                    -webkit-transform: scale(1);
-//                    -webkit-filter: grayscale(0);
-//                    position: relative;
-//                    z-index: 1;
-//                    .title {
-//                        background: white;
-//                        
-//                    }
                 }
             }
         }
@@ -731,9 +801,6 @@ html {
             }
         }
         .main-table {
-//            border: 1px solid #d3d3d3;
-//            border-radius: 10px;
-//            border-collapse: separate;
             .amountUp, .amountDown {
                 position: relative;
                 top: -5px;
