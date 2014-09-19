@@ -25,11 +25,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="category.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="item-card.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/unionsb/item-card.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3986711" vertical-offset="0" max-vertical-offset="5220">
+              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tabs.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unionsb/tabs.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-24.375" vertical-offset="225" max-vertical-offset="3525">
+              <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unionsb/category.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6810631" vertical-offset="0" max-vertical-offset="4200">
-              <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+            <state vertical-scroll-proportion="-21.875" vertical-offset="435" max-vertical-offset="4230">
+              <caret line="64" column="42" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
               <folding>
                 <element signature="n#style#0;n#input#2;n#fieldset#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -37,12 +59,79 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="cart.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unionsb/cart.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-25.0" vertical-offset="0" max-vertical-offset="4515">
+              <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unionsb/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.076923" vertical-offset="3870" max-vertical-offset="4860">
+              <caret line="300" column="49" selection-start-line="300" selection-start-column="49" selection-end-line="300" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="app.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unionsb/less/app.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.428571" vertical-offset="0" max-vertical-offset="14715">
-              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-              <folding />
+            <state vertical-scroll-proportion="-0.14563107" vertical-offset="510" max-vertical-offset="13410">
+              <caret line="273" column="15" selection-start-line="273" selection-start-column="12" selection-end-line="273" selection-end-column="15" />
+              <folding>
+                <element signature="e#787#853#0" expanded="false" />
+                <element signature="e#806#851#0" expanded="false" />
+                <element signature="e#859#4023#0" expanded="false" />
+                <element signature="e#879#1526#0" expanded="false" />
+                <element signature="e#1545#2602#0" expanded="false" />
+                <element signature="e#2251#2596#0" expanded="false" />
+                <element signature="e#2274#2586#0" expanded="false" />
+                <element signature="e#2621#2854#0" expanded="false" />
+                <element signature="e#2802#2848#0" expanded="false" />
+                <element signature="e#2885#3917#0" expanded="false" />
+                <element signature="e#3703#3911#0" expanded="false" />
+                <element signature="e#3933#4021#0" expanded="false" />
+                <element signature="e#4049#4070#0" expanded="false" />
+                <element signature="e#4083#4418#0" expanded="false" />
+                <element signature="e#4135#4416#0" expanded="false" />
+                <element signature="e#4147#4288#0" expanded="false" />
+                <element signature="e#4307#4410#0" expanded="false" />
+                <element signature="e#4425#4521#0" expanded="false" />
+                <element signature="e#4482#4519#0" expanded="false" />
+                <element signature="e#4575#4596#0" expanded="false" />
+                <element signature="e#4603#8526#0" expanded="false" />
+                <element signature="e#4617#4787#0" expanded="false" />
+                <element signature="e#4802#4890#0" expanded="false" />
+                <element signature="e#4814#4884#0" expanded="false" />
+                <element signature="e#4900#5349#0" expanded="false" />
+                <element signature="e#4967#5343#0" expanded="false" />
+                <element signature="e#5250#5333#0" expanded="false" />
+                <element signature="e#5360#5760#0" expanded="false" />
+                <element signature="e#5440#5754#0" expanded="false" />
+                <element signature="e#5613#5744#0" expanded="false" />
+                <element signature="e#5639#5730#0" expanded="false" />
+                <element signature="e#5780#6899#0" expanded="false" />
+                <element signature="e#5856#6636#0" expanded="false" />
+                <element signature="e#6652#6884#0" expanded="false" />
+                <element signature="e#6913#8524#0" expanded="false" />
+                <element signature="e#7115#7456#0" expanded="false" />
+                <element signature="e#7163#7371#0" expanded="false" />
+                <element signature="e#7392#7446#0" expanded="false" />
+                <element signature="e#7470#8410#0" expanded="false" />
+                <element signature="e#7520#7912#0" expanded="false" />
+                <element signature="e#7603#7898#0" expanded="false" />
+                <element signature="e#7933#8400#0" expanded="false" />
+                <element signature="e#8010#8386#0" expanded="false" />
+                <element signature="e#8040#8364#0" expanded="false" />
+                <element signature="e#8421#8518#0" expanded="false" />
+                <element signature="e#32244#32279#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,8 +146,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/unionsb/less/app.less" />
+        <option value="$PROJECT_DIR$/unionsb/tabs.html" />
         <option value="$PROJECT_DIR$/unionsb/category.html" />
+        <option value="$PROJECT_DIR$/unionsb/cart.html" />
+        <option value="$PROJECT_DIR$/unionsb/less/app.less" />
+        <option value="$PROJECT_DIR$/unionsb/home.html" />
+        <option value="$PROJECT_DIR$/unionsb/item-card.html" />
       </list>
     </option>
   </component>
@@ -127,56 +220,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="works" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="works" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unionsb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="less" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="works" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="works" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="briklaer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="works" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="works" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="briklaer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -187,6 +230,7 @@
     <property name="options.lastSelected" value="preferences.sourceCode.LESS" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -275,20 +319,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unionsb/less/app.less">
+    <entry file="file://$PROJECT_DIR$/unionsb/tabs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.428571" vertical-offset="0" max-vertical-offset="14715">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        <state vertical-scroll-proportion="-24.375" vertical-offset="225" max-vertical-offset="3525">
+          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/unionsb/category.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6810631" vertical-offset="0" max-vertical-offset="4200">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        <state vertical-scroll-proportion="-21.875" vertical-offset="435" max-vertical-offset="4230">
+          <caret line="64" column="42" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
           <folding>
             <element signature="n#style#0;n#input#2;n#fieldset#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unionsb/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.0" vertical-offset="0" max-vertical-offset="4515">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unionsb/less/app.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.14563107" vertical-offset="510" max-vertical-offset="13410">
+          <caret line="273" column="15" selection-start-line="273" selection-start-column="12" selection-end-line="273" selection-end-column="15" />
+          <folding>
+            <element signature="e#787#853#0" expanded="false" />
+            <element signature="e#806#851#0" expanded="false" />
+            <element signature="e#859#4023#0" expanded="false" />
+            <element signature="e#879#1526#0" expanded="false" />
+            <element signature="e#1545#2602#0" expanded="false" />
+            <element signature="e#2251#2596#0" expanded="false" />
+            <element signature="e#2274#2586#0" expanded="false" />
+            <element signature="e#2621#2854#0" expanded="false" />
+            <element signature="e#2802#2848#0" expanded="false" />
+            <element signature="e#2885#3917#0" expanded="false" />
+            <element signature="e#3703#3911#0" expanded="false" />
+            <element signature="e#3933#4021#0" expanded="false" />
+            <element signature="e#4049#4070#0" expanded="false" />
+            <element signature="e#4083#4418#0" expanded="false" />
+            <element signature="e#4135#4416#0" expanded="false" />
+            <element signature="e#4147#4288#0" expanded="false" />
+            <element signature="e#4307#4410#0" expanded="false" />
+            <element signature="e#4425#4521#0" expanded="false" />
+            <element signature="e#4482#4519#0" expanded="false" />
+            <element signature="e#4575#4596#0" expanded="false" />
+            <element signature="e#4603#8526#0" expanded="false" />
+            <element signature="e#4617#4787#0" expanded="false" />
+            <element signature="e#4802#4890#0" expanded="false" />
+            <element signature="e#4814#4884#0" expanded="false" />
+            <element signature="e#4900#5349#0" expanded="false" />
+            <element signature="e#4967#5343#0" expanded="false" />
+            <element signature="e#5250#5333#0" expanded="false" />
+            <element signature="e#5360#5760#0" expanded="false" />
+            <element signature="e#5440#5754#0" expanded="false" />
+            <element signature="e#5613#5744#0" expanded="false" />
+            <element signature="e#5639#5730#0" expanded="false" />
+            <element signature="e#5780#6899#0" expanded="false" />
+            <element signature="e#5856#6636#0" expanded="false" />
+            <element signature="e#6652#6884#0" expanded="false" />
+            <element signature="e#6913#8524#0" expanded="false" />
+            <element signature="e#7115#7456#0" expanded="false" />
+            <element signature="e#7163#7371#0" expanded="false" />
+            <element signature="e#7392#7446#0" expanded="false" />
+            <element signature="e#7470#8410#0" expanded="false" />
+            <element signature="e#7520#7912#0" expanded="false" />
+            <element signature="e#7603#7898#0" expanded="false" />
+            <element signature="e#7933#8400#0" expanded="false" />
+            <element signature="e#8010#8386#0" expanded="false" />
+            <element signature="e#8040#8364#0" expanded="false" />
+            <element signature="e#8421#8518#0" expanded="false" />
+            <element signature="e#32244#32279#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unionsb/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.076923" vertical-offset="3870" max-vertical-offset="4860">
+          <caret line="300" column="49" selection-start-line="300" selection-start-column="49" selection-end-line="300" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unionsb/item-card.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3986711" vertical-offset="0" max-vertical-offset="5220">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
