@@ -82,7 +82,8 @@ form {
         border: none;
         box-shadow: 0 1px 3px gray;
         text-transform: uppercase;
-        line-height: 22px;
+        line-height: 24px;
+        padding-bottom: 4px;
         
         &:after {
             content: '';
@@ -125,12 +126,27 @@ html {
     position: relative;
     min-height: 100%;
     body {
+        min-width: 1217px;
         margin-bottom: 155px;
     }
 }
 
+.container-fluid {
+    padding: 0;
+
+    .row {
+        margin: 0;
+    }
+}
+
 .container {
-    width: 1217px !important;
+    width: 1217px;
+    .search {
+        padding-right: 0;
+    }
+    .logotype {
+        padding-left: 0;
+    }
 }
 
 .null {
@@ -169,6 +185,7 @@ html {
         }
     }
     .auth {
+        text-align: right;
         float: left;
         width: 50%;
         line-height: 30px;
@@ -176,7 +193,15 @@ html {
             font-size: 13px;
             font-family: @verdana;
             color: @grayColor;
-            border-bottom: 1px dashed @grayColor;
+            i {
+                border-bottom: 1px dashed @grayColor;
+                font-style: normal;
+            }
+            &:hover {
+                -webkit-transition: all 0.5s ease;
+                text-decoration: none;
+                i { border: none; }
+            }
             &:first-child {
                 &:after {
                     content: '/';
@@ -236,7 +261,7 @@ html {
             margin-top: 3px;
             &.left {
                 float: left;
-                width: 60%;
+                width: 55%;
                 &:after {
                     content: '';
                     width: 20px;
@@ -303,21 +328,40 @@ html {
         width: ~"calc(83.33333333% - 84px)";
         width: ~"-webkit-calc(83.33333333% - 84px)";
         }
+        .filter {
+            font-family: @robotoCondensed;
+            text-transform: uppercase;
+            font-size: rgb(114, 114, 114);
+            span {
+                border-bottom: 1px dashed;
+                &:hover {
+                    cursor: pointer;
+                    border-bottom: none;
+                }
+                &:first-of-type {
+                    margin: 0 40px 0 20px;
+                }
+            }
+        }
     }
     &.item-card {
         .recents {
             .item {
                 float: left !important;
-                margin: 0 15px 25px 0 !important;
+                margin: 0 13px 25px 0 !important;
                 min-height: 175px;
                 height: auto !important;
+                &:nth-child(4n) {
+                    margin-right: 0 !important;
+                }
             }
         }
         .recents, .also-watch {
             .item {
                 width: 160px;
                 float: none;
-                margin: 0 0 0 auto;
+//                margin: 0 0 0 auto;
+                margin: 0 auto;
                 margin-bottom: 20px;
                 padding: 0;
                 strong {
@@ -325,8 +369,11 @@ html {
                 }
                 .cube {
                     width:160px;
+                    min-height: 149px;
+                    height: auto;
                     img {
-                        width: 85%;
+                        margin-top: 5px;
+                        width: 70%;
                     }
                     .bottom {
                         height: 40px;
@@ -360,6 +407,7 @@ html {
         .col-md-10.card {
             width: ~"calc(83.33333333% - 84px)";
             width: ~"-webkit-calc(83.33333333% - 84px)";
+            padding-left: 0;
             h3 {
                 margin-bottom: 37px;
             }
@@ -1071,8 +1119,14 @@ html {
     position: absolute;
     bottom: 0;
     width: 100%;
+    min-width: 1217px;
     .col-md-9 {
-
+        &.second {
+            margin-top: 30px;
+            a {
+                line-height: 45px;
+            }
+        }
         ul {
             text-align: justify;
             overflow: hidden;
@@ -1081,6 +1135,7 @@ html {
             padding: 0;
             margin-bottom: 10px;
             line-height: 22px;
+            margin-top: 25px;
             &:after {
                 content: "1";
                 margin-left: 100%;
