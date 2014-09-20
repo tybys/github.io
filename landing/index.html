@@ -6,7 +6,9 @@
     <link rel="stylesheet" type="text/css" href="css/app.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.easing.js"></script>
     <script type="text/javascript" src="js/jquery.interactive_bg.js"></script>
     <script src="http://webext.ru/wp-content/uploads/2012/03/jquery.mousewheel.js"></script>
 
@@ -21,6 +23,13 @@
             if (windowHeight >= 1083 && windowWidth == 1600) {
                 $(".top .desc").css("bottom", 50);
             }
+
+            $(window).resize(function () {
+                sectionHeight.css("height", windowHeight);
+                if (windowHeight >= 1083 && windowWidth == 1600) {
+                    $(".top .desc").css("bottom", 50);
+                }
+            });
 
             function get_name_browser() {
                 // получаем данные userAgent
@@ -46,7 +55,7 @@
 
                 $("html, body").animate({
                     scrollTop: $(target).offset().top
-                }, 1500);
+                }, 2000, 'easeInOutQuint');
 
                 return false;
 
@@ -54,7 +63,7 @@
 
             $('.slide .topb').click(function () {
                 var target = $(this).attr('href');
-                $('html, body').animate({ scrollTop: $(target).offset().top }, 1500);
+                $('html, body').animate({ scrollTop: $(target).offset().top }, 1500, 'easeInQuint');
                 return false;
 
             });
@@ -145,7 +154,7 @@
 
         </section>
         <section id="middle" class='middle' data-type="background" data-speed="10">
-            <div class="wrapper" style="display: none;">
+            <div class="wrapper">
                 <div class="obl">
                 </div>
                 <img class="img-responsive test" src="img/middle-pic.png" alt="">

@@ -3,6 +3,7 @@
   padding: 0;
 }
 body {
+  min-width: 1024px;
   overflow-x: hidden;
 }
 body ul {
@@ -14,8 +15,8 @@ body a {
   font-family: RobotoLight, sans-serif;
 }
 .top {
-  background: url(../img/top-bg.png) top right no-repeat fixed;
-  background-size: 100%;
+  background: url("../img/top-bg.png") top right no-repeat fixed;
+  background-size: cover !important;
 }
 .middle {
   background: url(../img/middle-bg.png) center 0 repeat fixed, url(../img/line-middle.png) no-repeat 0 0.66px;
@@ -394,9 +395,6 @@ footer div a {
     bottom: 109px;
     left: 109px;
   }
-}
-@media all and (min-width: 1900px) and (height: 1200px) {
-  
 }
 @media all and (min-width: 1600px) {
   .menu {
