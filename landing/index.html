@@ -18,7 +18,7 @@
             var windowHeight = $(window).outerHeight();
             var menuHeight = $(".menu").outerHeight();
             var sectionHeight = $("section");
-            
+
             sectionHeight.css("height", windowHeight);
             if (windowHeight >= 1083 && windowWidth == 1600) {
                 $(".top .desc").css("bottom", 50);
@@ -42,11 +42,11 @@
                 if (ua.search(/Safari/) > 0) return 'Safari';
                 if (ua.search(/MSIE/) > 0) return 'IE';
                 // условий может быть и больше.
-                // сейчас сделаны проверки только 
+                // сейчас сделаны проверки только
                 // для популярных браузеров
                 return 'IE11';
             }
-            
+
             var browser = get_name_browser();
             $('html').addClass(browser);
 
@@ -68,7 +68,23 @@
 
             });
 
-            $(".obl").interactive_bg();
+            $(window).scroll(function(e){
+                parallax();
+            });
+
+            function parallax(){
+                var scrolled = $(window).scrollTop();
+                $('.obl').css('top',-(scrolled*0.15)+'px');
+                $('.img-responsive').css('top',-(scrolled*0.55)+'px');
+
+                $("#top .desc > img").css({
+                    position: "relative",
+                    top: -(scrolled*0.15)+'px',
+                    left: -(scrolled*0.15)+'px'
+                });
+            }
+
+//            $(".obl").interactive_bg();
         });
     </script>
 </head>

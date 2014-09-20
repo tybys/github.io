@@ -19,9 +19,6 @@ body a {
   background-size: cover !important;
 }
 .middle {
-  background: url(../img/middle-bg.png) center 0 repeat fixed, url(../img/line-middle.png) no-repeat 0 0.66px;
-  background: url(../img/middle-bg.png) center 0 repeat fixed, url(../img/line-middle.png) no-repeat 0 1px;
-  background: url(../img/middle-bg.png) center 0 repeat fixed, url(../img/line-middle.png) no-repeat 0 -0.71px;
   background: url(../img/middle-bg.png) center 0 repeat fixed, url(../img/line-middle.png) no-repeat 0 -0.3px;
   background-color: #3196DB;
 }
