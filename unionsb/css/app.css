@@ -1,9 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300&subset=latin,cyrillic-ext);
-
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic-ext);
-
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,cyrillic-ext);
-
 @import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext);
 form .btn-compare {
   margin-left: 22px !important;
@@ -194,9 +191,7 @@ html body {
   font-size: 10px;
   width: 245px;
   /* Firefox 19+ */
-
   /* Firefox 18- */
-
 }
 .head .bottom.search input[type="text"]::-webkit-input-placeholder {
   color: #ff8500;
@@ -720,6 +715,9 @@ html body {
 }
 .content.category .compare form fieldset.brand li label {
   font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .content.category .compare form fieldset.brand span i {
   font-size: 11px;

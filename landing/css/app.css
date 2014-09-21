@@ -2,10 +2,6 @@
   margin: 0;
   padding: 0;
 }
-body {
-  min-width: 1024px;
-  overflow-x: hidden;
-}
 body ul {
   list-style: none;
 }
@@ -15,11 +11,12 @@ body a {
   font-family: RobotoLight, sans-serif;
 }
 .top {
-  background: url("../img/top-bg.png") top right no-repeat fixed;
+  background: url("../img/top-bg orig.png") top right no-repeat fixed;
   background-size: cover !important;
 }
 .middle {
-  background: url(../img/middle-bg.png) center 0 repeat fixed, url(../img/line-middle.png) no-repeat 0 -0.3px;
+  background-image: url("../img/middle-rep.png");
+  background-repeat: repeat;
   background-color: #3196DB;
 }
 .middle .wrapper {
@@ -37,17 +34,6 @@ body a {
   width: 71%;
   right: 36.2%;
   margin-top: -8.2%;
-}
-.middle .logo {
-  width: 84%;
-  margin-bottom: 17%;
-  width: 90.9%;
-  margin-bottom: 16%;
-  width: 74%;
-  margin-bottom: 13%;
-  display: block;
-  width: 93%;
-  margin-bottom: 14%;
 }
 .middle .title {
   width: 50%;
@@ -75,11 +61,11 @@ body a {
   margin-left: 8px;
 }
 .bottom {
+  background: url(../img/bottombg_orig_mini.jpg) center 0 repeat fixed;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
   padding-top: 16.3%;
-  background: url(../img/bottombg.jpg) center 0 repeat fixed;
   background-size: cover;
   padding-top: 14.3%;
   padding-top: 15.3%;
@@ -117,18 +103,6 @@ body a {
 .bottom .info {
   width: 75%;
   width: 109%;
-}
-.bottom .logo {
-  width: 70%;
-  margin-bottom: 5%;
-  width: 74%;
-  margin-bottom: 6%;
-  width: 88%;
-  margin-bottom: 7%;
-}
-.bottom > img {
-  width: 41.4%;
-  margin-top: 1.4%;
 }
 .wrapper {
   height: calc(100% - 100px);
@@ -612,11 +586,6 @@ footer div a {
     padding-bottom: 16.5%;
     display: block;
   }
-  .middle .logo {
-    display: block;
-    width: 90.9%;
-    margin-bottom: 16%;
-  }
   .middle img.downb {
     width: 4.1%;
     margin-left: 5px;
@@ -634,10 +603,6 @@ footer div a {
     width: 44.6%;
     margin-top: -22px;
     margin-left: 38px;
-  }
-  .bottom .logo {
-    width: 74%;
-    margin-bottom: 6%;
   }
   .bottom .desc {
     width: 43%;

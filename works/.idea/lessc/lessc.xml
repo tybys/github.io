@@ -9,13 +9,13 @@
               <option name="cssDirectories">
                 <list>
                   <CssDirectory>
-                    <option name="path" value="$PROJECT_DIR$/../landing/css" />
+                    <option name="path" value="$PROJECT_DIR$/../unionsb/css" />
                   </CssDirectory>
                 </list>
               </option>
               <option name="id" value="0" />
-              <option name="lessDirPath" value="$PROJECT_DIR$/../landing" />
-              <option name="name" value="landing" />
+              <option name="lessDirPath" value="$PROJECT_DIR$/../unionsb/less" />
+              <option name="name" value="union" />
             </LessProfile>
           </value>
         </entry>
