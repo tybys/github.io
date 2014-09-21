@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
 }
+.top,
+.middle,
+.bottom {
+  background-attachment: fixed;
+}
 body ul {
   list-style: none;
 }
@@ -11,7 +16,7 @@ body a {
   font-family: RobotoLight, sans-serif;
 }
 .top {
-  background: url("../img/top-bg orig.png") top right no-repeat fixed;
+  background: url("../img/top-bg orig.png") top right no-repeat;
   background-size: cover !important;
 }
 .middle {
@@ -19,46 +24,10 @@ body a {
   background-repeat: repeat;
   background-color: #3196DB;
 }
-.middle .wrapper {
-  width: 100%;
-  display: table;
-  margin-top: -50px;
-}
-.middle .test {
-  width: 69%;
-  right: 34.2%;
-  width: 56%;
-  right: 46.2%;
-  margin-top: -6.9%;
+.middle .wrapper > img {
   position: absolute;
-  width: 71%;
-  right: 36.2%;
-  margin-top: -8.2%;
-}
-.middle .title {
-  width: 50%;
-  width: 51%;
-  width: 63%;
-}
-.middle .info {
-  width: 93%;
-}
-.middle .slide {
-  position: absolute;
-  margin-top: 3%;
-  z-index: 999999;
-  margin-bottom: 10.6%;
-  margin-top: 4%;
-}
-.middle img.downb {
-  width: 3.7%;
-  width: 4.1%;
-  margin-left: 5px;
-}
-.middle img.topb {
-  width: 2.5%;
-  width: 2.8%;
-  margin-left: 8px;
+  left: -150px;
+  top: -175px;
 }
 .bottom {
   background: url(../img/bottombg_orig_mini.jpg) center 0 repeat fixed;
@@ -112,7 +81,6 @@ body a {
 }
 .wrapper .desc {
   width: 50%;
-  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: 0;
 }
@@ -172,28 +140,8 @@ footer div a {
   margin-left: 9%;
   margin-left: 0;
 }
-.middle > div,
-.middle .test {
-  display: inline-block;
-  vertical-align: middle;
-}
-.bottom > img,
-.bottom .desc {
-  display: inline-block;
-  vertical-align: middle;
-}
-.bottom .buttons,
-.bottom .slide {
-  display: table-cell;
-  vertical-align: middle;
-}
 .bottom-down {
-  margin-top: 61px;
-  margin-top: 54px;
-  margin-top: 32px;
-  display: table;
   width: 100%;
-  margin-top: 48px;
 }
 .bottom-down .slide {
   width: 46.8%;
@@ -716,9 +664,6 @@ footer div a {
     width: 74%;
     margin-bottom: 13%;
   }
-  .middle .title {
-    width: 51%;
-  }
   .bottom {
     padding-top: 15.3%;
   }
@@ -868,9 +813,6 @@ footer div a {
     width: 93%;
     margin-bottom: 14%;
   }
-  .middle .title {
-    width: 63%;
-  }
   .middle .slide {
     margin-top: 4%;
   }
@@ -890,10 +832,6 @@ footer div a {
   }
   .bottom .info {
     width: 109%;
-  }
-  .bottom .title {
-    width: 94%;
-    margin-bottom: 25px;
   }
   .bottom .logo {
     width: 88%;

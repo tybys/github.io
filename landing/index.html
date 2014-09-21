@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <title></title>
@@ -9,15 +9,18 @@
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/jquery.easing.js"></script>
-    <script type="text/javascript" src="js/jquery.interactive_bg.js"></script>
-    <script src="http://webext.ru/wp-content/uploads/2012/03/jquery.mousewheel.js"></script>
+    <script src="js/jquery.transit.js"></script>
 
     <script>
+
         $(document).ready(function () {
+
+
+
             var windowWidth = $(window).outerWidth();
             var windowHeight = $(window).outerHeight();
             var menuHeight = $(".menu").outerHeight();
-            var sectionHeight = $("section");
+            var sectionHeight = $(".floor");
 
             sectionHeight.css("height", windowHeight);
             if (windowHeight >= 1083 && windowWidth == 1600) {
@@ -30,25 +33,6 @@
                     $(".top .desc").css("bottom", 50);
                 }
             });
-
-            function get_name_browser() {
-                // получаем данные userAgent
-                var ua = navigator.userAgent;
-                // с помощью регулярок проверяем наличие текста,
-                // соответствующие тому или иному браузеру
-                if (ua.search(/Chrome/) > 0) return 'Chrome';
-                if (ua.search(/Firefox/) > 0) return 'Firefox';
-                if (ua.search(/Opera/) > 0) return 'Opera';
-                if (ua.search(/Safari/) > 0) return 'Safari';
-                if (ua.search(/MSIE/) > 0) return 'IE';
-                // условий может быть и больше.
-                // сейчас сделаны проверки только
-                // для популярных браузеров
-                return 'IE11';
-            }
-
-            var browser = get_name_browser();
-            $('html').addClass(browser);
 
             $(".slide .downb").click(function () {
                 var target = $(this).attr("href");
@@ -63,205 +47,221 @@
 
             $('.slide .topb').click(function () {
                 var target = $(this).attr('href');
-                $('html, body').animate({ scrollTop: $(target).offset().top }, 1500, 'easeInQuint');
+                $('html, body').animate({scrollTop: $(target).offset().top}, 1500, 'easeInQuint');
                 return false;
 
             });
 
-//            $(window).scroll(function(e){
-//                parallax();
-//            });
-//
-//            function parallax(){
-//                var scrolled = $(window).scrollTop();
-//                $('.obl').css('top',-(scrolled*0.15)+'px');
-//                $('.img-responsive').css('top',-(scrolled*0.55)+'px');
-//
-//                $("#top .desc > img").css({
-//                    position: "relative",
-//                    top: -(scrolled*0.15)+'px',
-//                    left: -(scrolled*0.15)+'px'
-//                });
-//            }
+            $(window).scroll(function(e){
+                parallax();
+            });
 
-//            $(".obl").interactive_bg();
+
+            function parallax(){
+                var scrolled = $(window).scrollTop();
+
+                $('#firstObj').css({
+                    position: 'relative',
+                    top: -(scrolled * 0.55) + 'px',
+                    '-webkit-filter': +"blur"+(scrolled * 0.05)+'px'
+                });
+
+                $("#top .wrapper .title").css({
+                    position: 'relative',
+                    top: -(scrolled * 0.25)+'px'
+                });
+
+                $("#top .wrapper .info").css({
+                    position: 'relative',
+                    top: -(scrolled * 0.15)+'px'
+                });
+
+                $("#fiveObj").css({
+                    marginBottom: scrolled * 0.35 + 'px'
+                });
+
+                $(".menu").css({
+                    top: -(scrolled * 0.05)+'px',
+                    '-webkit-filter': "blur" +"("+ (scrolled * 0.05)+'px'+")" // ahahaha biach, got it!
+                });
+            }
         });
     </script>
 </head>
 
 <body>
-    <div class="menu">
-        <div class="logo">
-            <img src="img/logo-head.svg">
-        </div>
-        <div class="menu-links">
-            <ul>
-                <li>
-                    <a href="#" class="menu-lk">
-                        <img src="img/lk.svg">
+<div class="menu">
+    <div class="logo">
+        <img src="img/logo-head.svg">
+    </div>
+    <div class="menu-links">
+        <ul>
+            <li>
+                <a href="#" class="menu-lk">
+                    <img src="img/lk.svg">
                         <span>
                             <span class="bol">
                                 Личный кабинет
                             </span>
                             Зарегистрироваться
                         </span>
-                    </a>
-                </li>
-                <li>
-                   <a href="#" class="menu-app">
-                        <img src="img/app.svg">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-app">
+                    <img src="img/app.svg">
                         <span>
                             Скачать в
                             <span class="bol"> App Store</span>
                         </span>
-                    </a>
-                </li>
-                <li>
-                     <a href="#" class="menu-play">
-                        <img src="img/play.svg">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-play">
+                    <img src="img/play.svg">
                         <span>
                             Скачать в
                             <span class="bol"> Google Play</span>
                         </span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+                </a>
+            </li>
+        </ul>
     </div>
-        <section id="top" class='top' data-type="background" data-speed="10">
-        <div class="wrapper">
-            <div class="desc">
-                <!--<img src="img/top-logo.svg">-->
-                <div class='title'>20 000 Интернет-магазинов ждут Вас!</div>
-                <div class='info'>
+</div>
+<div id="top" class="top floor">
+    <div class="wrapper">
+        <div class="desc">
+            <img src="img/top-logo.svg" id="firstObj">
+            <div class='title' id="secondObj">20 000 Интернет-магазинов ждут Вас!</div>
+            <div class='info' id="thirdObj">
                     <span>
                         К сервису ROBOKASSA подключено более 20 000 магазинов и сервисов,<br/>
                         в которых Вы можете приобрести любой товар и найти нужную услугу!
                     </span>
-                </div>
-                <div class="slide downb">
-                    <img class="downb" href="#middle" src="img/down.svg" width="86" />
-                </div>
+            </div>
+            <div class="slide downb" id="fiveObj">
+                <img class="downb" href="#middle" src="img/down.svg" width="86" />
+            </div>
 
-                <div class="links">
-                    <div class='look'>
-                        <a href="#">
-                            <img src="img/look.svg" width="120">
+            <div class="links" id="sixObj">
+                <div class='look'>
+                    <a href="#">
+                        <img src="img/look.svg" width="120">
                         <span>
-                            Посмотреть каталог<br />
+                            Посмотреть каталог<br/>
                             магазинов
                         </span>
-                        </a>
-                    </div>
-                    <div class='reg'>
-                        <a href="#">
+                    </a>
+                </div>
+                <div class='reg'>
+                    <a href="#">
 
-                            <img src="img/reg.svg" width="120">
+                        <img src="img/reg.svg" width="120">
                         <span>
-                            Зарегистрировать<br />
+                            Зарегистрировать<br/>
                             20 001 магазин
                         </span>
-                        </a>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
 
-        </section>
-        <section id="middle" class='middle' data-type="background" data-speed="10">
-            <div class="wrapper">
-                <!--<div class="obl">-->
-                <!--</div>-->
-                <!--<img class="img-responsive test" src="img/middle-pic orig.png" alt="">-->
+</div>
+<div id="middle" class="middle floor">
+    <div class="wrapper">
+        <!--<div class="obl">-->
+        <!--</div>-->
+        <img class="img-responsive test" src="img/middle-pic orig.png" alt="">
 
 
-                <div class="desc">
-                    <img src="img/middle-logo.svg" class="logo">
-                    <div class='title'>Бонусы за покупку</div>
-                    <div class='info'>
+        <div class="desc">
+            <img src="img/middle-logo.svg" class="logo">
+            <div class='title'>Бонусы за покупку</div>
+            <div class='info'>
                         <span>
                             Для наших любимых клиентов у нас есть бонусы!
                             Совершая покупки через ROBOKASSA, вы получаете бонусные баллы.
                             Их можно потратить на скидку при следующей покупке.
                         </span>
-                    </div>
-                    <div class="slide">
-
-                            <img class="downb" href="#bottom" src="img/down.svg" />
-
-                            <img class="topb" href="#top" src="img/top.svg" />
-
-                    </div>
-                </div>
             </div>
-        </section>
-        <section id="bottom" class='bottom' data-type="background" data-speed="10">
-            <div class="wrapper">
-                <div class="desc">
-                    <img src="img/logo-bottom.svg" class="logo">
-                    <div class='title'>Вся история Ваших платежей</div>
-                    <div class='info'>
+            <div class="slide">
+
+                <img class="downb" href="#bottom" src="img/down.svg" />
+
+                <img class="topb" href="#top" src="img/top.svg" />
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="bottom" class="bottom floor">
+    <div class="wrapper">
+        <div class="desc">
+            <img src="img/logo-bottom.svg" class="logo">
+            <div class='title'>Вся история Ваших платежей</div>
+            <div class='info'>
                         <span>
                             Мы собрали всю историю ваших покупок через ROBOKASSA.
                             Покупайте в интернет-магазинах, оплачивайте услуги –
                             все новые платежи автоматически появятся
                             в вашем личном кабинете.
                         </span>
-                    </div>
-                </div>
-                <img class="img-responsive" src="img/bottom-pic_orig.png" alt="">
-
-
             </div>
-            <div class="bottom-down">
-                <div class="slide">
-                    <img class="topb" href="#top" src="img/top.svg" />
-                    <span>В начало</span>
-                </div>
-                <div class="buttons">
+        </div>
+        <img class="img-responsive" src="img/bottom-pic_orig.png" alt="">
 
-                    <ul class="list-inline intro-social-buttons">
-                        <li>
-                            <a href="#" class="btn btn-default btn-lg lk">
-                                <img src="img/lk.svg">
+
+    </div>
+    <div class="bottom-down">
+        <div class="slide">
+            <img class="topb" href="#top" src="img/top.svg" />
+            <span>В начало</span>
+        </div>
+        <div class="buttons">
+
+            <ul class="list-inline intro-social-buttons">
+                <li>
+                    <a href="#" class="btn btn-default btn-lg lk">
+                        <img src="img/lk.svg">
                                 <span>
                                     <span class="bol">
                                         Личный кабинет
                                     </span>
                                     Зарегистрироваться
                                 </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn btn-default btn-lg app">
-                                <img src="img/app.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-default btn-lg app">
+                        <img src="img/app.svg">
                                 <span>
                                     Скачать в
                                     <span class="bol"> App Store</span>
                                 </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn btn-default btn-lg play">
-                                <img src="img/play.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-default btn-lg play">
+                        <img src="img/play.svg">
                                 <span>
                                     Скачать в
                                     <span class="bol"> Google Play</span>
                                 </span>
-                            </a>
-                        </li>
-                    </ul>
+                    </a>
+                </li>
+            </ul>
 
 
-                </div>
-            </div>
-
-        </section>
-    <footer>
-        <div>
-        © 2014 <a href="#">ОКЕАН БАНК (ЗАО)</a>
         </div>
-    </footer>
+    </div>
+
+</div>
+<footer>
+    <div>
+        © 2014 <a href="#">ОКЕАН БАНК (ЗАО)</a>
+    </div>
+</footer>
 </body>
 
 </html>
