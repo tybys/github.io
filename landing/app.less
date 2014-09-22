@@ -28,40 +28,22 @@ body {
     background-repeat: repeat;
 	background-color: #3196DB;
     .wrapper > img {
+
         position: absolute;
         left: -150px;
         top: -175px;
     }
 }
+
 .bottom {
 	background: url(../img/bottombg_orig_mini.jpg) center 0 repeat fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
 	-moz-background-size: cover;
-	padding-top: 16.3%;
-//	background: url(../img/bottombg.jpg) center 0 repeat fixed;
 	background-size: cover;
-	padding-top: 14.3%;
-	padding-top: 15.3%;
+
 	img {
-		&.img-responsive {
-			width: 41.4%;
-			margin-top: -26px;
-			margin-left: -12px;
-			width: 41.4%;
-			margin-top: -21px;
-			margin-left: -1px;
-			width: 44.6%;
-			margin-top: -22px;
-			margin-left: 38px;
-			width: 43.4%;
-			margin-top: -35px;
-			margin-left: -33px;
-			width: 55%;
-			margin-top: -26px;
-			margin-left: 377px;
-		}
 		&.topb {
 			width: 8.6%;
 			margin-left: 76px;
@@ -121,13 +103,9 @@ body {
 		margin-left: 9px;
 		color: white;
 		font-family: RobotoLight, sans-serif;
-
-//		position: absolute;
-//		bottom: ~"calc(27.5% - 20px)";
-//		bottom: ~"-webkit-calc(27.5% - 20px)";
 		span {
 			background: #0070CD;
-			outline: #0070CD solid 9px;
+			outline: #0070CD solid 4px;
 		}
 	}
 	.links {
@@ -378,9 +356,14 @@ footer {
 	}
 }
 @media all and (min-width: 1900px) and (height: 1200px) {
-
+	/*
+542, 542, 765, 854, 1022, 1244
+*/
+	.middle .wrapper > img {
+		width: 1022px;
+	}
 }
-@media all and (min-width: 1600px) {
+@media all and (min-width: 1600px) and (max-width: 1899px) {
 
 	.menu {
 		height: 80px;
@@ -473,6 +456,10 @@ footer {
 		background-position: center;
 	}
 
+	.middle .wrapper > img {
+		width: 854px;
+	}
+
 	.bottom img.img-responsive {
 		width: 41.4%;
 		margin-top: -21px;
@@ -537,6 +524,10 @@ footer {
 		img {
 			max-height: 28px;
 		}
+	}
+
+	.middle .wrapper > img {
+		width: 765px;
 	}
 
 	.top {
@@ -684,7 +675,9 @@ footer {
 		}
 	}
 
-
+	.middle .wrapper > img {
+		width: 542px;
+	}
 
 	.wrapper {
 		height: ~"calc(100% - 60px)";
@@ -844,11 +837,15 @@ footer {
 			}
 			.title {
 				font-size: 28px;
-				width: 539px;
+//				width: 539px;
 				text-align: center;
 				text-align: center;
 				margin-top: 30px;
-				margin-bottom: 25px
+				margin-bottom: 25px;
+				width: auto;
+				white-space: nowrap;
+				padding: 8px;
+
 			}
 			.info {
 				font-size: 16px;
@@ -861,6 +858,82 @@ footer {
 		}
 
 	}
+	.middle {
+		.wrapper {
+			& > img {
+				top: 25px;
+				left: -115px;
+				width: 602px;
+			}
+			.desc {
+				margin-left: 50%;
+				width: 43%;
+				padding-bottom: 13.5%;
+				.title {
+					margin-top: 0;
+				}
+				.info {
+					margin-left: 0;
+					span {
+						&:last-of-type {
+							margin-top: 10px;
+						}
+					}
+				}
+				img {
+					margin-top: 105px;
+					max-height: 105px;
+					&.logo {
+						margin-bottom: 12%;
+					}
+				}
+			}
+			.slide {
+				img {
+					&:first-of-type {
+						width: 45px;
+					}
+					width: 30px;
+					position: static;
+					margin-top: 0;
+				}
+			}
+		}
+	}
+	.bottom {
+		.wrapper {
+			& > img {
+				width: 55%;
+				margin-top: -26px;
+				margin-left: 377px;
+			}
+			.desc {
+				position: static;
+				margin-top: 125px;
+				.info {
+					margin-left: 4px;
+				}
+				span {
+					position: relative;
+					z-index: 10;
+				}
+				img {
+					&.logo {
+						max-height: 105px;
+					}
+					&.img-responsive {
+						position: absolute;
+						top: 150px;
+						right: 0;
+						width: auto;
+//						margin: 0;
+						max-height: 311px;
+					}
+				}
+			}
+		}
+	}
+
 
 
 	.slide {
@@ -917,13 +990,7 @@ footer {
 		right: 36.2%;
 		margin-top: -8.2%;
 	}
-	.middle .desc {
-		margin-left: 55%;
-		width: 43%;
-		margin-top: 9.1%;
-		padding-bottom: 13.5%;
-		display: block;
-	}
+
 	.middle .logo {
 		display: block;
 		width: 93%;
@@ -937,11 +1004,7 @@ footer {
 		background: url(../img/middle-bg.png) center 0 repeat fixed, url(../img/line-middle.png) no-repeat 0 -30px/100%;
 		background-color: #3196DB;
 	}
-	.bottom .desc {
-		width: 43%;
-		margin-left: 3px;
-		margin-top: -38px;
-	}
+
 	.bottom img.img-responsive {
 		width: 55%;
 		margin-top: -26px;
@@ -953,16 +1016,8 @@ footer {
 	.bottom .title {
 
 	}
-	.bottom .logo {
-		width: 88%;
-		margin-bottom: 7%;
-	}
-	.bottom .desc {
-		width: 43%;
-		margin-left: 3px;
-		margin-top: -38px;
-		position: absolute;
-	}
+
+
 	.bottom-down {
 		display: table;
 		width: 100%;

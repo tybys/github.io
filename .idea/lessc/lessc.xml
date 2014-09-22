@@ -19,6 +19,22 @@
             </LessProfile>
           </value>
         </entry>
+        <entry key="9">
+          <value>
+            <LessProfile>
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="$PROJECT_DIR$/landing/css" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="id" value="9" />
+              <option name="lessDirPath" value="$PROJECT_DIR$/landing" />
+              <option name="name" value="landing" />
+            </LessProfile>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

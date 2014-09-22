@@ -15,8 +15,6 @@
 
         $(document).ready(function () {
 
-
-
             var windowWidth = $(window).outerWidth();
             var windowHeight = $(window).outerHeight();
             var menuHeight = $(".menu").outerHeight();
@@ -27,12 +25,18 @@
                 $(".top .desc").css("bottom", 50);
             }
 
+            if (windowHeight <= 1024) {
+                $(".middle").css("height", 460)
+            }
+
             $(window).resize(function () {
                 sectionHeight.css("height", windowHeight);
                 if (windowHeight >= 1083 && windowWidth == 1600) {
                     $(".top .desc").css("bottom", 50);
                 }
             });
+
+
 
             $(".slide .downb").click(function () {
                 var target = $(this).attr("href");
@@ -53,7 +57,7 @@
             });
 
             $(window).scroll(function(e){
-                parallax();
+//                parallax();
             });
 
 
@@ -172,18 +176,19 @@
     <div class="wrapper">
         <!--<div class="obl">-->
         <!--</div>-->
-        <img class="img-responsive test" src="img/middle-pic orig.png" alt="">
+        <img class="img-responsive test" src="img/circle3.png" alt="">
 
 
         <div class="desc">
             <img src="img/middle-logo.svg" class="logo">
-            <div class='title'>Бонусы за покупку</div>
+            <div class='title second'>Бонусы за покупку</div>
             <div class='info'>
-                        <span>
-                            Для наших любимых клиентов у нас есть бонусы!
-                            Совершая покупки через ROBOKASSA, вы получаете бонусные баллы.
-                            Их можно потратить на скидку при следующей покупке.
-                        </span>
+                <span>
+                    Для наших любимых клиентов у нас есть бонусы!
+                    Совершая покупки через ROBOKASSA, вы получаете бонусные баллы.
+                </span>
+                <br/><br/>
+                <span>Их можно потратить на скидку при следующей покупке.</span>
             </div>
             <div class="slide">
 
@@ -201,15 +206,16 @@
             <img src="img/logo-bottom.svg" class="logo">
             <div class='title'>Вся история Ваших платежей</div>
             <div class='info'>
-                        <span>
-                            Мы собрали всю историю ваших покупок через ROBOKASSA.
-                            Покупайте в интернет-магазинах, оплачивайте услуги –
-                            все новые платежи автоматически появятся
-                            в вашем личном кабинете.
-                        </span>
+                <span>
+                    Мы собрали всю историю ваших покупок через ROBOKASSA.
+                    Покупайте в интернет-магазинах, оплачивайте услуги –
+                    все новые платежи автоматически появятся
+                    в вашем личном кабинете.
+                </span>
             </div>
+            <img class="img-responsive" src="img/bottom-pic_orig.png" alt="">
         </div>
-        <img class="img-responsive" src="img/bottom-pic_orig.png" alt="">
+
 
 
     </div>
