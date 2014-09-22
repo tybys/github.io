@@ -130,6 +130,17 @@ html {
         margin-bottom: 155px;
     }
 }
+input {
+    outline: none;
+    box-shadow: none;
+    &:active {
+        outline: none;
+        box-shadow: none;
+    }
+}
+h2 {
+    text-transform: uppercase;
+}
 
 .container-fluid {
     padding: 0;
@@ -238,9 +249,10 @@ html {
         
     }
     .address {
+        padding: 0 23px;
         background-position: left;
         background-repeat: no-repeat;
-        padding-right: 10px;
+
         font-family: @verdana;
         font-size: 13px;
         color: rgb(84, 84, 84);
@@ -273,7 +285,8 @@ html {
             }
             &.right {
                 float: left;
-                width: 40%;
+                width: 43.5%;
+                text-align: right;
                 a {
                     &:after {
                         content: '';
@@ -281,7 +294,8 @@ html {
                         height: 20px;
                         float: left;
                         background: url("http://union-sb.ru/templates/union/elements/letter.png") no-repeat;
-                        margin-right: 8px;
+                        margin-left: 10px;
+                        margin-right: 7px;
                     }    
                 }
             }
@@ -297,12 +311,15 @@ html {
 .content {
     padding-top: 15px;
     & > .col-md-2 {
-        width: ~"calc(16.66666667% + 50px)";
-        width: ~"-webkit-calc(16.66666667% + 50px)";
+        width: ~"calc(16.66666667% + 68px)";
+        width: ~"-webkit-calc(16.66666667% + 68px)";
 
         & ~ .col-md-10 {
-            width: ~"calc(83.33333333% - 50px)";
-            width: ~"-webkit-calc(83.33333333% - 50px)";
+            width: ~"calc(83.33333333% - 68px)";
+            width: ~"-webkit-calc(83.33333333% - 68px)";
+            padding-left: 10px;
+            padding-right: 0;
+
         }
     }
 
@@ -578,6 +595,9 @@ html {
 
             border: 1px solid #d3d3d3;
             border-radius: 5px;
+            &:hover {
+                border-color: @orangeColor;
+            }
             &.active {
                 border-color: @orangeColor;
             }
