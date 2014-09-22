@@ -3,6 +3,18 @@
 	padding: 0;
 
 }
+.desc {
+	.links {
+		div {
+			white-space: nowrap;
+			&:first-of-type {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+
 
 .top, .middle, .bottom {
     background-attachment: fixed;
@@ -22,22 +34,30 @@ body {
 .top {
 	background: url("../img/top-bg orig.png") top right no-repeat;
 	background-size: cover !important;
+	background-position: -175px 0px;
 }
 .middle {
-    background-image: url("../img/middle-rep.png"), url("../img/line-middle.png");
-    background-repeat: repeat;
+	.wrapper-wrapper {
+		background: url("../img/line-middle.png") 0 0 no-repeat;
+	}
+	background: url("../img/middle-bg.png") 0 0 repeat;
 	background-color: #3196DB;
-    .wrapper > img {
+	.wrapper {
 
+	}
+    .wrapper > img {
         position: absolute;
         left: -150px;
         top: -175px;
     }
+	.slide {
+		margin-top: 15px;
+	}
 }
 
 .bottom {
 	position: relative;
-	background: url(../img/bottombg_orig_mini.jpg) center 0 repeat fixed;
+	background: url("../img/bottombg_orig_mini.jpg") center 0 repeat fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
@@ -828,10 +848,9 @@ footer {
 			}
 			.links {
 				bottom: 40%;
-				left: ~"calc(125% + 100px)";
-				left: ~"-webkit-calc(125% + 100px)";
+				left: ~"calc(125% + 71px)";
+				left: ~"-webkit-calc(125% + 71px)";
 				position: absolute;
-				width: 100%;
 				font-size: 16px;
 				img {
 					width: 70px;
