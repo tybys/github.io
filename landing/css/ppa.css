@@ -15,10 +15,6 @@ body a {
   text-decoration: none;
   font-family: RobotoLight, sans-serif;
 }
-.top {
-  background: url("../img/top-bg orig.png") top right no-repeat;
-  background-size: cover !important;
-}
 .middle {
   background-image: url("../img/middle-rep.png"), url("../img/line-middle.png");
   background-repeat: repeat;
@@ -213,49 +209,6 @@ footer div a {
 .slide span {
   display: inline-block;
   vertical-align: middle;
-}
-.menu {
-  background: rgba(58, 60, 63, 0.8);
-  position: absolute;
-  top: 0;
-  width: 100%;
-  max-height: 100px;
-  overflow: hidden;
-  z-index: 10;
-}
-.menu > div {
-  display: inline-block;
-  vertical-align: top;
-}
-.menu .logo {
-  border-right: 1px solid rgba(255, 255, 255, 0.25);
-  border-left: 1px solid rgba(255, 255, 255, 0.25);
-  line-height: 100px;
-}
-.menu .logo img {
-  max-height: 40px;
-}
-.menu-links {
-  float: right;
-  font-size: 2vh;
-}
-.menu-links ul li {
-  padding: 1.8% 5.5% 1.7% 5%;
-  padding: 2.8% 5.5% 2.7% 5%;
-  display: inline-block;
-  vertical-align: middle;
-  border-right: 1px solid rgba(255, 255, 255, 0.25);
-  margin-left: -0.8%;
-  padding: 2.5% 5.5% 2.7% 5%;
-  margin-left: -10px;
-  padding: 1.8% 4.5% 1.7% 5%;
-}
-.menu-links ul li:first-child {
-  border-left: 1px solid rgba(255, 255, 255, 0.25);
-}
-.menu-links a {
-  display: block;
-  color: white;
 }
 .menu-links a img,
 .menu-links a span {
