@@ -1,29 +1,16 @@
-<<<<<<< HEAD
 * {
 	margin: 0;
 	padding: 0;
 
 }
-.desc {
-	.links {
-		div {
-			white-space: nowrap;
-			&:first-of-type {
-				margin-bottom: 10px;
-			}
-		}
-	}
-}
-
-
 
 .top, .middle, .bottom {
-    background-attachment: fixed;
+	background-attachment: fixed;
 }
 
 body {
-//    min-width: 1024px;
-//	overflow-x: hidden;
+	//    min-width: 1024px;
+	//	overflow-x: hidden;
 	ul {
 		list-style: none;
 	}
@@ -32,39 +19,78 @@ body {
 		font-family: RobotoLight, sans-serif;
 	}
 }
-.top {
-	background: url("../img/top-bg orig.png") top right no-repeat;
-	background-size: cover !important;
-	background-position: -175px 0px;
-}
+//.top {
+//    background: url("../img/top-bg orig.png") top right no-repeat;
+//    background-size: cover !important;
+//}
+//.menu {
+//    background: rgba(58,60,63,0.8);
+//    position: absolute;
+//    top: 0;
+//    width: 100%;
+//    max-height: 100px;
+//    overflow: hidden;
+//    z-index: 10;
+//    & > div {
+//        display: inline-block;
+//        vertical-align: top;
+//    }
+//    .logo {
+//        border-right: 1px solid rgba(255,255,255,0.25);
+//        border-left: 1px solid rgba(255,255,255,0.25);
+//        line-height: 100px;
+//        img {
+//            max-height: 40px;
+//        }
+//    }
+//}
+//.menu-links {
+//    float: right;
+//    font-size: 2vh;
+//    ul {
+//        li {
+//            display: inline-block;
+//            vertical-align: middle;
+//            border-right: 1px solid rgba(255,255,255,0.25);
+//            margin-left: -0.8%;
+//            padding: 1.8% 5.5% 1.7% 5%;
+//            display: inline-block;
+//            vertical-align: middle;
+//            border-right: 1px solid rgba(255,255,255,0.25);
+//            margin-left: -0.8%;
+//            padding: 2.8% 5.5% 2.7% 5%;
+//            display: inline-block;
+//            vertical-align: middle;
+//            border-right: 1px solid rgba(255,255,255,0.25);
+//            margin-left: -0.8%;
+//            padding: 2.5% 5.5% 2.7% 5%;
+//            margin-left: -10px;
+//            padding: 1.8% 4.5% 1.7% 5%;
+//            &:first-child {
+//                border-left: 1px solid rgba(255,255,255,0.25);
+//            }
+//        }
+//    }
+//    a {
+//        display: block;
+//        color: white;
+//    }
+//}
 .middle {
-	.wrapper-wrapper {
-		background: url("../img/line-middle.png") 0 0 no-repeat;
-	}
-	background: url("../img/middle-bg.png") 0 0 repeat;
+	background-image: url("../img/middle-rep.png"), url("../img/line-middle.png");
+	background-repeat: repeat;
 	background-color: #3196DB;
-	.wrapper {
+	.wrapper > img {
 
-	}
-    .wrapper > img {
-        position: absolute;
-        left: -150px;
-        top: -175px;
-=======
-html {
-    body {
-        background: white;
->>>>>>> FETCH_HEAD
-    }
-	.slide {
-		margin-top: 15px;
+		position: absolute;
+		left: -150px;
+		top: -175px;
 	}
 }
 
-<<<<<<< HEAD
 .bottom {
 	position: relative;
-	background: url("../img/bottombg_orig_mini.jpg") center 0 repeat fixed;
+	background: url(../img/bottombg_orig_mini.jpg) center 0 repeat fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
@@ -116,7 +142,7 @@ html {
 	position: relative;
 	.desc {
 		width: 50%;
-//		background: rgba(0,0,0,0.5);
+		//		background: rgba(0,0,0,0.5);
 		position: absolute;
 		bottom: 0;
 	}
@@ -181,170 +207,118 @@ footer {
 }
 
 
-	.bottom-down {
-		.slide {
-			width: 46.8%;
-			width: 46.9%;
-			width: 48.9%;
-			width: 39.8%;
-		}
-	}
-	.mslimg {
-		width: 3%;
-	}
-	.bol {
-		font-family: RobotoBlack, sans-serif;
-		display: block !important;
-	}
-	.lk {
-		background: #6387C9;
-		border: none;
-		color: white;
-		&:hover {
-			background: #6387C9;
-		}
-	}
-	.app {
-		background: #0070CD;
-		border: none;
-		color: white;
-		&:hover {
-			background: #0070CD;
-		}
-	}
-	.play {
-		background: #6EB661;
-		border: none;
-		color: white;
-		&:hover {
-			background: #6EB661;
-		}
-	}
-	.buttons {
-		ul {
-			li {
-				display: inline-block;
-				vertical-align: middle;
-				margin-right: 21px;
-				a {
-					padding: 17px 12px 22px 15px;
-					border-radius: 15px;
-					padding: 15px 7px 20px 16px;
-					border-radius: 15px;
-					padding: 14px 20px 18px 15px;
-					border-radius: 10px;
-					font-size: 1.5vh;
-					padding: 14px 20px 18px 15px;
-					border-radius: 10px;
-					font-size: 1.5vh;
-				}
-			}
-		}
-		img {
-			width: 3vh;
-			margin-right: 10px;
-		}
-	}
-	.buttons ul li span, .buttons ul li img {
-		display: inline-block;
-		vertical-align: middle;
-	}
+.bottom-down {
 	.slide {
-		&.downb {
-			display: block;
-		}
-		& > div {
+		width: 46.8%;
+		width: 46.9%;
+		width: 48.9%;
+		width: 39.8%;
+	}
+}
+.mslimg {
+	width: 3%;
+}
+.bol {
+	font-family: RobotoBlack, sans-serif;
+	display: block !important;
+}
+.lk {
+	background: #6387C9;
+	border: none;
+	color: white;
+	&:hover {
+		background: #6387C9;
+	}
+}
+.app {
+	background: #0070CD;
+	border: none;
+	color: white;
+	&:hover {
+		background: #0070CD;
+	}
+}
+.play {
+	background: #6EB661;
+	border: none;
+	color: white;
+	&:hover {
+		background: #6EB661;
+	}
+}
+.buttons {
+	ul {
+		li {
 			display: inline-block;
 			vertical-align: middle;
-		}
-		img {
-			cursor: pointer;
-		}
-		span {
-			font-size: 2vh;
-			color: #0070CD;
-			font-family: RobotoLight, sans-serif;
-			margin-left: 1.6%;
-			margin-top: -10px;
-		}
-	}
-	.slide img, .slide span {
-		display: inline-block;
-		vertical-align: middle;
-	}
-	.menu {
-		background: rgba(58,60,63,0.8);
-		position: absolute;
-		top: 0;
-		width: 100%;
-		max-height: 100px;
-		overflow: hidden;
-		z-index: 10;
-		& > div {
-			display: inline-block;
-			vertical-align: top;
-		}
-		.logo {
-			border-right: 1px solid rgba(255,255,255,0.25);
-			border-left: 1px solid rgba(255,255,255,0.25);
-			line-height: 100px;
-			img {
-				max-height: 40px;
+			margin-right: 21px;
+			a {
+				padding: 17px 12px 22px 15px;
+				border-radius: 15px;
+				padding: 15px 7px 20px 16px;
+				border-radius: 15px;
+				padding: 14px 20px 18px 15px;
+				border-radius: 10px;
+				font-size: 1.5vh;
+				padding: 14px 20px 18px 15px;
+				border-radius: 10px;
+				font-size: 1.5vh;
 			}
 		}
 	}
-	.menu-links {
-		float: right;
+	img {
+		width: 3vh;
+		margin-right: 10px;
+	}
+}
+.buttons ul li span, .buttons ul li img {
+	display: inline-block;
+	vertical-align: middle;
+}
+.slide {
+	&.downb {
+		display: block;
+	}
+	& > div {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	img {
+		cursor: pointer;
+	}
+	span {
 		font-size: 2vh;
-		ul {
-			li {
-				display: inline-block;
-				vertical-align: middle;
-				border-right: 1px solid rgba(255,255,255,0.25);
-				margin-left: -0.8%;
-				padding: 1.8% 5.5% 1.7% 5%;
-				display: inline-block;
-				vertical-align: middle;
-				border-right: 1px solid rgba(255,255,255,0.25);
-				margin-left: -0.8%;
-				padding: 2.8% 5.5% 2.7% 5%;
-				display: inline-block;
-				vertical-align: middle;
-				border-right: 1px solid rgba(255,255,255,0.25);
-				margin-left: -0.8%;
-				padding: 2.5% 5.5% 2.7% 5%;
-				margin-left: -10px;
-				padding: 1.8% 4.5% 1.7% 5%;
-				&:first-child {
-					border-left: 1px solid rgba(255,255,255,0.25);
-				}
-			}
-		}
-		a {
-			display: block;
-			color: white;
-		}
+		color: #0070CD;
+		font-family: RobotoLight, sans-serif;
+		margin-left: 1.6%;
+		margin-top: -10px;
 	}
-	.menu-links a img, .menu-links a span {
-		display: inline-block;
-		vertical-align: middle;
-	}
-	.bottom .wrapper .desc, .bottom .wrapper img {
-		display: inline-block;
-		vertical-align: top;
-	}
-	.bottom-down .slide div, .bottom-down .slide span {
-		display: inline-block;
-		vertical-align: middle;
-	}
-	.obl {
-		background: url(../img/obl.png) no-repeat center;
-		left: 0;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background-size: contain;
-	}
+}
+.slide img, .slide span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.menu-links a img, .menu-links a span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.bottom .wrapper .desc, .bottom .wrapper img {
+	display: inline-block;
+	vertical-align: top;
+}
+.bottom-down .slide div, .bottom-down .slide span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.obl {
+	background: url(../img/obl.png) no-repeat center;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+}
 
 // just colletctor for tags
 
@@ -573,7 +547,7 @@ footer {
 			padding: 10px;
 
 			font-size: 33px;
-//			width: 539px;
+			//			width: 539px;
 			text-align: center;
 			margin-top: 30px;
 			margin-bottom: 25px;
@@ -611,9 +585,9 @@ footer {
 		display: inline-block;
 		&.downb {
 			width: auto;
-//			position: absolute;
-//			left: 5%;
-//			bottom: 2%;
+			//			position: absolute;
+			//			left: 5%;
+			//			bottom: 2%;
 			img {
 				max-width: 58px;
 			}
@@ -631,9 +605,9 @@ footer {
 		display: block;
 	}
 	.middle .logo {
-//		display: block;
-//		width: 90.9%;
-//		margin-bottom: 16%;
+		//		display: block;
+		//		width: 90.9%;
+		//		margin-bottom: 16%;
 	}
 	.middle img.downb {
 		width: 4.1%;
@@ -654,8 +628,8 @@ footer {
 		margin-left: 38px;
 	}
 	.bottom .logo {
-//		width: 74%;
-//		margin-bottom: 6%;
+		//		width: 74%;
+		//		margin-bottom: 6%;
 	}
 	.bottom .desc {
 		width: 43%;
@@ -735,7 +709,7 @@ footer {
 					margin-right: 60px;
 				}
 			}
-				img {
+			img {
 				max-width: 70px;
 			}
 		}
@@ -855,9 +829,10 @@ footer {
 			}
 			.links {
 				bottom: 40%;
-				left: ~"calc(125% + 71px)";
-				left: ~"-webkit-calc(125% + 71px)";
+				left: ~"calc(125% + 100px)";
+				left: ~"-webkit-calc(125% + 100px)";
 				position: absolute;
+				width: 100%;
 				font-size: 16px;
 				img {
 					width: 70px;
@@ -865,7 +840,7 @@ footer {
 			}
 			.title {
 				font-size: 28px;
-//				width: 539px;
+				//				width: 539px;
 				text-align: center;
 				text-align: center;
 				margin-top: 30px;
@@ -956,14 +931,13 @@ footer {
 						top: 150px;
 						right: 0;
 						width: auto;
-//						margin: 0;
+						//						margin: 0;
 						max-height: 311px;
 					}
 				}
 			}
 		}
 	}
-
 	.slide {
 		&.downb {
 			img {
@@ -971,7 +945,6 @@ footer {
 			}
 		}
 	}
-
 	.buttons {
 		width: 100%;
 		.slide {
@@ -1004,15 +977,4 @@ footer {
 			vertical-align: middle !important;
 		}
 	}
-
-
-
-
-
-
-
-
-
 }
-=======
->>>>>>> FETCH_HEAD
