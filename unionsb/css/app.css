@@ -63,8 +63,8 @@ form .btn-compare {
   line-height: 24px;
   padding-bottom: 4px;
 }
-.btn.btn-byu:after,
-.btn.btn-cart:after {
+.btn.btn-byu:before,
+.btn.btn-cart:before {
   content: '';
   width: 22px;
   height: 19px;
@@ -127,6 +127,12 @@ h2 {
 }
 .container {
   width: 1217px;
+}
+.container .col-md-offset-3 {
+  margin-left: calc(25% - 30px);
+  margin-left: -webkit-calc(25% - 30px);
+  width: calc(75% + 40px);
+  width: -webkit-calc(75% + 40px);
 }
 .container .search {
   padding-right: 0;
@@ -393,8 +399,8 @@ h2 {
   width: 50%;
   padding: 0;
 }
-.content.item-card .recents .item .cube .bottom a:after,
-.content.item-card .also-watch .item .cube .bottom a:after {
+.content.item-card .recents .item .cube .bottom a:before,
+.content.item-card .also-watch .item .cube .bottom a:before {
   background-size: 80%;
   background-position: 100% 50%;
   margin: 0;

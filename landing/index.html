@@ -3,18 +3,22 @@
 
 <head>
     <title></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="css/app.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <!-- JavaScript -->
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
     <script src="js/jquery.easing.js"></script>
     <script src="js/jquery.transit.js"></script>
 
     <script>
-
         $(document).ready(function () {
-
             var windowWidth = $(window).outerWidth();
             var windowHeight = $(window).outerHeight();
             var menuHeight = $(".menu").outerHeight();
@@ -94,169 +98,273 @@
 </head>
 
 <body>
-<div class="menu">
-    <div class="logo">
-        <img src="img/logo-head.svg">
-    </div>
-    <div class="menu-links">
-        <ul>
-            <li>
-                <a href="#" class="menu-lk">
-                    <img src="img/lk.svg">
-                        <span>
-                            <span class="bol">
-                                Личный кабинет
-                            </span>
-                            Зарегистрироваться
-                        </span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="menu-app">
-                    <img src="img/app.svg">
-                        <span>
-                            Скачать в
-                            <span class="bol"> App Store</span>
-                        </span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="menu-play">
-                    <img src="img/play.svg">
-                        <span>
-                            Скачать в
-                            <span class="bol"> Google Play</span>
-                        </span>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-<div id="top" class="top floor">
-    <div class="wrapper">
-        <div class="desc">
-            <img src="img/top-logo.svg" id="firstObj">
-            <div class='title' id="secondObj">20 000 Интернет-магазинов ждут Вас!</div>
-            <div class='info' id="thirdObj">
-                    <span>
-                        К сервису ROBOKASSA подключено более 20 000 магазинов и сервисов,<br/>
-                        в которых Вы можете приобрести любой товар и найти нужную услугу!
-                    </span>
-            </div>
-            <div class="slide downb" id="fiveObj">
-                <img class="downb" href="#middle" src="img/down.svg" width="86" />
-            </div>
+<!--<div class="menu">-->
+    <!--<div class="logo">-->
+        <!--<img src="img/logo-head.svg">-->
+    <!--</div>-->
+    <!--<div class="menu-links">-->
+        <!--<ul>-->
+            <!--<li>-->
+                <!--<a href="#" class="menu-lk">-->
+                    <!--<img src="img/lk.svg">-->
+                        <!--<span>-->
+                            <!--<span class="bol">-->
+                                <!--Личный кабинет-->
+                            <!--</span>-->
+                            <!--Зарегистрироваться-->
+                        <!--</span>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="#" class="menu-app">-->
+                    <!--<img src="img/app.svg">-->
+                        <!--<span>-->
+                            <!--Скачать в-->
+                            <!--<span class="bol"> App Store</span>-->
+                        <!--</span>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="#" class="menu-play">-->
+                    <!--<img src="img/play.svg">-->
+                        <!--<span>-->
+                            <!--Скачать в-->
+                            <!--<span class="bol"> Google Play</span>-->
+                        <!--</span>-->
+                <!--</a>-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div id="top" class="top floor">-->
+    <!--<div class="wrapper">-->
+        <!--<div class="desc">-->
+            <!--<img src="img/top-logo.svg" id="firstObj">-->
+            <!--<div class='title' id="secondObj">20 000 Интернет-магазинов ждут Вас!</div>-->
+            <!--<div class='info' id="thirdObj">-->
+                    <!--<span>-->
+                        <!--К сервису ROBOKASSA подключено более 20 000 магазинов и сервисов,<br/>-->
+                        <!--в которых Вы можете приобрести любой товар и найти нужную услугу!-->
+                    <!--</span>-->
+            <!--</div>-->
+            <!--<div class="slide downb" id="fiveObj">-->
+                <!--<img class="downb" href="#middle" src="img/down.svg" width="86" />-->
+            <!--</div>-->
 
-            <div class="links" id="sixObj">
-                <div class='look'>
-                    <a href="#">
-                        <img src="img/look.svg" width="120">
-                        <span>
-                            Посмотреть каталог<br/>
-                            магазинов
-                        </span>
-                    </a>
-                </div>
-                <div class='reg'>
-                    <a href="#">
+            <!--<div class="links" id="sixObj">-->
+                <!--<div class='look'>-->
+                    <!--<a href="#">-->
+                        <!--<img src="img/look.svg" width="120">-->
+                        <!--<span>-->
+                            <!--Посмотреть каталог<br/>-->
+                            <!--магазинов-->
+                        <!--</span>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class='reg'>-->
+                    <!--<a href="#">-->
 
-                        <img src="img/reg.svg" width="120">
-                        <span>
-                            Зарегистрировать<br/>
-                            20 001 магазин
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-<div id="middle" class="middle floor">
-    <div class="wrapper">
-        <!--<div class="obl">-->
+                        <!--<img src="img/reg.svg" width="120">-->
+                        <!--<span>-->
+                            <!--Зарегистрировать<br/>-->
+                            <!--20 001 магазин-->
+                        <!--</span>-->
+                    <!--</a>-->
+                <!--</div>-->
+            <!--</div>-->
         <!--</div>-->
-        <img class="img-responsive test" src="img/circle3.png" alt="">
+    <!--</div>-->
+
+<!--</div>-->
+<!--<div id="middle" class="middle floor">-->
+    <!--<div class="wrapper">-->
+        <!--&lt;!&ndash;<div class="obl">&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--<img class="img-responsive test" src="img/circle3.png" alt="">-->
 
 
-        <div class="desc">
-            <img src="img/middle-logo.svg" class="logo">
-            <div class='title second'>Бонусы за покупку</div>
-            <div class='info'>
-                <span>
-                    Для наших любимых клиентов у нас есть бонусы!
-                    Совершая покупки через ROBOKASSA, вы получаете бонусные баллы.
-                </span>
+        <!--<div class="desc">-->
+            <!--<img src="img/middle-logo.svg" class="logo">-->
+            <!--<div class='title second'>Бонусы за покупку</div>-->
+            <!--<div class='info'>-->
+                <!--<span>-->
+                    <!--Для наших любимых клиентов у нас есть бонусы!-->
+                    <!--Совершая покупки через ROBOKASSA, вы получаете бонусные баллы.-->
+                <!--</span>-->
+                <!--<br/><br/>-->
+                <!--<span>Их можно потратить на скидку при следующей покупке.</span>-->
+            <!--</div>-->
+            <!--<div class="slide">-->
+
+                <!--<img class="downb" href="#bottom" src="img/down.svg" />-->
+
+                <!--<img class="topb" href="#top" src="img/top.svg" />-->
+
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div id="bottom" class="bottom floor">-->
+    <!--<div class="wrapper">-->
+        <!--<div class="desc">-->
+            <!--<img src="img/logo-bottom.svg" class="logo">-->
+            <!--<div class='title'>Вся история Ваших платежей</div>-->
+            <!--<div class='info'>-->
+                <!--<span>-->
+                    <!--Мы собрали всю историю ваших покупок через ROBOKASSA.-->
+                    <!--Покупайте в интернет-магазинах, оплачивайте услуги –-->
+                    <!--все новые платежи автоматически появятся-->
+                    <!--в вашем личном кабинете.-->
+                <!--</span>-->
+            <!--</div>-->
+            <!--<img class="img-responsive" src="img/bottom-pic_orig.png" alt="">-->
+        <!--</div>-->
+        <!--<div class="buttons">-->
+            <!--<div class="bottom-down">-->
+                <!--<div class="slide">-->
+                    <!--<img class="topb" href="#top" src="img/top.svg" />-->
+                    <!--<span>В начало</span>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<ul class="list-inline intro-social-buttons">-->
+                <!--<li>-->
+                    <!--<a href="#" class="btn btn-default btn-lg lk">-->
+                        <!--<img src="img/lk.svg">-->
+                        <!--<span>-->
+                            <!--<span class="bol">-->
+                                <!--Личный кабинет-->
+                            <!--</span>-->
+                            <!--Зарегистрироваться-->
+                        <!--</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#" class="btn btn-default btn-lg app">-->
+                        <!--<img src="img/app.svg">-->
+                        <!--<span>-->
+                            <!--Скачать в-->
+                            <!--<span class="bol"> App Store</span>-->
+                        <!--</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#" class="btn btn-default btn-lg play">-->
+                        <!--<img src="img/play.svg">-->
+                        <!--<span>-->
+                            <!--Скачать в-->
+                            <!--<span class="bol"> Google Play</span>-->
+                        <!--</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<p class="copy">© 2014 <a href="#">ОКЕАН БАНК (ЗАО)</a></p>-->
+<!--</div>-->
+<!--</body>-->
+
+
+<div class="container-fluid">
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">Личный кабинет <span>Зарегестрироваться</span></a>
+                    </li>
+                    <li><a href="#">Скачать в <span>App Store</span></a></li>
+                    <li><a href="#">Скачать в <span>Google Play</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row first">
+        <div class="container">
+            <div class="col-md-6 left">
+                <img src="img/top-logo.svg">
+                <h2>20 000 Интернет-магазинов ждут Вас!</h2>
+                <h3>К сервису ROBOKASSA подключено более 20 000 магазинов и сервисов,<br/>
+                    в которых Вы можете приобрести любой товар и найти нужную услугу!</h3>
+                <div class="next-slide"></div>
+            </div>
+            <div class="col-md-6 right">
+                Посмотреть каталог магазинов
+
+                Зарегестрировать 20 001 магазин
+            </div>
+        </div>
+    </div>
+    <div class="row second">
+        <div class="container">
+            <div class="col-md-6 left">
+                <img src="img/circle3.png">
+            </div>
+            <div class="col-md-6 right">
+                <img src="img/middle-logo.svg" class="logo">
+                <h2>Бонусы за покупку</h2>
+
+
+                <h3>Для наших любимых клиентов у нас есть бонусы!
+                Совершая покупки через ROBOKASSA, вы получаете бонусные баллы.</h3>
+
                 <br/><br/>
-                <span>Их можно потратить на скидку при следующей покупке.</span>
-            </div>
-            <div class="slide">
+                <h3>Их можно потратить на скидку при следующей покупке.</h3>
 
-                <img class="downb" href="#bottom" src="img/down.svg" />
-
-                <img class="topb" href="#top" src="img/top.svg" />
-
+                <div class="next-clide"></div>
+                <div class="prev-clide"></div>
             </div>
         </div>
     </div>
-</div>
-<div id="bottom" class="bottom floor">
-    <div class="wrapper">
-        <div class="desc">
-            <img src="img/logo-bottom.svg" class="logo">
-            <div class='title'>Вся история Ваших платежей</div>
-            <div class='info'>
-                <span>
-                    Мы собрали всю историю ваших покупок через ROBOKASSA.
-                    Покупайте в интернет-магазинах, оплачивайте услуги –
-                    все новые платежи автоматически появятся
-                    в вашем личном кабинете.
-                </span>
+    <div class="row last">
+        <div class="container">
+            <div class="col-md-6 left">
+                <img src="img/logo-bottom.svg" class="logo">
+                <h2>Вся история Ваших платежей</h2>
+
+                <h3>Мы собрали всю историю ваших покупок через ROBOKASSA.
+                Покупайте в интернет-магазинах, оплачивайте услуги
+                все новые платежи автоматически появятся
+                в вашем личном кабинете.</h3>
+
+                <img class="img-responsive" src="img/bottom-pic_orig.png" alt="">
+
+                В начало
+
+                <img src="img/lk.svg">
+                Личный кабинет
+                Зарегистрироваться
+                <img src="img/app.svg">
+                Скачать в
+                App Store</span>
+
+
+
+                <img src="img/play.svg">-->
+                Скачать в
+                Google Play
+
+                <p class="copy">© 2014 <a href="#">ОКЕАН БАНК (ЗАО)</a></p>
             </div>
-            <img class="img-responsive" src="img/bottom-pic_orig.png" alt="">
-        </div>
-        <div class="buttons">
-            <div class="bottom-down">
-                <div class="slide">
-                    <img class="topb" href="#top" src="img/top.svg" />
-                    <span>В начало</span>
-                </div>
-            </div>
-            <ul class="list-inline intro-social-buttons">
-                <li>
-                    <a href="#" class="btn btn-default btn-lg lk">
-                        <img src="img/lk.svg">
-                        <span>
-                            <span class="bol">
-                                Личный кабинет
-                            </span>
-                            Зарегистрироваться
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="btn btn-default btn-lg app">
-                        <img src="img/app.svg">
-                        <span>
-                            Скачать в
-                            <span class="bol"> App Store</span>
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="btn btn-default btn-lg play">
-                        <img src="img/play.svg">
-                        <span>
-                            Скачать в
-                            <span class="bol"> Google Play</span>
-                        </span>
-                    </a>
-                </li>
-            </ul>
+            <div class="col-md-6 right"></div>
         </div>
     </div>
-    <p class="copy">© 2014 <a href="#">ОКЕАН БАНК (ЗАО)</a></p>
 </div>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
