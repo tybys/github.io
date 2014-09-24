@@ -189,14 +189,19 @@
             var windowWidth = $(window).outerWidth();
             var windowHeight = $(window).outerHeight();
             var menuHeight = $(".navbar-default").outerHeight();
-            var sectionHeight = $(".row");
+            var sectionHeight = $(".row.first");
 
             sectionHeight.not(".last").css("height", windowHeight);
         }
-        adaptiveBackground();
+        if ($(window).outerWidth() > 320) {
+            adaptiveBackground();
+        }
 
         $(window).on("resize", function () {
-            adaptiveBackground();
+            if (!$(window).outerWidth() == 320) {
+                adaptiveBackground();
+            }
+
         });
     });
 

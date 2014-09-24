@@ -288,6 +288,27 @@ html body a:hover {
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+  .first-absolute,
+  .second-absolute,
+  .third-absolute {
+    position: static !important;
+    width: auto !important;
+  }
+  .first-absolute {
+    position: absolute !important;
+    bottom: 40% !important;
+    left: 0;
+  }
+  .second-absolute {
+    position: absolute !important;
+    bottom: 15%;
+    left: 0;
+  }
+  .next-slide.hidden-lg {
+    position: absolute !important;
+    bottom: 5%;
+    right: 15px;
+  }
   .navbar-brand {
     width: 70%;
     display: block;
@@ -322,14 +343,18 @@ html body a:hover {
   }
   .row.first {
     min-height: 568px;
-    background-size: 450%;
+    background-size: 480%;
     background-position-x: 35%;
+    background-position-y: 95%;
   }
   .row.first .magazines span {
     font-size: 14px;
   }
   .row.first .magazines img {
     width: 55px;
+  }
+  .row.first .left img.after-logo {
+    width: 100%;
   }
   .row.second {
     background-size: 15%;
