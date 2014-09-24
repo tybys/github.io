@@ -178,9 +178,6 @@ html body a {
   .row.first .magazines img {
     width: 55px;
   }
-  .row.first .next-slide img {
-    width: auto;
-  }
   .row.second {
     background-size: 15%;
   }
@@ -235,5 +232,11 @@ html body a {
   }
   .row.last .to-top {
     background-size: 40%;
+  }
+  .next-slide img {
+    width: 45px;
+  }
+  .prev-slide img {
+    width: 35px;
   }
 }
