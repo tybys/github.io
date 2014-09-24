@@ -1,13 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 
 <head>
-    <title></title>
+    <title>sdf</title>
     <meta charset="utf8">
-    <!-- Latest compiled and minified CSS -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
-    <!-- Optional theme -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/ppa.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
@@ -20,254 +16,86 @@
     <script src="js/jquery.transit.js"></script>
 
     <script>
-        $(document).ready(function () {
-            var windowWidth = $(window).outerWidth();
-            var windowHeight = $(window).outerHeight();
-            var menuHeight = $(".menu").outerHeight();
-            var sectionHeight = $(".floor");
-
-            sectionHeight.css("height", windowHeight);
-            if (windowHeight >= 1083 && windowWidth == 1600) {
-                $(".top .desc").css("bottom", 50);
-            }
-
-            if (windowHeight <= 1024) {
-                $(".middle").css("height", 460)
-            }
-
-            $(window).resize(function () {
-                sectionHeight.css("height", windowHeight);
-                if (windowHeight >= 1083 && windowWidth == 1600) {
-                    $(".top .desc").css("bottom", 50);
-                }
-            });
-
-
-
-            $(".slide .downb").click(function () {
-                var target = $(this).attr("href");
-
-                $("html, body").animate({
-                    scrollTop: $(target).offset().top
-                }, 2000, 'easeInOutQuint');
-
-                return false;
-
-            });
-
-            $('.slide .topb').click(function () {
-                var target = $(this).attr('href');
-                $('html, body').animate({scrollTop: $(target).offset().top}, 1500, 'easeInQuint');
-                return false;
-
-            });
-
-            $(window).scroll(function(e){
-//                parallax();
-            });
-
-
-            function parallax(){
-                var scrolled = $(window).scrollTop();
-
-                $('#firstObj').css({
-                    position: 'relative',
-                    top: -(scrolled * 0.55) + 'px',
-                    '-webkit-filter': +"blur"+(scrolled * 0.05)+'px'
-                });
-
-                $("#top .wrapper .title").css({
-                    position: 'relative',
-                    top: -(scrolled * 0.25)+'px'
-                });
-
-                $("#top .wrapper .info").css({
-                    position: 'relative',
-                    top: -(scrolled * 0.15)+'px'
-                });
-
-                $("#fiveObj").css({
-                    marginBottom: scrolled * 0.35 + 'px'
-                });
-
-                $(".menu").css({
-                    top: -(scrolled * 0.05)+'px',
-                    '-webkit-filter': "blur" +"("+ (scrolled * 0.05)+'px'+")" // ahahaha biach, got it!
-                });
-            }
-        });
+//        $(document).ready(function () {
+//            var windowWidth = $(window).outerWidth();
+//            var windowHeight = $(window).outerHeight();
+//            var menuHeight = $(".menu").outerHeight();
+//            var sectionHeight = $(".floor");
+//
+//            sectionHeight.css("height", windowHeight);
+//            if (windowHeight >= 1083 && windowWidth == 1600) {
+//                $(".top .desc").css("bottom", 50);
+//            }
+//
+//            if (windowHeight <= 1024) {
+//                $(".middle").css("height", 460)
+//            }
+//
+//            $(window).resize(function () {
+//                sectionHeight.css("height", windowHeight);
+//                if (windowHeight >= 1083 && windowWidth == 1600) {
+//                    $(".top .desc").css("bottom", 50);
+//                }
+//            });
+//
+//
+//
+//            $(".slide .downb").click(function () {
+//                var target = $(this).attr("href");
+//
+//                $("html, body").animate({
+//                    scrollTop: $(target).offset().top
+//                }, 2000, 'easeInOutQuint');
+//
+//                return false;
+//
+//            });
+//
+//            $('.slide .topb').click(function () {
+//                var target = $(this).attr('href');
+//                $('html, body').animate({scrollTop: $(target).offset().top}, 1500, 'easeInQuint');
+//                return false;
+//
+//            });
+//
+//            $(window).scroll(function(e){
+////                parallax();
+//            });
+//
+//
+//            function parallax(){
+//                var scrolled = $(window).scrollTop();
+//
+//                $('#firstObj').css({
+//                    position: 'relative',
+//                    top: -(scrolled * 0.55) + 'px',
+//                    '-webkit-filter': +"blur"+(scrolled * 0.05)+'px'
+//                });
+//
+//                $("#top .wrapper .title").css({
+//                    position: 'relative',
+//                    top: -(scrolled * 0.25)+'px'
+//                });
+//
+//                $("#top .wrapper .info").css({
+//                    position: 'relative',
+//                    top: -(scrolled * 0.15)+'px'
+//                });
+//
+//                $("#fiveObj").css({
+//                    marginBottom: scrolled * 0.35 + 'px'
+//                });
+//
+//                $(".menu").css({
+//                    top: -(scrolled * 0.05)+'px',
+//                    '-webkit-filter': "blur" +"("+ (scrolled * 0.05)+'px'+")" // ahahaha biach, got it!
+//                });
+//            }
+//        });
     </script>
 </head>
 
 <body>
-<div>
-<!--<div class="menu">-->
-    <!--<div class="logo">-->
-        <!--<img src="img/logo-head.svg">-->
-    <!--</div>-->
-    <!--<div class="menu-links">-->
-        <!--<ul>-->
-            <!--<li>-->
-                <!--<a href="#" class="menu-lk">-->
-                    <!--<img src="img/lk.svg">-->
-                        <!--<span>-->
-                            <!--<span class="bol">-->
-                                <!--Личный кабинет-->
-                            <!--</span>-->
-                            <!--Зарегистрироваться-->
-                        <!--</span>-->
-                <!--</a>-->
-            <!--</li>-->
-            <!--<li>-->
-                <!--<a href="#" class="menu-app">-->
-                    <!--<img src="img/app.svg">-->
-                        <!--<span>-->
-                            <!--Скачать в-->
-                            <!--<span class="bol"> App Store</span>-->
-                        <!--</span>-->
-                <!--</a>-->
-            <!--</li>-->
-            <!--<li>-->
-                <!--<a href="#" class="menu-play">-->
-                    <!--<img src="img/play.svg">-->
-                        <!--<span>-->
-                            <!--Скачать в-->
-                            <!--<span class="bol"> Google Play</span>-->
-                        <!--</span>-->
-                <!--</a>-->
-            <!--</li>-->
-        <!--</ul>-->
-    <!--</div>-->
-<!--</div>-->
-<!--<div id="top" class="top floor">-->
-    <!--<div class="wrapper">-->
-        <!--<div class="desc">-->
-            <!--<img src="img/top-logo.svg" id="firstObj">-->
-            <!--<div class='title' id="secondObj">20 000 Интернет-магазинов ждут Вас!</div>-->
-            <!--<div class='info' id="thirdObj">-->
-                    <!--<span>-->
-                        <!--К сервису ROBOKASSA подключено более 20 000 магазинов и сервисов,<br/>-->
-                        <!--в которых Вы можете приобрести любой товар и найти нужную услугу!-->
-                    <!--</span>-->
-            <!--</div>-->
-            <!--<div class="slide downb" id="fiveObj">-->
-                <!--<img class="downb" href="#middle" src="img/down.svg" width="86" />-->
-            <!--</div>-->
-
-            <!--<div class="links" id="sixObj">-->
-                <!--<div class='look'>-->
-                    <!--<a href="#">-->
-                        <!--<img src="img/look.svg" width="120">-->
-                        <!--<span>-->
-                            <!--Посмотреть каталог<br/>-->
-                            <!--магазинов-->
-                        <!--</span>-->
-                    <!--</a>-->
-                <!--</div>-->
-                <!--<div class='reg'>-->
-                    <!--<a href="#">-->
-
-                        <!--<img src="img/reg.svg" width="120">-->
-                        <!--<span>-->
-                            <!--Зарегистрировать<br/>-->
-                            <!--20 001 магазин-->
-                        <!--</span>-->
-                    <!--</a>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-
-<!--</div>-->
-<!--<div id="middle" class="middle floor">-->
-    <!--<div class="wrapper">-->
-        <!--&lt;!&ndash;<div class="obl">&ndash;&gt;-->
-        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-        <!--<img class="img-responsive test" src="img/circle3.png" alt="">-->
-
-
-        <!--<div class="desc">-->
-            <!--<img src="img/middle-logo.svg" class="logo">-->
-            <!--<div class='title second'>Бонусы за покупку</div>-->
-            <!--<div class='info'>-->
-                <!--<span>-->
-                    <!--Для наших любимых клиентов у нас есть бонусы!-->
-                    <!--Совершая покупки через ROBOKASSA, вы получаете бонусные баллы.-->
-                <!--</span>-->
-                <!--<br/><br/>-->
-                <!--<span>Их можно потратить на скидку при следующей покупке.</span>-->
-            <!--</div>-->
-            <!--<div class="slide">-->
-
-                <!--<img class="downb" href="#bottom" src="img/down.svg" />-->
-
-                <!--<img class="topb" href="#top" src="img/top.svg" />-->
-
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-<!--<div id="bottom" class="bottom floor">-->
-    <!--<div class="wrapper">-->
-        <!--<div class="desc">-->
-            <!--<img src="img/logo-bottom.svg" class="logo">-->
-            <!--<div class='title'>Вся история Ваших платежей</div>-->
-            <!--<div class='info'>-->
-                <!--<span>-->
-                    <!--Мы собрали всю историю ваших покупок через ROBOKASSA.-->
-                    <!--Покупайте в интернет-магазинах, оплачивайте услуги –-->
-                    <!--все новые платежи автоматически появятся-->
-                    <!--в вашем личном кабинете.-->
-                <!--</span>-->
-            <!--</div>-->
-            <!--<img class="img-responsive" src="img/bottom-pic_orig.png" alt="">-->
-        <!--</div>-->
-        <!--<div class="buttons">-->
-            <!--<div class="bottom-down">-->
-                <!--<div class="slide">-->
-                    <!--<img class="topb" href="#top" src="img/top.svg" />-->
-                    <!--<span>В начало</span>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<ul class="list-inline intro-social-buttons">-->
-                <!--<li>-->
-                    <!--<a href="#" class="btn btn-default btn-lg lk">-->
-                        <!--<img src="img/lk.svg">-->
-                        <!--<span>-->
-                            <!--<span class="bol">-->
-                                <!--Личный кабинет-->
-                            <!--</span>-->
-                            <!--Зарегистрироваться-->
-                        <!--</span>-->
-                    <!--</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a href="#" class="btn btn-default btn-lg app">-->
-                        <!--<img src="img/app.svg">-->
-                        <!--<span>-->
-                            <!--Скачать в-->
-                            <!--<span class="bol"> App Store</span>-->
-                        <!--</span>-->
-                    <!--</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a href="#" class="btn btn-default btn-lg play">-->
-                        <!--<img src="img/play.svg">-->
-                        <!--<span>-->
-                            <!--Скачать в-->
-                            <!--<span class="bol"> Google Play</span>-->
-                        <!--</span>-->
-                    <!--</a>-->
-                <!--</li>-->
-            <!--</ul>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<p class="copy">© 2014 <a href="#">ОКЕАН БАНК (ЗАО)</a></p>-->
-<!--</div>-->
-<!--</body>-->
-</div>
-
-
 <div class="container-fluid menu">
 
     <nav class="navbar navbar-default" role="navigation">
@@ -418,9 +246,6 @@
     </div>
 </div>
 
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
