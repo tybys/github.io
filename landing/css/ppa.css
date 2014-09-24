@@ -36,6 +36,9 @@ html body a {
   cursor: pointer;
   font-family: "RobotoLight";
 }
+html body a:hover {
+  text-decoration: none;
+}
 .btn-slide {
   cursor: pointer;
 }
@@ -215,8 +218,15 @@ html body a {
   margin-top: 30px;
   margin-bottom: 22px;
 }
+.row.last .col-md-6 {
+  margin-top: 160px;
+}
 .row.last .to-top {
-  margin-top: 152px;
+  margin-top: 120px;
+}
+.row.last .bottom-menu {
+  padding: 0;
+  margin-top: 35px;
 }
 .row.last .bottom-menu li {
   list-style: none;
@@ -229,6 +239,7 @@ html body a {
 .row.last .bottom-menu li img {
   display: inline-block;
   vertical-align: middle;
+  max-height: 28px;
 }
 .row.last .bottom-menu li a {
   display: inline-block;
@@ -236,6 +247,7 @@ html body a {
   color: white;
 }
 .row.last .bottom-menu li span {
+  font-family: "RobotoBlack";
   display: block;
 }
 .row.last .bottom-menu li:first-of-type {
@@ -243,6 +255,19 @@ html body a {
 }
 .row.last .bottom-menu li:last-of-type {
   background: #6EB661;
+}
+.row.last .left {
+  position: relative;
+  z-index: 1;
+}
+.footer {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 20px;
+  color: black;
+}
+.footer a {
+  color: #0070CD;
 }
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
   .navbar-default {
@@ -257,6 +282,9 @@ html body a {
   }
   .second {
     max-height: 527px;
+  }
+  .bottom-menu a {
+    font-size: 13px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {

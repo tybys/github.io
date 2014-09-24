@@ -191,7 +191,7 @@
             var menuHeight = $(".navbar-default").outerHeight();
             var sectionHeight = $(".row");
 
-            sectionHeight.css("height", windowHeight);
+            sectionHeight.not(".last").css("height", windowHeight);
         }
         adaptiveBackground();
 

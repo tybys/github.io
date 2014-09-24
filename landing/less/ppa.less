@@ -34,6 +34,9 @@ html {
 		a {
 			cursor: pointer;
 			font-family: "RobotoLight";
+            &:hover {
+                text-decoration: none;
+            }
 		}
 	}
 }
@@ -239,11 +242,15 @@ html {
 			margin-top: 30px;
 			margin-bottom: 22px;
 		}
+        .col-md-6 {
+            margin-top: 160px;
+        }
 		.to-top {
-			margin-top: 152px;
+            margin-top: 120px;
 		}
 		.bottom-menu {
-
+            padding: 0;
+            margin-top: 35px;
 			li {
 				list-style: none;
 				background: #0070CD;
@@ -254,6 +261,7 @@ html {
 				img {
 					display: inline-block;
 					vertical-align: middle;
+                    max-height: 28px;
 				}
 				a {
 					display: inline-block;
@@ -261,6 +269,7 @@ html {
 					color: white;
 				}
 				span {
+                    font-family: "RobotoBlack";
 					display: block;
 				}
 				&:first-of-type {
@@ -271,8 +280,22 @@ html {
 				}
 			}
 		}
+        .left {
+            position: relative;
+            z-index: 1;
+        }
 	}
 } // backgrounds
+
+.footer {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 20px;
+    color: black;
+    a {
+        color: #0070CD;
+    }
+}
 
 // some objects
 @media only screen and (min-width: 1280px) {}
@@ -295,7 +318,9 @@ html {
 	.second {
 		max-height: 527px;
 	}
-
+    .bottom-menu a {
+        font-size: 13px;
+    }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 	.navbar-brand {
