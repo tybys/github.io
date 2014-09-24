@@ -302,7 +302,8 @@ html body a:hover {
   .second-absolute {
     position: absolute !important;
     bottom: 15%;
-    left: 0;
+    right: 0 !important;
+    width: 100% !important;
   }
   .next-slide.hidden-lg {
     position: absolute !important;
@@ -359,7 +360,14 @@ html body a:hover {
   .row.second {
     background-size: 15%;
   }
+  .row.second .logo {
+    margin-top: 5%;
+  }
+  .row.second .after-logo {
+    position: static;
+  }
   .row.second h2 {
+    margin-top: 20px;
     float: none;
     padding: 5px 5px;
     position: static;
@@ -370,7 +378,16 @@ html body a:hover {
   .row.second .prev-slide {
     background-size: 30%;
   }
+  .row.second h3 {
+    position: static !important;
+  }
+  .row.second .btn-wrap {
+    text-align: right;
+    margin-top: 30px;
+    padding-bottom: 5%;
+  }
   .row.second .h3-wrap {
+    margin: 0;
     position: static;
   }
   .row.second .h3-wrap .h3-wrap-wrap {
@@ -382,8 +399,12 @@ html body a:hover {
   .row.second .col-md-6 img:not(.b) {
     width: 100%;
   }
-  .row.last {
-    background-size: 15%;
+  .row.last .img-responsive {
+    margin: 5% 0;
+  }
+  .row.last .bottom-menu li {
+    margin: 2.5% 0;
+    width: 100%;
   }
   .row.last h2 {
     float: none;
@@ -405,11 +426,24 @@ html body a:hover {
     min-width: -webkit-calc(100% - 4px);
     margin-left: 4px;
   }
+  .row.last .col-md-6 {
+    margin-top: 5%;
+  }
   .row.last .col-md-6 img.logo {
     width: 100%;
   }
   .row.last .to-top {
     background-size: 40%;
+    margin-top: 5%;
+    text-align: right;
+  }
+  .row.last .to-top img {
+    margin: 0 auto;
+    display: block;
+  }
+  .row.last .to-top span {
+    display: block;
+    text-align: center;
   }
   .next-slide img {
     width: 45px;

@@ -337,7 +337,8 @@ html {
     .second-absolute {
         position: absolute !important;
         bottom: 15%;
-        left: 0;
+        right: 0 !important;
+        width: 100% !important;
     }
     .next-slide.hidden-lg {
         position: absolute !important;
@@ -414,7 +415,15 @@ html {
 		}
 		&.second {
 			background-size: 15%;
+            .logo {
+                margin-top: 5%;
+            }
+            .after-logo {
+                position: static;
+            }
+
 			h2 {
+                margin-top: 20px;
 				float: none;
 				padding: 5px 5px;
 				position: static;
@@ -425,7 +434,16 @@ html {
 			.prev-slide {
 				background-size: 30%;
 			}
+            h3 {
+                position: static !important;
+            }
+            .btn-wrap {
+                text-align: right;
+                margin-top: 30px;
+                padding-bottom: 5%
+            }
 			.h3-wrap {
+                margin: 0;
 				position: static;
 				.h3-wrap-wrap {
 					position: static;
@@ -447,7 +465,19 @@ html {
 			}
 		}
 		&.last {
-			background-size: 15%;
+//			background-size: 15%;
+            .img-responsive {
+                margin: 5% 0;
+            }
+            .bottom-menu {
+                li {
+                    margin: 2.5% 0;
+                    width: 100%;
+                    a {
+
+                    }
+                }
+            }
 			h2 {
 				float: none;
 				padding: 5px 5px;
@@ -472,6 +502,7 @@ html {
 				}
 			}
 			.col-md-6 {
+                margin-top: 5%;
 				img.logo {
 					width: 100%;
 				}
@@ -479,6 +510,16 @@ html {
 			}
 			.to-top {
 				background-size: 40%;
+                margin-top: 5%;
+                text-align: right;
+                img {
+                    margin: 0 auto;
+                    display: block;
+                }
+                span {
+                    display: block;
+                    text-align: center;
+                }
 			}
 		}
 	}
