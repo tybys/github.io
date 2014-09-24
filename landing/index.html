@@ -60,8 +60,8 @@
 <div class="container-fluid">
     <div class="row first">
         <div class="container">
-            <div class="col-md-6 col-sm-6 col-xs-12 left">
-                <img src="img/top-logo.svg">
+            <div class="col-md-6 col-sm-6 col-xs-12 left first-absolute">
+                <img src="img/top-logo.svg" class="after-logo">
                 <h2>20 000 Интернет-магазинов ждут Вас!</h2>
                 <div class="h3-wrap">
                     <div class="h3-wrap-wrap">
@@ -73,7 +73,7 @@
                     <img src="img/down.svg" class="b">
                 </div>
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 right magazines">
+            <div class="col-md-6 col-sm-6 col-xs-12 right magazines second-absolute">
                 <a href="#">
                     <img src="img/look.svg">
                     <span>Посмотреть каталог<br/> магазинов</span>
@@ -83,7 +83,7 @@
                     <span>Зарегестрировать 20 001<br/> магазин</span>
                 </a>
             </div>
-            <div class="btn-slide next-slide hidden-md hidden-sm">
+            <div class="btn-slide next-slide hidden-md hidden-sm hidden-lg">
                 <img src="img/down.svg" class="b">
             </div>
         </div>
@@ -91,16 +91,17 @@
     <div class="row second">
         <div class="container">
             <div class="col-md-6 col-sm-6 col-xs-12 left">
-                <img src="img/circle3.png">
+                <img src="img/circle3.png" class="after-logo">
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 right">
+            <div class="col-md-6 col-sm-6 col-xs-12 right third-absolute">
                 <img src="img/middle-logo.svg" class="logo">
                 <h2>Бонусы за покупку</h2>
 
                 <div class="h3-wrap">
                     <div class="h3-wrap-wrap">
-                        <h3>Для наших любимых клиентов у нас есть бонусы!
-                        Совершая покупки через ROBOKASSA, вы получаете бонусные баллы.</h3>
+                        <h3>Для наших любимых клиентов у нас есть бонусы!<br/>
+                        Совершая покупки через ROBOKASSA,<br/>
+                        вы получаете бонусные баллы.</h3>
                     </div>
                 </div>
 
@@ -109,11 +110,13 @@
                     <h3 style="position: absolute; left: 0;"><span>Их можно потратить на скидку при следующей покупке.</span></h3>
                 </div>
 
-                <div class="btn-slide prev-slide">
-                    <img src="img/top.svg" class="b">
-                </div>
-                <div class="btn-slide next-slide">
-                    <img src="img/down.svg" class="b">
+                <div class="btn-wrap">
+                    <div class="btn-slide next-slide">
+                        <img src="img/down.svg" class="b">
+                    </div>
+                    <div class="btn-slide prev-slide">
+                        <img src="img/top.svg" class="b">
+                    </div>
                 </div>
 
             </div>
@@ -134,42 +137,45 @@
                     </div>
                 </div>
 
-                <img class="img-responsive" src="img/bottom-pic_orig.png" alt="">
+
 
                 <div class="btn-slide to-top">
                     <img src="img/top.svg" class="b">
                     <span>В начало</span>
                 </div>
-
-                <ul>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 right">
+                <img class="img-responsive" src="img/bottom-pic_orig.png" alt="">
+                <ul class="bottom-menu">
                     <li>
+                        <img src="img/lk.svg">
                         <a href="#">
-                            <img src="img/lk.svg">
                             Личный кабинет
-                            Зарегистрироваться
+                            <span>Зарегистрироваться</span>
                         </a>
                     </li>
 
                     <li>
+                        <img src="img/app.svg">
                         <a href="#">
-                            <img src="img/app.svg">
                             Скачать в
-                            App Store</span>
+                            <span>App Store</span>
                         </a>
                     </li>
 
                     <li>
+                        <img src="img/play.svg">
                         <a href="#">
-                            <img src="img/play.svg">
                             Скачать в
-                            Google Play
+                            <span>Google Play</span>
                         </a>
                     </li>
                 </ul>
-                <p class="copy">© 2014 <a href="#">ОКЕАН БАНК (ЗАО)</a></p>
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 right"></div>
         </div>
+    </div>
+    <div class="footer">
+        <p class="copy">© 2014 <a href="#">ОКЕАН БАНК (ЗАО)</a></p>
     </div>
 </div>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -178,6 +184,24 @@
 <script src="js/jquery.transit.js"></script>
 
 <script>
+    $(function () {
+        function adaptiveBackground () {
+            var windowWidth = $(window).outerWidth();
+            var windowHeight = $(window).outerHeight();
+            var menuHeight = $(".navbar-default").outerHeight();
+            var sectionHeight = $(".row");
+
+            sectionHeight.css("height", windowHeight);
+        }
+        adaptiveBackground();
+
+        $(window).on("resize", function () {
+            adaptiveBackground();
+        });
+    });
+
+
+
     //        $(document).ready(function () {
     //            var windowWidth = $(window).outerWidth();
     //            var windowHeight = $(window).outerHeight();
