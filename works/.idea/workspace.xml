@@ -25,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../landing/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15282393" vertical-offset="4182" max-vertical-offset="6450">
+            <state vertical-scroll-proportion="-5.75" vertical-offset="4182" max-vertical-offset="6450">
               <caret line="288" column="16" selection-start-line="288" selection-start-column="16" selection-end-line="288" selection-end-column="16" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -48,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ppa.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ppa.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../landing/ppa.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-36.375" vertical-offset="3747" max-vertical-offset="4725">
-              <caret line="308" column="5" selection-start-line="308" selection-start-column="5" selection-end-line="308" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.8504983" vertical-offset="1707" max-vertical-offset="4725">
+              <caret line="165" column="64" selection-start-line="165" selection-start-column="64" selection-end-line="165" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -82,8 +82,8 @@
         <option value="$PROJECT_DIR$/../unionsb/less/app.less" />
         <option value="$PROJECT_DIR$/../unionsb/home.html" />
         <option value="$PROJECT_DIR$/../landing/app.less" />
-        <option value="$PROJECT_DIR$/../landing/ppa.less" />
         <option value="$PROJECT_DIR$/../landing/index.html" />
+        <option value="$PROJECT_DIR$/../landing/ppa.less" />
       </list>
     </option>
   </component>
@@ -1174,22 +1174,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../landing/ppa.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-36.375" vertical-offset="3747" max-vertical-offset="4725">
-          <caret line="308" column="5" selection-start-line="308" selection-start-column="5" selection-end-line="308" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../landing/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15282393" vertical-offset="4182" max-vertical-offset="6450">
+        <state vertical-scroll-proportion="-5.75" vertical-offset="4182" max-vertical-offset="6450">
           <caret line="288" column="16" selection-start-line="288" selection-start-column="16" selection-end-line="288" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../landing/ppa.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8504983" vertical-offset="1707" max-vertical-offset="4725">
+          <caret line="165" column="64" selection-start-line="165" selection-start-column="64" selection-end-line="165" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>
