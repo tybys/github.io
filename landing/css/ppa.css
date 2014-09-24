@@ -135,6 +135,9 @@ html body a {
   background: url("../img/bottombg_orig_mini.jpg") no-repeat;
 }
 @media all and (min-width: 320px) {
+  body {
+    opacity: 0.1;
+  }
   .navbar-brand {
     width: 70%;
     display: block;
