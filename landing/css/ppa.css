@@ -184,8 +184,8 @@ html body a:hover {
   width: 37.5vw;
 }
 .row.second {
-  background: #3196db url("../img/middle-rep.png") repeat;
-  overflow: hidden;
+  background: url(../img/middle-bg.png) center 0 repeat fixed, url(../img/line-middle.png) no-repeat 0 100%;
+  background-color: #3196DB;
 }
 .row.second .after-logo {
   width: 690px;

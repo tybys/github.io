@@ -202,8 +202,10 @@ html {
 		}
 	}
 	&.second {
-		background: #3196DB url("../img/middle-rep.png") repeat;
-		overflow: hidden;
+//		background:  url("../img/middle-rep.png"), url("../img/line-middle.png") top left;
+        background: url(../img/middle-bg.png) center 0 repeat fixed, url(../img/line-middle.png) no-repeat 0 100%;
+        background-color: #3196DB;
+//		overflow: hidden;
 		.after-logo {
 			width: 690px;
 			position: absolute;
