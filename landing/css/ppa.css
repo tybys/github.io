@@ -295,21 +295,35 @@ html body a:hover {
   }
 }
 @media all and (min-width: 320px) {
-  body.phone.linux .landscape {
-    background-image: none;
+  html,
+  body {
+    height: 100%;
+    position: relative;
   }
-  body.phone.linux a {
-    display: block;
+  body.phone.linux:not(.Chrome) .row,
+  body.phone.linux:not(.Chrome) .menu {
+    display: none;
+  }
+  body.phone.linux:not(.Chrome) .landscape {
+    background-image: none;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    position: relative;
+    min-height: 100%;
+  }
+  body.phone.linux:not(.Chrome) a {
+    display: block !important;
     text-align: center;
     color: white;
   }
-  body.phone.linux p {
+  body.phone.linux:not(.Chrome) p {
+    display: block !important;
     font-size: 24px;
     color: white;
     text-align: center;
   }
-  body.phone.linux img {
-    display: block;
+  body.phone.linux:not(.Chrome) img {
+    display: block !important;
     width: 15%;
     margin: 0 auto;
   }

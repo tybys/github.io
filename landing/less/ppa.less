@@ -331,22 +331,36 @@ html {
     }
 }
 @media all and (min-width: 320px) {
-	body.phone.linux {
+	html, body {
+		height: 100%;
+		position: relative;
+	}
+	body.phone.linux:not(.Chrome) {
+
+		.row, .menu {
+			display: none;
+		}
 		.landscape {
 			background-image: none;
+			background: rgba(0, 0, 0, 0.9);
+
+			height: 100%;
+			position: relative;
+			min-height: 100%;
 		}
 		a {
-			display: block;
+			display: block !important;
 			text-align: center;
 			color: white;
 		}
 		p {
+			display: block !important;
 			font-size: 24px;
 			color: white;
 			text-align: center;
 		}
 		img {
-			display: block;
+			display: block !important;
 			width: 15%;
 			margin: 0 auto;
 		}

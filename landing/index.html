@@ -24,9 +24,9 @@
 
 <body>
 <div class="landscape">
-    <p>Оптимизировано для Google Chrome</p>
-    <img src="img/chrome.svg">
-    <a href="https://play.google.com/store/apps/details?id=com.android.chrome">Скачать из Play Store</a>
+    <p style="display: none">Оптимизировано для Google Chrome</p>
+    <img style="display: none" src="img/chrome.svg">
+    <a style="display: none" href="https://play.google.com/store/apps/details?id=com.android.chrome">Скачать из Play Store</a>
 </div>
 <div class="container-fluid menu">
 
@@ -244,19 +244,14 @@
         function Navigator() {
             if (!!navigator.platform.match(/linux/i)) {
                 $('body').addClass('linux');
-                alert("linux")
             } else if (!!navigator.platform.match(/win/i)) {
                 $('body').addClass('windows');
-                alert("windows")
             } else if (!!navigator.platform.match(/iphone/i)) {
                 $('body').addClass('iphone ios');
-                alert("ios")
             } else if (!!navigator.platform.match(/ipad/i)) {
                 $('body').addClass('ipad ios');
-                alert("ios")
             } else if (!!navigator.platform.match(/macIntel/i)) {
                 $('body').addClass('mac');
-                alert("mac")
             }
 
             var windowWidth = parseInt($(window).width(), 10);
