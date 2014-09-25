@@ -298,10 +298,10 @@ html body a:hover {
   .row,
   .navbar,
   .footer {
-    -webkit-filter: blur(4px) !important;
+    opacity: 0;
   }
   .landscape {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.9);
     background-image: url("../img/flip.png");
     background-repeat: no-repeat;
     background-position: center;
