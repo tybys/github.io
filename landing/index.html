@@ -64,6 +64,7 @@
 
 <div class="container-fluid">
     <div class="row first">
+        <img src="img/top-bg-orig.png" id="bg">
         <div class="container">
             <div class="col-md-6 col-sm-6 col-xs-12 left first-absolute">
                 <img src="img/top-logo.svg" class="after-logo">
@@ -206,12 +207,7 @@
             adaptiveBackground();
         }
 
-        $(window).on("resize", function () {
-            if (!$(window).outerWidth() == 320) {
-                adaptiveBackground();
-            }
 
-        });
 
         // browser detect
         function browser_detect() {
@@ -266,7 +262,39 @@
 //        Platform();
         Navigator();
         browser_detect();
+
+
+
+            var theWindow        = $(window),
+                $bg              = $("#bg"),
+                aspectRatio      = $bg.width() / $bg.height();
+
+            function resizeBg() {
+
+                if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+                    $bg
+                        .removeClass()
+                        .addClass('bgheight');
+                } else {
+                    $bg
+                        .removeClass()
+                        .addClass('bgwidth');
+                }
+
+            }
+
+            theWindow.resize(resizeBg).trigger("resize");
+
+
+        $(window).on("resize", function () {
+            if (!$(window).outerWidth() == 320) {
+                adaptiveBackground();
+            }
+
+        });
     });
+
+
 
 
 

@@ -165,8 +165,17 @@ html body a:hover {
 }
 .row.first {
   overflow: hidden;
-  background: url("../img/top-bg-orig.png") no-repeat;
-  background-size: cover;
+}
+.row.first #bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.row.first .bgwidth {
+  width: 100%;
+}
+.row.first .bgheight {
+  height: 100%;
 }
 .row.first .container {
   margin-top: 80px;
@@ -282,14 +291,35 @@ html body a:hover {
 .footer a {
   color: #0070CD;
 }
+@media only screen and (min-width: 1280px) {
+  .row .first-absolute {
+    left: 60px;
+  }
+}
+@media only screen and (min-width: 1350px) and (max-width: 1900px) {
+  .first .first-absolute {
+    left: 60px;
+  }
+}
 @media only screen and (min-width: 1600px) {
-  .first {
+  .row.first {
     background-size: 111%;
+  }
+  .row.first .bgheight {
+    height: calc(100% + 124px);
+    height: -webkit-calc(100% + 124px);
+  }
+  .row .first-absolute {
+    left: 124px;
   }
 }
 @media only screen and (min-width: 1900px) {
-  .first {
+  .row.first {
     background-size: 111%;
+  }
+  .row.first .bgheight {
+    height: calc(100% + 148px);
+    height: -webkit-calc(100% + 148px);
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
@@ -314,6 +344,9 @@ html body a:hover {
   }
   .second .h3-wrap-wrap {
     min-width: 435px !important;
+  }
+  .row .first-absolute {
+    left: 60px;
   }
   .third-absolute {
     width: 40%;
