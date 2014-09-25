@@ -295,20 +295,20 @@ html body a:hover {
   }
 }
 @media all and (min-width: 320px) {
-  body.phone.mac .landscape {
+  body.phone.linux .landscape {
     background-image: none;
   }
-  body.phone.mac a {
+  body.phone.linux a {
     display: block;
     text-align: center;
     color: white;
   }
-  body.phone.mac p {
+  body.phone.linux p {
     font-size: 24px;
     color: white;
     text-align: center;
   }
-  body.phone.mac img {
+  body.phone.linux img {
     display: block;
     width: 15%;
     margin: 0 auto;
