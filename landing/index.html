@@ -23,7 +23,11 @@
 </head>
 
 <body>
-<div class="landscape"></div>
+<div class="landscape">
+    <p>Оптимизировано для Google Chrome</p>
+    <img src="img/chrome.svg">
+    <a href="https://play.google.com/store/apps/details?id=com.android.chrome">Скачать из Play Store</a>
+</div>
 <div class="container-fluid menu">
 
     <nav class="navbar navbar-default" role="navigation">
@@ -209,24 +213,8 @@
 
         });
 
-        $(window).on("scroll", function (e) {
-            if ($(window).outerWidth() > $(window).outerHeight()) {
-                e.preventDefault;
-            }
-        });
-
-
-
-
-
-
-
-
-
-
         // browser detect
-        function browser_detect()
-        {
+        function browser_detect() {
             navigator.sayswho = (function ()
             {
                 var navi = navigator.appName,
@@ -253,36 +241,7 @@
             })();
         }
 
-        /*
-         Changing class of body
-         depending on - platform, devices and screen resolution
-         for example <body class="desctop windows" />*/
-//        function Platform() {
-//            switch (!!navigator.platform.match) {
-//                case '/linux/i':
-//                    $('body').addClass('linux');
-//                    alert("linux")
-//                    break;
-//                case '/win/i':
-//                    $('body').addClass('windows');
-//                    alert("windows")
-//                    break;
-//                case '/iphone/i':
-//                    $('body').addClass('iphone ios');
-//                    alert("ios")
-//                    break;
-//                case '/ipad/i':
-//                    $('body').addClass('ipad ios');
-//                    alert("ios")
-//                    break;
-//
-//                    break;
-//            }
-//        }
-
-
-        function Navigator()
-        {
+        function Navigator() {
             if (!!navigator.platform.match(/linux/i)) {
                 $('body').addClass('linux');
                 alert("linux")
