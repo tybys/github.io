@@ -1,4 +1,5 @@
 html body {
+  min-width: 1024px;
   color: inherit;
 }
 html body h2 {
@@ -147,6 +148,7 @@ html body a:hover {
   bottom: calc(15% - 93px);
   bottom: -webkit-calc(15% - 93px);
   width: 50%;
+  left: 228px;
 }
 .row .first-absolute h2 {
   margin-top: 30px;
@@ -162,6 +164,7 @@ html body a:hover {
   width: 50%;
 }
 .row.first {
+  overflow: hidden;
   background: url("../img/top-bg-orig.png") no-repeat;
   background-size: cover;
 }
@@ -173,6 +176,7 @@ html body a:hover {
 }
 .row.second {
   background: #3196db url("../img/middle-rep.png") repeat;
+  overflow: hidden;
 }
 .row.second .after-logo {
   width: 690px;
@@ -277,6 +281,16 @@ html body a:hover {
 }
 .footer a {
   color: #0070CD;
+}
+@media only screen and (min-width: 1600px) {
+  .first {
+    background-size: 111%;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .first {
+    background-size: 111%;
+  }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
   .navbar-default {

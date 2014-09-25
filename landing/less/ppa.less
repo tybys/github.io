@@ -1,5 +1,6 @@
 html {
 	body {
+		min-width: 1024px;
 		color: inherit;
 		h2 {
 			font-family: "RobotoBlack";
@@ -167,6 +168,7 @@ html {
 		bottom: ~"calc(15% - 93px)";
 		bottom: ~"-webkit-calc(15% - 93px)";
 		width: 50%;
+		left: 228px;
 		h2 {
 			margin-top: 30px;
 			margin-bottom: 20px;
@@ -182,7 +184,7 @@ html {
 		width: 50%;
 	}
 	&.first {
-
+		overflow: hidden;
 		background: url("../img/top-bg-orig.png") no-repeat;
 //		background-position: -120px -40px;
 //		background-size: 165%;
@@ -200,6 +202,7 @@ html {
 	}
 	&.second {
 		background: #3196DB url("../img/middle-rep.png") repeat;
+		overflow: hidden;
 		.after-logo {
 			width: 690px;
 			position: absolute;
@@ -311,9 +314,26 @@ html {
 
 // some objects
 @media only screen and (min-width: 1280px) {}
-@media only screen and (min-width: 1440px) {}
-@media only screen and (min-width: 1600px) {}
-@media only screen and (min-width: 1900px) {}
+@media only screen and (min-width: 1350px) and (max-width: 1900px) {
+	.first {
+//		background-size: 165% !important;
+//		background-position-y: 32% !important;
+		.first-absolute {
+//			bottom: ~"calc(15% - -11px)" !important;
+//			bottom: ~"-webkit-calc(15% - -11px)" !important;
+		}
+	}
+}
+@media only screen and (min-width: 1600px) {
+	.first {
+		background-size: 111%;
+	}
+}
+@media only screen and (min-width: 1900px) {
+	.first {
+		background-size: 111%;
+	}
+}
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
 	.navbar-default {
 		max-height: 60px;
@@ -405,7 +425,6 @@ html {
         z-index: 999;
     }
 }
-
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     .first-absolute,
     .second-absolute,
