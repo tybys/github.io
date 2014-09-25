@@ -13,6 +13,11 @@ html {
 		}
 		.first h2 {float: left;}
 
+		.second {
+			.h3-wrap-wrap {
+				min-width: 540px;
+			}
+		}
 		.h3-wrap {
 			position: relative;
 			clear: both;
@@ -20,7 +25,6 @@ html {
 				position: absolute;
 				left: 0;
 				top: 0;
-				min-width: 540px;
 			}
 		}
 		h3 {
@@ -329,6 +333,19 @@ html {
     .bottom-menu a {
         font-size: 13px;
     }
+
+	.first {
+		overflow: hidden;
+	}
+	.second {
+		.h3-wrap-wrap {
+			min-width: 435px !important;
+		}
+	}
+	.third-absolute {
+		width: 40%;
+		right: 47px !important;
+	}
 }
 @media all and (min-width: 320px) {
 	html, body {
@@ -367,12 +384,14 @@ html {
 	}
 }
 @media all and (min-width: 320px) and (orientation: landscape) {
-
-    .row, .navbar, .footer {
-        //-webkit-filter: blur(4px) !important;
+.phone {
+	.row, .navbar, .footer {
+		//-webkit-filter: blur(4px) !important;
 		opacity: 0;
-    }
-    .landscape {
+	}
+}
+
+    .landscape.phone {
         background-color: rgba(0, 0, 0, 0.9);
         background-image: url("../img/flip.png");
         background-repeat: no-repeat;
@@ -386,6 +405,7 @@ html {
         z-index: 999;
     }
 }
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     .first-absolute,
     .second-absolute,
