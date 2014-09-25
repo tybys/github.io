@@ -219,12 +219,12 @@ img.arrow1,img.arrow2,img.arrow3,img.arrow4,img.arrow5 {
 
 .block1 span {
     display: block;
-    margin-top: 45px;
+    margin-top: 41px;
     margin-left: 27px;
 }
 .block2 span {
     display: block;
-    margin-top: 15px;
+    margin-top: 11px;
     margin-left: 29px;
 }
 .block3 span {
@@ -237,7 +237,7 @@ img.arrow1,img.arrow2,img.arrow3,img.arrow4,img.arrow5 {
     line-height: 20px;
 }
 .block1 p:first-of-type {
-    line-height: 13px;
+    line-height: 18px;
 }
 
 
@@ -246,13 +246,13 @@ img.arrow1,img.arrow2,img.arrow3,img.arrow4,img.arrow5 {
     line-height: 20px;
 }
 .block3 p:first-of-type {
-    line-height: 13px;
+    line-height: 18px;
 }
 
 
 .block3 span {
     display: block;
-    margin-top: -15px;
+    margin-top: -18px;
     margin-left: 27px;
 }
 .block2 p {
@@ -260,7 +260,7 @@ img.arrow1,img.arrow2,img.arrow3,img.arrow4,img.arrow5 {
     line-height: 20px;
 }
 .block2 p:first-of-type {
-    line-height: 13px;
+    line-height: 18px;
 }
 
 .block1 span,.block2 span,.block3 span {
