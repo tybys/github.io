@@ -2,6 +2,9 @@ html {
     position: relative;
     min-height: 100%;
 }
+h4, h5 {
+    font-weight: 900 !important;
+}
 body {
 	font-family: 'Roboto', sans-serif;
 	background-color: #fff;
@@ -102,7 +105,7 @@ a:hover, a:active, a:focus {
 	font-size: 12px;
 	color: black;
 	font-weight: lighter;
-	margin-right: 30px;
+	margin-right: -48px;
 	padding-top: 10px;
 	}
 .frame {
@@ -112,7 +115,10 @@ a:hover, a:active, a:focus {
 	border: 1px dashed #0971ce;
 	z-index:1000;
 	position: inherit;
+    width: calc(100% + 77px);
+    width: -webkit-calc(100% + 77px);
 	}
+
 .frame table {
 	position: relative;
 	width: 93%;
@@ -133,7 +139,8 @@ a:hover, a:active, a:focus {
 	height: 56px;
 	position: absolute;
 	bottom: -38px;
-	width: 100%;
+	width: calc(100% + 77px);
+    width: -webkit-calc(100% + 77px);
 	z-index:0;
 	color: #fff;
 	padding-top: 35px;
@@ -299,14 +306,14 @@ img.arrow1,img.arrow2,img.arrow3,img.arrow4,img.arrow5 {
 	top: -60px;
 	}
 .block1 img.arrow1 {
-	right: -30px;
-	top: 40%;
+    right: -71px;
+    top: 44%;
 	width: 19%;
 	}
 .block3 img.arrow2 {
-	right: -30px;
-	top: 40%;
-	width: 19%;
+    right: -67px;
+    top: 5%;
+    width: 19%;
 	}
 .block1 img.arrow3 {
 	width: 40%;
@@ -314,14 +321,14 @@ img.arrow1,img.arrow2,img.arrow3,img.arrow4,img.arrow5 {
 	left: 30%;
 	}
 .block3 img.arrow4 {
-	width: 40%;
-	top: -40px;
-	left: 30%;
+    width: 40%;
+    top: -60px;
+    left: 31%;
 	}
 .block2 img.arrow5 {
-	width: 19%;
-	left: -30px;
-	top: 40%;
+    width: 21%;
+    left: -42px;
+    top: 26%;
 	}
 .style4 {
 	font-weight: 900 !important;
