@@ -139,8 +139,8 @@ a:hover, a:active, a:focus {
 	height: 56px;
 	position: absolute;
 	bottom: -38px;
-	width: calc(100% + 77px);
-    width: -webkit-calc(100% + 77px);
+	width: calc(100% + 79px);
+    width: -webkit-calc(100% + 79px);
 	z-index:0;
 	color: #fff;
 	padding-top: 35px;
@@ -181,7 +181,7 @@ a:hover, a:active, a:focus {
 	line-height: 38px;
 	width: 181px;
 	text-indent: 9px;
-	bottom: 21px;
+	bottom: 22px;
 	left: -10px;
 	}
 .Illustrations_right .right_link
