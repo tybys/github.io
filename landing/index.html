@@ -257,40 +257,47 @@
          Changing class of body
          depending on - platform, devices and screen resolution
          for example <body class="desctop windows" />*/
-        function Platform() {
-            switch (!!navigator.platform.match) {
-                case '/linux/i':
-                    $('body').addClass('linux');
-                    alert("linux")
-                    break;
-                case '/win/i':
-                    $('body').addClass('windows');
-                    alert("windows")
-                    break;
-                case '/iphone/i':
-                    $('body').addClass('iphone ios');
-                    alert("ios")
-                    break;
-                case '/ipad/i':
-                    $('body').addClass('ipad ios');
-                    alert("ios")
-                    break;
-
-                    break;
-            }
-        }
+//        function Platform() {
+//            switch (!!navigator.platform.match) {
+//                case '/linux/i':
+//                    $('body').addClass('linux');
+//                    alert("linux")
+//                    break;
+//                case '/win/i':
+//                    $('body').addClass('windows');
+//                    alert("windows")
+//                    break;
+//                case '/iphone/i':
+//                    $('body').addClass('iphone ios');
+//                    alert("ios")
+//                    break;
+//                case '/ipad/i':
+//                    $('body').addClass('ipad ios');
+//                    alert("ios")
+//                    break;
+//
+//                    break;
+//            }
+//        }
 
 
         function Navigator()
         {
             if (!!navigator.platform.match(/linux/i)) {
                 $('body').addClass('linux');
+                alert("linux")
             } else if (!!navigator.platform.match(/win/i)) {
                 $('body').addClass('windows');
+                alert("windows")
             } else if (!!navigator.platform.match(/iphone/i)) {
                 $('body').addClass('iphone ios');
+                alert("ios")
             } else if (!!navigator.platform.match(/ipad/i)) {
                 $('body').addClass('ipad ios');
+                alert("ios")
+            } else if (!!navigator.platform.match(/macIntel/i)) {
+                $('body').addClass('mac');
+                alert("mac")
             }
 
             var windowWidth = parseInt($(window).width(), 10);
@@ -302,7 +309,7 @@
                 $('body').addClass('phone');
             }
         }
-        Platform();
+//        Platform();
         Navigator();
         browser_detect();
     });
