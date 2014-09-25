@@ -209,7 +209,14 @@ html body a:hover {
   top: 73px;
 }
 .row.last {
-  background: url("../img/bottombg_orig_mini.jpg") no-repeat;
+  background: url("../img/footer.png") no-repeat;
+  background-position: bottom center;
+}
+.row.last .copy {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 20px;
+  color: black;
 }
 .row.last .logo {
   width: 361px;

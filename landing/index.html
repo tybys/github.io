@@ -175,12 +175,13 @@
                     <img src="img/top.svg" class="b">
                     <span>В начало</span>
                 </div>
+                <p class="copy">© 2014 <a href="#">ОКЕАН БАНК (ЗАО)</a></p>
             </div>
         </div>
     </div>
-    <div class="footer">
-        <p class="copy">© 2014 <a href="#">ОКЕАН БАНК (ЗАО)</a></p>
-    </div>
+    <!--<div class="footer">-->
+        <!--<p class="copy">© 2014 <a href="#">ОКЕАН БАНК (ЗАО)</a></p>-->
+    <!--</div>-->
 </div>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -193,7 +194,7 @@
             var windowWidth = $(window).outerWidth();
             var windowHeight = $(window).outerHeight();
             var menuHeight = $(".navbar-default").outerHeight();
-            var sectionHeight = $(".row.first");
+            var sectionHeight = $(".row");
 
             sectionHeight.not(".last").css("height", windowHeight);
         }
