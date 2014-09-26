@@ -101,32 +101,33 @@
                 <img src="img/circle3-c.png" class="after-logo">
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12 right third-absolute">
-                <img src="img/middle-logo.svg" class="logo">
+                <div>
+                    <img src="img/middle-logo.svg" class="logo">
 
-                <h2>Бонусы за покупку</h2>
+                    <h2>Бонусы за покупку</h2>
 
-                <div class="h3-wrap">
-                    <div class="h3-wrap-wrap">
-                        <h3>Для наших любимых клиентов у нас есть бонусы!<br/>
-                        Совершая покупки через ROBOKASSA,<br/>
-                        вы получаете бонусные баллы.</h3>
+                    <div class="h3-wrap">
+                        <div class="h3-wrap-wrap">
+                            <h3>Для наших любимых клиентов у нас есть бонусы!<br/>
+                            Совершая покупки через ROBOKASSA,<br/>
+                            вы получаете бонусные баллы.</h3>
+                        </div>
+                    </div>
+
+                    <br/><br/>
+                    <div style="position: relative" class="sub-h3">
+                        <h3 style="position: absolute; left: 0;"><span>Их можно потратить на скидку при следующей покупке.</span></h3>
+                    </div>
+
+                    <div class="btn-wrap">
+                        <div class="btn-slide next-slide">
+                            <img src="img/down.svg" class="b">
+                        </div>
+                        <div class="btn-slide prev-slide">
+                            <img src="img/top.svg" class="b">
+                        </div>
                     </div>
                 </div>
-
-                <br/><br/>
-                <div style="position: relative">
-                    <h3 style="position: absolute; left: 0;"><span>Их можно потратить на скидку при следующей покупке.</span></h3>
-                </div>
-
-                <div class="btn-wrap">
-                    <div class="btn-slide next-slide">
-                        <img src="img/down.svg" class="b">
-                    </div>
-                    <div class="btn-slide prev-slide">
-                        <img src="img/top.svg" class="b">
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
@@ -185,9 +186,6 @@
             </div>
         </div>
     </div>
-    <!--<div class="footer">-->
-        <!--<p class="copy">© 2014 <a href="#">ОКЕАН БАНК (ЗАО)</a></p>-->
-    <!--</div>-->
 </div>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -208,13 +206,11 @@
             adaptiveBackground();
         }
 
-        var se = $(".second").outerHeight();
-        $(".second").css("height", se - 34)
-
-
-
-
-
+        function secondBgSizer () {
+            var se = $(".second").outerHeight();
+            $(".second").css("height", se - 34)
+        }
+//        secondBgSizer();
 
         // browser detect
         function browser_detect() {
@@ -270,23 +266,30 @@
         Navigator();
         browser_detect();
 
-        var theWindow = $(window),
-            $bg = $("#bg"),
-            aspectRatio = $bg.width() / $bg.height();
+        function bgSizer () {
+            var theWindow = $(window),
+                    $bg = $("#bg"),
+                    aspectRatio = $bg.width() / $bg.height();
 
-        function resizeBg() {
-            if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
-                $bg.removeClass().addClass('bgheight');
-            } else {
-                $bg.removeClass().addClass('bgwidth');
+            function resizeBg() {
+                if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+                    $bg.removeClass().addClass('bgheight');
+                } else {
+                    $bg.removeClass().addClass('bgwidth');
+                }
             }
+
+            theWindow.resize(resizeBg).trigger("resize");
         }
 
-        theWindow.resize(resizeBg).trigger("resize");
+        bgSizer();
+
 
         $(window).on("resize", function () {
             if (!$(window).outerWidth() == 320) {
                 adaptiveBackground();
+                bgSizer();
+                secondBgSizer();
 
                 var se = $(".second").outerHeight();
                 $(".second").css("height", se - 34)

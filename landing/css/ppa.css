@@ -220,9 +220,24 @@ html body a:hover {
   margin-top: 71px;
 }
 .row.second .third-absolute {
-  position: static;
-  right: -43px;
-  top: 73px;
+  position: absolute;
+  right: 0;
+}
+.row.second .third-absolute img {
+  margin-left: 16%;
+  margin-top: 16%;
+}
+.row.second .third-absolute h2 {
+  margin-left: 16%;
+}
+.row.second .third-absolute .h3-wrap {
+  margin-left: 16%;
+}
+.row.second .third-absolute .btn-wrap {
+  margin-left: 16%;
+}
+.row.second .third-absolute .sub-h3 {
+  margin-left: 16%;
 }
 .row.last {
   background: url("../img/footer.png") no-repeat;
@@ -345,10 +360,6 @@ html body a:hover {
   }
 }
 @media only screen and (min-width: 1280px) {
-  .third-absolute {
-    width: 40%;
-    right: 47px !important;
-  }
   .row .first-absolute {
     left: 60px;
   }
@@ -393,10 +404,6 @@ html body a:hover {
   }
   .row .first-absolute {
     left: 60px;
-  }
-  .third-absolute {
-    width: 40%;
-    right: 47px !important;
   }
 }
 @media all and (min-width: 320px) {
@@ -454,12 +461,6 @@ html body a:hover {
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  .first-absolute,
-  .second-absolute,
-  .third-absolute {
-    position: static !important;
-    width: auto !important;
-  }
   .first-absolute {
     position: absolute !important;
     bottom: 40% !important;

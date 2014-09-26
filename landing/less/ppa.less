@@ -210,7 +210,6 @@ html {
 			width: 690px;
             border-radius: 100%;
             box-shadow: 0 0 50px #c6d7e9;
-//			position: absolute;
 			position: relative;
             top: -17px;
             z-index: 10;
@@ -240,10 +239,24 @@ html {
 			margin-top: 71px;
 		}
 		.third-absolute {
-            position: static;
-//			position: absolute;
-			right: -43px;
-			top: 73px;
+            position: absolute;
+			right: 0;
+			img {
+				margin-left: 16%;
+				margin-top: 16%;
+			}
+			h2 {
+				margin-left: 16%;
+			}
+			.h3-wrap {
+				margin-left: 16%;
+			}
+			.btn-wrap {
+				margin-left: 16%;
+			}
+			.sub-h3 {
+				margin-left: 16%;
+			}
 		}
 	}
 	&.last {
@@ -391,8 +404,7 @@ html {
 }
 @media only screen and (min-width: 1280px) {
     .third-absolute {
-        width: 40%;
-        right: 47px !important;
+
     }
     .row .first-absolute {
         left: 60px;
@@ -450,10 +462,7 @@ html {
     .row .first-absolute {
         left: 60px;
     }
-	.third-absolute {
-		width: 40%;
-		right: 47px !important;
-	}
+
 }
 @media all and (min-width: 320px) {
 	html, body {
@@ -517,8 +526,7 @@ html {
     .first-absolute,
     .second-absolute,
     .third-absolute {
-        position: static !important;
-        width: auto !important;
+
     }
     .first-absolute {
         position: absolute !important;
