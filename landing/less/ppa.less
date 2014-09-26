@@ -202,16 +202,18 @@ html {
 		}
 	}
 	&.second {
-//		background:  url("../img/middle-rep.png"), url("../img/line-middle.png") top left;
-        background: url(../img/middle-bg.png) center 0 repeat fixed, url(../img/line-middle.png) no-repeat 0 100%;
+		background:  url("../img/middle-rep.png");
+//        background: url(../img/middle-bg.png) center 0 repeat fixed, url(../img/line-middle.png) no-repeat 0 100%;
         background-color: #3196DB;
-//		overflow: hidden;
+
 		.after-logo {
 			width: 690px;
-			position: absolute;
-			top: -55px;
-			z-index: 1;
-			left: -24%;
+            border-radius: 100%;
+            box-shadow: 0 0 50px #c6d7e9;
+//			position: absolute;
+			position: relative;
+            top: -17px;
+            z-index: 10;
 		}
 		.logo {
 			max-height: 107px;
@@ -238,7 +240,8 @@ html {
 			margin-top: 71px;
 		}
 		.third-absolute {
-			position: absolute;
+            position: static;
+//			position: absolute;
 			right: -43px;
 			top: 73px;
 		}
@@ -316,21 +319,28 @@ html {
 }
 
 // some objects
-@media only screen and (min-width: 1280px) {
-    .row .first-absolute {
-        left: 60px;
+
+
+@media only screen and (min-width: 1900px) {
+    .row {
+        &.first {
+            background-size: 111%;
+            .bgheight {
+                height: ~"calc(100% + 148px)";
+                height: ~"-webkit-calc(100% + 148px)";
+            }
+        }
+        &.second {
+            .container {
+                width: 100%;
+                padding: 0 60px !important;
+            }
+            .after-logo {
+                width: 1070px;
+                height: 1070px;
+            }
+        }
     }
-}
-@media only screen and (min-width: 1350px) and (max-width: 1900px) {
-	.first {
-//		background-size: 165% !important;
-//		background-position-y: 32% !important;
-		.first-absolute {
-//			bottom: ~"calc(15% - -11px)" !important;
-//			bottom: ~"-webkit-calc(15% - -11px)" !important;
-            left: 60px;
-		}
-	}
 }
 @media only screen and (min-width: 1600px) {
     .row {
@@ -341,18 +351,60 @@ html {
                 height: ~"-webkit-calc(100% + 124px)";
             }
         }
+        &.second {
+            .container {
+                width: 100%;
+                padding: 0 50px !important;
+            }
+            .after-logo {
+                width: 900px;
+                height: 900px;
+            }
+        }
     }
     .row .first-absolute {
         left: 124px;
     }
 }
-@media only screen and (min-width: 1900px) {
+@media only screen and (min-width: 1350px) and (max-width: 1900px) {
+    .first {
+        //		background-size: 165% !important;
+        //		background-position-y: 32% !important;
+        .first-absolute {
+            //			bottom: ~"calc(15% - -11px)" !important;
+            //			bottom: ~"-webkit-calc(15% - -11px)" !important;
+            left: 60px;
+        }
+    }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1600px) {
+    .row.second {
+        .container {
+            width: 100%;
+            padding: 0 44px !important;
+        }
+        .after-logo {
+            width: 800px;
+            height: 800px;
+        }
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .third-absolute {
+        width: 40%;
+        right: 47px !important;
+    }
+    .row .first-absolute {
+        left: 60px;
+    }
     .row {
-        &.first {
-            background-size: 111%;
-            .bgheight {
-                height: ~"calc(100% + 148px)";
-                height: ~"-webkit-calc(100% + 148px)";
+        &.second {
+            .container {
+                padding: 0 44px !important;
+            }
+            .row.after-logo {
+                width: 575px;
+                height: 575px;
             }
         }
     }
@@ -370,8 +422,18 @@ html {
 			padding: 10.5px inherit;
 		}
 	}
-	.second {
-		max-height: 527px;
+	.row.second {
+        .container {
+            width: 100%;
+            padding: 0;
+            .col-md-6 {
+                padding: 0;
+            }
+        }
+        .after-logo {
+            width: 575px;
+            height: 575px;
+        }
 	}
     .bottom-menu a {
         font-size: 13px;
