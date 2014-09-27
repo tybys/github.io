@@ -60,7 +60,7 @@
     </nav>
 </div>
 <div class="container-fluid">
-    <div class="row first">
+    <div class="row first" id="first">
         <img src="img/top-bg-orig.png" id="bg">
         <div class="container">
             <div class="col-md-6 col-sm-6 col-xs-12 left first-absolute">
@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="btn-slide next-slide hidden-xs">
-                    <img src="img/down.svg" class="b">
+                    <a href="#second"><img src="img/down.svg" class="b"></a>
                 </div>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12 right magazines second-absolute">
@@ -91,9 +91,25 @@
             </div>
         </div>
     </div>
-    <div class="row second">
-        <!--<img src="img/line-middle.png" id="bg2">-->
-        <div class="container-fluid"></div>
+    <div class="row second" id="second">
+        <div class="container-fluid">
+            <div class="clouds">
+                <div class="cloud-4" data-speed="38000" data-delay="20000"></div>
+                <div class="cloud-1" data-speed="35000"></div>
+                <div class="cloud-2" data-speed="45000" data-delay="15000"></div>
+                <div class="cloud-3" data-speed="40000"></div>
+                <div class="cloud-4" data-speed="38000" data-delay="20000"></div>
+                <div class="cloud-1" data-speed="35000"></div>
+                <div class="cloud-2" data-speed="45000" data-delay="15000"></div>
+                <div class="cloud-3" data-speed="40000"></div>
+                <div class="cloud-1" data-speed="35000"></div>
+                <div class="cloud-4" data-speed="38000" data-delay="20000"></div>
+                <div class="cloud-2" data-speed="45000" data-delay="15000"></div>
+                <div class="cloud-1" data-speed="35000"></div>
+                <div class="cloud-4" data-speed="38000" data-delay="20000"></div>
+                <div class="cloud-2" data-speed="45000" data-delay="15000"></div>
+            </div>
+        </div>
         <div class="container">
             <div class="col-md-6 col-sm-6 col-xs-12 left">
                 <div class="img-wrap">
@@ -121,17 +137,17 @@
 
                     <div class="btn-wrap">
                         <div class="btn-slide next-slide">
-                            <img src="img/down.svg" class="b">
+                            <a href="#last"><img src="img/down.svg" class="b"></a>
                         </div>
                         <div class="btn-slide prev-slide">
-                            <img src="img/top.svg" class="b">
+                            <a href="#first"><img src="img/top.svg" class="b"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row last">
+    <div class="row last" id="last">
         <div class="container">
             <div class="col-md-6 col-sm-6 col-xs-12 left">
                 <img src="img/logo-bottom.svg" class="logo">
@@ -146,7 +162,7 @@
                     </div>
                 </div>
                 <div class="btn-slide to-top hidden-xs">
-                    <img src="img/top.svg" class="b">
+                    <a href="#first"><img src="img/top.svg" class="b"></a>
                     <span>В начало</span>
                 </div>
             </div>
@@ -190,6 +206,17 @@
 <script src="js/jquery.transit.js"></script>
 <script>
     $(function () {
+        function moveClouds(e, s, d) {
+            $(e).css('right', '-20%');
+            var wait = window.setTimeout(function(){
+                $(e).animate ({
+                    right: '120%'
+                }, s, 'linear', function() {
+                    moveClouds(e, s, d);
+                });
+            },d);
+        }
+
 
         //nativeHeight =
         function adaptiveBackground () {
@@ -200,9 +227,7 @@
 
             sectionHeight.not(".last").not(".second").css("height", windowHeight);
         }
-        if ($(window).outerWidth() > 320) {
-            adaptiveBackground();
-        }
+
 
 
         var imgSize = $(".second .after-logo").outerHeight();
@@ -277,9 +302,15 @@
             theWindow.resize(resizeBg).trigger("resize");
         }
 
-        bgSizer();
 
+        if ($(window).outerWidth() > 320) {
+            adaptiveBackground();
+            bgSizer();
+        }
 
+        $(window).on("scroll", function () {
+           parallax();
+        });
         $(window).on("resize", function () {
             if (!$(window).outerWidth() == 320) {
                 adaptiveBackground();
@@ -288,8 +319,43 @@
             }
             var imgSize = $(".second .after-logo").outerHeight();
             $(".second").css("height", imgSize - 34);
-            console.log(imgSize)
         });
+
+        $(".slide .downb").click(function () {
+            var target = $(this).attr("href");
+
+            $("html, body").animate({
+                scrollTop: $(target).offset().top
+            }, 2000, 'easeInOutQuint');
+
+            return false;
+
+        });
+
+        $('.btn-slide a').click(function () {
+            var target = $(this).attr('href');
+            $('html, body').animate({scrollTop: $(target).offset().top}, 1500, 'easeInCubic');
+            return false;
+
+        });
+
+        function parallax(){
+            var scrolled = $(window).scrollTop();
+
+            $(".first .after-logo").css({
+                top: -(scrolled * 0.35)+'px'
+
+            });
+            $(".first h2").css({
+                top: -(scrolled * 0.20)+'px'
+
+            });
+
+            $(".first .h3-wrap").css({
+                top: -(scrolled * 0.15)+'px'
+
+            });
+        }
     });
 
     //        $(document).ready(function () {

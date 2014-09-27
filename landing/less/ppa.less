@@ -185,6 +185,12 @@ html {
 	}
 	&.first {
 		overflow: hidden;
+        .after-logo {
+            position: relative;
+        }
+        h2 {
+            position: relative;
+        }
         #bg {
             position: fixed; top: 0; left: 0; z-index: -1;
         }
@@ -205,12 +211,121 @@ html {
 		background:  url("../img/middle-rep.png");
 //        background: url(../img/middle-bg.png) center 0 repeat fixed, url(../img/line-middle-c.png) no-repeat 0 100%;
         background-color: #3196DB;
-
+        .right {
+            z-index: 150 !important;
+        }
         .container-fluid {
             position: absolute;
             overflow: hidden;
             width: 100%;
             height: 100%;
+
+            .clouds {
+                position: absolute;
+                top: 50px;
+                left: 0;
+                bottom: 0;
+                right: 0;
+
+                z-index: 100;
+            }
+
+            [class^="cloud-"] {
+                position: absolute;
+                right: 120%;
+                width: 200px;
+                height: 60px;
+                background: #fff;
+                -webkit-border-radius: 200px;
+                border-radius: 200px;
+            }
+
+            [class^="cloud-"]:before,
+            [class^="cloud-"]:after {
+                content: '';
+                position: absolute;
+                top: -15px;
+                left: 10px;
+                width: 100px;
+                height: 80px;
+                background: #fff;
+                -webkit-border-radius: 100px;
+                border-radius: 100px;
+                -webkit-transform: rotate(30deg);
+                -moz-transform: rotate(30deg);
+                transform: rotate(30deg);
+            }
+
+            [class^="cloud-"]:after {
+                top: -55px;
+                left: auto;
+                right: 15px;
+                width: 120px;
+                height: 120px;
+            }
+
+            .cloud-1 {
+                top: 50px;
+                -webkit-animation: moveclouds 30s linear infinite;
+                -moz-animation: moveclouds 30s linear infinite;
+                -o-animation: moveclouds 30s linear infinite;
+                animation: moveclouds 30s linear infinite;
+            }
+
+            .cloud-2 {
+                top: 100px;
+                opacity: 0.8;
+                -webkit-transform: scale(0.8);
+                -moz-transform: scale(0.8);
+                transform: scale(0.8);
+                -webkit-animation: moveclouds 45s linear infinite;
+                -moz-animation: moveclouds 45s linear infinite;
+                -o-animation: moveclouds 45s linear infinite;
+                animation: moveclouds 45s linear infinite;
+                -webkit-animation-delay: 5s;
+                -moz-animation-delay: 5s;
+                animation-delay: 5s;
+            }
+
+            .cloud-3 {
+                top: 150px;
+                opacity: 0.6;
+                -webkit-transform: scale(0.6);
+                -moz-transform: scale(0.6);
+                transform: scale(0.6);
+                -webkit-animation: moveclouds 40s linear infinite;
+                -moz-animation: moveclouds 40s linear infinite;
+                -o-animation: moveclouds 40s linear infinite;
+                animation: moveclouds 40s linear infinite;
+            }
+
+            .cloud-4 {
+                top: 200px;
+                opacity: 0.75;
+                -webkit-transform: scale(0.75);
+                -moz-transform: scale(0.75);
+                transform: scale(0.75);
+                -webkit-animation: moveclouds 26s linear infinite;
+                -moz-animation: moveclouds 26s linear infinite;
+                -o-animation: moveclouds 26s linear infinite;
+                animation: moveclouds 26s linear infinite;
+                -webkit-animation-delay: 8s;
+                -moz-animation-delay: 8s;
+                animation-delay: 8s;
+            }
+
+            @-webkit-keyframes moveclouds {
+                0%   { right: -20%; }
+                100% { right: 120%; }
+            }
+            @-moz-keyframes moveclouds {
+                0%   { right: -20%; }
+                100% { right: 120%; }
+            }
+            @-o-keyframes moveclouds {
+                0%   { right: -20%; }
+                100% { right: 120%; }
+            }
             &:after {
                 content: '';
                 position: absolute;
@@ -287,6 +402,10 @@ html {
 				margin-left: 16%;
 			}
 		}
+
+
+
+
 	}
 	&.last {
 //		background: url("../img/bottombg_orig_mini.jpg") no-repeat;
