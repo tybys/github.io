@@ -125,9 +125,11 @@
         
         //
         $(".icons li").hover(function () {
-            $(this).addClass("hovered");
+            console.log($("img", $(this)).not(":first").show())
+            //$(this).addClass("hovered");
         }, function ()  {
-            $(this).removeClass("hovered");
+            //$(this).removeClass("hovered");
+            console.log($("img", $(this)).not(":first").hide    ())
         });
         
         // $('#cartAccordion').collapse({

@@ -141,21 +141,17 @@ html body {
 }
 .footer ul:nth-child(1) {
   /*background: lightgoldenrodyellow;*/
-
 }
 .footer ul:nth-child(2) {
   /*background: greenyellow;*/
-
   padding-left: 2px;
 }
 .footer ul:nth-child(3) {
   /*background: yellowgreen;*/
-
   padding-left: 30px;
 }
 .footer ul:nth-child(4) {
   /*background: yellow;*/
-
   padding-left: 8.5%;
 }
 .footer ul li {
@@ -235,7 +231,6 @@ html body {
 .row.header .top .phones a {
   margin-bottom: 8px;
   /*font-size: 33px;*/
-
   font-size: 1.8vw;
   color: #36140a;
   display: block;
@@ -267,13 +262,11 @@ html body {
   float: left;
   width: 50%;
   /*background: lightcoral;*/
-
 }
 .row.header .top .times .right {
   display: inline-block;
   width: 50%;
   /*background: khaki;*/
-
   padding-left: 33px;
   padding-top: 24px;
 }
@@ -386,7 +379,6 @@ html body {
 }
 .row.filter .left {
   /*background: midnightblue;*/
-
   width: 70%;
   float: left;
 }
@@ -396,7 +388,6 @@ html body {
 }
 .row.filter .left ul li {
   /*background: hotpink;*/
-
   text-align: center;
   list-style: none;
   float: left;
@@ -421,7 +412,6 @@ html body {
   clear: both;
   padding-top: 21px;
   /*background: goldenrod;*/
-
   font-size: 12px;
   color: #010000;
 }
@@ -654,7 +644,6 @@ html body {
 }
 .row.filter .layout-slider #sliderStep .ui-slider-handle {
   /*display: none*/
-
 }
 .row.filter .layout-slider #sliderStep .ui-slider-pip {
   font-size: 10px;
@@ -838,7 +827,6 @@ html body {
                         width: 383px;
                 }
         }*/
-
 }
 .row.grid h3 {
   margin: 0;
@@ -1151,19 +1139,16 @@ html body {
   padding: 12px;
   list-style: none;
   /*float: left;*/
-
   float: none;
   display: inline-block;
   vertical-align: top;
 }
 .row.item-full .complect .similiar ul li img {
   /*display: block;*/
-
   margin: 0 auto;
 }
 .row.item-full .complect .similiar ul li div {
   /*width: 206px;*/
-
   margin: 0 auto;
 }
 .row.item-full .complect .similiar ul li span.item-name {
@@ -1210,7 +1195,8 @@ html body {
   border-radius: 10px;
   list-style: none;
   float: left;
-  position: absolute;
+  position: relative;
+  margin: 0 5px;
   left: 0;
 }
 .row.item-full .icons ul li.mdf {
@@ -1219,10 +1205,16 @@ html body {
 .row.item-full .icons ul li.wp {
   left: 142px;
 }
-.row.item-full .icons ul li img {
+.row.item-full .icons ul li img:first-of-type {
   display: block;
   float: left;
   padding: 1px;
+}
+.row.item-full .icons ul li img:last-of-type {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  z-index: 50;
 }
 .row.item-full .icons ul li p {
   display: none;
@@ -1491,7 +1483,6 @@ html body {
 }
 .row.panel-cart .collapsing {
   /*-webkit-transform: rotate(20deg);*/
-
 }
 .row.panel-cart .panel-group {
   border: 1px solid #38160c;

@@ -1321,7 +1321,8 @@ html {
                     border-radius: 10px;
                     list-style: none;
                     float: left;
-                    position: absolute;
+                    position: relative;
+                    margin: 0 5px;
                     left: 0;
                     &.mdf {
                         left: 71px;
@@ -1330,10 +1331,19 @@ html {
                         left: 142px;
                     }
                     img {
-                        display: block;
-                        float: left;
-                        padding: 1px;
+                        &:first-of-type {
+                            display: block;
+                            float: left;
+                            padding: 1px;
+                        }
+                        &:last-of-type {
+                            position: absolute;
+                            top: -1px;
+                            left: -1px;
+                            z-index: 50;
+                        }
                     }
+
                     p {
                         display: none;
                     }
