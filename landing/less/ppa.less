@@ -186,7 +186,7 @@ html {
 	&.first {
 		overflow: hidden;
         #bg {
-            position: fixed; top: 0; left: 0;
+            position: fixed; top: 0; left: 0; z-index: -1;
         }
         .bgwidth { width: 100%; }
         .bgheight { height: 100%; }
@@ -203,8 +203,35 @@ html {
 	}
 	&.second {
 		background:  url("../img/middle-rep.png");
-//        background: url(../img/middle-bg.png) center 0 repeat fixed, url(../img/line-middle.png) no-repeat 0 100%;
+//        background: url(../img/middle-bg.png) center 0 repeat fixed, url(../img/line-middle-c.png) no-repeat 0 100%;
         background-color: #3196DB;
+
+        .container-fluid {
+            position: absolute;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            &:after {
+                content: '';
+                position: absolute;
+                right: -35%;
+                top: -15%;
+                background: url("../img/line-middle-r.png") no-repeat;
+                width: 1436px;
+                height: 503px;
+                display: block;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 35%;
+                background: url("../img/line-middle-l.png") no-repeat;
+                width: 277px;
+                height: 226px;
+                display: block;
+            }
+        }
 
 		.after-logo {
 			width: 690px;
@@ -213,6 +240,7 @@ html {
 			position: relative;
             top: -17px;
             z-index: 10;
+
 		}
 		.logo {
 			max-height: 107px;
@@ -240,6 +268,7 @@ html {
 		}
 		.third-absolute {
             position: absolute;
+            z-index: 1;
 			right: 0;
 			img {
 				margin-left: 16%;
@@ -263,6 +292,10 @@ html {
 //		background: url("../img/bottombg_orig_mini.jpg") no-repeat;
 		background: url("../img/footer.png") no-repeat;
 		background-position: bottom center;
+        .container {
+            padding: 0 44px;
+            width: 100%;
+        }
 		.copy {
 			text-align: center;
 			padding: 40px 0;
@@ -270,12 +303,17 @@ html {
 			color: black;
 		}
 		.logo {
+            display: block;
 			width: 361px;
 		}
 		h2 {
+            display: inline-block;
 			margin-top: 30px;
 			margin-bottom: 22px;
 		}
+        .h3-wrap {
+            max-width: 59%;
+        }
         .col-md-6 {
             margin-top: 160px;
         }
@@ -285,6 +323,8 @@ html {
 		.bottom-menu {
             padding: 0;
             margin-top: 35px;
+            margin-bottom: 175px;
+            text-align: center;
 			li {
 				list-style: none;
 				background: #0070CD;
@@ -292,6 +332,23 @@ html {
 				border-radius: 5px;
 				display: inline-block;
 				padding: 10px 12px;
+                margin: 0 3px;
+                text-align: left;
+//                max-width: 177px;
+//                min-width: 148px;
+//                width: 100%;
+                &:first-of-type {
+                    float: left;
+                    max-width: 260px;
+//                    min-width: 214px;
+//                    width: 100%;
+                }
+                &:last-of-type {
+                    float: right;
+//                    max-width: 177px;
+//                    min-width: 148px;
+//                    width: 100%;
+                }
 				img {
 					display: inline-block;
 					vertical-align: middle;
@@ -315,9 +372,21 @@ html {
 			}
 		}
         .left {
-            position: relative;
+            position: absolute;
             z-index: 1;
         }
+        .right {
+//            min-width: 520px;
+//            max-width: 710px;
+            padding: 0;
+            img.img-responsive {
+                position: relative;
+                right: 10px;
+
+                width: 100%;
+            }
+        }
+
 	}
 } // backgrounds
 
@@ -330,9 +399,6 @@ html {
         color: #0070CD;
     }
 }
-
-// some objects
-
 
 @media only screen and (min-width: 1900px) {
     .row {
@@ -374,6 +440,11 @@ html {
                 height: 900px;
             }
         }
+        &.last {
+            .container {
+                padding: 0 180px;
+            }
+        }
     }
     .row .first-absolute {
         left: 124px;
@@ -399,6 +470,19 @@ html {
         .after-logo {
             width: 800px;
             height: 800px;
+        }
+    }
+    .row.last {
+        .bottom-menu {
+            li {
+                width: 175px;
+                &:first-of-type {
+                    width: 240px;
+                }
+                &:last-of-type {
+                    width: 175px;
+                }
+            }
         }
     }
 }

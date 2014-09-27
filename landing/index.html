@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,7 +20,6 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body>
 <div class="landscape">
     <p style="display: none">Оптимизировано для Google Chrome</p>
@@ -61,7 +59,6 @@
         </div>
     </nav>
 </div>
-
 <div class="container-fluid">
     <div class="row first">
         <img src="img/top-bg-orig.png" id="bg">
@@ -96,12 +93,15 @@
     </div>
     <div class="row second">
         <!--<img src="img/line-middle.png" id="bg2">-->
+        <div class="container-fluid"></div>
         <div class="container">
             <div class="col-md-6 col-sm-6 col-xs-12 left">
-                <img src="img/circle3-c.png" class="after-logo">
+                <div class="img-wrap">
+                    <img src="img/circle3-c.png" class="after-logo">
+                </div>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12 right third-absolute">
-                <div>
+                <div style="overflow: hidden">
                     <img src="img/middle-logo.svg" class="logo">
 
                     <h2>Бонусы за покупку</h2>
@@ -150,7 +150,6 @@
                     <span>В начало</span>
                 </div>
             </div>
-
             <div class="col-md-6 col-sm-6 col-xs-12 right">
                 <img class="img-responsive" src="img/bottom-pic_orig.png" alt="">
                 <ul class="bottom-menu">
@@ -161,7 +160,6 @@
                             <span>Зарегистрироваться</span>
                         </a>
                     </li>
-
                     <li>
                         <img src="img/app.svg">
                         <a href="#">
@@ -169,7 +167,6 @@
                             <span>App Store</span>
                         </a>
                     </li>
-
                     <li>
                         <img src="img/play.svg">
                         <a href="#">
@@ -182,8 +179,8 @@
                     <img src="img/top.svg" class="b">
                     <span>В начало</span>
                 </div>
-                <p class="copy">© 2014 <a href="#">ОКЕАН БАНК (ЗАО)</a></p>
             </div>
+            <p class="copy">© 2014 <a href="#">ОКЕАН БАНК (ЗАО)</a></p>
         </div>
     </div>
 </div>
@@ -191,14 +188,15 @@
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="js/jquery.easing.js"></script>
 <script src="js/jquery.transit.js"></script>
-
 <script>
     $(function () {
+
+        //nativeHeight =
         function adaptiveBackground () {
-            var windowWidth = $(window).outerWidth();
-            var windowHeight = $(window).outerHeight();
-            var menuHeight = $(".navbar-default").outerHeight();
-            var sectionHeight = $(".row");
+            var windowWidth = $(window).outerWidth(),
+                windowHeight = $(window).outerHeight(),
+                menuHeight = $(".navbar-default").outerHeight(),
+                sectionHeight = $(".row");
 
             sectionHeight.not(".last").not(".second").css("height", windowHeight);
         }
@@ -206,16 +204,13 @@
             adaptiveBackground();
         }
 
-        function secondBgSizer () {
-            var se = $(".second").outerHeight();
-            $(".second").css("height", se - 34)
-        }
-//        secondBgSizer();
+
+        var imgSize = $(".second .after-logo").outerHeight();
+        $(".second").css("height", imgSize - 34);
 
         // browser detect
         function browser_detect() {
-            navigator.sayswho = (function ()
-            {
+            navigator.sayswho = (function () {
                 var navi = navigator.appName,
                         ua = navigator.userAgent,
                         tem,
@@ -289,17 +284,13 @@
             if (!$(window).outerWidth() == 320) {
                 adaptiveBackground();
                 bgSizer();
-                secondBgSizer();
 
-                var se = $(".second").outerHeight();
-                $(".second").css("height", se - 34)
             }
+            var imgSize = $(".second .after-logo").outerHeight();
+            $(".second").css("height", imgSize - 34);
+            console.log(imgSize)
         });
     });
-
-
-
-
 
     //        $(document).ready(function () {
     //            var windowWidth = $(window).outerWidth();
@@ -377,10 +368,6 @@
     //                });
     //            }
     //        });
-    $(function () {
-
-    });
 </script>
 </body>
-
 </html>
