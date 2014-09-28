@@ -184,7 +184,11 @@ html {
 		width: 50%;
 	}
 	&.first {
+        ::selection {
+            background: red;
+        }
 		overflow: hidden;
+
         .after-logo {
             position: relative;
         }
@@ -208,6 +212,9 @@ html {
 		}
 	}
 	&.second {
+        ::selection {
+            background: blue;
+        }
 		background:  url("../img/middle-rep.png");
 //        background: url(../img/middle-bg.png) center 0 repeat fixed, url(../img/line-middle-c.png) no-repeat 0 100%;
         background-color: #3196DB;
@@ -408,6 +415,9 @@ html {
 
 	}
 	&.last {
+        ::selection {
+            background: gray;
+        }
 //		background: url("../img/bottombg_orig_mini.jpg") no-repeat;
 		background: url("../img/footer.png") no-repeat;
 		background-position: bottom center;
@@ -735,10 +745,28 @@ html {
     .row.first {
         background: url("../img/top-bg-orig.png") no-repeat;background: ;
     }
+    .clouds {
+        display: none;
+    }
     .row .first-absolute,
     .row .second-absolute,
     .row .third-absolute {
         left: 0;
+    }
+    .third-absolute {
+        position: static !important;
+        h2 {
+            margin-left: 0 !important;
+        }
+        img {
+            margin-left: 0 !important;
+        }
+        .h3-wrap {
+            margin-left: 0 !important;
+        }
+        .sub-h3 {
+            margin-left: 0 !important;
+        }
     }
     .row .first-absolute {
         width: 100%;
@@ -804,6 +832,10 @@ html {
 	}
 	.row {
 		&.first {
+            .next-slide {
+                position: relative;
+                z-index: 100;
+            }
 			min-height: 568px;
             background-size: 480%;
             background-position-x: 35%;
@@ -822,13 +854,63 @@ html {
 				}
 			}
             .left img.after-logo {
+                margin-bottom: 25px;
                 width: 100%;
+            }
+            .left h2 {
+                font-size: 20px;
+                text-align: center;
+                display: inline;
+                outline: 4px solid #eb002b;
+                padding: 0;
+                position: relative;
+                left: 4px;
+            }
+            .left .h3-wrap {
+                margin-top: 10px;
             }
 		}
 		&.second {
+            .container-fluid {
+                &:after, &:before {
+                    display: none;
+                }
+            }
+            .right h2 {
+                font-size: 20px;
+                text-align: center;
+                display: inline;
+                outline: 4px solid #eb002b;
+                padding: 0;
+                position: relative;
+                left: 4px;
+            }
+            .right .h3-wrap {
+                margin-top: 10px;
+            }
+            .iw {
+                position: relative;
+                background: url("../img/middle-bg.png") no-repeat;
+                &:after {
+//                    content: '';
+//                    position: absolute;
+//                    top: 0;
+//                    left: 0;
+//                    height: 74px;
+//                    width: 100%;
+//                    background: white;
+//                    z-index: 0;
+                }
+            }
 			background-size: 15%;
+            height: auto !important;
             .logo {
-                margin-top: 5%;
+                display: block;
+                margin-top: 0;
+                z-index: 5;
+            }
+            .third-absolute img {
+                margin-bottom: 25px;
             }
             .after-logo {
                 position: static;
@@ -868,16 +950,44 @@ html {
 				}
 			}
 			.col-md-6 {
+                padding: 0;
 				img:not(.b) {
 					width: 100%;
 				}
 			}
 			.next-slide {
-
+                position: relative;
+                z-index: 100;
 			}
+            .prev-slide {
+                display: none;
+            }
 		}
 		&.last {
 //			background-size: 15%;
+            .col-md-6 img.logo {
+                margin-bottom: 25px;
+            }
+            .left {
+                position: static;
+            }
+
+            .left h2 {
+                font-size: 20px;
+                text-align: center;
+                display: inline;
+                outline: 4px solid #eb002b;
+                padding: 0;
+                position: relative;
+                left: 4px;
+            }
+            .left .h3-wrap {
+                margin-top: 10px;
+            }
+            .container {
+                padding: 0 15px;
+
+            }
             .img-responsive {
                 margin: 5% 0;
             }
@@ -914,6 +1024,7 @@ html {
 				}
 			}
 			.col-md-6 {
+                padding: 0;
                 margin-top: 5%;
 				img.logo {
 					width: 100%;

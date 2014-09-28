@@ -166,6 +166,9 @@ html body a:hover {
 .row.first {
   overflow: hidden;
 }
+.row.first ::selection {
+  background: red;
+}
 .row.first .after-logo {
   position: relative;
 }
@@ -193,6 +196,9 @@ html body a:hover {
 .row.second {
   background: url("../img/middle-rep.png");
   background-color: #3196DB;
+}
+.row.second ::selection {
+  background: blue;
 }
 .row.second .right {
   z-index: 150 !important;
@@ -388,6 +394,9 @@ html body a:hover {
 .row.last {
   background: url("../img/footer.png") no-repeat;
   background-position: bottom center;
+}
+.row.last ::selection {
+  background: gray;
 }
 .row.last .container {
   padding: 0 44px;
@@ -659,10 +668,28 @@ html body a:hover {
     background: url("../img/top-bg-orig.png") no-repeat;
     background: ;
   }
+  .clouds {
+    display: none;
+  }
   .row .first-absolute,
   .row .second-absolute,
   .row .third-absolute {
     left: 0;
+  }
+  .third-absolute {
+    position: static !important;
+  }
+  .third-absolute h2 {
+    margin-left: 0 !important;
+  }
+  .third-absolute img {
+    margin-left: 0 !important;
+  }
+  .third-absolute .h3-wrap {
+    margin-left: 0 !important;
+  }
+  .third-absolute .sub-h3 {
+    margin-left: 0 !important;
   }
   .row .first-absolute {
     width: 100%;
@@ -719,6 +746,10 @@ html body a:hover {
     background-position-x: 35%;
     background-position-y: 95%;
   }
+  .row.first .next-slide {
+    position: relative;
+    z-index: 100;
+  }
   .row.first .magazines span {
     font-size: 14px;
   }
@@ -726,13 +757,52 @@ html body a:hover {
     width: 55px;
   }
   .row.first .left img.after-logo {
+    margin-bottom: 25px;
     width: 100%;
+  }
+  .row.first .left h2 {
+    font-size: 20px;
+    text-align: center;
+    display: inline;
+    outline: 4px solid #eb002b;
+    padding: 0;
+    position: relative;
+    left: 4px;
+  }
+  .row.first .left .h3-wrap {
+    margin-top: 10px;
   }
   .row.second {
     background-size: 15%;
+    height: auto !important;
+  }
+  .row.second .container-fluid:after,
+  .row.second .container-fluid:before {
+    display: none;
+  }
+  .row.second .right h2 {
+    font-size: 20px;
+    text-align: center;
+    display: inline;
+    outline: 4px solid #eb002b;
+    padding: 0;
+    position: relative;
+    left: 4px;
+  }
+  .row.second .right .h3-wrap {
+    margin-top: 10px;
+  }
+  .row.second .iw {
+    position: relative;
+    background: url("../img/middle-bg.png") no-repeat;
   }
   .row.second .logo {
-    margin-top: 5%;
+    display: block;
+    margin-top: 0;
+    z-index: 5;
+  }
+  .row.second .third-absolute img {
+    margin-bottom: 25px;
   }
   .row.second .after-logo {
     position: static;
@@ -767,8 +837,39 @@ html body a:hover {
     min-width: -webkit-calc(100% - 4px);
     margin-left: 4px;
   }
+  .row.second .col-md-6 {
+    padding: 0;
+  }
   .row.second .col-md-6 img:not(.b) {
     width: 100%;
+  }
+  .row.second .next-slide {
+    position: relative;
+    z-index: 100;
+  }
+  .row.second .prev-slide {
+    display: none;
+  }
+  .row.last .col-md-6 img.logo {
+    margin-bottom: 25px;
+  }
+  .row.last .left {
+    position: static;
+  }
+  .row.last .left h2 {
+    font-size: 20px;
+    text-align: center;
+    display: inline;
+    outline: 4px solid #eb002b;
+    padding: 0;
+    position: relative;
+    left: 4px;
+  }
+  .row.last .left .h3-wrap {
+    margin-top: 10px;
+  }
+  .row.last .container {
+    padding: 0 15px;
   }
   .row.last .img-responsive {
     margin: 5% 0;
@@ -798,6 +899,7 @@ html body a:hover {
     margin-left: 4px;
   }
   .row.last .col-md-6 {
+    padding: 0;
     margin-top: 5%;
   }
   .row.last .col-md-6 img.logo {
