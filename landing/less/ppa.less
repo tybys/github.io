@@ -726,12 +726,22 @@ html {
     }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-    .first-absolute,
-    .second-absolute,
-    .third-absolute {
-
+    html, body {
+        min-width: 320px !important;
+        #bg {
+            display: none;
+        }
     }
-    .first-absolute {
+    .row.first {
+        background: url("../img/top-bg-orig.png") no-repeat;background: ;
+    }
+    .row .first-absolute,
+    .row .second-absolute,
+    .row .third-absolute {
+        left: 0;
+    }
+    .row .first-absolute {
+        width: 100%;
         position: absolute !important;
         bottom: 40% !important;
         left: 0;

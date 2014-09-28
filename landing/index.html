@@ -206,19 +206,6 @@
 <script src="js/jquery.transit.js"></script>
 <script>
     $(function () {
-        function moveClouds(e, s, d) {
-            $(e).css('right', '-20%');
-            var wait = window.setTimeout(function(){
-                $(e).animate ({
-                    right: '120%'
-                }, s, 'linear', function() {
-                    moveClouds(e, s, d);
-                });
-            },d);
-        }
-
-
-        //nativeHeight =
         function adaptiveBackground () {
             var windowWidth = $(window).outerWidth(),
                 windowHeight = $(window).outerHeight(),
@@ -227,8 +214,6 @@
 
             sectionHeight.not(".last").not(".second").css("height", windowHeight);
         }
-
-
 
         var imgSize = $(".second .after-logo").outerHeight();
         $(".second").css("height", imgSize - 34);
@@ -282,7 +267,6 @@
                 $('body').addClass('phone');
             }
         }
-//        Platform();
         Navigator();
         browser_detect();
 
@@ -306,11 +290,26 @@
         if ($(window).outerWidth() > 320) {
             adaptiveBackground();
             bgSizer();
+
+            function moveClouds(e, s, d) {
+                $(e).css('right', '-20%');
+                var wait = window.setTimeout(function(){
+                    $(e).animate ({
+                        right: '120%'
+                    }, s, 'linear', function() {
+                        moveClouds(e, s, d);
+                    });
+                },d);
+            }
         }
 
         $(window).on("scroll", function () {
-           parallax();
+            if ($(window).outerWidth() > 320) {
+                parallax();
+            }
+
         });
+
         $(window).on("resize", function () {
             if (!$(window).outerWidth() == 320) {
                 adaptiveBackground();
@@ -344,96 +343,16 @@
 
             $(".first .after-logo").css({
                 top: -(scrolled * 0.35)+'px'
-
             });
             $(".first h2").css({
                 top: -(scrolled * 0.20)+'px'
-
             });
 
             $(".first .h3-wrap").css({
                 top: -(scrolled * 0.15)+'px'
-
             });
         }
     });
-
-    //        $(document).ready(function () {
-    //            var windowWidth = $(window).outerWidth();
-    //            var windowHeight = $(window).outerHeight();
-    //            var menuHeight = $(".menu").outerHeight();
-    //            var sectionHeight = $(".floor");
-    //
-    //            sectionHeight.css("height", windowHeight);
-    //            if (windowHeight >= 1083 && windowWidth == 1600) {
-    //                $(".top .desc").css("bottom", 50);
-    //            }
-    //
-    //            if (windowHeight <= 1024) {
-    //                $(".middle").css("height", 460)
-    //            }
-    //
-    //            $(window).resize(function () {
-    //                sectionHeight.css("height", windowHeight);
-    //                if (windowHeight >= 1083 && windowWidth == 1600) {
-    //                    $(".top .desc").css("bottom", 50);
-    //                }
-    //            });
-    //
-    //
-    //
-    //            $(".slide .downb").click(function () {
-    //                var target = $(this).attr("href");
-    //
-    //                $("html, body").animate({
-    //                    scrollTop: $(target).offset().top
-    //                }, 2000, 'easeInOutQuint');
-    //
-    //                return false;
-    //
-    //            });
-    //
-    //            $('.slide .topb').click(function () {
-    //                var target = $(this).attr('href');
-    //                $('html, body').animate({scrollTop: $(target).offset().top}, 1500, 'easeInQuint');
-    //                return false;
-    //
-    //            });
-    //
-    //            $(window).scroll(function(e){
-    ////                parallax();
-    //            });
-    //
-    //
-    //            function parallax(){
-    //                var scrolled = $(window).scrollTop();
-    //
-    //                $('#firstObj').css({
-    //                    position: 'relative',
-    //                    top: -(scrolled * 0.55) + 'px',
-    //                    '-webkit-filter': +"blur"+(scrolled * 0.05)+'px'
-    //                });
-    //
-    //                $("#top .wrapper .title").css({
-    //                    position: 'relative',
-    //                    top: -(scrolled * 0.25)+'px'
-    //                });
-    //
-    //                $("#top .wrapper .info").css({
-    //                    position: 'relative',
-    //                    top: -(scrolled * 0.15)+'px'
-    //                });
-    //
-    //                $("#fiveObj").css({
-    //                    marginBottom: scrolled * 0.35 + 'px'
-    //                });
-    //
-    //                $(".menu").css({
-    //                    top: -(scrolled * 0.05)+'px',
-    //                    '-webkit-filter': "blur" +"("+ (scrolled * 0.05)+'px'+")" // ahahaha biach, got it!
-    //                });
-    //            }
-    //        });
 </script>
 </body>
 </html>
