@@ -94,20 +94,13 @@
 	<div class="row second" id="second">
 		<div class="container-fluid">
 			<div class="clouds">
-				<div class="cloud-4" data-speed="38000" data-delay="20000"></div>
-				<div class="cloud-1" data-speed="35000"></div>
-				<div class="cloud-2" data-speed="45000" data-delay="15000"></div>
-				<div class="cloud-3" data-speed="40000"></div>
-				<div class="cloud-4" data-speed="38000" data-delay="20000"></div>
-				<div class="cloud-1" data-speed="35000"></div>
-				<div class="cloud-2" data-speed="45000" data-delay="15000"></div>
-				<div class="cloud-3" data-speed="40000"></div>
-				<div class="cloud-1" data-speed="35000"></div>
-				<div class="cloud-4" data-speed="38000" data-delay="20000"></div>
-				<div class="cloud-2" data-speed="45000" data-delay="15000"></div>
-				<div class="cloud-1" data-speed="35000"></div>
-				<div class="cloud-4" data-speed="38000" data-delay="20000"></div>
-				<div class="cloud-2" data-speed="45000" data-delay="15000"></div>
+				<div class="cloud-1" data-speed="38000" data-delay="20000"></div>
+				<div class="cloud-2" data-speed="35000"></div>
+				<div class="cloud-3" data-speed="45000" data-delay="15000"></div>
+				<div class="cloud-4" data-speed="40000"></div>
+				<div class="cloud-5" data-speed="38000" data-delay="20000"></div>
+				<div class="cloud-6" data-speed="35000"></div>
+				<div class="cloud-7" data-speed="45000" data-delay="15000"></div>
 			</div>
 		</div>
 		<div class="container">
@@ -128,14 +121,16 @@
 						<div class="h3-wrap-wrap">
 							<h3>Для наших любимых клиентов у нас есть бонусы!<br/>
 								Совершая покупки через ROBOKASSA,<br/>
-								вы получаете бонусные баллы.</h3>
+								вы получаете бонусные баллы.<br/>
+                                Их можно потратить на скидку при следующей покупке.
+                            </h3>
 						</div>
 					</div>
 
 					<br/><br/>
-					<div style="position: relative" class="sub-h3">
-						<h3 style="position: absolute; left: 0;"><span>Их можно потратить на скидку при следующей покупке.</span></h3>
-					</div>
+					<!--<div style="position: relative" class="sub-h3">-->
+						<!--<h3 style="position: absolute; left: 0;"><span></span></h3>-->
+					<!--</div>-->
 
 					<div class="btn-wrap">
 						<div class="btn-slide next-slide">
@@ -297,21 +292,21 @@
 			adaptiveBackground();
 			bgSizer();
 
-			function moveClouds(e, s, d) {
-				$(e).css('right', '-20%');
-				var wait = window.setTimeout(function(){
-					$(e).animate ({
-						right: '120%'
-					}, s, 'linear', function() {
-						moveClouds(e, s, d);
-					});
-				},d);
-			}
+//			function moveClouds(e, s, d) {
+//				$(e).css('right', '-20%');
+//				var wait = window.setTimeout(function(){
+//					$(e).animate ({
+//						right: '120%'
+//					}, s, 'linear', function() {
+//						moveClouds(e, s, d);
+//					});
+//				},d);
+//			}
 		}
 
 		$(window).on("scroll", function () {
 			if ($(window).outerWidth() > 320) {
-//                parallax();
+                parallax();
 			}
 
 		});
@@ -347,15 +342,8 @@
 		function parallax(){
 			var scrolled = $(window).scrollTop();
 
-			$(".first .after-logo").css({
-				top: -(scrolled * 0.35)+'px'
-			});
-			$(".first h2").css({
-				top: -(scrolled * 0.20)+'px'
-			});
-
-			$(".first .h3-wrap").css({
-				top: -(scrolled * 0.15)+'px'
+			$(".second .after-logo").css({
+				top: 200 -(scrolled * 0.25)+'px'
 			});
 		}
 	});
