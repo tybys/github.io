@@ -1,6 +1,7 @@
 html {
 	body {
 		min-width: 1024px;
+		max-width: 1920px;
 		color: inherit;
 		h2 {
 			font-family: "RobotoBlack";
@@ -451,34 +452,22 @@ html {
             margin-top: 120px;
 		}
 		.bottom-menu {
+			height: 60px;
             padding: 0;
             margin-top: 35px;
-            margin-bottom: 175px;
+            margin-bottom: 205px;
             text-align: center;
 			li {
 				list-style: none;
 				background: #0070CD;
 				color: white;
 				border-radius: 5px;
-				display: inline-block;
 				padding: 10px 12px;
-                margin: 0 3px;
-                text-align: left;
-//                max-width: 177px;
-//                min-width: 148px;
-//                width: 100%;
-                &:first-of-type {
-                    float: left;
-                    max-width: 260px;
-//                    min-width: 214px;
-//                    width: 100%;
-                }
-                &:last-of-type {
-                    float: right;
-//                    max-width: 177px;
-//                    min-width: 148px;
-//                    width: 100%;
-                }
+				margin: 0 3px;
+				text-align: left;
+				float: left;
+				width: ~"calc(33.3333% - 7px)";
+				width: ~"-webkit-calc(33.3333% - 7px)";
 				img {
 					display: inline-block;
 					vertical-align: middle;
@@ -577,6 +566,19 @@ html {
 				max-height: 100%;
 			}
         }
+		&.last {
+			.left {
+				padding-left: 180px;
+				.to-top {
+					margin-top: 213px;
+				}
+			}
+			.right {
+				& > div {
+					max-width: 720px;
+				}
+			}
+		}
 		h2 {
 			font-size: 40px;
 		}
@@ -667,7 +669,7 @@ html {
 				h2 {
 					margin-left: ~"calc(16% + 65px)";
 					margin-left: ~"-webkit-calc(16% + 65px)";
-					margin-top: 100px;
+					margin-top: 80px !important;
 				}
 				.sub-h3 {
 					margin-left: ~"calc(16% + 65px)";
@@ -688,6 +690,14 @@ html {
             .container {
                 padding: 0 180px;
             }
+			.to-top {
+				margin-top: 160px;
+			}
+			.right {
+				& > div {
+					max-width: 607px;
+				}
+			}
         }
 
 		h2 {
@@ -838,17 +848,14 @@ html {
 		}
     }
     .row.last {
-        .bottom-menu {
-            li {
-                width: 175px;
-                &:first-of-type {
-                    width: 240px;
-                }
-                &:last-of-type {
-                    width: 175px;
-                }
-            }
-        }
+		.to-top {
+			margin-top: 160px;
+		}
+		.right {
+			& > div {
+				max-width: 607px;
+			}
+		}
     }
 }
 @media only screen and (min-width: 1280px) and (max-width: 1440px) {
@@ -908,6 +915,11 @@ html {
 		.h3-wrap {
 			h3 {
 				font-size: 16px;
+			}
+		}
+		&.last {
+			.to-top {
+				margin-top: 140px;
 			}
 		}
     }
@@ -997,6 +1009,25 @@ html {
     .bottom-menu a {
         font-size: 13px;
     }
+
+	.last {
+		.bottom-menu {
+			li {
+				width: auto !important;
+				float: none !important;
+				display: inline-block;
+				white-space: nowrap;
+			}
+		}
+		.to-top {
+			margin-top: 140px !important;
+		}
+		.right {
+			& > div {
+				width: 520px;
+			}
+		}
+	}
 
 	.first {
 		overflow: hidden;

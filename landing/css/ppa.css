@@ -1,5 +1,6 @@
 html body {
   min-width: 1024px;
+  max-width: 1920px;
   color: inherit;
 }
 html body h2 {
@@ -408,9 +409,10 @@ html body a:hover {
   margin-top: 120px;
 }
 .row.last .bottom-menu {
+  height: 60px;
   padding: 0;
   margin-top: 35px;
-  margin-bottom: 175px;
+  margin-bottom: 205px;
   text-align: center;
 }
 .row.last .bottom-menu li {
@@ -418,17 +420,12 @@ html body a:hover {
   background: #0070CD;
   color: white;
   border-radius: 5px;
-  display: inline-block;
   padding: 10px 12px;
   margin: 0 3px;
   text-align: left;
-}
-.row.last .bottom-menu li:first-of-type {
   float: left;
-  max-width: 260px;
-}
-.row.last .bottom-menu li:last-of-type {
-  float: right;
+  width: calc(33.3333% - 7px);
+  width: -webkit-calc(33.3333% - 7px);
 }
 .row.last .bottom-menu li img {
   display: inline-block;
@@ -512,6 +509,15 @@ html body a:hover {
     width: 637px;
     max-height: 100%;
   }
+  .row.last .left {
+    padding-left: 180px;
+  }
+  .row.last .left .to-top {
+    margin-top: 213px;
+  }
+  .row.last .right > div {
+    max-width: 720px;
+  }
   .row h2 {
     font-size: 40px;
   }
@@ -587,7 +593,7 @@ html body a:hover {
   .row.second .third-absolute h2 {
     margin-left: calc(16% + 65px);
     margin-left: -webkit-calc(16% + 65px);
-    margin-top: 100px;
+    margin-top: 80px !important;
   }
   .row.second .third-absolute .sub-h3 {
     margin-left: calc(16% + 65px);
@@ -603,6 +609,12 @@ html body a:hover {
   }
   .row.last .container {
     padding: 0 180px;
+  }
+  .row.last .to-top {
+    margin-top: 160px;
+  }
+  .row.last .right > div {
+    max-width: 607px;
   }
   .row h2 {
     font-size: 33px;
@@ -719,14 +731,11 @@ html body a:hover {
     width: 537px;
     max-height: 100%;
   }
-  .row.last .bottom-menu li {
-    width: 175px;
+  .row.last .to-top {
+    margin-top: 160px;
   }
-  .row.last .bottom-menu li:first-of-type {
-    width: 240px;
-  }
-  .row.last .bottom-menu li:last-of-type {
-    width: 175px;
+  .row.last .right > div {
+    max-width: 607px;
   }
 }
 @media only screen and (min-width: 1280px) and (max-width: 1440px) {
@@ -775,6 +784,9 @@ html body a:hover {
   }
   .row .h3-wrap h3 {
     font-size: 16px;
+  }
+  .row.last .to-top {
+    margin-top: 140px;
   }
   .next-slide img {
     width: 45px !important;
@@ -850,6 +862,18 @@ html body a:hover {
   }
   .bottom-menu a {
     font-size: 13px;
+  }
+  .last .bottom-menu li {
+    width: auto !important;
+    float: none !important;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .last .to-top {
+    margin-top: 140px !important;
+  }
+  .last .right > div {
+    width: 520px;
   }
   .first {
     overflow: hidden;
