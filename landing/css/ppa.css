@@ -208,6 +208,7 @@ html body a:hover {
   overflow: hidden;
   width: 100%;
   height: 100%;
+  background: url("../img/flinemiddle.svg") no-repeat center;
 }
 .row.second .container-fluid .clouds {
   position: absolute;
@@ -317,26 +318,6 @@ html body a:hover {
   100% {
     right: 120%;
   }
-}
-.row.second .container-fluid:after {
-  content: '';
-  position: absolute;
-  right: -35%;
-  top: -15%;
-  background: url("../img/line-middle-r.png") no-repeat;
-  width: 1436px;
-  height: 503px;
-  display: block;
-}
-.row.second .container-fluid:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 35%;
-  background: url("../img/line-middle-l.png") no-repeat;
-  width: 277px;
-  height: 226px;
-  display: block;
 }
 .row.second .after-logo {
   width: 690px;
@@ -506,8 +487,54 @@ html body a:hover {
     width: 1070px;
     height: 1070px;
   }
+  .row h2 {
+    font-size: 40px;
+  }
+  .row .h3-wrap h3 {
+    font-size: 20px;
+  }
+  .next-slide img {
+    width: 70px !important;
+  }
+  .magazines a {
+    display: inline-block;
+  }
+  .magazines a:first-of-type {
+    margin-right: 150px;
+  }
+  .magazines img {
+    width: 120px;
+  }
+  .magazines span {
+    font-size: 20px;
+  }
+  .row .second-absolute {
+    bottom: 20%;
+    right: -5%;
+  }
+  .navbar-default {
+    min-height: 80px;
+  }
+  .navbar-default .navbar-header {
+    min-height: 80px;
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  .navbar-default .navbar-header img {
+    margin-left: 12px;
+  }
+  .navbar-default li {
+    min-height: 80px;
+  }
+  .navbar-default li a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .navbar-default .navbar-brand {
+    line-height: 42.5px;
+  }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1600px) and (max-width: 1900px) {
   .row.first {
     background-size: 111%;
   }
@@ -526,8 +553,41 @@ html body a:hover {
   .row.last .container {
     padding: 0 180px;
   }
+  .row h2 {
+    font-size: 33px;
+  }
+  .row .h3-wrap h3 {
+    font-size: 17px;
+  }
+  .next-slide img {
+    width: 58px !important;
+  }
+  .magazines a {
+    display: inline-block;
+  }
+  .magazines a:first-of-type {
+    margin-right: 100px;
+  }
+  .magazines img {
+    width: 100px;
+  }
+  .magazines span {
+    font-size: 17px;
+  }
+  .row .second-absolute {
+    bottom: 20%;
+    right: 0%;
+  }
   .row .first-absolute {
     left: 124px;
+  }
+  .navbar-default .navbar-header {
+    min-height: 80px;
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  .navbar-default .navbar-header img {
+    margin-left: 12px;
   }
 }
 @media only screen and (min-width: 1350px) and (max-width: 1900px) {
@@ -536,6 +596,44 @@ html body a:hover {
   }
 }
 @media only screen and (min-width: 1440px) and (max-width: 1600px) {
+  .navbar-default {
+    min-height: 80px;
+  }
+  .navbar-default li {
+    min-height: 80px;
+  }
+  .navbar-default li a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .navbar-default .navbar-brand {
+    line-height: 42.5px;
+  }
+  .row h2 {
+    font-size: 33px !important;
+  }
+  .row .h3-wrap h3 {
+    font-size: 17px;
+  }
+  .next-slide img {
+    width: 58px !important;
+  }
+  .magazines a {
+    display: inline-block;
+  }
+  .magazines a:first-of-type {
+    margin-right: 65px;
+  }
+  .magazines img {
+    width: 100px;
+  }
+  .magazines span {
+    font-size: 17px;
+  }
+  .row .second-absolute {
+    bottom: 20%;
+    right: 0%;
+  }
   .row.second .container {
     width: 100%;
     padding: 0 44px !important;
@@ -554,7 +652,7 @@ html body a:hover {
     width: 175px;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
   .row .first-absolute {
     left: 60px;
   }
@@ -564,6 +662,31 @@ html body a:hover {
   .row.second .row.after-logo {
     width: 575px;
     height: 575px;
+  }
+  .row h2 {
+    font-size: 28px;
+  }
+  .row .h3-wrap h3 {
+    font-size: 16px;
+  }
+  .next-slide img {
+    width: 45px !important;
+  }
+  .magazines a {
+    display: inline-block;
+  }
+  .magazines a:first-of-type {
+    margin-right: 50px;
+  }
+  .magazines img {
+    width: 70px;
+  }
+  .magazines span {
+    font-size: 16px;
+  }
+  .row .second-absolute {
+    bottom: 20%;
+    right: 0%;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
