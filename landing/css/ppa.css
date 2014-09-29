@@ -653,6 +653,11 @@ html body a:hover {
     margin-left: 12px;
   }
 }
+@media only screen and (min-width: 1600px) {
+  .second .container-fluid:after {
+    left: 472px;
+  }
+}
 @media only screen and (min-width: 1350px) and (max-width: 1900px) {
   .first .first-absolute {
     left: 60px;
