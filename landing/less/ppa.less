@@ -1,6 +1,6 @@
 html {
 	body {
-		min-width: 1024px;
+//		min-width: 1024px;
 		max-width: 1920px;
 		color: inherit;
 		h2 {
@@ -45,6 +45,9 @@ html {
             }
 		}
 	}
+}
+.b {
+	margin-left: 0 !important;
 }
 
 .btn-slide {
@@ -206,7 +209,10 @@ html {
             position: relative;
         }
         #bg {
-            position: fixed; top: 0; left: 0; z-index: -1;
+            position: fixed;
+			top: 0;
+			left: -24px;
+			z-index: -1;
         }
         .bgwidth { width: 100%; }
         .bgheight { height: 100%; }
@@ -239,7 +245,7 @@ html {
             background: url("../img/obl.png") no-repeat;
 
             .clouds {
-                display: none;
+//                display: none;
                 position: absolute;
                 top: 50px;
                 left: 0;
@@ -611,6 +617,9 @@ html {
 					margin-left: ~"calc(16% + 65px)";
 					margin-left: ~"-webkit-calc(16% + 65px)";
 				}
+				.btn-wrap {
+					margin-left: 23%;
+				}
 			}
 			.logo {
 
@@ -642,6 +651,8 @@ html {
     }
 	.navbar-default .navbar-brand {
 		line-height: 47.5px;
+		padding-left: 40px;
+		padding-right: 40px;
 		img {
 			max-width: 270px;
 		}
@@ -688,6 +699,8 @@ html {
 		min-height: 80px;
 		li {
 			min-height: 80px;
+			padding-left: 40px !important;
+			padding-right: 40px !important;
 			a {
 				padding-top: 20px;
 				padding-bottom: 20px;
@@ -748,7 +761,7 @@ html {
 
 			.third-absolute {
 				img {
-					margin-top: 25%;
+					margin-top: 16% !important;
 					margin-left: ~"calc(16% + 65px)";
 					margin-left: ~"-webkit-calc(16% + 65px)";
 				}
@@ -765,6 +778,9 @@ html {
 					margin-left: ~"calc(16% + 65px)";
 					margin-left: ~"-webkit-calc(16% + 65px)";
 				}
+				.btn-wrap {
+					margin-left: 24%;
+				}
 			}
 			.logo {
 
@@ -778,6 +794,12 @@ html {
             }
 			.to-top {
 				margin-top: 160px;
+				a {
+					display: inline;
+				}
+				img {
+					display: inline;
+				}
 			}
 			.right {
 				& > div {
@@ -829,12 +851,18 @@ html {
             padding-left: 40px;
             padding-right: 23px;
 			.navbar-brand {
+				padding-left: 20px !important;
+				padding-right: 20px !important;
 				line-height: 44px;
 			}
 			img {
                 max-width: 242px;
 
 			}
+		}
+		li {
+			padding-left: 40px;
+			padding-right: 40px;
 		}
 		li a {
 			padding-top: 20px;
@@ -848,18 +876,146 @@ html {
 	}
 
 }
-@media only screen and (min-width: 1350px) and (max-width: 1900px) {
-    .first {
-        //		background-size: 165% !important;
-        //		background-position-y: 32% !important;
-        .first-absolute {
-            //			bottom: ~"calc(15% - -11px)" !important;
-            //			bottom: ~"-webkit-calc(15% - -11px)" !important;
-//            left: 60px;
-        }
-    }
+@media only screen and (min-width: 1339px) and (max-width: 1440px) {
+	.bottom-menu {
+		display: block;
+		text-align: center;
+		li {
+			font-size: 17px;
+			display: inline-block;
+			float: none !important;
+			&:first-of-type {
+				width: 33.33333%;
+			}
+			width: auto !important;
+			padding: 10px 12px 10px 12px !important;
+		}
+	}
+	.copy {
+		font-size: 17px !important;
+		padding: 20px 0 !important;
+	}
+	.navbar-brand {
+		img {
+			max-width: 242px;
+		}
+	}
+	.navbar {
+		max-height: 60px;
+		li {
+			padding-left: 40px !important;
+			padding-right: 40px !important;
+		}
+		li a {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	}
+	.third-absolute {
+
+	}
+	.row .first-absolute {
+		left: 60px;
+	}
+	.row {
+		&.first {
+			.after-logo {
+				width: 29.5vw !important;
+			}
+		}
+		&.second {
+			.container-fluid {
+				background-position-y: 0%;
+				background-size: 103%;
+			}
+			.container {
+				padding: 0 44px !important;
+			}
+			.row.after-logo {
+				width: 575px;
+				height: 575px;
+
+
+
+			}
+			.after-logo {
+				right: 60px;
+			}
+
+			.third-absolute {
+				img {
+					margin-top: 70px;
+					margin-left: ~"calc(16% + 65px)";
+					margin-left: ~"-webkit-calc(16% + 20px)";
+				}
+				h2 {
+					margin-left: ~"calc(16% + 65px)";
+					margin-left: ~"-webkit-calc(16% + 20px)";
+					margin-top: 50px;
+				}
+				.sub-h3 {
+					margin-left: ~"calc(16% + 65px)";
+					margin-left: ~"-webkit-calc(16% + 20px)";
+				}
+				.h3-wrap {
+					margin-left: ~"calc(16% + 65px)";
+					margin-left: ~"-webkit-calc(16% + 20px)";
+				}
+				.btn-wrap {
+					margin-top: 0;
+					margin-left: 14%;
+				}
+			}
+			.logo {
+
+				width: 380px;
+				max-height: 100%;
+			}
+		}
+		h2 {
+			font-size: 28px;
+		}
+		.h3-wrap {
+			h3 {
+				font-size: 16px;
+			}
+		}
+		&.last {
+			.to-top {
+				margin-top: 140px;
+			}
+		}
+	}
+	.next-slide {
+		img {
+			width: 45px !important;
+		}
+	}
+	.magazines {
+		a {
+			display: inline-block;
+			&:first-of-type {
+				margin-right: 50px;
+			}
+		}
+		img {
+			width: 70px;
+		}
+		span {
+			font-size: 16px;
+		}
+	}
+	.row .second-absolute {
+		bottom: 20%;
+		right: -2%;
+	}
 
 }
+
+@media only screen and (min-width: 1350px) and (max-width: 1900px) {
+
+}
+
 @media only screen and (min-width: 1416px) and (max-width: 1576px) {
     .navbar {
         max-height: 80px;
@@ -978,6 +1134,11 @@ html {
 			}
 		}
     }
+	.btn-wrap {
+		img {
+			margin-top: 70px !important;
+		}
+	}
 }
 @media only screen and (min-width: 1256px) and (max-width: 1416px) {
 	.copy {
@@ -996,12 +1157,24 @@ html {
             padding-bottom: 10px;
         }
     }
-    .third-absolute {
-
-    }
     .row .first-absolute {
         left: 60px;
     }
+	.bottom-menu {
+		display: block;
+		text-align: center;
+		li {
+			font-size: 16px;
+			display: inline-block;
+			float: none !important;
+			&:first-of-type {
+				width: 33.33333%;
+			}
+			width: auto !important;
+			padding: 10px 12px 10px 12px !important;
+		}
+	}
+
     .row {
         &.second {
 			.container-fluid {
@@ -1043,13 +1216,16 @@ html {
 				}
 				.btn-wrap {
 					margin-top: 0;
-					margin-left: 14%;
+
 				}
 			}
 			.logo {
 
 				width: 380px;
 				max-height: 100%;
+			}
+			.btn-wrap {
+				margin-left: 19% !important;
 			}
         }
 		h2 {
@@ -1066,9 +1242,16 @@ html {
 			}
 		}
     }
+
+
 	.next-slide {
 		img {
 			width: 45px !important;
+		}
+	}
+	.prev-slide {
+		img {
+			width: 30px;
 		}
 	}
 	.magazines {
@@ -1167,7 +1350,7 @@ html {
 		}
 		.right {
 			& > div {
-				width: 520px;
+				width: 498px;
 			}
 		}
 	}
@@ -1262,7 +1445,7 @@ html {
         background: url("../img/top-bg-orig.png") no-repeat;
     }
     .clouds {
-        display: none;
+
     }
     .row .first-absolute,
     .row .second-absolute,

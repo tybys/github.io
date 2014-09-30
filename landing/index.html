@@ -292,16 +292,16 @@
 			adaptiveBackground();
 			bgSizer();
 
-//			function moveClouds(e, s, d) {
-//				$(e).css('right', '-20%');
-//				var wait = window.setTimeout(function(){
-//					$(e).animate ({
-//						right: '120%'
-//					}, s, 'linear', function() {
-//						moveClouds(e, s, d);
-//					});
-//				},d);
-//			}
+			function moveClouds(e, s, d) {
+				$(e).css('right', '-20%');
+				var wait = window.setTimeout(function(){
+					$(e).animate ({
+						right: '120%'
+					}, s, 'linear', function() {
+						moveClouds(e, s, d);
+					});
+				},d);
+			}
 		}
 
 		$(window).on("scroll", function () {
@@ -317,6 +317,7 @@
 				bgSizer();
 
 			}
+			//bgSizer();
 			var imgSize = $(".second .after-logo").outerHeight();
 			$(".second").css("height", imgSize - 34);
 		});
@@ -342,9 +343,16 @@
 		function parallax(){
 			var scrolled = $(window).scrollTop();
 
-			$(".second .after-logo").css({
-				top: 200 -(scrolled * 0.25)+'px'
-			});
+			if ($(window).outerWidth() >= 1413 && $(window).outerWidth() <= 1476) {
+				$(".second .after-logo").css({
+					top: -17
+				});
+			} else {
+				$(".second .after-logo").css({
+					top: 200 -(scrolled * 0.25)+'px'
+				});
+			}
+
 		}
 	});
 </script>
