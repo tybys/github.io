@@ -46,11 +46,18 @@ html body a:hover {
 .btn-slide {
   cursor: pointer;
 }
+.btn-slide a {
+  display: block;
+}
 .btn-slide.next-slide img {
   width: 45px;
 }
-.btn-slide.prev-slide img {
-  width: 30px;
+.btn-slide.prev-slide {
+  margin-bottom: 1.5%;
+  margin-left: 1%;
+}
+.btn-slide.to-top {
+  margin-top: 193px !important;
 }
 .btn-slide.to-top img {
   display: inline-block;
@@ -61,6 +68,9 @@ html body a:hover {
   color: #0070CD;
   display: inline-block;
   vertical-align: middle;
+}
+.btn-slide.to-top a {
+  display: inline;
 }
 .magazines a {
   color: white;
@@ -454,7 +464,7 @@ html body a:hover {
   list-style: none;
   background: #0070CD;
   color: white;
-  border-radius: 5px;
+  border-radius: 12.5px;
   padding: 10px 12px;
   margin: 0 3px;
   text-align: left;
@@ -503,7 +513,10 @@ html body a:hover {
 .footer a {
   color: #0070CD;
 }
-@media only screen and (min-width: 1900px) {
+@media only screen and (min-width: 1876px) {
+  .prev-slide img {
+    width: 47px;
+  }
   .row.first {
     background-size: 111%;
   }
@@ -559,6 +572,12 @@ html body a:hover {
   .row .h3-wrap h3 {
     font-size: 20px;
   }
+  .navbar-default .navbar-brand {
+    line-height: 47.5px;
+  }
+  .navbar-default .navbar-brand img {
+    max-width: 270px;
+  }
   .next-slide img {
     width: 70px !important;
   }
@@ -576,7 +595,13 @@ html body a:hover {
   }
   .row .second-absolute {
     bottom: 20%;
-    right: -5%;
+    right: -70px;
+  }
+  .row .first-absolute {
+    left: 147px;
+  }
+  .row .first-absolute .after-logo {
+    max-width: 575px;
   }
   .navbar-default {
     min-height: 80px;
@@ -596,17 +621,32 @@ html body a:hover {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .navbar-default .navbar-brand {
-    line-height: 42.5px;
+  .bottom-menu li {
+    margin-right: 10px !important;
+    margin-left: 0 !important;
+  }
+  .bottom-menu li:last-of-type {
+    margin: 0 !important;
+    margin-left: 0 !important;
   }
 }
-@media only screen and (min-width: 1576px) and (max-width: 1900px) {
+@media only screen and (min-width: 1576px) and (max-width: 1876px) {
+  .prev-slide img {
+    width: 40px;
+  }
   .row.first {
     background-size: 111%;
   }
   .row.first .bgheight {
     height: calc(100% + 124px);
     height: -webkit-calc(100% + 124px);
+  }
+  .row .btn-slide:not(.prev-slide) img {
+    width: 60px;
+    display: block;
+  }
+  .row .to-top img {
+    width: 60px;
   }
   .row.second .container-fluid {
     background-position-y: 41%;
@@ -619,6 +659,7 @@ html body a:hover {
   .row.second .after-logo {
     width: 900px;
     height: 900px;
+    right: 5px;
   }
   .row.second .third-absolute img {
     margin-top: 25%;
@@ -674,7 +715,7 @@ html body a:hover {
   }
   .row .second-absolute {
     bottom: 20%;
-    right: 0%;
+    right: -4%;
   }
   .row .first-absolute {
     left: 124px;
@@ -686,8 +727,15 @@ html body a:hover {
     padding-left: 40px;
     padding-right: 23px;
   }
+  .navbar-default .navbar-header .navbar-brand {
+    line-height: 44px;
+  }
   .navbar-default .navbar-header img {
     max-width: 242px;
+  }
+  .navbar-default li a {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 @media only screen and (min-width: 1600px) {
@@ -695,12 +743,7 @@ html body a:hover {
     left: 472px;
   }
 }
-@media only screen and (min-width: 1350px) and (max-width: 1900px) {
-  .first .first-absolute {
-    left: 60px;
-  }
-}
-@media only screen and (min-width: 1416px) and (max-width: 1600px) {
+@media only screen and (min-width: 1416px) and (max-width: 1576px) {
   .navbar {
     max-height: 80px;
   }
@@ -742,9 +785,12 @@ html body a:hover {
   .magazines span {
     font-size: 17px;
   }
+  .row .first-absolute {
+    left: 60px;
+  }
   .row .second-absolute {
     bottom: 20%;
-    right: 0%;
+    right: -2%;
   }
   .row.second .container-fluid {
     background-position-y: 35%;
@@ -757,6 +803,7 @@ html body a:hover {
   .row.second .after-logo {
     width: 765px;
     height: 765px;
+    right: 13px;
   }
   .row.second .third-absolute img {
     margin-top: 25%;
@@ -780,6 +827,13 @@ html body a:hover {
     width: 537px;
     max-height: 100%;
   }
+  .prev-slide img {
+    width: 40px;
+  }
+  .copy {
+    font-size: 17px !important;
+    padding: 20px 0 !important;
+  }
   .row.last .to-top {
     margin-top: 160px;
   }
@@ -788,6 +842,10 @@ html body a:hover {
   }
 }
 @media only screen and (min-width: 1256px) and (max-width: 1416px) {
+  .copy {
+    font-size: 17px !important;
+    padding: 20px 0 !important;
+  }
   .navbar-brand img {
     max-width: 242px;
   }
@@ -812,23 +870,26 @@ html body a:hover {
     width: 575px;
     height: 575px;
   }
+  .row.second .after-logo {
+    right: 60px;
+  }
   .row.second .third-absolute img {
     margin-top: 70px;
     margin-left: calc(16% + 65px);
-    margin-left: -webkit-calc(16% + 5px);
+    margin-left: -webkit-calc(16% + 20px);
   }
   .row.second .third-absolute h2 {
     margin-left: calc(16% + 65px);
-    margin-left: -webkit-calc(16% + 5px);
+    margin-left: -webkit-calc(16% + 20px);
     margin-top: 50px;
   }
   .row.second .third-absolute .sub-h3 {
     margin-left: calc(16% + 65px);
-    margin-left: -webkit-calc(16% + 5px);
+    margin-left: -webkit-calc(16% + 20px);
   }
   .row.second .third-absolute .h3-wrap {
     margin-left: calc(16% + 65px);
-    margin-left: -webkit-calc(16% + 5px);
+    margin-left: -webkit-calc(16% + 20px);
   }
   .row.second .third-absolute .btn-wrap {
     margin-top: 0;
@@ -864,7 +925,7 @@ html body a:hover {
   }
   .row .second-absolute {
     bottom: 20%;
-    right: 0%;
+    right: -2%;
   }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1256px) {
@@ -933,6 +994,13 @@ html body a:hover {
   }
   .last .right > div {
     width: 520px;
+  }
+  .prev-slide img {
+    width: 30px;
+  }
+  .copy {
+    padding: 20px 0 !important;
+    font-size: 17px !important;
   }
   .first {
     overflow: hidden;

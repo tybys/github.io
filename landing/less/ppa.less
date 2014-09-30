@@ -52,6 +52,9 @@ html {
 //	width: 86px;
 //	height: 86px;
 	cursor: pointer;
+	a {
+		display: block;
+	}
 	&.next-slide {
 		img {
 			width: 45px;
@@ -59,10 +62,13 @@ html {
 	}
 	&.prev-slide {
 		img {
-			width: 30px;
+//			width: 47px;
 		}
+		margin-bottom: 1.5%;
+		margin-left: 1%;
 	}
 	&.to-top {
+		margin-top: 193px !important;
 		img {
 			display: inline-block;
 			width: 45px;
@@ -72,6 +78,9 @@ html {
 			color: #0070CD;
 			display: inline-block;
 			vertical-align: middle;
+		}
+		a {
+			display: inline;
 		}
 	}
 }
@@ -499,7 +508,7 @@ html {
 				list-style: none;
 				background: #0070CD;
 				color: white;
-				border-radius: 5px;
+				border-radius: 12.5px;
 				padding: 10px 12px;
 				margin: 0 3px;
 				text-align: left;
@@ -557,7 +566,12 @@ html {
     }
 }
 
-@media only screen and (min-width: 1900px) {
+@media only screen and (min-width: 1876px) {
+	.prev-slide {
+		img {
+			width: 47px;
+		}
+	}
     .row {
         &.first {
             background-size: 111%;
@@ -626,6 +640,12 @@ html {
 			}
 		}
     }
+	.navbar-default .navbar-brand {
+		line-height: 47.5px;
+		img {
+			max-width: 270px;
+		}
+	}
 	.next-slide {
 		img {
 			width: 70px !important;
@@ -647,9 +667,14 @@ html {
 	}
 	.row .second-absolute {
 		bottom: 20%;
-		right: -5%;
+		right: -70px;
 	}
-
+	.row .first-absolute {
+		.after-logo {
+			max-width: 575px;
+		}
+		left: 147px;
+	}
 	.navbar-default {
 		.navbar-header {
 			min-height: 80px;
@@ -669,13 +694,26 @@ html {
 			}
 		}
 		.navbar-brand {
-			line-height: 42.5px;
+
+		}
+	}
+	.bottom-menu li {
+		margin-right: 10px !important;
+		margin-left: 0 !important;
+		&:last-of-type {
+			margin: 0 !important;
+			margin-left: 0 !important;
 		}
 	}
 
 
 }
-@media only screen and (min-width: 1576px) and (max-width: 1900px) {
+@media only screen and (min-width: 1576px) and (max-width: 1876px) {
+	.prev-slide {
+		img {
+			width: 40px;
+		}
+	}
     .row {
         &.first {
             background-size: 111%;
@@ -684,6 +722,15 @@ html {
                 height: ~"-webkit-calc(100% + 124px)";
             }
         }
+		.btn-slide:not(.prev-slide) {
+			img {
+				width: 60px;
+				display: block;
+			}
+		}
+		.to-top img {
+			width: 60px;
+		}
         &.second {
 			.container-fluid {
 				background-position-y: 41%;
@@ -696,6 +743,7 @@ html {
             .after-logo {
                 width: 900px;
                 height: 900px;
+				right: 5px;
             }
 
 			.third-absolute {
@@ -768,7 +816,7 @@ html {
 	}
 	.row .second-absolute {
 		bottom: 20%;
-		right: 0%;
+		right: -4%;
 	}
     .row .first-absolute {
         left: 124px;
@@ -780,10 +828,17 @@ html {
 			border-right: 1px solid rgba(255, 255, 255, 0.25);
             padding-left: 40px;
             padding-right: 23px;
+			.navbar-brand {
+				line-height: 44px;
+			}
 			img {
                 max-width: 242px;
 
 			}
+		}
+		li a {
+			padding-top: 20px;
+			padding-bottom: 20px;
 		}
 	}
 }
@@ -800,12 +855,12 @@ html {
         .first-absolute {
             //			bottom: ~"calc(15% - -11px)" !important;
             //			bottom: ~"-webkit-calc(15% - -11px)" !important;
-            left: 60px;
+//            left: 60px;
         }
     }
 
 }
-@media only screen and (min-width: 1416px) and (max-width: 1600px) {
+@media only screen and (min-width: 1416px) and (max-width: 1576px) {
     .navbar {
         max-height: 80px;
     }
@@ -856,9 +911,12 @@ html {
 			font-size: 17px;
 		}
 	}
+	.row .first-absolute {
+		left: 60px;
+	}
 	.row .second-absolute {
 		bottom: 20%;
-		right: 0%;
+		right: -2%;
 	}
     .row.second {
 		.container-fluid {
@@ -872,6 +930,7 @@ html {
         .after-logo {
             width: 765px;
             height: 765px;
+			right: 13px;
         }
 
 		.third-absolute {
@@ -900,6 +959,15 @@ html {
 			max-height: 100%;
 		}
     }
+	.prev-slide {
+		img {
+			width: 40px;
+		}
+	}
+	.copy {
+		font-size: 17px !important;
+		padding: 20px 0 !important;
+	}
     .row.last {
 		.to-top {
 			margin-top: 160px;
@@ -912,6 +980,10 @@ html {
     }
 }
 @media only screen and (min-width: 1256px) and (max-width: 1416px) {
+	.copy {
+		font-size: 17px !important;
+		padding: 20px 0 !important;
+	}
     .navbar-brand {
         img {
             max-width: 242px;
@@ -942,26 +1014,32 @@ html {
             .row.after-logo {
                 width: 575px;
                 height: 575px;
+
+
+
             }
+			.after-logo {
+				right: 60px;
+			}
 
 			.third-absolute {
 				img {
 					margin-top: 70px;
 					margin-left: ~"calc(16% + 65px)";
-					margin-left: ~"-webkit-calc(16% + 5px)";
+					margin-left: ~"-webkit-calc(16% + 20px)";
 				}
 				h2 {
 					margin-left: ~"calc(16% + 65px)";
-					margin-left: ~"-webkit-calc(16% + 5px)";
+					margin-left: ~"-webkit-calc(16% + 20px)";
 					margin-top: 50px;
 				}
 				.sub-h3 {
 					margin-left: ~"calc(16% + 65px)";
-					margin-left: ~"-webkit-calc(16% + 5px)";
+					margin-left: ~"-webkit-calc(16% + 20px)";
 				}
 				.h3-wrap {
 					margin-left: ~"calc(16% + 65px)";
-					margin-left: ~"-webkit-calc(16% + 5px)";
+					margin-left: ~"-webkit-calc(16% + 20px)";
 				}
 				.btn-wrap {
 					margin-top: 0;
@@ -1009,7 +1087,7 @@ html {
 	}
 	.row .second-absolute {
 		bottom: 20%;
-		right: 0%;
+		right: -2%;
 	}
 }
 @media only screen and (min-width: 1000px) and (max-width: 1256px) {
@@ -1093,7 +1171,15 @@ html {
 			}
 		}
 	}
-
+	.prev-slide {
+		img {
+			width: 30px;
+		}
+	}
+	.copy {
+		padding: 20px 0 !important;
+		font-size: 17px !important;
+	}
 	.first {
 		overflow: hidden;
 	}
