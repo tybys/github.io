@@ -119,9 +119,12 @@
 
 					<div class="h3-wrap">
 						<div class="h3-wrap-wrap">
-							<h3>Для наших любимых клиентов у нас есть бонусы!<br/>
-								Совершая покупки через ROBOKASSA,<br/>
-								вы получаете бонусные баллы.<br/>
+							<h3>Для наших любимых клиентов у нас есть бонусы!
+								<!--<br/>-->
+								Совершая покупки через ROBOKASSA,
+								<!--<br/>-->
+								вы получаете бонусные баллы.
+								<!--<br/>-->
                                 Их можно потратить на скидку при следующей покупке.
                             </h3>
 						</div>
@@ -171,8 +174,8 @@
 						<li>
 							<img src="img/lk.svg">
 							<a href="#">
-								Личный кабинет
-								<span>Зарегистрироваться</span>
+								<span>Личный кабинет</span>
+								Зарегистрироваться
 							</a>
 						</li>
 						<li>
@@ -306,7 +309,7 @@
 
 		$(window).on("scroll", function () {
 			if ($(window).outerWidth() > 320) {
-                parallax();
+//                parallax();
 			}
 
 		});
@@ -343,15 +346,17 @@
 		function parallax(){
 			var scrolled = $(window).scrollTop();
 
-			if ($(window).outerWidth() >= 1413 && $(window).outerWidth() <= 1476) {
-				$(".second .after-logo").css({
-					top: -17
-				});
-			} else {
-				$(".second .after-logo").css({
-					top: 200 -(scrolled * 0.25)+'px'
-				});
-			}
+//			if ($(window).outerWidth() >= 1413 && $(window).outerWidth() <= 1476) {
+//				$(".second .after-logo").css({
+//					top: -17
+//				})
+//			}
+//
+//			else {
+//				$(".second .after-logo").css({
+//					top: 200 -(scrolled * 0.25)+'px'
+//				});
+//			}
 
 		}
 	});

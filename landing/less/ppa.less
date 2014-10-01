@@ -49,6 +49,17 @@ html {
 * {
 	outline: none;
 }
+* {
+	.Firefox {
+		outline: none !important;
+		h3 {
+			outline: none !important;
+		}
+	}
+	.Netscape {
+
+	}
+}
 a {
 	outline: none !important;
 }
@@ -77,6 +88,7 @@ a {
 		margin-left: 1%;
 	}
 	&.to-top {
+		font-family: RobotoLight;
 		margin-top: 193px !important;
 		img {
 			display: inline-block;
@@ -349,10 +361,10 @@ a {
 
             .cloud-5 {
                 top: 350px;
-                -webkit-animation: moveclouds 30s linear infinite;
-                -moz-animation: moveclouds 30s linear infinite;
-                -o-animation: moveclouds 30s linear infinite;
-                animation: moveclouds 30s linear infinite;
+                -webkit-animation: moveclouds 35s linear infinite;
+                -moz-animation: moveclouds 35s linear infinite;
+                -o-animation: moveclouds 35s linear infinite;
+                animation: moveclouds 35s linear infinite;
             }
             .cloud-6 {
                 top: 450px;
@@ -421,8 +433,8 @@ a {
             border-radius: 100%;
             box-shadow: 0 0 50px #c6d7e9;
 			position: relative;
-            //top: -17px;
-            top: 200px;
+            top: -17px;
+//            top: 200px;
             z-index: 10;
 
 		}
@@ -512,6 +524,7 @@ a {
             margin-top: 120px;
 		}
 		.bottom-menu {
+			display: block;
 			height: 60px;
             padding: 0;
             margin-top: 35px;
@@ -525,13 +538,16 @@ a {
 				padding: 10px 12px;
 				margin: 0 3px;
 				text-align: left;
-				float: left;
+				float: none;
+				display: inline-block;
 				width: ~"calc(33.3333% - 7px)";
 				width: ~"-webkit-calc(33.3333% - 7px)";
+				line-height: 100%;
 				img {
 					display: inline-block;
 					vertical-align: middle;
                     height: 28px;
+					margin-right: 7px;
 				}
 				a {
 					display: inline-block;
@@ -543,8 +559,10 @@ a {
 					display: block;
 				}
 				&:first-of-type {
+					width: 33.3333%;
 					background: #6387C9;
 				}
+				width: auto !important;
 				&:last-of-type {
 					background: #6EB661;
 				}
@@ -646,6 +664,18 @@ a {
 					max-width: 720px;
 				}
 			}
+			.bottom-menu {
+				li {
+					img {
+						width: 40px;
+						height: 40px;
+					}
+					a {
+						line-height: 100%;
+						font-size: 22.5px;
+					}
+				}
+			}
 		}
 		h2 {
 			font-size: 40px;
@@ -663,6 +693,7 @@ a {
 		img {
 			width: 270px;
 		}
+
 	}
 	.next-slide {
 		img {
@@ -712,6 +743,10 @@ a {
 			a {
 				padding-top: 20px;
 				padding-bottom: 20px;
+				font-size: 20px;
+			}
+			img {
+				height: 30px;
 			}
 		}
 		.navbar-brand {
@@ -726,13 +761,38 @@ a {
 			margin-left: 0 !important;
 		}
 	}
+	.to-top {
+		span {
+			font-size: 25px !important;
+		}
 
+		img {
+			width: 70px !important;
+			height: 70px !important;
+		}
+	}
+
+	.bottom-menu {
+		display: block;
+		text-align: center;
+		li {
+			font-size: 17px;
+			display: inline-block;
+			float: none !important;
+			&:first-of-type {
+				width: 33.33333%;
+			}
+			width: auto !important;
+			padding: 10px 12px 10px 12px !important;
+		}
+	}
 
 }
 @media only screen and (min-width: 1576px) and (max-width: 1876px) {
 	.prev-slide {
 		img {
 			width: 40px;
+			height: 40px;
 		}
 	}
     .row {
@@ -750,7 +810,8 @@ a {
 			}
 		}
 		.to-top img {
-			width: 60px;
+			width: 58px;
+			height: 58px;
 		}
         &.second {
 			.container-fluid {
@@ -769,7 +830,7 @@ a {
 
 			.third-absolute {
 				img {
-					margin-top: 16% !important;
+					margin-top: 30% !important;
 					margin-left: ~"calc(16% + 65px)";
 					margin-left: ~"-webkit-calc(16% + 65px)";
 				}
@@ -972,7 +1033,7 @@ a {
 				}
 				.btn-wrap {
 					margin-top: 0;
-					margin-left: 14%;
+					margin-left: 16%;
 				}
 			}
 			.logo {
@@ -1061,6 +1122,7 @@ a {
 	.next-slide {
 		img {
 			width: 58px !important;
+			height: 58px;
 		}
 	}
 	.magazines {
@@ -1129,6 +1191,7 @@ a {
 	.prev-slide {
 		img {
 			width: 40px;
+			height: 40px;
 		}
 	}
 	.copy {
@@ -1146,12 +1209,22 @@ a {
 		}
     }
 	.btn-wrap {
+		margin-left: 24% !important;
 		img {
-			margin-top: 70px !important;
+			margin-top: 0px !important;
 		}
 	}
 }
 @media only screen and (min-width: 1256px) and (max-width: 1416px) {
+	.Netscape {
+		.third-absolute .btn-wrap {
+			margin-top: 70px !important;
+			margin-left: 26% !important;
+			img {
+				margin-top: 0 !important;
+			}
+		}
+	}
 	.copy {
 		font-size: 17px !important;
 		padding: 20px 0 !important;
@@ -1258,11 +1331,13 @@ a {
 	.next-slide {
 		img {
 			width: 45px !important;
+			height: 45px;
 		}
 	}
 	.prev-slide {
 		img {
 			width: 30px;
+			height: 30px;
 		}
 	}
 	.magazines {
@@ -1286,6 +1361,15 @@ a {
 	}
 }
 @media only screen and (min-width: 1000px) and (max-width: 1256px) {
+	.Netscape {
+		.third-absolute .btn-wrap {
+			margin-top: 70px !important;
+			margin-left: 26% !important;
+			img {
+				margin-top: 0 !important;
+			}
+		}
+	}
 	.navbar-default {
 		max-height: 60px;
 		height: 100%;
@@ -1328,6 +1412,7 @@ a {
 			.h3-wrap {
 				margin-left: ~"calc(16% + 65px)";
 				margin-left: ~"-webkit-calc(16% + 5px)";
+
 			}
 			.btn-wrap {
 				margin-top: 0;
@@ -1369,7 +1454,17 @@ a {
 	.prev-slide {
 		img {
 			width: 30px;
+			height: 30px;
 		}
+	}
+	.btn-wrap {
+		.next-slide {
+			width: 45px;
+			height: 45px;
+		}
+	}
+	.next-slide {
+//		height: 45px;
 	}
 	.copy {
 		padding: 20px 0 !important;
@@ -1385,7 +1480,21 @@ a {
 	}
     .row .first-absolute {
         left: 60px;
+		width: 60%;
     }
+	.Netscape {
+		.last {
+			.bottom-menu {
+				li {
+					&:first-of-type {
+						width: 37% !important;
+					}
+					width: 25% !important;
+				}
+			}
+		}
+	}
+
 
 }
 @media all and (min-width: 320px) {
