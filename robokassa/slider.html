@@ -3,17 +3,88 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="app.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300italic,900,400italic,400,500italic,300,700italic,700,500,900italic' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<script>
+		$(function () {
+
+
+				$("li").hover(function () {
+					//$(this).find("span").delay(800).show()
+
+						$(this).find("span").delay(800).fadeIn("fast")
+
+				}, function () {
+					$(this).find("span").hide();
+				});
+		});
+	</script>
 </head>
 <body>
 
 	<div id="slider">
 		<ul>
-			<li>
-				<img src="images/wallet.svg" id="icon" class="icon">
+			<li class="wallet">
 				<span id="text" class="text">
-
+					<h2>Электронные деньги</h2>
+					<p>7 млн. зарегистрированных
+						пользователей ЭПС</p>
+					<a href="#">Список ЭПС</a>
 				</span>
 				<img src="images/shadow.svg" id="shadow" class="shadow">
+			</li>
+
+			<li class="terminal">
+				<span id="text" class="text">
+					<h2>Терминалы</h2>
+					<p>Более 100 тысяч терминалов
+						по всей России</p>
+					<a href="#">Список ЭПС</a>
+				</span>
+				<img src="images/shadow.svg" id="shadow" class="shadow">
+			</li>
+
+			<li class="ecommerce">
+				<span id="text" class="text">
+					<h2>Мобильная коммерция</h2>
+					<p>Более 100 миллионов
+						абонентов сотовой связи</p>
+					<a href="#">Подробнее</a>
+				</span>
+				<img src="images/shadow.svg" id="shadow" class="shadow">
+			</li>
+
+			<li class="visa">
+				<span id="text" class="text">
+					<h2>Банковские карты</h2>
+					<p>Самый распространенный
+						способ оплаты во всем мире</p>
+					<a href="#">Подробнее</a>
+				</span>
+				<img src="images/shadow.svg" id="shadow" class="shadow">
+			</li>
+
+			<li class="bank">
+				<span id="text" class="text">
+					<h2>Интернет-банк</h2>
+					<p>Оплата счетов ROBOKASSA
+						через ваш интернет-банк</p>
+					<a href="#">Подробнее</a>
+				</span>
+				<img src="images/shadow.svg" id="shadow" class="shadow">
+			</li>
+
+			<li class="platform">
+				<div>
+					<span id="text" class="text">
+						<h2>Мобильное приложение</h2>
+						<p>Оплата счетов посредством
+							приложения для iOS и Android</p>
+						<a href="#">Подробнее</a>
+					</span>
+					<img src="images/shadow.svg" id="shadow" class="shadow">
+				</div>
 			</li>
 		</ul>
 	</div>
