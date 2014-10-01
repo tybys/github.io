@@ -35,6 +35,22 @@
             </LessProfile>
           </value>
         </entry>
+        <entry key="11">
+          <value>
+            <LessProfile>
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="D:\src\github\tybys\robokassa" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="id" value="11" />
+              <option name="lessDirPath" value="D:\src\github\tybys\robokassa" />
+              <option name="name" value="slider" />
+            </LessProfile>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

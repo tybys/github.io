@@ -1,0 +1,22 @@
+body {
+  color: inherit;
+}
+#slider ul {
+  margin: 0;
+  padding: 0;
+}
+#slider ul li {
+  list-style: none;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 2px solid #717B8D;
+}
+#slider ul li img.shadow {
+  position: absolute;
+  width: 108px;
+  height: 16px;
+  left: calc(50% - 54px);
+  bottom: -22px;
+}
