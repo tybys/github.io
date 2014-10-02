@@ -30,8 +30,11 @@
 	</script>
 </head>
 <body>
-<div id="firstDiv" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,1)">
-	<h2>Loading...</h2>
+<div id="firstDiv" style="">
+	<div class="circleContainer">
+		<div class="circle" id="c1"></div>
+		<div class="circle" id="c2"></div>
+	</div>
 </div>
 <div id="secondDiv" style="position: relative; z-index: -1">
 	<div class="landscape">
@@ -224,6 +227,7 @@
 <script src="js/jquery.transit.js"></script>
 <script>
 	$(function () {
+
 		function adaptiveBackground () {
 			var windowWidth = $(window).outerWidth(),
 					windowHeight = $(window).outerHeight(),
@@ -351,28 +355,13 @@
 
 		});
 
-		function parallax(){
-			var scrolled = $(window).scrollTop();
-
-//			if ($(window).outerWidth() >= 1413 && $(window).outerWidth() <= 1476) {
-//				$(".second .after-logo").css({
-//					top: -17
-//				})
-//			}
-//
-//			else {
-//				$(".second .after-logo").css({
-//					top: 200 -(scrolled * 0.25)+'px'
-//				});
-//			}
-
-		}
 		$(window).on('load', function(){
 			bgSizer();
 			$('#firstDiv').hide();
 			$('#secondDiv').removeAttr('style');
 		});
 	});
+
 </script>
 </body>
 </html>

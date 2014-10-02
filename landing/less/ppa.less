@@ -41,6 +41,109 @@ html {
 		}
 	}
 }
+
+#firstDiv {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background: rgba(0,0,0,0.5);
+}
+.circle{
+	border-radius: 50%;
+	border: solid 2px #EB0029;
+	position:absolute;
+	width:2px;
+	height:2px;
+	top: 24px;
+	left: 24px;
+	opacity:0;
+}
+#c2 {
+	border-color: #0071CE;
+}
+
+.circleContainer {
+	width: 100px;
+	margin: 0 auto;
+	position: absolute;
+	top: ~"calc(50% - 50px)";
+	top: ~"-webkit-calc(50% - 50px)";
+
+	left: ~"calc(50% - 50px)";
+	left: ~"-webkit-calc(50% - 50px)";
+}
+
+#c1 {
+	-webkit-animation: expand 3s; /* Chrome, Safari, Opera */
+	animation: expand 3s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+
+#c2 {
+	-webkit-animation: expand 3s; /* Chrome, Safari, Opera */
+	animation: expand 3s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-delay: 1.5s;
+	animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes expand {
+	0% {
+		width: 2px;
+		height: 2px;
+		top: 49px;
+		left: 49px;
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 1;
+	}
+
+	100% {
+		width: 100px;
+		height: 100px;
+		top: 0;
+		left: 0;
+		opacity: 0;
+	}
+}
+
+/* Standard syntax */
+@keyframes expand {
+	0% {
+		width: 10px;
+		height: 10px;
+		top: 20px;
+		left: 20px;
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 1;
+	}
+
+	100% {
+		width: 50px;
+		height: 50px;
+		top: 0;
+		left: 0;
+		opacity: 0.2;
+	}
+}
+
 * {
 	outline: none;
 }
