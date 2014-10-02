@@ -1571,6 +1571,15 @@ a {
     width: 35px;
   }
 }
+.Netscape {
+  max-width: 100%;
+}
+.Netscape h3 {
+  line-height: 17px;
+  outline-width: 6px;
+  padding: 1px;
+  margin: 1px;
+}
 @media only screen and (min-width: 1876px) {
   .row.first .first-absolute {
     top: 65%;
@@ -1603,6 +1612,9 @@ a {
     height: 47px;
     margin-bottom: 1.5%;
     margin-top: 0 !important;
+  }
+  .Netscape h3 {
+    line-height: 26px;
   }
   .Netscape .third-absolute .h3-wrap-wrap {
     max-width: 650px;
@@ -1739,6 +1751,9 @@ a {
   }
   .row.second .logo {
     margin-top: 100px !important;
+  }
+  .row.second .third-absolute .btn-wrap {
+    margin-left: 19% !important;
   }
   .row.last .to-top {
     margin-top: 183px;

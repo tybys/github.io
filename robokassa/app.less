@@ -10,14 +10,15 @@ html {
 	background: #006600 url("images/pattern.svg") no-repeat center;
 	position: relative;
 	width: 960px;
-	height: 100%;
+	height: ~"calc(100% + 450px)";
+	height: ~"-webkit-calc(100% + 450px)";
 
 	margin-left: ~"calc(50% - 480px)";
 	ul {
 		position: absolute;
 		top: 0;
-		left: -20px;
-		margin: 0;
+		left: -208px;
+		margin: 450px 0 0 0;
 		padding: 0;
 
 		white-space: nowrap;
@@ -47,7 +48,7 @@ html {
 			border: 2px solid #717B8D;
 
 			span {
-//				display: none;
+				display: none;
 
 
 				max-width: 175px;
@@ -114,8 +115,9 @@ html {
 
 				width: 250px;
 				height: 250px;
-				i {
-					&#prev {
+				div {
+					z-index: 999;
+					&.prev {
 						background: url("images/arrow.svg") no-repeat;
 						width: 18px;
 						height: 18px;
@@ -125,7 +127,7 @@ html {
 						top: ~"calc(50% - 9px)";
 						top: ~"-webkit-calc(50% - 9px)";
 					}
-					&#next {
+					&.next {
 						background: url("images/arrow.svg") no-repeat;
 						width: 18px;
 						height: 18px;
@@ -193,6 +195,20 @@ html {
 				&.sel {
 					background-image: url("images/platform-red.svg");
 				}
+			}
+		}
+	}
+	.markers {
+		span {
+			cursor: pointer;
+			width: 10px;
+			height: 10px;
+			display: inline-block;
+			border: 2px solid #0070CD;
+			background: white;
+			border-radius: 100%;
+			&.active {
+				background-color: #0070CD;
 			}
 		}
 	}

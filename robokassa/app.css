@@ -8,14 +8,15 @@ html body {
   background: #006600 url("images/pattern.svg") no-repeat center;
   position: relative;
   width: 960px;
-  height: 100%;
+  height: calc(100% + 450px);
+  height: -webkit-calc(100% + 450px);
   margin-left: calc(50% - 480px);
 }
 #slider ul {
   position: absolute;
   top: 0;
-  left: -20px;
-  margin: 0;
+  left: -208px;
+  margin: 450px 0 0 0;
   padding: 0;
   white-space: nowrap;
 }
@@ -38,6 +39,7 @@ html body {
   margin: 0;
 }
 #slider ul li span {
+  display: none;
   max-width: 175px;
   position: absolute;
   top: 50%;
@@ -91,7 +93,10 @@ html body {
   width: 250px;
   height: 250px;
 }
-#slider ul li.sel i#prev {
+#slider ul li.sel div {
+  z-index: 999;
+}
+#slider ul li.sel div.prev {
   background: url("images/arrow.svg") no-repeat;
   width: 18px;
   height: 18px;
@@ -101,7 +106,7 @@ html body {
   top: calc(50% - 9px);
   top: -webkit-calc(50% - 9px);
 }
-#slider ul li.sel i#next {
+#slider ul li.sel div.next {
   background: url("images/arrow.svg") no-repeat;
   width: 18px;
   height: 18px;
@@ -153,4 +158,16 @@ html body {
 }
 #slider ul li.platform.sel {
   background-image: url("images/platform-red.svg");
+}
+#slider .markers span {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border: 2px solid #0070CD;
+  background: white;
+  border-radius: 100%;
+}
+#slider .markers span.active {
+  background-color: #0070CD;
 }
