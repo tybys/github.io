@@ -20,9 +20,13 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	<script>
-		window.afterLogo = new Image();
-		window.afterLogo.src = "img/circle3-c.png";
-		window.afterLogo.setAttribute('class', 'after-logo');
+		window.afterLogo1 = new Image();
+		window.afterLogo1.src = "img/top-bg.png";
+		window.afterLogo1.setAttribute('id', 'bg');
+
+		window.afterLogo2 = new Image();
+		window.afterLogo2.src = "img/circle3-c.png";
+		window.afterLogo2.setAttribute('class', 'after-logo');
 	</script>
 </head>
 <body>
@@ -228,7 +232,8 @@
 
 			sectionHeight.not(".last").not(".second").css("height", windowHeight);
 		}
-		$('.img-wrap').append(window.afterLogo);
+//		$('#first').append(window.afterLogo1);
+		$('.img-wrap').append(window.afterLogo2);
 		var imgSize = $(".second .after-logo").outerHeight();
 		$(".second").css("height", imgSize - 34);
 
