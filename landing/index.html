@@ -218,9 +218,10 @@
 
 			sectionHeight.not(".last").not(".second").css("height", windowHeight);
 		}
-
-		var imgSize = $(".second .after-logo").outerHeight();
-		$(".second").css("height", imgSize - 34);
+		setTimeout(function(){
+			var imgSize = $(".second .after-logo").outerHeight();
+			$(".second").css("height", imgSize - 34);
+		}, 0);
 
 		// browser detect
 		function browser_detect() {
@@ -306,13 +307,6 @@
 				},d);
 			}
 		}
-
-		$(window).on("scroll", function () {
-			if ($(window).outerWidth() > 320) {
-//                parallax();
-			}
-
-		});
 
 		$(window).on("resize", function () {
 			if (!$(window).outerWidth() == 320) {

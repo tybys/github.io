@@ -1,15 +1,26 @@
-body {
-	color: inherit;
+html {
+	height: 100%;
+	body {
+		height: 100%;
+	}
 }
 
+
 #slider {
+	background: #006600 url("images/pattern.svg") no-repeat center;
 	position: relative;
+	width: 960px;
+	height: 100%;
+
+	margin-left: ~"calc(50% - 480px)";
 	ul {
 		position: absolute;
 		top: 0;
-		left: 0;
+		left: -20px;
 		margin: 0;
 		padding: 0;
+
+		white-space: nowrap;
 		li {
 			display: inline-block;
 			margin: 0 30px 0 0;
@@ -36,7 +47,7 @@ body {
 			border: 2px solid #717B8D;
 
 			span {
-				display: none;
+//				display: none;
 
 
 				max-width: 175px;
@@ -92,10 +103,8 @@ body {
 					bottom: -22px;
 				}
 			}
-			&:hover {
+			&.sel {
 				transition: all 1s ease;
-//				background-color: black;
-
 
 				background-repeat: no-repeat;
 				background-position: center 35%;
@@ -105,6 +114,30 @@ body {
 
 				width: 250px;
 				height: 250px;
+				i {
+					&#prev {
+						background: url("images/arrow.svg") no-repeat;
+						width: 18px;
+						height: 18px;
+						cursor: pointer;
+						position: absolute;
+						left: -33px;
+						top: ~"calc(50% - 9px)";
+						top: ~"-webkit-calc(50% - 9px)";
+					}
+					&#next {
+						background: url("images/arrow.svg") no-repeat;
+						width: 18px;
+						height: 18px;
+						cursor: pointer;
+						position: absolute;
+						right: -33px;
+						top: ~"calc(50% - 9px)";
+						top: ~"-webkit-calc(50% - 9px)";
+
+						transform: rotate(180deg);
+					}
+				}
 				span {
 
 				}
@@ -123,31 +156,31 @@ body {
 			}
 			&.wallet {
 				background-image: url("images/wallet.svg");
-				&:hover {
+				&.sel {
 					background-image: url("images/wallet-red.svg");
 				}
 			}
 			&.terminal {
 				background-image: url("images/terminal.svg");
-				&:hover {
+				&.sel {
 					background-image: url("images/terminal-red.svg");
 				}
 			}
 			&.ecommerce {
 				background-image: url("images/ecommerce.svg");
-				&:hover {
+				&.sel {
 					background-image: url("images/ecommerce-red.svg");
 				}
 			}
 			&.visa {
 				background-image: url("images/visa.svg");
-				&:hover {
+				&.sel {
 					background-image: url("images/visa-red.svg");
 				}
 			}
 			&.bank {
 				background-image: url("images/bank.svg");
-				&:hover {
+				&.sel {
 					background-image: url("images/bank-red.svg");
 				}
 			}
@@ -157,7 +190,7 @@ body {
 //					position: relative;
 				}
 				background-image: url("images/platform.svg");
-				&:hover {
+				&.sel {
 					background-image: url("images/platform-red.svg");
 				}
 			}

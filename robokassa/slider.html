@@ -8,16 +8,18 @@
 
 	<script>
 		$(function () {
+//				$("li").hover(function () {
+//						$(this).find("span").delay(800).fadeIn("fast")
+//
+//				}, function () {
+//					$(this).find("span").hide();
+//				});
 
+			$("li").click(function () {
+				$(this).toggleClass("sel")
+				$(this).find("span").delay(800).fadeIn("fast")
 
-				$("li").hover(function () {
-					//$(this).find("span").delay(800).show()
-
-						$(this).find("span").delay(800).fadeIn("fast")
-
-				}, function () {
-					$(this).find("span").hide();
-				});
+			})
 		});
 	</script>
 </head>
@@ -26,6 +28,8 @@
 	<div id="slider">
 		<ul>
 			<li class="wallet">
+				<i id="prev"></i>
+				<i id="next"></i>
 				<span id="text" class="text">
 					<h2>Электронные деньги</h2>
 					<p>7 млн. зарегистрированных
@@ -36,6 +40,8 @@
 			</li>
 
 			<li class="terminal">
+				<i id="prev"></i>
+				<i id="next"></i>
 				<span id="text" class="text">
 					<h2>Терминалы</h2>
 					<p>Более 100 тысяч терминалов
@@ -46,6 +52,8 @@
 			</li>
 
 			<li class="ecommerce">
+				<i id="prev"></i>
+				<i id="next"></i>
 				<span id="text" class="text">
 					<h2>Мобильная коммерция</h2>
 					<p>Более 100 миллионов
@@ -55,7 +63,9 @@
 				<img src="images/shadow.svg" id="shadow" class="shadow">
 			</li>
 
-			<li class="visa">
+			<li class="visa sel">
+				<i id="prev"></i>
+				<i id="next"></i>
 				<span id="text" class="text">
 					<h2>Банковские карты</h2>
 					<p>Самый распространенный
@@ -66,6 +76,8 @@
 			</li>
 
 			<li class="bank">
+				<i id="prev"></i>
+				<i id="next"></i>
 				<span id="text" class="text">
 					<h2>Интернет-банк</h2>
 					<p>Оплата счетов ROBOKASSA
@@ -76,6 +88,8 @@
 			</li>
 
 			<li class="platform">
+				<i id="prev"></i>
+				<i id="next"></i>
 				<div>
 					<span id="text" class="text">
 						<h2>Мобильное приложение</h2>
