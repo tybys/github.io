@@ -37,27 +37,35 @@
 
 class developer
 {
-    var $a = substr(rand(), 8);
+    private $_a;
+    private $_b;
+
     public function head()
     {
-
-        return "Хочу написать код в " . $a . " строк <br/>";
+        $this->_a = substr(rand(), 8);
+        return "Хочу написать код в " . $this->_a . " строк <br/>";
     }
     public function hands()
     {
-        $a = substr(rand(), 8);
-        return "Написал код в " . $a . " строк <br/>";
+        $this->_b = substr(rand(), 8);
+        return "Написал код в " . $this->_a . " строк <br/>";
     }
     public function summary()
     {
+        /*
         $_a = preg_replace('~[^0-9]+~', '', $this -> head());
         $_b = preg_replace('~[^0-9]+~', '', $this -> hands());
+        */
+        $_a = intval($this->_a)>0?true:false;
+        $_b = intval($this->_b)>0?true:false;
 
-        if (isset($_a) && strlen($_a) == 0)
+
+        if (!$_a)
         {
-            echo 'dick ';
-        } elseif (isset($_b) && strlen($_b) == 0)
+            throw new MyEx();
+        } elseif (!$_b)
         {
+            throw new Exception();
             echo 'ass';
         }
 
@@ -82,12 +90,24 @@ class frontend extends developer
 
 }
 
+class MyEx extends Exception{
+
+}
+
 $dev = new developer();
 $front = new frontend();
 
 echo $dev -> head();
-echo $dev -> hands();
-echo $dev -> summary();
+//  echo $dev -> hands();
+try
+{
+    echo $dev -> summary();
+    echo "something";
+}
+catch (MyEx $e){
+    echo "erro";
+}
+#echo $dev -> summary();
 echo '<hr>';
 
 echo $front -> head();
