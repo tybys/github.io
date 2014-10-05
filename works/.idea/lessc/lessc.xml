@@ -51,6 +51,22 @@
             </LessProfile>
           </value>
         </entry>
+        <entry key="3">
+          <value>
+            <LessProfile>
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="$PROJECT_DIR$/../robokassa" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="id" value="3" />
+              <option name="lessDirPath" value="$PROJECT_DIR$/../robokassa" />
+              <option name="name" value="slider" />
+            </LessProfile>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

@@ -17,7 +17,7 @@
 
 	<p><a href="#">Более 40 способов оплаты</a>. Ваши клиенты смогут расплатиться любым из них</p>
 
-	<!--ul id="slider_ul">
+	<ul id="slider_ul" class="example">
 		<li class="wallet">
 			<span id="text" class="text">
 				<h2>Электронные деньги</h2>
@@ -81,9 +81,9 @@
 			</span>
 			<img src="images/shadow.svg" id="shadow" class="shadow">
 		</li>
-	</ul-->
+	</ul>
 
-	<ul>
+	<ul class="actual">
 		<li>
 			<div class="ch-item">
 				<div class="ch-info-wrap">
@@ -138,12 +138,12 @@
 			</div>
 		</li>
 
-		<li>
-			<div class="ch-item sel">
+		<li class="sel">
+			<div class="ch-item">
 				<div class="ch-info-wrap">
 					<div class="ch-info">
 						<div class="ch-info-front ch-img-4"></div>
-						<div class="ch-info-back">
+						<div class="ch-info-back ch-img-4">
 							<h2>Банковские карты</h2>
 							<p>
 								Самый распространенный
@@ -217,11 +217,11 @@
 			var next = $("<div/>", { id: "next", "class": "arr next" });
 
 			//$(".sel").prepend("<div id='prev' class='arr prev' />").prepend("<div id='next' class='arr next' />");
-			$(".sel > div").prepend(prev).prepend(next);
+			$(".actual .sel").prepend(prev).prepend(next);
 
 			var _eachWidth = $("#slider li").outerWidth();
 
-			$("#slider_ul").on("click", "div.arr", function () {
+			$("ul.actual").on("click", "div.arr", function () {
 				var newArr = $(this)
 
 				if (newArr.hasClass("prev")) {
