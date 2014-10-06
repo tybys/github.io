@@ -18,7 +18,8 @@
 	<p><a href="#">Более 40 способов оплаты</a>. Ваши клиенты смогут расплатиться любым из них</p>
 
 	<ul id="slider_ul" class="example">
-		<li class="wallet">
+		<li >
+			<div class="wallet">
 			<span id="text" class="text">
 				<h2>Электронные деньги</h2>
 				<p>7 млн. зарегистрированных
@@ -26,9 +27,11 @@
 				<a href="#">Список ЭПС</a>
 			</span>
 			<img src="images/shadow.svg" id="shadow" class="shadow">
+			</div>
 		</li>
 
-		<li class="terminal">
+		<li >
+			<div class="terminal">
 			<span id="text" class="text">
 				<h2>Терминалы</h2>
 				<p>Более 100 тысяч терминалов
@@ -36,9 +39,11 @@
 				<a href="#">Список ЭПС</a>
 			</span>
 			<img src="images/shadow.svg" id="shadow" class="shadow">
+			</div>
 		</li>
 
-		<li class="ecommerce">
+		<li >
+			<div class="ecommerce">
 			<span id="text" class="text">
 				<h2>Мобильная коммерция</h2>
 				<p>Более 100 миллионов
@@ -46,10 +51,11 @@
 				<a href="#">Подробнее</a>
 			</span>
 			<img src="images/shadow.svg" id="shadow" class="shadow">
+			</div>
 		</li>
 
-		<li class="visa sel">
-			<div>
+		<li>
+			<div class="visa sel">
 				<span id="text" class="text">
 					<h2>Банковские карты</h2>
 					<p>
@@ -62,7 +68,8 @@
 			</div>
 		</li>
 
-		<li class="bank">
+		<li >
+			<div class="bank">
 			<span id="text" class="text">
 				<h2>Интернет-банк</h2>
 				<p>Оплата счетов ROBOKASSA
@@ -70,9 +77,11 @@
 				<a href="#">Подробнее</a>
 			</span>
 			<img src="images/shadow.svg" id="shadow" class="shadow">
+			</div>
 		</li>
 
-		<li class="platform">
+		<li >
+			<div class="platform">
 			<span id="text" class="text">
 				<h2>Мобильное приложение</h2>
 				<p>Оплата счетов посредством
@@ -80,6 +89,7 @@
 				<a href="#">Подробнее</a>
 			</span>
 			<img src="images/shadow.svg" id="shadow" class="shadow">
+			</div>
 		</li>
 	</ul>
 
@@ -213,6 +223,9 @@
 <script>
 	$(document).ready(function () {
 		$(window).on("load", function () {
+
+
+
 			var prev = $("<div/>", { id: "prev", "class": "arr prev"});
 			var next = $("<div/>", { id: "next", "class": "arr next" });
 
@@ -229,7 +242,7 @@
 						//left: "+=" + _eachWidth
 					}, 500, function () {
 						var t = $(this);
-						t.find(".sel").removeClass("sel").prev().addClass("sel");
+						t.find(".sel").removeClass("sel").parent().prev().find("div").addClass("sel");
 						$(".sel").prepend(prev).prepend(next);
 						t.prepend(t.find("li").last().detach());
 
@@ -239,7 +252,7 @@
 						//left: "-=" + _eachWidth
 					}, 500, function () {
 						var t = $(this);
-						t.find(".sel").removeClass("sel").next().addClass("sel");
+						t.find(".sel").removeClass("sel").parent().next().find("div").addClass("sel");
 						$(".sel").prepend(prev).prepend(next);
 						t.append(t.find("li").first().detach());
 					});
