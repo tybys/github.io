@@ -223,39 +223,66 @@
 <script>
 	$(document).ready(function () {
 		$(window).on("load", function () {
-
-
-
-			var prev = $("<div/>", { id: "prev", "class": "arr prev"});
+			var prev = $("<div/>", { id: "prev", "class": "arr prev" });
 			var next = $("<div/>", { id: "next", "class": "arr next" });
+			var ul = $("#slider_ul");
 
-			//$(".sel").prepend("<div id='prev' class='arr prev' />").prepend("<div id='next' class='arr next' />");
 			$("ul .sel").prepend(prev).prepend(next);
 
-			var _eachWidth = $("#slider li").outerWidth();
+			var _eachWidth = ul.children('li').eq(0).outerWidth() + 100;
 
-			$("ul").on("click", "div.arr", function () {
+			ul.on("click", "div.arr", function () {
 				var newArr = $(this)
 
 				if (newArr.hasClass("prev")) {
-					$("#slider ul").animate({
-						//left: "+=" + _eachWidth
+					items = ul.children('li');
+
+					var sel = ul.find(".sel").parent();
+					var index = items.index(sel);
+
+					sel.children('div').removeClass("sel");
+					items.eq(index - 1).children('div').addClass("sel");
+
+					var item_animate = items.eq(items.length - 1);
+
+					items.eq(0).before(item_animate);
+					item_animate.css({
+						'margin-left': '-' + (_eachWidth) + 'px'
+					});
+
+					item_animate.animate({
+						'margin-left': 0
 					}, 500, function () {
 						var t = $(this);
 						t.find(".sel").removeClass("sel").parent().prev().find("div").addClass("sel");
 						$(".sel").prepend(prev).prepend(next);
 						t.prepend(t.find("li").last().detach());
-
 					});
 				} else {
-					$("#slider ul").animate({
-						//left: "-=" + _eachWidth
+					items = ul.children('li');
+					var sel = ul.find(".sel").parent();
+					var index = items.index(sel);
+
+					sel.children('div').removeClass("sel");
+					items.eq(index + 1).children('div').addClass("sel");
+
+					var item_animate = items.eq(0);
+
+					items.eq(items.length - 1).after(item_animate);
+					items.eq(1).css({
+						'margin-left': (_eachWidth) + 'px'
+					});
+
+					items.eq(1).animate({
+						'margin-left': 0
 					}, 500, function () {
 						var t = $(this);
-						t.find(".sel").removeClass("sel").parent().next().find("div").addClass("sel");
+						t.find(".sel").removeClass("sel").parent().prev().find("div").addClass("sel");
 						$(".sel").prepend(prev).prepend(next);
-						t.append(t.find("li").first().detach());
+						t.prepend(t.find("li").last().detach());
 					});
+
+					$(".sel").prepend(prev).prepend(next);
 				}
 			});
 		})
