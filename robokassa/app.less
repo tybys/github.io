@@ -18,35 +18,32 @@ html {
 		position: absolute;
 		top: 0;
 		left: -208px;
-		margin: 100px 0 0 0;
+		margin: 300px 0 0 0;
 		padding: 0;
-
 		white-space: nowrap;
 		width: 100%;
 		li {
 			display: inline-block;
-			margin: 0 30px 0 0;
+			margin: 0 100px 0 0;
 			width: 150px;
 			height: 150px;
+			position: relative;
 
 			& > div {
 				transition: all 1s ease;
-
-				background-color: white;
-
+				background-color: rgb(255, 255, 255);
 				background-repeat: no-repeat;
 				background-position: center;
-
 				list-style: none;
-
-				position: relative;z-index: 2;
+				position: absolute;
+				z-index: 2;
 				width: 150px;
 				height: 150px;
+				top: 50%;
+				left: 50%;
 				border-radius: 100%;
-				border: 2px solid #717B8D;
-
-
-
+				border: 2px solid rgb(113, 123, 141);
+				margin: -75px 0 0 -75px;
 				span {
 					display: none;
 
@@ -105,20 +102,17 @@ html {
 				&.sel {
 					top: 50px;
 					transition: all 1s ease;
-
 					background-repeat: no-repeat;
 					background-position: center 35%;
-
-					border-color: #0070CD;
+					border-color: rgb(0, 112, 205);
 					border-width: 4px;
-
 					width: 250px;
 					height: 250px;
-
 					position: absolute;
 					top: 50%;
 					left: 50%;
-					margin: 125px 0 0 125px;
+					margin: -125px 0 0 -125px;
+					z-index: 100;
 					div {
 						z-index: 999;
 						&.prev {

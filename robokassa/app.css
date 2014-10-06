@@ -16,29 +16,33 @@ html body {
   position: absolute;
   top: 0;
   left: -208px;
-  margin: 100px 0 0 0;
+  margin: 300px 0 0 0;
   padding: 0;
   white-space: nowrap;
   width: 100%;
 }
 #slider ul.example li {
   display: inline-block;
-  margin: 0 30px 0 0;
+  margin: 0 100px 0 0;
   width: 150px;
   height: 150px;
+  position: relative;
 }
 #slider ul.example li > div {
   transition: all 1s ease;
-  background-color: white;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
   list-style: none;
-  position: relative;
+  position: absolute;
   z-index: 2;
   width: 150px;
   height: 150px;
+  top: 50%;
+  left: 50%;
   border-radius: 100%;
-  border: 2px solid #717B8D;
+  border: 2px solid #717b8d;
+  margin: -75px 0 0 -75px;
 }
 #slider ul.example li > div span {
   display: none;
@@ -91,14 +95,15 @@ html body {
   transition: all 1s ease;
   background-repeat: no-repeat;
   background-position: center 35%;
-  border-color: #0070CD;
+  border-color: #0070cd;
   border-width: 4px;
   width: 250px;
   height: 250px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: 125px 0 0 125px;
+  margin: -125px 0 0 -125px;
+  z-index: 100;
 }
 #slider ul.example li > div.sel div {
   z-index: 999;
