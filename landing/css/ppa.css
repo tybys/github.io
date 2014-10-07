@@ -1619,6 +1619,9 @@ a {
   .Netscape h3 {
     line-height: 26px;
   }
+  .Netscape .first.row .first-absolute .next-slide {
+    margin-top: 120px;
+  }
   .Netscape .third-absolute .h3-wrap-wrap {
     max-width: 650px;
   }
@@ -1628,7 +1631,7 @@ a {
 }
 @media only screen and (min-width: 1576px) and (max-width: 1876px) {
   .row.first #bg {
-    top: -65px;
+    padding-bottom: 110px;
   }
   .row.first .first-absolute {
     top: calc(63% - 25px);
@@ -1752,9 +1755,6 @@ a {
   .row.first .first-absolute .next-slide {
     margin-top: 73px;
   }
-  .row.second .logo {
-    margin-top: 100px !important;
-  }
   .row.second .third-absolute .btn-wrap {
     margin-left: 19% !important;
   }
@@ -1793,6 +1793,9 @@ a {
   .row.first .first-absolute .next-slide {
     margin-top: 73px;
   }
+  .row.first .after-logo {
+    width: 33.5vw !important;
+  }
   .row.second .btn-wrap {
     margin-left: 19% !important;
   }
@@ -1802,6 +1805,9 @@ a {
   .row.last .to-top span {
     font-size: 16px;
     padding-left: 15px;
+  }
+  .row .h3-wrap-wrap {
+    max-width: 455px;
   }
   .row .btn-slide.next-slide,
   .row .btn-slide.to-top {
