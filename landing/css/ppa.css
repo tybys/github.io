@@ -1308,6 +1308,9 @@ a {
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+  .btn-slide {
+    display: none;
+  }
   html,
   body {
     min-width: 320px !important;
@@ -1467,6 +1470,9 @@ a {
   }
   .row.second .prev-slide {
     background-size: 30%;
+  }
+  .row.second .h3-wrap {
+    position: relative !important;
   }
   .row.second h3 {
     position: static !important;
