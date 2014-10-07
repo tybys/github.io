@@ -49,7 +49,7 @@ html {
 	top: 0;
 	left: 0;
 	z-index: 999;
-	background: rgba(0,0,0,0.5);
+	background: rgba(255, 255, 255,0.5);
 }
 .circle{
 	border-radius: 50%;
@@ -550,6 +550,9 @@ a {
 		}
 		.h3-wrap {
 			margin-bottom: 23px;
+			.h3-wrap-wrap {
+				max-width: 650px;
+			}
 		}
 		.next-slide {
 			display: inline-block;
@@ -583,10 +586,6 @@ a {
 				margin-left: 16%;
 			}
 		}
-
-
-
-
 	}
 	&.last {
         ::selection {
@@ -615,7 +614,10 @@ a {
 			margin-bottom: 22px;
 		}
         .h3-wrap {
-            max-width: 59%;
+//            max-width: 59%;
+			.h3-wrap-wrap {
+				max-width: 650px;
+			}
         }
         .col-md-6 {
             margin-top: 160px;
@@ -1286,7 +1288,7 @@ a {
     .row {
         &.second {
 			.container-fluid {
-				background-position-y: 0%;
+				background-position-y: 20%;
 				background-size: 103%;
 			}
             .container {
@@ -1295,9 +1297,6 @@ a {
             .row.after-logo {
                 width: 575px;
                 height: 575px;
-
-
-
             }
 			.after-logo {
 				right: 60px;
@@ -1305,7 +1304,7 @@ a {
 
 			.third-absolute {
 				img {
-					margin-top: 70px;
+					margin-top: 140px;
 					margin-left: ~"calc(16% + 65px)";
 					margin-left: ~"-webkit-calc(16% + 20px)";
 				}
@@ -2171,7 +2170,7 @@ a {
 		}
 		&.second {
 			.btn-wrap {
-				margin-left: 25% !important;
+				margin-left: 19% !important;
 			}
 		}
 		&.last {

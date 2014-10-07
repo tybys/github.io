@@ -46,7 +46,7 @@ html body a:hover {
   top: 0;
   left: 0;
   z-index: 999;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.5);
 }
 .circle {
   border-radius: 50%;
@@ -485,6 +485,9 @@ a {
 .row.second .h3-wrap {
   margin-bottom: 23px;
 }
+.row.second .h3-wrap .h3-wrap-wrap {
+  max-width: 650px;
+}
 .row.second .next-slide {
   display: inline-block;
   vertical-align: bottom;
@@ -543,8 +546,8 @@ a {
   margin-top: 30px;
   margin-bottom: 22px;
 }
-.row.last .h3-wrap {
-  max-width: 59%;
+.row.last .h3-wrap .h3-wrap-wrap {
+  max-width: 650px;
 }
 .row.last .col-md-6 {
   margin-top: 160px;
@@ -1097,7 +1100,7 @@ a {
     width: 33.33333%;
   }
   .row.second .container-fluid {
-    background-position-y: 0%;
+    background-position-y: 20%;
     background-size: 103%;
   }
   .row.second .container {
@@ -1111,7 +1114,7 @@ a {
     right: 60px;
   }
   .row.second .third-absolute img {
-    margin-top: 70px;
+    margin-top: 140px;
     margin-left: calc(16% + 65px);
     margin-left: -webkit-calc(16% + 20px);
   }
@@ -1791,7 +1794,7 @@ a {
     margin-top: 73px;
   }
   .row.second .btn-wrap {
-    margin-left: 25% !important;
+    margin-left: 19% !important;
   }
   .row.last .to-top {
     margin-top: 183px;
