@@ -1,5 +1,4 @@
 html body {
-  max-width: 1920px;
   color: inherit;
 }
 html body h2 {
@@ -1589,7 +1588,7 @@ a {
   padding: 1px;
   margin: 1px;
 }
-@media only screen and (min-width: 1876px) {
+@media only screen and (min-width: 1876px) and (max-width: 2560px) {
   .row.first .first-absolute {
     top: 65%;
   }
