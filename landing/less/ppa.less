@@ -505,6 +505,10 @@ a {
                 0%   { right: -20%; }
                 100% { right: 120%; }
             }
+			@keyframes moveclouds {
+				0%   { right: -20%; }
+				100% { right: 120%; }
+			}
 //            &:after {
 //                content: '';
 //                position: absolute;
@@ -2327,7 +2331,12 @@ a {
 	.Netscape {
 		.row {
 			.h3-wrap-wrap {
-				max-width: 400px;
+				max-width: 500px;
+			}
+			&.second {
+				.btn-wrap {
+					margin-left: 25% !important;
+				}
 			}
 			&.last {
 				.bottom-menu {
@@ -2404,15 +2413,23 @@ a {
 		}
 		.row {
 			.h3-wrap-wrap {
-				max-width: 400px;
+				max-width: 500px;
 			}
 			&.second {
 				.third-absolute {
 					right: 0%;
 					width: 56%;
+					.btn-wrap {
+						margin-left: 23% !important;
+					}
 					.h3-wrap {
 						margin-left: ~"calc(14% + 65px)";
 						margin-left: ~"-webkit-calc(14% + 65px)";
+					}
+				}
+				.next-slide {
+					img {
+						margin-left: 0;
 					}
 				}
 			}

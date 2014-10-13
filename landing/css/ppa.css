@@ -463,6 +463,14 @@ a {
     right: 120%;
   }
 }
+@keyframes moveclouds {
+  0% {
+    right: -20%;
+  }
+  100% {
+    right: 120%;
+  }
+}
 .row.second .after-logo {
   width: 690px;
   height: 690px;
@@ -1917,7 +1925,10 @@ a {
     margin-top: 0 !important;
   }
   .Netscape .row .h3-wrap-wrap {
-    max-width: 400px;
+    max-width: 500px;
+  }
+  .Netscape .row.second .btn-wrap {
+    margin-left: 25% !important;
   }
   .Netscape .row.last .bottom-menu li {
     width: 27% !important;
@@ -1966,15 +1977,21 @@ a {
     padding: 10px !important;
   }
   .Netscape .row .h3-wrap-wrap {
-    max-width: 400px;
+    max-width: 500px;
   }
   .Netscape .row.second .third-absolute {
     right: 0%;
     width: 56%;
   }
+  .Netscape .row.second .third-absolute .btn-wrap {
+    margin-left: 23% !important;
+  }
   .Netscape .row.second .third-absolute .h3-wrap {
     margin-left: calc(14% + 65px);
     margin-left: -webkit-calc(14% + 65px);
+  }
+  .Netscape .row.second .next-slide img {
+    margin-left: 0;
   }
   .Netscape .row.last .bottom-menu li {
     width: 27% !important;
