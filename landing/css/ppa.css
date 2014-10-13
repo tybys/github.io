@@ -535,6 +535,7 @@ a {
   padding: 40px 0;
   font-size: 20px;
   color: black;
+  clear: both;
 }
 .row.last .logo {
   display: block;
@@ -714,9 +715,10 @@ a {
   }
   .row .first-absolute {
     left: 147px;
+    top: 65%;
   }
   .row .first-absolute .after-logo {
-    max-width: 575px;
+    max-width: 535px;
   }
   .navbar-default {
     min-height: 80px;
@@ -1588,19 +1590,67 @@ a {
   padding: 1px;
   margin: 1px;
 }
-@media only screen and (min-width: 1876px) and (max-width: 2560px) {
+@media only screen and (min-width: 2000px) and (max-width: 2560px) {
+  .navbar-default .navbar-brand img {
+    width: 342px !important;
+    height: 40px !improtant;
+  }
+  .navbar-default ul img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .navbar-default ul a {
+    font-size: 25px !important;
+  }
+  .row h2 {
+    font-size: 50px;
+  }
+  .row .h3-wrap h3 {
+    font-size: 25px;
+  }
+  .row.first .magazines span {
+    font-size: 25px;
+  }
   .row.first .first-absolute {
-    top: 65%;
+    top: 56%;
+  }
+  .row.first .first-absolute .after-logo {
+    max-width: 535px;
   }
   .row.first .first-absolute .next-slide {
-    margin-top: 73px;
+    margin-top: 103px;
+  }
+  .row.second .container-fluid {
+    background-size: 103%;
+  }
+  .row.second .third-absolute img {
+    margin-top: 25%;
+  }
+  .row.second .third-absolute .btn-wrap {
+    margin-left: 21%;
+  }
+  .row.last {
+    background-size: 100%;
+  }
+  .row.last .right > div {
+    max-width: 765px !important;
+  }
+  .row.last .bottom-menu img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .row.last .bottom-menu a {
+    font-size: 25px !important;
   }
   .row.last .to-top {
     margin-top: 183px;
   }
   .row.last .to-top span {
-    font-size: 20px;
+    font-size: 25px;
     padding-left: 15px;
+  }
+  .row.last .copy {
+    font-size: 25px;
   }
   .row .btn-slide.next-slide,
   .row .btn-slide.to-top {
@@ -1759,6 +1809,12 @@ a {
   }
   .row.first .first-absolute .next-slide {
     margin-top: 73px;
+  }
+  .row.second .logo {
+    width: 530px;
+    height: 150px;
+    margin-left: -webkit-calc(9% + 20px) !important;
+    margin-left: calc(9% + 20px) !important;
   }
   .row.second .third-absolute .btn-wrap {
     margin-left: 19% !important;

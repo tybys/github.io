@@ -359,6 +359,10 @@
 			bgSizer();
 			$('#firstDiv').hide();
 			$('#secondDiv').removeAttr('style');
+
+			if ($(window).outerWidth() == 1893 && $(window).outerHeight() == 931) {
+				$(".first-absolute").css("top", 55 +"%")
+			}
 		});
 	});
 

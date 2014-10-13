@@ -603,6 +603,7 @@ a {
 			padding: 40px 0;
 			font-size: 20px;
 			color: black;
+			clear: both;
 		}
 		.logo {
             display: block;
@@ -815,9 +816,11 @@ a {
 	}
 	.row .first-absolute {
 		.after-logo {
-			max-width: 575px;
+			max-width: 535px;
 		}
 		left: 147px;
+		top: 65%;
+
 	}
 	.navbar-default {
 		.navbar-header {
@@ -1888,23 +1891,89 @@ a {
 	}
 
 }
-@media only screen and (min-width: 1876px) and (max-width: 2560px) {
+@media only screen and (min-width: 2000px) and (max-width: 2560px) {
+	.navbar-default {
+		.navbar-brand {
+			img {
+				width: 342px !important;
+				height: 40px !improtant;
+			}
+		}
+		ul {
+			img {
+				width: 40px !important;
+				height: 40px !important;
+			}
+			a {
+				font-size: 25px !important;
+			}
+		}
+
+	}
 	.row {
+		h2 {
+			font-size: 50px;
+		}
+		.h3-wrap {
+			h3 {
+				font-size: 25px;
+			}
+		}
 		&.first {
+			.magazines {
+				span {
+					font-size: 25px;
+				}
+			}
 			.first-absolute {
-				top: 65%;
+				.after-logo {
+					max-width: 535px;
+				}
+
+				top: 56%;
 				.next-slide {
-					margin-top: 73px;
+					margin-top: 103px;
+				}
+			}
+		}
+		&.second {
+			.container-fluid {
+				background-size: 103%;
+			}
+			.third-absolute {
+				img {
+					margin-top: 25%;
+				}
+				.btn-wrap {
+					margin-left: 21%;
 				}
 			}
 		}
 		&.last {
+			background-size: 100%;
+			.right {
+				& > div {
+					max-width: 765px !important;
+				}
+			}
+			.bottom-menu {
+				img {
+					width: 40px !important;
+					height: 40px !important;
+				}
+				a {
+					font-size: 25px !important;
+				}
+			}
 			.to-top {
 				span {
-					font-size: 20px;
+					font-size: 25px;
 					padding-left: 15px;
 				}
 				margin-top: 183px;
+			}
+			.copy {
+				font-size: 25px;
 			}
 		}
 		.btn-slide {
@@ -2127,6 +2196,10 @@ a {
 		}
 		&.second {
 			.logo {
+				width: 530px;
+				height: 150px;
+				margin-left: ~"-webkit-calc(9% + 20px)" !important;
+				margin-left: ~"calc(9% + 20px)" !important;
 //				margin-top: 100px !important;
 			}
 			.third-absolute {
