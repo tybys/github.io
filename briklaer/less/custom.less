@@ -2191,4 +2191,53 @@ html {
             }
         }
     }
+    &.delivery {
+        .container {
+            padding: 0;
+            background-image: url("../images/del-back.jpg");
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            padding-bottom: 22%;
+        }
+        table {
+            margin-top: 30px;
+            td {
+                &.left {
+                    width: 45%;
+                    padding-right: 50px;
+                    h4 {
+                        font-size: 24px;
+                        color: #bdb2ae;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        color: #bdb2ae;
+                        &:first-line {
+                            line-height: 30px;
+                        }
+                        strong {
+                            margin-bottom: 15px;
+                            color: @brown;
+                        }
+                    }
+                }
+                &.right {
+                    width: 45%;
+                    padding-left: 50px;
+                    h4 {
+                        font-size: 24px;
+                        color: #bdb2ae;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        font-size: 14px;
+                        span:first-of-type {font-size: 16px;}
+                        span:last-of-type {
+                            color: #bdb2ae;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

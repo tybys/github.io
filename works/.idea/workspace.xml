@@ -28,33 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../briklaer/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="9315">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="615" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thanks.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../briklaer/thanks.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.333333" vertical-offset="403" max-vertical-offset="2730">
-              <caret line="107" column="31" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="31" />
-              <folding>
-                <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="custom.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../briklaer/less/custom.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72767365" vertical-offset="0" max-vertical-offset="930">
-              <caret line="2181" column="30" selection-start-line="2181" selection-start-column="30" selection-end-line="2181" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.30540243" vertical-offset="653" max-vertical-offset="1665">
+              <caret line="2199" column="31" selection-start-line="2199" selection-start-column="31" selection-end-line="2199" selection-end-column="31" />
               <folding>
                 <element signature="e#145#149#0" expanded="false" />
                 <element signature="e#159#163#0" expanded="false" />
@@ -523,6 +501,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="delivery.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../briklaer/delivery.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-25.0" vertical-offset="1590" max-vertical-offset="4185">
+              <caret line="146" column="43" selection-start-line="146" selection-start-column="43" selection-end-line="146" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -556,6 +544,7 @@
         <option value="$PROJECT_DIR$/../robokassa/slider.html" />
         <option value="$PROJECT_DIR$/../robokassa/app.less" />
         <option value="$PROJECT_DIR$/../briklaer/thanks.html" />
+        <option value="$PROJECT_DIR$/../briklaer/delivery.html" />
         <option value="$PROJECT_DIR$/../briklaer/less/custom.less" />
       </list>
     </option>
@@ -664,7 +653,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="less" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1129,18 +1118,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../briklaer/thanks.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.333333" vertical-offset="403" max-vertical-offset="2730">
-          <caret line="107" column="31" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.29988974" vertical-offset="403" max-vertical-offset="2730">
+          <caret line="107" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
           <folding>
             <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../briklaer/delivery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.0" vertical-offset="1590" max-vertical-offset="4185">
+          <caret line="146" column="43" selection-start-line="146" selection-start-column="43" selection-end-line="146" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../briklaer/less/custom.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72767365" vertical-offset="0" max-vertical-offset="930">
-          <caret line="2181" column="30" selection-start-line="2181" selection-start-column="30" selection-end-line="2181" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.30540243" vertical-offset="653" max-vertical-offset="1665">
+          <caret line="2199" column="31" selection-start-line="2199" selection-start-column="31" selection-end-line="2199" selection-end-column="31" />
           <folding>
             <element signature="e#145#149#0" expanded="false" />
             <element signature="e#159#163#0" expanded="false" />
