@@ -1964,3 +1964,21 @@ html body {
   display: inline-block !important;
   position: static !important;
 }
+.row.thanks .container {
+  min-height: 725px;
+  margin: 15px auto 15px auto;
+  padding: 0;
+  border: 1px solid #36140a;
+  border-radius: 15px;
+}
+.row.thanks .container h4 {
+  margin-top: 73px;
+  padding: 0 10.5%;
+  font-size: 24px;
+}
+.row.thanks .container h4 span {
+  font-size: 36px;
+}
+.row.thanks .container p {
+  padding: 0 10.5%;
+}
