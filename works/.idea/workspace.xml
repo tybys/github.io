@@ -31,8 +31,8 @@
       <file leaf-file-name="custom.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../briklaer/less/custom.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30540243" vertical-offset="653" max-vertical-offset="1665">
-              <caret line="2199" column="31" selection-start-line="2199" selection-start-column="31" selection-end-line="2199" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.45424476" vertical-offset="968" max-vertical-offset="2100">
+              <caret line="2379" column="22" selection-start-line="2379" selection-start-column="22" selection-end-line="2379" selection-end-column="22" />
               <folding>
                 <element signature="e#145#149#0" expanded="false" />
                 <element signature="e#159#163#0" expanded="false" />
@@ -496,17 +496,56 @@
                 <element signature="e#78699#78795#0" expanded="false" />
                 <element signature="e#78823#78963#0" expanded="false" />
                 <element signature="e#78999#79133#0" expanded="false" />
+                <element signature="e#79196#79675#0" expanded="false" />
+                <element signature="e#79217#79669#0" expanded="false" />
+                <element signature="e#79401#79595#0" expanded="false" />
+                <element signature="e#79525#79581#0" expanded="false" />
+                <element signature="e#79610#79659#0" expanded="false" />
+                <element signature="e#79691#81214#0" expanded="false" />
+                <element signature="e#79712#79931#0" expanded="false" />
+                <element signature="e#79946#81208#0" expanded="false" />
+                <element signature="e#79993#81198#0" expanded="false" />
+                <element signature="e#80018#80632#0" expanded="false" />
+                <element signature="e#80116#80265#0" expanded="false" />
+                <element signature="e#80288#80614#0" expanded="false" />
+                <element signature="e#80367#80441#0" expanded="false" />
+                <element signature="e#80473#80592#0" expanded="false" />
+                <element signature="e#80657#81184#0" expanded="false" />
+                <element signature="e#80754#80903#0" expanded="false" />
+                <element signature="e#80926#81166#0" expanded="false" />
+                <element signature="e#81073#81144#0" expanded="false" />
+                <element signature="e#81230#83798#0" expanded="false" />
+                <element signature="e#81251#81286#0" expanded="false" />
+                <element signature="e#81298#81429#0" expanded="false" />
+                <element signature="e#81442#83792#0" expanded="false" />
+                <element signature="e#81463#82497#0" expanded="false" />
+                <element signature="e#81546#82407#0" expanded="false" />
+                <element signature="e#82045#82160#0" expanded="false" />
+                <element signature="e#82191#82259#0" expanded="false" />
+                <element signature="e#82285#82389#0" expanded="false" />
+                <element signature="e#82427#82483#0" expanded="false" />
+                <element signature="e#82518#83782#0" expanded="false" />
+                <element signature="e#82789#82845#0" expanded="false" />
+                <element signature="e#82866#83768#0" expanded="false" />
+                <element signature="e#83020#83130#0" expanded="false" />
+                <element signature="e#83166#83427#0" expanded="false" />
+                <element signature="e#83282#83405#0" expanded="false" />
+                <element signature="e#83451#83475#0" expanded="false" />
+                <element signature="e#83498#83750#0" expanded="false" />
+                <element signature="e#83612#83728#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delivery.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../briklaer/delivery.html">
+      <file leaf-file-name="stand.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../briklaer/stand.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.0" vertical-offset="1590" max-vertical-offset="4185">
-              <caret line="146" column="43" selection-start-line="146" selection-start-column="43" selection-end-line="146" selection-end-column="43" />
-              <folding />
+            <state vertical-scroll-proportion="-16.25" vertical-offset="1530" max-vertical-offset="4230">
+              <caret line="128" column="81" selection-start-line="128" selection-start-column="81" selection-end-line="128" selection-end-column="81" />
+              <folding>
+                <element signature="n#style#0;n#iframe#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -545,6 +584,8 @@
         <option value="$PROJECT_DIR$/../robokassa/app.less" />
         <option value="$PROJECT_DIR$/../briklaer/thanks.html" />
         <option value="$PROJECT_DIR$/../briklaer/delivery.html" />
+        <option value="$PROJECT_DIR$/../briklaer/contacts.html" />
+        <option value="$PROJECT_DIR$/../briklaer/stand.html" />
         <option value="$PROJECT_DIR$/../briklaer/less/custom.less" />
       </list>
     </option>
@@ -606,7 +647,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -639,26 +679,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="works" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tybys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="briklaer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -701,15 +724,15 @@
     <configuration default="true" type="AppEnginePhpConfigurationType" factoryName="App Engine for PHP" parameters="--enable-fastcgi">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-env-vars>false</pass-parent-env-vars>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -738,7 +761,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1102986" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15539305" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -791,23 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2961" max-vertical-offset="3855">
           <caret line="219" column="27" selection-start-line="219" selection-start-column="27" selection-end-line="219" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../robokassa/app.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6675">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../robokassa/slider.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2961" max-vertical-offset="3855">
-          <caret line="219" column="27" selection-start-line="219" selection-start-column="27" selection-end-line="219" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -823,7 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3855">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1104,7 +1109,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36241612" vertical-offset="2961" max-vertical-offset="3855">
           <caret line="219" column="27" selection-start-line="219" selection-start-column="27" selection-end-line="219" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1112,7 +1116,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="9315">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="615" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1120,24 +1123,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29988974" vertical-offset="403" max-vertical-offset="2730">
           <caret line="107" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
-          <folding>
-            <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../briklaer/delivery.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.0" vertical-offset="1590" max-vertical-offset="4185">
-          <caret line="146" column="43" selection-start-line="146" selection-start-column="43" selection-end-line="146" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.6615215" vertical-offset="1590" max-vertical-offset="4185">
+          <caret line="146" column="43" selection-start-line="0" selection-start-column="0" selection-end-line="273" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../briklaer/contacts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48657718" vertical-offset="1755" max-vertical-offset="4290">
+          <caret line="146" column="76" selection-start-line="0" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../briklaer/stand.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.25" vertical-offset="1530" max-vertical-offset="4230">
+          <caret line="128" column="81" selection-start-line="128" selection-start-column="81" selection-end-line="128" selection-end-column="81" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../briklaer/less/custom.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30540243" vertical-offset="653" max-vertical-offset="1665">
-          <caret line="2199" column="31" selection-start-line="2199" selection-start-column="31" selection-end-line="2199" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.45424476" vertical-offset="968" max-vertical-offset="2100">
+          <caret line="2379" column="22" selection-start-line="2379" selection-start-column="22" selection-end-line="2379" selection-end-column="22" />
           <folding>
             <element signature="e#145#149#0" expanded="false" />
             <element signature="e#159#163#0" expanded="false" />
@@ -1601,6 +1621,43 @@
             <element signature="e#78699#78795#0" expanded="false" />
             <element signature="e#78823#78963#0" expanded="false" />
             <element signature="e#78999#79133#0" expanded="false" />
+            <element signature="e#79196#79675#0" expanded="false" />
+            <element signature="e#79217#79669#0" expanded="false" />
+            <element signature="e#79401#79595#0" expanded="false" />
+            <element signature="e#79525#79581#0" expanded="false" />
+            <element signature="e#79610#79659#0" expanded="false" />
+            <element signature="e#79691#81214#0" expanded="false" />
+            <element signature="e#79712#79931#0" expanded="false" />
+            <element signature="e#79946#81208#0" expanded="false" />
+            <element signature="e#79993#81198#0" expanded="false" />
+            <element signature="e#80018#80632#0" expanded="false" />
+            <element signature="e#80116#80265#0" expanded="false" />
+            <element signature="e#80288#80614#0" expanded="false" />
+            <element signature="e#80367#80441#0" expanded="false" />
+            <element signature="e#80473#80592#0" expanded="false" />
+            <element signature="e#80657#81184#0" expanded="false" />
+            <element signature="e#80754#80903#0" expanded="false" />
+            <element signature="e#80926#81166#0" expanded="false" />
+            <element signature="e#81073#81144#0" expanded="false" />
+            <element signature="e#81230#83798#0" expanded="false" />
+            <element signature="e#81251#81286#0" expanded="false" />
+            <element signature="e#81298#81429#0" expanded="false" />
+            <element signature="e#81442#83792#0" expanded="false" />
+            <element signature="e#81463#82497#0" expanded="false" />
+            <element signature="e#81546#82407#0" expanded="false" />
+            <element signature="e#82045#82160#0" expanded="false" />
+            <element signature="e#82191#82259#0" expanded="false" />
+            <element signature="e#82285#82389#0" expanded="false" />
+            <element signature="e#82427#82483#0" expanded="false" />
+            <element signature="e#82518#83782#0" expanded="false" />
+            <element signature="e#82789#82845#0" expanded="false" />
+            <element signature="e#82866#83768#0" expanded="false" />
+            <element signature="e#83020#83130#0" expanded="false" />
+            <element signature="e#83166#83427#0" expanded="false" />
+            <element signature="e#83282#83405#0" expanded="false" />
+            <element signature="e#83451#83475#0" expanded="false" />
+            <element signature="e#83498#83750#0" expanded="false" />
+            <element signature="e#83612#83728#0" expanded="false" />
           </folding>
         </state>
       </provider>

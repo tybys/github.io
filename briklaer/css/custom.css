@@ -2029,3 +2029,164 @@ html body {
 .row.delivery table td.right p span:last-of-type {
   color: #bdb2ae;
 }
+.row.contacts .container {
+  padding: 0;
+}
+.row.contacts h4 {
+  font-size: 24px;
+  color: #9b8b85;
+  margin-top: 43px;
+  margin-bottom: 20px;
+}
+.row.contacts div.left {
+  float: left;
+  max-width: 312px;
+}
+.row.contacts div.left a {
+  background: white;
+  border: 1px solid #96a0a6;
+  border-radius: 5px;
+  display: block;
+  min-height: 68px;
+  font-size: 24px;
+  color: #36140a;
+  margin-bottom: 39px;
+  padding-left: 19px;
+  padding-top: 10px;
+  line-height: 26px;
+  min-width: 312px;
+}
+.row.contacts div.left a:hover {
+  text-decoration: none;
+  background: #fef8ee;
+}
+.row.contacts div.left a.clicked {
+  background: #fbebcf;
+}
+.row.contacts div.left a span {
+  display: block;
+  font-size: 14px;
+}
+.row.contacts div.left h5 {
+  font-size: 18px;
+}
+.row.contacts div.right {
+  background: white;
+  border: 1px solid #96a0a6;
+  border-radius: 5px;
+  width: calc(100% - 352px);
+  width: -webkit-calc(100% - 352px);
+  margin-left: 352px;
+}
+.row.contacts div.right h6 {
+  font-size: 18px;
+}
+.row.contacts div.right div {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+}
+.row.contacts div.right div:first-of-type {
+  padding-left: 32px;
+  padding-top: 20px;
+}
+.row.contacts div.right div:last-of-type {
+  padding: 19px;
+  margin-left: 10px;
+}
+.row.contacts div.right div:last-of-type #mapDiv {
+  border-radius: 15px;
+  background: white;
+}
+.row.contacts div.right div p {
+  color: #9b8b85;
+  font-size: 12px;
+}
+.row.contacts div.right div p strong {
+  color: #36140a;
+}
+.row.stend .container {
+  padding: 0;
+}
+.row.stend div .shortf {
+  float: left;
+  width: 325px;
+}
+.row.stend div.top {
+  padding-bottom: 5%;
+  width: 100%;
+}
+.row.stend div.top p {
+  width: 50%;
+}
+.row.stend div.top a {
+  background: white;
+  border: 1px solid #96a0a6;
+  border-right: none;
+  border-radius: 0 0 5px 5px;
+  display: block;
+  float: left;
+  width: 33.33333%;
+  min-height: 68px;
+  font-size: 24px;
+  color: #36140a;
+  margin-bottom: 39px;
+  padding-left: 19px;
+  padding-top: 10px;
+  line-height: 26px;
+}
+.row.stend div.top a:last-of-type {
+  border-right: 1px solid #96a0a6;
+}
+.row.stend div.top a:hover {
+  box-shadow: inset 2px 2px 0 #cec9c2;
+  text-decoration: none;
+  background: #fef8ee;
+}
+.row.stend div.top a.clicked {
+  box-shadow: inset 2px 2px 0 #ccbfa8;
+  background: #fbebcf;
+}
+.row.stend div.top a span {
+  display: block;
+  font-size: 14px;
+}
+.row.stend div.top h5 {
+  font-size: 18px;
+}
+.row.stend div.bottom {
+  margin-bottom: 72px;
+  background: white;
+  border: 1px solid #96a0a6;
+  border-radius: 5px;
+  width: calc(100% - 352px);
+  width: -webkit-calc(100% - 352px);
+  margin-left: 352px;
+}
+.row.stend div.bottom h6 {
+  font-size: 18px;
+}
+.row.stend div.bottom div {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+}
+.row.stend div.bottom div:first-of-type {
+  padding-left: 32px;
+  padding-top: 20px;
+}
+.row.stend div.bottom div:last-of-type {
+  padding: 19px;
+  margin-left: 10px;
+}
+.row.stend div.bottom div:last-of-type #mapDiv {
+  border-radius: 15px;
+  background: white;
+}
+.row.stend div.bottom div p {
+  color: #9b8b85;
+  font-size: 14px;
+}
+.row.stend div.bottom div p strong {
+  color: #36140a;
+}
