@@ -2190,3 +2190,82 @@ html body {
 .row.stend div.bottom div p strong {
   color: #36140a;
 }
+.row.akc h5 {
+  margin-top: 30px;
+  font-size: 24px;
+  color: #9b8b85;
+}
+.row.akc .container {
+  padding: 0;
+}
+.row.akc ul.bjqs {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: none;
+}
+.row.akc li.bjqs-slide {
+  position: absolute;
+  display: none;
+}
+.row.akc ul.bjqs-controls {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+}
+.row.akc ul.bjqs-controls.v-centered li a {
+  position: absolute;
+}
+.row.akc ul.bjqs-controls.v-centered li.bjqs-next a {
+  text-indent: -5000px;
+  right: 15px;
+  top: calc(50% - 41px);
+  top: -webkit-calc(50% - 41px);
+  transform: rotate(180deg);
+  background: url("../images/arr.png") no-repeat;
+  width: 47px;
+  height: 82px;
+  display: block;
+}
+.row.akc ul.bjqs-controls.v-centered li.bjqs-prev a {
+  text-indent: -5000px;
+  left: 15px;
+  top: calc(50% - 41px);
+  top: -webkit-calc(50% - 41px);
+  background: url("../images/arr.png") no-repeat;
+  width: 47px;
+  height: 82px;
+  display: block;
+}
+.row.akc ol.bjqs-markers {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.row.akc ol.bjqs-markers.h-centered {
+  text-align: center;
+}
+.row.akc ol.bjqs-markers li {
+  display: inline;
+}
+.row.akc ol.bjqs-markers li a {
+  display: inline-block;
+}
+.row.akc p.bjqs-caption {
+  display: block;
+  width: 96%;
+  margin: 0;
+  padding: 2%;
+  position: absolute;
+  bottom: 0;
+}
+.row.akc #my-slideshow img {
+  box-shadow: 2px 2px 0 black;
+  border-top: 1px solid #36140a;
+  border-bottom: 1px solid #36140a;
+  display: block;
+}
