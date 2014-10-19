@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>sdfsdf</title>
+	<title>ROBOKASSA</title>
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/ppa.css">
@@ -99,7 +99,7 @@
 					</a>
 					<a href="https://partner.robokassa.ru/Reg/Register?culture=ru" target="_blank">
 						<img src="img/reg.svg">
-						<span>Зарегистрировать<br/> 20 001 магазин</span>
+						<span>Зарегистрировать<br/> 30 001 магазин</span>
 					</a>
 				</div>
 				<div class="btn-slide next-slide hidden-md hidden-sm hidden-lg">
@@ -359,6 +359,10 @@
 			bgSizer();
 			$('#firstDiv').hide();
 			$('#secondDiv').removeAttr('style');
+
+			if ($(window).outerWidth() == 1893 && $(window).outerHeight() == 931) {
+				$(".first-absolute").css("top", 55 +"%")
+			}
 		});
 	});
 

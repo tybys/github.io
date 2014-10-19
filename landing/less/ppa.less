@@ -1,7 +1,7 @@
 html {
 	body {
 //		min-width: 1024px;
-		max-width: 1920px;
+//		max-width: 1920px;
 		color: inherit;
 		h2 {
 			font-family: "RobotoBlack";
@@ -49,7 +49,7 @@ html {
 	top: 0;
 	left: 0;
 	z-index: 999;
-	background: rgba(0,0,0,0.5);
+	background: rgba(255, 255, 255,0.5);
 }
 .circle{
 	border-radius: 50%;
@@ -505,6 +505,10 @@ a {
                 0%   { right: -20%; }
                 100% { right: 120%; }
             }
+			@keyframes moveclouds {
+				0%   { right: -20%; }
+				100% { right: 120%; }
+			}
 //            &:after {
 //                content: '';
 //                position: absolute;
@@ -530,6 +534,7 @@ a {
 
 		.after-logo {
 			width: 690px;
+			height: 690px;
             border-radius: 100%;
             box-shadow: 0 0 50px #c6d7e9;
 			position: relative;
@@ -550,6 +555,9 @@ a {
 		}
 		.h3-wrap {
 			margin-bottom: 23px;
+			.h3-wrap-wrap {
+				max-width: 650px;
+			}
 		}
 		.next-slide {
 			display: inline-block;
@@ -583,10 +591,6 @@ a {
 				margin-left: 16%;
 			}
 		}
-
-
-
-
 	}
 	&.last {
         ::selection {
@@ -604,6 +608,7 @@ a {
 			padding: 40px 0;
 			font-size: 20px;
 			color: black;
+			clear: both;
 		}
 		.logo {
             display: block;
@@ -615,7 +620,10 @@ a {
 			margin-bottom: 22px;
 		}
         .h3-wrap {
-            max-width: 59%;
+//            max-width: 59%;
+			.h3-wrap-wrap {
+				max-width: 650px;
+			}
         }
         .col-md-6 {
             margin-top: 160px;
@@ -813,9 +821,11 @@ a {
 	}
 	.row .first-absolute {
 		.after-logo {
-			max-width: 575px;
+			max-width: 535px;
 		}
 		left: 147px;
+		top: 65%;
+
 	}
 	.navbar-default {
 		.navbar-header {
@@ -1071,6 +1081,9 @@ a {
 					margin-top: 70px;
 					margin-left: ~"calc(16% + 65px)";
 					margin-left: ~"-webkit-calc(16% + 20px)";
+
+					width: 380px;
+					max-height: 100%;
 				}
 				h2 {
 					margin-left: ~"calc(16% + 65px)";
@@ -1127,7 +1140,6 @@ a {
 	}
 
 }
-
 @media only screen and (min-width: 1416px) and (max-width: 1576px) {
     .navbar {
         max-height: 80px;
@@ -1199,7 +1211,7 @@ a {
 
 		.third-absolute {
 			img {
-				margin-top: 25%;
+				margin-top: 215px;
 				margin-left: ~"calc(16% + 65px)";
 				margin-left: ~"-webkit-calc(16% + 5px)";
 			}
@@ -1238,7 +1250,6 @@ a {
 		}
     }
 }
-
 @media only screen and (min-width: 1256px) and (max-width: 1416px) {
 	.Netscape {
 		.third-absolute .btn-wrap {
@@ -1286,7 +1297,7 @@ a {
     .row {
         &.second {
 			.container-fluid {
-				background-position-y: 0%;
+				background-position-y: 20%;
 				background-size: 103%;
 			}
             .container {
@@ -1295,9 +1306,6 @@ a {
             .row.after-logo {
                 width: 575px;
                 height: 575px;
-
-
-
             }
 			.after-logo {
 				right: 60px;
@@ -1305,7 +1313,7 @@ a {
 
 			.third-absolute {
 				img {
-					margin-top: 70px;
+					margin-top: 140px;
 					margin-left: ~"calc(16% + 65px)";
 					margin-left: ~"-webkit-calc(16% + 20px)";
 				}
@@ -1343,7 +1351,7 @@ a {
 		}
 		&.last {
 			.to-top {
-				margin-top: 140px;
+				margin-top: 193px;
 			}
 		}
     }
@@ -1547,6 +1555,9 @@ a {
     }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+	.btn-slide {
+		display: none;
+	}
     html, body {
         min-width: 320px !important;
         #bg {
@@ -1740,6 +1751,10 @@ a {
 			.prev-slide {
 				background-size: 30%;
 			}
+			.h3-wrap {
+				position: relative !important;
+			}
+
             h3 {
                 position: static !important;
             }
@@ -1882,23 +1897,89 @@ a {
 	}
 
 }
-@media only screen and (min-width: 1876px) {
+@media only screen and (min-width: 2000px) and (max-width: 2560px) {
+	.navbar-default {
+		.navbar-brand {
+			img {
+				width: 342px !important;
+				height: 40px !improtant;
+			}
+		}
+		ul {
+			img {
+				width: 40px !important;
+				height: 40px !important;
+			}
+			a {
+				font-size: 25px !important;
+			}
+		}
+
+	}
 	.row {
+		h2 {
+			font-size: 50px;
+		}
+		.h3-wrap {
+			h3 {
+				font-size: 25px;
+			}
+		}
 		&.first {
+			.magazines {
+				span {
+					font-size: 25px;
+				}
+			}
 			.first-absolute {
+				.after-logo {
+					max-width: 535px;
+				}
+				// 56%;
 				top: 65%;
 				.next-slide {
-					margin-top: 73px;
+					margin-top: 103px;
+				}
+			}
+		}
+		&.second {
+			.container-fluid {
+				background-size: 103%;
+			}
+			.third-absolute {
+				img {
+					margin-top: 25%;
+				}
+				.btn-wrap {
+					margin-left: 21%;
 				}
 			}
 		}
 		&.last {
+			background-size: 100%;
+			.right {
+				& > div {
+					max-width: 765px !important;
+				}
+			}
+			.bottom-menu {
+				img {
+					width: 40px !important;
+					height: 40px !important;
+				}
+				a {
+					font-size: 25px !important;
+				}
+			}
 			.to-top {
 				span {
-					font-size: 20px;
+					font-size: 25px;
 					padding-left: 15px;
 				}
-				margin-top: 183px;
+				margin-top: 256px;
+			}
+			.copy {
+				font-size: 25px;
 			}
 		}
 		.btn-slide {
@@ -1928,6 +2009,9 @@ a {
 		h3 {
 			line-height: 26px;
 		}
+		.first.row .first-absolute .next-slide {
+			margin-top: 120px;
+		}
 		.third-absolute {
 			.h3-wrap-wrap {
 				max-width: 650px;
@@ -1940,11 +2024,39 @@ a {
 		}
 	}
 }
+@media only screen and (min-width: 1876px) and (max-width: 2000px) {
+	.to-top {
+		margin-top: 238px !important;
+	}
+	.btn-slide {
+		&.next-slide,
+		&.to-top {
+			vertical-align: middle;
+			img {
+				width: 60px;
+				height: 60px;
+
+				margin-top: 0 !important;
+			}
+		}
+		&.prev-slide {
+			vertical-align: middle;
+			img {
+				width: 40px;
+				height: 40px;
+				margin-bottom: 1.5%;
+
+				margin-top: 0 !important;
+			}
+		}
+	}
+}
 @media only screen and (min-width: 1576px) and (max-width: 1876px) {
 	.row {
 		&.first {
 			#bg {
-				top: -65px;
+//				top: -65px;
+				padding-bottom: 110px;
 			}
 			.first-absolute {
 				top: ~"calc(63% - 25px)";
@@ -1975,7 +2087,7 @@ a {
 					font-size: 17px;
 					padding-left: 15px;
 				}
-				margin-top: 183px;
+				margin-top: 171px;
 			}
 		}
 		.btn-slide {
@@ -2117,7 +2229,11 @@ a {
 		}
 		&.second {
 			.logo {
-				margin-top: 100px !important;
+				width: 530px;
+				height: 150px;
+				margin-left: ~"-webkit-calc(9% + 20px)" !important;
+				margin-left: ~"calc(9% + 20px)" !important;
+//				margin-top: 100px !important;
 			}
 			.third-absolute {
 				.btn-wrap {
@@ -2168,10 +2284,13 @@ a {
 					margin-top: 73px;
 				}
 			}
+			.after-logo {
+				width: 33.5vw !important;
+			}
 		}
 		&.second {
 			.btn-wrap {
-				margin-left: 25% !important;
+				margin-left: 19% !important;
 			}
 		}
 		&.last {
@@ -2180,8 +2299,11 @@ a {
 					font-size: 16px;
 					padding-left: 15px;
 				}
-				margin-top: 183px;
+				margin-top: 193px;
 			}
+		}
+		.h3-wrap-wrap {
+			max-width: 455px;
 		}
 		.btn-slide {
 			&.next-slide,
@@ -2209,7 +2331,12 @@ a {
 	.Netscape {
 		.row {
 			.h3-wrap-wrap {
-				max-width: 400px;
+				max-width: 500px;
+			}
+			&.second {
+				.btn-wrap {
+					margin-left: 25% !important;
+				}
 			}
 			&.last {
 				.bottom-menu {
@@ -2240,7 +2367,7 @@ a {
 					font-size: 16px;
 					padding-left: 15px;
 				}
-				margin-top: 183px;
+				margin-top: 122px;
 			}
 		}
 		.btn-slide {
@@ -2286,15 +2413,23 @@ a {
 		}
 		.row {
 			.h3-wrap-wrap {
-				max-width: 400px;
+				max-width: 500px;
 			}
 			&.second {
 				.third-absolute {
 					right: 0%;
 					width: 56%;
+					.btn-wrap {
+						margin-left: 23% !important;
+					}
 					.h3-wrap {
 						margin-left: ~"calc(14% + 65px)";
 						margin-left: ~"-webkit-calc(14% + 65px)";
+					}
+				}
+				.next-slide {
+					img {
+						margin-left: 0;
 					}
 				}
 			}
