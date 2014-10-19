@@ -2269,3 +2269,71 @@ html body {
   border-bottom: 1px solid #36140a;
   display: block;
 }
+.row.new .new-comp {
+  margin-top: 55px;
+}
+.row.new .new-comp ul {
+  padding: 0;
+  margin: 0;
+}
+.row.new .new-comp ul li {
+  list-style: none;
+  min-height: 44px;
+}
+.row.new .new-comp ul li:first-of-type span,
+.row.new .new-comp ul li:last-of-type span {
+  border: none;
+}
+.row.new .new-comp ul li:first-of-type span:first-of-type {
+  border-radius: 5px 0 0 0;
+}
+.row.new .new-comp ul li:first-of-type span:last-of-type {
+  border-radius: 0 5px 0 0;
+}
+.row.new .new-comp ul li:last-of-type span:first-of-type {
+  border-radius: 0 0 0 5px;
+}
+.row.new .new-comp ul li:last-of-type span:last-of-type {
+  border-radius: 0 0 5px 0;
+}
+.row.new .new-comp ul li span {
+  float: left;
+  width: 125px;
+  padding: 12px 20px 12px 14px;
+  background: #fdf5e6;
+  border-top: 1px solid #36140a;
+  border-bottom: 1px solid #36140a;
+}
+.row.new .new-comp ul li span:first-of-type {
+  width: 79px;
+  background: #fbebce;
+}
+.row.new .new-comp ul li span:last-of-type {
+  color: #9b8b85;
+}
+.row.new .new-comp div {
+  float: left;
+}
+.row.new .new-comp div:first-of-type {
+  width: 92px;
+  margin-right: 38px;
+}
+.row.new .new-comp div:last-of-type {
+  width: 205px;
+}
+.row.new .new-comp a {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  color: #38160c;
+  min-height: 41px;
+  line-height: 41px;
+  border-radius: 5px;
+  background: #fef8ee;
+  border: 1px solid #36140a;
+  margin-top: 26px;
+}
+.row.new .new-comp a:hover {
+  background: #fdeed1;
+  text-decoration: none;
+}

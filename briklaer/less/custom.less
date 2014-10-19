@@ -2469,4 +2469,85 @@ html {
             }
         }
     }
+    &.new {
+        .new-comp {
+            margin-top: 55px;
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    list-style: none;
+                    min-height: 44px;
+                    &:first-of-type,
+                    &:last-of-type {
+                        span {
+                            border: none;
+                        }
+                    }
+                    &:first-of-type {
+                        span {
+                            &:first-of-type {
+                                border-radius: 5px 0 0 0;
+                            }
+                            &:last-of-type {
+                                border-radius: 0 5px 0 0;
+                            }
+                        }
+                    }
+                    &:last-of-type {
+                        span {
+                            &:first-of-type {
+                                border-radius: 0 0 0 5px;
+                            }
+                            &:last-of-type {
+                                border-radius: 0 0 5px 0;
+                            }
+                        }
+                    }
+                    span {
+                        float: left;
+                        width: 125px;
+                        padding: 12px 20px 12px 14px;
+                        background: #fdf5e6;
+                        border-top: 1px solid @brown;
+                        border-bottom: 1px solid @brown;
+//                        border-radius: 5px;
+                        &:first-of-type {
+                            width: 79px;
+                            background: #fbebce;
+                        }
+                        &:last-of-type {
+                            color: #9b8b85;
+                        }
+                    }
+                }
+            }
+            div {
+                float: left;
+                &:first-of-type {
+                    width: 92px;
+                    margin-right: 38px;
+                }
+                &:last-of-type {
+                    width: 205px;
+                }
+            }
+            a {
+                display: block;
+                text-align: center;
+                font-size: 24px;
+                color: rgb(56, 22, 12);
+                min-height: 41px;
+                line-height: 41px;
+                border-radius: 5px;
+                background: #fef8ee;
+                border: 1px solid @brown;
+                margin-top: 26px;
+                &:hover {
+                    background: #fdeed1;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
