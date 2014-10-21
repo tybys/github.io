@@ -41,7 +41,7 @@
               <option name="cssDirectories">
                 <list>
                   <CssDirectory>
-                    <option name="path" value="$PROJECT_DIR$/../briklaer/css" />
+                    <option name="path" value="$PROJECT_DIR$/../naholste/css" />
                   </CssDirectory>
                 </list>
               </option>
@@ -64,6 +64,22 @@
               <option name="id" value="3" />
               <option name="lessDirPath" value="$PROJECT_DIR$/../robokassa" />
               <option name="name" value="slider" />
+            </LessProfile>
+          </value>
+        </entry>
+        <entry key="4">
+          <value>
+            <LessProfile>
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="$PROJECT_DIR$/../naholste/css" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="id" value="4" />
+              <option name="lessDirPath" value="$PROJECT_DIR$/../naholste" />
+              <option name="name" value="naholste" />
             </LessProfile>
           </value>
         </entry>

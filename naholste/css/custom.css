@@ -339,3 +339,13 @@
   border-width: 9px;
   margin-left: -9px;
 }
+.favorites .product-image {
+  box-shadow: 0 0 3px rgba(78, 78, 78, 0.3);
+  border-bottom: 1px solid #a7a7a7;
+  border-left: 1px solid #d8d5d5;
+  border-right: 1px solid #d8d5d5;
+  border-top: 1px solid #d8d5d5;
+}
+.favorites .send-form {
+  clear: both;
+}
