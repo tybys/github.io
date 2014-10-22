@@ -1,3 +1,13 @@
+.send-form {
+    input[type="button"] {
+        background-color: #57d769;
+        font-size: 30px;
+        font-family: "Open Sans";
+        font-weight: 100;
+        text-shadow: none;
+        padding: 20px 45px;
+    }
+}
 .box-faq {
 	.box-heading:first-of-type {
 		font-size:  24px;
@@ -389,8 +399,41 @@
         border-right: 1px solid rgb(216, 213, 213);
         border-top: 1px solid rgb(216, 213, 213);
     }
+    .product-image-holder {
+        display: inline-block;
+        position: relative;
+        &.delete {
+            &:after {
+                content: '';
+                width: 21px;
+                height: 21px;
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: url("../images/fav-close.png") no-repeat;
+            }
+        }
+    }
 
     .send-form {
         clear: both;
+        h4 {
+            margin-top: 28px;
+        }
+        hr {
+            opacity: 0.1    ;
+        }
+        form {
+            width: 495px;
+            margin: 0 auto;
+            text-align: center;
+
+            input[type="text"] {
+                width: 295px;
+                display: block;
+                margin: 14px auto 11px auto;
+            }
+        }
     }
 }
