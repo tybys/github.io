@@ -1,3 +1,27 @@
+header, nav, footer {
+    opacity: 0.02;
+}
+
+.not-valid {
+    input {
+        border-color: #e27979 !important;
+        color: #e03535;
+        &:focus {
+            outline-color: rgba(252, 192, 192, 0.09);
+        }
+    }
+    .simplecheckout-customer-right {
+        position: relative;
+    }
+    span.not-valid-text {
+        color: #e03535;
+        max-width: 117px;
+        position: absolute;
+        top: 25%;
+        left: ~"calc(100% - 289px + 137px)";
+    }
+}
+
 .send-form {
     input[type="button"] {
         background-color: #57d769;
@@ -436,4 +460,50 @@
             }
         }
     }
+}
+
+.order {
+    #simplecheckout_form {
+        tr.comment {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            td {
+                vertical-align: top;
+                &:first-of-type {
+                    padding-top: 3%;
+                }
+                hr {
+                    opacity: 0.1;
+                    width: 298px;
+                    margin-top: 0;
+                    margin-bottom: 12px;
+                    margin-left: 0;
+                }
+            }
+        }
+        tr.last {
+            td:last-of-type {
+                padding-bottom: 8px;
+            }
+        }
+
+        input {
+            width: 298px;
+        }
+        textarea {
+            width: 298px;
+            resize: none;
+            min-height: 57px;
+            max-height: 57px;
+        }
+
+        .order-info {
+            strong {
+                display: block;
+            }
+            float: left;
+            text-align: left;
+            width: 50%;
+        }
+    }
+
 }

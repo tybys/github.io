@@ -1,3 +1,25 @@
+header,
+nav,
+footer {
+  opacity: 0.02;
+}
+.not-valid input {
+  border-color: #e27979 !important;
+  color: #e03535;
+}
+.not-valid input:focus {
+  outline-color: rgba(252, 192, 192, 0.09);
+}
+.not-valid .simplecheckout-customer-right {
+  position: relative;
+}
+.not-valid span.not-valid-text {
+  color: #e03535;
+  max-width: 117px;
+  position: absolute;
+  top: 25%;
+  left: calc(100% - 289px + 137px);
+}
 .send-form input[type="button"] {
   background-color: #57d769;
   font-size: 30px;
@@ -386,4 +408,40 @@
   width: 295px;
   display: block;
   margin: 14px auto 11px auto;
+}
+.order #simplecheckout_form tr.comment {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.order #simplecheckout_form tr.comment td {
+  vertical-align: top;
+}
+.order #simplecheckout_form tr.comment td:first-of-type {
+  padding-top: 3%;
+}
+.order #simplecheckout_form tr.comment td hr {
+  opacity: 0.1;
+  width: 298px;
+  margin-top: 0;
+  margin-bottom: 12px;
+  margin-left: 0;
+}
+.order #simplecheckout_form tr.last td:last-of-type {
+  padding-bottom: 8px;
+}
+.order #simplecheckout_form input {
+  width: 298px;
+}
+.order #simplecheckout_form textarea {
+  width: 298px;
+  resize: none;
+  min-height: 57px;
+  max-height: 57px;
+}
+.order #simplecheckout_form .order-info {
+  float: left;
+  text-align: left;
+  width: 50%;
+}
+.order #simplecheckout_form .order-info strong {
+  display: block;
 }
