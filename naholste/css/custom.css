@@ -20,6 +20,51 @@ footer {
   top: 25%;
   left: calc(100% - 289px + 137px);
 }
+.order .cart-heading {
+  border-top: none;
+  color: #171717;
+}
+.order .cart-heading .cart-heading-title {
+  margin-left: 0;
+  font-family: "Open Sans";
+  font-weight: 600;
+  white-space: nowrap;
+}
+.order .cart-heading .text-right {
+  margin-right: 0;
+  float: right;
+}
+.order .accent-box {
+  background: #faf8ea;
+}
+.order .simplecheckout-block .order-cart-heading,
+.order .simplecheckout-block .order-cart-product-description,
+.order .simplecheckout-block .order-cart-product-description > a {
+  color: #171717 !important;
+}
+.order .simplecheckout-left-column {
+  width: 653px;
+}
+.order .simplecheckout-customer-left {
+  color: #171717;
+  font-size: 14px;
+}
+.order .order-info {
+  color: #171717;
+  font-size: 14px;
+}
+.order .simplecheckout-cart-total-value,
+.order .simplecheckout-total-title {
+  color: #000000 !important;
+}
+.order .total-buy-box .order-btn {
+  background-color: #57d769;
+  font-size: 30px;
+  font-family: "Open Sans";
+  font-weight: 100;
+  text-shadow: none;
+  line-height: 80px;
+}
 .send-form input[type="button"] {
   background-color: #57d769;
   font-size: 30px;
@@ -438,6 +483,7 @@ footer {
   max-height: 57px;
 }
 .order #simplecheckout_form .order-info {
+  padding-top: 21px;
   float: left;
   text-align: left;
   width: 50%;
