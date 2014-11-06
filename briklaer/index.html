@@ -135,98 +135,176 @@
 			<div class="right">
 				<div class="controls">
 					<span>Подобрать</span>
-					<div id="style" class="background parr">
-						<div class="name">Стиль</div>
-						<div class="value">
-							<select name="style" id="style">
-								<option></option>
-								<option value="hitech">хайтек</option>
-								<option value="hock">хоккайдо</option>
-								<option value="hockey">хоккей</option>
-								<option value="trash">трэш</option>
-							</select>
-						</div>
-					</div>
+					<!--<div id="style" class="background parr">-->
+						<!--<div class="name">Стиль</div>-->
+						<!--<div class="value">-->
+							<!--<select name="style" id="style">-->
+								<!--<option></option>-->
+								<!--<option value="hitech">хайтек</option>-->
+								<!--<option value="hock">хоккайдо</option>-->
+								<!--<option value="hockey">хоккей</option>-->
+								<!--<option value="trash">трэш</option>-->
+							<!--</select>-->
+						<!--</div>-->
+					<!--</div>-->
+                    <style>
+                        #size .value {
+                            display: block !important;
 
+
+                        }
+                        #size .value div {
+                            white-space: nowrap;
+                        }
+                        #size .value div input[type="checkbox"] {
+                            opacity: 0.2;
+                        }
+                        #size .value div:after {
+                            content: '';
+                            width: calc(100% - 24px);
+                            height: 1px;
+                            display: block;
+                            margin: 0 auto;
+                            background: #898989;
+                            position: absolute;
+                            top: 24px;
+                            left: 12px;
+                        }
+                        #size .value label {
+                            position: relative;
+                        }
+                        #size .value label span {
+                            display: block;
+                            font-size: 10px;
+                            color: #898989;
+                            font-family: FranklinGothicBookC;
+                            font-weight: normal;
+                        }
+                        #size .value label i {
+                            display: block;
+                            background: #898989;
+                            border-radius: 100%;
+                            width: 6px;
+                            height: 6px;
+                            margin: 4% auto 0 auto;
+                        }
+                    </style>
 					<div id="size" class="background">
 						<div class="name">Размер</div>
 						<div class="value">
-							<div class="layout-slider">
-					      		<span class="cont" style="display: inline-block; width: 116px; padding: 0 5px;">
-									<div id="sliderStep"></div>
-						      	</span>
-						    </div>
+                            <div>
+                                <label>
+                                    <input type="checkbox" value="" />
+                                    <i></i>
+                                    <span>40+</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" value="" />
+                                    <i></i>
+                                    <span>50+</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" value="" />
+                                    <i></i>
+                                    <span>60+</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" value="" />
+                                    <i></i>
+                                    <span>70+</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" value="" />
+                                    <i></i>
+                                    <span>80+</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" value="" />
+                                    <i></i>
+                                    <span>90+</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" value="" />
+                                    <i></i>
+                                    <span>100+</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" value="" />
+                                    <i></i>
+                                    <span>120+</span>
+                                </label>
+                            </div>
 						</div>
 					</div>
 
-					<div id="color" class="background">
-						<div class="name">Цвет</div>
-						<div class="value">
-							<ul>
-								<li data-color="first">
-									<img src="images/_first.png">
-								</li>
-								<li data-color="second">
-									<img src="images/_second.png">
-								</li>
-								<li data-color="third">
-									<img src="images/_third.png">
-								</li>
-								<li data-color="four">
-									<img src="images/_four.png">
-								</li>
-								<li data-color="fice">
-									<img src="images/_five.png">
-								</li>
-								<li data-color="six">
-									<img src="images/_six.png">
-								</li>
-								<li data-color="seven">
-									<img src="images/_seven.png">
-								</li>
-								<li data-color="eight">
-									<img src="images/_eight.png">
-								</li>
-							</ul>
-						</div>
-					</div>
+					<!--<div id="color" class="background">-->
+						<!--<div class="name">Цвет</div>-->
+						<!--<div class="value">-->
+							<!--<ul>-->
+								<!--<li data-color="first">-->
+									<!--<img src="images/_first.png">-->
+								<!--</li>-->
+								<!--<li data-color="second">-->
+									<!--<img src="images/_second.png">-->
+								<!--</li>-->
+								<!--<li data-color="third">-->
+									<!--<img src="images/_third.png">-->
+								<!--</li>-->
+								<!--<li data-color="four">-->
+									<!--<img src="images/_four.png">-->
+								<!--</li>-->
+								<!--<li data-color="fice">-->
+									<!--<img src="images/_five.png">-->
+								<!--</li>-->
+								<!--<li data-color="six">-->
+									<!--<img src="images/_six.png">-->
+								<!--</li>-->
+								<!--<li data-color="seven">-->
+									<!--<img src="images/_seven.png">-->
+								<!--</li>-->
+								<!--<li data-color="eight">-->
+									<!--<img src="images/_eight.png">-->
+								<!--</li>-->
+							<!--</ul>-->
+						<!--</div>-->
+					<!--</div>-->
 
-					<div id="price" class="background">
-						<div class="name">Цена</div>
-						<div class="value">
-							<div class="layout-slider">
-					      		<span class="cont" style="display: inline-block; width: 116px; padding: 0 5px; margin: 0 0 0 25px;">
-									<div id="slider"></div>
-						      	</span>
-						    </div>
-						</div>
-					</div>
+					<!--<div id="price" class="background">-->
+						<!--<div class="name">Цена</div>-->
+						<!--<div class="value">-->
+							<!--<div class="layout-slider">-->
+					      		<!--<span class="cont" style="display: inline-block; width: 116px; padding: 0 5px; margin: 0 0 0 25px;">-->
+									<!--<div id="slider"></div>-->
+						      	<!--</span>-->
+						    <!--</div>-->
+						<!--</div>-->
+					<!--</div>-->
 
-					<div id="collection" class="background parr">
-						<div class="name">Коллекция</div>
-						<div class="value">
-							<select name="specs" id="specs_">
-								<option></option>
-								<option value="chili">Чили</option>
-								<option value="bali">Бали</option>
-								<option value="chokaido">Хоккайдо</option>
-								<option value="tokyo">Токио</option>
-								<option value="cuba">Куба</option>
-								<option value="sittle">Сиэтл</option>
-								<option value="country">Кантри</option>
-								<option value="flo">Флоренция</option>
-								<option value="lau">Лаура</option>
-								<option value="barcelona">Барселона</option>
-								<option value="fidji">Фиджи</option>
-								<option value="seoul">Сеул</option>
-								<option value="hanna">Анна</option>
-								<option value="palmero">Палермо</option>
-								<option value="luchia">Лючия</option>
-								<option value="madrin">Мадрин</option>
-								<option value="katrin">Катрин</option>
-							</select>
-						</div>
-					</div>
+					<!--<div id="collection" class="background parr">-->
+						<!--<div class="name">Коллекция</div>-->
+						<!--<div class="value">-->
+							<!--<select name="specs" id="specs_">-->
+								<!--<option></option>-->
+								<!--<option value="chili">Чили</option>-->
+								<!--<option value="bali">Бали</option>-->
+								<!--<option value="chokaido">Хоккайдо</option>-->
+								<!--<option value="tokyo">Токио</option>-->
+								<!--<option value="cuba">Куба</option>-->
+								<!--<option value="sittle">Сиэтл</option>-->
+								<!--<option value="country">Кантри</option>-->
+								<!--<option value="flo">Флоренция</option>-->
+								<!--<option value="lau">Лаура</option>-->
+								<!--<option value="barcelona">Барселона</option>-->
+								<!--<option value="fidji">Фиджи</option>-->
+								<!--<option value="seoul">Сеул</option>-->
+								<!--<option value="hanna">Анна</option>-->
+								<!--<option value="palmero">Палермо</option>-->
+								<!--<option value="luchia">Лючия</option>-->
+								<!--<option value="madrin">Мадрин</option>-->
+								<!--<option value="katrin">Катрин</option>-->
+							<!--</select>-->
+						<!--</div>-->
+					<!--</div>-->
 
 					<div id="specs" class="background parr">
 						<div class="name">Конструкция</div>
