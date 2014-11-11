@@ -83,6 +83,22 @@
             </LessProfile>
           </value>
         </entry>
+        <entry key="5">
+          <value>
+            <LessProfile>
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="$PROJECT_DIR$/../estate/css" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="id" value="5" />
+              <option name="lessDirPath" value="$PROJECT_DIR$/../estate/less" />
+              <option name="name" value="estate" />
+            </LessProfile>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
