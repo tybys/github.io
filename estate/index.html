@@ -8,6 +8,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -23,167 +24,280 @@
     <div class="row head">
         <div class="container">
             <div class="menu">
-                <a href="#"></a>
+                <span></span>
+                
+                <a href="#" class="glyphicon glyphicon-home"></a>
                 <a href="#">Купить</a>
                 <a href="#">Снять</a>
                 <a href="#">Поиск</a>
             </div>
             <h1>Купить/снять любую недвижимость на самуи!</h1>
-            <p>единственная база риэлторов отсрова!<br/> Только актуальные предложения по аренде и продаже недвижимости на самуи.</p>
-
+            <p>Единственная БАЗА риэлторов острова!<br/> Только актуальные предложения по аренде и продаже недвижимости на самуи.</p>
             <div class="super-form">
-                <div>
-                    <label>
-                        снять
-                        <input type="checkbox">
-                    </label>
-                    <label>
-                        купить
-                        <input type="checkbox">
-                    </label>
-
-                    <select>
-                        <option>квартиру</option>
-                    </select>
-
-                    <input type="date" value="00.0.11">
-                </div>
-                <div>
-                    <div>
-                        <label>количество спален</label>
-                        <ul>
-                            <li>
-                                <input type="checkbox" />
-                            </li>
-                            <li>
-                                <input type="checkbox" />
-                            </li>
-                            <li>
-                                <input type="checkbox" />
-                            </li>
-                            <li>
-                                <input type="checkbox" />
-                            </li>
-                            <li>
-                                <input type="checkbox" />
-                            </li>
-                            <li>
-                                <input type="checkbox" />
-                            </li>
-                        </ul>
-                        <label>количество ванных</label>
-                        <ul>
-                            <li>
-                                <input type="checkbox" />
-                            </li>
-                            <li>
-                                <input type="checkbox" />
-                            </li>
-                            <li>
-                                <input type="checkbox" />
-                            </li>
-                            <li>
-                                <input type="checkbox" />
-                            </li>
-                            <li>
-                                <input type="checkbox" />
-                            </li>
-                            <li>
-                                <input type="checkbox" />
-                            </li>
-                        </ul>
+                <h2>Узнайте стоимость того, что вы ищете!</h2>
+                <div class="controls one-step-date">
+                    <div class="col-md-4">
+                        <a href="#" class="btn btn-success">Купить</a>
                     </div>
-                    <div>
-                        <ul>
-                            <li>
-                                <label>
-                                    <input type="checkbox">
-                                    Бассейн общий
-                                </label>
-                            </li>
-                            <li>
-                                <label>
-                                    <input type="checkbox">
-                                    Бассейн, частный
-                                </label>
-                            </li>
-                            <li>
-                                <label>
-                                    <input type="checkbox">
-                                    Стиральная машина
-                                </label>
-                            </li>
-                            <li>
-                                <label>
-                                    <input type="checkbox">
-                                    Духовка
-                                </label>
-                            </li>
-                            <li>
-                                <label>
-                                    <input type="checkbox">
-                                    Газовая плита
-                                </label>
-                            </li>
-
-                            <li>
-                                <label>
-                                    <input type="checkbox">
-                                    Спорт зал
-                                </label>
-                            </li>
-                            <li>
-                                <label>
-                                    <input type="checkbox">
-                                    Свежие фото
-                                </label>
-                            </li>
-                            <li>
-                                <label>
-                                    <input type="checkbox">
-                                    Отдельная гостинная
-                                </label>
-                            </li>
-                            <li>
-                                <label>
-                                    <input type="checkbox">
-                                    Кондиционер (спальня)
-                                </label>
-                            </li>
-                            <li>
-                                <label>
-                                    <input type="checkbox">
-                                    Кондиционер (везде)
-                                </label>
-                            </li>
-                        </ul>
-                        <button class="btn btn-info">Отправить заявку всем агентам</button>
+                    <div class="col-md-4">
+                        <span>или</span>
+                    </div>
+                    <div class="col-md-4 last">
+                        <a href="#" class="btn btn-success">Снять</a>
+                    </div>
+                    
+                    <div class="calendars" id="datepicker"></div>
+                    
+                    <div style="clear: both;"></div>
+                </div>
+                
+                <div class="controls one-step-home">
+                    <div class="col-md-4">
+                        <a href="#" class="btn btn-success">Купить</a>
+                    </div>
+                    <div class="col-md-4">
+                        <span>или</span>
+                    </div>
+                    <div class="col-md-4 last">
+                        <a href="#" class="btn btn-success">Снять</a>
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <a href="#" class="btn btn-success">Выбрать даты</a>
+                    </div>
+                    
+                    <div style="clear: both;"></div>
+                </div>
+                
+                <div class="controls two-step-place">
+                    <div class="inner">
+                        <div class="col-md-3">
+                            <label class="main">
+                                юг
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                Tailing Ngam
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                Na Mueang
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                Maret
+                                <input type="checkbox">
+                            </label>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="main">
+                                север
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                Ban Rak
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                Bo Phut
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                Maenam
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                Bang Po
+                                <input type="checkbox">
+                            </label>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="main">
+                                запад
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                Lamai
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                               Chaveng
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                Chong Mon
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                Play Laem
+                                <input type="checkbox">
+                            </label>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="main checked">
+                                восток
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                Naton
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                               Lipa Noi
+                                <input type="checkbox">
+                            </label>
+                        </div>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+                
+                <div class="controls three-step-type">
+                    <div class="inner">
+                        <div class="col-md-3">
+                            <label class="checked main">
+                                condo
+                                <input type="checkbox">
+                            </label>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="cheched main">
+                                house
+                                <input type="checkbox">
+                            </label>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="cheched main">
+                                townhous
+                                <input type="checkbox">
+                            </label>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="cheched main">
+                                land
+                                <input type="checkbox">
+                            </label>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <p>если вы не знаете наверняка, что именно вы ищите - рекомендуется оставить включенными все варианты</p>
+                        </div>
+                        
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+                
+                <div class="four-step-filter">
+                    <h3>обязательные параметры</h3>
+                    <div class="col-md-6">
+                        <div class="inner">
+                            <h4>Количество спален</h4>
+                            <label>
+                                1+
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                2+
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                3+
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                4+
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                5+
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                6+
+                                <input type="checkbox">
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="inner">
+                            <h4>Количество ванных</h4>
+                            <label>
+                                1+
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                2+
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                3+
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                4+
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                5+
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                6+
+                                <input type="checkbox">
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <h3>необязательные параметры</h3>
+                        <div class="col-md-4">1</div>
+                        <div class="col-md-4">2</div>
+                        <div class="col-md-4">3</div>
+                    </div>
+                    
+                    <div style="clear: both;"></div>
+                </div>
+                    
+                <div class="step-by-step">
+                    <ul>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                    <p>Шаг 0 из 0</p>
+                    <div class="buttons">
+                        <a href="#" class="btn btn-default">Назад</a>
+                        <a href="#" class="btn btn-info">Дальше</a>
                     </div>
                 </div>
+                
             </div>
+            <p>Вам нужно оставить одну заявку на этом сайте, и все, у кого есть подходящие предложения, вышлют Вам<br/>информацию: описание, стоимость, фотографии.<br/>Мы рекомендуем пообщаться с каждым из откликнувшихся.</p>
         </div>
     </div>
     <div class="row about">
         <div class="container">
             <h2>Риэлтор КОН SAMUI — кто они? </h2>
             <p>вы можете попробовать самостятельно выбрать себе недвижимость, пользуясь сайтами агенств.</p>
-            <ul>
-                <li>
+            
+                <div class="col-md-4">
                     <img src="images/sdf.jpg" width="100px" height="100px"/>
                     <h3>Доступность жилья</h3>
-                    <p>Доступно ли жильне в нужный Вам период<br/> времени, нужно уточнять у каждого хозяина.</p>
-                </li>
-                <li>
+                    <p>Доступно ли жилья в нужный Вам период<br/> времени, нужно уточнять у каждого хозяина.</p>
+                </div>
+                <div class="col-md-4">
                     <img src="images/sdf.jpg" width="100px" height="100px"/>
                     <h3>Старые фотографии</h3>
                     <p>Фотографии делаются либо сразу после<br/> постройки, либо при внесении объекта в<br/>базу, т.е они могут быть и 5-ти летней<br/>давности!</p>
-                </li>
-                <li>
+                </div>
+                <div class="col-md-4">
                     <img src="images/sdf.jpg" width="100px" height="100px"/>
                     <h3>Изменение цен</h3>
                     <p>Цены меняются в зависимости от:<br/>сезонов, настроении хозяев, накруток<br/>агентов.</p>
-                </li>
-            </ul>
+                </div>
+            
 
             <table>
                 <tr>
@@ -204,6 +318,15 @@
             <hr/>
             <p>В нашей базе содержаться контакты всех, кто так или иначе занимается подбором недвижимости на Самуи. Вы<br/>сами решаете, с кем из них Вам иметь дело. Здесь Вы получите, гарантировано лучшие цены, только актуальные<br/>предложения и удобство выбора.</p>
             <button class="btn btn-info">Отправить заявку</button>
+            
+            <h4>Гарантия лучшей цены</h4>
+            <p>Единственная гарантия лучшей цены — это честная и прозрачная конкуреция! каждый<br/>агент, получивший вашу заявку, будет понимать, что и все его конкуренты тоже<br/>получиши эту заявку!</p>
+            
+            <div class="hint">
+                <p>Во-первых, это избавит вас от общения с незаинтересованными в вас<br/>людьми (например, ваш бюджет слишком низок для данного агенства, и<br/>они не хотят тратить на вас время за ту комиссию, котору они<br/>получат)</p>
+            </div>
+            <hr/>
+            <p>Используя этот сайт, вы получите как все уникальные предложения всех<br/>агентов из первых рук, так и все неуникальные предложения, но по разным ценам и, возможно, с разными фотографиями.</p>
         </div>
     </div>
     <div class="row how-it-works">
@@ -223,11 +346,11 @@
             <div class="center">
                 <img src="images/;slkdfj.jpg" width="350px" height="350px"/>
             </div>
-            <div class="right-top">
+            <!--div class="right-top">
                 <strong>30%</strong>
                 <h3>Другие предложения</h3>
                 <p>Хозяева едвижимости передали свои объекты в управление одному риэлтору и заключили с ним договор об экслюзивном сотрудничестве (объект в управлении агенства)</p>
-            </div>
+            </div-->
             <div class="right-bottom">
                 <h3>Бонус</h3>
                 <p>Мы дарим Вам подробную инструкцию по выбору недвижимости на Самуи!<br/><a href="#">Скачать инструкции (PDF)</a></p>
@@ -280,5 +403,16 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <!--<script src="js/bootstrap.min.js"></script>-->
+    <script src="js/jquery-ui.min.js"></script>
+    <script>
+        $(function() {
+            $( "#datepicker" ).datepicker({
+              numberOfMonths: 3,
+              showButtonPanel: true,
+                show: true
+            });
+            $("#datepicker").datepicker($.datepicker.regional[ "ru" ]);
+          });
+    </script>
 </body>
 </html>
