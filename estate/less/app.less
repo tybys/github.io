@@ -13,6 +13,37 @@ body {
 //147 controls
 //217 date
 
+.custom-hr {
+    background: url("../images/icons/cross.jpg") no-repeat center;
+    height: 15px;
+    border: none;
+    position: relative;
+    width: 411px;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: ~"calc(49% - 16px)";
+        width: ~"-webkit-calc(49% - 16px)";
+        height: 1px;
+        box-shadow: 0 -1px 0 #ececec;
+        background: #bcbcbc;
+        top: 50%;
+        right: 0;
+    }
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: ~"calc(49% - 16px)";
+        width: ~"-webkit-calc(49% - 16px)";
+        height: 1px;
+        box-shadow: 0 -1px 0 #ececec;
+        background: #bcbcbc;
+        top: 50%;
+        left: 0;
+    }
+}
 
 .social {
     display: block;
@@ -667,6 +698,145 @@ body {
             .hClass(@index - 1);
         }
         .hClass(6);
+        h2, h3 {
+            color: black;
+            text-align: center;
+        }
         // end defaults
+        
+        .btn-info {
+            display: inherit;
+            margin: 0 auto;
+        }
+        h2 {
+            font-family: "Segoe UI";
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        h3 {
+            font-family: "Segoe UI";
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        h4 {
+            font-family: "Segoe UI";
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        h3 ~ p {
+            font-family: "Open Sans";
+            font-size: 12px;
+            font-weight: 100;
+            color: #6f6f6f;
+        }
+        h3 ~ p ~ span {
+            font-family: "Open Sans";
+            font-size: 10px;
+            font-weight: 100;
+            color: #6f6f6f;
+            text-transform: uppercase;
+            border: 1px solid #ececec;
+            border-radius: 4px;
+            display: block;
+            
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: ~"calc(100% - 10%)";
+            width: ~"-webkit-calc(100% - 10%)";
+            padding: 0 10px;
+        }
+        h2 ~ p {
+            font-family: "Segoe UI";
+            font-size: 10px;
+            font-weight: 300;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .col-md-4 {
+            text-align: center;
+            height: 251px;
+            //background: gray;
+            position: relative;
+            margin-bottom: 30px;
+        }
+        div.table {
+            border-radius: 5px;
+            width: auto;
+            display: inline-block;
+            margin: 0 auto;
+            border-radius: 5px;
+            border: 1px solid #ececec;
+            text-align: left;
+        }
+        table {
+            width: 411px;
+            margin: 0 auto;
+            td {
+                a {
+                    display: block;
+                    font-family: "Segoe UI";
+                    font-size: 10px;
+                    font-weight: 100;
+                    font-style: italic;
+                    color: #bcbcbc;
+                    text-indent: 32px;
+                    &:first-of-type {
+                        padding-top: 10px;
+                    }
+                    &:last-of-type {
+                        padding-bottom: 10px;
+                    }
+                    &:hover {
+                        color: #075585;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .garant-price ~ p {
+            font-family: "Segoe UI";
+            font-size: 10px;
+            font-weight: 400;
+            color: black;
+        }
+        
+        .hint {
+            width: 451px;
+            height: 98px;
+            .arrow_box {
+                position: relative;
+                background: #ffffff;
+                border: 4px solid #afb0af;
+            }
+            .arrow_box:after, .arrow_box:before {
+                right: 100%;
+                top: 50%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+            }
+
+            .arrow_box:after {
+                border-color: rgba(255, 255, 255, 0);
+                border-right-color: #ffffff;
+                border-width: 30px;
+                margin-top: -30px;
+            }
+            .arrow_box:before {
+                border-color: rgba(175, 176, 175, 0);
+                border-right-color: #afb0af;
+                border-width: 36px;
+                margin-top: -36px;
+            }
+        }
+        
     }
 }
