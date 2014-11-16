@@ -808,10 +808,94 @@ body {
         .hint {
             width: 451px;
             height: 98px;
+            margin: 0 auto;
+            position: relative;
+            .ball-left {
+                width: 149px;
+                height: 149px;
+                border-radius: 100%;
+                border: 3px solid black;
+                position: absolute;
+                left: -169px;
+                top: -20px;
+                
+                &:after {
+                        content: '';
+                        width: 137px;
+                        height: 137px;
+                        border-radius: 100%;
+                        background: #ffffff url("../images/icons/black-humans.png") no-repeat center;
+                        position: absolute;
+                        top: 3px;
+                        left: 3px;
+                    }
+                
+                &.active {
+                    &:after {
+                        content: '';
+                        width: 137px;
+                        height: 137px;
+                        border-radius: 100%;
+                        background: #266da4 url("../images/icons/white-humans.png") no-repeat center;
+                        position: absolute;
+                        top: 3px;
+                        left: 3px;
+                    }
+                }
+            }
+            .ball-right {
+                width: 149px;
+                height: 149px;
+                border-radius: 100%;
+                border: 3px solid black;
+                position: absolute;
+                //right: ~"calc(-50% - 141px)";
+                right: -169px;
+                top: -20px;
+
+                &:after {
+                    content: '';
+                    width: 137px;
+                    height: 137px;
+                    border-radius: 100%;
+                    background: #ffffff url("../images/icons/black-peoples.png") no-repeat center;
+                    position: absolute;
+                    top: 3px;
+                    left: 3px;
+                }
+
+                &.active {
+                    &:after {
+                        content: '';
+                        width: 137px;
+                        height: 137px;
+                        border-radius: 100%;
+                        background: #266da4 url("../images/icons/white-peoples.png") no-repeat center;
+                        position: absolute;
+                        top: 3px;
+                        left: 3px;
+                    }
+                }
+            }
+            p {
+                font-family: "Open Sans";
+                font-size: 12px;
+                font-weight: 100;
+                color: #6f6f6f;
+                margin-bottom: 0;
+                padding: 12.5px 6px;
+                text-align: center;
+                &.last {
+                    font-family: "Open Sans";
+                    font-size: 12px;
+                    color: #6f6f6f;
+                    text-align: center;
+                }
+            }
             .arrow_box {
                 position: relative;
                 background: #ffffff;
-                border: 4px solid #afb0af;
+                border: 1px solid #afb0af;
             }
             .arrow_box:after, .arrow_box:before {
                 right: 100%;
@@ -827,14 +911,14 @@ body {
             .arrow_box:after {
                 border-color: rgba(255, 255, 255, 0);
                 border-right-color: #ffffff;
-                border-width: 30px;
-                margin-top: -30px;
+                border-width: 10px;
+                margin-top: -10px;
             }
             .arrow_box:before {
                 border-color: rgba(175, 176, 175, 0);
                 border-right-color: #afb0af;
-                border-width: 36px;
-                margin-top: -36px;
+                border-width: 11px;
+                margin-top: -11px;
             }
         }
         
