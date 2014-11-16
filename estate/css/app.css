@@ -856,3 +856,80 @@ body {
   border-width: 11px;
   margin-top: -11px;
 }
+.row.how-it-works {
+  background: #f1f0f0;
+}
+.row.how-it-works .btn-info {
+  display: inherit;
+  margin: 0 auto;
+}
+.row.how-it-works .container {
+  background: url("../images/icons/diagramm.png") no-repeat center 25%;
+  position: relative;
+  min-height: 560px;
+}
+.row.how-it-works h2 {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.row.how-it-works h3 {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.row.how-it-works h3 ~ p {
+  font-family: "Open Sans";
+  font-size: 12px;
+  color: #6f6f6f;
+}
+.row.how-it-works strong {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  display: block;
+}
+.row.how-it-works strong span {
+  position: absolute;
+  top: -78px;
+  right: -45px;
+}
+.row.how-it-works .left-top,
+.row.how-it-works .left-bottom,
+.row.how-it-works .right-bottom {
+  max-width: 306px;
+  position: relative;
+  text-align: right;
+}
+.row.how-it-works .left-top h3,
+.row.how-it-works .left-bottom h3,
+.row.how-it-works .right-bottom h3 {
+  text-align: right;
+}
+.row.how-it-works .right-bottom {
+  position: absolute;
+  right: 5%;
+  top: 30%;
+  text-align: left;
+}
+.row.how-it-works .right-bottom h3 {
+  text-align: left;
+}
+.row.how-it-works .wrap {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.row.how-it-works .wrap p {
+  font-family: "Open Sans";
+  font-size: 12px;
+  color: #6f6f6f;
+  text-align: center;
+}
