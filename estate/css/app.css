@@ -80,6 +80,11 @@ body {
 .col-md-12 a {
   width: 217px;
 }
+.send-one,
+.send-two {
+  padding: 12px;
+  width: 255px;
+}
 .btn-success {
   width: 147px;
   color: #c3c3c2;
@@ -701,10 +706,6 @@ body {
 .row.about p.before-button {
   margin-bottom: 24px;
 }
-.row.about .send-one {
-  padding: 12px;
-  width: 255px;
-}
 .row.about h2 ~ p {
   font-size: 10px;
   font-weight: 300;
@@ -871,10 +872,10 @@ body {
 }
 .row.how-it-works .btn-info {
   display: inherit;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
 }
 .row.how-it-works .container {
-  background: url("../images/icons/diagramm.png") no-repeat center 25%;
+  background: url("../images/icons/diagramm.png") no-repeat center 31%;
   position: relative;
   min-height: 560px;
 }
@@ -883,6 +884,7 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 33px;
 }
 .row.how-it-works h3 {
   font-weight: 600;
@@ -907,11 +909,20 @@ body {
   top: -78px;
   right: -45px;
 }
+.row.how-it-works .left-top {
+  position: absolute;
+  top: 86px;
+  left: 56px;
+}
+.row.how-it-works .left-bottom {
+  bottom: 24%;
+  position: absolute;
+  left: 55px;
+}
 .row.how-it-works .left-top,
 .row.how-it-works .left-bottom,
 .row.how-it-works .right-bottom {
   max-width: 306px;
-  position: relative;
   text-align: right;
 }
 .row.how-it-works .left-top h3,
@@ -921,8 +932,8 @@ body {
 }
 .row.how-it-works .right-bottom {
   position: absolute;
-  right: 5%;
-  top: 30%;
+  right: 7%;
+  top: 28%;
   text-align: left;
 }
 .row.how-it-works .right-bottom h3 {
@@ -930,7 +941,7 @@ body {
 }
 .row.how-it-works .wrap {
   position: absolute;
-  bottom: 0;
+  bottom: 34px;
   width: 100%;
 }
 .row.how-it-works .wrap p {
