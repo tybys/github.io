@@ -6,7 +6,10 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 .container {
-    width: 1024px;
+//    width: ~"calc(1024px + 60px)";
+//    width: ~"-webkit-calc(1024px + 60px)";
+    width: 1054px;
+    background: rgba(0, 0, 0, 0.15);
 }
 //164 next prev
 //147 controls
@@ -686,38 +689,65 @@ body {
             font-size: 18px;
             font-weight: 600;
             text-transform: uppercase;
+            margin-top: 27px;
+            margin-bottom: 17px;
         }
         h3 {
             font-size: 14px;
             font-weight: 600;
             text-transform: uppercase;
+            margin-top: 28px;
         }
         h4 {
             font-size: 18px;
             font-weight: 600;
             text-transform: uppercase;
             text-align: center;
+            margin-top: 49px;
+            margin-bottom: 32px;
+            color: black;
         }
         h3 ~ p {
             font-size: 12px;
             font-weight: 100;
             color: #6f6f6f;
+            min-height: 51px;
+            line-height: 15px;
+            margin-bottom: 3px;
         }
         h3 ~ p ~ span {
-            font-size: 10px;
+            //font-size: 10px;
+            font-size: 9.5px;
             font-weight: 100;
             color: #6f6f6f;
             text-transform: uppercase;
             border: 1px solid #ececec;
             border-radius: 4px;
+            margin: 0 auto;
             display: block;
+            max-width: 270px;
 
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: ~"calc(100% - 10%)";
-            width: ~"-webkit-calc(100% - 10%)";
-            padding: 0 10px;
+//            position: absolute;
+//            bottom: 0;
+//            left: 0;
+//            width: ~"calc(100% - 10%)";
+//            width: ~"-webkit-calc(100% - 10%)";
+            padding: 0 8px;
+        }
+        hr.after-table {
+            margin-top: 0;
+            margin-bottom: 17px;
+        }
+        hr.after-hint {
+            margin-top: 0;
+            margin-bottom: 43px;
+        }
+        p.before-button {
+            margin-bottom: 24px;
+        }
+        .send-one {
+            padding: 12px;
+            width: 255px;
         }
         h2 ~ p {
             font-size: 10px;
@@ -730,7 +760,23 @@ body {
             height: 251px;
             //background: gray;
             position: relative;
+            margin-top: 10px;
             margin-bottom: 30px;
+            &:first-of-type {
+                padding-left: 0;
+//                padding-right: 9%;
+                padding-right: 8%;
+            }
+            &.last {
+
+                padding-left: 8%;
+                padding-right: 0;
+//                span {
+//                    left: 9%;
+//                }
+//                padding-right: 0;
+//                padding-left: 9%;
+            }
         }
         div.table {
             border-radius: 5px;
@@ -774,7 +820,7 @@ body {
         .hint {
             width: 451px;
             height: 98px;
-            margin: 0 auto;
+            margin: 3.5% auto 0 auto;
             position: relative;
             .ball-left {
                 width: 149px;

@@ -5,7 +5,8 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 .container {
-  width: 1024px;
+  width: 1054px;
+  background: rgba(0, 0, 0, 0.15);
 }
 .custom-hr {
   background: url("../images/icons/cross.jpg") no-repeat center;
@@ -651,37 +652,58 @@ body {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
+  margin-top: 27px;
+  margin-bottom: 17px;
 }
 .row.about h3 {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
+  margin-top: 28px;
 }
 .row.about h4 {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 49px;
+  margin-bottom: 32px;
+  color: black;
 }
 .row.about h3 ~ p {
   font-size: 12px;
   font-weight: 100;
   color: #6f6f6f;
+  min-height: 51px;
+  line-height: 15px;
+  margin-bottom: 3px;
 }
 .row.about h3 ~ p ~ span {
-  font-size: 10px;
+  font-size: 9.5px;
   font-weight: 100;
   color: #6f6f6f;
   text-transform: uppercase;
   border: 1px solid #ececec;
   border-radius: 4px;
+  margin: 0 auto;
   display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: calc(100% - 10%);
-  width: -webkit-calc(100% - 10%);
-  padding: 0 10px;
+  max-width: 270px;
+  padding: 0 8px;
+}
+.row.about hr.after-table {
+  margin-top: 0;
+  margin-bottom: 17px;
+}
+.row.about hr.after-hint {
+  margin-top: 0;
+  margin-bottom: 43px;
+}
+.row.about p.before-button {
+  margin-bottom: 24px;
+}
+.row.about .send-one {
+  padding: 12px;
+  width: 255px;
 }
 .row.about h2 ~ p {
   font-size: 10px;
@@ -693,7 +715,16 @@ body {
   text-align: center;
   height: 251px;
   position: relative;
+  margin-top: 10px;
   margin-bottom: 30px;
+}
+.row.about .col-md-4:first-of-type {
+  padding-left: 0;
+  padding-right: 8%;
+}
+.row.about .col-md-4.last {
+  padding-left: 8%;
+  padding-right: 0;
 }
 .row.about div.table {
   width: auto;
@@ -733,7 +764,7 @@ body {
 .row.about .hint {
   width: 451px;
   height: 98px;
-  margin: 0 auto;
+  margin: 3.5% auto 0 auto;
   position: relative;
 }
 .row.about .hint .ball-left {
