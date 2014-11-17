@@ -51,6 +51,22 @@
             </LessProfile>
           </value>
         </entry>
+        <entry key="12">
+          <value>
+            <LessProfile>
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="D:\src\github\tybys\estate\css" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="id" value="12" />
+              <option name="lessDirPath" value="D:\src\github\tybys\estate\less" />
+              <option name="name" value="estate" />
+            </LessProfile>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

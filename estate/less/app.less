@@ -1,8 +1,9 @@
 // out: ../../estate/css/app.css, strictMath: true
+@import "../css/fonts.css";
 body {
     color: inherit;
     background: inherit;
-    
+	font-family: 'Open Sans', sans-serif;
 }
 .container {
     width: 1024px;
@@ -82,7 +83,6 @@ body {
     color: #c3c3c2;
     background-color: #ffffff;
     border-color: #b1b1b1;
-    font-family: 'TornadoC';
     font-size: 12px;
     text-transform: uppercase;
     &:hover {
@@ -101,7 +101,6 @@ body {
 } // btn default
 .btn-info {
     background: #266da4;
-    font-family: 'TornadoC';
     font-size: 12px;
     text-transform: uppercase;
     border: 1px solid transparent;
@@ -120,16 +119,15 @@ body {
         float: left;
     }
     a {
-        font-family: 'Segoe UI';
         font-size: 10px;
         text-transform: uppercase;
-        
+
         //&:first-of-type,
         &:last-of-type {
             &:after {
                 display: none;
             }
-        }        
+        }
         &:after {
             position: relative;
             top: -1px;
@@ -144,17 +142,16 @@ body {
         // Defaults
         a:not(.btn), p, h1, h2, span {
             color: white;
-        } // end defaults           
-        
+        } // end defaults
+
         min-height: 695px;
         background: url("../images/head-background.jpg") no-repeat center;
         background-size: cover;
         h1, h1 ~ p, h2 {
             text-align: center
         }
-        
+
         h1 {
-            font-family: 'Helvetica Neue';
             font-size: 24px;
             line-height: 14px;
             font-weight: 100;
@@ -163,26 +160,24 @@ body {
             margin-bottom: 26px;
         }
         h1 ~ p {
-            font-family: 'Open Sans';
             font-size: 14px;
         }
-        
+
         .super-form {
             background: rgba(255, 255, 255, 0.25);
             border-radius: 5px;
             padding-bottom: 6px;
             h2 {
-                font-family: 'Segoe UI';
                 font-size: 14px;
                 font-weight: 600;
                 text-transform: uppercase;
                 padding: 23px 0 63px 0;
             }
         }
-        
+
         .controls {
             &.one-step-date {
-                .col-md-4 {                
+                .col-md-4 {
                     text-align: center;
                     margin-bottom: 36px;
                     span {
@@ -195,7 +190,7 @@ body {
                         text-align: right;
                     }
                 }
-                
+
                 //
                 .calendars {
                     .ui-datepicker-inline {
@@ -230,7 +225,6 @@ body {
                         .ui-datepicker-title {
                             margin-top: 10px;
                             span {
-                                font-family: 'Segoe UI';
                                 font-weight: bold;
                                 font-size: 15px;
                                 text-transform: uppercase;
@@ -246,7 +240,6 @@ body {
                                 padding-bottom: 3px;
                                 span {
 
-                                    font-family: 'Segoe UI';
                                     font-weight: bold;
                                     font-size: 9.5px;
                                     color: #a1bc7e;
@@ -257,7 +250,6 @@ body {
                             td {
                                 a {
                                     &.ui-state-default {
-                                        font-family: 'Segoe UI';
                                         font-weight: bold;
                                         font-size: 11px;
                                         color: #4f5348;
@@ -268,9 +260,9 @@ body {
                         }
                     }
                 }
-            }    
+            }
             &.one-step-home {
-                .col-md-4 {                
+                .col-md-4 {
                     text-align: center;
                     margin-bottom: 36px;
                     span {
@@ -298,18 +290,17 @@ body {
                     border: 1px solid #b1b1b1;
                     border-radius: 5px;
                     color: #b1b1b1;
-                    font-family: 'TornadoC';
                     font-size: 12px;
                     font-style: italic;
                     font-weight: normal;
                     height: 21px;
                     line-height: 21px;
                     margin-bottom: 3px;
-                    
+
                     display: block;
                     position: relative;
                     text-align: center;
-                    -moz-user-select: none; 
+                    -moz-user-select: none;
                     -khtml-user-select: none;
                     -webkit-user-select: none;
                     &.main {
@@ -323,7 +314,7 @@ body {
                         color: white;
                         background: #bed153;
                         border: 1px solid #ffffff;
-                       
+
                     }
                     input[type="checkbox"] {
                         position: absolute;
@@ -339,7 +330,6 @@ body {
                 }
                 .col-md-12 {
                     p {
-                        font-family: 'Open Sans';
                         font-size: 14px;
                         max-width: 476px;
                         text-align: center;
@@ -352,18 +342,17 @@ body {
                     border: 1px solid #b1b1b1;
                     border-radius: 5px;
                     color: #b1b1b1;
-                    font-family: 'TornadoC';
                     font-size: 12px;
                     font-style: italic;
                     font-weight: normal;
                     height: 21px;
                     line-height: 21px;
                     margin-bottom: 3px;
-                    
+
                     display: block;
                     position: relative;
                     text-align: center;
-                    -moz-user-select: none; 
+                    -moz-user-select: none;
                     -khtml-user-select: none;
                     -webkit-user-select: none;
                     &.main {
@@ -377,7 +366,7 @@ body {
                         color: white;
                         background: #bed153;
                         border: 1px solid #ffffff;
-                       
+
                     }
                     input[type="checkbox"] {
                         position: absolute;
@@ -388,7 +377,6 @@ body {
             }
             &.four-step-filter {
                 h3 {
-                    font-family: 'Open Sans';
                     font-size: 10px;
                     text-transform: uppercase;
                     color: #ffffff;
@@ -396,7 +384,6 @@ body {
                 }
                 .col-md-6 {
                     h4 {
-                        font-family: 'Open Sans';
                         font-size: 14px;
                         font-style: italic;
                         font-weight: 100;
@@ -409,7 +396,6 @@ body {
                         position: relative;
                         background: white;
                         border: 1px solid #b1b1b1;
-                        font-family: 'Open Sans';
                         font-size: 11px;
                         font-style: italic;
                         color: #b1b1b1;
@@ -417,7 +403,7 @@ body {
                         line-height: 22px;
                         font-weight: 100;
                         cursor: pointer;
-                         -moz-user-select: none; 
+                         -moz-user-select: none;
                         -khtml-user-select: none;
                         -webkit-user-select: none;
                         &.check {
@@ -437,11 +423,10 @@ body {
                 }
                 .col-md-4 {
                     label {
-                        -moz-user-select: none; 
+                        -moz-user-select: none;
                         -khtml-user-select: none;
                         -webkit-user-select: none;
                         display: block;
-                        font-family: "Open Sans";
                         font-weight: 100;
                         font-size: 12px;
                         font-style: italic;
@@ -451,7 +436,7 @@ body {
                             height: 13px;
                         }
                     }
-                    
+
                     .input-helper {
                         position: relative;
                         margin-bottom: 5px;
@@ -493,17 +478,17 @@ body {
                     border-radius: 5px;
                     height: 37px;
                     line-height: 37px;
-                    font-family: "TornadoC"; font-size: 12px; color: #b1b1b1; font-style: italic; text-align: center;
+                    font-size: 12px; color: #b1b1b1; font-style: italic; text-align: center;
                     &.checked {
                         background: #bed153;
-                        font-family: "TornadoC"; font-size: 12px; color: #ffffff; text-align: center;
+                        font-size: 12px; color: #ffffff; text-align: center;
                         font-style: normal;
                         border: 1px solid white;
                     }
-                    &::-webkit-input-placeholder {font-family: "TornadoC"; font-size: 12px; font-style: italic; color: #b1b1b1; text-align: center;}
-                    &::-moz-placeholder {font-family: "TornadoC"; font-size: 12px; font-style: italic; color: #b1b1b1;text-align: center;}
-                    &:-moz-placeholder {font-family: "TornadoC"; font-size: 12px; font-style: italic; color: #b1b1b1;text-align: center;}
-                    &:-ms-input-placeholder {font-family: "TornadoC"; font-size: 12px; font-style: italic; color: #b1b1b1;text-align: center;}
+                    &::-webkit-input-placeholder {font-size: 12px; font-style: italic; color: #b1b1b1; text-align: center;}
+                    &::-moz-placeholder {font-size: 12px; font-style: italic; color: #b1b1b1;text-align: center;}
+                    &:-moz-placeholder {font-size: 12px; font-style: italic; color: #b1b1b1;text-align: center;}
+                    &:-ms-input-placeholder {font-size: 12px; font-style: italic; color: #b1b1b1;text-align: center;}
                 }
                 .inner {
                     width: 784px;
@@ -512,16 +497,14 @@ body {
                 }
                 p {
                     text-align: center;
-                    font-family: "Segoe UI";
                     font-size: 12px;
                 }
                 label.legal {
-                    font-family: "Segoe UI";
                     font-size: 13px;
                     color: white;
                     font-weight: 300;
                 }
-                
+
                  .input-helper {
                     position: relative;
                     margin-bottom: 5px;
@@ -565,14 +548,12 @@ body {
                     box-shadow: 0 1px 1px white;
                 }
                 h4 {
-                    font-family: "Segoe UI";
                     font-size: 14px;
                     font-weight: 600;
                     text-transform: uppercase;
                     padding-top: 15px;
                 }
                 p {
-                    font-family: "Segoe UI";
                     font-size: 12px;
                     color: black;
                     max-width: 435px;
@@ -583,7 +564,7 @@ body {
                     margin-bottom: 15px;
                 }
             }
-            
+
             .col-md-12 {
                 h3 {
                     position: relative;
@@ -597,7 +578,7 @@ body {
                         top: 50%;
                         left: 0;
                     }
-                    
+
                     &:before {
                         content: '';
                         display: block;
@@ -609,7 +590,7 @@ body {
                         right: 0;
                     }
                     span {
-                        
+
                     }
                 }
                 .inner {
@@ -618,7 +599,7 @@ body {
                 }
             }
         }
-        
+
         //steps
         .step-by-step {
             position: relative;
@@ -629,7 +610,6 @@ body {
                 bottom: 41%;
                 text-align: center;
                 width: 100%;
-                font-family: 'TornadoC';
                 font-size: 12px;
                 text-transform: uppercase;
             }
@@ -657,7 +637,6 @@ body {
                 padding: 0;
                 list-style: none;
                 li {
-                    font-family: 'TornadoC';
                     font-size: 18px;
                     color: #c7c7c6;
                     float: left;
@@ -698,38 +677,33 @@ body {
             text-align: center;
         }
         // end defaults
-        
+
         .btn-info {
             display: inherit;
             margin: 0 auto;
         }
         h2 {
-            font-family: "Segoe UI";
             font-size: 18px;
             font-weight: 600;
             text-transform: uppercase;
         }
         h3 {
-            font-family: "Segoe UI";
             font-size: 14px;
             font-weight: 600;
             text-transform: uppercase;
         }
         h4 {
-            font-family: "Segoe UI";
             font-size: 18px;
             font-weight: 600;
             text-transform: uppercase;
             text-align: center;
         }
         h3 ~ p {
-            font-family: "Open Sans";
             font-size: 12px;
             font-weight: 100;
             color: #6f6f6f;
         }
         h3 ~ p ~ span {
-            font-family: "Open Sans";
             font-size: 10px;
             font-weight: 100;
             color: #6f6f6f;
@@ -737,7 +711,7 @@ body {
             border: 1px solid #ececec;
             border-radius: 4px;
             display: block;
-            
+
             position: absolute;
             bottom: 0;
             left: 0;
@@ -746,7 +720,6 @@ body {
             padding: 0 10px;
         }
         h2 ~ p {
-            font-family: "Segoe UI";
             font-size: 10px;
             font-weight: 300;
             text-transform: uppercase;
@@ -774,7 +747,6 @@ body {
             td {
                 a {
                     display: block;
-                    font-family: "Segoe UI";
                     font-size: 10px;
                     font-weight: 100;
                     font-style: italic;
@@ -794,12 +766,11 @@ body {
             }
         }
         .garant-price ~ p {
-            font-family: "Segoe UI";
             font-size: 10px;
             font-weight: 400;
             color: black;
         }
-        
+
         .hint {
             width: 451px;
             height: 98px;
@@ -813,7 +784,7 @@ body {
                 position: absolute;
                 left: -169px;
                 top: -20px;
-                
+
                 &:after {
                         content: '';
                         width: 137px;
@@ -824,7 +795,7 @@ body {
                         top: 3px;
                         left: 3px;
                     }
-                
+
                 &.active {
                     &:after {
                         content: '';
@@ -873,7 +844,6 @@ body {
                 }
             }
             p {
-                font-family: "Open Sans";
                 font-size: 12px;
                 font-weight: 100;
                 color: #6f6f6f;
@@ -881,7 +851,6 @@ body {
                 padding: 12.5px 6px;
                 text-align: center;
                 &.last {
-                    font-family: "Open Sans";
                     font-size: 12px;
                     color: #6f6f6f;
                     text-align: center;
@@ -916,7 +885,7 @@ body {
                 margin-top: -11px;
             }
         }
-        
+
     } // about
     &.how-it-works {
         background: #f1f0f0;
@@ -930,26 +899,22 @@ body {
             min-height: 560px;
         }
         h2 {
-            font-family: "Segoe UI";
             font-weight: 600;
             font-size: 18px;
             text-transform: uppercase;
             text-align: center;
         }
         h3 {
-            font-family: "Segoe UI";
             font-weight: 600;
             font-size: 14px;
             text-transform: uppercase;
             text-align: center;
         }
         h3 ~ p {
-            font-family: "Open Sans";
             font-size: 12px;
             color: #6f6f6f;
         }
         strong {
-            font-family: "Segoe UI";
             font-weight: 600;
             font-size: 18px;
             text-transform: uppercase;
@@ -976,7 +941,7 @@ body {
             position: absolute;
             right: 5%;
             top: 30%;
-            
+
             text-align: left;
             h3 {
                 text-align: left;
@@ -988,7 +953,6 @@ body {
             width: 100%;
         }
         .wrap p {
-            font-family: "Open Sans";
             font-size: 12px;
             color: #6f6f6f;
             text-align: center;
@@ -996,7 +960,6 @@ body {
     } // hot-it-works
     &.not-prepared {
         h2 {
-            font-family: "Segoe UI";
             font-size: 18px;
             font-weight: bold;
             color: black;
@@ -1012,21 +975,20 @@ body {
                 width: 100%;
             }
             p {
-                font-family: "Segoe UI";
                 font-size: 10px;
                 font-weight: 100;
                 color: black;
                 text-align: center;
                 text-transform: uppercase;
-                
-                
-                
+
+
+
                 display: -moz-inline-box;
                 display: inline-block;
                 vertical-align: middle;
-                width: 463px;                
+                width: 463px;
                 zoom: 1;
-                
+
             }
             .helper {
                 display: -moz-inline-box;
@@ -1040,14 +1002,12 @@ body {
         .price {
             text-align: center;
             p {
-                font-family: "Open Sans";
                 font-size: 12px;
                 color: #6f6f6f;
                 text-align: center;
             }
         }
         .quote {
-            font-family: "Open Sans";
             font-weight: normal;
             font-size: 14px;
             color: #6f6f6f;
@@ -1057,7 +1017,6 @@ body {
             }
         }
         .quote ~ p {
-            font-family: "Open Sans";
             font-weight: normal;
             font-size: 12px;
             color: #6f6f6f;
@@ -1120,7 +1079,7 @@ body {
                     }
                 }
             }
-            
+
             .carousel-indicators {
                 bottom: -35px;
                 li {
@@ -1145,10 +1104,9 @@ body {
             div {
                 margin-left: 141px;
                 text-align: left;
-                
+
             }
             h3 {
-                font-family: "Segoe UI";
                 font-size: 12px;
                 font-weight: 100;
                 color: black;
@@ -1156,7 +1114,6 @@ body {
                 max-width: 327px;
             }
             p {
-                font-family: "Segoe UI";
                 font-size: 11px;
                 font-weight: 100;
                 font-style: italic;
@@ -1170,7 +1127,7 @@ body {
     &.footer {
         background: #262525;
         hr {
-            border-color: #525252; 
+            border-color: #525252;
         }
         .social {
             margin-top: 15px;
@@ -1185,23 +1142,22 @@ body {
             margin-top: 15px;
             width: 229px;
             height: 30px;
-            
+
             line-height: 30px;
-            font-family: "TornadoC"; font-size: 12px; color: #b1b1b1; font-style: italic; text-align: left;
+            font-size: 12px; color: #b1b1b1; font-style: italic; text-align: left;
             text-indent: 15px;
             &.checked {
                 background: #bed153;
-                font-family: "TornadoC"; font-size: 12px; color: #ffffff; text-align: left;
+                font-size: 12px; color: #ffffff; text-align: left;
                 font-style: normal;
                 border: 1px solid white;
             }
-            &::-webkit-input-placeholder {font-family: "TornadoC"; font-size: 12px; font-style: italic; color: #b1b1b1; text-align: left;}
-            &::-moz-placeholder {font-family: "TornadoC"; font-size: 12px; font-style: italic; color: #b1b1b1;text-align: left;}
-            &:-moz-placeholder {font-family: "TornadoC"; font-size: 12px; font-style: italic; color: #b1b1b1;text-align: left;}
-            &:-ms-input-placeholder {font-family: "TornadoC"; font-size: 12px; font-style: italic; color: #b1b1b1;text-align: left;}
+            &::-webkit-input-placeholder {font-size: 12px; font-style: italic; color: #b1b1b1; text-align: left;}
+            &::-moz-placeholder {font-size: 12px; font-style: italic; color: #b1b1b1;text-align: left;}
+            &:-moz-placeholder {font-size: 12px; font-style: italic; color: #b1b1b1;text-align: left;}
+            &:-ms-input-placeholder {font-size: 12px; font-style: italic; color: #b1b1b1;text-align: left;}
         }
         p {
-            font-family: "Open Sans";
             font-size: 10px;
             color: #525252;
         }
