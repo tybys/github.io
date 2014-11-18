@@ -5,12 +5,21 @@ body {
     background: inherit;
 	font-family: 'Open Sans', sans-serif;
 }
-.container {
-//    width: ~"calc(1024px + 60px)";
-//    width: ~"-webkit-calc(1024px + 60px)";
-    width: 1054px;
-    background: rgba(0, 0, 0, 0.15);
+@media only screen and (min-width: 1024px) {
+    .container {
+        //    width: ~"calc(1024px + 60px)";
+        //    width: ~"-webkit-calc(1024px + 60px)";
+        width: 1054px;
+    }
 }
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: landscape) {
+    .container {
+        //    width: ~"calc(1024px + 60px)";
+        //    width: ~"-webkit-calc(1024px + 60px)";
+        width: 750px !important;
+    }
+}
+
 //164 next prev
 //147 controls
 //217 date
