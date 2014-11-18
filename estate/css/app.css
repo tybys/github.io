@@ -221,7 +221,8 @@ body {
 .row.head .controls.one-step-date .calendars table.ui-datepicker-calendar {
   width: 214px;
 }
-.row.head .controls.one-step-date .calendars .ui-datepicker-group {
+.row.head .controls.one-step-date .calendars .ui-datepicker-group,
+.row.head .controls.one-step-date .calendars .ui-datepicker-calendar {
   width: 249px;
   height: 217px;
   margin: 0 2.5px;
@@ -229,29 +230,35 @@ body {
   box-shadow: 1px 1px 1px #ffffff;
   -webkit-box-shadow: 1px 1px 1px #ffffff;
 }
-.row.head .controls.one-step-date .calendars .ui-datepicker-group .ui-datepicker-title {
+.row.head .controls.one-step-date .calendars .ui-datepicker-group .ui-datepicker-title,
+.row.head .controls.one-step-date .calendars .ui-datepicker-calendar .ui-datepicker-title {
   margin-top: 10px;
 }
-.row.head .controls.one-step-date .calendars .ui-datepicker-group .ui-datepicker-title span {
+.row.head .controls.one-step-date .calendars .ui-datepicker-group .ui-datepicker-title span,
+.row.head .controls.one-step-date .calendars .ui-datepicker-calendar .ui-datepicker-title span {
   font-weight: bold;
   font-size: 15px;
   text-transform: uppercase;
   color: #4f5348;
 }
-.row.head .controls.one-step-date .calendars .ui-datepicker-group thead {
+.row.head .controls.one-step-date .calendars .ui-datepicker-group thead,
+.row.head .controls.one-step-date .calendars .ui-datepicker-calendar thead {
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
 }
-.row.head .controls.one-step-date .calendars .ui-datepicker-group thead th {
+.row.head .controls.one-step-date .calendars .ui-datepicker-group thead th,
+.row.head .controls.one-step-date .calendars .ui-datepicker-calendar thead th {
   padding-top: 3px;
   padding-bottom: 3px;
 }
-.row.head .controls.one-step-date .calendars .ui-datepicker-group thead th span {
+.row.head .controls.one-step-date .calendars .ui-datepicker-group thead th span,
+.row.head .controls.one-step-date .calendars .ui-datepicker-calendar thead th span {
   font-weight: bold;
   font-size: 9.5px;
   color: #a1bc7e;
 }
-.row.head .controls.one-step-date .calendars .ui-datepicker-group tbody td a.ui-state-default {
+.row.head .controls.one-step-date .calendars .ui-datepicker-group tbody td a.ui-state-default,
+.row.head .controls.one-step-date .calendars .ui-datepicker-calendar tbody td a.ui-state-default {
   font-weight: bold;
   font-size: 11px;
   color: #4f5348;

@@ -57,17 +57,17 @@
                 </div>
                 
                 <div class="controls one-step-home">
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
                         <a href="#" class="btn btn-success">Купить</a>
                     </div>
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
                         <span>или</span>
                     </div>
-                    <div class="col-md-4 col-sm-4 last">
+                    <div class="col-md-4 col-sm-4 col-xs-12 last">
                         <a href="#" class="btn btn-success">Снять</a>
                     </div>
                     
-                    <div class="col-md-12">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
                         <a href="#" class="btn btn-success">Выбрать даты</a>
                     </div>
                     
@@ -610,10 +610,9 @@
         $(function() {
 
             var windowWidth = $(window).outerWidth();
-            alert(windowWidth)
 
             $( "#datepicker" ).datepicker({
-              numberOfMonths: 3,
+              numberOfMonths: windowWidth == 384 ? 1 : 3, // not good idea, but
               showButtonPanel: true,
                 show: true
             });

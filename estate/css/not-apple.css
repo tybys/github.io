@@ -4,6 +4,12 @@
 .row.head h1 ~ p {
   font-size: 10px;
 }
+.row.head {
+  min-height: auto;
+  background-size: 300%;
+  background-position-y: top;
+  background-position-x: 55%;
+}
 .row.head .super-form h2 {
   font-size: 13px;
   padding: 15px 0 10px 0;
@@ -15,5 +21,18 @@
   text-align: center;
 }
 .row.head .controls.one-step-date .col-md-4.last {
+  text-align: center;
+}
+.row.head .controls.one-step-date .calendars table.ui-datepicker-calendar {
+  margin: 0 auto;
+}
+.row.head .controls.one-step-date .calendars .ui-datepicker-inline {
+  width: auto !important;
+}
+.row.head .controls.one-step-home .col-md-4:first-of-type {
+  text-align: center;
+  margin-bottom: 0;
+}
+.row.head .controls.one-step-home .col-md-4.last {
   text-align: center;
 }
