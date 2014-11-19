@@ -1,3 +1,18 @@
+.super-form {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+.four-step-filter .col-xs-6 {
+  padding: 0;
+}
+.final-step-thanks .inner {
+  width: 90% !important;
+}
+.checkboxes {
+  padding: 0;
+}
+.checkboxes .col-xs-4 {
+  padding: 0;
+}
 .inner {
   width: auto !important;
 }
@@ -38,4 +53,37 @@
 }
 .row.head .controls.one-step-home .col-md-4.last {
   text-align: center;
+}
+.step-by-step {
+  width: auto !important;
+}
+.row.about table {
+  width: auto;
+}
+.custom-hr {
+  width: auto;
+}
+.row.about .hint {
+  width: auto;
+}
+.row.about .hint .ball-left {
+  position: static;
+}
+.row.about .hint .ball-right {
+  position: static;
+}
+.row.about .hint {
+  height: auto;
+  margin: auto;
+}
+.row.how-it-works .left-top,
+.row.how-it-works .left-bottom,
+.row.how-it-works .right-bottom {
+  position: static;
+}
+.row.how-it-works strong span {
+  position: static;
+}
+.row.not-prepared .col-xs-12 p {
+  width: auto;
 }
