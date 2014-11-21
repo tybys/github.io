@@ -220,11 +220,11 @@ body {
 }
 .row.head .controls.one-step-date .calendars table.ui-datepicker-calendar {
   width: 214px;
+  margin: 0 auto;
 }
 .row.head .controls.one-step-date .calendars .ui-datepicker-group,
 .row.head .controls.one-step-date .calendars .ui-datepicker-calendar {
   width: 249px;
-  height: 217px;
   margin: 0 2.5px;
   background: #f7f7f7;
   box-shadow: 1px 1px 1px #ffffff;
