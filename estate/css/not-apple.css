@@ -96,6 +96,7 @@
   display: none;
 }
 .row.about hr.after-hint {
+  margin-top: 5px;
   margin-bottom: 15px;
 }
 .row.how-it-works .left-top,
