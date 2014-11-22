@@ -269,3 +269,9 @@
 .footer p {
   text-align: center !important;
 }
+.row.about .col-md-4:first-of-type {
+  padding-right: 0;
+}
+.row.about .col-md-4.last {
+  padding-left: 0;
+}

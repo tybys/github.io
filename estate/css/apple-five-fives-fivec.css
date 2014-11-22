@@ -108,6 +108,7 @@
   display: none;
 }
 .row.about hr.after-hint {
+  margin-top: 5px;
   margin-bottom: 15px;
 }
 .row.how-it-works .left-top,
@@ -268,4 +269,10 @@
 }
 .footer p {
   text-align: center !important;
+}
+.row.about .col-md-4:first-of-type {
+  padding-right: 0;
+}
+.row.about .col-md-4.last {
+  padding-left: 0;
 }

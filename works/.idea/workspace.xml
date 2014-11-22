@@ -28,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../estate/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31839624" vertical-offset="0" max-vertical-offset="8970">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="19" selection-end-column="146" />
+            <state vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="9045">
+              <caret line="25" column="138" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="138" />
               <folding>
                 <element signature="n#style#0;n#div#4;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#4;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -62,6 +62,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../estate/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.27118644" vertical-offset="0" max-vertical-offset="1905">
+              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ipad-34.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../estate/less/ipad-34.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-33.666668" vertical-offset="497" max-vertical-offset="1395">
+              <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="apple-six.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../estate/less/apple-six.less">
           <provider selected="true" editor-type-id="text-editor">
@@ -72,21 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="not-apple-landscape.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../estate/less/not-apple-landscape.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3444" max-vertical-offset="4365">
-              <caret line="244" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="285" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="apple-five-fives-fivec.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../estate/less/apple-five-fives-fivec.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="971" max-vertical-offset="4545">
-              <caret line="103" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="297" selection-end-column="1" />
+            <state vertical-scroll-proportion="-12.666667" vertical-offset="1496" max-vertical-offset="4650">
+              <caret line="120" column="20" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -95,8 +105,8 @@
       <file leaf-file-name="apple-five-fives-fivec-landscape.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../estate/less/apple-five-fives-fivec-landscape.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3624" max-vertical-offset="4545">
-              <caret line="297" column="1" selection-start-line="297" selection-start-column="1" selection-end-line="297" selection-end-column="1" />
+            <state vertical-scroll-proportion="-34.625" vertical-offset="3714" max-vertical-offset="4635">
+              <caret line="303" column="1" selection-start-line="303" selection-start-column="1" selection-end-line="303" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -105,18 +115,8 @@
       <file leaf-file-name="not-apple.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../estate/less/not-apple.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.666667" vertical-offset="1316" max-vertical-offset="4485">
-              <caret line="108" column="20" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ipad-landscape.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../estate/less/ipad-landscape.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="339" max-vertical-offset="1395">
-              <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+            <state vertical-scroll-proportion="-29.0" vertical-offset="3624" max-vertical-offset="4485">
+              <caret line="288" column="0" selection-start-line="288" selection-start-column="0" selection-end-line="293" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -125,8 +125,8 @@
       <file leaf-file-name="ipad.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../estate/less/ipad.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1395">
-              <caret line="31" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="87" selection-end-column="1" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1395">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="87" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -372,7 +372,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/unionsb/cart.html" />
         <option value="$PROJECT_DIR$/unionsb/tabs.html" />
         <option value="$PROJECT_DIR$/unionsb/js/app.js" />
         <option value="$PROJECT_DIR$/unionsb/item-card.html" />
@@ -415,12 +414,15 @@
         <option value="$PROJECT_DIR$/../estate/less/ipad.less" />
         <option value="$PROJECT_DIR$/../estate/less/ipad-landscape.less" />
         <option value="$PROJECT_DIR$/../estate/less/not-apple-landscape.less" />
-        <option value="$PROJECT_DIR$/../estate/less/apple-five-fives-fivec.less" />
-        <option value="$PROJECT_DIR$/../estate/less/apple-five-fives-fivec-landscape.less" />
         <option value="$PROJECT_DIR$/../estate/less/apple-six.less" />
         <option value="$PROJECT_DIR$/../estate/less/app.less" />
         <option value="$PROJECT_DIR$/../estate/less/not-apple.less" />
+        <option value="$PROJECT_DIR$/../estate/less/apple-five-fives-fivec-landscape.less" />
+        <option value="$PROJECT_DIR$/../estate/less/apple-five-fives-fivec.less" />
+        <option value="$PROJECT_DIR$/../estate/less/ipad-34.less" />
+        <option value="$PROJECT_DIR$/../estate/js/datepicker-ru.js" />
         <option value="$PROJECT_DIR$/../estate/index.html" />
+        <option value="$PROJECT_DIR$/../estate/js/app.js" />
       </list>
     </option>
   </component>
@@ -585,7 +587,7 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="less">
+            <PATH_ELEMENT USER_OBJECT="js">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -735,25 +737,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../unionsb/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4530">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../landing/js/jquery.easing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.96763754" vertical-offset="2163" max-vertical-offset="3150">
-          <caret line="204" column="3" selection-start-line="204" selection-start-column="3" selection-end-line="204" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../landing/img/middle-rep.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../landing/js/jquery.transit.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3074434" vertical-offset="9948" max-vertical-offset="11250">
@@ -1011,14 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../estate/less/ipad.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1395">
-          <caret line="31" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="87" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../estate/less/ipad-landscape.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="339" max-vertical-offset="1395">
@@ -1031,22 +1006,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3444" max-vertical-offset="4365">
           <caret line="244" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="285" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../estate/less/apple-five-fives-fivec-landscape.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3624" max-vertical-offset="4545">
-          <caret line="297" column="1" selection-start-line="297" selection-start-column="1" selection-end-line="297" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../estate/less/apple-five-fives-fivec.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="971" max-vertical-offset="4545">
-          <caret line="103" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="297" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1289,16 +1248,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../estate/less/not-apple.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.666667" vertical-offset="1316" max-vertical-offset="4485">
-          <caret line="108" column="20" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
+        <state vertical-scroll-proportion="-29.0" vertical-offset="3624" max-vertical-offset="4485">
+          <caret line="288" column="0" selection-start-line="288" selection-start-column="0" selection-end-line="293" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../estate/less/apple-five-fives-fivec-landscape.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-34.625" vertical-offset="3714" max-vertical-offset="4635">
+          <caret line="303" column="1" selection-start-line="303" selection-start-column="1" selection-end-line="303" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../estate/less/apple-five-fives-fivec.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.666667" vertical-offset="1496" max-vertical-offset="4650">
+          <caret line="120" column="20" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../estate/less/ipad.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1395">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="87" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../estate/less/ipad-34.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-33.666668" vertical-offset="497" max-vertical-offset="1395">
+          <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../estate/js/datepicker-ru.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6101695" vertical-offset="0" max-vertical-offset="885">
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../estate/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31839624" vertical-offset="0" max-vertical-offset="8970">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="19" selection-end-column="146" />
+        <state vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="9045">
+          <caret line="25" column="138" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="138" />
           <folding>
             <element signature="n#style#0;n#div#4;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1324,6 +1325,14 @@
             <element signature="n#style#0;n#div#5;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../estate/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27118644" vertical-offset="0" max-vertical-offset="1905">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
