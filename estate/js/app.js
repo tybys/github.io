@@ -13,8 +13,10 @@
         Platform();
         Navigator();
 
-        //$('body.Phone.Mac')
-        alert($("body").attr("class"))
+        // iOS Linux, phone/tablet
+
+
+        //alert($("body").attr("class"))
 
         $( "#datepicker" ).datepicker({
             numberOfMonths: windowWidth >= 320  <= 768 ? 1 : 3, // not good idea, but
@@ -30,6 +32,9 @@
          * mac
          * linux
          *
+         * Safari 8 Iphone iOS Phone | iphone5s
+         * Chrome 39 Linux Phone | lg nexus4/nexus5
+         * Safari 4 Linux Phone | lg nexus4/nexus5
          */
 
     });
