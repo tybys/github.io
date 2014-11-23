@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+    <select id="id01">
+
+    </select>
+
+    <script>
+        var xhr = new XMLHttpRequest();
+        var url = "boxberry.json";
+
+        xhr.onreadystatechange = function()
+        {
+            if (this.readyState != 4) return;
+
+            // по окончании запроса доступны:
+            // status, statusText
+            // responseText, responseXML (при content-type: text/xml)
+
+            if (this.status != 200)
+            {
+                alert('ошибка: ' + (this.status ? this.statusText || 'запрос не удался' : "")); // обработать ошибку
+                return;
+            }
+            var myArr = JSON.parse(xhr.responseText);
+            // получить результат из this.responseText или this.responseXML
+            loopJson(myArr);
+        }
+
+        xhr.open('GET', url, true);
+        xhr.send();
+
+        function loopJson(arr)
+        {
+            var out = [];
+            var i;
+            var uniq = arr.length
+            for(i = 0; i < uniq; i++)
+            {
+                //out += '<option value="'+arr[i].city.toLowerCase()+'">' + arr[i].city + '</option>';
+                for (var j = i; j < uniq; j++)
+                {
+                    if (uniq[i] === uniq[j])
+                    {
+                        j = ++i;
+                    }
+                    out.push(uniq[i]);
+                }
+                return out;
+            }
+            console.log(out)
+            document.getElementById("id01").innerHTML = out;
+        }
+    </script>
+</body>
+</html>

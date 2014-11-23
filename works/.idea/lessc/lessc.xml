@@ -99,6 +99,22 @@
             </LessProfile>
           </value>
         </entry>
+        <entry key="6">
+          <value>
+            <LessProfile>
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="$PROJECT_DIR$/../utc/css" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="id" value="6" />
+              <option name="lessDirPath" value="$PROJECT_DIR$/../utc/less" />
+              <option name="name" value="utc" />
+            </LessProfile>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
