@@ -1,0 +1,57 @@
+@starColour: #16a085;
+@starHoverColour: #1abc9c;
+
+.star-rating {
+    font-family: 'Glyphicons Halflings';
+    margin: 50px auto;
+
+    > fieldset {
+        border: none;
+        display: inline-block;
+
+        &:not(:checked) {
+            > input {
+                position: absolute;
+                top: -9999px;
+                clip: rect(0,0,0,0);
+            }
+
+            > label {
+                float: right;
+                width: 1em;
+                padding: 0 .05em;
+                overflow: hidden;
+                white-space: nowrap;
+                cursor: pointer;
+                font-size: 200%;
+                color: @starColour;
+
+                &:before {
+                    content: '\e007';
+                }
+
+                &:hover,
+                &:hover ~ label {
+                    color: @starHoverColour;
+                    text-shadow: 0 0 3px @starHoverColour;
+                    &:before {
+                        content: "\e006";
+                    }
+                }
+            }
+        }
+
+        > input:checked {
+            & ~ label {
+                &:before {
+                    content: "\e006";
+                }
+            }
+        }
+
+        > label:active {
+            position: relative;
+            top: 2px;
+        }
+    }
+}

@@ -1,0 +1,5 @@
+.category:after {
+  content: '';
+  clear: both;
+  display: block;
+}

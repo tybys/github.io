@@ -1,3 +1,10 @@
 body {
   color: inherit;
 }
+.top-block:after,
+.info-block:after,
+search-block:after {
+  content: '';
+  clear: both;
+  display: block;
+}
