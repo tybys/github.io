@@ -37,25 +37,26 @@
 
         function loopJson(arr)
         {
-            var out = [];
-            var i;
-            var uniq = arr.length
-            for(i = 0; i < uniq; i++)
+//            var out = [];
+//            var i;
+//            for(i = 0; i < arr.length; i++)
+//            {
+//                out += '<option value="'+arr[i].city.toLowerCase()+'">' + arr[i].city + '</option>';
+//            }
+//            document.getElementById("id01").innerHTML = out;
+
+            var obj = {};
+
+            for(var i=0; i<arr.length; i++)
             {
-                //out += '<option value="'+arr[i].city.toLowerCase()+'">' + arr[i].city + '</option>';
-                for (var j = i; j < uniq; j++)
-                {
-                    if (uniq[i] === uniq[j])
-                    {
-                        j = ++i;
-                    }
-                    out.push(uniq[i]);
-                }
-                return out;
+                var str = arr[i];
+                obj[str] = true;
             }
-            console.log(out)
-            document.getElementById("id01").innerHTML = out;
-        }
+            Object.keys(obj)
+            console.log(obj)
+
+        }   
+        //console.log(loopJson(arr))
     </script>
 </body>
 </html>
