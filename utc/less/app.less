@@ -16,7 +16,7 @@ search-block {
 
 .badge {
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 300;
     &.active {
         background: @blue;
         color: white;
@@ -71,6 +71,35 @@ body {
     background: lightgoldenrodyellow;
     .btn {
         width: 100%;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 46px;
+        li {
+            border-top: 1px solid #dfdfdf;
+            border-bottom: 1px solid #dfdfdf;
+            padding: 7px 0;
+            &:first-of-type {
+                border-top: none;
+            }
+            a {
+                color: #323232;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            ul {
+                padding-left: 17px;
+                margin: 0;
+                li {
+                    border: none;
+                    padding: 4px 0;
+                    a {
+                        color: @blue;
+                    }
+                }
+            }
+        }
     }
 } // left-column 220
 .right-column {
@@ -196,7 +225,9 @@ body {
                     }
                 }
                 &:last-of-type {
-                    border-bottom: 1px dashed;
+                    color: #c5c5c5;
+                    font-weight: 300;
+                    border-bottom: 1px dashed black;
                     display: inline-block;
                     margin-left: 24px;
                     margin-top: 9px;
@@ -220,14 +251,14 @@ body {
                 border: 1px solid #c5c5c5;
                 border-radius: 5px;
                 font-style: normal;
-                font-weight: 100;
+                font-weight: 300;
                 text-indent: 18px;
                 color: @blue;
                 font-size: 13px;
                 &::-webkit-input-placeholder {color:@blue;font-style: italic}
                 &::-moz-placeholder {color:@blue;font-style: italic}
                 &:-moz-placeholder {color:@blue;font-style: italic}
-                &:-ms-input-placeholder {color:@blue;font-style: italic}    
+                &:-ms-input-placeholder {color:@blue;font-style: italic}
             }
             button {
                 width: 125px;

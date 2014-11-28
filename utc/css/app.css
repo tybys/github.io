@@ -10,7 +10,7 @@ search-block:after {
 }
 .badge {
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 300;
 }
 .badge.active {
   background: #048bd5;
@@ -64,6 +64,35 @@ body a:hover {
 }
 .left-column .btn {
   width: 100%;
+}
+.left-column ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 46px;
+}
+.left-column ul li {
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 7px 0;
+}
+.left-column ul li:first-of-type {
+  border-top: none;
+}
+.left-column ul li a {
+  color: #323232;
+  text-decoration: none;
+  cursor: pointer;
+}
+.left-column ul li ul {
+  padding-left: 17px;
+  margin: 0;
+}
+.left-column ul li ul li {
+  border: none;
+  padding: 4px 0;
+}
+.left-column ul li ul li a {
+  color: #048bd5;
 }
 .right-column {
   width: calc(66.66666666666666% + 95px);
@@ -176,7 +205,9 @@ body a:hover {
   content: ' ';
 }
 .info-block .col-md-3.phones a:last-of-type {
-  border-bottom: 1px dashed;
+  color: #c5c5c5;
+  font-weight: 300;
+  border-bottom: 1px dashed black;
   display: inline-block;
   margin-left: 24px;
   margin-top: 9px;
@@ -191,7 +222,7 @@ body a:hover {
   border: 1px solid #c5c5c5;
   border-radius: 5px;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 300;
   text-indent: 18px;
   color: #048bd5;
   font-size: 13px;
