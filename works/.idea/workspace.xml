@@ -33,9 +33,11 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/../utc/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.9318182" vertical-offset="5290" max-vertical-offset="6855">
-                  <caret line="380" column="26" selection-start-line="380" selection-start-column="26" selection-end-line="380" selection-end-column="26" />
-                  <folding />
+                <state vertical-scroll-proportion="0.35227272" vertical-offset="4510" max-vertical-offset="5175">
+                  <caret line="393" column="29" selection-start-line="393" selection-start-column="29" selection-end-line="393" selection-end-column="29" />
+                  <folding>
+                    <element signature="tag#div#1;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -43,10 +45,10 @@
           <file leaf-file-name="app.less" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/../utc/less/app.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="4007" max-vertical-offset="5700">
-                  <caret line="320" column="36" selection-start-line="320" selection-start-column="36" selection-end-line="320" selection-end-column="36" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="4847" max-vertical-offset="7335">
+                  <caret line="376" column="36" selection-start-line="376" selection-start-column="36" selection-end-line="376" selection-end-column="36" />
                   <folding>
-                    <marker date="1417267718000" expanded="true" signature="8390:9317" placeholder="{...}" />
+                    <marker date="1417279359000" expanded="true" signature="10828:11755" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -59,10 +61,10 @@
           <file leaf-file-name="app.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/../utc/less/app.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3846154" vertical-offset="2350" max-vertical-offset="5700">
-                  <caret line="165" column="47" selection-start-line="165" selection-start-column="47" selection-end-line="165" selection-end-column="47" />
+                <state vertical-scroll-proportion="0.71153843" vertical-offset="6858" max-vertical-offset="7335">
+                  <caret line="472" column="30" selection-start-line="472" selection-start-column="30" selection-end-line="472" selection-end-column="30" />
                   <folding>
-                    <marker date="1417267718000" expanded="true" signature="8390:9317" placeholder="{...}" />
+                    <marker date="1417279359000" expanded="true" signature="10828:11755" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -547,13 +549,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../landing/app.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6611296" vertical-offset="2598" max-vertical-offset="3525">
-          <caret line="596" column="120" selection-start-line="596" selection-start-column="8" selection-end-line="596" selection-end-column="120" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../task.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.51342285" vertical-offset="546" max-vertical-offset="1800">
@@ -884,20 +879,30 @@
         <state />
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="3216" max-vertical-offset="3795">
+          <caret line="225" column="8" selection-start-line="225" selection-start-column="8" selection-end-line="225" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../utc/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9318182" vertical-offset="5290" max-vertical-offset="6855">
-          <caret line="380" column="26" selection-start-line="380" selection-start-column="26" selection-end-line="380" selection-end-column="26" />
-          <folding />
+        <state vertical-scroll-proportion="0.35227272" vertical-offset="4510" max-vertical-offset="5175">
+          <caret line="393" column="29" selection-start-line="393" selection-start-column="29" selection-end-line="393" selection-end-column="29" />
+          <folding>
+            <element signature="tag#div#1;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../utc/less/app.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3846154" vertical-offset="2350" max-vertical-offset="5700">
-          <caret line="165" column="47" selection-start-line="165" selection-start-column="47" selection-end-line="165" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.71153843" vertical-offset="6858" max-vertical-offset="7335">
+          <caret line="472" column="30" selection-start-line="472" selection-start-column="30" selection-end-line="472" selection-end-column="30" />
           <folding>
-            <marker date="1417267718000" expanded="true" signature="8390:9317" placeholder="{...}" />
+            <marker date="1417279359000" expanded="true" signature="10828:11755" placeholder="{...}" />
           </folding>
         </state>
       </provider>
