@@ -78,9 +78,14 @@ search-block:after {
 .footer .container {
   background: lightgreen;
 }
+html {
+  min-height: 100%;
+  position: relative;
+}
 body {
   font: normal normal 13px/13px "Ubuntu";
   color: #515151;
+  margin-bottom: 40px;
 }
 body a {
   font: normal normal 14px/14px "Ubuntu";
@@ -181,6 +186,11 @@ body a:hover {
   width: -webkit-calc(66.66666666666666% + 95px);
   padding-left: 10px;
   background: lightcyan;
+}
+.right-column:after {
+  content: 'правая колонка';
+  color: red;
+  float: left;
 }
 .right-column .items.grid-block:after {
   content: '';
@@ -399,6 +409,9 @@ body a:hover {
   background: -ms-linear-gradient(top, #3e9edd 0%, rgba(41, 138, 200, 0.98) 15%, rgba(36, 132, 195, 0.97) 27%, rgba(36, 132, 195, 0.95) 43%, rgba(36, 132, 195, 0.95) 44%, #3999d7 100%);
   background: linear-gradient(to bottom, #3e9edd 0%, rgba(41, 138, 200, 0.98) 15%, rgba(36, 132, 195, 0.97) 27%, rgba(36, 132, 195, 0.95) 43%, rgba(36, 132, 195, 0.95) 44%, #3999d7 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3e9edd', endColorstr='#3999d7', GradientType=0);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   height: 40px;
 }
 .bottom-block .left-side {
@@ -407,6 +420,7 @@ body a:hover {
   float: left;
   background: lightsteelblue;
   position: relative;
+  margin-right: 155px;
 }
 .bottom-block .left-side .to-top {
   width: 50px;
@@ -432,5 +446,62 @@ body a:hover {
 }
 .bottom-block .widgets div {
   width: 155px;
-  display: inline-block;
+  height: 40px;
+  float: left;
+  font-size: 13px;
+  color: white;
+  font-weight: 300;
+  position: relative;
+}
+.bottom-block .widgets div.compare {
+  background: #f08080 url("../images/icons/compare-ico.png") no-repeat left center;
+}
+.bottom-block .widgets div.compare p {
+  position: absolute;
+  left: 33px;
+  top: 14px;
+}
+.bottom-block .widgets div.compare span {
+  position: absolute;
+  right: 14px;
+  top: 10px;
+}
+.bottom-block .widgets div.bookmarks {
+  background: #778899 url("../images/icons/star-ico.png") no-repeat 13px 50%;
+}
+.bottom-block .widgets div.bookmarks p {
+  position: absolute;
+  left: 45px;
+  top: 14px;
+}
+.bottom-block .widgets div.bookmarks span {
+  position: absolute;
+  right: 14px;
+  top: 10px;
+}
+.bottom-block .widgets div.cart {
+  background: #d3d3d3 url("../images/icons/cart-footer-ico.png") no-repeat 13px 50%;
+  min-width: 155px;
+}
+.bottom-block .widgets div.cart p {
+  position: absolute;
+  left: 45px;
+  top: 14px;
+}
+.bottom-block .widgets div.cart i {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 900;
+}
+.bottom-block .widgets div.cart span {
+  position: absolute;
+  right: 14px;
+  top: 10px;
+}
+.bottom-block .badge {
+  border: 1px solid #63abda;
+  font-size: 13px;
+  font-weight: 900;
+  color: #80bde5;
+  background: transparent;
 }
