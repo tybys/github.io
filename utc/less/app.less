@@ -146,6 +146,7 @@ body {
         }
     }
 } // left-column 220
+
 .right-column {
     width: ~"calc(66.66666666666666% + 95px)";
     width: ~"-webkit-calc(66.66666666666666% + 95px)";
@@ -153,32 +154,53 @@ body {
     background: lightcyan;
     .items {
         &.grid-block {
+            &:after {
+                content: '';
+                clear: both;
+                display: block;
+            }
             .item {
-                width: 175px;
-                border: 1px solid #d4d4d4;
-                border-radius: 5px;
-                padding: 10px;
+                float: left;
+                margin: 0 19px 19px 0;
+                &:nth-of-type(4n) {
+                    margin-right: 0 !important;
+                }
+                .inner {
+                    .title {
+                        display: block;
+                        margin-bottom: 20px;
+                    }
+                    &:hover {
+                        box-shadow: 0 0 15px black;
+                    }
+                    width: 175px;
+                    background: white;
+                    border: 1px solid #d4d4d4;
+                    border-radius: 5px;
+                    padding: 10px;
+                }
                 .price {
                     width: 154px;
                     border-top: 1px solid #d4d4d4;
+                    text-align: right;
+                    margin-top: 20px;
                     span {
+                        float: left;
                         font-size: 16px;
                         font-weight: 900;
                         color: #333333;
                         display: inline-block;
-                        margin-top: 7px;
+                        margin-top: 27px;
                     }
-                }
-                a {
-                    &:not(.btn) {
+                    a {
+                        margin-top: 19px;
                         font-size: 13px;
-                        color: #5a5a5a;
-                        display: block;
-                        &:hover {
-                            text-decoration: underline;
-                        }
-                    } // title
-                    margin-top: 29px;
+                        line-height: 13px;
+                        font-weight: 300;
+                        text-transform: none;
+
+                    }
+
                     line-height: 14px;
                     font-size: 13px;
                     font-weight: 300;
@@ -187,6 +209,9 @@ body {
             }
         }
     }
+
+
+
 
 } // right-column 760
 
