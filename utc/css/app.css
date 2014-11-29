@@ -60,7 +60,7 @@ body a:hover {
   width: calc(33.33333333333333% - 100px);
   width: -webkit-calc(33.33333333333333% - 100px);
   padding-right: 10px;
-  background: lightgoldenrodyellow;
+  background: lightsalmon;
 }
 .left-column .btn {
   width: 100%;
@@ -71,27 +71,64 @@ body a:hover {
   margin-top: 46px;
 }
 .left-column ul li {
-  border-top: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf;
   padding: 7px 0;
 }
 .left-column ul li:first-of-type {
   border-top: none;
 }
+.left-column ul li:last-of-type {
+  border-bottom: none;
+}
 .left-column ul li a {
   color: #323232;
   text-decoration: none;
   cursor: pointer;
 }
+.left-column ul li a:hover {
+  color: #048bd5;
+}
 .left-column ul li ul {
   padding-left: 17px;
-  margin: 0;
+  margin: 21px 0 0 0;
 }
 .left-column ul li ul li {
   border: none;
-  padding: 4px 0;
 }
-.left-column ul li ul li a {
+.left-column .widget a.wget-anchor {
+  display: block;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.left-column .widget .wget-name {
+  font-size: 14px;
+  font-weight: 900;
+  color: #024d76;
+  text-transform: uppercase;
+  border-bottom: 1px solid #983299;
+  padding-bottom: 23px;
+}
+.left-column .widget .news div {
+  margin-bottom: 23px;
+}
+.left-column .widget .news h3 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #444444;
+}
+.left-column .widget .news h3 p {
+  font-size: 10px;
+  color: #aeaeae;
+  margin-bottom: 2px;
+}
+.left-column .widget .news p {
+  font-size: 13px;
+  color: #979797;
+  font-weight: 400;
+}
+.left-column .widget .news p a {
+  font-size: 13px;
   color: #048bd5;
 }
 .right-column {
@@ -99,6 +136,38 @@ body a:hover {
   width: -webkit-calc(66.66666666666666% + 95px);
   padding-left: 10px;
   background: lightcyan;
+}
+.right-column .items.grid-block .item {
+  width: 175px;
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  padding: 10px;
+}
+.right-column .items.grid-block .item .price {
+  width: 154px;
+  border-top: 1px solid #d4d4d4;
+}
+.right-column .items.grid-block .item .price span {
+  font-size: 16px;
+  font-weight: 900;
+  color: #333333;
+  display: inline-block;
+  margin-top: 7px;
+}
+.right-column .items.grid-block .item a {
+  margin-top: 29px;
+  line-height: 14px;
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: none;
+}
+.right-column .items.grid-block .item a:not(.btn) {
+  font-size: 13px;
+  color: #5a5a5a;
+  display: block;
+}
+.right-column .items.grid-block .item a:not(.btn):hover {
+  text-decoration: underline;
 }
 .top-block {
   line-height: 41px;
