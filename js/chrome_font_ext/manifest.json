@@ -1,5 +1,13 @@
 {
+    "background": {
+        "page": "popup.html"
+    },
+    "content_scripts": [ {
+        "js": [ "popup.js" ],
+        "matches": [ "http://*/*", "https://*/*" ]
+    } ],
     "manifest_version": 2,
+    "permissions": [ "http://*/*", "https://*/*", "contextMenus", "tabs" ],
 
     "name": "property picker",
     "version": "1.0",
@@ -9,11 +17,6 @@
         "32": "32x32.png",
         "48": "48x48.png"
     },
-
-        "permissions": [
-             "<all_urls>"
-        ],
-
     "browser_action": {
         "default_title": " ",
         "default_icon": "48x48.png",
