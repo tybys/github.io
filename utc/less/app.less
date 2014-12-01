@@ -125,6 +125,7 @@ body {
     //box-shadow: inset 0 0 5px black;
 //    border: 1px solid;
 }
+
 .left-column {
     width: ~"calc(33.33333333333333% - 100px)";
     width: ~"-webkit-calc(33.33333333333333% - 100px)";
@@ -413,6 +414,20 @@ body {
 .row {
     &.header {background: #fefafb;}
     &.content {
+
+    }
+    &.helper-block {
+        .col-md-4 {
+            width: ~"calc(33.33333333333333% - 100px)";
+            width: ~"-webkit-calc(33.33333333333333% - 100px)";
+            a {
+                display: block;
+            }
+        }
+        .col-md-8 {
+            width: ~"calc(66.66666666666666% + 95px)";
+            width: ~"-webkit-calc(66.66666666666666% + 95px)";
+        }
         .global-form {
             input[type="text"] {
                 width: ~"calc(100% - 142px)";
@@ -533,6 +548,30 @@ body {
             .socialfacebook { background-position: -10px -0px; width: 25px; height: 25px; }
             .socialtwitter { background-position: -10px -35px; width: 25px; height: 25px; }
             .socialvkontakte { background-position: -10px -70px; width: 25px; height: 25px; }
+        }
+    }
+    &.breadcrumb-block {
+        .container {
+            border-top: 1px solid #cfcfcf;
+            border-bottom: 1px solid #cfcfcf;
+        }
+        .breadcrumb {
+            background: none;
+            margin: 0;
+            & > li + li:before {
+                content: '';
+                background: url("../images/icons/bread.jpg") no-repeat 50% 75%;
+                padding: 0 10px;
+            }
+            & > li {
+                a {
+                    font-size: 12.5px;
+                    color: #7c7c7c;
+                }
+            }
+            & > .activ {
+                color: #863d97;
+            }
         }
     }
 }
