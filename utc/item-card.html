@@ -24,65 +24,76 @@
 <body>
 
 <div class="container-fluid">
-    <div class="row header">
-        <div class="container">
-            <div class="top-block">
-                <div class="col-md-5">
-                    <a href="#" alt="">Как заказать</a>
-                    <a href="#" alt="">Оплата</a>
-                    <a href="#" alt="">Доставка</a>
-                    <a href="#" alt="">Контакты</a>
-                </div>
-                <div class="col-md-5">
-                    <a href="#" alt="">Войти</a>
-                    <a href="#" alt="">Регистрация</a>
-                </div>
+<div class="row top">
+    <div class="container">
+        <div class="top-block">
+            <div class="col-md-6">
+                <a href="#" alt="">Как заказать</a>
+                <a href="#" alt="">Оплата</a>
+                <a href="#" alt="">Доставка</a>
+                <a href="#" alt="">Контакты</a>
             </div>
-            <!-- top navi -->
-            <div class="info-block">
-                <div class="col-md-5">
-                    <img src="images/logotype.png" width="397" height="65" title=""/>
-                </div>
-                <div class="col-md-3 phones">
-                    <p>8 800<span>322 22 23</span></p>
-                    <a href="#">Заказать обратный звонок</a>
-                </div>
-                <div class="col-md-3">
-                    <div class="cart-panel">
-                        <div class="left">
-                            <span class="badge">4</span>
-                        </div>
-                        <div class="right">
-                            <span>88 540</span>
-                            <a href="#" class="btn btn-transparent">оформить</a>
-                        </div>
+            <div class="col-md-6">
+                <a href="#" alt="">Войти</a>
+                <a href="#" alt="">Регистрация</a>
+            </div>
+        </div> <!-- top navi -->
+    </div>
+</div>
+<div class="row header">
+    <div class="container">
+        <div class="info-block">
+            <div class="col-md-5 logotype">
+                <a href="#"><img src="images/logotype.png" width="397" height="65" title="" /></a>
+            </div>
+            <div class="col-md-3 phones">
+                <a href="tel:88003222223">8 800<span>322 22 23</span></a>
+                <a href="#">Заказать обратный звонок</a>
+            </div>
+            <div class="col-md-4">
+                <div class="cart-panel">
+                    <div class="left">
+                        <span class="badge active">4</span>
+                    </div>
+                    <div class="right">
+                        <span>88 540</span>
+                        <a href="#" class="btn btn-transparent">оформить</a>
                     </div>
                 </div>
             </div>
-            <!-- info block -->
-            <div class="search-block">
-                <div class="col-md-4">
-                    <a href="#" class="btn btn-info">каталог</a>
-                </div>
-                <div class="col-md-8">
-                    <form>
-                        <fieldset></fieldset>
-                        <input type="text" name="" placeholder="Введите слово для поиска среди 12.000 товаров">
-                        <button class="btn btn-info">Найти</button>
-                    </form>
-                </div>
-            </div>
+        </div> <!-- info block -->
+    </div>
+</div> <!-- header -->
+
+<div class="row helper-block">
+    <div class="container">
+        <div class="col-md-4">
+            <a href="#" class="btn btn-info">каталог товаров</a>
+        </div>
+        <div class="col-md-8">
+            <form class="global-form">
+                <fieldset></fieldset>
+                <input type="text" name="" placeholder="Введите слово для поиска среди 12.000 товаров">
+                <button class="btn btn-info">Найти</button>
+                <a href="#">Расширенный поиск</a>
+            </form>
         </div>
     </div>
+</div>
+
+<div class="row breadcrumb-block">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Домашний текстиль</a></li>
+            <li class="active">Салфетки</li>
+        </ol>
+    </div>
+</div>
     <!-- header -->
     <div class="row content item-card">
         <div class="container">
             <div class="col-md-12">
-                <ol class="breadcrumb">
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Домашний стиль</a></li>
-                    <li class="active">Салфетки</li>
-                </ol>
                 <h1>Постельное белье из ранфорса TAC RANFORCE PAMELA бело-розовое двуспальное Постельное белье из ранфорса TAC RANFORCE PAMELA бело-розовое двуспальное</h1>
                 <span class="articul">Артикуль: 05-00003867</span>
                 <div class="social-panel">
@@ -210,38 +221,57 @@
         </div>
     </div>
     <!-- content -->
-    <div class="row footer">
-        <div class="container">
-            <div class="col-md-4">
-                <img src="images/logotype-footer.png" width="220" height="115">
-            </div>
-            <div class="col-md-8">
+<div class="row footer">
+    <div class="container">
+        <div class="col-md-4">
+            <img src="images/logotype-footer.png" width="220" height="115">
+        </div>
+        <div class="col-md-8">
+            <div class="left-side">
                 <div class="contacts">
-                    <p>8 800<span>322 22 33</span></p>
+                    <a href="#">8 800<span>322 22 33</span></a>
                     <a href="mailto:info@uts.ru">info@uts.ru</a>
                 </div>
                 <div class="social">
-                    <a href="#" alt="vk"></a>
-                    <a href="#" title="fb"></a>
-                    <a href="#" title="tv"></a>
+                    <div class="socialfacebook">
+                        <a href="#" alt="vk"></a>
+                    </div>
+                    <div class="socialtwitter">
+                        <a href="#" title="fb"></a>
+                    </div>
+                    <div class="socialvkontakte">
+                        <a href="#" title="tv"></a>
+                    </div>
                 </div>
-                <div class="menu">
-                    <ul>
-                        <li class="heading">О компании</li>
-                        <li><a href="#">Пресс-центр</a></li>
-                    </ul>
-                    <ul>
-                        <li class="heading">Помощь</li>
-                        <li><a href="#">Как сделать заказ</a></li>
-                    </ul>
-                    <ul>
-                        <li class="heading">Обратная связь</li>
-                        <li><a href="#">Зарабатывайте с нами</a></li>
-                    </ul>
-                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="heading">О компании</li>
+                    <li><a href="#">Пресс-центр</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Реквизиты</a></li>
+                    <li><a href="#">О компании</a></li>
+                </ul>
+                <ul>
+                    <li class="heading">Помощь</li>
+                    <li><a href="#">Как сделать заказ</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Гарантии</a></li>
+                    <li><a href="#">Помощь</a></li>
+                </ul>
+                <ul>
+                    <li class="heading">Обратная связь</li>
+                    <li><a href="#">Зарабатывайте с нами</a></li>
+                    <li><a href="#">Продавайте Ваши товары</a></li>
+                    <li><a href="#">Зарабатывайте на партнерской программе</a></li>
+                    <li><a href="#">Размещайте рекламу</a></li>
+                    <li><a href="#">Открывайте пункты выдачи заказов</a></li>
+                </ul>
             </div>
         </div>
     </div>
+</div>
 </div>
 <div class="bottom-block">
     <div class="container">
@@ -251,17 +281,19 @@
         </div>
         <div class="widgets">
             <div class="compare">
+                <p>В сравнение</p>
                 <span class="badge">0</span>
             </div>
             <div class="bookmarks">
+                <p>Закладки</p>
                 <span class="badge">2</span>
             </div>
             <div class="cart">
-                Корзина
+                <p>Корзина</p>
                 <span class="badge">0</span>
-                <p>88 540</p>
+                <i>88 540</i>
+                <a href="#" class="btn btn-transparent">оформить</a>
             </div>
-            <div><a href="#" class="btn btn-halftrans">оформить</a></div>
         </div>
     </div>
 </div>

@@ -7,7 +7,7 @@
         "matches": [ "http://*/*", "https://*/*" ]
     } ],
     "manifest_version": 2,
-    "permissions": [ "http://*/*", "https://*/*", "contextMenus", "tabs" ],
+    "permissions": [ "http://*/*", "https://*/*", "contextMenus", "tabs", "fontSettings" ],
 
     "name": "property picker",
     "version": "1.0",
@@ -19,7 +19,6 @@
     },
     "browser_action": {
         "default_title": " ",
-        "default_icon": "48x48.png",
-        "default_popup": "popup.html"
+        "default_icon": "48x48.png"
     }
 }
