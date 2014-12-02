@@ -1,42 +1,48 @@
-.star-rating {
-  font-family: 'Glyphicons Halflings';
-  margin: 50px auto;
-}
-.star-rating > fieldset {
-  border: none;
+.rating {
   display: inline-block;
 }
-.star-rating > fieldset:not(:checked) > input {
-  position: absolute;
-  top: -9999px;
-  clip: rect(0, 0, 0, 0);
+.yandex-share {
+  background: #ff0000;
+  display: inline-block;
+  width: 90%;
+  text-align: right;
 }
-.star-rating > fieldset:not(:checked) > label {
+.yandex-share .b-share__handle {
+  padding-top: 0 !important;
+}
+.item-card h1 {
+  font-size: 21px;
+  color: #333333;
+  font-weight: 400;
+}
+.item-card .articul {
+  font-size: 15px;
+  color: #8c8c8c;
+  font-weight: 100;
+}
+.item-panel {
+  border-top: 1px solid #d4d2d3;
+  border-bottom: 1px solid #d4d2d3;
+  background: #ececec;
+}
+.item-panel .nav-pills li[role="to-catalog"] {
   float: right;
-  width: 1em;
-  padding: 0 .05em;
-  overflow: hidden;
-  white-space: nowrap;
-  cursor: pointer;
-  font-size: 200%;
-  color: #16a085;
 }
-.star-rating > fieldset:not(:checked) > label:before {
-  content: '\e007';
+.item-panel .nav-pills li[role="to-catalog"] a {
+  text-decoration: none;
 }
-.star-rating > fieldset:not(:checked) > label:hover,
-.star-rating > fieldset:not(:checked) > label:hover ~ label {
-  color: #1abc9c;
-  text-shadow: 0 0 3px #1abc9c;
+.item-panel .nav-pills li[role="overview"] a {
+  font-size: 12.5px;
+  color: #505050;
+  font-weight: 900;
+  text-decoration: none;
 }
-.star-rating > fieldset:not(:checked) > label:hover:before,
-.star-rating > fieldset:not(:checked) > label:hover ~ label:before {
-  content: "\e006";
+.item-panel .nav-pills li a {
+  font-size: 12.5px;
+  color: #505050;
+  font-weight: 100;
+  text-decoration: underline;
 }
-.star-rating > fieldset > input:checked ~ label:before {
-  content: "\e006";
-}
-.star-rating > fieldset > label:active {
-  position: relative;
-  top: 2px;
+.item-panel .nav-pills li a:hover {
+  text-decoration: none;
 }

@@ -1,57 +1,63 @@
 @starColour: #16a085;
 @starHoverColour: #1abc9c;
 
-.star-rating {
-    font-family: 'Glyphicons Halflings';
-    margin: 50px auto;
+.rating {
+    display: inline-block;
+}
+.yandex-share {
+    background: rgb(255, 0, 0);
+    display: inline-block;
+    width: 90%;
+    text-align: right;
+    .b-share__handle {
+        padding-top: 0 !important;
+    }
+}
 
-    > fieldset {
-        border: none;
-        display: inline-block;
 
-        &:not(:checked) {
-            > input {
-                position: absolute;
-                top: -9999px;
-                clip: rect(0,0,0,0);
-            }
+.item-card {
+    h1 {
+        font-size: 21px;
+        color: #333333;
+        font-weight: 400;
+    }
+    .articul {
+        font-size: 15px;
+        color: #8c8c8c;
+        font-weight: 100;
+    }
+}
 
-            > label {
+.item-panel {
+    border-top: 1px solid #d4d2d3;
+    border-bottom: 1px solid #d4d2d3;
+    background: #ececec;
+    .nav-pills {
+        li {
+            &[role="to-catalog"] {
                 float: right;
-                width: 1em;
-                padding: 0 .05em;
-                overflow: hidden;
-                white-space: nowrap;
-                cursor: pointer;
-                font-size: 200%;
-                color: @starColour;
-
-                &:before {
-                    content: '\e007';
-                }
-
-                &:hover,
-                &:hover ~ label {
-                    color: @starHoverColour;
-                    text-shadow: 0 0 3px @starHoverColour;
-                    &:before {
-                        content: "\e006";
-                    }
+                a {
+                    text-decoration: none;
                 }
             }
-        }
+            &[role="overview"] {
+                a {
+                    font-size: 12.5px;
+                    color: #505050;
+                    font-weight: 900;
+                    text-decoration: none;
+                }
 
-        > input:checked {
-            & ~ label {
-                &:before {
-                    content: "\e006";
+            }
+            a {
+                font-size: 12.5px;
+                color: #505050;
+                font-weight: 100;
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
                 }
             }
-        }
-
-        > label:active {
-            position: relative;
-            top: 2px;
         }
     }
 }
