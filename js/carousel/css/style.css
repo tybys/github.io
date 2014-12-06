@@ -1,0 +1,520 @@
+body {
+    background: rgba(0, 0, 0, 0.88);
+}
+
+.rulet {
+
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  user-select: none;         
+    position: relative;
+    display: inline-block;
+}
+.rulet-content h4 {
+    color: #6EB661;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 600;
+}
+.rulet-content p {
+    color: #5D6D79;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 300;
+    display: none;
+}
+.rulet-content.info0 p.info0,
+.rulet-content.info1 p.info1,
+.rulet-content.info2 p.info2,
+.rulet-content.info3 p.info3 {
+    display: block;
+}
+
+hr.preload {
+    width: 430px;
+    height: 1px;
+    background: #EFF3F8;
+}
+hr.preload:after {
+    content: '';
+    display: block;
+    background: #A3ABB6;
+    width: auto;
+    height: 1px;
+    -webkit-animation: loading 3s linear infinite;
+}
+@-webkit-keyframes loading {
+	from { width: 0; }
+  to { width: 100%; }
+}
+    .rulet div {
+        margin: 0 auto;
+        display: inline-block;
+        /*width: 220px;*/
+        border-radius: 10px;
+        border: 1px solid #717B8D;
+        font-family: Arial;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        height: 47px;
+        line-height: 50px;
+        overflow: hidden;
+    }
+
+        .rulet div span {
+            width: 38px;
+            display: block;
+            float: left;
+            top: 0;
+            -moz-transition: top .5s ease;
+            -o-transition: top .5s ease;
+            -webkit-transition: top .5s ease;
+            transition: top .5s ease;
+            font-size: 18px;
+            line-height: 18px;
+            font-family: Roboto;
+            font-weight: 900;
+            color: #6EB661;
+            position: relative;
+            border-right: 1px solid #717B8D;
+        }
+            
+            .rulet div span i {
+                display: block;
+            }
+
+            .rulet div span:last-of-type {
+                border: none;
+            }
+
+            .rulet div span i {
+                /*display: block;*/
+                font-style: normal;
+                font: normal 900 18px/47px Roboto;
+                color: #6EB661;
+            }
+
+.pipka {
+    border: 1px solid #717b8d;
+    width: 7px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: -19px;
+    cursor: pointer;
+
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  user-select: none;         
+}
+
+    .pipka:after {
+        position: absolute;
+content: '';
+top: -15px;
+right: -2.1px;
+display: block;
+width: 12px;
+height: 73px;
+background: url("/Images/Ruchka.png") no-repeat;
+/* background-size: 18px; */
+background-position: 43.5% 0;
+    }
+
+    .pipka i {
+        font-size: 14px;
+        font-family: Roboto;
+        font-weight: 300;
+        font-style: normal;
+        color: #3196db;
+        position: relative;
+        top: -3px;
+        left: 15px;
+        line-height: 14px;
+        display: inline-block;
+    }
+
+    .pipka.sel:after {
+        content: '';
+        -moz-transform: rotateZ(180deg);-ms-transform: rotateZ(180deg);-o-transform: rotateZ(180deg);-webkit-transform: rotateZ(180deg);
+        transform: rotateZ(180deg);
+        top: -36px;
+    }
+
+
+/*slider*/
+#slider {
+    /*background: rgba(0, 102, 0, 0.2) url("/Images/pattern.png") no-repeat center;*/
+    /*background: url("/Images/pattern.png") no-repeat 59% -107px;*/
+    position: relative;
+    width: 960px;
+    height: calc(100% + 450px);
+    height: -webkit-calc(100% + 450px);
+    margin-left: calc(50% - 480px);
+
+    min-height: 815px;
+    overflow: hidden;
+
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  user-select: none;         
+  padding-bottom: 30px;
+}
+#slider .bottom-parts {
+    position: absolute;
+    bottom: 12%;
+    text-align: center;
+}
+#slider .bottom-parts .big-button {
+    background: white;
+    font-size: 38px;
+    font-family: Roboto;
+    font-weight: 300;
+    color: rgb(110, 182, 97);
+    border: 1px solid rgb(110, 182, 97);
+    text-decoration: none;
+    position: relative;
+    
+    top: 29px;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+#slider .bottom-parts .bottom {
+    /*position: absolute;*/
+    text-align: left;
+    position: relative;
+    top: 100px;
+    padding: 0 29px;
+}
+#slider .bottom-parts p.bottom {
+    font-size: 14px;
+    color: #717B8D;
+    font-family: Roboto;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+#slider .bottom-parts .bottom p a {
+    font-size: 14px;
+    color: #3196db;
+    font-family: Roboto;
+    font-weight: 300;
+}
+#slider .upper-info p {
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 300;
+    color: #717B8D;
+
+    margin-top: 37px;
+    margin-left: 29px;
+    line-height: 17px;
+}
+#slider .upper-info p:last-of-type {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 46px;
+    margin-left: 0;
+}
+#slider .upper-info p a {
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 900;
+    color: rgb(0, 112, 205);
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+    #slider ul.example {
+        position: absolute;
+        top: 0;
+        left: -198px;
+        margin: 247px 0 0 0;
+        padding: 0;
+        white-space: nowrap;
+        width: 100%;
+        /**/
+        letter-spacing: -0.3px;
+        font-size: 0;
+    }
+
+        #slider ul.example li {
+            display: inline-block;
+            margin: 0 28px 0 0;
+            width: 150px;
+            height: 150px;
+            position: relative;
+            cursor: pointer;
+            /**/
+            letter-spacing: normal;
+        }
+            #slider ul.example li > div {
+                -moz-transition: all 1s ease;
+                -o-transition: all 1s ease;
+                -webkit-transition: all 1s ease;
+
+                transition: all 1s ease;
+                background-color: #ffffff;
+                background-repeat: no-repeat;
+                background-position: center;
+                list-style: none;
+                position: absolute;
+                z-index: 2;
+                width: 150px;
+                height: 150px;
+                top: 73%;
+                left: 50%;
+                border-radius: 100%;
+                border: 2px solid #717b8d;
+                margin: -75px 0 0 -75px;
+            }
+
+
+
+                #slider ul.example li > div span {
+                    display: none;
+                    max-width: 240px;
+                    position: absolute;
+                    top: 50%;
+                    left: calc(50% - 120px);
+                    left: -webkit-calc(50% - 120px);
+                }
+
+                @-webkit-keyframes inners {
+	                from { opacity: 0; }
+                    to { opacity: 1; }
+                }
+                #slider ul.example li > div span h2,
+                #slider ul.example li > div span p,
+                #slider ul.example li > div span a {
+                    -moz-transition: opacity 1s ease;-o-transition: opacity 1s ease;-webkit-transition: opacity 1s ease;
+                    transition: opacity 1s ease;
+                }
+
+                    #slider .arr {
+                        opacity: 0;
+                    }
+                    #slider ._sel .arr {
+                        opacity: 1;
+                        -moz-animation: inners 3s ease none;-o-animation: inners 3s ease none;-webkit-animation: inners 3s ease none;
+                        animation: inners 3s ease none;
+
+                    }
+
+                    #slider ul.example li._sel > div span h2 {
+                       /* -moz-animation: inners 0.1s ease none;
+                        -o-animation: inners 0.1s ease none;
+                        -webkit-animation: inners 0.1s ease none;
+                        animation: inners 0.1s ease none;
+                        -moz-animation-delay: 0;-o-animation-delay: 0;-webkit-animation-delay: 0;*/
+                        animation-delay: 0;
+                    }
+                    #slider ul.example li._sel > div span p {
+                        /*-moz-animation: inners 1s ease none;
+                        -o-animation: inners 1s ease none;
+                        -webkit-animation: inners 1s ease none;
+                        animation: inners 1s ease none;
+                        -moz-animation-delay: 0.2s;-o-animation-delay: 0.2s;-webkit-animation-delay: 0.2s;*/
+                        /*animation-delay: 0.2s;*/
+                    }
+                    #slider ul.example li._sel > div span a {
+                        /*-moz-animation: inners 1s ease none;-o-animation: inners 1s ease none;-webkit-animation: inners 1s ease none;
+                        animation: inners 1s ease none;
+                        -moz-animation-delay: 0.3s;-o-animation-delay: 0.3s;-webkit-animation-delay: 0.3s;
+                        animation-delay: 0.3s;*/
+                    }
+
+                    #slider ul.example li > div span h2 {
+                        font-family: Roboto;
+                        font-weight: 300;
+                        font-size: 18px;
+                        color: #0070CD;
+                        text-align: center;
+                        white-space: normal;
+                        opacity: 1;
+                        margin-top: 25px;
+                        margin-bottom: 8px;
+                    }
+
+                    #slider ul.example li > div span p {
+                        margin-top: 0;
+                        font-family: Roboto;
+                        font-weight: 300;
+                        font-size: 12px;
+                        line-height: 14px;
+                        color: #5D6D79;
+                        text-align: center;
+                        white-space: normal;
+                        padding: 0 10%;
+                        opacity: 1;
+                    }
+
+                    #slider ul.example li > div span a {
+                        font-family: Roboto;
+                        font-weight: 300;
+                        font-size: 12px;
+                        color: #6EB661;
+                        display: block;
+                        text-align: center;
+                        text-decoration: none;
+                        opacity: 1;
+                    }
+
+                #slider ul.example li > div img.icon {
+                    position: absolute;
+                    left: calc(50% - 35px);
+                    left: -webkit-calc(50% - 35px);
+                    top: calc(50% - 30px);
+                    top: -webkit-calc(50% - 30px);
+                }
+
+                #slider ul.example li > div .shadow {
+                    position: absolute;
+                    width: 108px;
+                    height: 16px;
+                    left: calc(50% - 54px);
+                    left: -webkit-calc(50% - 54px);
+                    bottom: -22px;
+                }
+                img.shadow{
+                    opacity: 0.75;
+                }
+                #slider ul.example li._sel {
+                    margin: 0 96px 0 64px;
+                }
+                #slider ul.example li._sel > div {
+                    background-position-y: 38px !important;
+                    top: 50px;
+                    -moz-transition: all 1s ease;
+                    -o-transition: all 1s ease;
+                    -webkit-transition: all 1s ease;
+                    transition: all 1s ease;
+                    background-repeat: no-repeat;
+                    background-position: center 35%;
+                    border-color: #0070cd;
+                    border-width: 4px;
+                    width: 245px;
+                    height: 245px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin: -125px 0 0 -125px;
+                    z-index: 100;
+                }
+                    #slider ul.example li._sel > div div {
+                        z-index: 999;
+                    }
+                        #slider ul.example li._sel > div div.prev {
+                            background: url("../images/arrow.png") no-repeat;
+                            width: 18px;
+                            height: 18px;
+                            cursor: pointer;
+                            position: absolute;
+                            left: -33px;
+                            top: calc(50% - 9px);
+                            top: -webkit-calc(50% - 9px);
+                        }
+                        #slider ul.example li._sel > div div.next {
+                            background: url("../images/arrow.png") no-repeat;
+                            width: 18px;
+                            height: 18px;
+                            cursor: pointer;
+                            position: absolute;
+                            right: -33px;
+                            top: calc(50% - 9px);
+                            top: -webkit-calc(50% - 9px);
+                            transform: rotate(180deg);
+							-webkit-transform: rotate(180deg);
+                        }
+                    #slider ul.example li._sel > div span {
+                        display: block;
+                    }
+                    #slider ul.example li._sel > div .shadow {
+                        width: 180px;
+                        height: 27px;
+                        left: calc(50% - 90px);
+                        left: -webkit-calc(50% - 90px);
+                    }
+                    #slider ul.example li._sel .shadow {
+                        display: none;
+                    }
+                    #slider ul.example li._sel:after {
+                        content: '';
+                        width: 180px;
+                        height: 25px;
+                        display: block;
+                        background: #DBDEE2;
+                        position: absolute;
+                        bottom: -68px;
+                        left: calc(50% - 88px);
+                        left: -webkit-calc(50% - 88px);
+                        -moz-border-radius: 100%;
+                        -webkit-border-radius: 100%;
+                        border-radius: 100%;
+                    }
+
+
+                #slider ul.example li > div.wallet {background-image: url("../images/wallet.png")}
+                #slider ul.example li._sel > div.wallet {
+                    background-image: url("../images/wallet-red.png");
+                }
+                #slider ul.example li > div.terminal {background-image: url("../images/terminal.png")}
+                #slider ul.example li._sel > div.terminal {
+                    background-image: url("../images/terminal-red.png");
+                }
+                #slider ul.example li > div.ecommerce {background-image: url("../images/ecommerce.png")}
+                #slider ul.example li._sel > div.ecommerce {
+                    background-image: url("../images/ecommerce-red.png");
+                }
+                #slider ul.example li > div.visa {background-image: url("../images/visa.png")}
+                #slider ul.example li._sel > div.visa {
+                    background-image: url("../images/visa-red.png");
+                }
+                #slider ul.example li > div.bank {background-image: url("../images/bank.png")}
+                #slider ul.example li._sel > div.bank {
+                    background-image: url("../images/bank-red.png");
+                }
+                #slider ul.example li > div.platform {background-image: url("../images/platform.png")}
+                #slider ul.example li._sel > div.platform {
+                    background-image: url("../images/platform-red.png");
+                }
+
+    #slider .markers {
+        position: absolute;
+        top: -54px;
+
+        width: 100%;
+        text-align: center;
+    }
+    #slider .markers span {
+        cursor: pointer;
+        width: 9px;
+        height: 9px;
+        display: inline-block;
+        border: 1px solid #0070CD;
+        background: white;
+        border-radius: 100%;
+        margin: 0 3px;
+    }
+
+        #slider .markers.m0 #mark0,
+        #slider .markers.m1 #mark1,
+        #slider .markers.m2 #mark2,
+        #slider .markers.m3 #mark3,
+        #slider .markers.m4 #mark4,
+        #slider .markers.m5 #mark5 {
+            background-color: #0070CD;
+        }
