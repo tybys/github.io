@@ -13,10 +13,6 @@
                 var bPrev = $(this).hasClass("prev");
                 var nx = bPrev ? sel.prev() : sel.next();
 
-                var act = $(this).nextAll(".text");
-                var circle_text = $(".text")
-                circle_text.hide();
-
                 sel.removeClass("_sel");
                 nx.addClass("_sel");
 
@@ -30,9 +26,6 @@
                         ul.css("left", -198);
                         currIndex = (currIndex + 5) % 6;
                         $(".markers").attr("class", "markers m" + currIndex);
-                        setTimeout(function () {
-                            $("._sel .text").show();
-                        }, 150);
                     });
                 }
                 else
@@ -45,9 +38,6 @@
                         ul.css("left", -198);
                         currIndex = (currIndex + 1) % 6;
                         $(".markers").attr("class", "markers m" + currIndex);
-                        setTimeout(function () {
-                            $("._sel .text").show();
-                        }, 150);
                     });
                 }
             });
@@ -59,9 +49,9 @@
             });
             ul.on("click", "li", function ()
             {
-                var t = $(this);
+                var t = $(this);    
                 if (!t.hasClass("_sel"))
-                {
+                {                    
                     slideSliderToItem(parseInt(t.attr("class"), 10) -1);
                 }
             });

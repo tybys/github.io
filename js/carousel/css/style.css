@@ -315,26 +315,43 @@ background-position: 43.5% 0;
                     }
 
                     #slider ul.example li._sel > div span h2 {
-                       /* -moz-animation: inners 0.1s ease none;
+                        -moz-animation: inners 0.1s ease none;
                         -o-animation: inners 0.1s ease none;
                         -webkit-animation: inners 0.1s ease none;
                         animation: inners 0.1s ease none;
-                        -moz-animation-delay: 0;-o-animation-delay: 0;-webkit-animation-delay: 0;*/
+                        -moz-animation-delay: 0;-o-animation-delay: 0;-webkit-animation-delay: 0;
                         animation-delay: 0;
                     }
                     #slider ul.example li._sel > div span p {
-                        /*-moz-animation: inners 1s ease none;
-                        -o-animation: inners 1s ease none;
-                        -webkit-animation: inners 1s ease none;
+                        -moz-animation: inners 1s ease none;-o-animation: inners 1s ease none;-webkit-animation: inners 1s ease none;
                         animation: inners 1s ease none;
-                        -moz-animation-delay: 0.2s;-o-animation-delay: 0.2s;-webkit-animation-delay: 0.2s;*/
-                        /*animation-delay: 0.2s;*/
+                        -moz-animation-delay: 0.2s;-o-animation-delay: 0.2s;-webkit-animation-delay: 0.2s;
+                        animation-delay: 0.2s;
                     }
                     #slider ul.example li._sel > div span a {
-                        /*-moz-animation: inners 1s ease none;-o-animation: inners 1s ease none;-webkit-animation: inners 1s ease none;
+                        -moz-animation: inners 1s ease none;-o-animation: inners 1s ease none;-webkit-animation: inners 1s ease none;
                         animation: inners 1s ease none;
                         -moz-animation-delay: 0.3s;-o-animation-delay: 0.3s;-webkit-animation-delay: 0.3s;
-                        animation-delay: 0.3s;*/
+                        animation-delay: 0.3s;
+                    }
+
+
+                    @-webkit-keyframes outers {
+                        from { opacity: 0; }
+                        to { opacity: 1; }
+                    }
+
+                    #slider li .text {
+                        opacity: 0;
+                    }
+                    #slider li._sel .text {
+                        -moz-animation: outers 1s ease none;-o-animation: outers 1s ease none;-webkit-animation: outers 1s ease none;
+                        animation: outers 1s ease none;
+
+                        -moz-animation-delay: 3s;
+                        -o-animation-delay: 3s;
+                        -webkit-animation-delay: 3s;
+                        animation-delay: 3s;
                     }
 
                     #slider ul.example li > div span h2 {
@@ -467,29 +484,30 @@ background-position: 43.5% 0;
                     }
 
 
-                #slider ul.example li > div.wallet {background-image: url("../images/wallet.png")}
+
+                #slider ul.example li > div.wallet {background-image: url("../images/wallet.svg")}
                 #slider ul.example li._sel > div.wallet {
-                    background-image: url("../images/wallet-red.png");
+                    background-image: url("../images/wallet-red.svg");
                 }
-                #slider ul.example li > div.terminal {background-image: url("../images/terminal.png")}
+                #slider ul.example li > div.terminal {background-image: url("../images/terminal.svg")}
                 #slider ul.example li._sel > div.terminal {
-                    background-image: url("../images/terminal-red.png");
+                    background-image: url("../images/terminal-red.svg");
                 }
-                #slider ul.example li > div.ecommerce {background-image: url("../images/ecommerce.png")}
+                #slider ul.example li > div.ecommerce {background-image: url("../images/ecommerce.svg")}
                 #slider ul.example li._sel > div.ecommerce {
-                    background-image: url("../images/ecommerce-red.png");
+                    background-image: url("../images/ecommerce-red.svg");
                 }
-                #slider ul.example li > div.visa {background-image: url("../images/visa.png")}
+                #slider ul.example li > div.visa {background-image: url("../images/visa.svg")}
                 #slider ul.example li._sel > div.visa {
-                    background-image: url("../images/visa-red.png");
+                    background-image: url("../images/visa-red.svg");
                 }
-                #slider ul.example li > div.bank {background-image: url("../images/bank.png")}
+                #slider ul.example li > div.bank {background-image: url("../images/bank.svg")}
                 #slider ul.example li._sel > div.bank {
-                    background-image: url("../images/bank-red.png");
+                    background-image: url("../images/bank-red.svg");
                 }
-                #slider ul.example li > div.platform {background-image: url("../images/platform.png")}
+                #slider ul.example li > div.platform {background-image: url("../images/platform.svg")}
                 #slider ul.example li._sel > div.platform {
-                    background-image: url("../images/platform-red.png");
+                    background-image: url("../images/platform-red.svg");
                 }
 
     #slider .markers {
