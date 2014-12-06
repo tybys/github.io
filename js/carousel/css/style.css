@@ -300,8 +300,8 @@ background-position: 43.5% 0;
                 #slider ul.example li > div span h2,
                 #slider ul.example li > div span p,
                 #slider ul.example li > div span a {
-                    -moz-transition: opacity 1s ease;-o-transition: opacity 1s ease;-webkit-transition: opacity 1s ease;
-                    transition: opacity 1s ease;
+                    /*-moz-transition: opacity 1s ease;-o-transition: opacity 1s ease;-webkit-transition: opacity 1s ease;*/
+                    /*transition: opacity 1s ease;*/
                 }
 
                     #slider .arr {
@@ -315,43 +315,50 @@ background-position: 43.5% 0;
                     }
 
                     #slider ul.example li._sel > div span h2 {
-                        -moz-animation: inners 0.1s ease none;
-                        -o-animation: inners 0.1s ease none;
-                        -webkit-animation: inners 0.1s ease none;
-                        animation: inners 0.1s ease none;
-                        -moz-animation-delay: 0;-o-animation-delay: 0;-webkit-animation-delay: 0;
-                        animation-delay: 0;
+                        /*-moz-animation: inners 0.1s ease none;*/
+                        /*-o-animation: inners 0.1s ease none;*/
+                        /*-webkit-animation: inners 0.1s ease none;*/
+                        /*animation: inners 0.1s ease none;*/
+                        /*-moz-animation-delay: 0;-o-animation-delay: 0;-webkit-animation-delay: 0;*/
+                        /*animation-delay: 0;*/
                     }
                     #slider ul.example li._sel > div span p {
-                        -moz-animation: inners 1s ease none;-o-animation: inners 1s ease none;-webkit-animation: inners 1s ease none;
-                        animation: inners 1s ease none;
-                        -moz-animation-delay: 0.2s;-o-animation-delay: 0.2s;-webkit-animation-delay: 0.2s;
-                        animation-delay: 0.2s;
+                        /*-moz-animation: inners 1s ease none;-o-animation: inners 1s ease none;-webkit-animation: inners 1s ease none;*/
+                        /*animation: inners 1s ease none;*/
+                        /*-moz-animation-delay: 0.2s;-o-animation-delay: 0.2s;-webkit-animation-delay: 0.2s;*/
+                        /*animation-delay: 0.2s;*/
                     }
                     #slider ul.example li._sel > div span a {
-                        -moz-animation: inners 1s ease none;-o-animation: inners 1s ease none;-webkit-animation: inners 1s ease none;
-                        animation: inners 1s ease none;
-                        -moz-animation-delay: 0.3s;-o-animation-delay: 0.3s;-webkit-animation-delay: 0.3s;
-                        animation-delay: 0.3s;
+                        /*-moz-animation: inners 1s ease none;-o-animation: inners 1s ease none;-webkit-animation: inners 1s ease none;*/
+                        /*animation: inners 1s ease none;*/
+                        /*-moz-animation-delay: 0.3s;-o-animation-delay: 0.3s;-webkit-animation-delay: 0.3s;*/
+                        /*animation-delay: 0.3s;*/
                     }
 
 
                     @-webkit-keyframes outers {
-                        from { opacity: 0; }
+                        from { opacity: 0.1; }
                         to { opacity: 1; }
                     }
 
                     #slider li .text {
-                        opacity: 0;
+                        /*display: none;*/
+                        /*visibility: hidden;*/
+                        /*opacity: 0;*/
+                        width: 240px;
+                        height: 109px;
                     }
                     #slider li._sel .text {
-                        -moz-animation: outers 1s ease none;-o-animation: outers 1s ease none;-webkit-animation: outers 1s ease none;
-                        animation: outers 1s ease none;
+                        /*-moz-animation: outers 5s ease none;*/
+                        /*-o-animation: outers 5s ease none;*/
+                        /*-webkit-animation: outers 5s ease none;*/
+                        /*animation: outers 5s ease none;*/
 
-                        -moz-animation-delay: 3s;
-                        -o-animation-delay: 3s;
-                        -webkit-animation-delay: 3s;
-                        animation-delay: 3s;
+                        /*-moz-animation-delay: 1s;*/
+                        /*-o-animation-delay: 1s;*/
+                        /*-webkit-animation-delay: 1s;*/
+                        /*animation-delay: 1s;*/
+                        /*visibility: visible;*/
                     }
 
                     #slider ul.example li > div span h2 {

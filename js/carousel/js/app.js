@@ -18,6 +18,7 @@
 
                 if (bPrev)
                 {
+                    $(".text").hide();
                     ul.animate({
                         left: _eachWidth - 198
                     }, 500, function () {
@@ -26,6 +27,7 @@
                         ul.css("left", -198);
                         currIndex = (currIndex + 5) % 6;
                         $(".markers").attr("class", "markers m" + currIndex);
+                        text();
                     });
                 }
                 else
@@ -38,18 +40,15 @@
                         ul.css("left", -198);
                         currIndex = (currIndex + 1) % 6;
                         $(".markers").attr("class", "markers m" + currIndex);
+                        text();
                     });
                 }
             });
-            $(".markers span").click(function ()
-            {
-                var t = $(this);
-                var newIdx = parseInt(t.attr("id").substr(4));
-                slideSliderToItem(newIdx);
-            });
+
             ul.on("click", "li", function ()
             {
-                var t = $(this);    
+                var t = $(this);
+                $(".text").hide();
                 if (!t.hasClass("_sel"))
                 {                    
                     slideSliderToItem(parseInt(t.attr("class"), 10) -1);
@@ -78,11 +77,11 @@
 
                         ul.animate({
                             left: -198
-                        }, 500, function ()
-                        {
+                        }, 500, function () {
                             for (var i = 0; i < d; i++) { items.eq(-1 - i).remove(); }
                             currIndex = newIdx;
                             $(".markers").attr("class", "markers m" + currIndex);
+                            text();
                         });
                     }
                     else
@@ -90,12 +89,12 @@
                         for (var i = 0; i < -d; i++) { ul.append(ul.find("li").eq(1 + i).clone()); }
                         ul.animate({
                             left: -198 + d * _eachWidth
-                        }, 500, function ()
-                        {
+                        }, 500, function () {
                             for (var i = 0; i < -d; i++) { items.eq(i).remove(); }
                             ul.css("left", -198);
                             currIndex = newIdx;
                             $(".markers").attr("class", "markers m" + currIndex);
+                            text();
                         });
                     }
                 }
@@ -127,6 +126,13 @@
                 $(".rulet").data("index", i);
                 displayNumericStr(strings[i]);
                 $(".rulet-content").attr("class", "rulet-content info" + i);
+            }
+
+            function text()
+            {
+                setTimeout(function () {
+                    $("._sel .text").fadeIn('slow')
+                }, 50);
             }
 
             function displayNumericStr(str)
