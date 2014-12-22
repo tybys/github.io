@@ -1,5 +1,6 @@
 (function ($) {
 
+<<<<<<< HEAD
     /**
      * навести курсор мыши на объект
      * создать панельку
@@ -13,8 +14,47 @@
     }
 
     document.addEventListener("mouseover", mouseOver)
+=======
+    //function tar(event)
+    //{
+    //    event = event || window.event;
+    //    var t = event.target || event.srcElement;
+    //    console.log(t.tagName.toLowerCase(), t.className);
+    //    d.innerHTML(t.tagName)
+    //}
+    //window.onload = function () {
+    //    var d = document.createElement('div');
+    //    d.style.background = "gray";
+    //    d.className = 'myClass';
+    //    document.body.appendChild(d);
+    //}
+    
+    //document.addEventListener("mouseover", tar);
+
+
+    
+
+>>>>>>> FETCH_HEAD
 
     $(function () {
+        var floatPane = $("<div/>", { "class": "myClass" }).prependTo("body");
+
+        $('body').on("mouseover", function (e) {
+            //e = event || window.event;
+
+            var t = event.target || event.srcElement;
+            var tt = document.defaultView.getComputedStyle(t, '');
+
+            
+            var font_family = tt.getPropertyCSSValue('font-family').cssText;
+            var font_size = tt.getPropertyCSSValue('font-size').cssText;
+            var font_weight = tt.getPropertyCSSValue('font-weight').cssText;
+            var line_height = tt.getPropertyCSSValue('line-height').cssText;
+
+
+            floatPane.html(t.tagName, font_family)
+        });
+
         $(window).load(function () {
             var ul = $("#slider_ul");
             var _eachWidth = ul.children('li').eq(0).outerWidth(true);
