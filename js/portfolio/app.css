@@ -1,0 +1,16 @@
+img {
+  display: block;
+}
+.item {
+  width: 25%;
+  float: left;
+  height: 300px;
+}
+.item p span {
+  border-radius: 5px;
+  display: inline-block;
+  padding: 2px 5px;
+  background: black;
+  color: white;
+  margin: 0 4px;
+}

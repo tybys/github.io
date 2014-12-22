@@ -115,6 +115,22 @@
             </LessProfile>
           </value>
         </entry>
+        <entry key="7">
+          <value>
+            <LessProfile>
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="$PROJECT_DIR$/../js/portfolio" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="id" value="7" />
+              <option name="lessDirPath" value="$PROJECT_DIR$/../js/portfolio" />
+              <option name="name" value="portfolio" />
+            </LessProfile>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

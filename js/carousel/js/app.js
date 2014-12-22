@@ -1,4 +1,19 @@
 (function ($) {
+
+    /**
+     * навести курсор мыши на объект
+     * создать панельку
+     * сграбить значения шрифта, цвета, размера
+     * вставить в панельку
+     */
+
+    function mouseOver(e) {
+        var overObject = document.getElementsByTagName(e.evennt.target)
+        console.log(overObject)
+    }
+
+    document.addEventListener("mouseover", mouseOver)
+
     $(function () {
         $(window).load(function () {
             var ul = $("#slider_ul");
