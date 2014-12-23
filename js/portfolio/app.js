@@ -1,8 +1,32 @@
+(function ($)
+{
+    $(function ()
+    {
+        //WindowDimensions();
+        function WindowDimensions()
+        {
+            var WindowWidth = $(window).outerWidth();
+            var WindowHeight = $(window).outerHeight();
+            $("#MainItem").css("height", WindowHeight);
+        }
+
+        $(window).on("resize", function ()
+        {
+            //WindowDimensions();
+        });
+
+    });
+})(jQuery);
+
+// work items "builder"
 var items = [];
 $.getJSON("works.json", function(data)
 {
+    count = 0;
     for (var i = 0; i < data.length; i++)
     {
+
+        count ++;
         var oItem = new Item(data[i]);
         oItem.createSkills();
 
@@ -37,13 +61,22 @@ function Item(props)
 
     this.render = function()
     {
-        return "<div class='item'>"+
-            "<h2>" + this.appname + "</h2>" +
-            (this.logotype?"<img src='" + this.logotype + "'>":'') +
-            "<a target='_blank' alt='' href='"+ this.prod_url +"'>" + this.prod_url + "</a>" +
-            "<p>" + this.skillz.join('') + "</p>" +
-            "<p>" + this.description + "</p>" +
-            "</div>";
+        return "<div id='group"+ count +"' class='group "+ this.appname +"'>"+
+        "<div class='layer base'><div class='title'>" + this.appname + "</div></div>" +
+        "<div class='layer fore'><div class='title'>"+ (this.logotype?"<img src='" + this.logotype + "'>":'') +"</div></div>" +
+        "<div class='layer back'>" +
+        "<div class='title'>" +
+        "<a target='_blank' alt='' href='"+ this.prod_url +"'>" + this.prod_url + "</a>" +
+        "<p>" + this.skillz.join('') + "</p>" +
+        "<p>" + this.description + "</p>" +
+        "</div>" +
+        "</div>" +
+        "<div class='layer deep'>" +
+        "<div class='title'>" +
+
+        "</div>" +
+        "</div>" +
+        "</div>";
     }
 }
 
