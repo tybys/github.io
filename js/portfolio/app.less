@@ -55,9 +55,17 @@ img {
         }
 
         &.base {
+//            -webkit-filter: grayscale(100%);
+//            -webkit-filter: blur(1px);
             -webkit-transform: translateZ(0);
             transform: translateZ(0);
             z-index: 4;
+            &:after {
+//                content: '';
+//                height: 100%;
+//                background: rgba(255, 255, 255, 0.5);
+//                -webkit-filter: grayscale(100%);
+            }
         }
 
         &.back {
@@ -70,6 +78,7 @@ img {
             -webkit-transform: translateZ(-600px) scale(3);
             transform: translateZ(-600px) scale(3);
             z-index: 2;
+            height: 458px;
         }
     }
 }
@@ -138,140 +147,89 @@ body {
 
 #group1 {
     z-index: 999;
-    .deep {
-        background: rgba(102,204,102, 0.5);
+    .base {
+        background: rgba(102,204,102, 0.5) url("images/bricklaer.png");
     }
     .base {
-        background: url("images/bricklaer.png");
-        -webkit-filter: grayscale(100%);
+
     }
 } // bricklaer
 
 #group2 {
     z-index: 998;
-    .deep {
-        background: rgba(87, 178, 204, 0.50);
-    }
     .base {
-        //background: rgb(123,210,102);
-        background: url("images/ecopit.png");
-        -webkit-filter: grayscale(100%);
+        background: rgba(87, 178, 204, 0.50) url("images/ecopit.png");
     }
 } // ecopit
 
 #group3 {
     z-index: 997;
-    .deep {
-        background: rgba(216, 109, 70, 0.5);
-    }
     .base {
-        background: url("images/estate.png");
-        -webkit-filter: grayscale(100%);
+        background: rgba(216, 109, 70, 0.5) url("images/estate.png");
     }
 } // estate
 
 #group4 {
     z-index: 996;
-    .deep {
-        background: rgba(203, 204, 50, 0.50);
-    }
     .base {
-        background: url("images/excentrics.png");
-        -webkit-filter: grayscale(100%);
+        background: rgba(203, 204, 50, 0.50) url("images/excentrics.png");
     }
 } // excentrics
 
 #group5 {
     z-index: 995;
-    .deep {
-        background: rgba(31, 35, 204, 0.50);
-    }
     .base {
-        background: url("images/robokassa%231.png");
-        -webkit-filter: grayscale(100%);
+        background: rgba(31, 35, 204, 0.50) url("images/robokassa%231.png");
     }
 } // landing
 
 #group6 {
     z-index: 994;
-    .deep {
-        background: rgba(204, 60, 197, 0.50);
-    }
     .base {
-        //background: rgb(245,235,100);
-        background: url("images/leform.png");
-        -webkit-filter: grayscale(100%);
+        background: rgba(204, 60, 197, 0.50) url("images/leform.png");
     }
 } // leform
 
 #group7 {
     z-index: 993;
-    .deep {
-        background: rgba(36, 204, 188, 0.50);
-    }
     .base {
-        background: url("images/naholste.png");
-        -webkit-filter: grayscale(100%);
+        background: rgba(36, 204, 188, 0.50) url("images/naholste.png");
     }
 } // naholste
 #group8 {
     z-index: 992;
-    .deep {
-        background: rgba(123, 204, 48, 0.50);
-    }
     .base {
-        background: url("images/robokassa%231.png.png");
-        -webkit-filter: grayscale(100%);
+        background: rgba(123, 204, 48, 0.50) url("images/robokassa%231.png");
     }
 } // thermo
 #group9 {
     z-index: 991;
-    .deep {
-        background: rgba(103, 47, 204, 0.50);
-    }
     .base {
-        background: url("images/unionsb.png");
-        -webkit-filter: grayscale(100%);
+        background: rgba(103, 47, 204, 0.50) url("images/unionsb.png");
     }
 } // unionsb
 #group10 {
     z-index: 990;
-    .deep {
-        background: rgba(102,204,102, 0.5);
-    }
     .base {
-        background: url("images/utc.png");
-        -webkit-filter: grayscale(100%);
+        background: rgba(102,204,102, 0.5) url("images/utc.png");
     }
 } // utc
 #group11 {
     z-index: 899;
-    .deep {
-        background: rgba(204, 75, 39, 0.50);
-    }
     .base {
-        background: url("images/robokassa%231.png");
-        -webkit-filter: grayscale(100%);
+        background: rgba(204, 75, 39, 0.50) url("images/robokassa%231.png");
     }
 } // robokassa#1
 #group12 {
     z-index: 888;
-    .deep {
-        background: rgba(59, 204, 171, 0.50);
-    }
     .base {
-        background: url("images/robokassa%232.png");
-        -webkit-filter: grayscale(100%);
+        background: rgba(59, 204, 171, 0.50) url("images/robokassa%232.png");
     }
 } // robokassa#2
 #group13 {
     z-index: 887;
-    .deep {
-        background: rgba(198, 204, 44, 0.50);
-    }
     .base {
-        background: url("images/robokassa%233.png");
-        -webkit-filter: grayscale(100%);
+        background: rgba(198, 204, 44, 0.50) url("images/robokassa%233.png");
     }
 } // robokassa#3
 

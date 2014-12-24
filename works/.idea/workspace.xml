@@ -30,11 +30,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/../js/portfolio/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-6.72" vertical-offset="0" max-vertical-offset="1064">
-                  <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+                <state vertical-scroll-proportion="0.39784947" vertical-offset="45" max-vertical-offset="1078">
+                  <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -43,18 +43,18 @@
           <file leaf-file-name="app.less" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/../js/portfolio/app.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-30.12" vertical-offset="3293" max-vertical-offset="4130">
-                  <caret line="289" column="0" selection-start-line="289" selection-start-column="0" selection-end-line="289" selection-end-column="0" />
+                <state vertical-scroll-proportion="-30.12" vertical-offset="2705" max-vertical-offset="3542">
+                  <caret line="247" column="0" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="works.json" pinned="false" current-in-tab="true">
+          <file leaf-file-name="works.json" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/../js/portfolio/works.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3512545" vertical-offset="0" max-vertical-offset="1372">
-                  <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+                <state vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="1372">
+                  <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -63,9 +63,21 @@
           <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/../js/portfolio/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-140.0" vertical-offset="0" max-vertical-offset="1442">
-                  <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+                <state vertical-scroll-proportion="-301.0" vertical-offset="0" max-vertical-offset="1512">
+                  <caret line="43" column="52" selection-start-line="42" selection-start-column="10" selection-end-line="43" selection-end-column="52" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="jquery.pixelate.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../js/portfolio/jquery.pixelate.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="1092">
+                  <caret line="72" column="11" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="11" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -77,8 +89,8 @@
           <file leaf-file-name="app.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/../js/portfolio/app.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.43130228" vertical-offset="3293" max-vertical-offset="4130">
-                  <caret line="261" column="9" selection-start-line="261" selection-start-column="9" selection-end-line="261" selection-end-column="9" />
+                <state vertical-scroll-proportion="1.7479092" vertical-offset="539" max-vertical-offset="3542">
+                  <caret line="143" column="0" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -96,7 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../briklaer/contacts.html" />
         <option value="$PROJECT_DIR$/../briklaer/stand.html" />
         <option value="$PROJECT_DIR$/../briklaer/js/slider.js" />
         <option value="$PROJECT_DIR$/../robokassa/slider.html" />
@@ -143,9 +154,10 @@
         <option value="$PROJECT_DIR$/../js/carousel/css/style.css" />
         <option value="$PROJECT_DIR$/../js/carousel/js/app.js" />
         <option value="$PROJECT_DIR$/../js/portfolio/vs2012.xml" />
-        <option value="$PROJECT_DIR$/../js/portfolio/index.html" />
-        <option value="$PROJECT_DIR$/../js/portfolio/app.js" />
         <option value="$PROJECT_DIR$/../js/portfolio/works.json" />
+        <option value="$PROJECT_DIR$/../js/portfolio/breathing-halftone.pkgd.js" />
+        <option value="$PROJECT_DIR$/../js/portfolio/app.js" />
+        <option value="$PROJECT_DIR$/../js/portfolio/index.html" />
         <option value="$PROJECT_DIR$/../js/portfolio/app.less" />
       </list>
     </option>
@@ -529,13 +541,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../estate/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="9015">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../estate/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1095" max-vertical-offset="1980">
@@ -836,34 +841,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../js/portfolio/index.html">
+    <entry file="file://$PROJECT_DIR$/../js/portfolio/jquery.pixelate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.72" vertical-offset="0" max-vertical-offset="1064">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="1092">
+          <caret line="72" column="11" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../js/portfolio/works.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="1372">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../js/portfolio/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-140.0" vertical-offset="0" max-vertical-offset="1442">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../js/portfolio/works.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3512545" vertical-offset="0" max-vertical-offset="1372">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+        <state vertical-scroll-proportion="-301.0" vertical-offset="0" max-vertical-offset="1512">
+          <caret line="43" column="52" selection-start-line="42" selection-start-column="10" selection-end-line="43" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../js/portfolio/app.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43130228" vertical-offset="3293" max-vertical-offset="4130">
-          <caret line="261" column="9" selection-start-line="261" selection-start-column="9" selection-end-line="261" selection-end-column="9" />
+        <state vertical-scroll-proportion="-30.12" vertical-offset="2705" max-vertical-offset="3542">
+          <caret line="247" column="0" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../js/portfolio/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39784947" vertical-offset="45" max-vertical-offset="1078">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
           <folding />
         </state>
       </provider>
