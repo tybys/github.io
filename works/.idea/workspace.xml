@@ -28,23 +28,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ip-anihilation/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.016949153" vertical-offset="3276" max-vertical-offset="4886">
-              <caret line="235" column="12" selection-start-line="235" selection-start-column="12" selection-end-line="241" selection-end-column="15" />
+            <state vertical-scroll-proportion="-21.869566" vertical-offset="4117" max-vertical-offset="5530">
+              <caret line="330" column="78" selection-start-line="330" selection-start-column="78" selection-end-line="330" selection-end-column="78" />
               <folding>
-                <element signature="n#style#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#2;n#div#3;n#div#1;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="jquery.validate.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ip-anihilation/js/jquery.validate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-80.11539" vertical-offset="7871" max-vertical-offset="19180">
+              <caret line="711" column="20" selection-start-line="711" selection-start-column="15" selection-end-line="711" selection-end-column="20" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="additional-methods.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ip-anihilation/js/additional-methods.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="8660" max-vertical-offset="13230">
+              <caret line="642" column="21" selection-start-line="642" selection-start-column="19" selection-end-line="642" selection-end-column="21" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../ip-anihilation/less/app.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.347826" vertical-offset="431" max-vertical-offset="5768">
-              <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.45053634" vertical-offset="784" max-vertical-offset="6286">
+              <caret line="83" column="22" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -109,8 +134,8 @@
         <option value="$PROJECT_DIR$/../js/portfolio/app.js" />
         <option value="$PROJECT_DIR$/../js/portfolio/index.html" />
         <option value="$PROJECT_DIR$/../js/portfolio/app.less" />
-        <option value="$PROJECT_DIR$/../ip-anihilation/less/app.less" />
         <option value="$PROJECT_DIR$/../ip-anihilation/index.html" />
+        <option value="$PROJECT_DIR$/../ip-anihilation/less/app.less" />
       </list>
     </option>
   </component>
@@ -501,13 +526,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../estate/less/ipad.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1395">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="87" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../estate/less/app.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.570011" vertical-offset="488" max-vertical-offset="1740">
@@ -816,31 +834,42 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../ip-anihilation/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.869566" vertical-offset="4117" max-vertical-offset="5530">
+          <caret line="330" column="78" selection-start-line="330" selection-start-column="78" selection-end-line="330" selection-end-column="78" />
+          <folding>
+            <element signature="n#style#0;n#label#2;n#div#3;n#div#1;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../ip-anihilation/js/jquery.validate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.477032" vertical-offset="9744" max-vertical-offset="19180">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-80.11539" vertical-offset="7871" max-vertical-offset="19180">
+          <caret line="711" column="20" selection-start-line="711" selection-start-column="15" selection-end-line="711" selection-end-column="20" />
           <folding>
-            <element signature="n#!!doc" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ip-anihilation/js/additional-methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8660" max-vertical-offset="13230">
+          <caret line="642" column="21" selection-start-line="642" selection-start-column="19" selection-end-line="642" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../ip-anihilation/less/app.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.347826" vertical-offset="431" max-vertical-offset="5768">
-          <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.45053634" vertical-offset="784" max-vertical-offset="6286">
+          <caret line="83" column="22" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ip-anihilation/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.016949153" vertical-offset="3276" max-vertical-offset="4886">
-          <caret line="235" column="12" selection-start-line="235" selection-start-column="12" selection-end-line="241" selection-end-column="15" />
-          <folding>
-            <element signature="n#style#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

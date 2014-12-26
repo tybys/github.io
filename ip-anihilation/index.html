@@ -35,8 +35,10 @@
                             <img src="images/title.png" alt="">
                         </a>
                         <div class="media-body">
-                            <h4 class="media-heading">Закрыть ИП онлайн</h4>
-                            Прекращение деятельности ИП в Москве
+                            <a href="#">
+                                <h4 class="media-heading">Закрыть ИП онлайн</h4>
+                                Прекращение деятельности ИП в Москве
+                            </a>
                         </div>
                     </div>
                     <div class="block">
@@ -47,7 +49,7 @@
                             <li><img src="images/card-ico-01.png"><span>Получить лист записи ЕГРИП от ФНС</span></li>
                         </ul>
                     </div>
-                    <div class="block">
+                    <div class="block faq-block">
                         <h4>Нас часто спрашивают</h4>
                         <div>
                             <span class="faq">
@@ -79,14 +81,14 @@
                         </table>
                         <span>Принимаем платежи через <img src="images/rk.png" width="135" alt=""></span>
                     </div>
-                    <div class="block">
+                    <div class="block sup-block">
                         <a class="blue-dotted" id="trig" href="#" onclick="return false">Обратитесь в поддержку</a>
                         <p>если у вас есть вопросы или претензии,<br/>мы обязательно ответим на них в течении суток</p>
                     </div>
                 </div>
                 <div class="col-md-8">
-                    <form action="" method="post" id="firstform" novalidate="novalidate">
-                        <div id="mainBlock">
+                    <div id="mainBlock">
+                        <form action="" method="post" id="firstform" novalidate="novalidate">
                             <div class="row">
                                 <div class="col-md-6">
                                     <h3>Заполните форму заявки</h3>
@@ -144,12 +146,11 @@
                                     <div>
                                         <label>Распечатать ваши документы? (БЕСПЛАТНО)</label>
                                         <label class="radio sel">
-                                            <input type="radio" id="notnx" name="thx">&nbsp;Нет, я распечатаю и подпишу
+                                            <input type="radio" id="notnx" name="thx" checked>&nbsp;Нет, я распечатаю и подпишу
                                             документы сам
                                         </label>
-                                        <label class="radio">
-                                            <input type="radio" id="yestnx" name="thx">&nbsp;Да, пожалуйста,
-                                            распечатайте мои документы
+                                        <label class="radio" style="white-space: nowrap">
+                                            <input type="radio" id="yestnx" name="thx">&nbsp;Да, пожалуйста, распечатайте мои документы
                                         </label>
                                     </div>
                                 </div>
@@ -169,8 +170,9 @@
                                             href="#">Договора-оферты</a>
                                         </label>
                                     </div>
-                                    <div>
+                                    <div id="summary-err">
                                         <input type="submit" value="Перейти к оплате">
+                                        <span></span>
                                     </div>
 
                                     <div class="social">
@@ -182,42 +184,49 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
+                    </div>
+                    <div id="support-block" class="support-block">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>Обращение в поддержку</h4>
 
-                        <div id="support-block" class="support-block">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h4>Обращение в поддержку</h4>
-                                    <form>
-                                        <div>
-                                            <label>Ваш Email</label>
-                                            <input type="text" id="email" name="email">
-                                        </div>
-                                        <div>
-                                            <label>Имя, Фамилия</label>
-                                            <input type="text">
-                                        </div>
-                                        <div>
-                                            <label>Тема обращения</label>
-                                            <input type="text">
-                                        </div>
-                                        <div>
-                                            <label>Текст обращения</label>
-                                            <textarea cols="20"></textarea>
-                                        </div>
-                                        <div style="text-align: center">
-                                            <input type="submit" class="support-submit" value="Отправить">
-                                            <button type="button" class="btn btn-default cancel" data-dismiss="modal">Отменить</button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="col-md-6">
-                                    <h4>Информация о поддержке</h4>
-                                    <p>Пожалуйста, перед обращением в поддержку, изучите блок справки «Нас часто спрашивают». Возможно, там уже имеется ответ на Ваш вопрос. Заявки обрабатываются в порядке очереди в течение суток. Если вы испытываете трудности с отправлением обращения через форму, пожалуйста, напишите нам по адресу <a href="mailto:support@ipmsk.ru">support@ipmsk.ru</a></p>
-                                </div>
+                                <form>
+                                    <div>
+                                        <label>Ваш Email</label>
+                                        <input type="text" id="email" name="email">
+                                    </div>
+                                    <div>
+                                        <label>Имя, Фамилия</label>
+                                        <input type="text">
+                                    </div>
+                                    <div>
+                                        <label>Тема обращения</label>
+                                        <input type="text">
+                                    </div>
+                                    <div>
+                                        <label>Текст обращения</label>
+                                        <textarea cols="20"></textarea>
+                                    </div>
+                                    <div style="text-align: center">
+                                        <input type="submit" class="support-submit" value="Отправить">
+                                        <button type="button" class="btn btn-default cancel" data-dismiss="modal">
+                                            Отменить
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Информация о поддержке</h4>
+
+                                <p>Пожалуйста, перед обращением в поддержку, изучите блок справки «Нас часто
+                                    спрашивают». Возможно, там уже имеется ответ на Ваш вопрос. Заявки обрабатываются в
+                                    порядке очереди в течение суток. Если вы испытываете трудности с отправлением
+                                    обращения через форму, пожалуйста, напишите нам по адресу
+                                    <a href="mailto:support@ipmsk.ru">support@ipmsk.ru</a></p>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -233,6 +242,11 @@
     {
         $(window).load(function ()
         {
+            var WindowWidth = $("body").outerWidth();
+            var WindowHeight = $("body").outerHeight();
+            $(".col-md-4").css("height", WindowHeight);
+            $("#support-block .col-md-6").first().css("height", WindowHeight);
+
             $.validator.setDefaults
             ({
                 errorPlacement: function(error, element)
@@ -241,19 +255,43 @@
                 }
             });
 
+            $.validator.addMethod("mobileRU", function(phone_number, element) {
+                phone_number = phone_number.replace(/\(|\)|\s+|-/g, "");
+                return this.optional(element) || phone_number.length > 9 &&
+                phone_number.match(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/);
+            });
+
+            $.validator.messages.required = 'required';
+
             $("form").each(function ()
             {
                 $(this).validate({
+                    onkeyup: function(element)
+                    {
+                        $(element).valid();
+                    },
                     rules: {
                         surname: "required",
                         firstname: "required",
-                        _name: "required",
+                        _name: {
+                            required: true
+                        },
                         inn: {
                             required: true,
-                            number: true
+                            number: true,
+                            maxlength: 12,
+                            minlength: 12
                         },
-                        ogrnip: "required",
-                        phone: "required",
+                        ogrnip: {
+                            required: true,
+                            number: true,
+                            maxlength: 15,
+                            minlength: 15
+                        },
+                        phone: {
+                            required: true,
+                            mobileRU: true
+                        },
                         email: "required",
                         email: {
                             required: true,
@@ -272,20 +310,59 @@
                         phone: "Должен начинаться с +7 или 8",
                         email: "Неккоректный",
                         okay: ""
+                    },
+                    showErrors: function(errorMap, errorList)
+                    {
+                        //alert(this.numberOfInvalids());
+                        this.defaultShowErrors();
+                    },
+                    highlight: function(element) {
+                        $(element).parent().addClass("field-error");
+                    },
+                    unhighlight: function(element) {
+                        $(element).parent().removeClass("field-error");
+                    },
+                    invalidHandler: function(event, validator) {
+                        // 'this' refers to the form
+                        var errors = validator.numberOfInvalids();
+                        if (errors) {
+                            var message = errors == 1
+                                ? '<i>Форма заявки заполнена некорректно,<br/> пожалуйта проверьте данные</i>'
+                                : '<i>Форма заявки заполнена некорректно,<br/> пожалуйта проверьте данные</i>';
+                            //+error+
+                            //Форма заявки заполнена некорректно, пожалуйта проверьте данные
+                            $("div#summary-err span").html(message);
+                            $("div#summary-err span").show();
+                        } else {
+                            $("div#summary-err span").hide();
+                        }
                     }
-                })
-            })
-//            $("form").validate({
-//                // Specify the validation rules
-//
-//
-//            });
+                });
+            });
+
+            $.when($("form").validate()).then(function () {
+                if ($("#okay").hasClass("error"))
+                {
+                    $(this).parent().addClass("error")
+                }
+            });
+
             $("#trig").on("click", function ()
             {
                 $("#mainBlock").fadeOut('50');
                 $("#support-block").animate({
                     left: 15
-                }, 1000, function () {
+                }, 500, function () {
+
+                });
+            });
+
+            $(".cancel").on("click", function ()
+            {
+                $("#mainBlock").fadeIn('50');
+                $("#support-block").animate({
+                    left: "-100%"
+                }, 500, function () {
 
                 });
             });
@@ -295,50 +372,19 @@
                 $(".faq").removeClass("sel");
                 $(this).addClass("sel");
             });
+
+            $(".courier label.radio").on("click", function ()
+            {
+                $(".courier label.radio").removeClass("sel");
+                var t = $(this);
+
+                if (t.find("input").is(":checked"))
+                {
+                    t.addClass("sel")
+                }
+            });
         });
     });
 </script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-
-    <!-- Modal -->
-    <!--<div class="modal" id="support" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="backdrop">-->
-        <!--<div class="modal-dialog">-->
-            <!--<div class="modal-content">-->
-                <!--<div class="modal-header">-->
-                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
-                    <!--<h4 class="modal-title" id="myModalLabel">Обращение в поддержку</h4>-->
-                <!--</div>-->
-                <!--<div class="modal-body col-md-6">-->
-                    <!--<form>-->
-                        <!--<div>-->
-                            <!--<label>Ваш Email</label>-->
-                            <!--<input type="text">-->
-                        <!--</div>-->
-                        <!--<div>-->
-                            <!--<label>Имя, Фамилия</label>-->
-                            <!--<input type="text">-->
-                        <!--</div>-->
-                        <!--<div>-->
-                            <!--<label>Тема обращения</label>-->
-                            <!--<input type="text">-->
-                        <!--</div>-->
-                        <!--<div>-->
-                            <!--<label>Текст обращения</label>-->
-                            <!--<textarea cols="20"></textarea>-->
-                        <!--</div>-->
-                    <!--</form>-->
-                <!--</div>-->
-                <!--<div class="col-md-6">-->
-                    <!--<h4>Информация о поддержке</h4>-->
-                    <!--<p>Пожалуйста, перед обращением в поддержку, изучите блок справки «Нас часто спрашивают». Возможно, там уже имеется ответ на Ваш вопрос. Заявки обрабатываются в порядке очереди в течение суток. Если вы испытываете трудности с отправлением обращения через форму, пожалуйста, напишите нам по адресу <a href="mailto:support@ipmsk.ru">support@ipmsk.ru</a></p>-->
-                <!--</div>-->
-                <!--<div style="clear: both"></div>-->
-                <!--<div class="modal-footer">-->
-                    <!--<button type="button" class="btn btn-default cancel" data-dismiss="modal">Отменить</button>-->
-                    <!--<button type="button" class="btn btn-primary">Отправить</button>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
 </body>
 </html>
