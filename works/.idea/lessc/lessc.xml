@@ -131,6 +131,22 @@
             </LessProfile>
           </value>
         </entry>
+        <entry key="8">
+          <value>
+            <LessProfile>
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="$PROJECT_DIR$/../ip-anihilation/css" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="id" value="8" />
+              <option name="lessDirPath" value="$PROJECT_DIR$/../ip-anihilation/less" />
+              <option name="name" value="ip-anihilation" />
+            </LessProfile>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

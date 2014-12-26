@@ -1,0 +1,346 @@
+form label.error {
+  font-family: "Noto Serif";
+  font-weight: 300;
+  font-size: 12px;
+  color: #ff1d25;
+  display: inline;
+  margin-left: 3px;
+}
+form input.error {
+  border-color: #ff1d25 !important;
+}
+form input {
+  font-family: "Noto Serif";
+  color: #1b1464;
+  font-size: 18px;
+  padding: 0 10px;
+}
+.support-block h4 {
+  font-family: "Noto Serif";
+  font-weight: 300;
+  font-size: 22px;
+  color: black;
+  margin-top: 24px !important;
+}
+.support-block .col-md-6:not(.modal-body) h4 {
+  margin-top: 34px;
+  font-size: 20px;
+}
+.support-block .btn {
+  font-family: "Noto Serif";
+  font-weight: 300;
+  font-size: 22px;
+}
+.support-block .modal-footer {
+  text-align: center;
+}
+.support-block .cancel {
+  background: black;
+  color: white;
+  height: 40px;
+  line-height: 25px;
+}
+.support-block p {
+  font-family: "Noto Serif";
+  font-size: 12px;
+  color: #999999;
+}
+.container {
+  width: 1230px;
+}
+h3 {
+  font-family: "Noto Serif";
+  font-weight: 300;
+  font-size: 22px;
+  color: black;
+}
+form input[type="submit"] {
+  margin-top: 35px;
+  background: #0071bc;
+  border-radius: 4px;
+  border: none;
+  padding: 0 60px;
+  height: 40px;
+  line-height: 32px;
+  text-align: center;
+  font-family: "Noto Serif";
+  font-size: 22px;
+  color: white;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  box-shadow: 0px 0px 0px rgba(15, 165, 60, 0.1);
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+form input[type="submit"].support-submit {
+  padding: 0 10px;
+  margin-top: 0;
+  vertical-align: top;
+}
+form input[type="submit"]:hover {
+  top: -10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: rotateX(20deg);
+  -moz-transform: rotateX(20deg);
+  -ms-transform: rotateX(20deg);
+  transform: rotateX(20deg);
+}
+form input[type="submit"]:active {
+  top: 0px;
+  box-shadow: 0px 0px 0px rgba(15, 165, 60, 0.5);
+  background: #000000;
+}
+form .support-block {
+  position: absolute;
+  width: 800px;
+  left: -100%;
+  top: 0;
+  background: white;
+}
+form div label {
+  display: block;
+  font-family: "Noto Serif";
+  font-weight: 300;
+  font-size: 12px;
+  margin: 0 0 5px 0;
+}
+form div input[type="text"] {
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 18px;
+}
+form div textarea {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 100%;
+  height: 280px;
+  margin-bottom: 18px;
+}
+form .row .col-md-6:first-of-type {
+  border-right: 1px solid #e6e6e6;
+}
+form .row.summary {
+  border-top: 1px solid #e6e6e6;
+}
+a.blue-dotted {
+  font-family: "Noto Serif";
+  font-weight: 300;
+  font-size: 18px;
+  border-bottom: 1px dotted;
+  color: #0071bc;
+}
+a.blue-dotted:hover {
+  text-decoration: none;
+}
+.col-md-4 {
+  background: #e6e6e6;
+  padding-left: 40px;
+  padding-right: 40px;
+  position: relative;
+  z-index: 999;
+}
+.col-md-4 div.block {
+  position: relative;
+  padding: 25px 0;
+}
+.col-md-4 div.block h4 {
+  font-family: "Noto Serif";
+  font-weight: 300;
+  font-size: 18px;
+  color: #999999;
+  margin-bottom: 20px;
+}
+.col-md-4 div.block span.faq {
+  font-family: "Noto Serif";
+  font-weight: 100;
+  font-size: 12px;
+  border-bottom: 1px dotted;
+  color: #0071bc;
+  display: inline;
+  cursor: pointer;
+}
+.col-md-4 div.block span.faq p {
+  color: #4d4d4d;
+  display: none;
+}
+.col-md-4 div.block span.faq.sel {
+  color: #333333;
+}
+.col-md-4 div.block span.faq.sel p {
+  display: block;
+}
+.col-md-4 div.block p {
+  font-family: "Noto Serif";
+  font-size: 12px;
+  color: #999999;
+}
+.col-md-4 div.block.partners span {
+  display: block;
+  margin-top: 55px;
+  font-family: "Noto Serif";
+  font-size: 12px;
+  color: #999999;
+}
+.col-md-4 div.block.partners span img {
+  vertical-align: sub;
+}
+.col-md-4 div.block:last-of-type p {
+  margin-top: 20px;
+}
+.col-md-4 div.block:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: calc(100% + 80px);
+  width: -webkit-calc(100% + 80px);
+  height: 1px;
+  background: white;
+  display: block;
+}
+.col-md-4 div.block ul {
+  list-style: none;
+  padding-left: 5px;
+}
+.col-md-4 div.block ul strong {
+  display: inline-block;
+  margin-right: 35px;
+}
+.col-md-4 div.block ul img {
+  display: inline-block;
+  margin-right: 30px;
+}
+.col-md-4 div.block ul li {
+  font-family: "Noto Sans";
+  font-weight: 600;
+  font-size: 22px;
+  color: #0071bc;
+  text-indent: 5px;
+  margin: 5px 0;
+}
+.col-md-4 div.block ul li span {
+  font-family: "Noto Serif";
+  font-weight: 100;
+  font-size: 12px;
+  color: black;
+  position: relative;
+  top: -3px;
+  text-indent: 0;
+}
+.col-md-4 .media {
+  padding: 20px 0;
+}
+.col-md-4 .media .media-left {
+  padding-right: 20px;
+}
+.col-md-4 .media h4 {
+  font-family: "Noto Serif";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.col-md-4 .media .media-body {
+  font-family: "Noto Serif";
+  font-weight: 100;
+  font-size: 12px;
+  font-style: italic;
+  color: black;
+}
+.col-md-8 .col-md-6 {
+  padding: 0 40px;
+}
+.col-md-8 .col-md-6:first-of-type .last input {
+  margin-bottom: 40px;
+}
+.col-md-8 .col-md-6.courier div label {
+  color: #333333;
+}
+.col-md-8 .col-md-6.courier div label input[type="radio"] {
+  position: static;
+  margin-left: 0;
+  margin-right: 9px;
+}
+.col-md-8 .col-md-6.courier div label.sel {
+  font-weight: 600;
+}
+.col-md-8 .col-md-6.courier div p {
+  font-family: "Noto Serif";
+  font-size: 12px;
+  color: #999999;
+}
+.col-md-8 .col-md-6.courier div p span {
+  color: #ff1d25;
+}
+.col-md-8 .col-md-12 {
+  padding: 0 40px;
+}
+.col-md-8 .col-md-12 h3 {
+  margin-top: 37px;
+}
+.col-md-8 .col-md-12 p {
+  font-family: "Noto Serif";
+  font-size: 12px;
+  color: #999999;
+  margin: 0;
+}
+.col-md-8 .col-md-12 p strong {
+  color: #4d4d4d;
+}
+.col-md-8 .col-md-12 div label.radio {
+  font-family: "Noto Serif";
+  font-size: 12px;
+  color: #474747;
+}
+.col-md-8 .col-md-12 div label.radio a {
+  color: #0071bc;
+}
+.col-md-8 .col-md-12 .social {
+  margin-top: 35px;
+}
+.col-md-8 .col-md-12 .social h6 {
+  font-family: "Noto Serif";
+  font-size: 18px;
+  color: #999999;
+  display: inline;
+  line-height: 40px;
+  padding-right: 20px;
+}
+.col-md-8 .col-md-12 .social a {
+  border-radius: 100%;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  font-family: "Noto Sans";
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+}
+.col-md-8 .col-md-12 .social a.vk {
+  background: #0071bc;
+}
+.col-md-8 .col-md-12 .social a.fb {
+  background: #2e3192;
+}
+.col-md-8 .col-md-12 .social a.ok {
+  background: #f7931e;
+}
+.col-md-8 .col-md-12 .social a.tw {
+  background: #29abe2;
+}
+.col-md-8 .col-md-12 .social a:hover {
+  text-decoration: none;
+}
