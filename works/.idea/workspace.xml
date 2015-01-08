@@ -28,13 +28,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../maxsport/less/app.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.0" vertical-offset="2070" max-vertical-offset="2985">
-              <caret line="178" column="30" selection-start-line="178" selection-start-column="30" selection-end-line="178" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.78128797" vertical-offset="5582" max-vertical-offset="6660">
+              <caret line="415" column="35" selection-start-line="415" selection-start-column="35" selection-end-line="415" selection-end-column="35" />
               <folding>
-                <element signature="e#6260#37361#2" expanded="true" />
+                <element signature="e#38266#68647#2" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,23 +43,20 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../maxsport/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.0" vertical-offset="270" max-vertical-offset="1260">
-              <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
+            <state vertical-scroll-proportion="-3.9615386" vertical-offset="1037" max-vertical-offset="2325">
+              <caret line="98" column="16" selection-start-line="98" selection-start-column="16" selection-end-line="120" selection-end-column="22" />
               <folding>
                 <element signature="tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#5;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../maxsport/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34802786" vertical-offset="0" max-vertical-offset="862">
+            <state vertical-scroll-proportion="-150.0" vertical-offset="0" max-vertical-offset="390">
               <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
               <folding />
             </state>
@@ -124,9 +121,9 @@
         <option value="$PROJECT_DIR$/../maxsport/inside-catalog-item.html" />
         <option value="$PROJECT_DIR$/../maxsport/cart.html" />
         <option value="$PROJECT_DIR$/../maxsport/cart_.html" />
+        <option value="$PROJECT_DIR$/../maxsport/js/app.js" />
         <option value="$PROJECT_DIR$/../maxsport/index.html" />
         <option value="$PROJECT_DIR$/../maxsport/less/app.less" />
-        <option value="$PROJECT_DIR$/../maxsport/js/app.js" />
       </list>
     </option>
   </component>
@@ -137,6 +134,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.4" />
   <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
     <option name="y" value="22" />
     <option name="width" value="1680" />
     <option name="height" value="982" />
@@ -299,7 +297,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../maxsport/css" />
-    <property name="options.lastSelected" value="lessc" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
@@ -307,6 +305,7 @@
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="LayoutCode.rearrangeEntriesLESS" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -421,7 +420,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="982" extended-state="6" />
+    <frame x="-1" y="22" width="1680" height="982" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -796,35 +795,32 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../maxsport/less/app.less">
+    <entry file="file://$PROJECT_DIR$/../maxsport/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.0" vertical-offset="2070" max-vertical-offset="2985">
-          <caret line="178" column="30" selection-start-line="178" selection-start-column="30" selection-end-line="178" selection-end-column="30" />
-          <folding>
-            <element signature="e#6260#37361#2" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-150.0" vertical-offset="0" max-vertical-offset="390">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../maxsport/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.0" vertical-offset="270" max-vertical-offset="1260">
-          <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
+        <state vertical-scroll-proportion="-3.9615386" vertical-offset="1037" max-vertical-offset="2325">
+          <caret line="98" column="16" selection-start-line="98" selection-start-column="16" selection-end-line="120" selection-end-column="22" />
           <folding>
             <element signature="tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#5;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../maxsport/js/app.js">
+    <entry file="file://$PROJECT_DIR$/../maxsport/less/app.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34802786" vertical-offset="0" max-vertical-offset="862">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-          <folding />
+        <state vertical-scroll-proportion="0.78128797" vertical-offset="5582" max-vertical-offset="6660">
+          <caret line="415" column="35" selection-start-line="415" selection-start-column="35" selection-end-line="415" selection-end-column="35" />
+          <folding>
+            <element signature="e#38266#68647#2" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
