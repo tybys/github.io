@@ -1,7 +1,40 @@
 body {
   background: url("../images/colors.jpg") center top no-repeat;
-  background-size: contain;
+  background-size: inherit;
   font-family: 'PT Sans', sans-serif;
+}
+.breadcrumb {
+  background: transparent;
+  margin-top: 13px;
+}
+.breadcrumb li {
+  font-size: 14px;
+  margin-right: 10px;
+  text-decoration: underline;
+}
+.breadcrumb li a {
+  color: #868686;
+}
+.breadcrumb li:first-of-type:before {
+  display: none;
+}
+.breadcrumb li.active {
+  color: #e27000;
+  font-weight: 700;
+  text-decoration: none;
+}
+.breadcrumb li:before {
+  position: relative;
+  top: -1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e092" !important;
+  font-size: 7px;
 }
 .row .container {
   width: calc(1000px + 30px);
@@ -411,4 +444,248 @@ body {
 }
 .row.footer p {
   font-size: 14px;
+}
+.row.content.two-columns .col-md-3 {
+  padding-left: 0;
+  width: calc(25% - 9px);
+  width: -webkit-calc(25% - 9px);
+}
+.row.content.two-columns .col-md-9 {
+  width: calc(75% + 9px);
+  width: -webkit-calc(75% + 9px);
+}
+.row.content.inside h2 {
+  color: #d81c25;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.row.content.inside .banners img {
+  display: block;
+  border: 1px solid #fd7a1d;
+  margin-bottom: 30px;
+}
+.row.content.inside .banners img:first-of-type {
+  margin-top: 30px;
+}
+.row.content.inside .banners iframe {
+  border: 1px solid #fd7a1d;
+}
+.row.content.inside .category-menu {
+  background: url("../images/menu-patt.jpg") no-repeat top left;
+  background-size: cover;
+  padding: 4px 0 12px 0;
+}
+.row.content.inside .category-menu a {
+  display: inline-block;
+  width: calc(100% - 9px);
+  width: -webkit-calc(100% - 9px);
+  padding-left: 10px;
+  color: white;
+  text-decoration: none;
+  margin-left: 9px;
+  margin-top: 8px;
+  line-height: 29px;
+  height: 29px;
+}
+.row.content.inside .category-menu a i {
+  display: none;
+  font-size: 7px;
+}
+.row.content.inside .category-menu a.sel {
+  background: white;
+  color: black;
+  line-height: 29px;
+  height: 29px;
+}
+.row.content.inside .category-menu a.sel i {
+  position: relative;
+  top: -1px;
+  display: inline;
+  margin-right: 6px;
+}
+.row.content.inside .category-menu a:hover {
+  background: white;
+  color: black;
+  line-height: 29px;
+  height: 29px;
+}
+.row.content.inside .category-menu a:hover i {
+  position: relative;
+  top: -1px;
+  display: inline;
+  margin-right: 6px;
+}
+.row.content.inside tr th {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.row.content.inside tr td {
+  font-size: 12px;
+  line-height: 18px;
+  color: #494848;
+}
+.row.content.inside tr:nth-child(odd) {
+  background: #f2f1f1;
+  color: black;
+}
+.row.content.inside .container-inner {
+  background: white;
+  height: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+.row.content.inside .container-inner:before {
+  content: " ";
+  display: table;
+}
+.row.content.inside .container-inner:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.row.content.inside .variants:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.row.content.inside .variants div {
+  float: left;
+  width: 50%;
+}
+.row.content.inside .variants div table th,
+.row.content.inside .variants div table td {
+  padding: 0 7px;
+}
+.row.content.inside .variants div:first-of-type p {
+  font-size: 12px;
+  margin-top: 9px;
+}
+.row.content.inside .variants div:first-of-type table {
+  width: 370px;
+}
+.row.content.inside .variants div:first-of-type table span {
+  display: inline-block;
+  border-radius: 100%;
+  width: 8px;
+  height: 8px;
+  margin-right: 15px;
+}
+.row.content.inside .variants div:first-of-type table .first span {
+  background: #d82329;
+}
+.row.content.inside .variants div:first-of-type table .second span {
+  background: #eb8a2d;
+}
+.row.content.inside .variants div:first-of-type table .third span {
+  background: #fff000;
+}
+.row.content.inside .variants div:first-of-type table .four span {
+  background: #54af45;
+}
+.row.content.inside .variants div:first-of-type table .five span {
+  background: #007bb6;
+}
+.row.content.inside .variants div:first-of-type table .six span {
+  background: #292d77;
+}
+.row.content.inside .variants div:last-of-type p {
+  font-size: 12px;
+  margin-left: 22%;
+  margin-top: 9px;
+}
+.row.content.inside .variants div:last-of-type table {
+  width: 290px;
+  margin: 0 0 0 auto;
+}
+.row.content.inside .variants div:last-of-type table span {
+  margin-right: 15px;
+}
+.row.content.inside .variants div:last-of-type table .first span {
+  color: #d8232a;
+}
+.row.content.inside .variants div:last-of-type table .second span {
+  color: #eb8829;
+}
+.row.content.inside .variants div:last-of-type table .third span {
+  color: #54b045;
+}
+.row.content.inside .variants div:last-of-type table .four span {
+  color: #007bb6;
+}
+.row.banner.not-front .container-inner {
+  background: rgba(0, 0, 0, 0.5);
+  min-height: 233px;
+}
+.row.banner.not-front .main-media.media-left img {
+  position: relative;
+  top: 50px;
+  left: 30px;
+}
+.row.banner.not-front .media-body div:first-of-type {
+  padding-left: 44px;
+  padding-bottom: 18px;
+}
+.row.banner.not-front .media-body div:first-of-type.media-body {
+  padding-left: 0;
+}
+.row.banner.not-front .media-body .media {
+  display: inline-block;
+  vertical-align: top;
+}
+.row.banner.not-front .media-body .media:nth-of-type(2) {
+  padding-left: 40px;
+}
+.row.banner.not-front .media-body .media:nth-of-type(2) img {
+  margin: 4px 0 0 0;
+}
+.row.banner.not-front .media-body .media:nth-of-type(3) {
+  padding-left: 68px;
+}
+.row.banner.not-front .media-body .media:nth-of-type(3) img {
+  margin: 4px 0 0 0;
+}
+.row.banner.not-front .media-body .media:nth-of-type(3) p {
+  padding-left: 5px;
+}
+.row.banner.not-front .media-body .media:last-of-type {
+  padding-left: 46px;
+}
+.row.banner.not-front .media-body .media:last-of-type img {
+  margin: 4px 0 0 0;
+}
+.row.banner.not-front h1 {
+  margin-top: 0;
+  padding-top: 48px;
+  padding-left: 40px;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+}
+.row.banner.not-front a {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+.row.banner.not-front a:first-of-type {
+  background: url("../images/catalog-ico.png") no-repeat left center;
+  padding-left: 27px;
+  margin-right: 78px;
+}
+.row.banner.not-front a:last-of-type {
+  background: url("../images/price-ico.png") no-repeat left center;
+  padding-left: 33px;
+}
+.row.banner.not-front a span {
+  border-bottom: 1px solid white;
+}
+.row.banner.not-front p {
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+}
+.row.banner.not-front p:last-of-type {
+  margin-bottom: 0;
 }

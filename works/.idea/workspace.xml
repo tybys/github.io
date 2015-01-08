@@ -28,37 +28,116 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../maxsport/less/app.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.78128797" vertical-offset="5582" max-vertical-offset="6660">
-              <caret line="415" column="35" selection-start-line="415" selection-start-column="35" selection-end-line="415" selection-end-column="35" />
+            <state vertical-scroll-proportion="-1.1538461" vertical-offset="0" max-vertical-offset="4800">
+              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
               <folding>
-                <element signature="e#38266#68647#2" expanded="true" />
+                <element signature="e#1044#1137#0" expanded="false" />
+                <element signature="e#1153#7013#0" expanded="false" />
+                <element signature="e#1165#1271#0" expanded="false" />
+                <element signature="e#1286#5768#0" expanded="false" />
+                <element signature="e#1307#5313#0" expanded="false" />
+                <element signature="e#1444#2795#0" expanded="false" />
+                <element signature="e#1768#2102#0" expanded="false" />
+                <element signature="e#2126#2777#0" expanded="false" />
+                <element signature="e#2467#2755#0" expanded="false" />
+                <element signature="e#2819#5299#0" expanded="false" />
+                <element signature="e#3028#3608#0" expanded="false" />
+                <element signature="e#3345#3483#0" expanded="false" />
+                <element signature="e#3516#3586#0" expanded="false" />
+                <element signature="e#3637#4217#0" expanded="false" />
+                <element signature="e#3954#4092#0" expanded="false" />
+                <element signature="e#4125#4195#0" expanded="false" />
+                <element signature="e#4240#4685#0" expanded="false" />
+                <element signature="e#4403#4663#0" expanded="false" />
+                <element signature="e#4714#5119#0" expanded="false" />
+                <element signature="e#5155#5281#0" expanded="false" />
+                <element signature="e#5189#5259#0" expanded="false" />
+                <element signature="e#5329#5758#0" expanded="false" />
+                <element signature="e#5439#5744#0" expanded="false" />
+                <element signature="e#5463#5725#0" expanded="false" />
+                <element signature="e#5787#6499#0" expanded="false" />
+                <element signature="e#5904#6190#0" expanded="false" />
+                <element signature="e#6083#6176#0" expanded="false" />
+                <element signature="e#6214#6489#0" expanded="false" />
+                <element signature="e#6269#6366#0" expanded="false" />
+                <element signature="e#6385#6475#0" expanded="false" />
+                <element signature="e#6518#7007#0" expanded="false" />
+                <element signature="e#6624#6997#0" expanded="false" />
+                <element signature="e#6847#6906#0" expanded="false" />
+                <element signature="e#6928#6983#0" expanded="false" />
+                <element signature="e#7044#73826#0" expanded="false" />
+                <element signature="e#7071#7144#0" expanded="false" />
+                <element signature="e#7156#7379#0" expanded="false" />
+                <element signature="e#7395#73820#0" expanded="false" />
+                <element signature="e#7413#7640#0" expanded="false" />
+                <element signature="e#7481#7537#0" expanded="false" />
+                <element signature="e#7569#7626#0" expanded="false" />
+                <element signature="e#7655#73810#0" expanded="false" />
+                <element signature="e#7853#7912#0" expanded="false" />
+                <element signature="e#7934#73362#0" expanded="false" />
+                <element signature="e#69713#69937#0" expanded="false" />
+                <element signature="e#70019#70245#0" expanded="false" />
+                <element signature="e#70327#70555#0" expanded="false" />
+                <element signature="e#70641#70871#0" expanded="false" />
+                <element signature="e#70958#71186#0" expanded="false" />
+                <element signature="e#71273#71502#0" expanded="false" />
+                <element signature="e#71598#71825#0" expanded="false" />
+                <element signature="e#71859#72086#0" expanded="false" />
+                <element signature="e#72173#72402#0" expanded="false" />
+                <element signature="e#72483#72711#0" expanded="false" />
+                <element signature="e#72792#73019#0" expanded="false" />
+                <element signature="e#73101#73294#0" expanded="false" />
+                <element signature="e#73381#73651#0" expanded="false" />
+                <element signature="e#73855#75640#0" expanded="false" />
+                <element signature="e#73882#73955#0" expanded="false" />
+                <element signature="e#73974#75634#0" expanded="false" />
+                <element signature="e#74004#74052#0" expanded="false" />
+                <element signature="e#74072#75624#0" expanded="false" />
+                <element signature="e#74266#74472#0" expanded="false" />
+                <element signature="e#74491#74667#0" expanded="false" />
+                <element signature="e#74687#75610#0" expanded="false" />
+                <element signature="e#74813#75592#0" expanded="false" />
+                <element signature="e#74841#75570#0" expanded="false" />
+                <element signature="e#75058#75282#0" expanded="false" />
+                <element signature="e#75316#75544#0" expanded="false" />
+                <element signature="e#75662#75819#0" expanded="false" />
+                <element signature="e#75689#75813#0" expanded="false" />
+                <element signature="e#75833#76431#0" expanded="false" />
+                <element signature="e#75853#76137#0" expanded="false" />
+                <element signature="e#75883#75934#0" expanded="false" />
+                <element signature="e#75964#76015#0" expanded="false" />
+                <element signature="e#76075#76127#0" expanded="false" />
+                <element signature="e#76157#76198#0" expanded="false" />
+                <element signature="e#76209#76338#0" expanded="false" />
+                <element signature="e#76349#76425#0" expanded="false" />
+                <element signature="e#76399#76415#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="inside.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../maxsport/inside.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-28.166666" vertical-offset="6899" max-vertical-offset="7770">
+              <caret line="505" column="0" selection-start-line="505" selection-start-column="4" selection-end-line="505" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../maxsport/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9615386" vertical-offset="1037" max-vertical-offset="2325">
-              <caret line="98" column="16" selection-start-line="98" selection-start-column="16" selection-end-line="120" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.37887487" vertical-offset="0" max-vertical-offset="2355">
+              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
               <folding>
                 <element signature="tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../maxsport/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-150.0" vertical-offset="0" max-vertical-offset="390">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -116,14 +195,14 @@
         <option value="$PROJECT_DIR$/../ip-anihilation/index.html" />
         <option value="$PROJECT_DIR$/../ip-anihilation/less/app.less" />
         <option value="$PROJECT_DIR$/../maxsport/less/bootstrap.less" />
-        <option value="$PROJECT_DIR$/../maxsport/inside.html" />
         <option value="$PROJECT_DIR$/../maxsport/inside-catalog.html" />
         <option value="$PROJECT_DIR$/../maxsport/inside-catalog-item.html" />
         <option value="$PROJECT_DIR$/../maxsport/cart.html" />
         <option value="$PROJECT_DIR$/../maxsport/cart_.html" />
         <option value="$PROJECT_DIR$/../maxsport/js/app.js" />
-        <option value="$PROJECT_DIR$/../maxsport/index.html" />
         <option value="$PROJECT_DIR$/../maxsport/less/app.less" />
+        <option value="$PROJECT_DIR$/../maxsport/inside.html" />
+        <option value="$PROJECT_DIR$/../maxsport/index.html" />
       </list>
     </option>
   </component>
@@ -134,10 +213,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.4" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
     <option name="y" value="22" />
-    <option name="width" value="1680" />
-    <option name="height" value="982" />
+    <option name="width" value="1635" />
+    <option name="height" value="1028" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -420,7 +498,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="22" width="1680" height="982" extended-state="6" />
+    <frame x="0" y="22" width="1635" height="1028" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -428,7 +506,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1953602" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20087884" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286334" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -697,14 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../maxsport/inside.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42959428" vertical-offset="0" max-vertical-offset="838">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../maxsport/inside-catalog-item.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10739857" vertical-offset="0" max-vertical-offset="838">
@@ -797,29 +867,116 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../maxsport/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-150.0" vertical-offset="0" max-vertical-offset="390">
+        <state vertical-scroll-proportion="0.33112583" vertical-offset="0" max-vertical-offset="906">
           <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../maxsport/less/app.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1538461" vertical-offset="0" max-vertical-offset="4800">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <folding>
+            <element signature="e#1044#1137#0" expanded="false" />
+            <element signature="e#1153#7013#0" expanded="false" />
+            <element signature="e#1165#1271#0" expanded="false" />
+            <element signature="e#1286#5768#0" expanded="false" />
+            <element signature="e#1307#5313#0" expanded="false" />
+            <element signature="e#1444#2795#0" expanded="false" />
+            <element signature="e#1768#2102#0" expanded="false" />
+            <element signature="e#2126#2777#0" expanded="false" />
+            <element signature="e#2467#2755#0" expanded="false" />
+            <element signature="e#2819#5299#0" expanded="false" />
+            <element signature="e#3028#3608#0" expanded="false" />
+            <element signature="e#3345#3483#0" expanded="false" />
+            <element signature="e#3516#3586#0" expanded="false" />
+            <element signature="e#3637#4217#0" expanded="false" />
+            <element signature="e#3954#4092#0" expanded="false" />
+            <element signature="e#4125#4195#0" expanded="false" />
+            <element signature="e#4240#4685#0" expanded="false" />
+            <element signature="e#4403#4663#0" expanded="false" />
+            <element signature="e#4714#5119#0" expanded="false" />
+            <element signature="e#5155#5281#0" expanded="false" />
+            <element signature="e#5189#5259#0" expanded="false" />
+            <element signature="e#5329#5758#0" expanded="false" />
+            <element signature="e#5439#5744#0" expanded="false" />
+            <element signature="e#5463#5725#0" expanded="false" />
+            <element signature="e#5787#6499#0" expanded="false" />
+            <element signature="e#5904#6190#0" expanded="false" />
+            <element signature="e#6083#6176#0" expanded="false" />
+            <element signature="e#6214#6489#0" expanded="false" />
+            <element signature="e#6269#6366#0" expanded="false" />
+            <element signature="e#6385#6475#0" expanded="false" />
+            <element signature="e#6518#7007#0" expanded="false" />
+            <element signature="e#6624#6997#0" expanded="false" />
+            <element signature="e#6847#6906#0" expanded="false" />
+            <element signature="e#6928#6983#0" expanded="false" />
+            <element signature="e#7044#73826#0" expanded="false" />
+            <element signature="e#7071#7144#0" expanded="false" />
+            <element signature="e#7156#7379#0" expanded="false" />
+            <element signature="e#7395#73820#0" expanded="false" />
+            <element signature="e#7413#7640#0" expanded="false" />
+            <element signature="e#7481#7537#0" expanded="false" />
+            <element signature="e#7569#7626#0" expanded="false" />
+            <element signature="e#7655#73810#0" expanded="false" />
+            <element signature="e#7853#7912#0" expanded="false" />
+            <element signature="e#7934#73362#0" expanded="false" />
+            <element signature="e#69713#69937#0" expanded="false" />
+            <element signature="e#70019#70245#0" expanded="false" />
+            <element signature="e#70327#70555#0" expanded="false" />
+            <element signature="e#70641#70871#0" expanded="false" />
+            <element signature="e#70958#71186#0" expanded="false" />
+            <element signature="e#71273#71502#0" expanded="false" />
+            <element signature="e#71598#71825#0" expanded="false" />
+            <element signature="e#71859#72086#0" expanded="false" />
+            <element signature="e#72173#72402#0" expanded="false" />
+            <element signature="e#72483#72711#0" expanded="false" />
+            <element signature="e#72792#73019#0" expanded="false" />
+            <element signature="e#73101#73294#0" expanded="false" />
+            <element signature="e#73381#73651#0" expanded="false" />
+            <element signature="e#73855#75640#0" expanded="false" />
+            <element signature="e#73882#73955#0" expanded="false" />
+            <element signature="e#73974#75634#0" expanded="false" />
+            <element signature="e#74004#74052#0" expanded="false" />
+            <element signature="e#74072#75624#0" expanded="false" />
+            <element signature="e#74266#74472#0" expanded="false" />
+            <element signature="e#74491#74667#0" expanded="false" />
+            <element signature="e#74687#75610#0" expanded="false" />
+            <element signature="e#74813#75592#0" expanded="false" />
+            <element signature="e#74841#75570#0" expanded="false" />
+            <element signature="e#75058#75282#0" expanded="false" />
+            <element signature="e#75316#75544#0" expanded="false" />
+            <element signature="e#75662#75819#0" expanded="false" />
+            <element signature="e#75689#75813#0" expanded="false" />
+            <element signature="e#75833#76431#0" expanded="false" />
+            <element signature="e#75853#76137#0" expanded="false" />
+            <element signature="e#75883#75934#0" expanded="false" />
+            <element signature="e#75964#76015#0" expanded="false" />
+            <element signature="e#76075#76127#0" expanded="false" />
+            <element signature="e#76157#76198#0" expanded="false" />
+            <element signature="e#76209#76338#0" expanded="false" />
+            <element signature="e#76349#76425#0" expanded="false" />
+            <element signature="e#76399#76415#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../maxsport/inside.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.166666" vertical-offset="6899" max-vertical-offset="7770">
+          <caret line="505" column="0" selection-start-line="505" selection-start-column="4" selection-end-line="505" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../maxsport/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9615386" vertical-offset="1037" max-vertical-offset="2325">
-          <caret line="98" column="16" selection-start-line="98" selection-start-column="16" selection-end-line="120" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.37887487" vertical-offset="0" max-vertical-offset="2355">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
           <folding>
             <element signature="tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../maxsport/less/app.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78128797" vertical-offset="5582" max-vertical-offset="6660">
-          <caret line="415" column="35" selection-start-line="415" selection-start-column="35" selection-end-line="415" selection-end-column="35" />
-          <folding>
-            <element signature="e#38266#68647#2" expanded="true" />
           </folding>
         </state>
       </provider>
