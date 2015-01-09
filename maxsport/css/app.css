@@ -1,7 +1,43 @@
 body {
-  background: url("../images/colors.jpg") center top no-repeat;
-  background-size: inherit;
   font-family: 'PT Sans', sans-serif;
+}
+body > .container {
+  background: #007bb7 url("../images/colors.jpg") center top no-repeat;
+  background-size: inherit;
+}
+body.not-front .footer .container {
+  margin-top: 26px;
+}
+body.not-front .footer p {
+  font-size: 13px;
+  line-height: 14px;
+  padding: 0 3%;
+}
+.container-inner {
+  position: relative;
+}
+.container-inner:before {
+  content: " ";
+  display: block;
+  background: url("../images/shadow-ico.png") repeat-y scroll;
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -4px;
+}
+.container-inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+  background: url("../images/shadow-ico.png") repeat-y scroll;
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -4px;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
 }
 .breadcrumb {
   background: transparent;
@@ -45,11 +81,11 @@ body {
   font-size: 12px;
   text-decoration: underline;
 }
-.row.top-menu .menu > ul {
+.row.top-menu .menu ul {
   background: url("../images/menu-pattern.jpg") no-repeat left top;
   min-height: 56px;
 }
-.row.top-menu .menu > ul ul {
+.row.top-menu .menu ul ul {
   background: #fdfcfc;
   border: 1px solid #de6c02;
   position: absolute;
@@ -58,7 +94,7 @@ body {
   min-width: 135px;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.25);
 }
-.row.top-menu .menu > ul ul:before {
+.row.top-menu .menu ul ul:before {
   content: '';
   background: url("../images/pipka.png") no-repeat top left;
   width: 17px;
@@ -67,7 +103,7 @@ body {
   top: -10px;
   left: 10px;
 }
-.row.top-menu .menu > ul ul li {
+.row.top-menu .menu ul ul li {
   border-bottom: 1px solid #faede2;
   display: block;
   padding-left: 13px;
@@ -76,61 +112,61 @@ body {
   line-height: 30px;
   height: 30px;
 }
-.row.top-menu .menu > ul ul li a {
+.row.top-menu .menu ul ul li a {
   font-size: 14px;
   font-weight: 400;
   color: #1f1a0d !important;
   text-shadow: none !important;
   text-align: left !important;
 }
-.row.top-menu .menu > ul > li {
+.row.top-menu .menu ul > li {
   position: relative;
   float: left;
   width: 125px;
   height: 56px;
   text-align: center;
 }
-.row.top-menu .menu > ul > li.sel {
+.row.top-menu .menu ul > li.sel {
   background: #e58401;
   border-left: 1px solid #e26f01;
   border-right: 1px solid #e26f01;
   border-top: 1px solid #e05c00;
   box-shadow: inset 0 3px 2px rgba(224, 92, 0, 0.4);
 }
-.row.top-menu .menu > ul > li.sel a {
+.row.top-menu .menu ul > li.sel a {
   color: white;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
-.row.top-menu .menu > ul > li.sel:after {
+.row.top-menu .menu ul > li.sel:after {
   display: none;
 }
-.row.top-menu .menu > ul > li:hover {
+.row.top-menu .menu ul > li:hover {
   background: #e58401;
   border-left: 1px solid #e26f01;
   border-right: 1px solid #e26f01;
   border-top: 1px solid #e05c00;
   box-shadow: inset 0 3px 2px rgba(224, 92, 0, 0.4);
 }
-.row.top-menu .menu > ul > li:hover a {
+.row.top-menu .menu ul > li:hover a {
   color: white;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
-.row.top-menu .menu > ul > li:hover:after {
+.row.top-menu .menu ul > li:hover:after {
   display: none;
 }
-.row.top-menu .menu > ul > li a {
+.row.top-menu .menu ul > li a {
   display: block;
   vertical-align: middle;
   text-align: center;
 }
-.row.top-menu .menu > ul > li a span {
+.row.top-menu .menu ul > li a span {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
   width: 125px;
   height: 56px;
 }
-.row.top-menu .menu > ul > li:after {
+.row.top-menu .menu ul > li:after {
   background: url("../images/separator-ico.png") no-repeat;
   content: '';
   width: 2px;
@@ -140,7 +176,7 @@ body {
   top: calc(50% - 18px);
   top: -webkit-calc(50% - 18px);
 }
-.row.top-menu .menu > ul > li:last-of-type:after {
+.row.top-menu .menu ul > li:last-of-type:after {
   display: none;
 }
 .row.top-menu .menu ul {
@@ -445,6 +481,17 @@ body {
 .row.footer p {
   font-size: 14px;
 }
+.row.content.two-columns .container:after {
+  content: '';
+  width: calc(100%);
+  margin-left: 0px;
+  height: 9px;
+  border-radius: 0 0 5px 5px;
+  position: relative;
+  top: -6px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.18);
+  background: white;
+}
 .row.content.two-columns .col-md-3 {
   padding-left: 0;
   width: calc(25% - 9px);
@@ -536,15 +583,7 @@ body {
   height: 100%;
   min-height: 100%;
   box-sizing: border-box;
-}
-.row.content.inside .container-inner:before {
-  content: " ";
-  display: table;
-}
-.row.content.inside .container-inner:after {
-  content: " ";
-  display: table;
-  clear: both;
+  position: relative;
 }
 .row.content.inside .variants:after {
   content: '';
@@ -614,6 +653,17 @@ body {
 }
 .row.content.inside .variants div:last-of-type table .four span {
   color: #007bb6;
+}
+.row.content.inside .examples table tr:nth-child(odd) {
+  background: transparent;
+}
+.row.content.inside .prices td:nth-of-type(3),
+.row.content.inside .prices th:nth-of-type(3),
+.row.content.inside .prices td:nth-of-type(4),
+.row.content.inside .prices th:nth-of-type(4),
+.row.content.inside .prices td:nth-of-type(5),
+.row.content.inside .prices th:nth-of-type(5) {
+  text-align: center;
 }
 .row.banner.not-front .container-inner {
   background: rgba(0, 0, 0, 0.5);
@@ -688,4 +738,46 @@ body {
 }
 .row.banner.not-front p:last-of-type {
   margin-bottom: 0;
+}
+.button {
+  position: relative;
+  width: 100%;
+}
+.highslide {
+  outline: none;
+  text-decoration: none;
+}
+.highslide img {
+  cursor: url(highslide/graphics/zoomin.cur), pointer !important;
+}
+.highslide-active-anchor img {
+  visibility: hidden;
+}
+.highslide img {
+  border: 0px solid #c0c0c0;
+}
+h6 {
+  position: absolute;
+  top: 80px;
+  left: 1px;
+  width: 100%;
+  text-align: left;
+}
+h6 span {
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 16px;
+  background: rgba(0, 0, 0, 0.7);
+  background: #000000;
+  padding: 2px 2px 2px 2px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+  moz-opacity: 0.5;
+  khtml-opacity: 0.5;
+  opacity: 0.5;
+}
+.highslide-caption {
+  display: none;
+  font-size: 1em;
+  padding: 5px;
+  /* background: rgb(255, 255, 255); */
 }

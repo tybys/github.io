@@ -1,8 +1,51 @@
 body {
-    background: url("../images/colors.jpg") center top no-repeat;
-    background-size: inherit;
+    & > .container {
+        background: #007bb7 url("../images/colors.jpg") center top no-repeat;
+        background-size: inherit;
+    }
+
 
     font-family: 'PT Sans', sans-serif;
+    &.not-front {
+        .footer {
+            .container {
+                margin-top: 26px;
+            }
+            p {
+                font-size: 13px;
+                line-height: 14px;
+                padding: 0 3%;
+            }
+        }
+    }
+}
+
+.container-inner {
+    position: relative;
+    &:before {
+        content: " ";
+        display: block;
+        background: url("../images/shadow-ico.png") repeat-y scroll;
+        width: 4px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -4px;
+    }
+    &:after {
+        content: " ";
+        display: block;
+        clear: both;
+
+        background: url("../images/shadow-ico.png") repeat-y scroll;
+        width: 4px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: -4px;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+    }
 }
 
 .breadcrumb {
@@ -53,7 +96,7 @@ body {
             text-decoration: underline;
         }
         .menu {
-            & > ul {
+            &  ul {
                 background: url("../images/menu-pattern.jpg") no-repeat left top;
                 min-height: 56px;
                 ul {
@@ -473,6 +516,19 @@ body {
         }
     }
     &.content.two-columns {
+        .container {
+            &:after {
+                content: '';
+                width: calc(100% + 0px);
+                margin-left: 0px;
+                height: 9px;
+                border-radius: 0 0 5px 5px;
+                position: relative;
+                top: -6px;
+                box-shadow: 0 4px 5px rgba(0, 0, 0, 0.18);
+                background: white;
+            }
+        }
         .col-md-3 {
             padding-left: 0;
             width: ~"calc(25% - 9px)";
@@ -481,6 +537,7 @@ body {
         .col-md-9 {
             width: ~"calc(75% + 9px)";
             width: ~"-webkit-calc(75% + 9px)";
+
         }
     }
     &.content.inside {
@@ -573,20 +630,7 @@ body {
             height: 100%;
             min-height: 100%;
             box-sizing: border-box;
-
-//            margin-right: auto;
-//            margin-left: auto;
-//            padding-left: 15px;
-//            padding-right: 15px;
-            &:before {
-                content: " ";
-                display: table;
-            }
-            &:after {
-                content: " ";
-                display: table;
-                clear: both;
-            }
+            position: relative;
         }
         .variants {
             &:after {
@@ -644,6 +688,24 @@ body {
                         .third span {color: #54b045}
                         .four span {color: #007bb6}
                     }
+                }
+            }
+        }
+        .examples {
+            table {
+                tr:nth-child(odd) {
+                    background: transparent;
+                }
+            }
+        }
+        .prices {
+            td,
+            th{
+                &:nth-of-type(3),
+                &:nth-of-type(4),
+                &:nth-of-type(5),
+                {
+                    text-align: center;
                 }
             }
         }
@@ -736,4 +798,49 @@ body {
     } // banner not-front
 
 
+}
+
+
+// tmp styles, remove before deploying
+.button {
+    position: relative;
+    width: 100%;
+}
+.highslide {
+    outline: none;
+    text-decoration: none;
+}
+.highslide img {
+    cursor: url(highslide/graphics/zoomin.cur), pointer !important;
+}
+.highslide-active-anchor img {
+    visibility: hidden;
+}
+.highslide img {
+    border: 0px solid rgb(192, 192, 192);
+}
+h6 {
+    position: absolute;
+    top: 80px;
+    left: 1px;
+    width: 100%;
+    text-align: left;
+}
+h6 span {
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    line-height: 16px;
+    background: rgba(0, 0, 0, 0.7);
+    background: rgb(0, 0, 0);
+    padding: 2px 2px 2px 2px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+    moz-opacity: 0.5;
+    khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+.highslide-caption {
+    display: none;
+    font-size: 1em;
+    padding: 5px;
+    /* background: rgb(255, 255, 255); */
 }
