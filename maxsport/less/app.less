@@ -10,11 +10,97 @@ body {
         .footer {
             .container {
                 margin-top: 26px;
+                margin-bottom: 26px;
             }
             p {
                 font-size: 13px;
                 line-height: 14px;
-                padding: 0 3%;
+                padding: 0 27px;
+            }
+        }
+    }
+}
+
+.items-grid {
+    .item {
+        float: left;
+        //            margin: 0 38.999999px 18px 0;
+        margin: 0 19.999999px 18px 0;
+        &:hover {
+            text-decoration: none;
+            .inner {
+                border: 1px solid #e17100;
+                box-shadow: 0 0 9px rgba(0, 0, 0, 0.28);
+            }
+        }
+        &:nth-of-type(3n) {margin-right: 0 !important}
+        &.sel {
+            .inner {
+                border: 1px solid #e17100;
+                box-shadow: 0 0 9px rgba(0, 0, 0, 0.28);
+
+            }
+        }
+        .inner {
+
+            img {
+                display: block;
+                margin: 11px auto 10px auto;
+            }
+            .title {
+                display: block;
+                font-size: 16px;
+                color: black;
+                text-align: center;
+                line-height: 20px;
+                margin-bottom: 13px;
+            }
+            &:hover {
+                box-shadow: 0 0 9px rgba(0, 0, 0, 0.28);
+                text-decoration: none;
+            }
+            width: 217px;
+            min-height: 390px;
+            background: white;
+            border: 1px solid white;
+            padding: 10px;
+        }
+        .price {
+            margin-bottom: 18px;
+            span {
+                font-size: 20px;
+                font-weight: 700;
+                color: black;
+                text-align: center;
+                display: block;
+            }
+            a {
+                margin-top: 19px;
+                font-size: 13px;
+                line-height: 13px;
+                font-weight: 300;
+                text-transform: none;
+
+            }
+
+            line-height: 14px;
+            font-size: 13px;
+            font-weight: 300;
+            text-transform: none;
+        }
+        .control {
+            span {
+                font-size: 18px;
+                line-height: 37px;
+                font-weight: 700;
+                margin: 0 auto;
+                display: block;
+                width: 152px;
+                height: 37px;
+                background: url("../images/btn.jpg") no-repeat center left;
+                text-transform: capitalize;
+                color: black;
+                text-align: center;
             }
         }
     }
@@ -154,6 +240,7 @@ body {
     background: transparent;
     margin-top: 13px;
     margin-bottom: 7px;
+    padding-left: 0;
     li {
         font-size: 14px;
         margin-right: 10px;
@@ -174,6 +261,7 @@ body {
         &:before {
             position: relative;
             top: -1px;
+            left: -4px;
             display: inline-block;
             font-family: 'Glyphicons Halflings';
             font-style: normal;
@@ -646,6 +734,189 @@ body {
 
         }
     }
+    &.item-card {
+        .item-card-inner{
+            position: relative;
+            border-top: 1px solid #e17100;
+            padding-top: 28px;
+            &:after {
+                content: '';
+                position: absolute;
+                right: -15px;
+                top: -1px;
+                height: 1px;
+                width: 15px;
+                background: #e17100;
+            }
+        }
+        .similiar h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #fe861c;
+            text-align: center;
+        }
+        .media-left {
+            img {
+                display: block;
+                border: 1px solid #e17100;
+                box-shadow: 0 0 9px rgba(0, 0, 0, 0.28);
+            }
+        }
+        .media-body {
+            .rows {
+                font-weight: 700;
+                font-size: 16px;
+                color: black;
+                span {
+                    color: #868686;
+                    display: block;
+                    font-weight: 400;
+                }
+                &.desc {
+                    font-weight: 400;
+                }
+            }
+        }
+        #size-table {
+            position: absolute;
+            top: 16px;
+            right: 0;
+            a {
+                color: rgb(142, 152, 162);
+                display: inline-block;
+                background: url('../images/table-size-ico.jpg') bottom right 40% no-repeat;
+                padding-bottom: 15px;
+            }
+        }
+        .section {
+            border-top: 1px solid #acacac;
+            padding-top: 18px;
+            padding-bottom: 10px;
+            position: relative;
+        }
+        .number {
+            b {
+                font-weight: normal;
+                margin-right: 10px;
+            }
+            .minus {
+                background-position: 0 100%;
+                margin-right: 5px;
+                width: 9px;
+                height: 9px;
+                background: url('http://fighterland.ru/catalog/view/theme/default/image/plus-minus.png') no-repeat;
+                cursor: pointer;
+                display: inline-block;
+
+                background-position: 0 100%;
+                margin-right: 5px;
+            }
+            input {
+                text-align: center;
+                margin: 0;
+                color: white;
+                font-size: 20px;
+                font-weight: 700;
+
+                width: auto !important;
+                background: #e17100;
+                border-radius: 4px;
+                padding: 3px !important;
+                float: none !important;
+                border: none;
+            }
+            .plus {
+                line-height: 20px;
+                color: rgb(142, 152, 162);
+                width: 9px;
+                height: 9px;
+                background: url('http://fighterland.ru/catalog/view/theme/default/image/plus-minus.png') no-repeat;
+                cursor: pointer;
+                display: inline-block;
+
+                background-position: 0 0;
+                margin-left: 5px;
+            }
+        }
+
+        .cart {
+            width: 100%;
+            margin-bottom: 20px;
+            display: inline-block;
+            .button {
+                float: left;
+
+                border: none;
+                font-size: 18px;
+                line-height: 37px;
+                font-weight: 700;
+                margin: 0 auto;
+                display: block;
+                width: 152px;
+                height: 37px;
+                background: url("../images/btn.jpg") no-repeat center left;
+                text-transform: capitalize;
+                color: black;
+                text-align: center;
+            }
+        }
+
+        .share {
+            display: inline-block;
+            vertical-align: top;
+            width: 49.5%;
+            b {
+                padding-top: 9px;
+                display: block;
+            }
+        }
+        .type-number {
+            display: inline-block;
+            vertical-align: top;
+            width: 49.5%;
+        }
+            label {
+                width: 32px;
+                font-size: 18px;
+                text-align: center;
+                border: 1px solid rgba(0, 0, 0, 0);
+                color: rgb(103, 115, 125);
+                display: inline-block;
+                &.option-image {
+                    margin-left: -1px;
+                    margin-right: 1px;
+                    img {
+                        width: 28px;
+                        height: 25px;
+                        text-align: left;
+                        border: 1px solid rgb(96, 107, 117);
+                        cursor: pointer;
+                        margin-top: -3px;
+                    }
+                }
+            }
+            .option {
+                .sizes-collection {
+                    display: inline-block;
+                }
+                margin-bottom: 10px;
+                b {
+                    width: 50px;
+                    font-weight: normal;
+                    display: inline;
+//                    vertical-align: top;
+                    margin-top: 8.5px;
+                }
+                .option-color {
+                    width: 200px;
+                    display: inline-block;
+                }
+                .option-image {
+                    border: 1px solid rgba(0, 0, 0, 0);
+                }
+            }
+
+    }
     &.content.inside-catalog {
         .filter {
             list-style: none;
@@ -683,85 +954,6 @@ body {
                 }
                 input {
                     margin-right: 4px;
-                }
-            }
-        }
-        .item {
-            float: left;
-//            margin: 0 38.999999px 18px 0;
-            margin: 0 19.999999px 18px 0;
-            &:hover {
-                text-decoration: none;
-                .inner {
-                    border: 1px solid #e17100;
-                }
-            }
-            &:nth-of-type(3n) {margin-right: 0 !important}
-            &.sel {
-                .inner {
-                    border: 1px solid #e17100;
-                }
-            }
-            .inner {
-
-                img {
-                    display: block;
-                    margin: 11px auto 10px auto;
-                }
-                .title {
-                    display: block;
-                    font-size: 16px;
-                    color: black;
-                    text-align: center;
-                    line-height: 20px;
-                    margin-bottom: 13px;
-                }
-                &:hover {
-                    box-shadow: 0 0 9px rgba(0, 0, 0, 0.28);
-                    text-decoration: none;
-                }
-                width: 217px;
-                min-height: 390px;
-                background: white;
-                border: 1px solid white;
-                padding: 10px;
-            }
-            .price {
-                margin-bottom: 18px;
-                span {
-                    font-size: 20px;
-                    font-weight: 700;
-                    color: black;
-                    text-align: center;
-                    display: block;
-                }
-                a {
-                    margin-top: 19px;
-                    font-size: 13px;
-                    line-height: 13px;
-                    font-weight: 300;
-                    text-transform: none;
-
-                }
-
-                line-height: 14px;
-                font-size: 13px;
-                font-weight: 300;
-                text-transform: none;
-            }
-            .control {
-                span {
-                    font-size: 18px;
-                    line-height: 37px;
-                    font-weight: 700;
-                    margin: 0 auto;
-                    display: block;
-                    width: 152px;
-                    height: 37px;
-                    background: url("../images/btn.jpg") no-repeat center left;
-                    text-transform: capitalize;
-                    color: black;
-                    text-align: center;
                 }
             }
         }
