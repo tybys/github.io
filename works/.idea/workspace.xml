@@ -28,33 +28,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../maxsport/less/app.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.923077" vertical-offset="8903" max-vertical-offset="14520">
-              <caret line="740" column="30" selection-start-line="740" selection-start-column="30" selection-end-line="740" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.43958575" vertical-offset="11528" max-vertical-offset="17205">
+              <caret line="925" column="30" selection-start-line="925" selection-start-column="30" selection-end-line="925" selection-end-column="30" />
               <folding>
                 <element signature="e#496#2764#0" expanded="false" />
                 <element signature="e#2779#4292#0" expanded="false" />
                 <element signature="e#45212#75593#2" expanded="true" />
-                <element signature="e#83868#84043#0" expanded="false" />
-                <element signature="e#84064#84438#0" expanded="false" />
-                <element signature="e#84459#84789#0" expanded="false" />
-                <element signature="e#84807#84958#0" expanded="false" />
-                <element signature="e#84975#86383#0" expanded="false" />
-                <element signature="e#86399#87011#0" expanded="false" />
-                <element signature="e#87028#87229#0" expanded="false" />
-                <element signature="e#87251#87356#0" expanded="false" />
+                <element signature="e#89732#89933#0" expanded="false" />
+                <element signature="e#89955#90060#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inside-catalog-item.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="inside-catalog-item.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../maxsport/inside-catalog-item.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.793341" vertical-offset="4934" max-vertical-offset="5805">
-              <caret line="375" column="12" selection-start-line="375" selection-start-column="12" selection-end-line="375" selection-end-column="12" />
+            <state vertical-scroll-proportion="-13.791667" vertical-offset="3209" max-vertical-offset="5805">
+              <caret line="236" column="0" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#span#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -66,6 +60,7 @@
                 <element signature="n#style#0;n#input#4;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#5;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1420875718000" expanded="true" signature="23716:23815" placeholder="//..." />
               </folding>
             </state>
           </provider>
@@ -130,8 +125,8 @@
         <option value="$PROJECT_DIR$/../maxsport/inside.html" />
         <option value="$PROJECT_DIR$/../utc/less/app.less" />
         <option value="$PROJECT_DIR$/../maxsport/inside-catalog.html" />
-        <option value="$PROJECT_DIR$/../maxsport/less/app.less" />
         <option value="$PROJECT_DIR$/../maxsport/inside-catalog-item.html" />
+        <option value="$PROJECT_DIR$/../maxsport/less/app.less" />
       </list>
     </option>
   </component>
@@ -845,30 +840,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../maxsport/less/app.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.923077" vertical-offset="8903" max-vertical-offset="14520">
-          <caret line="740" column="30" selection-start-line="740" selection-start-column="30" selection-end-line="740" selection-end-column="30" />
-          <folding>
-            <element signature="e#496#2764#0" expanded="false" />
-            <element signature="e#2779#4292#0" expanded="false" />
-            <element signature="e#45212#75593#2" expanded="true" />
-            <element signature="e#83868#84043#0" expanded="false" />
-            <element signature="e#84064#84438#0" expanded="false" />
-            <element signature="e#84459#84789#0" expanded="false" />
-            <element signature="e#84807#84958#0" expanded="false" />
-            <element signature="e#84975#86383#0" expanded="false" />
-            <element signature="e#86399#87011#0" expanded="false" />
-            <element signature="e#87028#87229#0" expanded="false" />
-            <element signature="e#87251#87356#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../maxsport/inside-catalog-item.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.793341" vertical-offset="4934" max-vertical-offset="5805">
-          <caret line="375" column="12" selection-start-line="375" selection-start-column="12" selection-end-line="375" selection-end-column="12" />
+        <state vertical-scroll-proportion="-13.791667" vertical-offset="3209" max-vertical-offset="5805">
+          <caret line="236" column="0" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#span#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -880,6 +855,21 @@
             <element signature="n#style#0;n#input#4;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#5;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1420875718000" expanded="true" signature="23716:23815" placeholder="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../maxsport/less/app.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43958575" vertical-offset="11528" max-vertical-offset="17205">
+          <caret line="925" column="30" selection-start-line="925" selection-start-column="30" selection-end-line="925" selection-end-column="30" />
+          <folding>
+            <element signature="e#496#2764#0" expanded="false" />
+            <element signature="e#2779#4292#0" expanded="false" />
+            <element signature="e#45212#75593#2" expanded="true" />
+            <element signature="e#89732#89933#0" expanded="false" />
+            <element signature="e#89955#90060#0" expanded="false" />
           </folding>
         </state>
       </provider>
