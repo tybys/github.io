@@ -191,14 +191,58 @@ body a:hover {
   background: lightcyan;
 }
 .right-column:after {
-  content: 'правая колонка';
-  color: red;
   float: left;
 }
 .right-column .items.grid-block:after {
   content: '';
   clear: both;
   display: block;
+}
+.right-column .items.grid-block .item {
+  float: left;
+  margin: 0 19.999999px 19px 0;
+}
+.right-column .items.grid-block .item:nth-of-type(4n) {
+  margin-right: 0 !important;
+}
+.right-column .items.grid-block .item .inner {
+  width: 175px;
+  background: white;
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  padding: 10px;
+}
+.right-column .items.grid-block .item .inner .title {
+  display: block;
+  margin-bottom: 20px;
+}
+.right-column .items.grid-block .item .inner:hover {
+  box-shadow: 0 0 15px black;
+}
+.right-column .items.grid-block .item .price {
+  width: 154px;
+  border-top: 1px solid #d4d4d4;
+  text-align: right;
+  margin-top: 20px;
+  line-height: 14px;
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: none;
+}
+.right-column .items.grid-block .item .price span {
+  float: left;
+  font-size: 16px;
+  font-weight: 900;
+  color: #333333;
+  display: inline-block;
+  margin-top: 27px;
+}
+.right-column .items.grid-block .item .price a {
+  margin-top: 19px;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 300;
+  text-transform: none;
 }
 .similiar .items.grid-block:after {
   content: '';

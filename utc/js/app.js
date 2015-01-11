@@ -9,7 +9,8 @@ var temp_menu = function ()
     var menu = [
         ["index", "главная"],
         ["category", "категории"],
-        ["item-card", "карточка товара"]
+        ["item-card", "карточка товара"],
+        ["category-fast-view", "быстрый просмотр"]
     ]
     for (var i = 0; i < menu.length; i++)
     {
