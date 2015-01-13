@@ -37,6 +37,7 @@
         display: inline;
         position: relative;
         margin: 0 19.999999px 19px 0;
+        transition: all 1s ease;
         &:first-of-type {background: yellow}
         &:nth-of-type(2) {background: lime}
         &:nth-of-type(3) {background: cyan}
@@ -51,7 +52,9 @@
             z-index: 1;
         }
         &:hover {
+            transition: all 1s ease;
             .inner {
+                transition: all 1s ease;
                 width: 220px !important;
                 z-index: 2;
                 -webkit-transform: translate(-20px,0);
