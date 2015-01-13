@@ -28,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../utc/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.066079296" vertical-offset="0" max-vertical-offset="1020">
+              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -41,18 +41,18 @@
       <file leaf-file-name="app.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../utc/less/app.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="11565">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-41.291668" vertical-offset="11144" max-vertical-offset="12240">
+              <caret line="809" column="5" selection-start-line="809" selection-start-column="5" selection-end-line="809" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app2.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app2.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../utc/less/app2.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8303167" vertical-offset="106" max-vertical-offset="1050">
-              <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+            <state vertical-scroll-proportion="-20.583334" vertical-offset="76" max-vertical-offset="1020">
+              <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -61,7 +61,7 @@
       <file leaf-file-name="category-fast-view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../utc/category-fast-view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.958334" vertical-offset="2431" max-vertical-offset="7275">
+            <state vertical-scroll-proportion="-126.25" vertical-offset="0" max-vertical-offset="7275">
               <caret line="202" column="19" selection-start-line="202" selection-start-column="19" selection-end-line="389" selection-end-column="26" />
               <folding />
             </state>
@@ -117,7 +117,6 @@
         <option value="$PROJECT_DIR$/../maxsport/js/app.js" />
         <option value="$PROJECT_DIR$/../utc/category.html" />
         <option value="$PROJECT_DIR$/../utc/index.html" />
-        <option value="$PROJECT_DIR$/../utc/less/app.less" />
         <option value="$PROJECT_DIR$/../maxsport/less/bootstrap.less" />
         <option value="$PROJECT_DIR$/../maxsport/cart_.html" />
         <option value="$PROJECT_DIR$/../maxsport/cart.html" />
@@ -126,9 +125,10 @@
         <option value="$PROJECT_DIR$/../maxsport/inside-catalog.html" />
         <option value="$PROJECT_DIR$/../maxsport/index.html" />
         <option value="$PROJECT_DIR$/../maxsport/less/app.less" />
-        <option value="$PROJECT_DIR$/../utc/js/app.js" />
         <option value="$PROJECT_DIR$/../utc/category-fast-view.html" />
         <option value="$PROJECT_DIR$/../utc/less/app2.less" />
+        <option value="$PROJECT_DIR$/../utc/less/app.less" />
+        <option value="$PROJECT_DIR$/../utc/js/app.js" />
       </list>
     </option>
   </component>
@@ -802,34 +802,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../utc/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../utc/less/app.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="11565">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../utc/category-fast-view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.958334" vertical-offset="2431" max-vertical-offset="7275">
-          <caret line="202" column="19" selection-start-line="202" selection-start-column="19" selection-end-line="389" selection-end-column="26" />
+        <state vertical-scroll-proportion="-41.291668" vertical-offset="11144" max-vertical-offset="12240">
+          <caret line="809" column="5" selection-start-line="809" selection-start-column="5" selection-end-line="809" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../utc/less/app2.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8303167" vertical-offset="106" max-vertical-offset="1050">
-          <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+        <state vertical-scroll-proportion="-20.583334" vertical-offset="76" max-vertical-offset="1020">
+          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../utc/category-fast-view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-126.25" vertical-offset="0" max-vertical-offset="7275">
+          <caret line="202" column="19" selection-start-line="202" selection-start-column="19" selection-end-line="389" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../utc/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.066079296" vertical-offset="0" max-vertical-offset="1020">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
           <folding />
         </state>
       </provider>

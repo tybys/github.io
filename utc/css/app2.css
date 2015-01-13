@@ -43,7 +43,6 @@
   display: inline;
   position: relative;
   margin: 0 19.999999px 19px 0;
-  transition: all 1s ease;
 }
 .custom-grid .item:first-of-type {
   background: #ffff00;
@@ -65,14 +64,4 @@
   margin: 10px auto 10px auto;
   min-height: 150px;
   z-index: 1;
-}
-.custom-grid .item:hover {
-  transition: all 1s ease;
-}
-.custom-grid .item:hover .inner {
-  transition: all 1s ease;
-  width: 220px !important;
-  z-index: 2;
-  -webkit-transform: translate(-20px, 0);
-  -webkit-box-shadow: 1px 1px 1px #888;
 }

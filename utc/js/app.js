@@ -1,6 +1,12 @@
 $(function ()
 {
+    //$("body").addClass()
+    $("body").keydown(function(e) {
+        //alert(e.keyCode) // this value 18, right option
+        var t = $(this);
 
+        e.keyCode == 220 ? t.toggleClass("color-debug") :""
+    });
     temp_menu();
 
     /** BLOCKS ZOOMING SHITCODE
@@ -19,12 +25,20 @@ $(function ()
              zIndex: 100
            });*/
 
-    $(".test-item").hover(function ()
+    $(".item .inner", $(".custom-grid")).hover(function ()
     {
+        var t = $(this);
 
+        t.animate({
+            width: 217
+        }, 100)
     }, function ()
     {
+        var t = $(this);
 
+        t.animate({
+            width: 175
+        }, 50)
     });
 });
 
