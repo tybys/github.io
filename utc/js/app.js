@@ -30,7 +30,8 @@ $(function ()
         t.stop(true).animate({
             left: -15,
             width: 205,
-            zIndex: 2
+            zIndex: 2,
+            minHeight: 465
         }, 300)
     }, function ()
     {
@@ -39,7 +40,8 @@ $(function ()
         t.animate({
             left: 0,
             width: 175,
-            zIndex: 1
+            zIndex: 1,
+            minHeight: 285
         }, 150)
     });
 });
