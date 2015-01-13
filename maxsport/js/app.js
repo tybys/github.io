@@ -18,4 +18,16 @@ var temp_menu = function ()
     rootMenu.css({position: 'fixed',top: '1%',right: '0.3%',zIndex: '999'});
     rootMenu.find('a').css({display: 'block',padding: '3px',color: 'white', background: 'black', margin: '0 1px', opacity: .5});
     //$('.row').append("<div id='grid' />");
+
+    $(".menu li").hover(function ()
+    {
+//        var t = $(this);
+//        if (t.find("ul.sub"))
+//        {
+//            t.show();
+//            t.mouseleave(function () {
+//                $(".sub").hide();
+//            });
+//        }
+    });
 }();

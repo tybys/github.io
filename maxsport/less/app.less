@@ -517,6 +517,7 @@ body {
                 //background: url("../images/menu-pattern.jpg") no-repeat left top;
                 min-height: 56px;
                 ul {
+					display: none;
                     background: #fdfcfc !important;
                     border: 1px solid #de6c02 !important;
                     position: absolute;
@@ -576,6 +577,9 @@ body {
                         border-right: 1px solid #e26f01;
                         border-top: 1px solid #e05c00;
                         box-shadow: inset 0 3px 2px rgba(224, 92, 0, 0.40);
+						ul {
+							display: block;
+						}
                         a {
                             color: white;
                             text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
@@ -963,6 +967,9 @@ body {
         }
     }
     &.item-card {
+		.sizes-collection label:hover {
+			cursor: pointer;
+		}
         #tabs {
             margin-top: 35px;
             margin-bottom: 68px;

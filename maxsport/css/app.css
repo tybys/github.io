@@ -419,6 +419,7 @@ body.not-front .footer p {
   min-height: 56px;
 }
 .row.top-menu .menu ul ul {
+  display: none;
   background: #fdfcfc !important;
   border: 1px solid #de6c02 !important;
   position: absolute;
@@ -479,6 +480,9 @@ body.not-front .footer p {
   border-right: 1px solid #e26f01;
   border-top: 1px solid #e05c00;
   box-shadow: inset 0 3px 2px rgba(224, 92, 0, 0.4);
+}
+.row.top-menu .menu ul > li:hover ul {
+  display: block;
 }
 .row.top-menu .menu ul > li:hover a {
   color: white;
@@ -838,6 +842,9 @@ body.not-front .footer p {
 .row.content.two-columns .col-xs-9 {
   width: calc(75% + 9px);
   width: -webkit-calc(75% + 9px);
+}
+.row.item-card .sizes-collection label:hover {
+  cursor: pointer;
 }
 .row.item-card #tabs {
   margin-top: 35px;
