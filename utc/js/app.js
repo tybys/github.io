@@ -1,6 +1,31 @@
 $(function ()
 {
+
     temp_menu();
+
+    /** BLOCKS ZOOMING SHITCODE
+     * default specs
+     * width: 175, height: 285
+     * width must be 217
+     *
+     *     $(this).animate({
+             width: 300,
+             height: 400,
+             top: -80,
+             left: -45
+           }, 'fast');
+     $(this).animate().css('box-shadow', '0 0 5px #000');
+     $(this).css({
+             zIndex: 100
+           });*/
+
+    $(".test-item").hover(function ()
+    {
+
+    }, function ()
+    {
+
+    });
 });
 
 var temp_menu = function ()

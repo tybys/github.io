@@ -1,24 +1,61 @@
 .custom-grid {
-    .item {
+    width: 100%;
+
+    .test-item {
+        width: 25%;
+        min-height: 285px;
+        float: left;
+        display: inline;
         position: relative;
-//        min-width: ~"calc(175px + 19.999999px /2)";
-//        min-width: ~"-webkit-calc(175px + 19.999999px /2)";
-        .inner {
-//            position: absolute;
-//            top: 0;
-//            left: 0;
-//            width: 100%;
-            &:hover {
-                width: ~"calc(175px + 19.999999px)";
-                width: ~"-webkit-calc(175px + 19.999999px)";
+        margin: 0 19.999999px 19px 0;
+        &:hover {
+            .test-item-inner {
+                width: 200px;
+                z-index: 2;
             }
+        }
+        &:first-of-type {background: yellow}
+        &:nth-of-type(2) {background: lime}
+        &:nth-of-type(3) {background: cyan}
+        &:last-of-type {background: orange; margin-right: 0}
+        .test-item-inner {
+            position: absolute;
+            width: 175px;
+            height: 100%;
+            background: #ffffff;
+            margin: 10px auto 10px auto;
+            min-height: 150px;
+            z-index: 1;
+        }
+    }
+
+    .item {
+        width: ~"calc(25% - 19.999999px)";
+        width: ~"-webkit-calc(25% - 19.999999px)";
+        min-height: 285px;
+        float: left;
+        display: inline;
+        position: relative;
+        margin: 0 19.999999px 19px 0;
+        &:first-of-type {background: yellow}
+        &:nth-of-type(2) {background: lime}
+        &:nth-of-type(3) {background: cyan}
+        &:last-of-type {background: orange}
+        .inner {
+            position: absolute;
+            width: 175px;
+            height: 100%;
+            background: #ffffff;
+            margin: 10px auto 10px auto;
+            min-height: 150px;
+            z-index: 1;
         }
         &:hover {
             .inner {
-//                display: none;
-//                width: ~"calc(175px + 19.999999px)";
-//                width: ~"-webkit-calc(175px + 19.999999px)";
-                padding: 0 19.999999%;
+                width: 220px !important;
+                z-index: 2;
+                -webkit-transform: translate(-20px,0);
+                -webkit-box-shadow: 1px 1px 1px #888;
             }
         }
     }
