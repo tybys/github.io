@@ -27,16 +27,20 @@ $(function ()
     {
         var t = $(this);
 
-        t.animate({
-            width: 217
-        }, 100)
+        t.stop(true).animate({
+            left: -15,
+            width: 205,
+            zIndex: 2
+        }, 300)
     }, function ()
     {
         var t = $(this);
 
         t.animate({
-            width: 175
-        }, 50)
+            left: 0,
+            width: 175,
+            zIndex: 1
+        }, 150)
     });
 });
 

@@ -59,9 +59,9 @@
 .custom-grid .item .inner {
   position: absolute;
   width: 175px;
-  height: 100%;
   background: #ffffff;
   margin: 10px auto 10px auto;
   min-height: 150px;
+  height: 100%;
   z-index: 1;
 }
