@@ -732,3 +732,12 @@ body.color-debug .top-block .col-md-6:last-of-type a:first-of-type:after {
 body.color-debug .top .container {
   background: #d3d3d3;
 }
+body.color-debug .yandex-share {
+  background: #ff0000;
+}
+body.color-debug .reviews {
+  background: deeppink;
+}
+body.color-debug .reviews > div {
+  background: black;
+}

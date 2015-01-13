@@ -28,21 +28,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../utc/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.066079296" vertical-offset="0" max-vertical-offset="1020">
-              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="990">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../utc/less/app.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-41.291668" vertical-offset="11144" max-vertical-offset="12240">
-              <caret line="809" column="5" selection-start-line="809" selection-start-column="5" selection-end-line="809" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.84023666" vertical-offset="11530" max-vertical-offset="12390">
+              <caret line="816" column="30" selection-start-line="816" selection-start-column="30" selection-end-line="816" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="item.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../utc/less/item.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.625" vertical-offset="3183" max-vertical-offset="5685">
+              <caret line="234" column="0" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -103,7 +113,6 @@
         <option value="$PROJECT_DIR$/../utc/css/jquery.raty.css" />
         <option value="$PROJECT_DIR$/../utc/js/jquery.raty.js" />
         <option value="$PROJECT_DIR$/../utc/item-card.html" />
-        <option value="$PROJECT_DIR$/../utc/less/item.less" />
         <option value="$PROJECT_DIR$/../js/carousel/css/style.css" />
         <option value="$PROJECT_DIR$/../js/carousel/js/app.js" />
         <option value="$PROJECT_DIR$/../js/portfolio/vs2012.xml" />
@@ -127,8 +136,9 @@
         <option value="$PROJECT_DIR$/../maxsport/less/app.less" />
         <option value="$PROJECT_DIR$/../utc/category-fast-view.html" />
         <option value="$PROJECT_DIR$/../utc/less/app2.less" />
-        <option value="$PROJECT_DIR$/../utc/less/app.less" />
         <option value="$PROJECT_DIR$/../utc/js/app.js" />
+        <option value="$PROJECT_DIR$/../utc/less/item.less" />
+        <option value="$PROJECT_DIR$/../utc/less/app.less" />
       </list>
     </option>
   </component>
@@ -470,13 +480,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../briklaer/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4988067" vertical-offset="8387" max-vertical-offset="9225">
-          <caret line="587" column="75" selection-start-line="587" selection-start-column="8" selection-end-line="587" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../estate/images/icons/in.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -802,10 +805,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../utc/less/app.less">
+    <entry file="file://$PROJECT_DIR$/../utc/category-fast-view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-41.291668" vertical-offset="11144" max-vertical-offset="12240">
-          <caret line="809" column="5" selection-start-line="809" selection-start-column="5" selection-end-line="809" selection-end-column="5" />
+        <state vertical-scroll-proportion="-126.25" vertical-offset="0" max-vertical-offset="7275">
+          <caret line="202" column="19" selection-start-line="202" selection-start-column="19" selection-end-line="389" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../utc/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="990">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -818,18 +829,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../utc/category-fast-view.html">
+    <entry file="file://$PROJECT_DIR$/../utc/less/item.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-126.25" vertical-offset="0" max-vertical-offset="7275">
-          <caret line="202" column="19" selection-start-line="202" selection-start-column="19" selection-end-line="389" selection-end-column="26" />
+        <state vertical-scroll-proportion="-13.625" vertical-offset="3183" max-vertical-offset="5685">
+          <caret line="234" column="0" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../utc/js/app.js">
+    <entry file="file://$PROJECT_DIR$/../utc/less/app.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.066079296" vertical-offset="0" max-vertical-offset="1020">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.84023666" vertical-offset="11530" max-vertical-offset="12390">
+          <caret line="816" column="30" selection-start-line="816" selection-start-column="30" selection-end-line="816" selection-end-column="30" />
           <folding />
         </state>
       </provider>

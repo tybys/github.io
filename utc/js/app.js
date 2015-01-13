@@ -1,12 +1,10 @@
 $(function ()
 {
-    //$("body").addClass()
     $("body").keydown(function(e) {
-        //alert(e.keyCode) // this value 18, right option
         var t = $(this);
-
         e.keyCode == 220 ? t.toggleClass("color-debug") :""
     });
+
     temp_menu();
 
     /** BLOCKS ZOOMING SHITCODE
