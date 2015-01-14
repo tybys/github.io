@@ -38,34 +38,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app2.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app2.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../utc/less/app2.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="1230">
-              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.45701358" vertical-offset="2776" max-vertical-offset="3735">
+              <caret line="212" column="26" selection-start-line="212" selection-start-column="26" selection-end-line="212" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="category-fast-view.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="category-fast-view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../utc/category-fast-view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7285068" vertical-offset="2266" max-vertical-offset="4350">
-              <caret line="745" column="30" selection-start-line="745" selection-start-column="30" selection-end-line="745" selection-end-column="30" />
+            <state vertical-scroll-proportion="-8.125" vertical-offset="1530" max-vertical-offset="10215">
+              <caret line="115" column="50" selection-start-line="115" selection-start-column="50" selection-end-line="115" selection-end-column="50" />
               <folding>
-                <element signature="tag#div#0;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#0;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#1;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#2;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#3;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#4;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#5;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#6;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#7;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#8;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#9;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#10;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -81,12 +73,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../naholste/custom.less" />
-        <option value="$PROJECT_DIR$/../naholste/css/custom.css" />
-        <option value="$PROJECT_DIR$/../estate/less/bootstrap.less" />
-        <option value="$PROJECT_DIR$/../estate/less/ipad.less" />
-        <option value="$PROJECT_DIR$/../estate/less/ipad-landscape.less" />
-        <option value="$PROJECT_DIR$/../estate/less/not-apple-landscape.less" />
         <option value="$PROJECT_DIR$/../estate/less/apple-six.less" />
         <option value="$PROJECT_DIR$/../estate/less/not-apple.less" />
         <option value="$PROJECT_DIR$/../estate/less/apple-five-fives-fivec-landscape.less" />
@@ -128,10 +114,16 @@
         <option value="$PROJECT_DIR$/../maxsport/index.html" />
         <option value="$PROJECT_DIR$/../maxsport/less/app.less" />
         <option value="$PROJECT_DIR$/../utc/less/item.less" />
-        <option value="$PROJECT_DIR$/../utc/less/app.less" />
         <option value="$PROJECT_DIR$/../utc/js/app.js" />
-        <option value="$PROJECT_DIR$/../utc/less/app2.less" />
+        <option value="$PROJECT_DIR$/../utc/less/app.less" />
+        <option value="$PROJECT_DIR$/../utc/js/jquery.slider.min.js" />
+        <option value="$PROJECT_DIR$/../utc/css/jquery.slider.css" />
+        <option value="$PROJECT_DIR$/../utc/js/draggable-0.1.js" />
+        <option value="$PROJECT_DIR$/../utc/js/jquery.dependClass-0.1.js" />
+        <option value="$PROJECT_DIR$/../utc/js/jquery.numberforatter-1.2.3.js" />
+        <option value="$PROJECT_DIR$/../utc/js/jshashtable-2.1_src.js" />
         <option value="$PROJECT_DIR$/../utc/category-fast-view.html" />
+        <option value="$PROJECT_DIR$/../utc/less/app2.less" />
       </list>
     </option>
   </component>
@@ -268,6 +260,46 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="images">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tybys">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="utc">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="images">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="icons">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tybys">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="utc">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="css">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
@@ -378,11 +410,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../utc/images/icons" />
       <recent name="$PROJECT_DIR$/../maxsport/images" />
       <recent name="$PROJECT_DIR$/../krendel" />
       <recent name="$PROJECT_DIR$/../ip-anihilation/images" />
       <recent name="$PROJECT_DIR$/../js/portfolio/images" />
-      <recent name="$PROJECT_DIR$/../js/chrome_font_ext" />
     </key>
   </component>
   <component name="RunManager" selected="Go Application.main.go">
@@ -549,45 +581,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../estate/images/icons/about2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../excentrics/promo/img/loc.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../excentrics/promo/img/bluelist.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../excentrics/promo/img/eye.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../excentrics/promo/img/inthelist.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ecopit/less/custom.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.355932" vertical-offset="3598" max-vertical-offset="6384">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ecopit/ecopit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.9322034" vertical-offset="770" max-vertical-offset="3752">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../js/portfolio/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37712345" vertical-offset="45" max-vertical-offset="1078">
@@ -867,14 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../utc/less/app.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84023666" vertical-offset="11530" max-vertical-offset="12390">
-          <caret line="816" column="30" selection-start-line="816" selection-start-column="30" selection-end-line="816" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../js/carousel/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2205">
@@ -907,32 +892,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../utc/less/app2.less">
+    <entry file="file://$PROJECT_DIR$/../utc/less/app.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="1230">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.24110219" vertical-offset="1380" max-vertical-offset="12390">
+          <caret line="106" column="120" selection-start-line="99" selection-start-column="4" selection-end-line="106" selection-end-column="120" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../utc/images/icons/hint-arrow.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../utc/category-fast-view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7285068" vertical-offset="2266" max-vertical-offset="4350">
-          <caret line="745" column="30" selection-start-line="745" selection-start-column="30" selection-end-line="745" selection-end-column="30" />
+        <state vertical-scroll-proportion="-8.125" vertical-offset="1530" max-vertical-offset="10215">
+          <caret line="115" column="50" selection-start-line="115" selection-start-column="50" selection-end-line="115" selection-end-column="50" />
           <folding>
-            <element signature="tag#div#0;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#0;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#1;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#2;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#3;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#4;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#5;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#6;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#7;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#8;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#9;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#10;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../utc/less/app2.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45701358" vertical-offset="2776" max-vertical-offset="3735">
+          <caret line="212" column="26" selection-start-line="212" selection-start-column="26" selection-end-line="212" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>

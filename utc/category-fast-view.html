@@ -14,6 +14,9 @@
     <link href="css/app.css" rel="stylesheet">
     <link href="css/app2.css" rel="stylesheet">
     <link href="css/category.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <!--<link href="css/jquery-ui.structure.css" rel="stylesheet">-->
+    <link href="css/jquery-ui.theme.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -103,27 +106,31 @@
                     <fieldset>
                         <legend>цена</legend>
                         <div>
-                            slider
+                            <div id="amount">
+                                <span class="left"></span>
+                                <span class="right"></span>
+                            </div>
+                            <div id="slider"></div>
                         </div>
                         <div class="price-range">
-                            <a href="#">0-1500<span>рублей</span></a>
-                            <a href="#">1500-3000<span>рублей</span></a>
-                            <a href="#">3000-4500<span>рублей</span></a>
-                            <a href="#">4500-7000<span>рублей</span></a>
-                            <a href="#">7000-9500<span>рублей</span></a>
+                            <a href="#"><span>0 - 1500рублей</span></a>
+                            <a href="#"><span>1500 - 3000 <i>рублей</i></span></a>
+                            <a href="#"><span>3000 - 4500 <i>рублей</i></span></a>
+                            <a href="#"><span>4500 - 7000 <i>рублей</i></span></a>
+                            <a href="#"><span>7000 - 9500 <i>рублей</i></span></a>
                         </div>
                         <div class="controls">
                             <a href="#">Применить</a>
-                            <a href="#">сбросить фильтр</a>
+                            <a href="#"><span>сбросить фильтр</span></a>
                         </div>
                     </fieldset>
                     <fieldset>
                         <legend>Бренд</legend>
                         <div class="brand">
                             <label><input type="checkbox"/>Kingsilk</label>
-                            <label>
+                            <label class="checked">
                                 <input type="checkbox"/>cleo
-                                <div>
+                                <div class="hint">
                                     <span>выбрано товаров&nbsp;<i>65</i></span>
                                     <a href="#">показать</a>
                                 </div>
@@ -132,14 +139,14 @@
                             <label><input type="checkbox"/>хлопковый рай</label>
                             <label><input type="checkbox"/>sailid</label>
                         </div>
-                        <div class="controls">
+                        <div class="controls lonely">
                             <a href="#">Применить</a>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="controls main">
                             <a href="#" class="btn btn-info">Применить</a>
-                            <a href="#">сбросить фильтр</a>
+                            <a href="#"><span>сбросить фильтр</span></a>
                         </div>
                     </fieldset>
                 </form>
@@ -831,6 +838,23 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!--<script src="js/bootstrap.min.js"></script>-->
     <script src="js/carousel.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        $(function () {
+            $("#slider").slider({
+                range: true,
+                min: 0,
+                max: 500,
+                values: [ 75, 300 ],
+                slide: function(event, ui) {
+                    $("#amount .left").text(ui.values[0]);
+                    $("#amount .right").text(ui.values[1]);
+                }
+            });
+            $("#amount .left").text($("#slider").slider("values", 0));
+            $("#amount .right").text($("#slider").slider("values", 1));
+        });
+    </script>
 </body>
 </html>
