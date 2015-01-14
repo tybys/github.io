@@ -38,22 +38,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app2.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app2.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../utc/less/app2.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55995476" vertical-offset="135" max-vertical-offset="1155">
-              <caret line="42" column="45" selection-start-line="39" selection-start-column="10" selection-end-line="42" selection-end-column="45" />
+            <state vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="1230">
+              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="category-fast-view.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="category-fast-view.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../utc/category-fast-view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-35.583332" vertical-offset="7156" max-vertical-offset="9450">
-              <caret line="718" column="26" selection-start-line="718" selection-start-column="26" selection-end-line="718" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.7285068" vertical-offset="2266" max-vertical-offset="4350">
+              <caret line="745" column="30" selection-start-line="745" selection-start-column="30" selection-end-line="745" selection-end-column="30" />
               <folding>
+                <element signature="tag#div#0;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#0;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#1;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#2;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#3;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#4;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#5;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#6;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#7;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#8;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#9;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
@@ -122,8 +130,8 @@
         <option value="$PROJECT_DIR$/../utc/less/item.less" />
         <option value="$PROJECT_DIR$/../utc/less/app.less" />
         <option value="$PROJECT_DIR$/../utc/js/app.js" />
-        <option value="$PROJECT_DIR$/../utc/category-fast-view.html" />
         <option value="$PROJECT_DIR$/../utc/less/app2.less" />
+        <option value="$PROJECT_DIR$/../utc/category-fast-view.html" />
       </list>
     </option>
   </component>
@@ -899,24 +907,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../utc/less/app2.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="1230">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../utc/category-fast-view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.583332" vertical-offset="7156" max-vertical-offset="9450">
-          <caret line="718" column="26" selection-start-line="718" selection-start-column="26" selection-end-line="718" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.7285068" vertical-offset="2266" max-vertical-offset="4350">
+          <caret line="745" column="30" selection-start-line="745" selection-start-column="30" selection-end-line="745" selection-end-column="30" />
           <folding>
+            <element signature="tag#div#0;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#2;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#3;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#4;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#5;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#6;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#7;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#8;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#9;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#10;tag#div#2;tag#div#1;tag#div#0;tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../utc/less/app2.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55995476" vertical-offset="135" max-vertical-offset="1155">
-          <caret line="42" column="45" selection-start-line="39" selection-start-column="10" selection-end-line="42" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>

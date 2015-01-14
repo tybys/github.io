@@ -1,39 +1,28 @@
+.left-column {
+  background: #f6f6f6;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+}
+.left-column form legend {
+  border: none;
+}
+.left-column form .brand label {
+  display: block;
+}
+.left-column form a {
+  display: block;
+}
+.right-column .filter-constructor {
+  border-top: 1px solid #bababa;
+  background: #f1f6fa;
+}
+.right-column .filter-constructor .controls {
+  background: #f6f6f6;
+  border-top: 1px solid #bababa;
+  border-bottom: 1px solid #bababa;
+}
 .custom-grid {
   width: 100%;
-}
-.custom-grid .test-item {
-  width: 25%;
-  min-height: 285px;
-  float: left;
-  display: inline;
-  position: relative;
-  margin: 0 19.999999px 19px 0;
-}
-.custom-grid .test-item:hover .test-item-inner {
-  width: 200px;
-  z-index: 2;
-}
-.custom-grid .test-item:first-of-type {
-  background: #ffff00;
-}
-.custom-grid .test-item:nth-of-type(2) {
-  background: #00ff00;
-}
-.custom-grid .test-item:nth-of-type(3) {
-  background: #00ffff;
-}
-.custom-grid .test-item:last-of-type {
-  background: orange;
-  margin-right: 0;
-}
-.custom-grid .test-item .test-item-inner {
-  position: absolute;
-  width: 175px;
-  height: 100%;
-  background: #ffffff;
-  margin: 10px auto 10px auto;
-  min-height: 150px;
-  z-index: 1;
 }
 .custom-grid .item {
   width: calc(25% - 19.999999px);
