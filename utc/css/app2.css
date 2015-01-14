@@ -42,19 +42,7 @@
   float: left;
   display: inline;
   position: relative;
-  margin: 0 19.999999px 19px 0;
-}
-.custom-grid .item:first-of-type {
-  background: #ffff00;
-}
-.custom-grid .item:nth-of-type(2) {
-  background: #00ff00;
-}
-.custom-grid .item:nth-of-type(3) {
-  background: #00ffff;
-}
-.custom-grid .item:last-of-type {
-  background: #ffa500;
+  margin: 0 19.999999px 40px 0 !important;
 }
 .custom-grid .item .inner {
   transition: all 0.2s ease;
