@@ -57,11 +57,28 @@
   background: #ffa500;
 }
 .custom-grid .item .inner {
+  transition: all 0.2s ease;
   position: absolute;
   width: 175px;
   background: #ffffff;
   margin: 10px auto 10px auto;
-  min-height: 150px;
-  height: 100%;
   z-index: 1;
+}
+.custom-grid .item .specs-extend,
+.custom-grid .item .price-extend {
+  display: none;
+  opacity: 0;
+}
+.custom-grid .item:hover {
+  transition: all 0.5s ease;
+}
+.custom-grid .item:hover .specs-extend,
+.custom-grid .item:hover .price-extend {
+  display: block;
+  opacity: 1;
+}
+.custom-grid .item:hover .inner {
+  width: 205px !important;
+  margin-left: -15px;
+  z-index: 2;
 }

@@ -28,20 +28,20 @@ $(function ()
         var t = $(this);
 
         t.stop(true).animate({
-            left: -15,
-            width: 205,
-            zIndex: 2,
-            minHeight: 465
+            //marginLeft: -15,
+            //width: 205,
+            //zIndex: 2,
+            //minHeight: 465
         }, 300)
     }, function ()
     {
         var t = $(this);
 
         t.animate({
-            left: 0,
-            width: 175,
-            zIndex: 1,
-            minHeight: 285
+            //marginLeft: 0,
+            //width: 175,
+            //zIndex: 1,
+            //minHeight: 285
         }, 150)
     });
 });
