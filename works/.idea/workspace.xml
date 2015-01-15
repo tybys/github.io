@@ -31,8 +31,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../utc/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="172" max-vertical-offset="1080">
-              <caret line="43" column="28" selection-start-line="42" selection-start-column="14" selection-end-line="43" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
+              <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -41,22 +41,12 @@
       <file leaf-file-name="app2.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../utc/less/app2.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3529412" vertical-offset="3768" max-vertical-offset="4845">
-              <caret line="319" column="17" selection-start-line="319" selection-start-column="17" selection-end-line="319" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.3529412" vertical-offset="3693" max-vertical-offset="6240">
+              <caret line="314" column="32" selection-start-line="314" selection-start-column="32" selection-end-line="314" selection-end-column="32" />
               <folding>
-                <element signature="e#5277#6242#0" expanded="false" />
-                <element signature="e#6262#7094#0" expanded="false" />
+                <element signature="e#6255#7220#0" expanded="false" />
+                <element signature="e#7240#8072#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../utc/less/app.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.62" vertical-offset="2434" max-vertical-offset="12450">
-              <caret line="181" column="14" selection-start-line="181" selection-start-column="12" selection-end-line="181" selection-end-column="14" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -64,8 +54,8 @@
       <file leaf-file-name="category-fast-view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../utc/category-fast-view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.0" vertical-offset="1233" max-vertical-offset="13230">
-              <caret line="103" column="31" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="31" />
+            <state vertical-scroll-proportion="-26.75" vertical-offset="10833" max-vertical-offset="13200">
+              <caret line="765" column="71" selection-start-line="765" selection-start-column="71" selection-end-line="765" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -122,7 +112,6 @@
         <option value="$PROJECT_DIR$/../maxsport/index.html" />
         <option value="$PROJECT_DIR$/../maxsport/less/app.less" />
         <option value="$PROJECT_DIR$/../utc/less/item.less" />
-        <option value="$PROJECT_DIR$/../utc/js/app.js" />
         <option value="$PROJECT_DIR$/../utc/js/jquery.slider.min.js" />
         <option value="$PROJECT_DIR$/../utc/css/jquery.slider.css" />
         <option value="$PROJECT_DIR$/../utc/js/draggable-0.1.js" />
@@ -130,6 +119,7 @@
         <option value="$PROJECT_DIR$/../utc/js/jquery.numberforatter-1.2.3.js" />
         <option value="$PROJECT_DIR$/../utc/js/jshashtable-2.1_src.js" />
         <option value="$PROJECT_DIR$/../utc/less/app.less" />
+        <option value="$PROJECT_DIR$/../utc/js/app.js" />
         <option value="$PROJECT_DIR$/../utc/category-fast-view.html" />
         <option value="$PROJECT_DIR$/../utc/less/app2.less" />
       </list>
@@ -602,8 +592,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3735">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5277#6242#0" expanded="false" />
-            <element signature="e#6262#7094#0" expanded="false" />
+            <element signature="e#6255#7220#0" expanded="false" />
+            <element signature="e#7240#8072#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -775,6 +765,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.76578647" vertical-offset="293" max-vertical-offset="6720">
           <caret line="64" column="52" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -794,6 +785,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="388" max-vertical-offset="7470">
           <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -801,6 +796,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7408284" vertical-offset="7309" max-vertical-offset="24015">
           <caret line="541" column="42" selection-start-line="541" selection-start-column="42" selection-end-line="541" selection-end-column="42" />
+          <folding>
+            <element signature="e#312#588#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -843,6 +841,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.71936274" vertical-offset="388" max-vertical-offset="6315">
           <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#span#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#1;n#span#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#1;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#2;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#3;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#4;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#5;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -850,6 +860,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3223982" vertical-offset="5220" max-vertical-offset="8670">
           <caret line="367" column="22" selection-start-line="367" selection-start-column="22" selection-end-line="367" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -889,35 +900,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../utc/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="172" max-vertical-offset="1080">
-          <caret line="43" column="28" selection-start-line="42" selection-start-column="14" selection-end-line="43" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../utc/category-fast-view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.0" vertical-offset="1233" max-vertical-offset="13230">
-          <caret line="103" column="31" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../utc/less/app.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.62" vertical-offset="2434" max-vertical-offset="12450">
-          <caret line="181" column="14" selection-start-line="181" selection-start-column="12" selection-end-line="181" selection-end-column="14" />
+        <state vertical-scroll-proportion="-3.3952663" vertical-offset="5599" max-vertical-offset="12450">
+          <caret line="182" column="33" selection-start-line="182" selection-start-column="33" selection-end-line="182" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../utc/category-fast-view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.75" vertical-offset="10833" max-vertical-offset="13200">
+          <caret line="765" column="71" selection-start-line="765" selection-start-column="71" selection-end-line="765" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../utc/less/app2.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3529412" vertical-offset="3768" max-vertical-offset="4845">
-          <caret line="319" column="17" selection-start-line="319" selection-start-column="17" selection-end-line="319" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.3529412" vertical-offset="3693" max-vertical-offset="6240">
+          <caret line="314" column="32" selection-start-line="314" selection-start-column="32" selection-end-line="314" selection-end-column="32" />
           <folding>
-            <element signature="e#5277#6242#0" expanded="false" />
-            <element signature="e#6262#7094#0" expanded="false" />
+            <element signature="e#6255#7220#0" expanded="false" />
+            <element signature="e#7240#8072#0" expanded="false" />
           </folding>
         </state>
       </provider>
