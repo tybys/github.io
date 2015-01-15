@@ -1,8 +1,14 @@
 .left-column {
-    background: #f6f6f6;
-    border: 1px solid #d4d4d4;
-    border-radius: 4px;
+    h3 {
+        white-space: nowrap;
+        margin-top: 30px;
+        margin-bottom: 32px;
+    }
     form {
+        background: #f6f6f6;
+        border: 1px solid #d4d4d4;
+        border-radius: 4px;
+        padding: 10px;
         fieldset {
             border-bottom: 1px solid #dfdfdf;
             &:first-of-type {
@@ -103,6 +109,8 @@
                         text-transform: none;
                         text-shadow: none;
                         display: inline;
+                        padding-left: 7px;
+                        padding-right: 7px;
                     }
                 }
             }
@@ -130,15 +138,115 @@
 
 .right-column {
     .filter-constructor {
+        letter-spacing: -3px;
         border-top: 1px solid #bababa;
         background: #f1f6fa;
+        position: relative;
+        padding: 14px 0 48px 11px;
+        width: 95%;
         .controls {
+            letter-spacing: normal;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            clear: both;
             background: #f6f6f6;
             border-top: 1px solid #bababa;
             border-bottom: 1px solid #bababa;
+            min-height: 34px;
+            padding: 0 10px;
+            .left {
+                float: left;
+                width: 425px;
+                span {}
+                a {
+                    &:first-of-type {
+                        background: url("../images/icons/list-arrow.png") right center no-repeat;
+                        padding-right: 14px;
+                    }
+                    &:first-of-type {&.checked {background: url("../images/icons/list-arrow-checked.png") right center no-repeat}}
+                    &:nth-of-type(2) {
+                        color: #a3479b;
+                        border-bottom: 1px dashed;
+                    }
+                    &:nth-of-type(3) {
+                        color: #5a5a5a;
+                        border-bottom: 1px dashed;
+                    }
+                }
+                span, a {
+                    color: #5a5a5a;
+                    line-height: 34px;
+                    font-size: 13px;
+                    margin: 0 4px;
+                }
+            }
+            .right {
+                float: right;
+                width: auto;
+                a {
+                    &:nth-of-type(1) {
+                        padding-left: 14px;
+                        color: purple;
+                        background: url("../images/icons/img-ico.png") left center no-repeat;
+                    }
+                    &:nth-of-type(2) {
+                        padding-left: 14px;
+                        color: #5a5a5a;
+                        border-bottom: 1px dashed;
+                        background: url("../images/icons/list-ico.png") left center no-repeat;
+                    }
+                }
+                span, a {
+                    color: #5a5a5a;
+                    line-height: 34px;
+                    font-size: 13px;
+                    margin: 0 4px;
+                }
+            }
+        }
+        div.filter {
+            //float: left;
+            display: inline-block;
+            letter-spacing: normal;
+            vertical-align: top;
+            width: 150px;
+            span {
+                color: #0d97e1;
+                display: block;
+                margin-bottom: 9px;
+            }
+            a {
+                font-size: 13px;
+                line-height: 13px;
+                color: #707070;
+                text-transform: uppercase;
+                background: url("../images/icons/delete-ico.png") left 57% no-repeat;
+                padding-left: 10px;
+                margin-bottom: 5px;
+                display: block;
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+            &.monument {
+                span {
+                    color: #2d2d2d;
+                    font-size: 15px;
+                }
+                a {
+                    color: #707070;
+                    border-bottom: 1px dashed;
+                    background: none;
+                    padding: 0;
+                    display: inline;
+                }
+            }
         }
     }
     .category-list {
+        margin-top: 78px;
         a {
             font-size: 14px;
             padding: 6px 20px 6px 0;
@@ -209,7 +317,7 @@
     .left {
         vertical-align: top;
         display: inline-block;
-        width: 49.5%;
+        width: 48.5%;
     }
     .right {
         text-align: right;
