@@ -426,19 +426,62 @@
                 }
             }
         }
+        // CUSTOM GRID LIST
         &.custom-grid-list {
             .item {
+                float: none;
+                display: block;
                 width: 100%;
-                min-height: 117px;
-                .specs-extend {
-                    table {
-                        width: 100%;
-                        tr {
-                            border-bottom: 1px solid #ededed;
-                            td {line-height: 19px}
-                            &:last-of-type {vertical-align: top}
+                max-height: 117px;
+                //min-height: 128px;
+                min-height: 140px;
+                margin-bottom: 0 !important;
+                .image-wrap {
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                .tech-info {
+                    display: inline-block;
+                    padding: 0;
+                    margin-left: 0 !important;
+                    min-height: 96px;
+                }
+                .price-info {
+                    display: inline-block;
+                    .price {
+                        min-height: 96px;
+                    }
+                }
+
+                .inner {
+                    transition: all 0.2s ease;
+                    width: 100%;
+                    background: #ffffff;
+                    margin: 10px auto 10px auto;
+                    z-index: 1;
+
+                    position: relative;
+                    .tech-info {
+                        border-left: 1px solid #d4d4d4;
+                        padding-left: 10px;
+                        position: relative;
+                    }
+                    .title {
+                        max-width: 290px;
+                        margin-bottom: 0;
+                    }
+                    .specs {
+//                        position: absolute;
+//                        bottom: 0;
+                        max-width: 440px;
+                        span {
+                            display: block;
+                            padding-bottom: 4px;
                         }
                     }
+                    .specs-extend {width: 440px}
+
+
                 }
                 .fast-view {
                     display: none;
@@ -457,63 +500,46 @@
                     top: -67.5px;
                     &:hover {opacity: 1}
                 }
-                .price-info {
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                }
-                .price {
-                    width: 122px;
-                    border-top: none;
-                    border-left: 1px solid #d4d4d4;
-                    height: ~"calc(100% - 22px)";
-                    height: ~"-webkit-calc(100% - 22px)";
-                    margin-top: 11px;
-                    text-align: center;
-                    span {
-                        display: block;
-                        width: 100%;
-                        margin-top: 20px;
-                    }
-                    a {margin-top: 10px}
-                }
-                .inner {
-                    transition: all 0.2s ease;
-                    width: 100%;
-                    height: 100%;
-                    background: #ffffff;
-                    margin: 10px auto 10px auto;
-                    z-index: 1;
-                    .tech-info {
-                        border-left: 1px solid #d4d4d4;
-                        margin-left: 165px;
-                        height: 96px;
-                        padding-left: 10px;
-                        position: relative;
-                    }
-                    .title {
-                        max-width: 290px;
-                        margin-bottom: 0;
-                    }
-                    .specs {
-                        position: absolute;
-                        bottom: 0;
-                        max-width: 440px;
-                        span {
-                            display: block;
-                            padding-bottom: 4px;
-                        }
-                    }
-                    .specs-extend {width: 440px}
-                    img {float: left}
-
-                }
                 .specs-extend, .price-extend {
                     display: none;
                     opacity: 0
                 }
+                .specs-extend {
+                    table {
+                        width: 100%;
+                        margin-top: 18px;
+                        tr {
+                            border-bottom: 1px solid #ededed;
+                            td {line-height: 19px}
+                            &:last-of-type {
+                                vertical-align: top;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+                .price-info {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    .price {
+                        width: 122px;
+                        border-top: none;
+                        border-left: 1px solid #d4d4d4;
+                        height: ~"calc(100% - 22px)";
+                        height: ~"-webkit-calc(100% - 22px)";
+                        margin-top: 11px;
+                        text-align: center;
+                        span {
+                            display: block;
+                            width: 100%;
+                            margin-top: 20px;
+                        }
+                        a {margin-top: 10px}
+                    }
+                }
                 &:hover {
-                    min-height: 178px;
+                    //min-height: 178px;
                     .price {width: 122px !important}
                     .specs {display: none}
                     .fast-view {display: block}
@@ -525,14 +551,14 @@
                     .price-extend {margin-top: 10px}
                     .inner {
                         width: 100% !important;
-                        height: 100% !important;
+                        //height: 100% !important;
                         z-index: 2;
                     }
                 }
                 // SEL
                 &.sel {
                     width: 100%;
-                    min-height: 178px;
+//                    min-height: 178px;
                     transition: all 0.5s ease;
                     .inner {
                         width: 100% !important
