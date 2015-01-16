@@ -635,3 +635,34 @@
   background: #ffefef;
   color: #f75151;
 }
+.cart table td .number-wrap {
+  min-height: 25px;
+  display: block;
+  margin: 0 auto;
+}
+.cart table td .number-wrap input {
+  display: none !important;
+}
+.cart table td .number-wrap .arr-down {
+  display: inline;
+  font-weight: 700;
+  font-size: 13px;
+  color: #333333;
+}
+.cart table td .number-wrap .arr-up {
+  display: inline;
+  font-weight: 700;
+  font-size: 13px;
+  color: #333333;
+}
+.cart table td .number-wrap .numb-value {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 13px;
+  color: #333333;
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  width: 40px;
+  height: 25px;
+}
