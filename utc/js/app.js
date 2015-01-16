@@ -28,7 +28,7 @@ $(function ()
         var arrDown = $('<span/>', { 'class': 'arr-down', 'role': 'ArrDown', text: "-" });
 
         //field.attr('type') == 'number' ? field.wrap('<span class="number-wrap" />').attr('hidden', 'hidden') : '';
-        field.attr('type') == 'text' || field.hasClass("number") ? field.wrap('<span class="number-wrap" />').attr('hidden', 'hidden') : '';
+        field.attr('type') == 'text' && field.hasClass("number") ? field.wrap('<span class="number-wrap" />').attr('hidden', 'hidden') : '';
 
         $('.number-wrap').prepend(numbValue);
         $('.number-wrap').append(arrUp);
