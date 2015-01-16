@@ -774,28 +774,57 @@
                     }
                 }
             }
+            &.price {
+                white-space: nowrap;
+                font-size: 14px;
+                color: #333333;
+                padding-top: 15px;
+            }
+            &.total-price {
+                .price {
+                    span {
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: #a3479b;
+                    }
+                    a {
+                        
+                    }
+                }
+            }
             .number-wrap {
                 input {display: none !important;}
                 min-height: 25px;
                 display: block;
                 margin: 0 auto;
+                position: relative;
+                width: 80px;
                 .arr-down {
-                    display: inline;
+                    position: absolute;
+                    top: 4px;
+                    left: 0;
                     font-weight: 700;
                     font-size: 13px;
                     color: #333333;
+                    cursor: pointer;
                 }
                 .arr-up {
-                    display: inline;
+                    position: absolute;
+                    top: 4px;
+                    right: 0;
                     font-weight: 700;
                     font-size: 13px;
                     color: #333333;
+                    cursor: pointer;
                 }
                 .numb-value {
                     display: inline-block;
+                    margin-left: 18px;
                     font-weight: 700;
                     font-size: 13px;
                     color: #333333;
+                    line-height: 25px;
+                    text-align: center;
 
                     background: #ffffff;
                     border: 1px solid #d4d4d4;

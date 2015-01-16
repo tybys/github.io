@@ -635,31 +635,53 @@
   background: #ffefef;
   color: #f75151;
 }
+.cart table td.price {
+  white-space: nowrap;
+  font-size: 14px;
+  color: #333333;
+  padding-top: 15px;
+}
+.cart table td.total-price .price span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #a3479b;
+}
 .cart table td .number-wrap {
   min-height: 25px;
   display: block;
   margin: 0 auto;
+  position: relative;
+  width: 80px;
 }
 .cart table td .number-wrap input {
   display: none !important;
 }
 .cart table td .number-wrap .arr-down {
-  display: inline;
+  position: absolute;
+  top: 4px;
+  left: 0;
   font-weight: 700;
   font-size: 13px;
   color: #333333;
+  cursor: pointer;
 }
 .cart table td .number-wrap .arr-up {
-  display: inline;
+  position: absolute;
+  top: 4px;
+  right: 0;
   font-weight: 700;
   font-size: 13px;
   color: #333333;
+  cursor: pointer;
 }
 .cart table td .number-wrap .numb-value {
   display: inline-block;
+  margin-left: 18px;
   font-weight: 700;
   font-size: 13px;
   color: #333333;
+  line-height: 25px;
+  text-align: center;
   background: #ffffff;
   border: 1px solid #d4d4d4;
   border-radius: 4px;
