@@ -594,3 +594,44 @@
   outline: none;
   top: 11px;
 }
+.cart table th {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.cart table td {
+  border: 1px solid;
+  padding: 10px 28px;
+}
+.cart table td.description a {
+  font-size: 13px;
+  color: #048bd5;
+  display: block;
+}
+.cart table td.description span {
+  color: #5a5a5a;
+}
+.cart table td.description ul {
+  margin: 16px 0;
+  padding: 0;
+  list-style: none;
+}
+.cart table td.description ul li a {
+  display: inline;
+}
+.cart table td.description p {
+  font-size: 13px;
+  line-height: 13px;
+  padding: 10px 15px;
+}
+.cart table td.description p.success {
+  background: #d7e9da;
+  color: #63a16f;
+}
+.cart table td.description p.failure {
+  background: #fcf4d6;
+  color: #e1ba22;
+}
+.cart table td.description p.error {
+  background: #ffefef;
+  color: #f75151;
+}

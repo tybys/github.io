@@ -732,3 +732,48 @@
         top: 11px;
     }
 }
+
+.cart {
+    table {
+        th {padding-top: 7px;padding-bottom: 7px;}
+        td {
+            border: 1px solid;
+            padding: 10px 28px;
+            &.description {
+                a {
+                    font-size: 13px;
+                    color: #048bd5;
+                    display: block;
+                }
+                span {
+                    color: #5a5a5a;
+                }
+                ul {
+                    margin: 16px 0;
+                    padding: 0;
+                    list-style: none;
+                    li {
+                        a {display: inline}
+                    }
+                }
+                p {
+                    font-size: 13px;
+                    line-height: 13px;
+                    padding: 10px 15px;
+                    &.success {
+                        background: #d7e9da;
+                        color: #63a16f;
+                    }
+                    &.failure {
+                        background: #fcf4d6;
+                        color: #e1ba22;
+                    }
+                    &.error {
+                        background: #ffefef;
+                        color: #f75151;
+                    }
+                }
+            }
+        }
+    }
+}
