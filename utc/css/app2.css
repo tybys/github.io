@@ -594,10 +594,46 @@
   outline: none;
   top: 11px;
 }
+.cart .btn-info {
+  line-height: 18px;
+  display: inline-block !important;
+  padding-left: 28px;
+  padding-right: 28px;
+  font-size: 14px !important;
+}
+.cart table .cart-controls {
+  vertical-align: top;
+}
+.cart table .cart-controls td[colspan="3"] {
+  text-align: right;
+}
+.cart table .cart-controls td[colspan="3"] a {
+  display: block;
+  margin-bottom: 17px;
+}
+.cart table .cart-controls td[colspan="3"] a span {
+  border-bottom: 1px dashed;
+}
+.cart table .cart-controls td[colspan="3"] a.btn {
+  margin-top: 10px;
+}
+.cart table .cart-controls td[colspan="3"] p {
+  font-size: 22px;
+  color: #a3479b;
+  white-space: nowrap;
+}
+.cart table .cart-controls td[colspan="3"] p strong {
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+}
 .cart table tr {
   border: 1px solid #d4d4d4;
 }
 .cart table tr:first-of-type {
+  border: none;
+}
+.cart table tr:last-of-type {
   border: none;
 }
 .cart table th {
