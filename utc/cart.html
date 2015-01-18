@@ -198,6 +198,9 @@
                         <td colspan="3">
                             <a href="#"><span>Промо-код на скидку</span></a>
                             <a href="#"><span>Как получить скидку?</span></a>
+
+                            <p class="Total"><strong>Итого:</strong>&nbsp;80 500</p>
+
                             <p><strong>Стоимость заказа, без учета доставки:</strong>&nbsp;80 500</p>
                             <a href="#" class="btn btn-info">оформить заказ</a>
                             <input type="text" id="phone" placeholder="Заказать по телефону"/>
@@ -206,18 +209,18 @@
                 </table>
 
                 <form>
-                    <fieldset class="auth">
+                    <fieldset class="normal">
                         <legend>Авторизация</legend>
                         <div class="left">
                             <span class="pseudo-title">Войти с учетной записью</span>
-                            <div>
+                            <div class="form-group">
                                 <input type="text" placeholder="Логин">
                             </div>
-                            <div>
+                            <div class="form-group">
                                 <input type="text" placeholder="Пароль">
                             </div>
-                            <div>
-                                <input type="submit" value="войти">
+                            <div class="form-group">
+                                <input type="submit" class="btn-flat" value="войти">
                                 <a href="#">Забыли пароль?</a>
                             </div>
                         </div>
@@ -234,6 +237,120 @@
                             <div><a href="#" class="btn btn-info">зарегестрироваться</a><p>Получайте бонусы, экономте деньги и время при следующих покупках<br/> Регистрация займет не более 2-х минут</p></div>
                             <div><a href="#" class="btn btn-gray">Купить без регистрации</a><p>При следующей покупке необходимо заполнять контктные данные и адрес доставки<br/>Незарегистрированные пользователи не могу пользоваться бонусами и накопительными скидками</p></div>
                         </div>
+                    </fieldset>
+
+                    <fieldset class="sel">
+                        <legend>Контактные данные</legend>
+                        <div style="width: 392px">
+                            <span>Укажите контактные данные человека, который будет получать заказ</span>
+
+                            <div class="form-group">
+                                <input type="text" placeholder="Имя и фамилия">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="E-mail">
+                                <i>Для получения уведомлений о статусе заказа</i>
+                            </div>
+                            <div class="form-group hint">
+                                <input type="text" placeholder="Телефон">
+                                <p>Мы позвоним вам, чтобы еще подтвердить ваш заказ Будьте на связи! Мы не сможем доставить заказ, если он не подтвержден</p>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Примечание"></textarea>
+                            </div>
+
+                            <a href="#" class="btn-flat">Продолжить</a>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="empty">
+                        <div style="width: 460px">
+                            <legend>Способ получения заказа и адрес доставки</legend>
+                            <span class="pseudo-title">Выберите способ получения заказа</span>
+                            <div class="link-controls">
+                                <a href="#" class="sel"><span>Курьерьская доставка</span></a>
+                                <a href="#"><span>Заберу сам</span></a>
+                                <a href="#"><span>Почтовая доставка</span></a>
+                            </div>
+                            <legend class="sub">Адрес доставки</legend>
+                            <div class="form-group-address form-group">
+                                <input type="text" class="city" placeholder="Город">
+                                <input type="text" class="index" placeholder="Индекс">
+                                <input type="text" class="street" placeholder="Улица">
+                                <input type="text" class="house" placeholder="Дом">
+                                <input type="text" class="appartaments" placeholder="Квартира">
+                                <input type="text" class="corp" placeholder="Корпус">
+                                <input type="text" class="stro" placeholder="Строение">
+                                <input type="text" class="floor" placeholder="Этаж">
+                                <textarea placeholder="Здесь можно указать код домофона или любую другую информацию, которая будет полезна для курьерской службы"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!---->
+                    <fieldset class="empty">
+                        <div style="width: 708px">
+                            <legend>Способ получения заказа и адрес доставки</legend>
+                            <span class="pseudo-title">Выберите способ получения заказа</span>
+                            <div class="link-controls">
+                                <a href="#" class=""><span>Курьерьская доставка</span></a>
+                                <a href="#" class="sel"><span>Заберу сам</span></a>
+                                <a href="#"><span>Почтовая доставка</span></a>
+                            </div>
+                            <legend class="sub">Пункты самовывоза</legend>
+                            <div class="map-area">
+                                <a href="#" class="address act"><span>г. Москва, ул. Марии Расковой, 27</span></a>
+                                <div class="media">
+                                    <span class="media-left">
+                                        <img src="images/map.jpg">
+                                    </span>
+                                    <div class="media-body">
+                                        <ul>
+                                            <li>Время работы: с <a href="#">09:00 до 20:00</a></li>
+                                            <li>Телефон: <a href="#">+7 (495) 333-33-33</a></li>
+                                            <li>Варианты оплаты: <a href="#">Наличными, безналичными</a></li>
+                                            <li>Ориентировочный срок доставки: <a href="#">27 марта 2015 г.</a></li>
+                                        </ul>
+                                        <a href="#" class="btn btn-info">Выбрать</a>
+                                    </div>
+                                    <a href="#" class="hider">Свернуть</a>
+                                </div>
+                                <a href="#" class="address"><span>г. Москва, ул. Марии Расковой, 17</span></a>
+                                <a href="#" class="address"><span>г. Москва, ул. Марии Расковой, 57</span></a>
+                            </div>
+
+                        </div>
+                    </fieldset>
+                    <!---->
+                    <fieldset>
+                        <legend>Дата и стоимость доставки</legend>
+                        <div class="form-group">
+                            <span class="pseudo-title">Выберите дату доставки</span>
+                            <select name="" id="">
+                                <option value="">Четверг 11.12.2014</option>
+                            </select>
+                            <i>По умолчанию, установлена ближайшая возможная дата доставки</i>
+                        </div>
+                        <div class="form-group">
+                            <span class="pseudo-title">Выберите время доставки</span>
+                            <select name="" id="">
+                                <option value="">09:00 - 13:00</option>
+                            </select>
+                        </div>
+
+                        <p class="preview-price"><strong>Стоимость доставки:</strong> 2000 рублей</p>
+                        <a href="#" class="btn btn-info">Продолжить</a>
+                    </fieldset>
+
+                    <fieldset class="sel final">
+                        <legend>Подтверждение</legend>
+                        <ul>
+                            <li>Получатель: Татьяна Свиридова</li>
+                            <li>Контактный телефон: +7 (945) 777-77-77</li>
+                            <li>E-mail: tati@mail.ru</li>
+                            <li>Способ получения: Курьером</li>
+                            <li>Адрес доставки: г. Москва, ул. Марии Расковой, 27 (доставка курьером)</li>
+                        </ul>
+                        <a href="#" class="btn btn-info">Подтверждаю</a>
                     </fieldset>
                 </form>
             </div>

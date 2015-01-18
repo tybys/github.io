@@ -38,21 +38,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cart.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cart.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../utc/cart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.666666" vertical-offset="2843" max-vertical-offset="5235">
-              <caret line="229" column="49" selection-start-line="229" selection-start-column="49" selection-end-line="229" selection-end-column="49" />
-              <folding />
+            <state vertical-scroll-proportion="0.17336395" vertical-offset="4994" max-vertical-offset="6990">
+              <caret line="343" column="41" selection-start-line="343" selection-start-column="41" selection-end-line="343" selection-end-column="41" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#fieldset#1;n#form#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#fieldset#2;n#form#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#fieldset#3;n#form#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app2.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app2.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../utc/less/app2.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6266968" vertical-offset="13771" max-vertical-offset="14730">
-              <caret line="955" column="0" selection-start-line="955" selection-start-column="0" selection-end-line="955" selection-end-column="0" />
+            <state vertical-scroll-proportion="-16.75" vertical-offset="15003" max-vertical-offset="18225">
+              <caret line="1027" column="33" selection-start-line="1027" selection-start-column="33" selection-end-line="1027" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -61,8 +65,8 @@
       <file leaf-file-name="app.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../utc/less/app.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.166666" vertical-offset="3599" max-vertical-offset="12450">
-              <caret line="269" column="9" selection-start-line="269" selection-start-column="9" selection-end-line="269" selection-end-column="9" />
+            <state vertical-scroll-proportion="-22.541666" vertical-offset="1649" max-vertical-offset="12930">
+              <caret line="146" column="25" selection-start-line="146" selection-start-column="25" selection-end-line="146" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -134,11 +138,11 @@
         <option value="$PROJECT_DIR$/../utc/js/jquery.dependClass-0.1.js" />
         <option value="$PROJECT_DIR$/../utc/js/jquery.numberforatter-1.2.3.js" />
         <option value="$PROJECT_DIR$/../utc/js/jshashtable-2.1_src.js" />
-        <option value="$PROJECT_DIR$/../utc/less/app.less" />
         <option value="$PROJECT_DIR$/../utc/category-fast-view.html" />
         <option value="$PROJECT_DIR$/../utc/js/app.js" />
-        <option value="$PROJECT_DIR$/../utc/cart.html" />
+        <option value="$PROJECT_DIR$/../utc/less/app.less" />
         <option value="$PROJECT_DIR$/../utc/less/app2.less" />
+        <option value="$PROJECT_DIR$/../utc/cart.html" />
       </list>
     </option>
   </component>
@@ -476,14 +480,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../utc/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="172" max-vertical-offset="1080">
-          <caret line="43" column="28" selection-start-line="42" selection-start-column="14" selection-end-line="43" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../utc/less/app2.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3735">
@@ -806,10 +802,15 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../utc/cart.html">
+    <entry file="file://$PROJECT_DIR$/../utc/images/icons/warining-ico.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../utc/category-fast-view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.666666" vertical-offset="2843" max-vertical-offset="5235">
-          <caret line="229" column="49" selection-start-line="229" selection-start-column="49" selection-end-line="229" selection-end-column="49" />
+        <state vertical-scroll-proportion="-35.583332" vertical-offset="14371" max-vertical-offset="17565">
+          <caret line="1015" column="44" selection-start-line="1015" selection-start-column="44" selection-end-line="1015" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -822,27 +823,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../utc/category-fast-view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.583332" vertical-offset="14371" max-vertical-offset="17565">
-          <caret line="1015" column="44" selection-start-line="1015" selection-start-column="44" selection-end-line="1015" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../utc/less/app.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.166666" vertical-offset="3599" max-vertical-offset="12450">
-          <caret line="269" column="9" selection-start-line="269" selection-start-column="9" selection-end-line="269" selection-end-column="9" />
+        <state vertical-scroll-proportion="-22.541666" vertical-offset="1649" max-vertical-offset="12930">
+          <caret line="146" column="25" selection-start-line="146" selection-start-column="25" selection-end-line="146" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../utc/less/app2.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6266968" vertical-offset="13771" max-vertical-offset="14730">
-          <caret line="955" column="0" selection-start-line="955" selection-start-column="0" selection-end-line="955" selection-end-column="0" />
+        <state vertical-scroll-proportion="-16.75" vertical-offset="15003" max-vertical-offset="18225">
+          <caret line="1027" column="33" selection-start-line="1027" selection-start-column="33" selection-end-line="1027" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../utc/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17336395" vertical-offset="4994" max-vertical-offset="6990">
+          <caret line="343" column="41" selection-start-line="343" selection-start-column="41" selection-end-line="343" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#fieldset#1;n#form#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#fieldset#2;n#form#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#fieldset#3;n#form#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

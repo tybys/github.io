@@ -102,6 +102,35 @@ body a:hover {
   position: relative;
   border-bottom: 2px solid #00547a;
 }
+.btn-gray {
+  background: #fefefe;
+  background: -moz-linear-gradient(top, #fefefe 0%, #dadada 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #dadada));
+  background: -webkit-linear-gradient(top, #fefefe 0%, #dadada 100%);
+  background: -o-linear-gradient(top, #fefefe 0%, #dadada 100%);
+  background: -ms-linear-gradient(top, #fefefe 0%, #dadada 100%);
+  background: linear-gradient(to bottom, #fefefe 0%, #dadada 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe', endColorstr='#dadada', GradientType=0);
+  border: none;
+  font: normal 400 14px/26px "Ubuntu";
+  vertical-align: top;
+  color: rgba(49, 49, 49, 0.71);
+  text-shadow: none;
+  text-transform: none;
+  position: relative;
+  border-bottom: 2px solid #f1f6f7;
+  padding: 6px 32px;
+}
+.btn-flat {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #707070;
+  background: #f6f6f6;
+  border: 1px solid #adadad;
+  border-radius: 5px;
+  padding: 5px 40px;
+  display: inline-block;
+}
 .container {
   width: 1065px;
 }
