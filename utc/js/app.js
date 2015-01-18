@@ -94,49 +94,45 @@ function init_number ()
  * author of this "implementation" method - Tabasov.K
  */
 {
-    var field = $('input');
-    //console.log(field)
-    var numbValue = $('<span/>', { 'class': 'numb-value' });
-    var arrUp = $('<span/>', { 'class': 'arr-up', 'role': 'ArrUp', text: "+" });
-    var arrDown = $('<span/>', { 'class': 'arr-down', 'role': 'ArrDown', text: "-" });
-    // hack for Safari 7 on Maveriks
-    if ($("body").hasClass("Safari 7"))
-    {
-        field.attr('type') == 'text' && field.not("#phone") ? field.wrap('<span class="number-wrap" />').attr('hidden', 'hidden') : '';
-        console.log(field.attr('type') == 'text' && field.not("#phone"))
-    }
-    else
-    {
+    $('input').each(function(){
+
+        var field = $(this);
+        //console.log(field)
+        var numbValue = $('<span/>', { 'class': 'numb-value' });
+        var arrUp = $('<span/>', { 'class': 'arr-up', 'role': 'ArrUp', text: "+" });
+        var arrDown = $('<span/>', { 'class': 'arr-down', 'role': 'ArrDown', text: "-" });
+
         field.attr('type') == 'number' ? field.wrap('<span class="number-wrap" />').attr('hidden', 'hidden') : '';
-    }
 
+        var numberWrap  = field.parents('.number-wrap');
 
-    $('.number-wrap').prepend(numbValue);
-    $('.number-wrap').append(arrUp);
-    $('.number-wrap').prepend(arrDown);
-    numbValue.text(field.val())
-
-    arrUp.add(arrDown).click(function ()
-    {
-        var is_down = $(this).is('.' + 'arr-down'),
-            val = parseInt(field.val(), 10) || 0;
-        field.val(is_down ? (val - 1) : (val + 1));
+        numberWrap.prepend(numbValue);
+        numberWrap.append(arrUp);
+        numberWrap.prepend(arrDown);
         numbValue.text(field.val())
-    });
 
-    arrUp.add(arrDown).bind('mousedown', function ()
-    {
-        var is_down = $(this).is('.' + 'arr-down'),
-            val = parseInt(field.val(), 10) || 0;
-        press_interval = setInterval(function ()
+        arrUp.add(arrDown).click(function ()
         {
-            field.val(is_down ? (val--) : (val++));
+            var is_down = $(this).is('.' + 'arr-down'),
+                val = parseInt(field.val(), 10) || 0;
+            field.val(is_down ? (val - 1) : (val + 1));
             numbValue.text(field.val())
-        }, 100);
-    });
+        });
 
-    arrUp.add(arrDown).bind('mouseup', function ()
-    {
-        clearInterval(press_interval);
-    });
+        arrUp.add(arrDown).bind('mousedown', function ()
+        {
+            var is_down = $(this).is('.' + 'arr-down'),
+                val = parseInt(field.val(), 10) || 0;
+            press_interval = setInterval(function ()
+            {
+                field.val(is_down ? (val--) : (val++));
+                numbValue.text(field.val())
+            }, 100);
+        });
+
+        arrUp.add(arrDown).bind('mouseup', function ()
+        {
+            clearInterval(press_interval);
+        });
+    })
 };
