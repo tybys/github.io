@@ -8512,7 +8512,7 @@ ul.the-icons li {
 }
 
 .testimonials-flexslider .flex-direction-nav .flex-prev {
-    background: url("/wp-content/themes/w5store/theme/assets/images/prev.png") no-repeat scroll 0 0 transparent;
+    background: url("../images/prev.png") no-repeat scroll 0 0 transparent;
     height: 39px;
     opacity: 0.8;
     left: 0;
@@ -8522,7 +8522,7 @@ ul.the-icons li {
 }
 
 .testimonials-flexslider .flex-direction-nav .flex-next {
-    background: url("/wp-content/themes/w5store/theme/assets/images/next.png") no-repeat scroll 0 0 transparent;
+    background: url("../images/next.png") no-repeat scroll 0 0 transparent;
     background-position: right;
     height: 39px;
     opacity: 0.8;

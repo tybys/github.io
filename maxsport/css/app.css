@@ -4,6 +4,20 @@
     min-width: 1060px;
   }
 }
+.container {
+  /*
+	width: ~"calc(1000px + 30px)" !important;
+	width: ~"-webkit-calc(1000px + 30px)" !important;
+	max-width: none !important;
+	*/
+  min-width: 1030px;
+  max-width: 1280px;
+  width: 100%;
+}
+.container img {
+  display: block;
+  width: 100%;
+}
 body {
   background: #007bb7 url("../images/colors.jpg") center top no-repeat;
   background-size: cover;
@@ -384,11 +398,6 @@ body.not-front .footer p {
   -moz-osx-font-smoothing: grayscale;
   content: "\e092" !important;
   font-size: 7px;
-}
-.container {
-  width: calc(1000px + 30px) !important;
-  width: -webkit-calc(1000px + 30px) !important;
-  max-width: none !important;
 }
 .row.top-menu a {
   color: white;

@@ -1,17 +1,25 @@
 @media screen and (max-width: 1001px) {
-    html, body {
-        min-width: 1060px;
-    }
+    html, body {min-width: 1060px}
 }
+
+.container {
+	/*
+	width: ~"calc(1000px + 30px)" !important;
+	width: ~"-webkit-calc(1000px + 30px)" !important;
+	max-width: none !important;
+	*/
+	min-width: 1030px;
+	max-width: 1280px;
+	width: 100%;
+	img {
+		display: block;
+		width: 100%;
+	}
+}
+
 body {
     background: #007bb7 url("../images/colors.jpg") center top no-repeat;
     background-size: cover;
-//    min-width: 1030px;
-    & > .container {
-
-    }
-
-
     font-family: 'PT Sans', sans-serif;
     &.not-front {
         .footer {
@@ -28,21 +36,6 @@ body {
     }
 }
 
-.button {
-//    float: left;
-//    border: none;
-//    font-size: 18px;
-//    line-height: 37px;
-//    font-weight: 700;
-//    margin: 0 auto;
-//    display: block;
-//    width: 152px;
-//    height: 37px;
-//    background: url("../images/btn.jpg") no-repeat center left;
-//    text-transform: capitalize;
-//    color: rgb(0, 0, 0);
-//    text-align: center;
-}
 .number {
     b {
         font-weight: normal;
@@ -461,17 +454,7 @@ body {
     }
 }
 
-.container {
-    width: ~"calc(1000px + 30px)" !important;
-    width: ~"-webkit-calc(1000px + 30px)" !important;
-    max-width: none !important;
-}
 .row {
-//    .container {
-//        width: ~"calc(1000px + 30px)" !important;
-//        width: ~"-webkit-calc(1000px + 30px)" !important;
-//        max-width: none !important;
-//    }
     &.top-menu {
         a {
             color: white;
