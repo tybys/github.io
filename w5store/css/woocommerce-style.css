@@ -1605,14 +1605,14 @@ p.demo_store {
 
 .woocommerce form .form-row.validate-required.woocommerce-validated input.input-text,
 .woocommerce-page form .form-row.validate-required.woocommerce-validated input.input-text {
-    background-image: url(images/icons/valid.png);
+    background-image: url(../images/icons/valid.png);
     background-position: 95% center;
     background-repeat: no-repeat
 }
 
 .woocommerce form .form-row.validate-required.woocommerce-invalid input.input-text,
 .woocommerce-page form .form-row.validate-required.woocommerce-invalid input.input-text {
-    background-image: url(images/icons/invalid.png);
+    background-image: url(../images/icons/invalid.png);
     background-position: 95% center;
     background-repeat: no-repeat
 }
@@ -2106,7 +2106,7 @@ p.demo_store {
     top: 0;
     height: 100%;
     width: 29px;
-    background: url('images/variations-dropdown-icon.png') left center no-repeat;
+    background: url('../images/variations-dropdown-icon.png') left center no-repeat;
 }
 
 .col2-set {
@@ -2195,7 +2195,7 @@ p.demo_store {
 }
 
 #tiptip_arrow_inner {
-    background: url('images/wishlist-arrow.png') no-repeat top center;
+    background: url('../images/wishlist-arrow.png') no-repeat top center;
     margin-top: -5px;
     width: 24px;
     height: 16px;
@@ -2744,7 +2744,7 @@ div.product form.cart .group_table td.label,
     overflow: hidden;
     line-height: 9999em;
     display: block;
-    background: url('images/remove_dark.png') 0px center no-repeat;
+    background: url('../images/remove_dark.png') 0px center no-repeat;
     opacity: 0.8;
     margin: 12px 8px 0 2px;
 }
@@ -3042,7 +3042,7 @@ div.product form.cart .group_table td.label,
     display: block;
     width: 15px;
     height: 15px;
-    background: url('images/icon-details.png') no-repeat center;
+    background: url('../images/icon-details.png') no-repeat center;
     float: right;
     white-space: nowrap;
     text-indent: 100%;
@@ -3173,12 +3173,12 @@ div.product form.cart .group_table td.label,
 }
 
 .woocommerce ul.products li.product span.added {
-    background: url('images/bullets/added.png') no-repeat top right;
+    background: url('../images/bullets/added.png') no-repeat top right;
     top: 68px;
 }
 
 .woocommerce ul.products li.product span.out-of-stock {
-    background: url('images/bullets/out-of-stock.png') no-repeat top right;
+    background: url('../images/bullets/out-of-stock.png') no-repeat top right;
 }
 
 .woocommerce ul.products li.product .added_to_cart {
@@ -3313,7 +3313,7 @@ div.product form.cart .group_table td.label,
 }
 
 .woocommerce ul.products li.product.grid.classic .product-shadow {
-    background: url("images/product-shadow.png") no-repeat scroll center top / 100% auto transparent;
+    background: url("../images/product-shadow.png") no-repeat scroll center top / 100% auto transparent;
     height: 23px;
     width: 100%;
     margin-top: -10px;
@@ -3458,7 +3458,7 @@ div.product form.cart .group_table td.label,
 }
 
 #multistep_progress.progress-striped .bar {
-    background: url('images/progress_bg.png') repeat-x center;
+    background: url('../images/progress_bg.png') repeat-x center;
     -moz-border-radius: 12px;
     -webkit-border-radius: 12px;
     border-radius: 12px;
@@ -3527,7 +3527,7 @@ div.product form.cart .group_table td.label,
 }
 
 input#place_order, input.checkout-button.alt.button {
-    background: #4F4F4F url(images/bg-cart-simple.png) no-repeat;
+    background: #4F4F4F url(../images/bg-cart-simple.png) no-repeat;
     background-position: left center !important;
 }
 
@@ -4322,7 +4322,7 @@ input.checkout-button.alt.button {
     color: #555453;
     font-family: 'Monda', sans-serif;
     padding-right: 14px;
-    background: url('images/select-arrow.png') no-repeat right center;
+    background: url('../images/select-arrow.png') no-repeat right center;
     cursor: pointer;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -4504,7 +4504,7 @@ input.checkout-button.alt.button {
     cursor: pointer;
     width: 27px;
     height: 26px;
-    background: url('images/slider-arrow.png') no-repeat;
+    background: url('../images/slider-arrow.png') no-repeat;
     position: absolute;
     top: 40%;
     margin-top: -2px;
@@ -4863,7 +4863,7 @@ input.checkout-button.alt.button {
 .woocommerce-page #content-shop .woocommerce-message,
 .woocommerce-page #content-page .woocommerce-message {
     border: 1px solid #ebf095;
-    background-image: url('../woocommerce/images/check.png');
+    background-image: url('../images/check.png');
     background-position: 20px center;
     background-repeat: no-repeat;
 }
@@ -4879,7 +4879,7 @@ input.checkout-button.alt.button {
 .woocommerce-page #content-page .woocommerce-info {
     border: 1px solid #e0ebf8;
     color: #2a6fc4;
-    background-image: url('../woocommerce/images/info.png');
+    background-image: url('../images/info.png');
     background-position: 20px center;
     background-repeat: no-repeat;
 }
@@ -4894,7 +4894,7 @@ input.checkout-button.alt.button {
 .woocommerce-page .woocommerce-error {
     color: #aa4545;
     border: 1px solid #f8e1e1;
-    background-image: url('../woocommerce/images/error.png');
+    background-image: url('../images/error.png');
     background-position: 20px center;
     background-repeat: no-repeat;
 }
@@ -4940,7 +4940,7 @@ input.checkout-button.alt.button {
     border: 9px solid #f5f3f3;
     display: block;
     height: 93px;
-    background: url(../theme/assets/images/fblogin_bg.png) left 1px no-repeat;
+    background: url(../images/fblogin_bg.png) left 1px no-repeat;
 }
 
 .fb-connect h3 {
@@ -4977,7 +4977,7 @@ input.checkout-button.alt.button {
     -webkit-border-radius: 1px;
     -mox-border-radius: 1px;
     float: right;
-    background: #2E508F url(../theme/assets/images/fblogin_icon.png) 15px 6px no-repeat;
+    background: #2E508F url(../images/fblogin_icon.png) 15px 6px no-repeat;
     color: #FFF;
     padding: 9px 20px 9px 60px;
     text-transform: uppercase;
@@ -4997,7 +4997,7 @@ input.checkout-button.alt.button {
     border-radius: 1px;
     -webkit-border-radius: 1px;
     -mox-border-radius: 1px;
-    background: #000 url(../theme/assets/images/fblogin_icon2.png) 15px 8px no-repeat;
+    background: #000 url(../images/fblogin_icon2.png) 15px 8px no-repeat;
     color: #FFF;
     font-weight: 800;
     font-size: 11px;
@@ -5010,7 +5010,7 @@ input.checkout-button.alt.button {
 .cart-empty {
     text-align: center;
     padding-top: 200px;
-    background: url('images/cart-empty.png') no-repeat top center;
+    background: url('../images/cart-empty.png') no-repeat top center;
 }
 
 .cart-empty p {

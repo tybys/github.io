@@ -79,16 +79,16 @@ Good work... and good luck! :)
     margin: 0 7px 0 4px;
 }
 .yith-wcan-color li a[title="black-red-white"] {
-    background: url('images/w5/brw.png') no-repeat top left !important;
+    background: url('../images/w5/brw.png') no-repeat top left !important;
 }
 .yith-wcan-color li a[title="Черный-красный-белый"] {
-    background: url('images/w5/brw.png') no-repeat top left !important;
+    background: url('../images/w5/brw.png') no-repeat top left !important;
 }
 .yith-wcan-color li a[title="black-red-white"]:hover {
-    background: url('images/w5/brw.png') no-repeat top left !important;
+    background: url('../images/w5/brw.png') no-repeat top left !important;
 }
 .yith-wcan-color li a[title="Черный-красный-белый"]:hover {
-    background: url('images/w5/brw.png') no-repeat top left !important;
+    background: url('../images/w5/brw.png') no-repeat top left !important;
 }
 .w5_cart{
     position: absolute;
@@ -109,7 +109,7 @@ Good work... and good luck! :)
     font-family: 'Open Sans Condensed',sans-serif;
     font-size: 45px;
     line-height: 45px;
-    background: url('images/w5/ln2.png') repeat-x 0px 9px;
+    background: url('../images/w5/ln2.png') repeat-x 0px 9px;
     padding-left: 20px;
 }
 .w5_div h1 span{

@@ -1326,7 +1326,7 @@ form#commentform .row .comment-form-comment textarea {
 
 @media (max-width: 480px) {}
 
-/* colorbox - http://www.w5store.ru/wp-content/themes/w5store/theme/assets/css/colorbox.css */
+/* colorbox - http://www.w5store.ru../css/colorbox.css */
 #colorbox,
 #cboxOverlay, #cboxWrapper {
     position: absolute;
@@ -4366,16 +4366,16 @@ ul#portfolio.columns {
 }
 
 .portfolio-full-description .work-skillsdate p.categories {
-    background-image: url('/wp-content/themes/w5store/theme/assets/images/project.png');
+    background-image: url('../images/project.png');
 }
 
 .portfolio-full-description .work-skillsdate p.customer {
-    background-image: url('/wp-content/themes/w5store/theme/assets/images/customer.png');
+    background-image: url('../images/customer.png');
     background-position: 2px 0;
 }
 
 .portfolio-full-description .work-skillsdate p.workdate {
-    background-image: url('/wp-content/themes/w5store/theme/assets/images/categories.png');
+    background-image: url('../images/categories.png');
     background-position: 0px 2px;
     line-height: 20px;
 }
@@ -6891,7 +6891,7 @@ pre.shortcodes {
     left: 28px;
 }
 
-/* featurestab - http://www.w5store.ru/wp-content/themes/w5store/theme/assets/css/featurestab.css */
+/* featurestab - http://www.w5store.ru../css/featurestab.css */
 .features-tab-container {
     position: relative;
 }
@@ -6901,7 +6901,7 @@ pre.shortcodes {
 }
 
 .features-tab-container ul.features-tab-labels li {
-    background: url('/wp-content/themes/w5store/theme/assets/images/features-tab-item-bg.png') no-repeat right center;
+    background: url('../images/features-tab-item-bg.png') no-repeat right center;
     min-height: 30px;
     line-height: 30px !important;
     border-bottom: 1px solid #e8e8e8;
@@ -6983,7 +6983,7 @@ pre.shortcodes {
     }
 }
 
-/* contact_form - http://www.w5store.ru/wp-content/themes/w5store/theme/assets/css/contact_form.css */
+/* contact_form - http://www.w5store.ru../css/contact_form.css */
 .contact-form li.text-field input,
 .contact-form li.password-field input, .contact-form li.file-field input,
 .contact-form li textarea, .contact-form li select {
@@ -7198,35 +7198,35 @@ pre.shortcodes {
 }
 
 .add-on .icon-contact-name {
-    background: url('/wp-content/themes/w5store/theme/assets/images/name.png') center no-repeat;
+    background: url('../images/name.png') center no-repeat;
     display: block;
     width: 43px;
     height: 40px;
 }
 
 .add-on .icon-contact-email {
-    background: url('/wp-content/themes/w5store/theme/assets/images/email.png') center no-repeat;
+    background: url('../images/email.png') center no-repeat;
     display: block;
     width: 43px;
     height: 40px;
 }
 
 .add-on .icon-contact-url {
-    background: url('/wp-content/themes/w5store/theme/assets/images/url.png') center no-repeat;
+    background: url('../images/url.png') center no-repeat;
     display: block;
     width: 43px;
     height: 40px;
 }
 
 .add-on .icon-contact-text {
-    background: url('/wp-content/themes/w5store/theme/assets/images/text.png') center no-repeat;
+    background: url('../images/text.png') center no-repeat;
     display: block;
     width: 43px;
     height: 40px;
 }
 
 .add-on .icon-contact-phone {
-    background: url('/wp-content/themes/w5store/theme/assets/images/phone.png') center no-repeat;
+    background: url('../images/phone.png') center no-repeat;
     display: block;
     width: 43px;
     height: 40px;
@@ -7397,13 +7397,13 @@ pre.shortcodes {
 }
 
 .contact-form div.success {
-    background: #fdfefa url('/wp-content/themes/w5store/theme/assets/images/contact-form-success-back.png') right bottom no-repeat;
+    background: #fdfefa url('../images/contact-form-success-back.png') right bottom no-repeat;
     border-color: #edebb6;
 }
 
 .contact-form div.success p {
     height: 32px;
-    background: url('/wp-content/themes/w5store/theme/assets/images/contact-form-success-smile.png') left center no-repeat;
+    background: url('../images/contact-form-success-smile.png') left center no-repeat;
     padding: 8px 0 8px 70px;
     margin: 0;
     color: #646464;
@@ -7450,7 +7450,7 @@ pre.shortcodes {
     display: none;
 }
 
-/* popup_theme_css - http://www.w5store.ru/wp-content/themes/w5store/theme/assets/css/popup.css */
+/* popup_theme_css - http://www.w5store.ru../css/popup.css */
 .popupWrap .input-prepend .add-on {
     background: none;
     top: 0;
@@ -7600,7 +7600,7 @@ pre.shortcodes {
     line-height: 1em;
 }
 
-/* shortcodes_theme_css - http://www.w5store.ru/wp-content/themes/w5store/theme/assets/css/shortcodes.css */
+/* shortcodes_theme_css - http://www.w5store.ru../css/shortcodes.css */
 div.socials-square,
 div.fade-socials {
     width: 33px;
@@ -7663,7 +7663,7 @@ a.socials-default-small {
 }
 
 .tipsy {
-    background-image: url("/wp-content/themes/w5store/theme/assets/images/tipsy.gif");
+    background-image: url("../images/tipsy.gif");
     background-repeat: no-repeat;
     font-size: 10px;
     opacity: 0.8;
@@ -8417,7 +8417,7 @@ ul.the-icons li {
 }
 
 .testimonial blockquote {
-    background: url("/wp-content/themes/w5store/theme/assets/images/small-quote.png") no-repeat scroll 0px 15px transparent;
+    background: url("../images/small-quote.png") no-repeat scroll 0px 15px transparent;
     color: #2E2D2D;
     font-size: 14px;
     margin-bottom: 0px;
@@ -8577,7 +8577,7 @@ ul.the-icons li {
 .logos-slider.wrapper {}
 
 .logos-slider .list_carousel {
-    background: url('/wp-content/themes/w5store/theme/assets/images/logo-slider-line.png') center bottom no-repeat;
+    background: url('../images/logo-slider-line.png') center bottom no-repeat;
     border-top: 1px solid #e0e0e0;
     padding: 40px 0px;
     clear: both;
@@ -8627,7 +8627,7 @@ ul.the-icons li {
 .logos-slider .nav .prev {
     width: 18px;
     height: 18px;
-    background: url('/wp-content/themes/w5store/theme/assets/images/logo-slider-arrows.png') left center;
+    background: url('../images/logo-slider-arrows.png') left center;
     margin-right: 4px;
     float: left;
     display: block;
@@ -8637,21 +8637,21 @@ ul.the-icons li {
 .logos-slider .nav .next {
     width: 18px;
     height: 18px;
-    background: url('/wp-content/themes/w5store/theme/assets/images/logo-slider-arrows.png') right center;
+    background: url('../images/logo-slider-arrows.png') right center;
     float: left;
     display: block;
     cursor: pointer;
 }
 
 .feeds-slider .prev {
-    background: url("/wp-content/themes/w5store/theme/assets/images/prev.png") no-repeat scroll 0 0 transparent;
+    background: url("../images/prev.png") no-repeat scroll 0 0 transparent;
     height: 39px;
     left: 0;
     text-indent: -100px;
 }
 
 .feeds-slider .next {
-    background: url("/wp-content/themes/w5store/theme/assets/images/next.png") no-repeat scroll 0 0 transparent;
+    background: url("../images/next.png") no-repeat scroll 0 0 transparent;
     background-position: right;
     height: 39px;
     right: 0;
@@ -9234,7 +9234,7 @@ div.call-three {
     height: 44px;
     float: left;
     border: none;
-    background: url('/wp-content/themes/w5store/theme/assets/images/newsletter.png') center no-repeat #ffffff;
+    background: url('../images/newsletter.png') center no-repeat #ffffff;
     border: 1px solid #DFDCDC;
     border-right: none;
 }
@@ -9689,7 +9689,7 @@ p.section-portfolio-description {
 }
 
 .section-portfolio-classic .work-thumbnail img.attachment-section_portfolio {
-    background: url('/wp-content/themes/w5store/theme/assets/images/loading_660.gif') no-repeat center;
+    background: url('../images/loading_660.gif') no-repeat center;
 }
 
 .section-portfolio-classic .work-thumbnail img.work-loading, .section-portfolio-classic .work-thumbnail .picture_overlay {
@@ -9834,7 +9834,7 @@ p.section-portfolio-description {
 }
 
 .section-portfolio-classic .work-projects {
-    background: url('/wp-content/themes/w5store/theme/assets/images/logo-slider-line.png') center bottom no-repeat;
+    background: url('../images/logo-slider-line.png') center bottom no-repeat;
 }
 
 .section-portfolio-classic .nav {
@@ -9848,7 +9848,7 @@ p.section-portfolio-description {
 .section-portfolio-classic .prev {
     width: 18px;
     height: 18px;
-    background: url('/wp-content/themes/w5store/theme/assets/images/logo-slider-arrows.png') left center;
+    background: url('../images/logo-slider-arrows.png') left center;
     margin-right: 4px;
     float: left;
     display: block;
@@ -9858,7 +9858,7 @@ p.section-portfolio-description {
 .section-portfolio-classic .nav .next {
     width: 18px;
     height: 18px;
-    background: url('/wp-content/themes/w5store/theme/assets/images/logo-slider-arrows.png') right center;
+    background: url('../images/logo-slider-arrows.png') right center;
     float: left;
     display: block;
     cursor: pointer;
@@ -10294,7 +10294,7 @@ p.section-portfolio-description {
 }
 
 .team-slider .list_carousel {
-    background: url('/wp-content/themes/w5store/theme/assets/images/logo-slider-line.png') no-repeat scroll center bottom transparent;
+    background: url('../images/logo-slider-line.png') no-repeat scroll center bottom transparent;
     border-top: none;
 }
 
@@ -10338,7 +10338,7 @@ p.section-portfolio-description {
 .team-slider .nav .prev {
     width: 18px;
     height: 18px;
-    background: url('/wp-content/themes/w5store/theme/assets/images/logo-slider-arrows.png') left center;
+    background: url('../images/logo-slider-arrows.png') left center;
     margin-right: 4px;
     float: left;
     display: block;
@@ -10348,7 +10348,7 @@ p.section-portfolio-description {
 .team-slider .nav .next {
     width: 18px;
     height: 18px;
-    background: url('/wp-content/themes/w5store/theme/assets/images/logo-slider-arrows.png') right center;
+    background: url('../images/logo-slider-arrows.png') right center;
     float: left;
     display: block;
     cursor: pointer;
@@ -10838,11 +10838,11 @@ ul#team-squared-container li.span3 div.box div.image img {
 }
 
 .products-slider-wrapper .es-nav .es-nav-prev {
-    background: url('/wp-content/themes/w5store/theme/assets/images/slider-arrow-testimonial.png') left center no-repeat;
+    background: url('../images/slider-arrow-testimonial.png') left center no-repeat;
 }
 
 .products-slider-wrapper .es-nav .es-nav-next {
-    background: url('/wp-content/themes/w5store/theme/assets/images/slider-arrow-testimonial.png') right center no-repeat;
+    background: url('../images/slider-arrow-testimonial.png') right center no-repeat;
 }
 
 .woocommerce .products-slider ul.products li.first, .woocommerce-page .products-slider ul.products li.first {
@@ -11000,7 +11000,7 @@ ul#team-squared-container li.span3 div.box div.image img {
 
 .tabs-container ul.tabs li {
     height: 42px;
-    background: url('/wp-content/themes/w5store/theme/assets/images/product-tabs-slash.png') right center no-repeat;
+    background: url('../images/product-tabs-slash.png') right center no-repeat;
     border: 0px !important;
     padding: 0px 17px 0px 0px !important;
     margin: 0px;
@@ -11088,7 +11088,7 @@ ul#team-squared-container li.span3 div.box div.image img {
 .credit_card {
     width: 32px;
     height: 32px;
-    background: url('/wp-content/themes/w5store/theme/assets/images/creditcard.png') no-repeat;
+    background: url('../images/creditcard.png') no-repeat;
     display: inline-block;
     margin-left: 1px;
 }
@@ -11423,7 +11423,7 @@ ul#team-squared-container li.span3 div.box div.image img {
     color: #ffffff;
 }
 
-/* widgets_theme_css - http://www.w5store.ru/wp-content/themes/w5store/theme/assets/css/widgets.css */
+/* widgets_theme_css - http://www.w5store.ru../css/widgets.css */
 .sidebar .widget {
     margin-top: 16px;
     margin-bottom: 20px;
@@ -11656,7 +11656,7 @@ div.yit_quick_contact {
 }
 
 .yit_text_quote {
-    background: url('/wp-content/themes/w5store/theme/assets/images/testimonial-quote.png') no-repeat top left;
+    background: url('../images/testimonial-quote.png') no-repeat top left;
     text-align: right;
     padding-left: 30px;
 }
@@ -11899,7 +11899,7 @@ div.yit_quick_contact {
     float: right;
     font-family: 'Monda';
     position: absolute;
-    background: url('/wp-content/themes/w5store/theme/assets/images/recent-posts-home-comments-no.png') 10px 9px no-repeat;
+    background: url('../images/recent-posts-home-comments-no.png') 10px 9px no-repeat;
     top: 0;
     bottom: 0;
     right: 0;
@@ -11907,7 +11907,7 @@ div.yit_quick_contact {
 
 .recent-posts-home .hentry-post .border .comments.yes {
     color: #949494;
-    background-image: url('/wp-content/themes/w5store/theme/assets/images/recent-posts-home-comments-yes.png')
+    background-image: url('../images/recent-posts-home-comments-yes.png')
 }
 
 .recent-posts-home .hentry-post .border .comments span {
@@ -12439,7 +12439,7 @@ div#footer div.container div.row div.widget_nav_menu ul.menu li.menu-item a:hove
     background: #fff;
     margin-bottom: 20px;
     padding: 0px 0px 0px 41px;
-    background: url(/wp-content/themes/w5store/theme/assets/images/last-tweets-line.png) 0px 0px no-repeat;
+    background: url(../images/last-tweets-line.png) 0px 0px no-repeat;
 }
 
 .last-tweets li:last-child {
@@ -12526,7 +12526,7 @@ div#footer div.container div.row div.widget_nav_menu ul.menu li.menu-item a:hove
     border: 1px solid #e5e1e1;
     padding: 15px 20px 15px 40px;
     font-size: 12px;
-    background: url('/wp-content/themes/w5store/theme/assets/images/quote-comment.png') 8px 20px no-repeat;
+    background: url('../images/quote-comment.png') 8px 20px no-repeat;
     margin-bottom: 10px;
     min-height: 20px;
 }
@@ -12630,7 +12630,7 @@ div#footer div.container div.row div.widget_nav_menu ul.menu li.menu-item a:hove
 }
 
 .testimonial-widget li blockquote {
-    background: url('/wp-content/themes/w5store/theme/assets/images/quote-comment.png') no-repeat scroll 8px 20px transparent;
+    background: url('../images/quote-comment.png') no-repeat scroll 8px 20px transparent;
     padding: 15px 20px 15px 40px;
     border: 1px solid #E5E1E1;
     margin-bottom: 8px;
@@ -12714,11 +12714,11 @@ div#footer div.container div.row div.widget_nav_menu ul.menu li.menu-item a:hove
 }
 
 .testimonial-widget .flex-direction-nav li a.flex-prev {
-    background: url('/wp-content/themes/w5store/theme/assets/images/arrow-test-left.png') left center no-repeat;
+    background: url('../images/arrow-test-left.png') left center no-repeat;
 }
 
 .testimonial-widget .flex-direction-nav li a.flex-next {
-    background: url('/wp-content/themes/w5store/theme/assets/images/arrow-test-right.png') right center no-repeat;
+    background: url('../images/arrow-test-right.png') right center no-repeat;
 }
 
 #ie8 .testimonial-widget .flex-direction-nav .flex-prev {
@@ -12778,7 +12778,7 @@ div#footer div.container div.row div.widget_nav_menu ul.menu li.menu-item a:hove
 }
 
 .yit_toggle_menu ul.menu li.dropdown > a {
-    background: url(/wp-content/themes/w5store/theme/assets/images/toggle-closed.png) left 2px no-repeat ;
+    background: url(../images/toggle-closed.png) left 2px no-repeat ;
     padding-left: 28px;
 }
 
@@ -12794,7 +12794,7 @@ div#footer div.container div.row div.widget_nav_menu ul.menu li.menu-item a:hove
 }
 
 .yit_toggle_menu ul.menu li.dropdown.opened > a {
-    background-image: url('/wp-content/themes/w5store/theme/assets/images/toggle-opened.png');
+    background-image: url('../images/toggle-opened.png');
 }
 
 .yit_toggle_menu ul.menu li.dropdown li.dropdown > a {
@@ -12865,7 +12865,7 @@ div#footer div.container div.row div.widget_nav_menu ul.menu li.menu-item a:hove
     border: 1px solid #d1d1cf;
     padding: 1px 0px 1px 40px;
     margin: 0px;
-    background: url("/wp-content/themes/w5store/theme/assets/images/newsletter-widget.png") 5px center no-repeat;
+    background: url("../images/newsletter-widget.png") 5px center no-repeat;
     display: block;
     float: left;
 }
@@ -12873,7 +12873,7 @@ div#footer div.container div.row div.widget_nav_menu ul.menu li.menu-item a:hove
 .sidebar .cta .newsletter-call3 .newsletter-icon, #footer .cta .newsletter-call3 .newsletter-icon {
     height: 38px;
     width: 40px;
-    background: url("/wp-content/themes/w5store/theme/assets/images/newsletter-widget.png") no-repeat scroll center center #FFFFFF
+    background: url("../images/newsletter-widget.png") no-repeat scroll center center #FFFFFF
 }
 
 .sidebar .cta .newsletter-call3 .newsletter-input input, #footer .cta .newsletter-call3 .newsletter-input input,
@@ -13109,7 +13109,7 @@ div#footer div.container div.row div.widget_nav_menu ul.menu li.menu-item a:hove
 }
 
 .sidebar .widget.widget_shopping_cart li a.remove_item, #footer .widget.widget_shopping_cart li a.remove_item {
-    background: url('/wp-content/themes/w5store/theme/assets/images/cart_remove_item.png') 65px center no-repeat;
+    background: url('../images/cart_remove_item.png') 65px center no-repeat;
     padding-left: 75px;
     margin-bottom: 2px;
     font-size: 8px;
@@ -13406,7 +13406,7 @@ div#footer div.container div.row div.widget_nav_menu ul.menu li.menu-item a:hove
 }
 
 .sidebar .featured-products-widget .flex-direction-nav a, #footer .featured-products-widget .flex-direction-nav a {
-    background-image: url('/wp-content/themes/w5store/theme/assets/images/featured-products-arrows.png');
+    background-image: url('../images/featured-products-arrows.png');
     top: 50%;
     width: 15px;
     height: 26px;
