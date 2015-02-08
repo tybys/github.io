@@ -1,0 +1,153 @@
+/*
+#------------------------------------------------------------------------
+# inStyle - November Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2013 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+ 
+/* Style 6 */
+
+/* template.css */
+a,
+#gkMainbody header h1 a:active,
+#gkMainbody header h1 a:focus,
+#gkMainbody header h1 a:hover,
+#gkMainbody header h2 a:active,
+#gkMainbody header h2 a:focus,
+#gkMainbody header h2 a:hover,
+#k2Container article header h2 a:active,
+#k2Container article header h2 a:focus,
+#k2Container article header h2 a:hover { color: #1B1D1F; }
+#gkCartCounter.highlighted { color: #9fa1a3; }
+#gkTopMenu a:active,
+#gkTopMenu a:focus,
+#gkTopMenu a:hover { color: #9fa1a3; }
+.breadcrumbs li a:hover { color: #9fa1a3; }
+#gkFooter a:active,
+#gkFooter a:focus,
+#gkFooter a:hover { color: #9fa1a3; }
+.box.dark a:active,
+.box.dark a:focus,
+.box.dark a:hover { color: #9fa1a3!important; }
+.gkPopupWrap h3 a { color: #9fa1a3; }
+
+/* joomla.css */
+button:hover,
+.button:hover,
+input.button:hover,
+span.button:hover,
+button.button:hover,
+div.button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.pagenav-prev a:hover,
+.pagenav-next a:hover,
+.readon:hover,
+#gkMainbody .itemReadMore:active,
+#gkMainbody .itemReadMore:focus,
+#gkMainbody .itemReadMore:hover,
+#gkMainbody .readmore > a:active,
+#gkMainbody .readmore > a:focus,
+#gkMainbody .readmore > a:hover,
+.button.invert,
+.gkShowCart a:hover {
+	background: #9fa1a3;
+	border-color: #9fa1a3;
+}
+article header.itemHasImage h1 a:active,
+article header.itemHasImage h1 a:focus,
+article header.itemHasImage h1 a:hover { color: #9fa1a3!important; }
+.tip-title { background: #9fa1a3; }
+div.bannerfooter { color: #9fa1a3; }
+dl#tabs dt.tabs span h3 a:hover,
+dl.tabs dt.tabs span h3 a:hover { color: #9fa1a3 }
+.autocompleter-queried { color: #9fa1a3!important }
+.menu li a:hover { color: #9fa1a3 !important; }
+
+/* gk_stuff.css */
+.nspPagination li:hover,
+.nspPagination li.active { background-color: #9fa1a3; }
+.nspNext:hover:after,
+.nspPrev:hover:after { color: #9fa1a3; }
+.nspArt h4.nspHeader a:hover { color: #9fa1a3 !important }
+.box.dark a.readon { background: #9fa1a3; }
+.products .nspArt:hover .addtocart-button { background: #9fa1a3!important; }
+.products .nspBadge { background: #9fa1a3; }
+.gk-newsletter input[type="button"]:active,
+.gk-newsletter input[type="button"]:focus,
+.gk-newsletter input[type="button"]:hover { background: #9fa1a3; }
+.gk-social-icons li a:hover:before { color: #9fa1a3; }
+.gk-features li.highlighted strong { background: #9fa1a3; border: 1px solid #9fa1a3; }
+.gkMenu .nspArt .readon { color: #9fa1a3!important; }
+
+/* menu.css */
+.gkMenu > ul li div.childcontent a:hover { color: #9fa1a3!important; }
+#gkMenuOverlayClose,
+#gkMenuOverlayContent .gkcol li a:active,
+#gkMenuOverlayContent .gkcol li a:focus,
+#gkMenuOverlayContent .gkcol li a:hover { color: #9fa1a3; }
+
+/* k2.css */
+.k2FeedIcon a:before,
+a.k2FeedIcon:before { color: #9fa1a3; }
+.activeCategory a { color: #9fa1a3 }
+.itemComments .icon-comments { background: #9fa1a3; }
+.itemImageBlock sup { background: #9fa1a3; }
+.k2AuthorsListBlock ul li a.abAuthorLatestItem:hover { color: #9fa1a3; }
+.k2CalendarBlock table.calendar tr td.calendarDateLinked a:hover { background: #9fa1a3; }
+.k2CalendarBlock table.calendar tr td.calendarToday { background: #9fa1a3; }
+table.calendar tr td.calendarTodayLinked a { color: #9fa1a3; }
+.k2CalendarBlock table.calendar tr td.calendarTodayLinked a:hover { background: #9fa1a3; }
+.calendarNavLink { color: #9fa1a3; }
+.k2TagCloudBlock a:hover { color: #9fa1a3 }
+
+/* vm.css */
+body input.addtocart-button { background: #9fa1a3 !important; }
+.category-view .row .category .spacer h2 a:hover,
+.product-related-products > div a:hover,
+.product-related-categories > div a:hover,
+table.cart-summary a:hover { color: #9fa1a3 }
+#facebox .popup > div > div > a { background: #9fa1a3; }
+#ui-tabs h4 { color: #9fa1a3; }
+#ui-tabs ul#tabs li.current { color: #9fa1a3; }
+#ui-tabs ul#tabs li:hover { color: #9fa1a3; }
+.general-bg,
+input.vm-default,
+a.product-details,
+a.details,
+div.details { color: #9fa1a3; }
+.vmGkCartProducts h3 a:hover { color: #1b1d1f }
+.featured-view .spacer h3 a:hover,
+.latest-view .spacer h3 a:hover,
+.topten-view .spacer h3 a:hover,
+.related-products-view .spacer h3 a:hover,
+.browse-view .row .product .spacer h2 a:hover,
+h3.catProductTitle a:hover { color: #9fa1a3!important }
+.productdetails-view .product-related-products a:hover,
+.productdetails-view .product-related-categories a:hover { color: #9fa1a3 !important }
+.terms-of-service h5 a,
+.terms-of-service h5 a:visited { color: #9fa1a3; }
+.vm-button-correct,
+.vm-button-correct:link,
+.vm-button-correct:visited { background: #9fa1a3; }
+.vmCartModule dl dt a:hover { color: #9fa1a3 }
+a.product-details,
+a.details,
+div.details { display: inline-block }
+input.addtoCart:hover { background: #9fa1a3 }
+#com-form-login a:hover { color: #9fa1a3 !important }
+.box .addtocart-button:hover { background: #9fa1a3 !important }
+
+
+/* Prices */
+.products .nspInfo span,
+.catProductPrice,
+.vmGkCartProducts .gkPrice,
+.gkTotal,
+.vmCartModule dd strong,
+.PricebillTotal,
+div.PricesalesPrice,
+.product-price span.PricesalesPrice { color: #000; }
