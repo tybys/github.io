@@ -67,7 +67,7 @@ p {
 .header .col-md-2 p span {
   color: #777777;
   border-bottom: 1px solid #777777;
-  margin-left: 5px;
+  margin-left: 2px;
 }
 .header .col-md-2 p span.glyphicon {
   color: #00d732;
@@ -426,6 +426,9 @@ a.btn,
 .row.catalog {
   font: normal 400 100% 'Noto Sans', sans-serif;
 }
+.row.catalog .container {
+  padding-bottom: 40px;
+}
 .row.catalog .col-md-3 {
   padding: 0;
 }
@@ -612,17 +615,174 @@ a.btn,
 .row.catalog .col-md-3 .first-ul {
   margin-top: 6px;
 }
-.row.catalog .col-md-9 .col-md-12 {
+.row.catalog .col-md-9 .info {
   padding-top: 20px;
 }
-.row.catalog .col-md-9 .col-md-12 a {
+.row.catalog .col-md-9 .info a {
   font: normal 400 100% 'Noto Sans', sans-serif;
   border-bottom: 1px solid #c6c6c6;
   color: black;
   text-decoration: none;
 }
-.row.catalog .col-md-9 .col-md-12 a.active {
+.row.catalog .col-md-9 .info a.active {
   font-weight: bold;
+  border: none;
+}
+.row.catalog .col-md-9 .info .breadcrumbs {
+  margin-bottom: 25px;
+  margin-left: 10px;
+}
+.row.catalog .col-md-9 .checkbox .col-md-12 {
+  text-align: center;
+}
+.row.catalog .col-md-9 .checkbox label {
+  margin: 0 10px;
+  padding: 0;
+}
+.row.catalog .col-md-9 .checkbox input {
+  display: none;
+}
+.row.catalog .col-md-9 .checkbox .align-catalog,
+.row.catalog .col-md-9 .checkbox .dji-catalog,
+.row.catalog .col-md-9 .checkbox .spectrum-catalog,
+.row.catalog .col-md-9 .checkbox .jets-catalog,
+.row.catalog .col-md-9 .checkbox .eflite-catalog,
+.row.catalog .col-md-9 .checkbox .hangar-catalog {
+  height: 41px;
+  width: 84px;
+  background: url(../images/align-catalog.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.row.catalog .col-md-9 .checkbox .align-catalog.active,
+.row.catalog .col-md-9 .checkbox .dji-catalog.active,
+.row.catalog .col-md-9 .checkbox .spectrum-catalog.active,
+.row.catalog .col-md-9 .checkbox .jets-catalog.active,
+.row.catalog .col-md-9 .checkbox .eflite-catalog.active,
+.row.catalog .col-md-9 .checkbox .hangar-catalog.active {
+  background-image: url(../images/dji-catalog-active.png);
+  border-radius: 5px;
+  border: 1px solid #00d732;
+}
+.row.catalog .col-md-9 .checkbox .spectrum-catalog {
+  background-image: url(../images/spectrum-catalog.png);
+}
+.row.catalog .col-md-9 .checkbox .jets-catalog {
+  background-image: url(../images/jets-catalog.png);
+}
+.row.catalog .col-md-9 .checkbox .eflite-catalog {
+  background-image: url(../images/eflite-catalog.png);
+}
+.row.catalog .col-md-9 .checkbox .hangar-catalog {
+  background-image: url(../images/hangar-catalog.png);
+}
+.row.catalog .col-md-9 .product {
+  margin-top: 23px;
+  margin-left: 10px;
+  font: normal 400 100% 'Noto Sans', sans-serif;
+}
+.row.catalog .col-md-9 .product .item {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  position: relative;
+  padding-top: 5px;
+  border-radius: 10px;
+}
+.row.catalog .col-md-9 .product .item.active {
+  border: 2px solid #008b1a;
+}
+.row.catalog .col-md-9 .product .item.active .bottom {
+  color: #fff;
+  background-color: #008b1a;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background-image: url(../images/cart-active.png);
+}
+.row.catalog .col-md-9 .product .item img {
+  margin-bottom: 15px;
+}
+.row.catalog .col-md-9 .product .item .advert {
+  font: normal 700 100% 'Noto Sans', sans-serif;
+  width: 63px;
+  height: 56px;
+  color: #0060a2;
+  padding: 10px 0;
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+.row.catalog .col-md-9 .product .item .advert img {
+  margin: 0;
+}
+.row.catalog .col-md-9 .product .item .advert p {
+  font-size: 14px;
+}
+.row.catalog .col-md-9 .product .item p {
+  margin-bottom: 8px;
+}
+.row.catalog .col-md-9 .product .item .lined {
+  color: #c2c2c2;
+}
+.row.catalog .col-md-9 .product .item .lined:after {
+  content: '';
+  position: absolute;
+  width: 74px;
+  height: 1px;
+  background: #1573b3;
+  left: 36px;
+  top: 161px;
+}
+.row.catalog .col-md-9 .product .item .new-price {
+  color: #1573b3;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.row.catalog .col-md-9 .product .item .bottom {
+  margin: 0;
+  padding: 5px 0 8px 0;
+  font-size: 15px;
+  padding-left: 25px;
+  color: #00991d;
+  background-image: url(../images/cart.png);
+  background-repeat: no-repeat;
+  background-position: 10px 6px;
+}
+.row.catalog .col-md-9 .product .item .bottom b {
+  margin-right: 8px;
+}
+.row.catalog .col-md-9 .product .item .bottom span {
+  margin-left: 8px;
+  border-bottom: 1px solid #00991d;
+}
+.row.catalog .col-md-9 .product .item .price {
+  color: #00991d;
+}
+.row.catalog .col-md-9 .slider-col {
+  text-align: center;
+  margin: 10px 0 15px 0;
+}
+.row.catalog .col-md-9 .slider-col .amount {
+  padding: 5px 10px;
+  border: 1px solid #00d732;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+.row.catalog .col-md-9 #slider {
+  width: 205px;
+  height: 8px;
+  display: inline-block;
+  border: none;
+}
+.row.catalog .col-md-9 .ui-widget-header {
+  background-color: #30ac48;
+}
+.row.catalog .col-md-9 span.ui-state-default {
+  background: none;
+  width: 10px;
+  height: 20px;
+  outline: none;
+  background: #00991d;
   border: none;
 }
 .row.basket .col-md-12 {

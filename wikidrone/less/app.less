@@ -82,7 +82,7 @@ div, p{
    span{
     color:@gray;
     border-bottom: 1px solid @gray;
-    margin-left:5px;
+    margin-left: 2px;
     &.glyphicon{
      color:@green-common;
      border:none;
@@ -457,6 +457,9 @@ div, p{
  }
  //catalog
  &.catalog {
+  .container{
+   padding-bottom:40px;
+  }
   font:@noto-normal;
   .col-md-3 {
    padding: 0;
@@ -640,7 +643,7 @@ div, p{
   }
   //right side of catalog
   .col-md-9{
-   .col-md-12{
+   .info{
     padding-top: 20px;
     a{
      font:@noto-normal;
@@ -652,10 +655,159 @@ div, p{
       border:none;
      }
     }
+    .breadcrumbs{
+     margin-bottom:25px;
+     margin-left:10px;
+    }
+   }
+   .checkbox{
+    .col-md-12{
+     text-align: center;
+    }
+    label{
+     margin:0 10px;
+     padding:0;
+    }
+    input{
+     display:none;
+    }
+    .align-catalog, .dji-catalog, .spectrum-catalog,
+    .jets-catalog, .eflite-catalog, .hangar-catalog{
+     height: 41px;
+     width: 84px;
+     background: url(../images/align-catalog.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     &.active{
+      background-image:url(../images/dji-catalog-active.png);
+      border-radius:5px;
+      border:1px solid @green-common;
+     }
+    }
+    .dji-catalog{
+    }
+    .spectrum-catalog{
+     background-image:url(../images/spectrum-catalog.png);
+    }
+    .jets-catalog{
+     background-image:url(../images/jets-catalog.png);
+    }
+    .eflite-catalog{
+     background-image:url(../images/eflite-catalog.png);
+    }
+    .hangar-catalog{
+     background-image:url(../images/hangar-catalog.png);
+    }
+   }
+   .product{
+    margin-top:23px;
+    margin-left: 10px;
+    font:@noto-normal;
+    .item{
+     box-shadow:0 0  1px rgba(0,0,0,.8);
+     text-align: center;
+     position:relative;
+     padding-top:5px;
+     border-radius:10px;
+     &.active{
+      border:2px solid #008b1a;
+      .bottom{
+       color:#fff;
+       background-color:#008b1a;
+       border-bottom-left-radius: 7px;
+       border-bottom-right-radius: 7px;
+       background-image:url(../images/cart-active.png);
+      }
+     }
+     img{
+      margin-bottom:15px;
+     }
+     .advert{
+      font:@noto-bold;
+      width:63px;
+      height:56px;
+      color:#0060a2;
+      padding:10px 0;
+      background:rgba(255,255,255,0.6);
+      position:absolute;
+      top:2px;
+      right:2px;
+     img{
+      margin:0;
+     }
+      p{
+       font-size:14px;
+      }
+     }
+     p{
+      margin-bottom: 8px;
+     }
+     .lined{
+      color:#c2c2c2;
+      &:after{
+       content: '';
+       position: absolute;
+       width: 74px;
+       height: 1px;
+       background: #1573b3;
+       left: 36px;
+       top: 161px;
+      }
+     }
+     .new-price{
+      color:#1573b3;
+      font-weight: bold;
+      margin-left:10px;
+     }
+     .bottom{
+      margin:0;
+      padding:5px 0 8px 0;
+      font-size:15px;
+      padding-left:25px;
+      color:@green-dark-added;
+      background-image:url(../images/cart.png);
+      background-repeat: no-repeat;
+      background-position: 10px 6px;
+      b{
+       margin-right:8px;
+      }
+      span{
+       margin-left:8px;
+       border-bottom: 1px solid @green-dark-added;
+      }
+     }
+     .price{
+      color:@green-dark-added;
+     }
+    }
+   }
+  .slider-col{
+   text-align: center;
+   margin: 10px 0 15px 0;
+   .amount{
+    padding:5px 10px;
+    border:1px solid @green-common;
+    margin:0 10px;
+    border-radius: 5px;
    }
   }
-  .breadcrumb{
-
+   #slider{
+    width: 205px;
+    height: 8px;
+    display: inline-block;
+    border:none;
+   }
+   .ui-widget-header{
+    background-color:@green-added;
+   }
+   span.ui-state-default{
+    background:none;
+    width:10px;
+    height:20px;
+    outline: none;
+    background:@green-dark-added;
+    border:none;
+   }
   }
  }
  //basket
@@ -709,6 +861,7 @@ div, p{
       text-decoration: none;
       vertical-align:middle;
       padding:13px;
+
       cursor:pointer;
       &:hover{
        border:2px solid @delete-color;
@@ -857,4 +1010,3 @@ div, p{
   }
  }
 }
-
