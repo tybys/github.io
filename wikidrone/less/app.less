@@ -102,7 +102,7 @@ div, p{
 }
 //end styles for basket
 //end styles for header
-.navigation, a.btn, .sub-menu .active, .compare .button {
+.navigation, a.btn, .sub-menu .active, .compare .button, .discription .button {
  background: #00d933; /* Old browsers */
  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwZDkzMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMGFkMTciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -810,6 +810,87 @@ div, p{
    }
   }
  }
+ //item
+ .item{
+  font:@noto-normal;
+  .recomended{
+   font:@noto-bold;
+   color:@green-dark-added;
+   padding:0 0 13px 16px;
+  }
+  p{
+   font-size: 15px;
+  }
+  h1{
+   font-size:20px;
+   margin: 0;
+  }
+ }
+ &.discription{
+  .col-md-7{
+   img{
+    border:1px solid #f8f8f8;
+   }
+   ul{
+    padding:0;
+    text-align: center;
+    margin-top:10px;
+   }
+   li{
+    list-style-type: none;
+    display:inline-block;
+   }
+  }
+  .col-md-5{
+   padding:0;
+   h1{
+    font-weight:bold;
+    margin-bottom:20px;
+   }
+   b{
+    font-size:18px;
+   }
+   a{
+    padding: 6px 20px 6px 20px;
+    color:#fff;
+    text-decoration: none;
+    margin-left: 30%;
+    img{
+     margin-right:10px;
+    }
+   }
+   p{
+    &.first{
+     margin-top:19px;
+     padding-top:10px;
+     border-top:1px solid #c6c6c6;
+    }
+    margin-bottom:20px;
+   }
+  }
+ }
+ &.tabs{
+  .col-md-12{
+   .nav-tabs{
+    border:1px solid #c6c6c6;
+    a{
+     border-radius:0;
+     border:none;
+     color:black;
+     margin:0;
+    }
+    li{
+     width: 33.33333333%;
+     text-align: center;
+     &.active{
+      margin:0;
+      a{background-color:@green-common;
+      color:#fff;}
+     }
+    }
+   }
+  }
+ }
  //basket
  &.basket{
   .col-md-12{
@@ -817,7 +898,10 @@ div, p{
    padding:0;
    b{
     line-height:65px;
+    color: inherit;
+//    color: red;
    }
+
   }
   .col-md-2{
    &.image {

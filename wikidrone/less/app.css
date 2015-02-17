@@ -85,7 +85,8 @@ p {
 .navigation,
 a.btn,
 .sub-menu .active,
-.compare .button {
+.compare .button,
+.discription .button {
   background: #00d933;
   /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -785,12 +786,87 @@ a.btn,
   background: #00991d;
   border: none;
 }
+.row .item {
+  font: normal 400 100% 'Noto Sans', sans-serif;
+}
+.row .item .recomended {
+  font: normal 700 100% 'Noto Sans', sans-serif;
+  color: #00991d;
+  padding: 0 0 13px 16px;
+}
+.row .item p {
+  font-size: 15px;
+}
+.row .item h1 {
+  font-size: 20px;
+  margin: 0;
+}
+.row.discription .col-md-7 img {
+  border: 1px solid #f8f8f8;
+}
+.row.discription .col-md-7 ul {
+  padding: 0;
+  text-align: center;
+  margin-top: 10px;
+}
+.row.discription .col-md-7 li {
+  list-style-type: none;
+  display: inline-block;
+}
+.row.discription .col-md-5 {
+  padding: 0;
+}
+.row.discription .col-md-5 h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.row.discription .col-md-5 b {
+  font-size: 18px;
+}
+.row.discription .col-md-5 a {
+  padding: 6px 20px 6px 20px;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30%;
+}
+.row.discription .col-md-5 a img {
+  margin-right: 10px;
+}
+.row.discription .col-md-5 p {
+  margin-bottom: 20px;
+}
+.row.discription .col-md-5 p.first {
+  margin-top: 19px;
+  padding-top: 10px;
+  border-top: 1px solid #c6c6c6;
+}
+.row.tabs .col-md-12 .nav-tabs {
+  border: 1px solid #c6c6c6;
+}
+.row.tabs .col-md-12 .nav-tabs a {
+  border-radius: 0;
+  border: none;
+  color: black;
+  margin: 0;
+}
+.row.tabs .col-md-12 .nav-tabs li {
+  width: 33.33333333%;
+  text-align: center;
+}
+.row.tabs .col-md-12 .nav-tabs li.active {
+  margin: 0;
+}
+.row.tabs .col-md-12 .nav-tabs li.active a {
+  background-color: #00d732;
+  color: #fff;
+}
 .row.basket .col-md-12 {
   height: 80px;
   padding: 0;
 }
 .row.basket .col-md-12 b {
   line-height: 65px;
+  color: inherit;
 }
 .row.basket .col-md-2.image {
   border: 1px solid #ececec;
