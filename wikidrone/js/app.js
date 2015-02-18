@@ -16,10 +16,12 @@ var temp_menu = function ()
     var rootMenu = $('<div id="sub" />').appendTo('body');
     var menu = [
         ["index", "главная"],
-        ["category", "категории"],
-        ["item-card", "карточка товара"],
-        ["category-fast-view", "быстрый просмотр"],
-        ["cart", "корзина"]
+        ["basket", "корзина"],
+        ["cart", "корзина2"],
+        ["catalog", "каталог"],
+        ["contacts", "контакты"],
+        ["item", "карточка"],
+        ["slider", "слайдер"]
     ]
     for (var i = 0; i < menu.length; i++)
     {
