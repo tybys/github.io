@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../favicon.ico">
+
+	<title>index</title>
+
+	<!-- Bootstrap core CSS -->
+	<!-- <link href="css/fonts.css" rel="stylesheet"> -->
+	<link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,400italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/ui/jquery-ui.css" rel="stylesheet">
+	<link href="css/ui/multiple-select.css" rel="stylesheet">
+	
+	<!--
+	<link rel="stylesheet" href="css/jquery/jslider.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery/jslider.blue.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery/jslider.plastic.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery/jslider.round.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery/jslider.round.plastic.css" type="text/css">
+	-->
+
+	<link href="css/custom.css" rel="stylesheet">
+	<link href="css/custom-footer.css" rel="stylesheet">
+
+	<link href="css/medias.css" rel="stylesheet">
+
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- Begin page content -->
+<div class="container-fluid">
+	<div class="row header">
+		<div class="container top">
+			<div class="col-md-4 col-sm-4 logotype">
+				<a href="#">
+					<img src="images/logotype.png" alt="бриклаер">
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-4 phones">
+				<div class="block">Онлайн звонок в магазин</div>
+				<a href="tel:+7(499)216-74-11">+7 (499) 216-74-11</a>
+				<span class="callback">
+					<a href="#">Закажите обратный звонок</a>
+				</span>
+				<span class="mail">
+					<a href="mailto:zakaz@bricklaer.ru">zakaz@bricklaer.ru</a>
+				</span>
+			</div>
+			<div class="col-md-4 col-sm-4 times">
+				<div class="left">
+					<ul>
+						<li>Работаем</li>
+						<li>8:00 - 21:00</li>
+						<li>(ежедневно)</li>
+					</ul>
+					<ul>
+						<li>Доставляем</li>
+						<li>8:00 - 21:00</li>
+						<li>(по будням)</li>
+					</ul>
+				</div>
+				<div class="right">
+					<img src="images/cart.png" alt="корзина">
+					<!-- <div class="empty">
+						<span>ваша корзина пуста</span>
+						<span>корзина</span>
+					</div> -->
+
+					<div class="in-progress">
+						<span id="amount">21</span>
+						<span class="summary">211201 р.</span>
+						<span>корзина</span>
+					</div>
+
+					<!-- <div class="full">
+						<span class="letsgo">Оформить заказ</span>
+						<span>корзина</span>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		<div class="container menu">
+			<ul>
+				<li class="first active"><a href="#">Каталог</a></li>
+				<li><a href="#">Оплата и доставка</a></li>
+				<li><a href="#">Гарантия и сервис</a></li>
+				<li><a href="#">Выставочные залы</a></li>
+				<li><a href="#">Акции</a></li>
+				<li><a href="#">Новинки</a></li>
+				<li><a href="#">Лидеры</a></li>
+				<li class="last"><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="row filter">
+		<div class="container">
+			<div class="left">
+				<ul>
+					<li>
+						<span>Комплекты мебели</span>
+						<img src="images/first.png">
+					</li>
+					<li>
+						<span>Тумбы с раковиной</span>
+						<img src="images/second.png">
+					</li>
+					<li>
+						<span>Шкафы-колонки</span>
+						<img src="images/third.png">
+					</li>
+					<li>
+						<span>Зеркала</span>
+						<img src="images/four.png">
+					</li>
+				</ul>
+				<p>В нашем интернет-магазине имеются комплекты мебели для ванной комнаты на любой вкус! При выборе мебели для ванной
+					комнаты необходимо учесть особые условия ее эксплуатации во влажной среде. Корпуса изделий мебели для ванной комнаты
+					изготавливаются из двухсторонней, ламинированной и только влагостойкой плиты ДСП. Фасады мебели для ванной комнаты
+					изготавливаются из одностороннего ламинированного МДФ с последующим многократным покрытием эмалями. Мебель для
+					ванной комнаты продается как комплектами, так и отдельными предметами. Из большого числа предметов коллекции можно
+					выбрать необходимое именно Вам - это тумбы под раковины, зеркала, пеналы, напольные и навесные шкафы.</p>
+			</div>
+			<div class="right">
+				<div class="controls">
+					<span>Подобрать</span>
+					<!--<div id="style" class="background parr">-->
+						<!--<div class="name">Стиль</div>-->
+						<!--<div class="value">-->
+							<!--<select name="style" id="style">-->
+								<!--<option></option>-->
+								<!--<option value="hitech">хайтек</option>-->
+								<!--<option value="hock">хоккайдо</option>-->
+								<!--<option value="hockey">хоккей</option>-->
+								<!--<option value="trash">трэш</option>-->
+							<!--</select>-->
+						<!--</div>-->
+					<!--</div>-->
+                    <style>
+                        #size .value {
+                            display: block !important;
+
+
+                        }
+                        #size .value div {
+                            white-space: nowrap;
+                        }
+                        #size .value div input[type="checkbox"] {
+                            opacity: 0;
+                            position: relative;
+                            top: 13px;
+                        }
+                        #size .value div:after {
+                            content: '';
+                            width: calc(100% - 24px);
+                            height: 1px;
+                            display: block;
+                            margin: 0 auto;
+                            background: #898989;
+                            position: absolute;
+                            top: 24px;
+                            left: 12px;
+                        }
+                        #size .value label {
+                            position: relative;
+                            width: 20px;
+                            text-align: center;
+                        }
+
+                        #size .value label.sel span {
+                            color: #cb1505;
+                        }
+                        #size .value label.sel i {
+                            background: #cb1505;
+                        }
+                        #size .value label.sel i:after {
+                            content: '';
+                            background: rgb(203, 21, 5);
+                            height: 1px;
+                            width: 19px;
+                            display: block;
+                            top: 3px;
+                            position: relative;
+                            z-index: 19;
+                            left: 5px;
+                        }
+                        #size .value label span {
+                            display: block;
+                            font-size: 10px;
+                            color: #898989;
+                            font-family: FranklinGothicBookC;
+                            font-weight: normal;
+                        }
+                        #size .value label i {
+                            display: block;
+                            background: #898989;
+                            border-radius: 100%;
+                            width: 6px;
+                            height: 6px;
+                            margin: 4% auto 0 auto;
+                            position: relative;
+                            z-index: 1;
+                        }
+                    </style>
+					<div id="size" class="background">
+						<div class="name">Размер</div>
+						<div class="value">
+                            <div>
+                                <label>
+                                    <input type="checkbox" value="" />
+                                    <i></i>
+                                    <span>40+</span>
+                                </label>
+                                <label class="sel">
+                                    <input type="checkbox" value="" />
+                                    <i></i>
+                                    <span>50+</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" value="" />
+                                    <i></i>
+                                    <span>60+</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" value="" />
+                                    <i></i>
+                                    <span>70+</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" value="" />
+                                    <i></i>
+                                    <span>80+</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" value="" />
+                                    <i></i>
+                                    <span>90+</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" value="" />
+                                    <i></i>
+                                    <span>100+</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" value="" />
+                                    <i></i>
+                                    <span>120+</span>
+                                </label>
+                            </div>
+						</div>
+					</div>
+
+					<!--<div id="color" class="background">-->
+						<!--<div class="name">Цвет</div>-->
+						<!--<div class="value">-->
+							<!--<ul>-->
+								<!--<li data-color="first">-->
+									<!--<img src="images/_first.png">-->
+								<!--</li>-->
+								<!--<li data-color="second">-->
+									<!--<img src="images/_second.png">-->
+								<!--</li>-->
+								<!--<li data-color="third">-->
+									<!--<img src="images/_third.png">-->
+								<!--</li>-->
+								<!--<li data-color="four">-->
+									<!--<img src="images/_four.png">-->
+								<!--</li>-->
+								<!--<li data-color="fice">-->
+									<!--<img src="images/_five.png">-->
+								<!--</li>-->
+								<!--<li data-color="six">-->
+									<!--<img src="images/_six.png">-->
+								<!--</li>-->
+								<!--<li data-color="seven">-->
+									<!--<img src="images/_seven.png">-->
+								<!--</li>-->
+								<!--<li data-color="eight">-->
+									<!--<img src="images/_eight.png">-->
+								<!--</li>-->
+							<!--</ul>-->
+						<!--</div>-->
+					<!--</div>-->
+
+					<!--<div id="price" class="background">-->
+						<!--<div class="name">Цена</div>-->
+						<!--<div class="value">-->
+							<!--<div class="layout-slider">-->
+					      		<!--<span class="cont" style="display: inline-block; width: 116px; padding: 0 5px; margin: 0 0 0 25px;">-->
+									<!--<div id="slider"></div>-->
+						      	<!--</span>-->
+						    <!--</div>-->
+						<!--</div>-->
+					<!--</div>-->
+
+					<!--<div id="collection" class="background parr">-->
+						<!--<div class="name">Коллекция</div>-->
+						<!--<div class="value">-->
+							<!--<select name="specs" id="specs_">-->
+								<!--<option></option>-->
+								<!--<option value="chili">Чили</option>-->
+								<!--<option value="bali">Бали</option>-->
+								<!--<option value="chokaido">Хоккайдо</option>-->
+								<!--<option value="tokyo">Токио</option>-->
+								<!--<option value="cuba">Куба</option>-->
+								<!--<option value="sittle">Сиэтл</option>-->
+								<!--<option value="country">Кантри</option>-->
+								<!--<option value="flo">Флоренция</option>-->
+								<!--<option value="lau">Лаура</option>-->
+								<!--<option value="barcelona">Барселона</option>-->
+								<!--<option value="fidji">Фиджи</option>-->
+								<!--<option value="seoul">Сеул</option>-->
+								<!--<option value="hanna">Анна</option>-->
+								<!--<option value="palmero">Палермо</option>-->
+								<!--<option value="luchia">Лючия</option>-->
+								<!--<option value="madrin">Мадрин</option>-->
+								<!--<option value="katrin">Катрин</option>-->
+							<!--</select>-->
+						<!--</div>-->
+					<!--</div>-->
+
+					<div id="specs" class="background parr">
+						<div class="name">Конструкция</div>
+						<div class="value">
+							<select name="specs" id="specs_">
+								<option></option>
+								<option value="ground">Напольная</option>
+								<option value="sky">Навесной</option>
+								<option value="withTrash">С корзиной</option>
+								<option value="withoutTrash">Без корзины</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row options">
+		<div class="container">
+			<div class="left">
+				<ul>
+					<li>Анна</li>
+					<li>Классика</li>
+					<li>Белая ольха</li>
+					<li>60+</li>
+				</ul>
+			</div>
+			<div class="right">
+				<ul>
+					<li id="min"><span></span></li>
+					<li id="middle"><span></span></li>
+					<li id="max"><span></span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="row grid">
+		<div class="container">
+			<div id="items" class="five">
+				<ul>
+					<li>
+						<img src="images/grid1.jpg" height="200">
+						<div>
+							<span class="item-name">
+								<b>Чили 55</b>
+								Светлая лиственница
+							</span>
+							<span class="old-price">28 300 руб.</span>
+							<span class="actual-price">21 120 руб.</span>
+							<a href="#">Купить</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/grid2.jpg">
+						<div>
+							<span class="item-name">
+								<b>Чили 55</b>
+								Светлая лиственница
+							</span>
+							<span class="old-price">28 300 руб.</span>
+							<span class="actual-price">21 120 руб.</span>
+							<a href="#">Купить</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/grid3.jpg" height="200">
+						<div>
+							<span class="item-name">
+								<b>Чили 55</b>
+								Светлая лиственница
+							</span>
+							<span class="old-price">28 300 руб.</span>
+							<span class="actual-price">21 120 руб.</span>
+							<a href="#">Купить</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/grid4.jpg">
+						<div>
+							<span class="item-name">
+								<b>Чили 55</b>
+								Светлая лиственница
+							</span>
+							<span class="old-price">28 300 руб.</span>
+							<span class="actual-price">21 120 руб.</span>
+							<a href="#">Купить</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/grid1.jpg">
+						<div>
+							<span class="item-name">
+								<b>Чили 55</b>
+								Светлая лиственница
+							</span>
+							<span class="old-price">28 300 руб.</span>
+							<span class="actual-price">21 120 руб.</span>
+							<a href="#">Купить</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/grid1.jpg" height="200">
+						<div>
+							<span class="item-name">
+								<b>Чили 55</b>
+								Светлая лиственница
+							</span>
+							<span class="old-price">28 300 руб.</span>
+							<span class="actual-price">21 120 руб.</span>
+							<a href="#">Купить</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/grid2.jpg">
+						<div>
+							<span class="item-name">
+								<b>Чили 55</b>
+								Светлая лиственница
+							</span>
+							<span class="old-price">28 300 руб.</span>
+							<span class="actual-price">21 120 руб.</span>
+							<a href="#">Купить</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/grid3.jpg" height="200">
+						<div>
+							<span class="item-name">
+								<b>Чили 55</b>
+								Светлая лиственница
+							</span>
+							<span class="old-price">28 300 руб.</span>
+							<span class="actual-price">21 120 руб.</span>
+							<a href="#">Купить</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/grid4.jpg">
+						<div>
+							<span class="item-name">
+								<b>Чили 55</b>
+								Светлая лиственница
+							</span>
+							<span class="old-price">28 300 руб.</span>
+							<span class="actual-price">21 120 руб.</span>
+							<a href="#">Купить</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/grid1.jpg">
+						<div>
+							<span class="item-name">
+								<b>Чили 55</b>
+								Светлая лиственница
+							</span>
+							<span class="old-price">28 300 руб.</span>
+							<span class="actual-price">21 120 руб.</span>
+							<a href="#">Купить</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="row news">
+		<div class="container">
+			<div class="left">
+				<h2>Новости</h2>
+				<div class="rolls">
+					<p>
+						14.07.2014<br/>
+						Это интересно “О ванной комнате”
+					</p>
+
+					<p>
+						24.06.2014<br/>
+						Внимание! Внимание! Внимание!<br/>
+						Только до 30 июня и только у нас 40 % скидка
+					</p>
+
+					<p>
+						10.06.2014<br/>
+						С Наступающим Днем Независимости!
+					</p>
+
+					<p>
+						29.05.2014<br/>
+						Новинка! Катрин 75 Патина серебро
+					</p>
+
+					<p>
+						08.05.2014<br/>
+						9 Мая День Победы!
+					</p>
+
+					<p>
+						30.04.2014<br/>
+						Прием заказов Во время праздников и выходных
+					</p>
+
+					<p>
+						30.04.2014<br/>
+						1 Мая Праздник Весны и Труда!
+					</p>
+
+					<p>
+						14.07.2014<br/>
+						Это интересно “О ванной комнате”
+					</p>
+
+					<p>
+						24.06.2014<br/>
+						Внимание! Внимание! Внимание!<br/>
+						Только до 30 июня и только у нас 40 % скидка
+					</p>
+
+					<p>
+						10.06.2014<br/>
+						С Наступающим Днем Независимости!
+					</p>
+
+					<p>
+						29.05.2014<br/>
+						Новинка! Катрин 75 Патина серебро
+					</p>
+
+					<p>
+						08.05.2014<br/>
+						9 Мая День Победы!
+					</p>
+
+					<p>
+						30.04.2014<br/>
+						Прием заказов Во время праздников и выходных
+					</p>
+
+					<p>
+						30.04.2014<br/>
+						1 Мая Праздник Весны и Труда!
+					</p>
+				</div>
+			</div>
+			<div class="right">
+				<h2>Мебель для ванной комнаты от производителя</h2>
+				<p>
+					Компания «БРИКЛАЕР» - производитель мебели для ванной комнаты, динамично развивающаяся организация,
+					успешно работает на мебельном рынке России с 2002 года. Основное направление деятельности компании
+					- производство и оптовая продажа мебели для ванных комнат через розничную торговую сеть, сетевые гипермаркеты
+					и региональную дилерскую товаропроизводящую сеть. Более 300 оптовых компаний России являются нашими
+					партнерами и продают нашу мебель.<br/><br/>
+					С 2004 года мы производим мебель под собственной торговой маркой BRICKLAER®. Разрабатывая мебель
+					для ванной комнаты мы хотели, чтобы люди с любыми финансовыми возможностями могли красиво с присущим
+					им вкусом обставить свою ванную комнату. Тогда появился слоган: «Прикоснись к прекрасному».<br/><br/>
+					Мы предлагаем своим покупателям широкий ассортимент мебели для ванной комнаты, который включает различные
+					по внешнему виду, дизайну и конструктиву изделия: тумбы с раковинами, зеркала со светильниками, зеркальные
+					полки, напольные тумбы, комоды, пеналы, напольные шкафы, тумбы с корзинами для белья, навесные шкафы, пеналы.<br/><br/>
+					Корпуса и фасады мебели изготовлены из высокопрочного МДФ от 19 мм до 32мм. Края корпусных деталей обработаны
+					высококачественной кромкой ПВХ. Мебель окрашена водостойкими лакокрасочными материалами в 5 слоев,
+					что гарантирует длительный срок эксплуатации мебели при повышенной влажности, присущей ванной комнате.
+					Зеркала выдерживают перепады температур и влажности, поэтому могут использоваться в ванной комнате.<br/><br/>
+					Российская мебель под торговой маркой «BRICKLAER®» в комплектах и отдельными предметами прошли добровольную
+					и обязательную СЕРТИФИКАЦИЮ ПРОДУКЦИИ В СИСТЕМЕ СЕРТИФИКАЦИИ ГОСТ Р, получено ЗАКЛЮЧЕНИЕ СЭС.<br/><br/>
+					Качественные характеристики нашей мебели позволяют устанавливать достаточно длительный гарантийный срок
+					на продукцию. Гарантийный срок исчисляется со дня передачи товара потребителю, дата указана на товарном чеке.
+					Гарантийный срок на всю мебель для ванных комнат компании «Бриклаер» - 24 месяца.<br/><br/>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="col-md-7 col-sm-7 left">
+			<div class="submenu">
+				<ul>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Распродажа</a></li>
+					<li><a href="#">Новнки</a></li>
+					<li><a href="#">Лидеры</a></li>
+				</ul>
+
+				<ul>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">История Бриклаер</a></li>
+					<li><a href="#">Производство мебели</a></li>
+					<li><a href="#">Работа в Бриклаер</a></li>
+					<li><a href="#">Фирменный стиль</a></li>
+				</ul>
+
+				<ul>
+					<li><a href="#">Как оформить заказ</a></li>
+					<li><a href="#">Оплата и доставка</a></li>
+					<li><a href="#">Гарантия и сервис</a></li>
+					<li><a href="#">О нашей мебели</a></li>
+				</ul>
+
+				<ul>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Схема проезда</a></li>
+					<li><a href="#">Оптовые продажи</a></li>
+					<li><a href="#">Вход в почту</a></li>
+				</ul>
+			</div>
+			<div class="rest">
+				<img src="images/logofooter.png" alt="бриклаер">
+
+				<ul>
+					<li>Мы в соцсетях</li>
+					<li>
+						<a href="#">
+							<img src="images/fb-ico.png">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/tw-ico.png">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/in-ico.png">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/vk-ico.png">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/insta-ico.png">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-5 col-sm-5 right">
+			<div class="first">
+				<img src="images/house-ico.png" alt="дом">
+				<div>
+					<p>Россия, Московская область, 142452, Ногинский район, поселок Зеленый, Производственно-складской комплекс "Зеленый"</p>
+				</div>
+			</div>
+			<div class="second">
+				<img src="images/phone-ico.png" alt="мобила">
+				<div>
+					<p>Интернет магазин: +7 (495) 76-07-06, (926) 616-70-08</p>
+					<p>Для справок (офис): +7 (495) 988-22-52 доб.1</p>
+					<p>Оптовые продажи в Регионах: +7 (926) 901-51-05, (926) 914-64-17</p>
+					<p>Оптовые продажи в Москве: +7 (926) 234-54-44, (926) 914-64-17&nbsp;<br/>+7 (929) 940-20-25</p>
+				</div>
+			</div>
+			<div class="third">
+				<img src="images/info-ico.png" alt="конверт">
+				<div>
+					<p>Для справок и предложений: bricklaer@bricklaer.ru</p>
+					<p>Розничные продажи: zakaz@bricklaer.ru</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/ui/jquery-ui.js"></script>
+<script src="js/ui/jquery.multiple.select.js"></script>
+<!-- jq.ui extended -->
+<script src="http://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/jquery-ui-slider-pips.js"></script>
+<!--
+<script type="text/javascript" src="js/jquery/jshashtable-2.1_src.js"></script>
+<script type="text/javascript" src="js/jquery/jquery.numberformatter-1.2.3.js"></script>
+<script type="text/javascript" src="js/jquery/tmpl.js"></script>
+<script type="text/javascript" src="js/jquery/jquery.dependClass-0.1.js"></script>
+<script type="text/javascript" src="js/jquery/draggable-0.1.js"></script>
+<script type="text/javascript" src="js/jquery/jquery.slider.js"></script>
+-->
+<script src="js/common.js"></script>
+</body>
+</html>

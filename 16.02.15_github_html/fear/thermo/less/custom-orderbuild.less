@@ -1,0 +1,145 @@
+@import "custom-vars";
+
+.content-inner-orderbuild {
+	h2 {
+		font-family: @titlecolor;
+		color: @titlecolor;
+		font-size: 24px;
+
+		span {
+			display: inline-block;
+			width: 25px;
+			height: 24px;
+			margin: 0 0 0 20px;
+			vertical-align: middle;
+			background: url('../img/cart.png') no-repeat;
+		}
+	}
+
+	form.forms {
+
+		legend {
+
+		}
+		fieldset {
+			padding: 30px;
+			border-radius: 0;
+			background: #efefef;
+			border-top: 2px solid @red;
+			border-left: none;
+			border-right: none;
+			border-bottom: none;
+			label {
+				display: inline-block;
+				min-width: 150px;
+				max-width: 150px;
+			}
+			ul {
+				&.forms-list {
+					display: inline-block;
+					vertical-align: top;
+				}
+			}
+			span.error {
+				position: relative;
+				margin-left: 20px;
+				font-size: 13px;
+				color: #505050;
+				background: @white;
+				padding: 0.5em 0.7em;
+				&:before {
+					width: 0;
+					height: 0;
+					border: 1.2em solid #fc1049;
+					border-color: transparent @white transparent transparent;
+					content: '';
+					position: absolute;
+					left: -30px;
+				}
+			}
+			input[type="text"],
+			input[type="password"],
+			select
+			{
+				display: inline-block;
+				border: 1px solid #b0b0b0;
+				border-radius: 5px;
+				width: 292px;
+				height: 31px;
+			}
+			select {
+				padding: 6px 0 0 0;
+			}
+
+			.btn.btn-custom {
+				height: 2.2em;
+				margin: 15px 0 0 0;
+				font-size: 15px;
+				color: @white;
+				background: @red;
+				border-radius: 0;
+				position: relative;
+
+				i {
+					background: none repeat scroll 0% 0% #E1161E;
+					position: absolute;
+					right: -33px;
+					top: 0px;
+					height: 2.2em;
+					width: 33px;
+					&:before {
+						content: '';
+						position: absolute;
+						top: 10px;
+						left: 10px;
+						background: url('../img/key.png');
+						width: 14px;
+						height: 14px;
+					}
+				}
+			}
+		}
+	}
+	.back {
+		&:before {
+			text-decoration: none;
+			color: #676767;
+			content: '←';
+		}
+		a {
+			font-size: 15px;
+			color: @red;
+		}
+	}
+	.build {
+		a {
+			height: 2.2em;
+			font-size: 15px;
+			color: #FFF;
+			background: none repeat scroll 0% 0% #EB1C24;
+			border-radius: 0px;
+			position: relative;
+
+			margin: 0 33px 0 0;
+			float: right;
+
+			i {
+				background: none repeat scroll 0% 0% #E1161E;
+				position: absolute;
+				right: -33px;
+				top: 0px;
+				height: 2.2em;
+				width: 33px;
+				&:before {
+					content: "";
+					position: absolute;
+					top: 10px;
+					left: 10px;
+					background: url('../img/key.png') repeat scroll 0% 0% transparent;
+					width: 14px;
+					height: 14px;
+				}
+			}
+		}
+	}
+}

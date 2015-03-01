@@ -1,0 +1,348 @@
+.box-faq .box-heading:first-of-type {
+  font-size: 24px;
+}
+.box-faq .grid-9 > p {
+  margin-top: 0;
+  margin-bottom: 27px;
+  font-size: 14px;
+}
+.box-faq .grid-9 ul {
+  padding: 0;
+  margin: 0;
+}
+.box-faq .grid-9 ul li {
+  transition: background 1s ease;
+  list-style: none;
+}
+.box-faq .grid-9 ul li.active {
+  background: url("../images/question.png") no-repeat left top;
+  padding: 0 0 24px 0;
+}
+.box-faq .grid-9 ul li.active div {
+  position: relative;
+  background: #f3f2ef;
+  border: 1px solid #e5e4dc;
+  padding: 0 19px;
+  margin-left: 60px;
+}
+.box-faq .grid-9 ul li.active div:after,
+.box-faq .grid-9 ul li.active div:before {
+  right: 100%;
+  top: 10%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.box-faq .grid-9 ul li.active div:after {
+  border-color: rgba(243, 242, 239, 0);
+  border-right-color: #f3f2ef;
+  border-width: 9px;
+  margin-top: -9px;
+}
+.box-faq .grid-9 ul li.active div:before {
+  border-color: rgba(229, 228, 220, 0);
+  border-right-color: #e5e4dc;
+  border-width: 10px;
+  margin-top: -10px;
+}
+.box-faq .grid-9 ul li.active div h4 {
+  font-size: 18px;
+  margin-top: 9px;
+  margin-bottom: 6px;
+}
+.box-faq .grid-9 ul li.active div p {
+  font-size: 14px;
+  margin-top: 0;
+}
+.box-faq .grid-9 ul li:not(.active) div {
+  padding: 0 19px;
+  margin-left: 60px;
+  background: white;
+  border: 1px solid white;
+}
+.box-faq .grid-9 ul li:not(.active) div h4 {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 0 9px 0;
+}
+.box-faq .grid-9 ul li:not(.active) div h4 span {
+  border-bottom: 2px dashed #dfddc8;
+  padding-right: 5px;
+}
+.box-faq .grid-9 ul li:not(.active) div p {
+  display: none;
+}
+.box-faq .grid-3 ul {
+  padding: 0;
+  margin: 0;
+}
+.box-faq .grid-3 ul li {
+  margin-bottom: 18px;
+  text-align: center;
+  list-style: none;
+}
+.box-faq .grid-3 ul li.super a div:after {
+  background: url("../images/lent.png") no-repeat;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85px;
+  height: 91px;
+}
+.box-faq .grid-3 ul li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+.box-faq .grid-3 ul li a div {
+  position: relative;
+  display: inline-block;
+}
+.box-faq .grid-3 ul li a img {
+  box-shadow: 0 0 3px rgba(78, 78, 78, 0.3);
+  border-bottom: 1px solid #a7a7a7;
+  border-left: 1px solid #d8d5d5;
+  border-right: 1px solid #d8d5d5;
+  border-top: 1px solid #d8d5d5;
+}
+.box-faq .grid-3 ul li a span {
+  font-size: 14px;
+  display: inline-block;
+  border-bottom: 1px solid #dad8cb;
+}
+#photo-wall img {
+  display: block;
+}
+.box-photo-wall {
+  width: 100%;
+}
+.box-photo-wall .brick {
+  width: 188px;
+}
+.box-photo-wall img {
+  display: block;
+  width: 100%;
+}
+.box-photo-wall a {
+  color: #5D5D5D;
+  text-decoration: none;
+}
+.box-photo-wall a:hover {
+  text-decoration: underline;
+}
+.box-photo-wall ul {
+  margin: 0;
+  font-size: 0;
+  padding: 0;
+}
+.box-photo-wall li {
+  color: #D2D2D2;
+  display: inline-block;
+  font: 10px/1.5 Trebuchet MS, Verdana, sans-serif;
+  list-style: none;
+  margin: 2% 2% 30px 0;
+  vertical-align: top;
+  width: 18%;
+  /* (100% - (5*2%)) / 5 = 18% */
+}
+@media only screen and (min-width: 721px) and (max-width: 940px) {
+  .box-photo-wall .container li {
+    width: 23%;
+    /* (100% - (4*2%)) / 4 = 21% */
+  }
+}
+@media only screen and (min-width: 531px) and (max-width: 720px) {
+  .box-photo-wall .container li {
+    width: 31.333%;
+    /* (100% - (3*2%)) / 3 = 31.333% */
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 530px) {
+  .box-photo-wall .container li {
+    width: 48%;
+    /* (100% - (2*2%)) / 2 = 48% */
+  }
+}
+@media only screen and (max-width: 320px) {
+  .box-photo-wall .container li {
+    width: 96%;
+    /* 100% - (1*4%)= 46% */
+  }
+}
+.box-reviews .box-heading {
+  font-size: 24px;
+}
+.box-reviews .grid-12 p {
+  font-size: 14px;
+}
+.box-reviews .load-more-reviews {
+  text-align: center;
+}
+.box-reviews .load-more-reviews a {
+  color: #5d5c4f;
+  text-decoration: none;
+  font-size: 14px;
+  border-bottom: 1px dashed #dad8cb;
+  position: relative;
+}
+.box-reviews .load-more-reviews a:before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  left: -22px;
+  top: 1px;
+  background: url("../images/refresh.png") no-repeat left top;
+}
+.box-reviews .box-heading {
+  position: relative;
+}
+.box-reviews .box-heading.box-heading-bottom .btn-add {
+  width: 307px;
+  height: 41px;
+  line-height: 38px;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 1.5% auto 0 auto;
+  display: block;
+}
+.box-reviews .box-heading.box-heading-bottom .btn-add:after {
+  content: '';
+  position: absolute;
+  right: -12px;
+  top: 0;
+  height: 41px;
+  width: 10px;
+  background: white;
+}
+.box-reviews .box-heading.box-heading-bottom .btn-add:before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 0;
+  height: 41px;
+  width: 10px;
+  background: white;
+}
+.box-reviews .btn-add {
+  position: absolute;
+  right: 0;
+  bottom: 25%;
+  font-size: 13px;
+  text-decoration: none;
+  line-height: 26px;
+  height: 30px;
+  width: 126px;
+  font-weight: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid #e4e4e4;
+  text-align: center;
+  color: #171717;
+  background-color: #ffffff;
+}
+.box-reviews .review-wrapper {
+  width: 307px;
+}
+.box-reviews .review-wrapper .author {
+  display: block;
+  margin: 18px 0 0 17px;
+}
+.box-reviews .review-wrapper .author i {
+  font-style: normal;
+  display: block;
+}
+.box-reviews .review-wrapper.with-answer .answer-wrapper .answer {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #ffde00;
+  border-radius: 5px 5px 0 0;
+  padding: 13px;
+  margin-top: 11px;
+  text-align: right;
+}
+.box-reviews .review-wrapper.with-answer .answer-wrapper .answer:after,
+.box-reviews .review-wrapper.with-answer .answer-wrapper .answer:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.box-reviews .review-wrapper.with-answer .answer-wrapper .answer:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #ffffff;
+  border-width: 5px;
+  margin-left: -5px;
+}
+.box-reviews .review-wrapper.with-answer .answer-wrapper .answer:before {
+  border-color: rgba(255, 222, 0, 0);
+  border-top-color: #ffde00;
+  border-width: 6px;
+  margin-left: -6px;
+}
+.box-reviews .review-wrapper.with-answer .answer-wrapper .answer p {
+  padding-left: 10%;
+}
+.box-reviews .review-wrapper.with-answer .answer-wrapper .moderator {
+  text-align: right;
+  font-style: italic;
+  display: block;
+  margin-top: 11px;
+}
+.box-reviews .review {
+  position: relative;
+  background: #f3f2ef;
+  border: 1px solid #e5e4dc;
+  padding: 22px 15px 15px 15px;
+  border-radius: 5px 5px 0 0;
+}
+.box-reviews .review p {
+  margin: 0;
+}
+.box-reviews .review img {
+  margin: 11px 0 0 0;
+  box-shadow: 0 0 3px gray;
+}
+.box-reviews .review:after,
+.box-reviews .review:before {
+  top: 100%;
+  left: 10%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.box-reviews .review:after {
+  border-color: rgba(243, 242, 239, 0);
+  border-top-color: #f3f2ef;
+  border-width: 8px;
+  margin-left: -8px;
+}
+.box-reviews .review:before {
+  border-color: rgba(229, 228, 220, 0);
+  border-top-color: #e5e4dc;
+  border-width: 9px;
+  margin-left: -9px;
+}
+.favorites .product-image {
+  box-shadow: 0 0 3px rgba(78, 78, 78, 0.3);
+  border-bottom: 1px solid #a7a7a7;
+  border-left: 1px solid #d8d5d5;
+  border-right: 1px solid #d8d5d5;
+  border-top: 1px solid #d8d5d5;
+}

@@ -1,0 +1,108 @@
+.content-inner-contacts {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.content-inner-contacts h2 {
+  border-bottom: 2px solid #eb1c24;
+  padding: 0px 0px 14px;
+}
+.content-inner-contacts ul {
+  padding: 0;
+  margin: 25px 0 0 0;
+}
+.content-inner-contacts ul li {
+  list-style: none;
+  font-size: 14px;
+  line-height: 22px;
+}
+.content-inner-contacts p {
+  margin: 25px 0 15px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+.content-inner-contacts form.forms {
+  z-index: 999;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 457px;
+  height: 342px;
+}
+.content-inner-contacts form.forms fieldset {
+  padding: 30px;
+  border-radius: 0;
+  background: #efefef;
+  border: none;
+}
+.content-inner-contacts form.forms fieldset a {
+  font-family: Myriad Pro, sans-serif;
+  color: #eb1c24;
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+  display: inline-block;
+  margin: 0 0 20px 0;
+}
+.content-inner-contacts form.forms fieldset label {
+  display: inline-block;
+  min-width: 95px;
+}
+.content-inner-contacts form.forms fieldset span.error {
+  position: relative;
+  margin-left: 20px;
+  font-size: 13px;
+  color: #505050;
+  background: #ffffff;
+  padding: 0.5em 0.7em;
+}
+.content-inner-contacts form.forms fieldset span.error:before {
+  width: 0;
+  height: 0;
+  border: 1.2em solid #fc1049;
+  border-color: transparent #ffffff transparent transparent;
+  content: '';
+  position: absolute;
+  left: -30px;
+}
+.content-inner-contacts form.forms fieldset input[type="text"],
+.content-inner-contacts form.forms fieldset input[type="password"] {
+  display: inline-block;
+  border: 1px solid #b0b0b0;
+  border-radius: 5px;
+  width: 292px;
+  height: 31px;
+}
+.content-inner-contacts form.forms fieldset textarea {
+  display: inline-block;
+  border: 1px solid #b0b0b0;
+  border-radius: 5px;
+  width: 292px;
+  min-height: 103px;
+}
+.content-inner-contacts form.forms fieldset .btn.btn-custom {
+  height: 2.2em;
+  margin: 15px 0 0 25%;
+  font-size: 15px;
+  color: #ffffff;
+  background: #eb1c24;
+  border-radius: 0;
+  position: relative;
+}
+.content-inner-contacts form.forms fieldset .btn.btn-custom i {
+  background: none repeat scroll 0% 0% #E1161E;
+  position: absolute;
+  right: -33px;
+  top: 0px;
+  height: 2.2em;
+  width: 33px;
+}
+.content-inner-contacts form.forms fieldset .btn.btn-custom i:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: url('../img/rarr.png') no-repeat center;
+  width: 14px;
+  height: 14px;
+}
