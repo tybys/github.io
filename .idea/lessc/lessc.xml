@@ -3,83 +3,19 @@
   <component name="LessManager">
     <option name="lessProfileMap">
       <map>
-        <entry key="8">
+        <entry key="14">
           <value>
             <LessProfile>
               <option name="cssDirectories">
                 <list>
                   <CssDirectory>
-                    <option name="path" value="$PROJECT_DIR$/unionsb/css" />
+                    <option name="path" value="D:\src\github\tybys\lend\css" />
                   </CssDirectory>
                 </list>
               </option>
-              <option name="id" value="8" />
-              <option name="lessDirPath" value="$PROJECT_DIR$/unionsb/less" />
-              <option name="name" value="union" />
-            </LessProfile>
-          </value>
-        </entry>
-        <entry key="10">
-          <value>
-            <LessProfile>
-              <option name="cssDirectories">
-                <list>
-                  <CssDirectory>
-                    <option name="path" value="$PROJECT_DIR$/landing/css" />
-                  </CssDirectory>
-                </list>
-              </option>
-              <option name="id" value="10" />
-              <option name="lessDirPath" value="$PROJECT_DIR$/landing/less" />
-              <option name="name" value="landing" />
-            </LessProfile>
-          </value>
-        </entry>
-        <entry key="11">
-          <value>
-            <LessProfile>
-              <option name="cssDirectories">
-                <list>
-                  <CssDirectory>
-                    <option name="path" value="D:\src\github\tybys\robokassa" />
-                  </CssDirectory>
-                </list>
-              </option>
-              <option name="id" value="11" />
-              <option name="lessDirPath" value="D:\src\github\tybys\robokassa" />
-              <option name="name" value="slider" />
-            </LessProfile>
-          </value>
-        </entry>
-        <entry key="12">
-          <value>
-            <LessProfile>
-              <option name="cssDirectories">
-                <list>
-                  <CssDirectory>
-                    <option name="path" value="D:\src\github\tybys\estate\css" />
-                  </CssDirectory>
-                </list>
-              </option>
-              <option name="id" value="12" />
-              <option name="lessDirPath" value="D:\src\github\tybys\estate\less" />
-              <option name="name" value="estate" />
-            </LessProfile>
-          </value>
-        </entry>
-        <entry key="13">
-          <value>
-            <LessProfile>
-              <option name="cssDirectories">
-                <list>
-                  <CssDirectory>
-                    <option name="path" value="D:\src\github\tybys\maxsport\css" />
-                  </CssDirectory>
-                </list>
-              </option>
-              <option name="id" value="13" />
-              <option name="lessDirPath" value="D:\src\github\tybys\maxsport\less" />
-              <option name="name" value="maxsport" />
+              <option name="id" value="14" />
+              <option name="lessDirPath" value="D:\src\github\tybys\lend\less" />
+              <option name="name" value="dsfsdf" />
             </LessProfile>
           </value>
         </entry>

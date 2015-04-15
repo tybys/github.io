@@ -1,0 +1,100 @@
+body {
+  font-family: "Segoe UI";
+}
+.row.head {
+  height: 80px;
+}
+.row.head .container {
+  background: #1180c0;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #1180c0 0%, #034276 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #1180c0), color-stop(100%, #034276));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #1180c0 0%, #034276 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #1180c0 0%, #034276 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #1180c0 0%, #034276 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #1180c0 0%, #034276 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1180c0', endColorstr='#034276', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+.row.head a {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+.row.head a:hover {
+  text-decoration: none;
+}
+.row.head a:last-of-type {
+  color: #0065b3;
+  border: 1px solid #0065b3;
+  border-radius: 20px;
+  background: #ffffff;
+  padding: 10px 21px 10px 21px;
+  line-height: 15px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+.row.head a:first-of-type {
+  font-size: 15px;
+  text-decoration: underline;
+  font-weight: normal;
+  margin-right: 50px;
+}
+.row.head a.tel {
+  margin-right: 10px;
+}
+.row.disclaimer {
+  min-height: 380px;
+  background: url("../images/girl.png") no-repeat center;
+}
+.row.disclaimer h1 {
+  font-weight: bold;
+  font-size: 35px;
+}
+.row.disclaimer p {
+  font-size: 18px;
+}
+.row.tabs .container {
+  border: 1px solid #b0a282;
+  border-radius: 5px;
+  margin-top: -91px;
+  background: white;
+}
+.row.tabs .nav-tabs {
+  border: none;
+}
+.row.tabs .nav-tabs li.active a {
+  font-weight: bold;
+  color: #0065b3;
+}
+.row.tabs .nav-tabs li a {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #0065b3;
+}
+.container {
+  width: 1280px;
+}
+h1,
+h2,
+h3 {
+  color: #0065b3;
+}
+.logotype,
+.cab-area {
+  line-height: 80px;
+}
+.cab-area {
+  position: relative;
+  text-align: right;
+}
