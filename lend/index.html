@@ -66,13 +66,13 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="prepare">
-                        <form>
-                            <h4>Бесплатная консультация</h4>
-                            <input type="text" placeholder="Ваше имя">
-                            <input type="text" placeholder="Ваш телефон">
-                            <input type="text" placeholder="Ваш e-mail">
-                            <input type="submit" value="Получить">
-                        </form>
+                        <!--<form>-->
+                            <!--<h4>Бесплатная консультация</h4>-->
+                            <!--<input type="text" placeholder="Ваше имя">-->
+                            <!--<input type="text" placeholder="Ваш телефон">-->
+                            <!--<input type="text" placeholder="Ваш e-mail">-->
+                            <!--<input type="submit" value="Получить">-->
+                        <!--</form>-->
                         <div class="gray dotted">
                             <p><span class="left">Комплект документов для ООО с одним учредителем</span> <span class="right">1990 рублей</span></p>
                             <p><span class="left">Комплект документов для ООО с двумя и более учредителями</span> <span class="right">2990 рублей</span></p>
@@ -178,10 +178,37 @@
 		<div id="map" style="width: 100%; height: 486px"></div>
 	</div>
 </div>
+<div id="modal">
+	<form class="form call-back">
+		<h4>Бесплатная консультация</h4>
+		<input type="text" placeholder="Ваше имя">
+		<input type="text" placeholder="Ваш телефон">
+		<input type="text" placeholder="Ваш e-mail">
+		<input type="submit" value="Получить">
+	</form>
+</div>
+<div id="shadow"></div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script>
+	$(function () {
+		$(".callback").click(function () {
+			$("body").addClass("popup");
+		});
+		$("#shadow").click(function () {
+			$("body").removeClass("popup");	
+		});
+
+		$(".call-back").css({
+			// 224
+			// 236
+			top: ($(window).outerHeight() / 2) - 112,
+			left: ($(window).outerWidth() / 2) - 118
+		})
+	});
+</script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 </body>
 </html>
