@@ -1,0 +1,78 @@
+p.info-account {
+    color: #c11b00;
+}
+.addresses-lists:after {
+    content: '';
+    clear: both;
+}
+
+.edit-ico {
+    width: 18px;
+    height: 18px;
+    background: url("img/edit-ico.png") no-repeat;
+    display: block;
+}
+
+.delete-ico {
+    width: 14px;
+    height: 14px;
+    background: url("img/delete-ico.png") no-repeat;
+    display: block;
+}
+
+.dob-ico,
+.mail-ico,
+.phone-ico,
+.place-ico {
+    display: block;
+}
+.dob-ico:before,
+.mail-ico:before,
+.phone-ico:before,
+.place-ico:before {
+    vertical-align: middle;
+    display: inline-block;
+    content: '';
+    margin-right: 15px;
+
+}
+
+.dob-ico:before {
+    width: 16px;
+    height: 18px;
+    background: url("img/dob-ico.png");
+}
+.mail-ico:before {
+    width: 16px;
+    height: 14px;
+    background: url("img/mail-ico.png");
+}
+.phone-ico:before {
+    width: 16px;
+    height: 20px;
+    background: url("img/phone-ico.png");
+}
+.place-ico:before {
+    width: 11px;
+    height: 17px;
+    background: url("img/place-ico.png");
+}
+
+.edit-ico,
+.delete-ico {
+    cursor: pointer;
+}
+
+.bordered {
+    border: 1px dashed #cccccc;
+    border-radius: 15px;
+    position: relative;
+    padding-top: 15px;
+}
+.bordered h3 {
+    background: white;
+    position: absolute;
+    top: -33px;
+    left: 33px;
+    padding: 0 5%;
+}
