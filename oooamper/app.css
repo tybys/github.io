@@ -84,14 +84,15 @@ p.info-account {
 }
 .bordered h3 {
     background: white;
-    position: absolute;
-    top: -29px;
-    left: 22px;
-    padding: 0 5%;
-    font-size: 18px;
-    font-family: "Open Sans";
-    font-weight: bold;
-    color: #474747;
+  position: absolute;
+  top: -29px;
+  left: 24px;
+  padding: 0 128px 0 16px;
+  font-size: 18px;
+  font-family: "Open Sans";
+  font-weight: bold;
+  color: #474747;
+  white-space: nowrap;
 }
 p {
     font-size: 12px;
@@ -252,4 +253,21 @@ h2.username {
 }
 .history-box {
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1199px) {
+    .block-custom.left {
+        margin-left: 18%;
+    }
+    .bordered {
+        background: white;
+    }
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .block-custom.right.col-md-offset-7 {
+        margin-left: calc(58.33333% - 36px);
+        margin-left: -webkit-calc(58.33333% - 36px);
+    }
 }
