@@ -293,54 +293,73 @@
 							<p>Получите постоянную скидку 40% при достижении суммы 300 000, 00 руб</p>
 						</div>
 
-						<div class="col-md-4 block left">
+						<div class="col-md-4 block-custom left">
 							<div class="personal-info bordered">
 								<h3>Личная информация</h3>
 								<span class="dob-ico">25.25.25.25</span>
 								<span class="mail-ico">mail@.ru</span>
 								<span class="phone-ico">+7 (091) 105-11-34</span>
 								<span class="phone-ico">+7 (888) 888-888</span>
-								<span class="place-ico">Россия Беговая 2а</span>
+								<span class="place-ico"><i>Россия Беговая 2а</i></span></span>
 							</div>
 						</div>
 
-						<div class="col-md-5 block right">
+						<div class="col-md-5 block-custom right">
 							<div class="bordered bigger">
 								<h3>Мои адреса</h3>
 								<p>Пожалуйста, укажите основной адрес, который будет использоваться для доставки покупок. Можно указать дополнительные адреса, чтобы в дальнейшем иметь возможность отправлять подарки или получать покупки в офисе.</p>
+                                <br/>
 								<p class="bigger">Ваши адреса перечислены ниже.</p>
 								<p>Не забывайте обновлять адреса в случае их изменения.</p>
 
-								<div>
-									<span class="place-ico">Россия Беговая 2а</span>
+								<div class="inline-elems">
+									<span class="place-ico"><i>Россия Беговая 2а</i></span>
 									<span class="phone-ico">+7 (091) 105-11-34</span>
-									<i id="edit" class="edit-ico"></i>
-									<i id="delete" class="delete-ico"></i>
+                                    <span>
+    									<i id="edit" class="edit-ico"></i>
+    									<i id="delete" class="delete-ico"></i>
+                                    </span>
 								</div>
-							</div>
+                                <div class="inline-elems">
+									<span class="place-ico"><i>Россия Беговая 2а</i></span>
+									<span class="phone-ico">+7 (091) 105-11-34</span>
+                                    <span>
+    									<i id="edit" class="edit-ico"></i>
+    									<i id="delete" class="delete-ico"></i>
+                                    </span>
+								</div>
+                                <a href="#" class="add-new">Добавить новый адрес</a>
+							</div>                            
 						</div>
 					</div>
 
 					<div class="container">
-						<div class="col-md-5 col-md-offset-7 block right">
+						<div class="col-md-5 col-md-offset-7 block-custom right offices">
 							<div class="my-address-office bordered">
-								<h3>Мои адреса</h3>
-								<p>Пожалуйста, укажите основной адрес, который будет использоваться для доставки покупок. Можно указать дополнительные адреса, чтобы в дальнейшем иметь возможность отправлять подарки или получать покупки в офисе.</p>
-								<p class="bigger">Ваши адреса перечислены ниже.</p>
-								<p>Не забывайте обновлять адреса в случае их изменения.</p>
-
-								<div>
-									<span class="place-ico">Россия Беговая 2а</span>
+								<h3>Мои компании</h3>
+								
+								<div class="inline-elems">
+									<span class="place-ico"><i>Россия Беговая 2а</i></span>
 									<span class="phone-ico">+7 (091) 105-11-34</span>
-									<i id="edit" class="edit-ico"></i>
-									<i id="delete" class="delete-ico"></i>
+                                    <span>
+    									<i id="edit" class="edit-ico"></i>
+    									<i id="delete" class="delete-ico"></i>
+                                    </span>
 								</div>
-								<div></div>
+                                <div class="inline-elems">
+									<span class="place-ico"><i>Россия Беговая 2а</i></span>
+									<span class="phone-ico">+7 (091) 105-11-34</span>
+                                    <span>
+    									<i id="edit" class="edit-ico"></i>
+    									<i id="delete" class="delete-ico"></i>
+                                    </span>
+								</div>
+                                <a href="#" class="add-new">Добавить новый адрес</a>
 							</div>
 						</div>
 					</div>
 
-					<div class="container">
+					<div class="container history-data">
 						<div class="col-md-12">
 							<div class="history-box bordered">
 								<h3>История заказов</h3>
@@ -351,7 +370,7 @@
 									<th>Дата</th>
 									<th>Итого</th>
 									<th>Оплата</th>
-									<th>Статус</th>
+									<th class="">Статус</th>
 									<th>Доступность счета</th>
 									<th>&nbsp;</th>
 									</thead>
@@ -360,7 +379,7 @@
 										<td>2014-12-23</td>
 										<td>9 920, 00 руб</td>
 										<td>Оплата наличными при получении</td>
-										<td>В процессе подготовки</td>
+										<td class="status">В процессе подготовки</td>
 										<td><img src="img/pdf-ico.png"></td>
 										<td>
 											<a href="#" class="details">Детали</a>
@@ -372,7 +391,7 @@
 										<td>2014-12-23</td>
 										<td>9 920, 00 руб</td>
 										<td>Оплата наличными при получении</td>
-										<td>В процессе подготовки</td>
+										<td class="status">В процессе подготовки</td>
 										<td><img src="img/pdf-ico.png"></td>
 										<td>
 											<a href="#" class="details">Детали</a>

@@ -25,6 +25,7 @@ p.info-account {
 .phone-ico,
 .place-ico {
     display: block;
+    margin-bottom: 12px;
 }
 .dob-ico:before,
 .mail-ico:before,
@@ -56,6 +57,8 @@ p.info-account {
     width: 11px;
     height: 17px;
     background: url("img/place-ico.png");
+    float: left;
+    margin-right: 6%;
 }
 
 .edit-ico,
@@ -65,10 +68,10 @@ p.info-account {
 
 .bordered {
     border: 1px dashed #cccccc;
-    border-radius: 15px;
+    border-radius: 10px;
     position: relative;
-    padding-top: 15px;
-
+    padding: 21px;
+    padding-bottom: 8px;
 	vertical-align: top;
 
 }
@@ -118,6 +121,7 @@ h2.username {
 .rebuy {
     display: block;
     padding-left: 25%;
+    text-decoration: underline;
 }
 .details {
     background: url("img/dropbox-ico.png") no-repeat left center;
@@ -147,28 +151,105 @@ h2.username {
 .page-heading {
 	margin-bottom: 20px;
 }
-.col-md-5.block {
+.col-md-5.block-custom {
 
 }
-.block {
+.block-custom {
 	width: calc(33.33333% + 31px);
 	width: -webkit-calc(33.33333% + 31px);
 	margin-top: 37px;
 }
-.block.right {
+.block-custom.offices {
+    margin-top: 28px;
+}
+.block-custom.right {
 	width: calc(33.33333% + 116px);
 	width: -webkit-calc(33.33333% + 116px);
 	padding-right: 0;
 	padding-left: 0;
 }
-.block.right.col-md-offset-7 {
+.block-custom.right.col-md-offset-7 {
 	margin-left: calc(58.33333% - 19px);
 	margin-left: -webkit-calc(58.33333% - 19px);
 }
 .container.upper {
 	position: relative;
 }
-.block.left {
+.block-custom.left {
 	margin-left: calc(19% + 19px);
 	margin-left: -webkit-calc(19% + 19px);
+}
+
+.inline-elems:first-of-type {
+    margin-top: 26px;
+}
+.inline-elems span {
+    display: inline-block;
+    vertical-align: top;
+}
+.inline-elems span:last-of-type {
+    float: right;
+}
+.inline-elems span:last-of-type i {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 9px;
+}
+.inline-elems span:last-of-type i:last-of-type {
+    position: relative;
+    left: 12px;
+    margin-top: 9px;
+}
+.inline-elems span:nth-child(2) {
+    margin-left: 54px;
+}
+.add-new {
+    color: #bd0000;
+    display: block;
+    text-align: right;
+    text-decoration: underline;
+}
+
+.history-data {
+    margin-top: 20px;
+}
+.history-data .col-md-12 {
+    padding: 0;
+}
+
+.history-data table {
+    width: 100%;
+}
+.history-data table th {
+    background: #cccccd;
+    text-align: center;
+}
+.history-data table td {
+    text-align: center;
+}
+.history-data table td:last-of-type {
+    text-align: left;
+}
+.history-data .bordered {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.history-data table tr:nth-child(odd) {
+    background: white;
+}
+.history-data table tr:nth-child(even) {
+    background: #f6f6f6;
+}
+.history-data .status {
+    color: #f60030;
+}
+
+.history-data .history-box > span {
+      margin-left: 13px;
+      margin-bottom: 11px;
+      display: block;
+}
+.history-box {
+    margin-bottom: 20px;
 }
