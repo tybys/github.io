@@ -68,11 +68,107 @@ p.info-account {
     border-radius: 15px;
     position: relative;
     padding-top: 15px;
+
+	vertical-align: top;
+
+}
+.bordered.bigger {
+
+}
+.items {
+	display: inline-block;
+	vertical-align: top;
 }
 .bordered h3 {
     background: white;
     position: absolute;
-    top: -33px;
-    left: 33px;
+    top: -29px;
+    left: 22px;
     padding: 0 5%;
+    font-size: 18px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: #474747;
+}
+p {
+    font-size: 12px;
+    line-height: 12px;
+    color: #474747;
+    font-family: "Open Sans";
+}
+p.bigger {
+    font-size: 14px;
+    line-height: 14px;
+}
+span {
+    font-size: 14px;
+    color: #474747;
+    font-weight: 400;
+}
+h2.username {
+	margin-top: 38px;
+	margin-left: 22%;
+    font-size: 18px;
+    color: #474747;
+    border-bottom: 1px solid #474747;
+    padding-bottom: 20px;
+}
+
+.details,
+.rebuy {
+    display: block;
+    padding-left: 25%;
+}
+.details {
+    background: url("img/dropbox-ico.png") no-repeat left center;
+}
+.rebuy {
+    background: url("img/reload-ico.png") no-repeat left center;
+}
+
+.hot-sale {
+	width: calc(25% - 50px);
+	width: -webkit-calc(25% - 50px);
+	position: absolute;
+	top: -102px;
+	left: -13px;
+}
+.hot-sale p {
+
+}
+.hot-sale p i {
+	color: #bd0000;
+}
+.hot-sale p.bigger {
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: bold;
+}
+.page-heading {
+	margin-bottom: 20px;
+}
+.col-md-5.block {
+
+}
+.block {
+	width: calc(33.33333% + 31px);
+	width: -webkit-calc(33.33333% + 31px);
+	margin-top: 37px;
+}
+.block.right {
+	width: calc(33.33333% + 116px);
+	width: -webkit-calc(33.33333% + 116px);
+	padding-right: 0;
+	padding-left: 0;
+}
+.block.right.col-md-offset-7 {
+	margin-left: calc(58.33333% - 19px);
+	margin-left: -webkit-calc(58.33333% - 19px);
+}
+.container.upper {
+	position: relative;
+}
+.block.left {
+	margin-left: calc(19% + 19px);
+	margin-left: -webkit-calc(19% + 19px);
 }
