@@ -3,7 +3,7 @@
 <head>
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
     <style>
         .out {
             display: none;
@@ -36,6 +36,32 @@
             <div class="row">
                 <form class="col s12">
                     <div class="row">
+                        <!--                        -->
+                        <div class="input-field col s2">
+                            <i class="mdi-action-account-box prefix"></i>
+                            <input id="LkuGraph" type="text" class="validate chart">
+                            <label for="LkuGraph">lku</label>
+                        </div>
+                        <div class="input-field col s2">
+                            <i class="mdi-action-account-circle prefix"></i>
+                            <input id="LkfGraph" type="text" class="validate chart">
+                            <label for="LkfGraph">lkf</label>
+                        </div>
+                        <div class="input-field col s2">
+                            <i class="mdi-action-android prefix"></i>
+                            <input id="RbGraph" type="text" class="validate chart">
+                            <label for="RbGraph">rb</label>
+                        </div>
+                        <div class="input-field col s2">
+                            <i class="mdi-device-now-widgets prefix"></i>
+                            <input id="RestGraph" type="text" class="validate chart">
+                            <label for="RestGraph">rest</label>
+                        </div>
+                        <div>
+                            <a class="waves-effect waves-light btn" id="GraphCollector">Stuff</a>
+                        </div>
+                        <!--                        -->
+                        
                         <div class="input-field col s12">
                             <textarea id="lku" class="materialize-textarea"></textarea>
                             <label for="lku">lku</label>
@@ -51,27 +77,6 @@
                         <div class="input-field col s12">
                             <textarea id="rest" class="materialize-textarea"></textarea>
                             <label for="rest">rest</label>
-                        </div>
-
-                        <div class="input-field col s2 out">
-                            <i class="mdi-action-account-box prefix"></i>
-                            <input id="icon_prefix" type="text" class="validate chart">
-                            <label for="icon_prefix">lku</label>
-                        </div>
-                        <div class="input-field col s2 out">
-                            <i class="mdi-action-account-circle prefix"></i>
-                            <input id="icon_prefix" type="text" class="validate chart">
-                            <label for="icon_prefix">lkf</label>
-                        </div>
-                        <div class="input-field col s2 out">
-                            <i class="mdi-action-android prefix"></i>
-                            <input id="icon_prefix" type="text" class="validate chart">
-                            <label for="icon_prefix">rb</label>
-                        </div>
-                        <div class="input-field col s2 out">
-                            <i class="mdi-device-now-widgets prefix"></i>
-                            <input id="icon_prefix" type="text" class="validate chart">
-                            <label for="icon_prefix">rest</label>
                         </div>
                     </div>
                 </form>
@@ -95,7 +100,7 @@
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
-<script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+<script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
 <script>
     (function ($)
     {
@@ -127,25 +132,43 @@
                 }
             });
 
+            // graph array creation
+            $("#GraphCollector").on("click", function () 
+            { 
+                var partner = $("#LkuGraph").val();
+                var my = $("#LkfGraph").val();
+                var main = $("#RbGraph").val();
+                var rest = $("#RestGraph").val();
+                
+                GraphArray = new Array(partner, my, main, rest);
+                graph();
+            });
+           
 
             // chart
-            new Chartist.Bar('.ct-chart', {
-                labels: ['lku', 'lkf', 'rb', 'rest'],
-                series: [
-                    [1, 2, 3, 4.5]
-                ]
-            }, {
-                low: 0,
-                scaleMinSpace: 1,
-                high: 10
-            }).on('draw', function(data) {
-                if (data.type === 'bar')
-                {
-                    data.element.attr({
-                        style: 'stroke-width: 30px'
-                    });
-                }
-            });
+            function graph(event) {
+                new Chartist.Bar('.ct-chart', {
+                    labels: ['lku', 'lkf', 'rb', 'rest'],
+                    series: [
+                        //[1, 2, 3, 4.5]                       
+                        GraphArray
+                    ]
+                }, {
+                    low: 0,
+                    scaleMinSpace: 1,
+                    high: 10
+                }).on('draw', function(data) {
+                    if (data.type === 'bar')
+                    {
+                        data.element.attr({
+                            style: 'stroke-width: 30px'
+                        });
+                    }
+                });
+            }
+            
+            
+            
 
             // chart
 //            $(".chart").change(function ()
