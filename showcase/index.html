@@ -13,6 +13,8 @@
     <link href="less/app.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick.css" />
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -559,7 +561,7 @@
             </div>
         </div><!--auth-->
 
-        <div class="row categories collections" hidden>
+        <div class="row categories collections">
             <div class="container">
                 <div class="col-md-2">
                     <ul>
@@ -578,109 +580,305 @@
                 </div>
                 <div class="col-md-10">
                     <div class="carousel" id="carous">
-                        <div>
-                            <img src="images/temp/carous1.jpg" width="440" height="440" />
-                        </div>
-                        <div>
-                            <img src="images/temp/carous2.jpg" width="440" height="440" />
-                        </div>
-                        <div>
-                            <img src="images/temp/carous1.jpg" width="440" height="440" />
-                        </div>
+                        <div><img src="images/temp/engine1.jpg"></div>
+                        <div><img src="images/temp/engine2.jpg"></div>
+                        <div><img src="images/temp/engine3.jpg"></div>
+                        <div><img src="images/temp/wh.jpg"></div>
+                        <div><img src="images/temp/wh2.jpg"></div>
+                        <div><img src="images/temp/wh3.png"></div>
+                        <div><img src="images/temp/tat1.jpg"></div>
+                        <div><img src="images/temp/tat2.jpg"></div>
+                        <div><img src="images/temp/tat3.jpg"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row most-popular" hidden>
+        <div class="row most-popular">
             <div class="container">
                 <div class="col-md-2">
                     <div class="widget">
                         <h3>Most Popular!</h3>
-                        <a href="#">Показать все <span class="widget-category">популярные предложения</span></a>
+                        <a href="#">Показать все <span class="widget-category"><i>популярные предложения</i></span></a>
                     </div>
                 </div>
                 <div class="col-md-10">
-                    <div class="carousel" id="carous2">
+                    <div class="carouse2" id="carous2">
                         <div>
+                            <h4>
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     width="16.025px" height="15.384px" viewBox="0 0 16.025 15.384" enable-background="new 0 0 16.025 15.384" xml:space="preserve">
+                                <path id="fav" fill="none" stroke="#21202C" stroke-miterlimit="10" d="M9.023,1.155l1.455,2.949c0.162,0.329,0.476,0.556,0.838,0.609
+                                    l3.254,0.473c0.913,0.133,1.278,1.255,0.617,1.899L12.833,9.38c-0.262,0.256-0.382,0.624-0.32,0.985l0.556,3.241
+                                    c0.156,0.909-0.798,1.603-1.615,1.173l-2.911-1.53c-0.324-0.17-0.712-0.17-1.036,0l-2.911,1.53
+                                    c-0.817,0.429-1.771-0.264-1.615-1.173l0.556-3.241c0.062-0.361-0.058-0.73-0.32-0.985L0.863,7.084
+                                    C0.202,6.44,0.567,5.319,1.48,5.186l3.254-0.473C5.096,4.66,5.41,4.433,5.572,4.104l1.455-2.949
+                                    C7.435,0.328,8.615,0.328,9.023,1.155z"/>
+                                </svg>
+                                Мандолина
+                            </h4>
                             <img src="images/temp/carous2_1.jpg" />
+                            <div class="price-panel">
+                                <span class="old-price">99 999p</span>
+                                <span class="sale">
+                                    <i>-50%</i>
+                                    <i>6 дн. 22:02:48</i>
+                                </span>
+                                <span class="actual-price">45 000р</span>
+                            </div>
                         </div>
                         <div>
+                            <h4>
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     width="16.025px" height="15.384px" viewBox="0 0 16.025 15.384" enable-background="new 0 0 16.025 15.384" xml:space="preserve">
+                                <path id="fav" fill="none" stroke="#21202C" stroke-miterlimit="10" d="M9.023,1.155l1.455,2.949c0.162,0.329,0.476,0.556,0.838,0.609
+                                    l3.254,0.473c0.913,0.133,1.278,1.255,0.617,1.899L12.833,9.38c-0.262,0.256-0.382,0.624-0.32,0.985l0.556,3.241
+                                    c0.156,0.909-0.798,1.603-1.615,1.173l-2.911-1.53c-0.324-0.17-0.712-0.17-1.036,0l-2.911,1.53
+                                    c-0.817,0.429-1.771-0.264-1.615-1.173l0.556-3.241c0.062-0.361-0.058-0.73-0.32-0.985L0.863,7.084
+                                    C0.202,6.44,0.567,5.319,1.48,5.186l3.254-0.473C5.096,4.66,5.41,4.433,5.572,4.104l1.455-2.949
+                                    C7.435,0.328,8.615,0.328,9.023,1.155z"/>
+                                </svg>
+                                Мандолина
+                            </h4>
                             <img src="images/temp/carous2_2.jpg" />
+                            <div class="price-panel">
+                                <span class="old-price">99 999p</span>
+                                <span class="sale">
+                                    <i>-100%</i>
+                                    <i>6 дн. 22:02:48</i>
+                                </span>
+                                <span class="actual-price">45 000р</span>
+                            </div>
                         </div>
                         <div>
+                            <h4>
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     width="16.025px" height="15.384px" viewBox="0 0 16.025 15.384" enable-background="new 0 0 16.025 15.384" xml:space="preserve">
+                                <path id="fav" fill="none" stroke="#21202C" stroke-miterlimit="10" d="M9.023,1.155l1.455,2.949c0.162,0.329,0.476,0.556,0.838,0.609
+                                    l3.254,0.473c0.913,0.133,1.278,1.255,0.617,1.899L12.833,9.38c-0.262,0.256-0.382,0.624-0.32,0.985l0.556,3.241
+                                    c0.156,0.909-0.798,1.603-1.615,1.173l-2.911-1.53c-0.324-0.17-0.712-0.17-1.036,0l-2.911,1.53
+                                    c-0.817,0.429-1.771-0.264-1.615-1.173l0.556-3.241c0.062-0.361-0.058-0.73-0.32-0.985L0.863,7.084
+                                    C0.202,6.44,0.567,5.319,1.48,5.186l3.254-0.473C5.096,4.66,5.41,4.433,5.572,4.104l1.455-2.949
+                                    C7.435,0.328,8.615,0.328,9.023,1.155z"/>
+                                </svg>
+                                Мандолина
+                            </h4>
                             <img src="images/temp/carous2_3.jpg" />
+                            <div class="price-panel">
+                                <span class="old-price">99 999p</span>
+                                <span class="sale">
+                                    <i>5%</i>
+                                    <i>6 дн. 22:02:48</i>
+                                </span>
+                                <span class="actual-price">45 000р</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row most-actual" hidden>
-            <div class="container" style="background: url('images/temp/most-actual-background.jpg') no-repeat">
-                <div class="col-md-2">
-                    <div class="widget">
-                        <h3>Пора кататься!</h3>
-                        <a href="#">Показать все<span class="widget-category">велосипеды</span></a>
+        <div class="row most-actual">
+            <div class="background" id="background" data-type="background" data-speed="10">
+                <div class="container" style="background-color: transparent">
+                    <div class="col-md-2">
+                        <div class="widget colored-shadowed">
+                            <h3>Пора кататься!</h3>
+                            <div class="dmd"></div>
+                            <a href="#">Показать все<span class="widget-category">велосипеды</span></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-10">
-                    <h2>Сколько людей &mdash; столько велосипедов</h2>
-                    <p>Магазины ROBOKASSA предлагают более 800 велосипедов</p>
-                    <p>27 всемироноизвестных производителей</p>
-                    <p>Все виды рам</p>
+                    <div class="col-md-10">
+                        <div class="widget-right">
+                            <h2 class="colored blue">Сколько людей &mdash; столько велосипедов</h2><h2 class="colored blue">Сколько людей &mdash; столько велосипедов Сколько людей &mdash; столько велосипедов Сколько людей &mdash; столько велосипедов</h2>
+                            <p class="colored">
+                                <span>Магазины ROBOKASSA предлагают более 800 велосипедов Магазины ROBOKASSA предлагают более 800 велосипедов Магазины ROBOKASSA предлагают более 800 велосипедов Магазины ROBOKASSA предлагают более 800 велосипедов</span>
+                            </p>
+                            <p class="colored">
+                                <span>Магазины ROBOKASSA предлагают более 800 велосипедов</span>
+                            </p>
+                            <p class="colored"><span>27 всемироноизвестных производителей</span></p>
+                            <p class="colored"><span>Все виды рам</span></p>
+                        </div>
 
-                    <div class="items">
-                        <div class="item">
-                            <h4>Велосипед шерлока</h4>
-                            <img src="images/temp/most-actual1.jpg" />
-                            <div class="price-panel">
-                                <span class="old-price">99 999p</span>
+                        <div class="items">
+                            <div class="item">
+                                <h4>Велосипед шерлока</h4>
+                                <img src="images/temp/most-actual1.jpg" />
+                                <div class="price-panel">
+                                    <span class="old-price">99 999p</span>
                                 <span class="sale">
-                                    -50% <i>6 дн. 22:02:48</i>
+                                    <i>-50%</i>
+                                    <i>6 дн. 22:02:48</i>
                                 </span>
-                                <span class="actual-price">45 000р</span>
+                                    <span class="actual-price">45 000р</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <h4>Велосипед шерлока</h4>
-                            <img src="images/temp/most-actual2.jpg" />
-                            <div class="price-panel">
-                                <span class="old-price">99 999p</span>
+                            <div class="item">
+                                <h4>Велосипед шерлока</h4>
+                                <img src="images/temp/most-actual2.jpg" />
+                                <div class="price-panel">
+                                    <span class="old-price">99 999p</span>
                                 <span class="sale">
-                                    -50% <i>6 дн. 22:02:48</i>
+                                    <i>-50%</i>
+                                    <i>6 дн. 22:02:48</i>
                                 </span>
-                                <span class="actual-price">45 000р</span>
+                                    <span class="actual-price">45 000р</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <h4>Велосипед шерлока</h4>
-                            <img src="images/temp/most-actual3.jpg" />
-                            <div class="price-panel">
-                                <span class="old-price">99 999p</span>
+                            <div class="item">
+                                <h4>Велосипед шерлока</h4>
+                                <img src="images/temp/most-actual3.jpg" />
+                                <div class="price-panel">
+                                    <span class="old-price">99 999p</span>
                                 <span class="sale">
-                                    -50% <i>6 дн. 22:02:48</i>
+                                    <i>-50%</i>
+                                    <i>6 дн. 22:02:48</i>
                                 </span>
-                                <span class="actual-price">45 000р</span>
+                                    <span class="actual-price">45 000р</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <h4>Велосипед шерлока</h4>
-                            <img src="images/temp/most-actual1.jpg" />
-                        </div>
-                        <div class="item">
-                            <h4>Велосипед шерлока</h4>
-                            <img src="images/temp/most-actual2.jpg" />
-                        </div>
-                        <div class="item empty">
-                            <a href="#">
-                                <span>покажите</span>
-                                <span>больше велосипедов</span>
-                            </a>
+                            <div class="item">
+                                <h4>Велосипед шерлока</h4>
+                                <img src="images/temp/most-actual1.jpg" />
+                                <div class="price-panel">
+                                    <span class="old-price">99 999p</span>
+                                <span class="sale">
+                                    <i>-50%</i>
+                                    <i>6 дн. 22:02:48</i>
+                                </span>
+                                    <span class="actual-price">45 000р</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h4>Велосипед шерлока</h4>
+                                <img src="images/temp/most-actual2.jpg" />
+                                <div class="price-panel">
+                                    <span class="old-price">99 999p</span>
+                                <span class="sale">
+                                    <i>-50%</i>
+                                    <i>6 дн. 22:02:48</i>
+                                </span>
+                                    <span class="actual-price">45 000р</span>
+                                </div>
+                            </div>
+                            <div class="item empty">
+                                <a href="#">
+                                    <span>покажите</span>
+                                    <span>больше велосипедов</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+<style>
+    #background {
+        background: url("images/temp/most-actual-background.jpg") 50% 0 repeat fixed; min-height: 1000px;
+        background-repeat: no-repeat;
+        background-size: 100% 850px;
+        height: 1000px;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1920px;
+        position: relative;
+    }
+    #background h1 {
+        height: 458px;
+        position: absolute;
+        text-align: center;
+        top: 150px;
+        width: 100%;
+    }
+
+
+</style>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.0.6/jquery.mousewheel.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    $(function ()
+    {
+        $window = $(window);
+       $("div[data-type='background']").each(function ()
+       {
+           var $bgobj = $(this);
+           $(window).scroll(function ()
+           {
+               var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+               var coords = '50% ' + yPos + 'px';
+               $bgobj.css({backgroundPosition: coords});
+           });
+       });
+    });
+</script>
+<!--script>
+    ;(function ($) {
+        'use strict'
+
+        $.srSmoothscroll = function (options) {
+
+            var self = $.extend({
+                step: 55,
+                speed: 400,
+                ease: 'swing',
+                target: $('body'),
+                container: $(window)
+            }, options || {})
+
+            // private fields & init
+            var container = self.container
+                    , top = 0
+                    , step = self.step
+                    , viewport = container.height()
+                    , wheel = false
+
+            var target
+            if (self.target.selector == 'body') {
+                target = (navigator.userAgent.indexOf('AppleWebKit') !== -1) ? self.target : $('html')
+            } else {
+                target = container
+            }
+
+            // events
+            self.target.mousewheel(function (event, delta) {
+
+                wheel = true
+
+                if (delta < 0) // down
+                    top = (top+viewport) >= self.target.outerHeight(true) ? top : top+=step
+
+                else // up
+                    top = top <= 0 ? 0 : top-=step
+
+                target.stop().animate({scrollTop: top}, self.speed, self.ease, function () {
+                    wheel = false
+                })
+
+                return false
+            })
+
+            container
+                    .on('resize', function (e) {
+                        viewport = container.height()
+                    })
+                    .on('scroll', function (e) {
+                        if (!wheel)
+                            top = container.scrollTop()
+                    })
+
+        }
+    })(jQuery);
+
+
+    $(function () {
+        $.srSmoothscroll({
+            target: $('body')
+            //container: $('#container1')
+        })
+    })
+
+</script-->
+
+
         </div>
 
         <div class="row subscribe" hidden>
@@ -749,7 +947,7 @@
                     <dl>
                         <dt>Покупателям</dt>
                         <dd>Покупки на витрине</dd>
-                        <dd>Доставка и оплата</d>d
+                        <dd>Доставка и оплата</dd>
                         <dd>Магазины витрины</dd>
                         <dd>Возврат</dd>
                         <dd>Гарантия</dd>
@@ -781,13 +979,11 @@
         </div>
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script type="text/javascript" src="http://kenwheeler.github.io/slick/slick/slick.js"></script>
     <script>
         $(function () {
-            var shares = $("#carous div").length;
             var AllShares = $("<a />", { "href": "#", "class": "all-shares", text: "Посмотреть все акции" });
 
             $(".navbar-right").hover(function () {
@@ -799,23 +995,31 @@
             });
 
             $('#carous').slick({
-                slidesToShow: 2,
+                slidesToShow: 1,
+                infinite: false,
                 slidesToScroll: 1,
                 autoplay: false,
                 autoplaySpeed: 2000,
                 dots: true,
-                arrows: false
+                arrows: false,
+                variableWidth: true
             });
-            $(".slick-dots").append("<span>" + shares + "&nbsp;действующих акций&nbsp;" + AllShares + "</span>")
+            var shares = $("#carous div.slick-slide").length;
+            $(".slick-dots").append("<span class='shares'>" + shares + "&nbsp;действующих акций&nbsp; <a href='#'>Посмотреть все</a>"+"</span>");
 
             $('#carous2').slick({
-                slidesToShow: 3,
+                slidesToShow: 1,
                 slidesToScroll: 1,
                 autoplay: false,
                 dots: true,
-                arrows: true
+                arrows: false,
+                infinite: false,
+                variableWidth: true
             });
+            var shares2 = $("#carous2 div.slick-slide").length;
+            $("#carous2 .slick-dots").append("<span class='shares'>" + shares2 + "&nbsp;самых популярных предложений с бешенными скидками&nbsp;</span>");
 
+            // funny
             $(".navbar-brand").hover(function () {
                 $(".st7").css("opacity", 0.5)
                 $(".st10, .st11, .st12, .st13, .st14").fadeOut();
