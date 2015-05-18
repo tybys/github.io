@@ -12,6 +12,19 @@
 @BtnGrayText: #383C47;
 @GrayText: #383C47;
 
+.container.without-white {
+	background-color: transparent
+}
+h2,
+h3 {
+	font-size: 32px;
+	font-weight: 300;
+}
+
+.white-text {
+	color: white;
+}
+
 .brand {
     g:last-of-type {
         path {
@@ -291,7 +304,7 @@
         }
     }
     &.most-actual {
-		position: relative;
+
 //        background: url('../images/temp/most-actual-background.jpg') no-repeat;
 //        background-position: top center !important;
 //        background-size: 100% 560px !important;
@@ -309,7 +322,7 @@
             width: ~"-webkit-calc(100% - 200px)";
         }
         .container {
-
+			position: relative;
         }
     }
     &.categories {
@@ -370,7 +383,34 @@
     }
     &.subscribe {
         background: #21202C;
+		.col-md-10 {
+			width: ~"calc(100% - 200px)";
+			width: ~"-webkit-calc(100% - 200px)";
+		}
+		.col-md-2 {
+			width: ~"calc(16.66666667% - 107.490px)";
+			width: ~"-webkit-calc(16.66666667% - 107.490px)";
+			min-width: 200px;
+			padding: 0;
+		}
     }
+	&.footer {
+		.col-md-10 {
+			width: ~"calc(100% - 200px)";
+			width: ~"-webkit-calc(100% - 200px)";
+			dl {
+				display: block;
+				float: left;
+				width: 25%;
+			}
+		}
+		.col-md-2 {
+			width: ~"calc(16.66666667% - 107.490px)";
+			width: ~"-webkit-calc(16.66666667% - 107.490px)";
+			min-width: 200px;
+			padding: 0;
+		}
+	}
     &.without-white {
         .container {
             background: none;
@@ -396,8 +436,57 @@ p {
     font-weight: 300;
     color: @GrayText;
 }
-a.with-cross {
-    position: relative;
+
+a {
+	&.with-cross {
+		position: relative;
+	}
+	&.stair {
+		i {
+			color: inherit;
+			font-size: inherit;
+		}
+		font-size: 16px;
+		font-weight: 300;
+		&:hover {
+			text-decoration: none;
+		}
+		span {
+			color: white;
+			display: block;
+			i {
+				padding: 4px 4px 7px 7px;
+			}
+			&:first-of-type {
+				margin-bottom: 15px;
+			}
+			&:last-of-type {
+				i {
+					position: relative;
+					&:after {
+						content: "";
+						width: 100%;
+						height: 5px;
+						background: url("../images/shadow-links.svg") no-repeat;
+						background-size: 100% 5px;
+						position: absolute;
+						bottom: -5px;
+						left: 0;
+					}
+				}
+			}
+			&.blue {
+				i {
+					background: @blue;
+				}
+			}
+			&.red {
+				i {
+					background: #EB0028;
+				}
+			}
+		}
+	}
 }
 
 // price panels
@@ -417,7 +506,7 @@ a.with-cross {
     border-top: 1px solid #BCCBD4;
     background: url("../images/item-vert-shadow.png") no-repeat 0 1px;
     position: absolute;
-    bottom: 5px;
+    bottom: 0;
     left: 0;
     width: 100%;
     padding: 0 12px;
@@ -478,6 +567,16 @@ a.with-cross {
 
 // !IMPORTANT rules
 .items {
+	&.blue {
+		h4 {
+			background-color: @blue;
+		}
+	}
+	&.orange {
+		h4 {
+			background-color: #FF931E;
+		}
+	}
     .item {
 		svg {
 			position: absolute;
@@ -495,7 +594,7 @@ a.with-cross {
         margin-bottom: 40px;
         min-height: 350px;
         h4 {
-			background: @blue;
+			//background: @blue;
             font-size: 16px;
 			line-height: 18px;
 			min-height: 40px;
@@ -510,7 +609,7 @@ a.with-cross {
         }
 
         &.empty {
-            //background: ;
+            background: transparent;
         }
     }
 }
@@ -545,6 +644,11 @@ a.with-cross {
                 }
             }
         }
+		&.white-text {
+			h3 {
+				color: white;
+			}
+		}
         &.colored-shadowed {
             //background: purple;
             .dmd {
@@ -991,4 +1095,10 @@ form {
     &.sprite-vk {
         .stitches-sprite(-9px, -125px, 41px, 40px);
     }
+}
+
+
+p {
+	line-height: 18px;
+	font-size: 16px;
 }

@@ -1,3 +1,14 @@
+.container.without-white {
+  background-color: transparent;
+}
+h2,
+h3 {
+  font-size: 32px;
+  font-weight: 300;
+}
+.white-text {
+  color: white;
+}
 @media all and (max-width: 1075px) {
   .navbar-right a span {
     display: none;
@@ -201,9 +212,6 @@
   width: calc(100% - 200px);
   width: -webkit-calc(100% - 200px);
 }
-.row.most-actual {
-  position: relative;
-}
 .row.most-actual .col-md-2 {
   width: calc(16.66666667% - 107.490px);
   width: -webkit-calc(16.66666667% - 107.490px);
@@ -213,6 +221,9 @@
 .row.most-actual .col-md-10 {
   width: calc(100% - 200px);
   width: -webkit-calc(100% - 200px);
+}
+.row.most-actual .container {
+  position: relative;
 }
 .row.categories .col-md-10 {
   width: calc(100% - 200px);
@@ -259,6 +270,31 @@
 .row.subscribe {
   background: #21202C;
 }
+.row.subscribe .col-md-10 {
+  width: calc(100% - 200px);
+  width: -webkit-calc(100% - 200px);
+}
+.row.subscribe .col-md-2 {
+  width: calc(16.66666667% - 107.490px);
+  width: -webkit-calc(16.66666667% - 107.490px);
+  min-width: 200px;
+  padding: 0;
+}
+.row.footer .col-md-10 {
+  width: calc(100% - 200px);
+  width: -webkit-calc(100% - 200px);
+}
+.row.footer .col-md-10 dl {
+  display: block;
+  float: left;
+  width: 25%;
+}
+.row.footer .col-md-2 {
+  width: calc(16.66666667% - 107.490px);
+  width: -webkit-calc(16.66666667% - 107.490px);
+  min-width: 200px;
+  padding: 0;
+}
 .row.without-white .container {
   background: none;
 }
@@ -282,6 +318,46 @@ p {
 a.with-cross {
   position: relative;
 }
+a.stair {
+  font-size: 16px;
+  font-weight: 300;
+}
+a.stair i {
+  color: inherit;
+  font-size: inherit;
+}
+a.stair:hover {
+  text-decoration: none;
+}
+a.stair span {
+  color: white;
+  display: block;
+}
+a.stair span i {
+  padding: 4px 4px 7px 7px;
+}
+a.stair span:first-of-type {
+  margin-bottom: 15px;
+}
+a.stair span:last-of-type i {
+  position: relative;
+}
+a.stair span:last-of-type i:after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: url("../images/shadow-links.svg") no-repeat;
+  background-size: 100% 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+a.stair span.blue i {
+  background: #0070cd;
+}
+a.stair span.red i {
+  background: #EB0028;
+}
 .carouse2 .slick-slide {
   position: relative;
   width: 280px;
@@ -296,7 +372,7 @@ a.with-cross {
   border-top: 1px solid #BCCBD4;
   background: url("../images/item-vert-shadow.png") no-repeat 0 1px;
   position: absolute;
-  bottom: 5px;
+  bottom: 0;
   left: 0;
   width: 100%;
   padding: 0 12px;
@@ -349,6 +425,12 @@ a.with-cross {
   float: right;
   margin-top: 10px;
 }
+.items.blue h4 {
+  background-color: #0070cd;
+}
+.items.orange h4 {
+  background-color: #FF931E;
+}
 .items .item {
   position: relative;
   width: 280px;
@@ -366,7 +448,6 @@ a.with-cross {
   fill: white;
 }
 .items .item h4 {
-  background: #0070cd;
   font-size: 16px;
   line-height: 18px;
   min-height: 40px;
@@ -378,6 +459,9 @@ a.with-cross {
 .items .item h4 span {
   display: block;
   padding: 14px 0 14px 0;
+}
+.items .item.empty {
+  background: transparent;
 }
 .col-md-2 .widget {
   margin-top: 45px;
@@ -407,6 +491,9 @@ a.with-cross {
 .col-md-2 .widget a span i {
   color: inherit;
   border-bottom: 1px solid;
+}
+.col-md-2 .widget.white-text h3 {
+  color: white;
 }
 .col-md-2 .widget.colored-shadowed .dmd {
   width: 100%;
@@ -715,4 +802,8 @@ form button[type="submit"] {
   background-position: -9px -125px;
   width: 41px;
   height: 40px;
+}
+p {
+  line-height: 18px;
+  font-size: 16px;
 }
