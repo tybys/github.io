@@ -708,10 +708,10 @@ a {
     margin-top: 54px;
     h2.colored {
 		span {
-			background-color: black;
+			background-color: @blue;
 			color: white;
 			padding: 0.02em;
-			box-shadow:0 0 0 0.5em black;
+			box-shadow:0 0 0 0.5em @blue;
 			span {
 				position: relative;
 			}
@@ -733,11 +733,32 @@ a {
             left: 0;
         }
         &.blue {
-            color: white;
-            background: @blue;
+//            color: white;
+//            background: @blue;
         }
     }
+
+	h2,p {
+		margin: 4em;
+		.w1 {
+			background-color: black;
+			color: white;
+			padding: 0.02em;
+			box-shadow:0 0 0 0.5em black;
+			.w2 {
+				position: relative;
+			}
+		}
+	}
+
     p.colored {
+		span {
+			padding: 0.02em;
+			box-shadow:0 0 0 0.5em white;
+			span {
+				position: relative;
+			}
+		}
         margin: 5px 0;
         margin-bottom: 17px;
         line-height: 21px;
@@ -751,11 +772,12 @@ a {
             }
         }
         span {
-            font-size: 16px;
-            color: @GrayText;
-            background: white;
-            padding: 4px 4px 7px 7px;
-            display: inline;
+			background: white;
+//            font-size: 16px;
+//            color: @GrayText;
+//            background: white;
+//            padding: 4px 4px 7px 7px;
+//            display: inline;
         }
 //        &:first-of-type {
 //            &:before {
