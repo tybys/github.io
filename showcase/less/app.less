@@ -291,6 +291,7 @@
         }
     }
     &.most-actual {
+		position: relative;
 //        background: url('../images/temp/most-actual-background.jpg') no-repeat;
 //        background-position: top center !important;
 //        background-size: 100% 560px !important;
@@ -478,16 +479,34 @@ a.with-cross {
 // !IMPORTANT rules
 .items {
     .item {
+		svg {
+			position: absolute;
+			top: 15px;
+			left: 10px;
+			path {
+				fill: white;
+			}
+		}
         position: relative;
+
         width: 280px;
         float: left;
         margin-right: 40px;
         margin-bottom: 40px;
         min-height: 350px;
         h4 {
+			background: @blue;
             font-size: 16px;
-            color: #005FC4;
+			line-height: 18px;
+			min-height: 40px;
+			margin: 0;
+            color: white;
             font-weight: 300;
+			padding-left: 35px;
+			span {
+				display: block;
+				padding: 14px 0 14px 0;
+			}
         }
 
         &.empty {

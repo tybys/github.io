@@ -201,6 +201,9 @@
   width: calc(100% - 200px);
   width: -webkit-calc(100% - 200px);
 }
+.row.most-actual {
+  position: relative;
+}
 .row.most-actual .col-md-2 {
   width: calc(16.66666667% - 107.490px);
   width: -webkit-calc(16.66666667% - 107.490px);
@@ -354,10 +357,27 @@ a.with-cross {
   margin-bottom: 40px;
   min-height: 350px;
 }
+.items .item svg {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+.items .item svg path {
+  fill: white;
+}
 .items .item h4 {
+  background: #0070cd;
   font-size: 16px;
-  color: #005FC4;
+  line-height: 18px;
+  min-height: 40px;
+  margin: 0;
+  color: white;
   font-weight: 300;
+  padding-left: 35px;
+}
+.items .item h4 span {
+  display: block;
+  padding: 14px 0 14px 0;
 }
 .col-md-2 .widget {
   margin-top: 45px;
