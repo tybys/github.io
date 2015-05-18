@@ -704,6 +704,22 @@ a {
     }
 }
 
+h1.suka {
+	//margin: 4em; 
+}
+
+h1.suka .w1 {
+	background-color: red;
+	color: white;
+	padding: 0.02em;
+	box-shadow:0 0 0 0.5em red;
+}
+h1.suka .w2 {
+	position: relative;
+	font-size: 32px;
+	font-weight: 300;
+}
+
 .widget-right {
     margin-top: 54px;
     h2.colored {
@@ -717,11 +733,7 @@ a {
 			}
 		}
         font-size: 32px;
-        line-height: 70px;
         font-weight: 300;
-//        padding: 12px 14px 15px 9px;
-//        display: inline;
-//        position: relative;
         &:after {
             content: "";
             width: 100%;
@@ -733,18 +745,30 @@ a {
             left: 0;
         }
         &.blue {
-//            color: white;
-//            background: @blue;
+
         }
     }
 
-	h2,p {
-		margin: 4em;
+	h2 {
+		&.colored {
+			margin: 4em;
+			.w1 {
+				color: white;
+				padding: 0.02em;
+				.w2 {
+					position: relative;
+				}
+			}
+			&.blue {
+				.w1 {
+					background-color: @blue;
+					box-shadow:0 0 0 0.5em @blue;
+				}
+			}
+		}
+
 		.w1 {
-			background-color: black;
-			color: white;
-			padding: 0.02em;
-			box-shadow:0 0 0 0.5em black;
+
 			.w2 {
 				position: relative;
 			}
