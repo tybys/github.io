@@ -12,6 +12,20 @@
 @BtnGrayText: #383C47;
 @GrayText: #383C47;
 
+
+.custom-title {
+	border-left: 4px solid red;
+	//padding: 4px 4px 7px 7px;
+	padding: 0;
+	h2 {
+		background: black;
+		display: inline;
+		color: white;
+	}
+
+
+}
+
 .container.without-white {
 	background-color: transparent
 }
@@ -395,19 +409,24 @@ h3 {
 		}
     }
 	&.footer {
+		background: white;
 		.col-md-10 {
-			width: ~"calc(100% - 200px)";
-			width: ~"-webkit-calc(100% - 200px)";
+			width: ~"calc(100% - 290px)";
+			width: ~"-webkit-calc(100% - 290px)";
 			dl {
 				display: block;
 				float: left;
 				width: 25%;
+				a {
+					color: @GrayText;
+				}
 			}
 		}
 		.col-md-2 {
-			width: ~"calc(16.66666667% - 107.490px)";
-			width: ~"-webkit-calc(16.66666667% - 107.490px)";
+			width: ~"calc(16.66666667% + 131px)";
+			width: ~"-webkit-calc(16.66666667% + 131px)";
 			min-width: 200px;
+			max-width: 290px;
 			padding: 0;
 		}
 	}
@@ -688,12 +707,21 @@ a {
 .widget-right {
     margin-top: 54px;
     h2.colored {
+		span {
+			background-color: black;
+			color: white;
+			padding: 0.02em;
+			box-shadow:0 0 0 0.5em black;
+			span {
+				position: relative;
+			}
+		}
         font-size: 32px;
         line-height: 70px;
         font-weight: 300;
-        padding: 12px 14px 15px 9px;
-        display: inline;
-        position: relative;
+//        padding: 12px 14px 15px 9px;
+//        display: inline;
+//        position: relative;
         &:after {
             content: "";
             width: 100%;

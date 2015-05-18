@@ -1,3 +1,12 @@
+.custom-title {
+  border-left: 4px solid red;
+  padding: 0;
+}
+.custom-title h2 {
+  background: black;
+  display: inline;
+  color: white;
+}
 .container.without-white {
   background-color: transparent;
 }
@@ -280,19 +289,26 @@ h3 {
   min-width: 200px;
   padding: 0;
 }
+.row.footer {
+  background: white;
+}
 .row.footer .col-md-10 {
-  width: calc(100% - 200px);
-  width: -webkit-calc(100% - 200px);
+  width: calc(100% - 290px);
+  width: -webkit-calc(100% - 290px);
 }
 .row.footer .col-md-10 dl {
   display: block;
   float: left;
   width: 25%;
 }
+.row.footer .col-md-10 dl a {
+  color: #383c47;
+}
 .row.footer .col-md-2 {
-  width: calc(16.66666667% - 107.490px);
-  width: -webkit-calc(16.66666667% - 107.490px);
+  width: calc(16.66666667% + 131px);
+  width: -webkit-calc(16.66666667% + 131px);
   min-width: 200px;
+  max-width: 290px;
   padding: 0;
 }
 .row.without-white .container {
@@ -530,8 +546,14 @@ a.stair span.red i {
   font-size: 32px;
   line-height: 70px;
   font-weight: 300;
-  padding: 12px 14px 15px 9px;
-  display: inline;
+}
+.widget-right h2.colored span {
+  background-color: black;
+  color: white;
+  padding: 0.02em;
+  box-shadow: 0 0 0 0.5em black;
+}
+.widget-right h2.colored span span {
   position: relative;
 }
 .widget-right h2.colored:after {
