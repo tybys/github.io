@@ -539,16 +539,33 @@ a.stair span.red i {
   float: right;
   background: white;
 }
-h1.suka .w1 {
-  background-color: red;
-  color: white;
-  padding: 0.02em;
-  box-shadow: 0 0 0 0.5em red;
-}
-h1.suka .w2 {
-  position: relative;
+.journal-title-type h2 {
   font-size: 32px;
   font-weight: 300;
+  margin-bottom: 36px;
+}
+.journal-title-type h2 .w1 {
+  background-color: #0070cd;
+  color: white;
+  padding: 0.02em;
+  box-shadow: 0 0 0 0.38em #0070cd;
+}
+.journal-title-type h2 .w2 {
+  position: relative;
+}
+.journal-title-type p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 23px;
+}
+.journal-title-type p .w1 {
+  background-color: white;
+  color: #383c47;
+  padding: 0.02em;
+  box-shadow: 0 0 0 0.38em white;
+}
+.journal-title-type p .w2 {
+  position: relative;
 }
 .widget-right {
   margin-top: 54px;
