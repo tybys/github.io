@@ -377,6 +377,7 @@ a.stair span:first-of-type {
 }
 a.stair span:last-of-type i {
   position: relative;
+  margin-left: 40px;
 }
 a.stair span:last-of-type i:after {
   content: "";
@@ -393,9 +394,6 @@ a.stair span.blue i {
 }
 a.stair span.red i {
   background: #EB0028;
-}
-.carouse2 .center-aligned {
-  background: #f0faff;
 }
 .carouse2 .center-core img {
   width: auto;
@@ -427,7 +425,7 @@ a.stair span.red i {
   border-top: 1px solid #BCCBD4;
   background: url("../images/item-vert-shadow.png") no-repeat 0 1px;
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   left: 0;
   width: 100%;
   padding: 0 12px;
