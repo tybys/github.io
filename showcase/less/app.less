@@ -66,34 +66,45 @@ h3 {
 //    fill: black !important;
 }
 
-// 1075
-@media all and (max-width: 1075px) {
-    .navbar-right {
-        a {
-            span {
-                display: none;
-            }
-        }
-    }
+
+// NAVBAR
+.my-block {
+//	position: absolute;
+//	left: -9px;
+	.navbar-right {
+		li {
+			a {
+				padding-right: 0;
+				&:hover {
+					background: none;
+				}
+			}
+			//margin-right: 17px;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
 }
 
 .row {
     &.head {
-        .col-md-1 {
-            background: lightcyan;
-        }
-
-        .col-md-2 {
-            background: lightcoral;
-        }
-
-        .col-md-3 {
-            background: lightgray;
-        }
-
-        .col-md-6 {
-            background: lightblue;
-        }
+//        .col-md-1 {
+//            background: lightcyan;
+//        }
+//
+//        .col-md-2 {
+//            background: lightcoral;
+//        }
+//
+//        .col-md-3 {
+//            background: lightgray;
+//        }
+//
+//        .col-md-6 {
+//            background: lightblue;
+//        }
 
         .container {
             .col-md-1 {
@@ -123,7 +134,7 @@ h3 {
                 width: ~"calc(50% - 203px)";
                 width: ~"-webkit-calc(50% - 203px)";
                 padding-left: 5px;
-                padding-top: 10px;
+                padding-top: 12px;
                 padding-right: 0;
             }
 
@@ -316,6 +327,9 @@ h3 {
             width: ~"calc(100% - 200px)";
             width: ~"-webkit-calc(100% - 200px)";
         }
+		.container {
+			padding-top: 65px;
+		}
     }
     &.most-actual {
 
@@ -354,7 +368,7 @@ h3 {
             padding: 0;
             ul {
                 margin: 0;
-                padding: 0 23px 0 0;
+                padding: 8px 23px 0 0;
                 list-style: none;
                 text-align: right;
                 li {
@@ -377,7 +391,9 @@ h3 {
                     &.all {
                         a {
                             color: @blue;
-                            border-bottom: 1px solid;
+							span {
+								border-bottom: 1px solid;
+							}
                             &:hover {
                                 border-bottom: none;
                             }
@@ -409,15 +425,26 @@ h3 {
 		}
     }
 	&.footer {
+		.container {
+			padding-top: 35px;
+		}
 		background: white;
 		.col-md-10 {
 			width: ~"calc(100% - 290px)";
 			width: ~"-webkit-calc(100% - 290px)";
+			padding-top: 9px;
+			dt {
+				font-size: 16px;
+				font-weight: 600;
+				color: @GrayText;
+				margin-bottom: 20px;
+			}
 			dl {
 				display: block;
 				float: left;
 				width: 25%;
 				a {
+					font-size: 16px;
 					color: @GrayText;
 				}
 			}
@@ -449,6 +476,22 @@ body {
     //width: ~"calc(100% - 15px)";
     //width: ~"-webkit-calc(100% - 15px)";
 }
+
+.shadow-orange {
+	span {
+		position: relative;
+		&:after {
+			content: "";
+			background: url("../images/shadow-title-orange.svg") no-repeat;
+			width: 100%;
+			height: 6px;
+			position: absolute;
+			bottom: -6px;
+			left: 0;
+		}
+	}
+}
+
 p {
     font-size: 11px;
     line-height: 13px;
@@ -510,18 +553,41 @@ a {
 
 // price panels
 .carouse2 {
+	.center-aligned {
+		//position: relative;
+		//min-height: 500px;
+		background: hsl(200, 100%, 97%);
+	}
+	//.center-core { display: table-cell; text-align: center; vertical-align: middle; }
+	.center-core img {
+		width: auto;
+		//min-width: 200px;
+		height: auto;
+		overflow: auto;
+		margin: auto;
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+	}
     .slick-slide {
         position: relative;
         width: 280px;
-        min-height: 350px;
+        min-height: 360px;
+		img {
+			//margin: 0 auto;
+		}
         h4 {
             font-size: 16px;
             color: #005FC4;
             font-weight: 300;
+			padding-left: 11px;
+			svg {
+				margin-right: 5px;
+			}
         }
     }
 }
 .price-panel {
+	height: 41px;
     border-top: 1px solid #BCCBD4;
     background: url("../images/item-vert-shadow.png") no-repeat 0 1px;
     position: absolute;
@@ -547,8 +613,15 @@ a {
                 transform: rotate(-10deg);
             }
         }
+		&.time-to-sale {
+			display: inline-block;
+			font-size: 16px;
+			line-height: 40px;
+			text-align: center;
+			color: @GrayText;
+			position: relative;
+		}
         &.sale {
-
             i {
                 &:first-of-type {
                     background: #BCCBD4;
@@ -570,10 +643,10 @@ a {
                         left: 0;
                     }
                 }
-                &:last-of-type {
-                    color: #BCCBD4;
-                    font-size: 11px;
-                }
+//                &:last-of-type {
+//                    color: #BCCBD4;
+//                    font-size: 11px;
+//                }
             }
         }
         &.actual-price {
@@ -636,7 +709,8 @@ a {
 // left widget col-md-2
 .col-md-2 {
     .widget {
-        margin-top: 45px;
+        margin-top: 11px;
+		padding-right: 24px;
         h3 {
             font-size: 16px;
             font-weight: 900;
@@ -644,6 +718,7 @@ a {
             color: #21202C;
             text-align: right;
             margin-top: 0;
+			margin-bottom: 14px;
         }
         a {
             color: @blue;
@@ -920,7 +995,7 @@ a {
 
 
 .btn {
-    padding: 9px 20px;
+    padding: 9px 17px;
     &.btn-default {
         background: @BtnGray;
         border: none;
@@ -936,11 +1011,8 @@ a {
         background: @BtnBlue;
         border-color: @BtnBlue;
         color: @BtnBlueText;
-        fons-size: 16px;
+        font-size: 16px;
         font-weight: 300;
-    }
-    &:hover {
-
     }
 }
 
@@ -975,7 +1047,43 @@ a {
     }        
 }
 
+.support-ico {
+	line-height: 40px;
+	font-weight: 600;
+	font-size: 16px;
+	& ~ div {
+		clear: both;
+		&:first-of-type {
 
+		}
+		a {
+			font-size: 32px;
+			font-weight: 100;
+			//color: @GrayText;
+			color: #808080;
+			& ~ span {
+				display: block;
+				font-weight: 300;
+				color: rgb(189, 204, 212);
+				font-size: 11px;
+			}
+		}
+	}
+	&:before {
+		width: 40px;
+		height: 40px;
+		border-radius: 100%;
+		border: 1px solid rgb(0, 112, 205);
+		float: left;
+		margin-right: 10px;
+
+		content: "";
+		background-image: url("../images/headphones.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 15px;
+	}
+}
 .fav-ico {
     a {
         &:before {
@@ -1025,7 +1133,7 @@ a {
     border-radius: 2px;
     border-color: #0070CD;
     padding: 12px 9px;
-
+	margin-bottom: 5px;
     .icon-bar {
         background-color: #0070CD;
         width: 20px;
@@ -1092,8 +1200,10 @@ form {
             min-width: 260px;
             max-width: 600px;
             width: 100%;
+			margin-right: 7px;
         }
         i {
+			margin-top: 9px;
             display: block;
         }
     }
@@ -1106,7 +1216,7 @@ form {
         &[type="submit"] {
             background-color: @blue;
             border: none;
-            padding: 6px 20px;
+            padding: 6px 17px;
         }
     }
     input {
@@ -1115,6 +1225,7 @@ form {
 }
 // carousel dots
 .slick-dots {
+	margin-top: 25px;
     li {
         display: inline;
     }    
