@@ -351,6 +351,7 @@ h3 {
         }
         .container {
 			position: relative;
+			background: white;
         }
     }
     &.categories {
@@ -705,6 +706,7 @@ a {
 
         &.empty {
             background: transparent;
+			min-height: 0;
         }
     }
 }
@@ -714,6 +716,9 @@ a {
     .widget {
         margin-top: 11px;
 		padding-right: 24px;
+		&.white-text {
+			margin-top: 50px;
+		}
         h3 {
             font-size: 16px;
             font-weight: 900;
@@ -782,6 +787,12 @@ a {
     }
 }
 
+.title-type {
+	margin-top: 44px;
+	h2 {
+		margin-bottom: 44px;
+	}
+}
 .journal-title-type {
 	margin-left: 6px;
     h2 {
@@ -1238,12 +1249,21 @@ form {
 // .items
 .items {
     .item {
-		&.multi {img {padding-bottom: 80px;}}
-		.img-wrap {text-align: center;}
+		//&.multi {img {padding-bottom: 40px;}}
+		.img-wrap {
+			text-align: center;
+			&:after {
+				content: "";
+				height: 50px;
+				width: 100%;
+				display: block;
+				margin-bottom: 40px;
+			}
+		}
         background: white;
 		img {
-			padding-bottom: 40px;
-			padding-top: 40px;
+			//padding-bottom: 40px;
+			padding-top: 50px;
 //			width: auto;
 //			height: auto;
 //			overflow: auto;
@@ -1253,6 +1273,34 @@ form {
 //			left: 0;
 //			bottom: 0;
 //			right: 0;
+
+			// 1
+//			display: table;
+//			width: 50%;
+//			overflow: auto;
+//			margin: auto;
+//			position: absolute;
+//			top: 0; left: 0; bottom: 0; right: 0;
+
+			// 2
+//			width: 50%;
+//			margin: auto;
+//			position: absolute;
+//			top: 50%; left: 50%;
+//			-webkit-transform: translate(-50%,-50%);
+//			-ms-transform: translate(-50%,-50%);
+//			transform: translate(-50%,-50%);
+
+			// 3
+//			 width: 60%;
+//			height: 60%;
+//			min-width: 400px;
+//			max-width: 500px;
+//			padding: 40px;
+//			overflow: auto;
+//			margin: auto;
+//			position: absolute;
+//			top: 0; left: 0; bottom: 0; right: 0;
 		}
     }
 }

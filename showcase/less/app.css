@@ -228,6 +228,7 @@ h3 {
 }
 .row.most-actual .container {
   position: relative;
+  background: white;
 }
 .row.categories .col-md-10 {
   width: calc(100% - 200px);
@@ -539,10 +540,14 @@ a.stair span.red i {
 }
 .items .item.empty {
   background: transparent;
+  min-height: 0;
 }
 .col-md-2 .widget {
   margin-top: 11px;
   padding-right: 24px;
+}
+.col-md-2 .widget.white-text {
+  margin-top: 50px;
 }
 .col-md-2 .widget h3 {
   font-size: 16px;
@@ -601,6 +606,12 @@ a.stair span.red i {
   padding: 4px 4px 7px 7px;
   float: right;
   background: white;
+}
+.title-type {
+  margin-top: 44px;
+}
+.title-type h2 {
+  margin-bottom: 44px;
 }
 .journal-title-type {
   margin-left: 6px;
@@ -917,15 +928,18 @@ form button[type="submit"] {
 .items .item {
   background: white;
 }
-.items .item.multi img {
-  padding-bottom: 80px;
-}
 .items .item .img-wrap {
   text-align: center;
 }
+.items .item .img-wrap:after {
+  content: "";
+  height: 50px;
+  width: 100%;
+  display: block;
+  margin-bottom: 40px;
+}
 .items .item img {
-  padding-bottom: 40px;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 .navbar {
   background: transparent;
