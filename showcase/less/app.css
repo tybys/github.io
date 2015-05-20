@@ -291,6 +291,8 @@ h3 {
 }
 .row.footer .container {
   padding-top: 35px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .row.footer .col-md-10 {
   width: calc(100% - 290px);
@@ -301,16 +303,34 @@ h3 {
   font-size: 16px;
   font-weight: 600;
   color: #383c47;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 .row.footer .col-md-10 dl {
   display: block;
   float: left;
   width: 25%;
 }
+.row.footer .col-md-10 dl:first-of-type {
+  padding-left: 6px;
+  width: 21%;
+}
+.row.footer .col-md-10 dl:last-of-type {
+  padding-left: 5px;
+}
+.row.footer .col-md-10 dl:nth-child(2) {
+  padding-left: 5px;
+  width: 32%;
+}
+.row.footer .col-md-10 dl:nth-child(3) {
+  width: 19%;
+  padding-left: 7px;
+}
 .row.footer .col-md-10 dl a {
   font-size: 16px;
   color: #383c47;
+}
+.row.footer .col-md-10 dd {
+  line-height: 26px;
 }
 .row.footer .col-md-2 {
   width: calc(16.66666667% + 131px);
@@ -425,7 +445,7 @@ a.stair span.red i {
   border-top: 1px solid #BCCBD4;
   background: url("../images/item-vert-shadow.png") no-repeat 0 1px;
   position: absolute;
-  bottom: 5px;
+  bottom: 0;
   left: 0;
   width: 100%;
   padding: 0 12px;
@@ -582,7 +602,11 @@ a.stair span.red i {
   float: right;
   background: white;
 }
+.journal-title-type {
+  margin-left: 6px;
+}
 .journal-title-type h2 {
+  margin-left: 6px;
   font-size: 32px;
   font-weight: 300;
   margin-bottom: 36px;
@@ -746,7 +770,10 @@ a.stair span.red i {
 .support-ico ~ div a {
   font-size: 32px;
   font-weight: 100;
-  color: #808080;
+  color: #393c47;
+}
+.support-ico ~ div a:hover {
+  text-decoration: none;
 }
 .support-ico ~ div a ~ span {
   display: block;
@@ -889,6 +916,16 @@ form button[type="submit"] {
 }
 .items .item {
   background: white;
+}
+.items .item.multi img {
+  padding-bottom: 80px;
+}
+.items .item .img-wrap {
+  text-align: center;
+}
+.items .item img {
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 .navbar {
   background: transparent;

@@ -8,4 +8,44 @@
   .navbar-right a span {
     display: none;
   }
+  dl:nth-child(3) {
+    clear: both;
+  }
+  dl:first-of-type,
+  dl:nth-child(2),
+  dl:nth-child(3),
+  dl:last-of-type {
+    transition: 1s all ease;
+    width: 50% !important;
+  }
+}
+@media all and (min-width: 1000px) and (max-width: 1235px) {
+  .item:first-of-type h4,
+  .item:nth-child(2) h4 {
+    color: black;
+  }
+}
+@media all and (min-width: 1236px) and (max-width: 1555px) {
+  .item:first-of-type h4,
+  .item:nth-child(2) h4,
+  .item:nth-child(3) h4 {
+    color: black !important;
+  }
+}
+@media all and (min-width: 1556px) and (max-width: 1876px) {
+  .item:first-of-type h4,
+  .item:nth-child(2) h4,
+  .item:nth-child(3) h4,
+  .item:nth-child(4) h4 {
+    color: black !important;
+  }
+}
+@media all and (min-width: 1876px) {
+  :first-of-type h4,
+  :nth-child(2) h4,
+  :nth-child(3) h4,
+  :nth-child(4) h4,
+  :nth-child(5) h4 {
+    color: black !important;
+  }
 }
