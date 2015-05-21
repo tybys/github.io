@@ -407,6 +407,18 @@ h3 {
 
         }
     }
+	&.history-view {
+		.col-md-2 {
+			width: ~"calc(16.66666667% - 107.490px)";
+			width: ~"-webkit-calc(16.66666667% - 107.490px)";
+			min-width: 200px;
+			padding: 0;
+		}
+		.col-md-10 {
+			width: ~"calc(100% - 200px)";
+			width: ~"-webkit-calc(100% - 200px)";
+		}
+	}
     &.background {
         .container {
             background-color: transparent;
@@ -468,6 +480,9 @@ h3 {
 		}
 	}
     &.without-white {
+		&.gray {
+			background: rgba(161, 170, 182, 0.25);
+		}
         .container {
             background: none;
         }
@@ -713,7 +728,46 @@ a {
 
 // left widget col-md-2
 .col-md-2 {
+	.short-navi {
+		margin-right: 22px;
+		margin-top: 30px;
+		margin-bottom: 35px;
+		a {
+			font-size: 16px;
+			font-weight: 300;
+			color: @AlmostBlack;
+			//padding-left: 20px;
+			position: relative;
+			float: right;
+			&:before {
+				content: "";
+				background: url("../images/link-arrow.svg") no-repeat left center;
+				width: 8px;
+				height: 16px;
+				float: left;
+				-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);-ms-transform: rotate(180deg);-o-transform: rotate(180deg);transform: rotate(180deg);
+				margin-top: 3px;
+				margin-right: 10px;
+			}
+		}
+		&:after {
+			clear: both;
+			content: "";
+			width: 100%;
+			height: 1px;
+			display: block;
+		}
+	}
     .widget {
+		&.check-settings {
+			padding-right: 30px;
+		}
+		input {
+			float: left;
+			& ~ p {
+				margin-left: 22px;
+			}
+		}
         margin-top: 11px;
 		padding-right: 24px;
 		&.white-text {
@@ -728,6 +782,11 @@ a {
             margin-top: 0;
 			margin-bottom: 14px;
         }
+		p {
+			font-size: 11px;
+			font-weight: 300;
+			color: @AlmostBlack;
+		}
         a {
             color: @blue;
             display: block;
@@ -1371,6 +1430,44 @@ p {
 
 .row {
 	&.catalog-list {
+		&.right-banner {
+			.container {
+				max-width: ~"calc(100% - 280px)";
+				max-width: ~"-webkit-calc(100% - 280px)";
+			}
+		}
+		.banner1 {
+			height: 150px;
+			background: #f08080;
+		}
+		.banner2 {
+			height: 150px;
+			background: #add8e6;
+		}
+		.banner3 {
+			height: 150px;
+			background: lightgoldenrodyellow;
+		}
+		.banner4 {
+			width: 280px;
+			display: inline-block;
+			height: 400px;
+			margin-right: 40px;
+			position: relative;
+			&.right {
+				img {
+					border: 1px solid;
+				}
+				&:after {
+					content: "";
+					width: 100%;
+					height: 100%;
+					min-height: 100%;
+					position: absolute;
+					background: transparent;
+				}
+			}
+		}
 		.container {
 			h2 {
 				margin-top: 40px;
@@ -1390,8 +1487,9 @@ p {
 		.cat-block {
 			display: inline-block;
 			vertical-align: top;
-			width: 33%;
-			padding-right: 115px;
+			//width: 33%;
+			width: 280px;
+			margin-right: 40px;
 			margin-bottom: 58px;
 			.badge {
 				background: transparent;
