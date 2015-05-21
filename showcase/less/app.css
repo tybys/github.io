@@ -1004,3 +1004,158 @@ p {
   line-height: 18px;
   font-size: 16px;
 }
+.row.catalog-list .container h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.row.catalog-list .col-md-10 {
+  width: calc(100% - 200px);
+  width: -webkit-calc(100% - 200px);
+}
+.row.catalog-list .col-md-2 {
+  width: calc(16.66666667% - 107.490px);
+  width: -webkit-calc(16.66666667% - 107.490px);
+  min-width: 200px;
+  padding: 0;
+}
+.row.catalog-list .cat-block {
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
+  padding-right: 115px;
+  margin-bottom: 58px;
+}
+.row.catalog-list .cat-block .badge {
+  background: transparent;
+  font-size: 11px;
+  color: #cccccc;
+  font-weight: 300;
+}
+.row.catalog-list .cat-block ul {
+  margin: 0 0 11px 0;
+  padding: 0;
+  list-style: none;
+}
+.row.catalog-list .cat-block ul li {
+  line-height: 23.5px;
+}
+.row.catalog-list .cat-block ul li a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #393c47;
+  background: none;
+  margin: 0;
+}
+.row.catalog-list .cat-block h3 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #393c47;
+  position: relative;
+  padding-top: 50px;
+}
+.row.catalog-list .cat-block h3:before {
+  content: "";
+  background: url("../images/icons.svg") no-repeat;
+  background-size: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.row.catalog-list .cat-block span {
+  color: #0070cd;
+  font-size: 16px;
+  font-weight: 300;
+}
+.row.catalog-list .cat-block a {
+  display: inline-block;
+  padding-right: 20px;
+  color: #393c47;
+  font-size: 11px;
+  font-weight: 300;
+  background: url("../images/link-arrow.svg") no-repeat;
+  background-position: center right;
+  margin-top: 11px;
+}
+.row.catalog-list .cat-block a:hover {
+  text-decoration: none;
+}
+.row.catalog-list .cat-block.auto h3:before {
+  width: 40px;
+  height: 36px;
+}
+.row.catalog-list .cat-block.goods h3:before {
+  width: 40px;
+  height: 40px;
+  background-position-y: -320px;
+}
+.row.catalog-list .cat-block.office h3:before {
+  width: 40px;
+  height: 41px;
+  background-position-y: -440px;
+}
+.row.catalog-list .cat-block.wear h3:before {
+  width: 40px;
+  height: 33px;
+  background-position-y: -564px;
+}
+.row.catalog-list .cat-block.kids h3:before {
+  width: 39px;
+  height: 32px;
+  background-position-y: -37px;
+}
+.row.catalog-list .cat-block.home h3:before {
+  width: 39px;
+  height: 39px;
+  background-position-y: -390px;
+}
+.row.catalog-list .cat-block.entertainment h3:before {
+  width: 40px;
+  height: 40px;
+  background-position-y: -160px;
+}
+.row.catalog-list .cat-block.xxx h3:before {
+  width: 65px;
+  height: 45px;
+  background-position-y: -985px;
+}
+.row.catalog-list .cat-block.comp h3:before {
+  width: 40px;
+  height: 33px;
+  background-position-y: -84px;
+}
+.row.catalog-list .cat-block.equipment h3:before {
+  width: 40px;
+  height: 42px;
+  background-position-y: -200px;
+}
+.row.catalog-list .cat-block.gifts h3:before {
+  width: 30px;
+  height: 32px;
+  background-position-y: -208px;
+}
+.row.catalog-list .cat-block.food h3:before {
+  width: 35px;
+  height: 34px;
+  background-position-y: -210px;
+}
+.row.catalog-list .cat-block.sport h3:before {
+  width: 35px;
+  height: 35px;
+  background-position-y: -455px;
+}
+.row.catalog-list .cat-block.health h3:before {
+  width: 40px;
+  height: 40px;
+  background-position-y: -360px;
+}
+.row.catalog-list .cat-block.services h3:before {
+  width: 40px;
+  height: 40px;
+  background-position-y: -480px;
+}
+.row.catalog-list .cat-block.devices h3:before {
+  width: 30px;
+  height: 32px;
+  background-position-y: -88px;
+}
