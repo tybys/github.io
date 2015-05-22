@@ -284,8 +284,8 @@ h2.username {
 
     border: 1px solid #b3b3b3;
     border-radius: 0 0 5px 5px;
-    margin: 0 15px;
-    padding: 8px 0;
+
+    padding: 8px 15px;
 }
 .top-panel a {
     color: #474747;
@@ -293,52 +293,7 @@ h2.username {
     margin-right: 60px;
     padding-left: 29px;
 }
-.menu a {
 
-
-    font-size: 18px;
-    font-weight: 600;
-}
-.menu ul {
-    background: #f2f2f2;
-    padding-bottom: 10px;
-}
-.menu li.active {
-    background: #f5f5f5;
-    background: -moz-linear-gradient(top,  #f5f5f5 0%, #e1e1e1 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#e1e1e1));
-    background: -webkit-linear-gradient(top,  #f5f5f5 0%,#e1e1e1 100%);
-    background: -o-linear-gradient(top,  #f5f5f5 0%,#e1e1e1 100%);
-    background: -ms-linear-gradient(top,  #f5f5f5 0%,#e1e1e1 100%);
-    background: linear-gradient(to bottom,  #f5f5f5 0%,#e1e1e1 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#e1e1e1',GradientType=0 );
-
-    padding-top: 26px;
-    padding-bottom: 26px;
-}
-.menu li.active a {
-    color: #e81c1f;
-}
-.menu li {
-    background: #ffffff;
-    background: -moz-linear-gradient(top,  #ffffff 0%, #f1f1f1 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f1f1f1));
-    background: -webkit-linear-gradient(top,  #ffffff 0%,#f1f1f1 100%);
-    background: -o-linear-gradient(top,  #ffffff 0%,#f1f1f1 100%);
-    background: -ms-linear-gradient(top,  #ffffff 0%,#f1f1f1 100%);
-    background: linear-gradient(to bottom,  #ffffff 0%,#f1f1f1 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1f1f1',GradientType=0 );
-
-    padding: 11px 32px 8px 32px;
-    border-radius: 5px 5px 0 0;
-    border: 1px solid #b3b3b3;
-    display: inline-block;
-    vertical-align: bottom;
-    margin-right: 12px;
-}
-.menu li:last-of-type {
-    margin-right: 0;
-}
 button.old {
     font-size: 16px;
     font-weight: 600;
@@ -351,9 +306,10 @@ button.old {
     background: linear-gradient(to bottom,  #fefefe 0%,#f1f1f1 50%,#e1e1e1 51%,#f5f5f5 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#f5f5f5',GradientType=0 );
 
+	position: relative;
     border: 1px solid #b3b3b3;
     border-radius: 10px;
-    padding: 14px 21px;
+    padding: 14px 34px 14px 54px;
 }
 
 .exit {
@@ -369,21 +325,45 @@ button.old {
     background: url("img/cart.png") no-repeat left center;
     float: right;
 }
-.ios {
-    background-image: url("img/ios.png");
+.ios:before {
+	content: "";
+   	background-image: url("img/ios.png");
     background-repeat: no-repeat;
     background-position: left;
+	width: 24px;
+	height: 29px;
+	position: absolute;
+	left: 18px;
+	top: 10px;
 }
-.android {
+.android:before {
+	content: "";
     background-image: url("img/android.png");
     background-repeat: no-repeat;
     background-position: left;
+	width: 24px;
+	height: 29px;
+	position: absolute;
+	left: 18px;
+	top: 10px;
+}
+.c-b {
+	width: 380px;
+	margin: 0 auto;
+}
+
+#header_logo {
+	padding-top: 66px !important;
 }
 
 
 .phones {
     width: 380px;
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
+}
+.phones hr {
+	margin-top: 16px;
+	margin-bottom: 8px;
 }
 .phones a {
     font-size: 18px;
@@ -400,4 +380,122 @@ button.old {
 }
 .callback {
     float: right;
+}
+
+.row.buttons {
+	position: relative;
+	text-align: center;
+}
+
+
+
+
+.menu {
+	position: relative;
+}
+.menu a {
+	font-size: 18px;
+	font-weight: 600;
+}
+.menu ul {
+	/*background: #f2f2f2;*/
+	padding-bottom: 10px;
+	white-space: nowrap;
+}
+
+.menu .palka {
+	width: 100%;
+	height: 1px;
+	background: rgb(179, 179, 179);
+	position: absolute;
+	bottom: 9px;
+	z-index: 55;
+}
+.menu ul:before {
+	content: "";
+	background: #e6e6e6;
+	width: 100%;
+	height: 3px;
+	display: block;
+	position: absolute;
+	bottom: 7px;
+	z-index: 50;
+}
+.menu ul:after {
+	content: "";
+	background: #f1f1f1;
+	width: 100%;
+	height: 7px;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 50;
+}
+.menu li.active {
+	background: #f5f5f5;
+	background: -moz-linear-gradient(top,  #f5f5f5 0%, #e1e1e1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#e1e1e1));
+	background: -webkit-linear-gradient(top,  #f5f5f5 0%,#e1e1e1 100%);
+	background: -o-linear-gradient(top,  #f5f5f5 0%,#e1e1e1 100%);
+	background: -ms-linear-gradient(top,  #f5f5f5 0%,#e1e1e1 100%);
+	background: linear-gradient(to bottom,  #f5f5f5 0%,#e1e1e1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#e1e1e1',GradientType=0 );
+
+	border-bottom: 1px solid #e1e1e1;
+	z-index: 60;
+	padding-top: 26px;
+	padding-bottom: 26px;
+}
+.menu li.active a {
+	color: #e81c1f;
+}
+.menu li {
+	background: #ffffff;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f1f1f1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f1f1f1));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f1f1f1 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#f1f1f1 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#f1f1f1 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#f1f1f1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1f1f1',GradientType=0 );
+
+	position: relative;
+	bottom: -1px;
+	width: 182px;
+	text-align: center;
+	padding: 11px 32px 8px 32px;
+	border-radius: 5px 5px 0 0;
+	border: 1px solid #b3b3b3;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-right: 18px;
+}
+.menu li:last-of-type {
+	margin-right: 0;
+}
+
+
+.row.buttons .girl {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.row.buttons .girl button {
+	padding-left: 34px;
+	position: relative;
+	z-index: 40;
+}
+.row.buttons .girl button:before {
+	content: "";
+	background: url("img/girl.jpg");
+	width: 93px;
+	height: 140px;
+	position: absolute;
+	top: -141px;
+	left: 25%;
+	z-index: 30;
+}
+.old.c:before {
+
 }
