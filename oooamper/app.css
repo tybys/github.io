@@ -274,6 +274,14 @@ h2.username {
 
 .top-panel {
     background: #f2f2f2;
+    background: -moz-linear-gradient(top,  #f2f2f2 0%, #e7e7e7 2%, #e1e1e1 3%, #e1e1e1 3%, #f4f4f6 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(2%,#e7e7e7), color-stop(3%,#e1e1e1), color-stop(3%,#e1e1e1), color-stop(100%,#f4f4f6));
+    background: -webkit-linear-gradient(top,  #f2f2f2 0%,#e7e7e7 2%,#e1e1e1 3%,#e1e1e1 3%,#f4f4f6 100%);
+    background: -o-linear-gradient(top,  #f2f2f2 0%,#e7e7e7 2%,#e1e1e1 3%,#e1e1e1 3%,#f4f4f6 100%);
+    background: -ms-linear-gradient(top,  #f2f2f2 0%,#e7e7e7 2%,#e1e1e1 3%,#e1e1e1 3%,#f4f4f6 100%);
+    background: linear-gradient(to bottom,  #f2f2f2 0%,#e7e7e7 2%,#e1e1e1 3%,#e1e1e1 3%,#f4f4f6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#f4f4f6',GradientType=0 );
+
     border: 1px solid #b3b3b3;
     border-radius: 0 0 5px 5px;
     margin: 0 15px;
@@ -296,7 +304,15 @@ h2.username {
     padding-bottom: 10px;
 }
 .menu li.active {
-    background: #e7e7e7;
+    background: #f5f5f5;
+    background: -moz-linear-gradient(top,  #f5f5f5 0%, #e1e1e1 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#e1e1e1));
+    background: -webkit-linear-gradient(top,  #f5f5f5 0%,#e1e1e1 100%);
+    background: -o-linear-gradient(top,  #f5f5f5 0%,#e1e1e1 100%);
+    background: -ms-linear-gradient(top,  #f5f5f5 0%,#e1e1e1 100%);
+    background: linear-gradient(to bottom,  #f5f5f5 0%,#e1e1e1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#e1e1e1',GradientType=0 );
+
     padding-top: 26px;
     padding-bottom: 26px;
 }
@@ -304,7 +320,15 @@ h2.username {
     color: #e81c1f;
 }
 .menu li {
-    background: #fcfcfc;
+    background: #ffffff;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f1f1f1 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f1f1f1));
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f1f1f1 100%);
+    background: -o-linear-gradient(top,  #ffffff 0%,#f1f1f1 100%);
+    background: -ms-linear-gradient(top,  #ffffff 0%,#f1f1f1 100%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#f1f1f1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1f1f1',GradientType=0 );
+
     padding: 11px 32px 8px 32px;
     border-radius: 5px 5px 0 0;
     border: 1px solid #b3b3b3;
@@ -318,7 +342,15 @@ h2.username {
 button.old {
     font-size: 16px;
     font-weight: 600;
-    background-color: #e3e3e3;
+    background: #fefefe;
+    background: -moz-linear-gradient(top,  #fefefe 0%, #f1f1f1 50%, #e1e1e1 51%, #f5f5f5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(50%,#f1f1f1), color-stop(51%,#e1e1e1), color-stop(100%,#f5f5f5));
+    background: -webkit-linear-gradient(top,  #fefefe 0%,#f1f1f1 50%,#e1e1e1 51%,#f5f5f5 100%);
+    background: -o-linear-gradient(top,  #fefefe 0%,#f1f1f1 50%,#e1e1e1 51%,#f5f5f5 100%);
+    background: -ms-linear-gradient(top,  #fefefe 0%,#f1f1f1 50%,#e1e1e1 51%,#f5f5f5 100%);
+    background: linear-gradient(to bottom,  #fefefe 0%,#f1f1f1 50%,#e1e1e1 51%,#f5f5f5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#f5f5f5',GradientType=0 );
+
     border: 1px solid #b3b3b3;
     border-radius: 10px;
     padding: 14px 21px;
