@@ -356,6 +356,9 @@ h3 {
 .row.without-white .container {
   background: none;
 }
+.not-share .col-md-10 {
+  margin-top: 40px;
+}
 body {
   font-family: 'Roboto', sans-serif;
   background-color: rgba(181, 211, 233, 0.25);
@@ -453,6 +456,97 @@ a.stair span.red i {
 }
 .carouse2 .slick-slide h4 svg {
   margin-right: 5px;
+}
+.items-horizontal .left,
+.items-horizontal .right {
+  float: left;
+}
+.items-horizontal .left {
+  width: 160px;
+}
+.items-horizontal .left img {
+  width: 100%;
+}
+.items-horizontal .left:after,
+.items-horizontal .left:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: block;
+  clear: both;
+}
+.items-horizontal .right {
+  width: 120px;
+}
+.items-horizontal .right:after,
+.items-horizontal .right:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: block;
+  clear: both;
+}
+.items-horizontal i {
+  color: #cccccc;
+  vertical-align: text-top;
+}
+.items-horizontal a {
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: 300;
+  display: inline-block;
+}
+.items-horizontal .items {
+  position: relative;
+}
+.items-horizontal .item {
+  width: 280px;
+  min-height: 135px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #bccbd4;
+  position: relative;
+}
+.items-horizontal .item:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: block;
+  clear: both;
+}
+.items-horizontal .item:after {
+  content: "";
+  background: url("../images/item-vert-shadow.png") no-repeat 0 1px;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+}
+.items-horizontal .price-panel {
+  position: static;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.items-horizontal .price-panel span {
+  font-size: 11px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.items-horizontal .price-panel span.actual-price {
+  font-size: 16px;
+}
+.items-horizontal .price-panel span.old-price:before {
+  width: 40px;
+}
+.items-horizontal .price-panel span i {
+  font-size: 11px !important;
+  line-height: 19px !important;
+  height: 19px !important;
+}
+.items-horizontal .price-panel .actual-price {
+  float: none;
 }
 .price-panel {
   height: 41px;
@@ -704,6 +798,18 @@ a.stair span.red i {
 }
 .journal-title-type p .w2 {
   position: relative;
+}
+.widget-most-popular h3 {
+  font-size: 16px;
+  font-weight: 900;
+  font-style: italic;
+  color: black;
+}
+.widget-most-popular a {
+  color: #0070cd;
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 300;
 }
 .widget-right {
   margin-top: 54px;

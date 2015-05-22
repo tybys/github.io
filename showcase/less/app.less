@@ -488,6 +488,15 @@ h3 {
         }
     }
 }
+
+
+// $
+.not-share {
+	.col-md-10 {
+		margin-top: 40px;
+	}
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: rgba(181, 211, 233, 0.25);
@@ -605,6 +614,93 @@ a {
         }
     }
 }
+
+.items-horizontal {
+	.left,
+	.right {float: left;}
+	.left {
+		width: 160px;
+		img {width: 100%;}
+		&:after, &:before {
+			content: "";
+			width: 100%;
+			height: 1px;
+			display: block;
+			clear: both;
+		}
+	}
+	.right {
+		width: 120px;
+		&:after, &:before {
+			content: "";
+			width: 100%;
+			height: 1px;
+			display: block;
+			clear: both;
+		}
+	}
+	i {
+		color: rgb(204, 204, 204);
+		vertical-align: text-top;
+	}
+	a {
+		font-size: 11px;
+		line-height: 13px;
+		font-weight: 300;
+		display: inline-block;
+	}
+	.items {position: relative}
+	.item {
+		&:before {
+			content: "";
+			width: 100%;
+			height: 1px;
+			display: block;
+			clear: both;
+		}
+		width: 280px;
+		min-height: 135px;
+		margin-bottom: 40px;
+		border-bottom: 1px solid rgb(188, 203, 212);
+		position: relative;
+		&:after {
+			content: "";
+			background: url("../images/item-vert-shadow.png") no-repeat 0 1px;
+			position: absolute;
+			bottom: -6px;
+			left: 0;
+			width: 100%;
+			height: 5px;
+		}
+	}
+	.price-panel {
+		position: static;
+		background: none;
+		border: none;
+		padding: 0;
+		span {
+			font-size: 11px;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 8px;
+			&.actual-price {
+				font-size: 16px;
+			}
+			&.old-price:before {
+				width: 40px;
+			}
+			i {
+				font-size: 11px !important;
+				line-height: 19px !important;
+				height: 19px !important;
+			}
+		}
+		.actual-price {
+			float: none;
+		}
+	}
+}
+
 .price-panel {
 	height: 41px;
     border-top: 1px solid #BCCBD4;
@@ -885,7 +981,22 @@ a {
     }
 }
 
-
+.widget-most-popular {
+	h3 {
+		font-size: 16px;
+		font-weight: 900;
+		font-style: italic;
+		color: black;
+	}
+	a {
+		color: rgb(0, 112, 205);
+		//display: block;
+		//text-align: right;
+		font-size: 11px;
+		line-height: 14px;
+		font-weight: 300;
+	}
+}
 .widget-right {
     margin-top: 54px;
     h2.colored {
