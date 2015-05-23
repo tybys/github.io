@@ -18,6 +18,75 @@ h3 {
 .white-text {
   color: white;
 }
+.filter {
+  background: rgba(181, 211, 233, 0.25);
+  padding: 0 10px;
+}
+.filter .toggle > label {
+  border-bottom: 1px solid;
+}
+.filter .sub-checks {
+  background: #FBFCFD;
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+.filter .sub-checks div {
+  position: relative;
+}
+.filter .sub-checks div:before {
+  content: "";
+  position: absolute;
+  background: url("../images/temp/tree.svg") no-repeat;
+  width: 11px;
+  height: 22px;
+  left: -10px;
+}
+.filter .sub-checks label {
+  font-size: 11px;
+  position: relative;
+  top: 15px;
+}
+.filter label {
+  font-size: 16px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.filter label::selection {
+  background: transparent;
+}
+.filter label:before {
+  content: "";
+  display: inline-block;
+  border: 1px solid #5a6d7b;
+  border-radius: 2px;
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+  background: #ffffff;
+}
+.filter input[type="checkbox"] {
+  display: none;
+}
+.filter input[type="checkbox"]:checked + label {
+  font-weight: 400;
+}
+.filter input[type="checkbox"]:checked + label:before {
+  border: 1px solid #393c47;
+  background: url("../images/ch-checked.png") no-repeat center;
+}
+.filter .stage {
+  border-bottom: 1px solid rgba(181, 211, 233, 0.25);
+  position: relative;
+}
+.filter .stage:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: rgba(189, 204, 212, 0.5);
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
 .my-block .navbar-right li a {
   padding-right: 0;
 }

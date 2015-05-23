@@ -67,6 +67,85 @@ h3 {
 }
 
 
+//
+.filter {
+	background: rgba(181, 211, 233, 0.25);
+	padding: 0 10px;
+	.toggle {
+		& > label {
+			border-bottom: 1px solid;
+		}
+	}
+	.sub-checks {
+		background: #FBFCFD;
+		padding-left: 10px;
+		div {
+			position: relative;
+			&:before {
+				content: "";
+				position: absolute;
+				background: url("../images/temp/tree.svg") no-repeat;
+				width: 11px;
+				height: 22px;
+				left: -10px;
+			}
+		}
+		label {
+			font-size: 11px;
+			position: relative;
+			top: 15px;
+		}
+		padding-bottom: 15px;
+	}
+	div > div {
+		//white-space: nowrap;
+	}
+	label {
+		font-size: 16px;
+		font-weight: 300;
+		cursor: pointer;
+		&::selection {
+			background: transparent;
+		}
+		&:before {
+			content: "";
+			display: inline-block;
+			border: 1px solid rgb(90, 109, 123);
+			border-radius: 2px;
+			//padding: 8px;
+			width: 15px;
+			height: 15px;
+			margin-right: 15px;
+			background: #ffffff;
+		}
+	}
+	input[type="checkbox"] {
+		display: none;
+
+	}
+	input[type="checkbox"]:checked + label {
+		font-weight: 400;
+	}
+	input[type="checkbox"]:checked + label:before {
+		border: 1px solid rgb(57, 60, 71);
+		background: url("../images/ch-checked.png") no-repeat center;
+	}
+
+	.stage {
+		border-bottom: 1px solid rgba(181, 211, 233, 0.25);
+		position: relative;
+		&:after {
+			content: "";
+			width: 100%;
+			height: 1px;
+			background: rgba(189, 204, 212, 0.5);
+			position: absolute;
+			bottom: -2px;
+			left: 0;
+		}
+	}
+}
+
 // NAVBAR
 .my-block {
 //	position: absolute;
