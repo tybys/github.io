@@ -527,109 +527,129 @@
 		<div class="container">
 			<div class="col-md-2">
 				<div class="filter important-block">
-					<div class="view-type stage"></div>
+					<div class="view-type stage">
+                        <span class="list"></span>
+                        <span class="block"></span>
+                    </div>
 					<div class="slider-area stage">
-						<input type="text">
-						<input type="text">
+                        <div class="cap"><h5>Стоимость, руб:</h5></div>
+                        <div>
+                            <input type="text">
+                            <input type="text">
+                        </div>
 					</div>
-					<div class="delivery-type">
-
-						<a href="#">Выбрать все</a>
+					<div class="delivery-type stage">
+                       <div class="cap">
+                           <h5>Способ доставки:</h5>
+						    <a class="choose-all" href="#">Выбрать все</a>
+                       </div>
 
 						<div>
 							<input type="checkbox" id="self">
-							<label for="self">Самовывоз</label>
+							<label for="self"><span>Самовывоз</span></label>
 						</div>
 						<div>
 							<input type="checkbox" id="courier">
-							<label for="courier">Курьером</label>
+							<label for="courier"><span>Курьером</span></label>
 						</div>
 						<div>
 							<input type="checkbox" id="mail">
-							<label for="mail">Почтой РФ</label>
+							<label for="mail"><span>Почтой РФ</span></label>
 						</div>
 					</div>
 
 					<div class="proposal-type stage">
-						<h5>Предложения</h5>
+						<div class="cap">
+                            <h5>Предложения</h5>
+                            <a class="choose-all" href="#">Выбрать все</a>
+                        </div>
 						<div>
 							<input type="checkbox" id="tradein">
-							<label for="tradein">TradeIn</label>
+							<label for="tradein"><span>TradeIn</span></label>
 						</div>
 						<div>
 							<input type="checkbox" id="new">
-							<label for="new">Новые автомобили</label>
+							<label for="new"><span>Новые автомобили</span></label>
 						</div>
 						<div>
 							<input type="checkbox" id="personal">
-							<label for="personal">Б.У, частные лица</label>
+							<label for="personal"><span>Б.У, частные лица</span></label>
 						</div>
-						<div class="toggle">
+						<div class="toggle open">
 							<input type="checkbox" id="disassembly">
-							<label for="disassembly">Разборка</label>
+							<label for="disassembly"><span>Разборка</span></label>
 
-							<div class="sub-checks">
-								<div>
-									<input type="checkbox">
-									<label for="">A-auto</label>
-								</div>
-								<div>
-									<input type="checkbox">
-									<label for="">B-auto</label>
-								</div>
-								<div>
-									<input type="checkbox">
-									<label for="">C-auto</label>
-								</div>
-								<div>
-									<input type="checkbox">
-									<label for="">Das-auto</label>
-								</div>
-								<div>
-									<input type="checkbox">
-									<label for="">E-auto</label>
-								</div>
-								<div>
-									<input type="checkbox">
-									<label for="">F-auto</label>
-								</div>
-								<div>
-									<input type="checkbox">
-									<label for="">G-dot</label>
-								</div>
-								<div>
-									<input type="checkbox">
-									<label for="">H-nya</label>
-								</div>
-								<div>
-									<input type="checkbox">
-									<label for="">G-Klass</label>
-								</div>
-								<div>
-									<input type="checkbox">
-									<label for="">Jiga</label>
-								</div>
-							</div>
+                            <div class="sub-checks-wrap">
+                                <div class="sub-checks">
+                                    <div>
+                                        <input type="checkbox" id="1">
+                                        <label for="1"><span>A-auto</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="2">
+                                        <label for="2"><span>B-auto</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="3">
+                                        <label for="3"><span>C-auto</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="4">
+                                        <label for="4"><span>Das-auto</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="5">
+                                        <label for="5"><span>E-auto</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="6">
+                                        <label for="6"><span>F-auto</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="7">
+                                        <label for="7"><span>G-dot</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="8">
+                                        <label for="8"><span>H-nya</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="9">
+                                        <label for="9"><span>G-Klass</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="10">
+                                        <label for="10"><span>Jiga</span></label>
+                                    </div>
+                                </div>
+                            </div>
 						</div>
 
 						<div>
 							<input type="checkbox" id="">
-							<label for="">TradeOut</label>
+							<label for=""><span>TradeOut</span></label>
 						</div>
 						<div>
 							<input type="checkbox" id="">
-							<label for="">InOutTrade</label>
+							<label for=""><span>InOutTrade</span></label>
 						</div>
 						<div>
 							<input type="checkbox" id="">
-							<label for="">InTradeOut</label>
+							<label for=""><span>InTradeOut</span></label>
 						</div>
 					</div>
 
-					<div class="tags">
-						<h5>Популярные запросы</h5>
-						<span>#Lancer</span>
-						#Almera   #Civic   #Honda   #Mazda   #ВАЗ   #BMW
+					<div class="tags stage">
+						<div class="cap"><h5>Популярные запросы</h5></div>
+                        <div>
+                            <span>#Lancer</span>
+                            <span>#Almera</span>
+                            <span>#Civic</span>
+                            <span>#Honda</span>
+                            <span>#Mazda</span>
+                            <span>#ВАЗ</span>
+                            <span>#BMW</span>
+                        </div>
 					</div>
 				</div>
 			</div>

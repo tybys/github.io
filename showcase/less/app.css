@@ -20,14 +20,87 @@ h3 {
 }
 .filter {
   background: rgba(181, 211, 233, 0.25);
-  padding: 0 10px;
+  padding: 0 10px 17px 10px;
+  border-radius: 2px;
 }
-.filter .toggle > label {
-  border-bottom: 1px solid;
+.filter .cap {
+  margin-bottom: 17px;
+}
+.filter h5 {
+  font-size: 11px;
+  color: #5B6D7B;
+  font-weight: 300;
+  display: inline;
+}
+.filter .choose-all {
+  font-size: 11px;
+  font-weight: 300;
+  border-bottom: 1px dotted;
+  float: right;
+  margin-top: 3px;
+}
+.filter .choose-all:hover {
+  text-decoration: none;
+}
+.filter input[type="text"] {
+  border-radius: 2px;
+  border: 1px solid #5a6d7b;
+  font-size: 16px;
+  color: #393c47;
+  font-weight: 300;
+  padding: 8px 0;
+  width: 85px;
+}
+.filter .view-type {
+  min-height: 80px;
+  padding: 20px 0 18px 0;
+  margin: 0 43px;
+  white-space: nowrap;
+}
+.filter .view-type span {
+  cursor: pointer;
+  float: left;
+  width: 42px;
+  height: 42px;
+}
+.filter .view-type span.list {
+  background: url("../images/grid-type-list.png");
+  margin-right: 10px;
+}
+.filter .view-type span.block {
+  background: url("../images/grid-type-block.png");
+}
+.filter .toggle {
+  position: relative;
+  padding-top: 5px;
+}
+.filter .toggle:after,
+.filter .toggle:before {
+  content: "";
+  background: #FBFCFD;
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+.filter .toggle:after {
+  left: 100%;
+}
+.filter .toggle.open {
+  background: #FBFCFD;
+}
+.filter .toggle > label > span {
+  border-bottom: 1px dotted;
+}
+.filter .sub-checks-wrap {
+  overflow: hidden;
+  max-height: 230px;
+  position: relative;
+  top: -5px;
 }
 .filter .sub-checks {
-  background: #FBFCFD;
-  padding-left: 10px;
+  padding-left: 14px;
   padding-bottom: 15px;
 }
 .filter .sub-checks div {
@@ -39,7 +112,7 @@ h3 {
   background: url("../images/temp/tree.svg") no-repeat;
   width: 11px;
   height: 22px;
-  left: -10px;
+  left: -14px;
 }
 .filter .sub-checks label {
   font-size: 11px;
@@ -51,6 +124,9 @@ h3 {
   font-weight: 300;
   cursor: pointer;
 }
+.filter label > span {
+  vertical-align: text-bottom;
+}
 .filter label::selection {
   background: transparent;
 }
@@ -59,9 +135,9 @@ h3 {
   display: inline-block;
   border: 1px solid #5a6d7b;
   border-radius: 2px;
-  width: 15px;
-  height: 15px;
-  margin-right: 15px;
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
   background: #ffffff;
 }
 .filter input[type="checkbox"] {
@@ -75,17 +151,30 @@ h3 {
   background: url("../images/ch-checked.png") no-repeat center;
 }
 .filter .stage {
-  border-bottom: 1px solid rgba(181, 211, 233, 0.25);
+  border-bottom: 1px solid #F7F9F9;
   position: relative;
+  padding: 20px 0;
+}
+.filter .stage:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.filter .stage:last-of-type:after {
+  display: none;
 }
 .filter .stage:after {
   content: "";
   width: 100%;
   height: 1px;
-  background: rgba(189, 204, 212, 0.5);
+  background: #E2E9EC;
   position: absolute;
   bottom: -2px;
   left: 0;
+}
+.filter .tags span {
+  color: #0070cd;
+  font-size: 16px;
+  font-weight: 300;
 }
 .my-block .navbar-right li a {
   padding-right: 0;
@@ -434,6 +523,9 @@ h3 {
 .row.subcategory .col-md-10 {
   width: calc(100% - 200px);
   width: -webkit-calc(100% - 200px);
+}
+.row.subcategory .col-md-10 .top-view-filter {
+  overflow-x: hidden;
 }
 .row.subcategory .col-md-10 .top-view-filter .triple-arrow {
   position: relative;
