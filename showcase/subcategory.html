@@ -11,6 +11,8 @@
 	<link href="less/bootstrap.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:100,400,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick.css" />
+	<link rel="stylesheet" href="https://jamesflorentino.github.io/nanoScrollerJS/css/nanoscroller.css">
+
 	<link href="less/app.css" rel="stylesheet">
 	<link href="less/desktop-queries.css" rel="stylesheet">
 
@@ -540,7 +542,7 @@
 					</div>
 					<div class="delivery-type stage">
                        <div class="cap">
-                           <h5>Способ доставки:</h5>
+                           <h5>Способы доставки:</h5>
 						    <a class="choose-all" href="#">Выбрать все</a>
                        </div>
 
@@ -575,12 +577,12 @@
 							<input type="checkbox" id="personal">
 							<label for="personal"><span>Б.У, частные лица</span></label>
 						</div>
-						<div class="toggle open">
+						<div class="toggle">
 							<input type="checkbox" id="disassembly">
 							<label for="disassembly"><span>Разборка</span></label>
 
-                            <div class="sub-checks-wrap">
-                                <div class="sub-checks">
+                            <div class="sub-checks-wrap nano">
+                                <div class="sub-checks nano-content">
                                     <div>
                                         <input type="checkbox" id="1">
                                         <label for="1"><span>A-auto</span></label>
@@ -622,6 +624,7 @@
                                         <label for="10"><span>Jiga</span></label>
                                     </div>
                                 </div>
+
                             </div>
 						</div>
 
@@ -732,6 +735,8 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script type="text/javascript" src="http://kenwheeler.github.io/slick/slick/slick.js"></script>
+<script type="text/javascript" src="js/sc.js"></script>
+
 <script>
 	$(function () {
 		var AllShares = $("<a />", { "href": "#", "class": "all-shares", text: "Посмотреть все акции" });
@@ -814,7 +819,20 @@
 		 from 1875 - 5 items
 
 		 */
+
+		$(".nano").nanoScroller({
+			preventPageScrolling: true
+		});
+
+		$(".toggle label").click(function ()
+		{
+			//$(".toggle").removeClass("open")
+			$(this).parent().toggleClass("open")
+			$(this).next().nanoScroller()
+			//$(".sub-checks-wrap").nanoScroller();
+		});
 	});
+
 </script>
 
 </body>
