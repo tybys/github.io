@@ -20,6 +20,13 @@ h3 {
 }
 ol.breadcrumb {
   background: transparent;
+  padding-top: 30px;
+  margin-bottom: 23px;
+}
+ol.breadcrumb a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #383c47;
 }
 .filter {
   background: rgba(181, 211, 233, 0.25);
@@ -32,10 +39,6 @@ ol.breadcrumb {
 .filter .scroll-bar .thumb {
   background: rgba(188, 203, 211, 0.5);
 }
-.filter > div {
-  padding-left: 10px;
-  padding-right: 10px;
-}
 .filter .tags span {
   color: #0070cd;
   font-size: 16px;
@@ -46,6 +49,20 @@ ol.breadcrumb {
   position: relative;
   padding-top: 17px;
   padding-bottom: 18px;
+}
+.filter .stage div {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.filter .stage .toggle.open {
+  padding-right: 0;
+}
+.filter .stage .toggle.open div {
+  padding: 0;
+}
+.filter .stage .toggle.open div.sub-checks {
+  padding-left: 14px;
+  padding-bottom: 15px;
 }
 .filter .stage > div:not(.cap) {
   height: inherit;

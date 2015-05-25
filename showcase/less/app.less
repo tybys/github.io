@@ -69,6 +69,13 @@ h3 {
 ol {
 	&.breadcrumb {
 		background: transparent;
+		padding-top: 30px;
+		margin-bottom: 23px;
+		a {
+			font-size: 16px;
+			font-weight: 300;
+			color: @GrayText;
+		}
 	}
 }
 
@@ -84,10 +91,10 @@ ol {
 			background: rgba(188, 203, 211, 0.5);
 		}
 	}
-	& > div {
-		padding-left: 10px;
-		padding-right: 10px;
-	}
+//	& > div {
+//		padding-left: 10px;
+//		padding-right: 10px;
+//	}
 	.tags {
 		span {
 			color: #0070cd;
@@ -100,6 +107,20 @@ ol {
 		position: relative;
 		padding-top: 17px;
 		padding-bottom: 18px;
+		div {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.toggle.open {
+			padding-right: 0;
+			div {
+				padding: 0;
+				&.sub-checks {
+					padding-left: 14px;
+					padding-bottom: 15px;
+				}
+			}
+		}
 		& > div {
 			&:not(.cap) {
 				height: inherit;
@@ -164,6 +185,7 @@ ol {
         overflow: hidden;
         max-height: 230px;
         position: relative;
+		//display: none;
         top: -5px;
 		.sub-checks {
 			padding-left: 14px;
