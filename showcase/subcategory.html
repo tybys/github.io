@@ -525,9 +525,18 @@
 		</div>
 	</div><!--head-->
 
+	<div class="row">
+		<div class="container">
+
+		</div>
+	</div>
+
 	<div class="row subcategory">
 		<div class="container">
 			<div class="col-md-2">
+				<div class="short-navi">
+					<a href="#">Назад</a>
+				</div>
 				<div class="filter important-block">
 					<div class="view-type stage">
                         <span class="list"></span>
@@ -577,7 +586,7 @@
 							<input type="checkbox" id="personal">
 							<label for="personal"><span>Б.У, частные лица</span></label>
 						</div>
-						<div class="toggle">
+						<div class="toggle open">
 							<input type="checkbox" id="disassembly">
 							<label for="disassembly"><span>Разборка</span></label>
 
@@ -657,6 +666,11 @@
 				</div>
 			</div>
 			<div class="col-md-10">
+				<ol class="breadcrumb">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Library</a></li>
+					<li class="active">Data</li>
+				</ol>
 				<h3>Автомобили</h3>
 				<div class="top-view-filter">
 					<a class="sel" href="">по популярности</a>
@@ -827,8 +841,8 @@
 		$(".toggle label").click(function ()
 		{
 			//$(".toggle").removeClass("open")
-			$(this).parent().toggleClass("open")
-			$(this).next().nanoScroller()
+			//$(this).parent().toggleClass("open")
+			//$(this).next().nanoScroller()
 			//$(".sub-checks-wrap").nanoScroller();
 		});
 	});

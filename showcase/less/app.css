@@ -18,6 +18,9 @@ h3 {
 .white-text {
   color: white;
 }
+ol.breadcrumb {
+  background: transparent;
+}
 .filter {
   background: rgba(181, 211, 233, 0.25);
   padding: 0 0 17px 0;
@@ -134,9 +137,6 @@ h3 {
 }
 .filter .toggle {
   position: relative;
-}
-.filter .toggle .sub-checks-wrap {
-  display: none;
 }
 .filter .toggle.open {
   background: #FBFCFD;
