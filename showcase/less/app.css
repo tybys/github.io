@@ -33,6 +33,34 @@ ol.breadcrumb a {
   padding: 0 0 17px 0;
   border-radius: 2px;
 }
+.filter .ropes {
+  margin-bottom: 12px;
+}
+.filter .slider-area .ui-widget-header {
+  border-radius: 0 !important;
+  border: none !important;
+  background: url("../images/handle-g.png") repeat-x !important;
+}
+.filter .slider-area .ui-widget-content {
+  border: none !important;
+  border-radius: 0 !important;
+  background: url("../images/handle-gg.png") repeat-x !important;
+}
+.filter .slider-area .ui-slider-handle {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 100%;
+  background-image: url("../images/vtoggle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.filter .slider-area .ui-slider-label {
+  font-size: 9px;
+  color: #B5D3E9;
+}
 .filter .scroll-bar {
   background: rgba(188, 203, 211, 0.1);
 }
@@ -63,9 +91,6 @@ ol.breadcrumb a {
 .filter .stage .toggle.open div.sub-checks {
   padding-left: 14px;
   padding-bottom: 15px;
-}
-.filter .stage > div:not(.cap) {
-  height: inherit;
 }
 .filter .stage:last-of-type {
   border-bottom: none;
@@ -146,8 +171,6 @@ ol.breadcrumb a {
 .filter .sub-checks-wrap .sub-checks label {
   font-size: 11px;
   position: relative;
-  top: 18px;
-  margin-bottom: 5px;
 }
 .filter .sub-checks-wrap .sub-checks label span {
   position: relative;
@@ -159,15 +182,17 @@ ol.breadcrumb a {
 .filter .toggle.open {
   background: #FBFCFD;
 }
-.filter .toggle.open:after,
-.filter .toggle.open:before {
-  content: "";
-  background: #FBFCFD;
-  width: 10px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: -10px;
+.filter .toggle.open .sub-checks div {
+  padding-top: 3px;
+}
+.filter .toggle.open .sub-checks div:first-of-type {
+  padding-top: 17px;
+}
+.filter .toggle.open .sub-checks div:first-of-type:before {
+  top: 3px;
+}
+.filter .toggle.open .sub-checks div:before {
+  top: -9px;
 }
 .filter .toggle.open:after {
   left: 100%;
@@ -571,9 +596,6 @@ ol.breadcrumb a {
   width: calc(100% - 200px);
   width: -webkit-calc(100% - 200px);
 }
-.row.subcategory .col-md-10 .top-view-filter {
-  overflow-x: hidden;
-}
 .row.subcategory .col-md-10 .top-view-filter .triple-arrow {
   position: relative;
 }
@@ -581,7 +603,8 @@ ol.breadcrumb a {
   content: "";
   position: absolute;
   top: 14px;
-  width: 100%;
+  width: calc(100% - 183px);
+  width: -webkit-calc(100% - 183px);
   height: 1px;
   background: #393c47;
 }
