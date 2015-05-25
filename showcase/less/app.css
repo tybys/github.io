@@ -124,6 +124,7 @@ ol.breadcrumb a {
   overflow: hidden;
   max-height: 230px;
   position: relative;
+  display: none;
   top: -5px;
 }
 .filter .sub-checks-wrap .sub-checks {

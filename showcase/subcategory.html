@@ -12,12 +12,14 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto:100,400,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick.css" />
 	<link rel="stylesheet" href="https://jamesflorentino.github.io/nanoScrollerJS/css/nanoscroller.css">
+	<link rel="stylesheet" href="less/jquery-ui.structure.css">
+	<link rel="stylesheet" href="less/jquery-ui.theme.css">
 
 	<link href="less/app.css" rel="stylesheet">
 	<link href="less/desktop-queries.css" rel="stylesheet">
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -545,9 +547,10 @@
 					<div class="slider-area stage">
                         <div class="cap"><h5>Стоимость, руб:</h5></div>
                         <div>
-                            <input type="text">
-                            <input type="text">
+                            <input type="text" id="from">
+                            <input type="text" id="to">
                         </div>
+						<div id="slider"></div>
 					</div>
 					<div class="delivery-type stage">
                        <div class="cap">
@@ -586,7 +589,7 @@
 							<input type="checkbox" id="personal">
 							<label for="personal"><span>Б.У, частные лица</span></label>
 						</div>
-						<div class="toggle open">
+						<div class="toggle">
 							<input type="checkbox" id="disassembly">
 							<label for="disassembly"><span>Разборка</span></label>
 
@@ -748,105 +751,122 @@
 
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
 <script type="text/javascript" src="http://kenwheeler.github.io/slick/slick/slick.js"></script>
 <script type="text/javascript" src="js/sc.js"></script>
 
+
 <script>
-	$(function () {
-		var AllShares = $("<a />", { "href": "#", "class": "all-shares", text: "Посмотреть все акции" });
+	(function ($) {
+		$(function () {
+			var AllShares = $("<a />", { "href": "#", "class": "all-shares", text: "Посмотреть все акции" });
 
-		$(".navbar-right").hover(function () {
-			var t = $(this).find("i");
-			t.addClass("sel");
-		}, function () {
-			var t = $(this).find("i");
-			t.removeClass("sel");
-		});
+			$(".navbar-right").hover(function () {
+				var t = $(this).find("i");
+				t.addClass("sel");
+			}, function () {
+				var t = $(this).find("i");
+				t.removeClass("sel");
+			});
 
-		$('#carous').slick({
-			slidesToShow: 1,
-			infinite: false,
-			slidesToScroll: 1,
-			autoplay: false,
-			autoplaySpeed: 2000,
-			dots: true,
-			arrows: false,
-			variableWidth: true
-		});
+			$('#carous').slick({
+				slidesToShow: 1,
+				infinite: false,
+				slidesToScroll: 1,
+				autoplay: false,
+				autoplaySpeed: 2000,
+				dots: true,
+				arrows: false,
+				variableWidth: true
+			});
 
-		var shares = $("#carous div.slick-slide").length;
-		$(".slick-dots").append("<span class='shares'>" + shares + "&nbsp;действующих акций&nbsp; <a href='#'>Посмотреть все</a>"+"</span>");
+			var shares = $("#carous div.slick-slide").length;
+			$(".slick-dots").append("<span class='shares'>" + shares + "&nbsp;действующих акций&nbsp; <a href='#'>Посмотреть все</a>"+"</span>");
 
-		$('#carous2').slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			autoplay: false,
-			dots: true,
-			arrows: false,
-			infinite: false,
-			variableWidth: true
-		});
+			$('#carous2').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay: false,
+				dots: true,
+				arrows: false,
+				infinite: false,
+				variableWidth: true
+			});
 
-		var shares2 = $("#carous2 div.slick-slide").length;
-		$("#carous2 .slick-dots").append("<span class='shares'>" + shares2 + "&nbsp;самых популярных предложений с бешенными скидками&nbsp;</span>");
+			var shares2 = $("#carous2 div.slick-slide").length;
+			$("#carous2 .slick-dots").append("<span class='shares'>" + shares2 + "&nbsp;самых популярных предложений с бешенными скидками&nbsp;</span>");
 
-		// funny
-		$(".navbar-brand").hover(function () {
-			$(".st7").css("opacity", 0.5)
-			$(".st10, .st11, .st12, .st13, .st14").fadeOut();
-			$(".brand g path").animate({
-				opacity: 0.3
-			})
-		}, function () {
-			$(".st7").css("opacity", 1)
-			//$(".st10, .st11, .st12, .st13, .st14").fadeOut();
-			$(".st10").fadeIn("100")
-			$(".st14").fadeIn("300")
-			$(".st13").fadeIn("600")
-			$(".st12").fadeIn("200")
-			$(".st11").fadeIn("150")
-			$(".brand g path").animate({
-				opacity: 1
-			})
+			// funny
+			$(".navbar-brand").hover(function () {
+				$(".st7").css("opacity", 0.5)
+				$(".st10, .st11, .st12, .st13, .st14").fadeOut();
+				$(".brand g path").animate({
+					opacity: 0.3
+				})
+			}, function () {
+				$(".st7").css("opacity", 1)
+				//$(".st10, .st11, .st12, .st13, .st14").fadeOut();
+				$(".st10").fadeIn("100")
+				$(".st14").fadeIn("300")
+				$(".st13").fadeIn("600")
+				$(".st12").fadeIn("200")
+				$(".st11").fadeIn("150")
+				$(".brand g path").animate({
+					opacity: 1
+				})
 
-		});
+			});
 
-		// temp
-		//image padding from bottom price-panel
-		$(".item h4").each(function ()
-		{
-			if ($(this).text().length > 29)
+			// temp
+			//image padding from bottom price-panel
+			$(".item h4").each(function ()
 			{
-				$(this).parent().addClass("multi")
-			}
+				if ($(this).text().length > 29)
+				{
+					$(this).parent().addClass("multi")
+				}
+			});
+
+			// image parent() block height
+			/*
+			 min items block in row 2, max is - 5
+			 all items in first row must be have colored title
+			 rest of - transparent
+
+			 start since 1235 - 2 items in row
+			 from 1555 - items
+			 from 1235 to 1550 - 4 items in row
+			 from 1875 - 5 items
+
+			 */
+
+			$(".nano").nanoScroller({
+				preventPageScrolling: true
+			});
+
+			$(".toggle label").click(function ()
+			{
+				//$(".toggle").removeClass("open")
+				$(this).parent().toggleClass("open");
+				$(this).next().nanoScroller();
+				//$(".sub-checks-wrap").nanoScroller();
+			});
+
+			$("#slider").slider({
+				range: true,
+				min: 0,
+				max: 500,
+				values: [ 75, 300 ],
+				slide: function( event, ui ) {
+					$("#from").val(ui.values[0]);
+					$("#to").val(ui.values[1]);
+				}
+			});
+			$("#from").val(ui.values[0]);
+			$("#to").val(ui.values[1]);
 		});
-
-		// image parent() block height
-		/*
-		 min items block in row 2, max is - 5
-		 all items in first row must be have colored title
-		 rest of - transparent
-
-		 start since 1235 - 2 items in row
-		 from 1555 - items
-		 from 1235 to 1550 - 4 items in row
-		 from 1875 - 5 items
-
-		 */
-
-		$(".nano").nanoScroller({
-			preventPageScrolling: true
-		});
-
-		$(".toggle label").click(function ()
-		{
-			//$(".toggle").removeClass("open")
-//			$(this).parent().toggleClass("open");
-//			$(this).next().nanoScroller();
-			//$(".sub-checks-wrap").nanoScroller();
-		});
-	});
-
+	})(jQuery);
 </script>
 
 </body>
