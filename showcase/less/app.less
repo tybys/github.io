@@ -265,10 +265,13 @@ ol {
 		}
     }
 	.toggle {
-//		position: relative;
-		.sub-checks-wrap {
-
+		background: #FBFCFD;
+		padding-top: 3px;
+		& > label span {
+			border-bottom: 1px dotted;
 		}
+
+		.sub-checks-wrap {}
 		&.open {
 			.sub-checks div {
 				&:first-of-type{
@@ -323,25 +326,18 @@ ol {
 //			background: #ffffff;
 		}
 	}
+
+
+	// slider
 	input {
 		&[type="text"] {
-//			border-radius: 2px;
-//			border: 1px solid rgb(90, 109, 123);
-//			font-size: 16px;
-//			color: @AlmostBlack;
-//			font-weight: 300;
-//			padding: 8px 0;
-//			width: 85px;
-		}
-		&[type="checkbox"] {
-//			display: none;
-			&:checked + label {
-//				font-weight: 400;
-			}
-			&:checked + label:before {
-//				border: 1px solid rgb(57, 60, 71);
-//				background: url("../images/ch-checked.png") no-repeat center;
-			}
+			border-radius: 2px;
+			border: 1px solid rgb(90, 109, 123);
+			font-size: 16px;
+			color: @AlmostBlack;
+			font-weight: 300;
+			padding: 8px 0;
+			width: 85px;
 		}
 	}
 
@@ -349,18 +345,43 @@ ol {
 	@ch-normal: #5A6D7B;
 	@ch-active: #393C47;
 
+	.check-drop {
+		padding-top: 11px;
+		label {
+			margin-bottom: 10px;
+		}
+		& > div {
+			position: relative;
+			//height: 22px;
+			height: 22px;
+			padding-left: 5px;
+			margin-bottom: 3px;
+
+		}
+	}
+
 	span {
 		input[type="checkbox"] {
-			display: none;
+			//display: none;
+			opacity: 0;
 		}
 		&.checkbox-wrap {
 			float: left;
-			width: 16px;
-			height: 16px;
+			width: 17px;
+			height: 17px;
 			border: 1px solid @ch-normal;
 			border-radius: 2px;
 			background-color: white;
 			margin-right: 5px;
+			&:before {
+				content: "";
+				position: absolute;
+				background: url("../images/tree.svg") no-repeat;
+				width: 11px;
+				height: 22px;
+				top: -15px;
+				left: -10px;
+			}
 		}
 		&.checkbox-wraps {
 
@@ -368,11 +389,17 @@ ol {
 		span.checkbox-state {
 
 		}
+		&.checkboxChecked {
+			border-color: @ch-active;
+			background: white url("../images/ch-checked.png") no-repeat center;
+		}
 	}
 	label {
 		font-size: 16px;
 		font-weight: 300;
 		cursor: pointer;
+		line-height: 16px;
+		margin-bottom: 8px;
 		&.checkbox-label {
 
 			span {

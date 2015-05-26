@@ -168,22 +168,65 @@ ol.breadcrumb a {
 .filter .choose-all:hover {
   text-decoration: none;
 }
+.filter .toggle {
+  background: #FBFCFD;
+  padding-top: 3px;
+}
+.filter .toggle > label span {
+  border-bottom: 1px dotted;
+}
+.filter input[type="text"] {
+  border-radius: 2px;
+  border: 1px solid #5a6d7b;
+  font-size: 16px;
+  color: #393c47;
+  font-weight: 300;
+  padding: 8px 0;
+  width: 85px;
+}
+.filter .check-drop {
+  padding-top: 11px;
+}
+.filter .check-drop label {
+  margin-bottom: 10px;
+}
+.filter .check-drop > div {
+  position: relative;
+  height: 22px;
+  padding-left: 5px;
+  margin-bottom: 3px;
+}
 .filter span input[type="checkbox"] {
-  display: none;
+  opacity: 0;
 }
 .filter span.checkbox-wrap {
   float: left;
-  width: 16px;
-  height: 16px;
+  width: 17px;
+  height: 17px;
   border: 1px solid #5a6d7b;
   border-radius: 2px;
   background-color: white;
   margin-right: 5px;
 }
+.filter span.checkbox-wrap:before {
+  content: "";
+  position: absolute;
+  background: url("../images/tree.svg") no-repeat;
+  width: 11px;
+  height: 22px;
+  top: -15px;
+  left: -10px;
+}
+.filter span.checkboxChecked {
+  border-color: #393c47;
+  background: #ffffff url("../images/ch-checked.png") no-repeat center;
+}
 .filter label {
   font-size: 16px;
   font-weight: 300;
   cursor: pointer;
+  line-height: 16px;
+  margin-bottom: 8px;
 }
 .my-block .navbar-right li a {
   padding-right: 0;
