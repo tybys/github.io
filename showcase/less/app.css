@@ -33,6 +33,29 @@ ol.breadcrumb a {
   padding: 0 0 17px 0;
   border-radius: 2px;
 }
+.filter .sc-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.filter .sc-scroller {
+  height: 100%;
+  overflow-y: scroll;
+}
+.filter .sc-scroller::-webkit-scrollbar {
+  width: 0;
+}
+.filter .scroller__bar {
+  /* The bar. You should define width, right and background */
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  width: 10px;
+  background: #999;
+}
+.filter .sc-container {
+  overflow: hidden;
+  /* For possible margin collapse removing */
+}
 .filter .ropes {
   margin-bottom: 12px;
 }
@@ -144,109 +167,6 @@ ol.breadcrumb a {
 }
 .filter .choose-all:hover {
   text-decoration: none;
-}
-.filter .sub-checks-wrap {
-  overflow: hidden;
-  max-height: 230px;
-  position: relative;
-  display: none;
-  top: -5px;
-}
-.filter .sub-checks-wrap .sub-checks {
-  padding-left: 14px;
-  padding-bottom: 15px;
-}
-.filter .sub-checks-wrap .sub-checks div {
-  position: relative;
-}
-.filter .sub-checks-wrap .sub-checks div:before {
-  content: "";
-  position: absolute;
-  background: url("../images/temp/tree.svg") no-repeat;
-  width: 11px;
-  height: 22px;
-  top: 3px;
-  left: -14px;
-}
-.filter .sub-checks-wrap .sub-checks label {
-  font-size: 11px;
-  position: relative;
-}
-.filter .sub-checks-wrap .sub-checks label span {
-  position: relative;
-  top: -3px;
-}
-.filter .toggle {
-  position: relative;
-}
-.filter .toggle.open {
-  background: #FBFCFD;
-}
-.filter .toggle.open .sub-checks div {
-  padding-top: 3px;
-}
-.filter .toggle.open .sub-checks div:first-of-type {
-  padding-top: 17px;
-}
-.filter .toggle.open .sub-checks div:first-of-type:before {
-  top: 3px;
-}
-.filter .toggle.open .sub-checks div:before {
-  top: -9px;
-}
-.filter .toggle.open:after {
-  left: 100%;
-}
-.filter .toggle.open .sub-checks-wrap {
-  display: block;
-  transition: all 0.5s ease;
-}
-.filter .toggle.open > label {
-  margin-top: 2px;
-}
-.filter .toggle > label > span {
-  border-bottom: 1px dotted;
-}
-.filter label {
-  font-size: 16px;
-  font-weight: 300;
-  cursor: pointer;
-  margin-bottom: 1px;
-}
-.filter label > span {
-  vertical-align: text-bottom;
-}
-.filter label::selection {
-  background: transparent;
-}
-.filter label:before {
-  content: "";
-  display: inline-block;
-  border: 1px solid #5a6d7b;
-  border-radius: 2px;
-  width: 17px;
-  height: 17px;
-  margin-right: 5px;
-  background: #ffffff;
-}
-.filter input[type="text"] {
-  border-radius: 2px;
-  border: 1px solid #5a6d7b;
-  font-size: 16px;
-  color: #393c47;
-  font-weight: 300;
-  padding: 8px 0;
-  width: 85px;
-}
-.filter input[type="checkbox"] {
-  display: none;
-}
-.filter input[type="checkbox"]:checked + label {
-  font-weight: 400;
-}
-.filter input[type="checkbox"]:checked + label:before {
-  border: 1px solid #393c47;
-  background: url("../images/ch-checked.png") no-repeat center;
 }
 .my-block .navbar-right li a {
   padding-right: 0;
