@@ -168,6 +168,23 @@ ol.breadcrumb a {
 .filter .choose-all:hover {
   text-decoration: none;
 }
+.filter span input[type="checkbox"] {
+  display: none;
+}
+.filter span.checkbox-wrap {
+  float: left;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #5a6d7b;
+  border-radius: 2px;
+  background-color: white;
+  margin-right: 5px;
+}
+.filter label {
+  font-size: 16px;
+  font-weight: 300;
+  cursor: pointer;
+}
 .my-block .navbar-right li a {
   padding-right: 0;
 }
