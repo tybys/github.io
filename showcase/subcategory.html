@@ -764,30 +764,85 @@
 			//$.formChanger.themeClass = 'win8';
 			$("input[type='checkbox']").applyChanger("sdf", {
 			//$("form").applyChanger({
-				common: {
+				all: {
 					options: {
-						wraps: 3
+						wraps: 2,
+						wrapsIn: true
 					},
 					classes: {
-						wrap: "-w"
+						wrap: '-wrap',
+						hover: '-hover',
+						pressed: '-press',
+						focused: '-focus',
+						filled: '-filled',
+						placeholder: '-place',
+						readonly: '-readonly',
+						disabled: '-disabled',
+						invalid: '-invalid',
+						title: '-title',
+						state: '-state'
 					}
 				},
-				settings: {
-					check: {
-						base: "asss"
+				form: {
+					classes: {
+						base: 'Form'
+					}
+				},
+				text: {
+					classes: {
+						base: 'Text'
+					}
+				},
+				textarea: {
+					classes: {
+						base: 'Textarea'
+					}
+				},
+				button: {
+					classes: {
+						base: 'Button',
+						icon: "Icon"
 					}
 				},
 				check: {
 					options: {
-						wraps: 1
+						checkboxFlag: '',
+						radioFlag: ''
 					},
 					classes: {
-						base: '-',
-						label: "-label",
-						base: "",
-						//wrap: "1",
-						checked: "-checked",
-						focused: "-focus"
+						base: '',
+					baseCheckbox: '1heckbox',
+					baseRadio: 'Radio',
+						checked: 'Checked',
+						label: '-label'
+					}
+				},
+				select: {
+					options: {
+						lists: 2,
+						listsIn: true
+					},
+					classes: {
+						base: 'Select',
+						arrow: 'Arrow',
+						list: 'List',
+						listin:'ListIn',
+						optgroup: 'OptGroup',
+						option: 'Option',
+						selected: 'Selelected',
+						open: 'Open'
+					}
+				},
+				file: {
+					options: {
+						useBtn: true,
+						useTextBox: true,
+						buttonValue: 'загрузить'
+					},
+					classes: {
+						base: 'File',
+						btn: 'Button',
+						field: 'Field'
 					}
 				}
 			});

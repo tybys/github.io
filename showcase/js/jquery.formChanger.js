@@ -69,8 +69,9 @@
                     radioFlag: ''
                 },
                 classes: {
-                    base: '',
-                    checked: 'Chexked',
+                    baseCheckbox: 'Checkbox',
+                    baseRadio: 'Radio',
+                    checked: 'Checked',
                     label: 'Label'
                 }
             },
@@ -382,7 +383,7 @@
 
                 var typeAttr = field.attr('type'),
                     type = typeAttr.substring(0,1).toUpperCase()+typeAttr.substring(1);
-                cls.base += type;
+                cls.base = cls['base'+type];
 
                 OFormChanger.addBase(cls);
 
@@ -591,7 +592,7 @@
                             if(!isList || selfOpt)
                                 hash.field.trigger(hash.isOpen?'close':'open');
                             if(selfOpt) {
-                                self.data().changerOption.attr({'selected':'selected'});
+                                self.data().changerOption[0].selected=true;
                                 hash.field.trigger('change');
                             }
                             hash.field.triggerHandler('click');
@@ -704,7 +705,9 @@
             }
         },
 
-        applyChanger: function(settings){
+        applyChanger: function(theme, settings){
+            if(theme) OFormChanger.themeClass = theme;
+
             var newstgs = $.extend(true, {}, OFormChanger.settings),
                 stgs =  $.extend(true, newstgs, settings || {});
 
