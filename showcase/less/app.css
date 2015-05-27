@@ -596,6 +596,12 @@ ol.breadcrumb a {
 .row.without-white .container {
   background: none;
 }
+.row.subcategory .item img {
+  padding-top: 0;
+}
+.row.subcategory .item .img-wrap:after {
+  display: none;
+}
 .row.subcategory .col-md-2 {
   width: calc(16.66666667% - 107.490px);
   width: -webkit-calc(16.66666667% - 107.490px);
