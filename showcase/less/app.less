@@ -84,29 +84,53 @@ ol {
 	background: rgba(181, 211, 233, 0.25);
 	padding: 0 0 17px 0;
     border-radius: 2px;
-	.sc-wrap {
-		position: relative;
-		overflow: hidden;
-	}
-	.sc-scroller {
-		height: 100%;
-		overflow-y: scroll;
-	}
-	.sc-scroller::-webkit-scrollbar {
-		width: 0;
-	}
-	.scroller__bar { /* The bar. You should define width, right and background */
-		position: absolute;
-		z-index: 1;
-		right: 0;
-		width: 10px;
-		background: #999;
-	}
-	.sc-container {
-		overflow: hidden; /* For possible margin collapse removing */
-	}
+
 	.ropes {
 		margin-bottom: 12px;
+		white-space: nowrap;
+		span {
+			position: relative;
+			&:first-of-type {
+				padding-right: 6px;
+				&:after {
+					position: absolute;
+					content: "";
+					background: url("../images/input-dot.png") no-repeat;
+					width: 7px;
+					height: 7px;
+					display: block;
+					//left: ~"calc(50% - 7px)";
+					left: 50%;
+					top: ~"calc(100% + 6px)";
+					top: ~"-webkit-calc(100% + 6px)";
+				}
+				&:before {
+					position: absolute;
+					content: "";
+					background: url("../images/input-dot.png") no-repeat;
+					width: 7px;
+					height: 7px;
+					display: block;
+					left: ~"calc(100% - 5.2px)";
+					left: ~"-webkit-calc(100% - 5.2px)";
+					top: ~"calc(50% - 4px)";
+					top: ~"-webkit-calc(50% - 4px)";
+				}
+			}
+			&:last-of-type {
+				&:after {
+					position: absolute;
+					content: "";
+					background: url("../images/input-dot.png") no-repeat;
+					width: 7px;
+					height: 7px;
+					display: block;
+					right: 50%;
+					top: ~"calc(100% + 6px)";
+					top: ~"-webkit-calc(100% + 6px)";
+				}
+			}
+		}
 	}
 	.slider-area {
 		// Handle
@@ -329,8 +353,20 @@ ol {
 
 
 	// slider
+	.ui-slider-pips .ui-slider-line {
+		background: #B5D3E9;
+	}
+	.pip-wrap {
+		position: absolute;
+		width: 90%;
+		padding-left: 0;
+		padding-right: 0;
+		left: 5%;
+		right: 5%;
+	}
 	input {
 		&[type="text"] {
+			text-align: center;
 			border-radius: 2px;
 			border: 1px solid rgb(90, 109, 123);
 			font-size: 16px;
@@ -391,7 +427,7 @@ ol {
 		}
 		&.checkboxChecked {
 			border-color: @ch-active;
-			background: white url("../images/ch-checked.png") no-repeat center;
+			background: white url("../images/ch-checked.png") no-repeat 3px 3px;
 		}
 	}
 	label {

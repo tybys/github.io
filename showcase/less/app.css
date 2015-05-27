@@ -33,31 +33,49 @@ ol.breadcrumb a {
   padding: 0 0 17px 0;
   border-radius: 2px;
 }
-.filter .sc-wrap {
-  position: relative;
-  overflow: hidden;
-}
-.filter .sc-scroller {
-  height: 100%;
-  overflow-y: scroll;
-}
-.filter .sc-scroller::-webkit-scrollbar {
-  width: 0;
-}
-.filter .scroller__bar {
-  /* The bar. You should define width, right and background */
-  position: absolute;
-  z-index: 1;
-  right: 0;
-  width: 10px;
-  background: #999;
-}
-.filter .sc-container {
-  overflow: hidden;
-  /* For possible margin collapse removing */
-}
 .filter .ropes {
   margin-bottom: 12px;
+  white-space: nowrap;
+}
+.filter .ropes span {
+  position: relative;
+}
+.filter .ropes span:first-of-type {
+  padding-right: 6px;
+}
+.filter .ropes span:first-of-type:after {
+  position: absolute;
+  content: "";
+  background: url("../images/input-dot.png") no-repeat;
+  width: 7px;
+  height: 7px;
+  display: block;
+  left: 50%;
+  top: calc(100% + 6px);
+  top: -webkit-calc(100% + 6px);
+}
+.filter .ropes span:first-of-type:before {
+  position: absolute;
+  content: "";
+  background: url("../images/input-dot.png") no-repeat;
+  width: 7px;
+  height: 7px;
+  display: block;
+  left: calc(100% - 5.2px);
+  left: -webkit-calc(100% - 5.2px);
+  top: calc(50% - 4px);
+  top: -webkit-calc(50% - 4px);
+}
+.filter .ropes span:last-of-type:after {
+  position: absolute;
+  content: "";
+  background: url("../images/input-dot.png") no-repeat;
+  width: 7px;
+  height: 7px;
+  display: block;
+  right: 50%;
+  top: calc(100% + 6px);
+  top: -webkit-calc(100% + 6px);
 }
 .filter .slider-area .ui-widget-header {
   border-radius: 0 !important;
@@ -175,7 +193,19 @@ ol.breadcrumb a {
 .filter .toggle > label span {
   border-bottom: 1px dotted;
 }
+.filter .ui-slider-pips .ui-slider-line {
+  background: #B5D3E9;
+}
+.filter .pip-wrap {
+  position: absolute;
+  width: 90%;
+  padding-left: 0;
+  padding-right: 0;
+  left: 5%;
+  right: 5%;
+}
 .filter input[type="text"] {
+  text-align: center;
   border-radius: 2px;
   border: 1px solid #5a6d7b;
   font-size: 16px;
@@ -219,7 +249,7 @@ ol.breadcrumb a {
 }
 .filter span.checkboxChecked {
   border-color: #393c47;
-  background: #ffffff url("../images/ch-checked.png") no-repeat center;
+  background: #ffffff url("../images/ch-checked.png") no-repeat 3px 3px;
 }
 .filter label {
   font-size: 16px;
