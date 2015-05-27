@@ -916,6 +916,10 @@ a.stair span.red i {
 .items.orange h4 {
   background-color: #FF931E;
 }
+.items .fix-height {
+  height: calc(280px + 41px);
+  height: -webkit-calc(280px + 41px);
+}
 .items .item {
   position: relative;
   width: 280px;

@@ -705,16 +705,20 @@
                                     C0.202,6.44,0.567,5.319,1.48,5.186l3.254-0.473C5.096,4.66,5.41,4.433,5.572,4.104l1.455-2.949
                                     C7.435,0.328,8.615,0.328,9.023,1.155z"></path>
                                 </svg>
-						<h4><span>Патефон Partyfon</span></h4>
-						<div class="img-wrap"><img src="images/temp/cars-01.png"></div>
-						<div class="price-panel">
-							<span class="old-price">99 999p</span>
-                                <span class="sale">
-                                    <!--<i>-50%</i>-->
-                                    <i>6 дн. 22:02:48</i>
-                                </span>
-							<span class="actual-price">45 000р</span>
-						</div>
+						<h4><span>Патефон Partyfon    Патефон Partyfon Патефон PartyfonПатефон PartyfonПатефон PartyfonПатефон Partyfon</span></h4>
+                        <div class="fix-height">
+                            <div class="img-wrap">
+                                <img src="images/temp/cars-01.png">
+                            </div>
+                            <div class="price-panel">
+                                <span class="old-price">99 999p</span>
+                                    <span class="sale">
+                                        <i>-50%</i>
+                                        <i>6 дн. 22:02:48</i>
+                                    </span>
+                                <span class="actual-price">45 000р</span>
+                            </div>
+                        </div>
 					</div>
 					<div class="item">
 						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16.025px" height="15.384px" viewBox="0 0 16.025 15.384" enable-background="new 0 0 16.025 15.384" xml:space="preserve">
@@ -726,15 +730,17 @@
                                     C7.435,0.328,8.615,0.328,9.023,1.155z"></path>
                                 </svg>
 						<h4><span>Патефон Partyfon</span></h4>
-						<div class="img-wrap"><img src="images/temp/cars-02.png"></div>
-						<div class="price-panel">
-							<!--<span class="old-price">99 999p</span>-->
-                                <span class="sale">
-                                    <i>-50%</i>
-                                    <i>6 дн. 22:02:48</i>
-                                </span>
-							<span class="actual-price">45 000р</span>
-						</div>
+                        <div class="fix-height">
+                            <div class="img-wrap"><img src="images/temp/cars-02.png"></div>
+                            <div class="price-panel">
+                                <span class="old-price">99 999p</span>
+                                    <span class="sale">
+                                        <i>-50%</i>
+                                        <i>6 дн. 22:02:48</i>
+                                    </span>
+                                <span class="actual-price">45 000р</span>
+                            </div>
+                        </div>
 					</div>
 					<div class="item">
 						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16.025px" height="15.384px" viewBox="0 0 16.025 15.384" enable-background="new 0 0 16.025 15.384" xml:space="preserve">
@@ -825,7 +831,7 @@
                                     C0.202,6.44,0.567,5.319,1.48,5.186l3.254-0.473C5.096,4.66,5.41,4.433,5.572,4.104l1.455-2.949
                                     C7.435,0.328,8.615,0.328,9.023,1.155z"></path>
                                 </svg>
-						<h4><span>Патефон Partyfon</span></h4>
+						<h4><span>Патефон Partyfon Патефон Partyfon Патефон Partyfon</span></h4>
 						<div class="img-wrap"><img src="images/temp/cars-07.png"></div>
 						<div class="price-panel">
 							<span class="old-price">99 999p</span>
@@ -958,11 +964,52 @@
 <script src="js/jquery.formChanger.js"></script>
 <script src="js/jquery-ui.js"></script>
 <script src="js/jquery-ui-slider-pips.js"></script>
+<script src="js/jquery.matchHeight.js"></script>
 <!--<script src="http://kenwheeler.github.io/slick/slick/slick.js"></script>-->
 
 <script>
 
 		$(function () {
+
+            $(".item").matchHeight();
+//            var currentTallest = 0,
+//                    currentRowStart = 0,
+//                    rowDivs = new Array(),
+//                    $el,
+//                    topPosition = 0;
+//
+//            $('.item').each(function() {
+//
+//                $el = $(this);
+//                topPosition = $el.position().top;
+//
+//                if (currentRowStart != topPosition) {
+//
+//                    // we just came to a new row.  Set all the heights on the completed row
+//                    for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+//                        rowDivs[currentDiv].height(currentTallest);
+//                    }
+//
+//                    // set the variables for the new row
+//                    rowDivs.length = 0; // empty the array
+//                    currentRowStart = topPosition;
+//                    currentTallest = $el.height();
+//                    rowDivs.push($el);
+//
+//                } else {
+//
+//                    // another div on the current row.  Add it to the list and check if it's taller
+//                    rowDivs.push($el);
+//                    currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+//
+//                }
+//
+//                // do the last row
+//                for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+//                    rowDivs[currentDiv].height(currentTallest);
+//                }
+//
+//            })
 
 			//$.formChanger.themeClass = 'win8';
 			$("input[type='checkbox']").applyChanger("sc", {
