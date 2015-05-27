@@ -910,6 +910,9 @@ a.stair span.red i {
   float: right;
   margin-top: 10px;
 }
+.items h4 {
+  color: #0070cd;
+}
 .items.blue h4 {
   background-color: #0070cd;
 }
