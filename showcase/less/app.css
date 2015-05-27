@@ -911,7 +911,7 @@ a.stair span.red i {
   margin-top: 10px;
 }
 .items h4 {
-  color: #0070cd;
+  color: #0070cd !important;
 }
 .items.blue h4 {
   background-color: #0070cd;
