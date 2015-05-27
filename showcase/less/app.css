@@ -247,7 +247,7 @@ ol.breadcrumb a {
   top: -15px;
   left: -10px;
 }
-.filter span.checkboxChecked {
+.filter span.checkbox-checked {
   border-color: #393c47;
   background: #ffffff url("../images/ch-checked.png") no-repeat 3px 3px;
 }
