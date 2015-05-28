@@ -1,0 +1,49 @@
+@import "app-vars.less";
+
+// column params (2, 10)
+.col-md-2 {
+	min-width: 240px;
+	padding-right: 17px;
+	width: ~"calc(16.66666667% - 107.490px)";
+	width: ~"-webkit-calc(16.66666667% - 107.490px)";
+}
+.col-md-10 {
+	width: ~"calc(100% - 255px)";
+	width: ~"-webkit-calc(100% - 255px)";
+	padding-right: 0;
+	padding-left: 24px;
+}
+
+//container
+.container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+// def tags
+h2,
+h3 {
+	font-size: 32px;
+	font-weight: 300;
+}
+
+//breadcrumbs
+ol {
+	&.breadcrumb {
+		background: transparent;
+		padding-top: 37px;
+		margin-bottom: 15px;
+		padding-bottom: 0;
+		padding-left: 0;
+		a {
+			font-size: 16px;
+			font-weight: 300;
+			color: @GrayText;
+		}
+		& ~ h3 {
+			margin-top: 0;
+			margin-bottom: 23px;
+		}
+	}
+}
