@@ -920,48 +920,6 @@ a.stair span.red i {
 .items.orange h4 {
   background-color: #FF931E;
 }
-.items .fix-height {
-  background: gray;
-  height: calc(280px + 41px);
-  height: -webkit-calc(280px + 41px);
-}
-.items .item {
-  position: relative;
-  width: 280px;
-  float: left;
-  margin-right: 40px;
-  margin-bottom: 40px;
-  min-height: 350px;
-}
-.items .item img,
-.items .item .magic {
-  display: inline-block;
-  vertical-align: middle;
-}
-.items .item .magic {
-  height: 280px;
-}
-.items .item svg {
-  position: absolute;
-  top: 15px;
-  left: 10px;
-}
-.items .item svg path {
-  fill: white;
-}
-.items .item h4 {
-  font-size: 16px;
-  line-height: 18px;
-  min-height: 40px;
-  margin: 0;
-  color: white;
-  font-weight: 300;
-  padding-left: 35px;
-}
-.items .item h4 span {
-  display: block;
-  padding: 14px 0 14px 0;
-}
 .items .item.empty {
   background: transparent;
   min-height: 0;
