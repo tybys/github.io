@@ -857,7 +857,7 @@ a.stair span.red i {
   left: 0;
   width: 100%;
   padding: 0 12px;
-  background: white;
+  background: red;
 }
 .price-panel span {
   font-size: 16px;
@@ -921,10 +921,12 @@ a.stair span.red i {
   background-color: #FF931E;
 }
 .items .fix-height {
-  background: gray;
-  height: calc(280px + 41px);
-  height: -webkit-calc(280px + 41px);
   white-space: nowrap;
+  height: 321px;
+}
+.items .img-wrap {
+  background: gray;
+  height: 280px;
 }
 .items .item {
   position: relative;
@@ -938,6 +940,10 @@ a.stair span.red i {
 .items .item .magic {
   display: inline-block;
   vertical-align: middle;
+}
+.items .item img {
+  position: relative;
+  left: -3px;
 }
 .items .item .magic {
   height: 280px;

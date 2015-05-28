@@ -1164,7 +1164,7 @@ a {
 	left: 0;
 	width: 100%;
 	padding: 0 12px;
-	background: white;
+	background: red;
 	span {
 		font-size: 16px;
 		font-weight: 300;
@@ -1244,15 +1244,24 @@ a {
 	}
 	// !!!
 	.fix-height {
-		background: gray;
-		height: ~"calc(280px + 41px)";
-		height: ~"-webkit-calc(280px + 41px)";
+		//background: gray;
+//		height: ~"calc(280px + 41px)";
+//		height: ~"-webkit-calc(280px + 41px)";
 		white-space: nowrap;
+		height: 321px;
+	}
+	.img-wrap {
+		background: gray;
+		height: 280px;
 	}
 	.item {
 		img, .magic {
 			display: inline-block;
 			vertical-align: middle;
+		}
+		img {
+			position: relative;
+			left: -3px;
 		}
 		.magic {
 			height: 280px;
