@@ -20,13 +20,19 @@ h3 {
 }
 ol.breadcrumb {
   background: transparent;
-  padding-top: 30px;
-  margin-bottom: 23px;
+  padding-top: 37px;
+  margin-bottom: 15px;
+  padding-bottom: 0;
+  padding-left: 0;
 }
 ol.breadcrumb a {
   font-size: 16px;
   font-weight: 300;
   color: #383c47;
+}
+ol.breadcrumb ~ h3 {
+  margin-top: 0;
+  margin-bottom: 23px;
 }
 .filter {
   background: rgba(181, 211, 233, 0.25);
@@ -614,6 +620,7 @@ ol.breadcrumb a {
 }
 .row.subcategory .col-md-10 .top-view-filter .triple-arrow {
   position: relative;
+  padding-top: 16px;
 }
 .row.subcategory .col-md-10 .top-view-filter .triple-arrow:after {
   content: "";
@@ -926,6 +933,9 @@ a.stair span.red i {
 }
 .items .img-wrap {
   background: gray;
+  position: absolute;
+  bottom: 41px;
+  width: 100%;
   height: 280px;
 }
 .items .item {
