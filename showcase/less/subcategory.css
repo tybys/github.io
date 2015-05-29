@@ -253,3 +253,10 @@
 .lazy-load #LazyLoad:hover {
   transform: scale3d(1.2, 1.2, 1.2);
 }
+.root-wrap.with-drop:after {
+  content: "";
+  background: url("../images/drops-next.png") no-repeat;
+  width: 6px;
+  height: 9px;
+  display: block;
+}
