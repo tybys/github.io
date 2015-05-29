@@ -230,3 +230,26 @@
   line-height: 16px;
   margin-bottom: 8px;
 }
+.lazy-load {
+  text-align: center;
+}
+.lazy-load #LazyLoad {
+  cursor: pointer;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #5a6d7b;
+  display: block;
+  text-align: center;
+  border-radius: 100%;
+  transition: all .1s ease;
+}
+.lazy-load #LazyLoad svg {
+  width: 10px;
+  height: 16px;
+  margin-top: calc(50% - 8px);
+  margin-top: -webkit-calc(50% - 8px);
+}
+.lazy-load #LazyLoad:hover {
+  transform: scale3d(1.2, 1.2, 1.2);
+}

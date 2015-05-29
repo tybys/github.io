@@ -35,3 +35,56 @@ ol.breadcrumb ~ h3 {
   margin-top: 0;
   margin-bottom: 23px;
 }
+.pagi {
+  text-align: center;
+}
+.pagi .btn {
+  display: inline-block;
+  vertical-align: text-top;
+  background: white;
+  border: 1px solid #dddddd;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.pagi .btn:hover {
+  border: 1px solid #dddddd;
+}
+.pagi nav {
+  display: inline-block;
+  vertical-align: text-top;
+  font-weight: 300;
+  font-size: 16px;
+  color: #383c47;
+}
+.pagi nav .first {
+  background: url("../images/pagi-arrow.png") no-repeat center;
+  width: 10px;
+  height: 22px;
+  display: block;
+  margin: 0 auto;
+}
+.pagi nav .last {
+  background: url("../images/pagi-arrow.png") no-repeat center;
+  width: 10px;
+  height: 22px;
+  display: block;
+  transform: rotate(180deg);
+  margin: 0 auto;
+}
+.pagi .pagination {
+  margin-top: 0;
+}
+.pagi .pagination li > a {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.pagi .pagination li a {
+  width: 40px;
+}
+.pagi .pagination li:first-of-type a,
+.pagi .pagination li:last-of-type a {
+  width: 80px;
+}
+.pagi .pagination a:hover {
+  box-shadow: inset 0 0 0 2px #ffffff;
+}

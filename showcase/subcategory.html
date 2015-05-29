@@ -1004,11 +1004,12 @@
 		<div class="container">
 			<div class="col-md-10 col-md-offset-2">
 				<div class="pagi">
+					<a href="#" class="btn btn-default">В начало</a>
 					<nav>
 						<ul class="pagination">
 							<li>
 								<a href="#" aria-label="Previous">
-									<span aria-hidden="true">&laquo;</span>
+									<span class="first" aria-hidden="true">&nbsp;</span>
 								</a>
 							</li>
 							<li><a href="#">1</a></li>
@@ -1018,12 +1019,33 @@
 							<li><a href="#">5</a></li>
 							<li>
 								<a href="#" aria-label="Next">
-									<span aria-hidden="true">&raquo;</span>
+									<span class="last" aria-hidden="true">&nbsp;</span>
 								</a>
 							</li>
 						</ul>
 					</nav>
+					<a href="#" class="btn btn-default">В конец</a>
 				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row lazy-load">
+		<div class="container">
+			<div class="col-md-10 col-md-offset-2">
+				<p>Чтобы увидеть остальные предложения на одной странице, нажмите здесь</p>
+				<span id="LazyLoad">
+					<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="0 0 9 15" enable-background="new 0 0 9 15" xml:space="preserve">
+						<polyline class="first" fill="none" stroke="#5A6E7B" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="0.5,5.5
+							4.5,9.5 8.5,5.5 "/>
+						<polyline class="second" fill="none" stroke="#5A6E7B" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="0.5,10.5
+							4.5,14.5 8.5,10.5 "/>
+						<polyline class="third" fill="none" stroke="#5A6E7B" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="0.5,0.5
+							4.5,4.5 8.5,0.5 "/>
+						</svg>
+				</span>
 			</div>
 		</div>
 	</div>
