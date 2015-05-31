@@ -577,7 +577,7 @@
 						</div>
 					</div>
 
-					<div class="proposal-type stage drop-area">
+					<div class="proposal-type stage drop-area" hidden="">
 						<div class="cap">
                             <h5>Предложения</h5>
                             <a class="choose-all" href="#">Выбрать все</a>
@@ -599,52 +599,52 @@
 							<input type="checkbox" id="personal">
 							<label for="personal"><span>Б.У, частные лица</span></label>
 						</div>
-						<!--<div class="toggle">-->
-							<!--<input type="checkbox" id="disassembly">-->
-							<!--<label for="disassembly"><span>Разборка</span></label>-->
-								<!--<div class="check-drop">-->
-									<!--<div>-->
-										<!--<input type="checkbox" id="1">-->
-										<!--<label for="1"><span>A-auto</span></label>-->
-									<!--</div>-->
-									<!--<div>-->
-										<!--<input type="checkbox" id="2">-->
-										<!--<label for="2"><span>B-auto</span></label>-->
-									<!--</div>-->
-									<!--<div>-->
-										<!--<input type="checkbox" id="3">-->
-										<!--<label for="3"><span>C-auto</span></label>-->
-									<!--</div>-->
-									<!--<div>-->
-										<!--<input type="checkbox" id="4">-->
-										<!--<label for="4"><span>Das-auto</span></label>-->
-									<!--</div>-->
-									<!--<div>-->
-										<!--<input type="checkbox" id="5">-->
-										<!--<label for="5"><span>E-auto</span></label>-->
-									<!--</div>-->
-									<!--<div>-->
-										<!--<input type="checkbox" id="6">-->
-										<!--<label for="6"><span>F-auto</span></label>-->
-									<!--</div>-->
-									<!--<div>-->
-										<!--<input type="checkbox" id="7">-->
-										<!--<label for="7"><span>G-dot</span></label>-->
-									<!--</div>-->
-									<!--<div>-->
-										<!--<input type="checkbox" id="8">-->
-										<!--<label for="8"><span>H-nya</span></label>-->
-									<!--</div>-->
-									<!--<div>-->
-										<!--<input type="checkbox" id="9">-->
-										<!--<label for="9"><span>G-Klass</span></label>-->
-									<!--</div>-->
-									<!--<div>-->
-										<!--<input type="checkbox" id="10">-->
-										<!--<label for="10"><span>Jiga</span></label>-->
-									<!--</div>-->
-								<!--</div>-->
-						<!--</div>-->
+						<div class="toggle">
+							<input type="checkbox" id="disassembly">
+							<label for="disassembly"><span>Разборка</span></label>
+								<div class="check-drop">
+									<div>
+										<input type="checkbox" id="1">
+										<label for="1"><span>A-auto</span></label>
+									</div>
+									<div>
+										<input type="checkbox" id="2">
+										<label for="2"><span>B-auto</span></label>
+									</div>
+									<div>
+										<input type="checkbox" id="3">
+										<label for="3"><span>C-auto</span></label>
+									</div>
+									<div>
+										<input type="checkbox" id="4">
+										<label for="4"><span>Das-auto</span></label>
+									</div>
+									<div>
+										<input type="checkbox" id="5">
+										<label for="5"><span>E-auto</span></label>
+									</div>
+									<div>
+										<input type="checkbox" id="6">
+										<label for="6"><span>F-auto</span></label>
+									</div>
+									<div>
+										<input type="checkbox" id="7">
+										<label for="7"><span>G-dot</span></label>
+									</div>
+									<div>
+										<input type="checkbox" id="8">
+										<label for="8"><span>H-nya</span></label>
+									</div>
+									<div>
+										<input type="checkbox" id="9">
+										<label for="9"><span>G-Klass</span></label>
+									</div>
+									<div>
+										<input type="checkbox" id="10">
+										<label for="10"><span>Jiga</span></label>
+									</div>
+								</div>
+						</div>
 						<div class="with-drop root-wrap">
 							<input type="checkbox" id="disassembly">
 							<label for="disassembly"><span>Разборка</span></label>
@@ -670,6 +670,66 @@
 							<label for=""><span>InTradeOut</span></label>
 						</div>
 					</div>
+
+                    <div class="proposal-type">
+                        <ul class="root-cat">
+                            <li class="with-drop next" data-id="auto-subcat1"><a href="#">Авто</a></li>
+                            <li class="with-drop next"><a href="#"><span>Категория1</span></a></li>
+                            <li><a href="#">Категория2</a></li>
+                        </ul>
+
+                        <div id="auto-subcat1" class="drop-category">
+                            <span class="to-prev-stage">Авто</span>
+                            <div>
+                                <input type="checkbox" id="s1"/>
+                                <label for="s1">TradeIn</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="s2"/>
+                                <label for="s2">Новые автомобили</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="s3"/>
+                                <label for="s3">с электронными наворотами</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="s4"/>
+                                <label for="s4">Б.У., частные лица</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="s5"/>
+                                <label for="s5">TradeIn</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="s7"/>
+                                <label for="s7">Новые автомобили</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="s8"/>
+                                <label for="s8">Б.У., частные лица</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="s9"/>
+                                <label for="s9">Новые автомобили с электронными наворотами</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="s10"/>
+                                <label for="s10">Б.У., частные лица</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="s11"/>
+                                <label for="s11">TradeIn</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="s12"/>
+                                <label for="s12">Новые автомобили</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="s13"/>
+                                <label for="s13">Б.У., частные лица</label>
+                            </div>
+                        </div>
+                    </div>
 
 					<div class="tags stage">
 						<div class="cap"><h5>Популярные запросы</h5></div>
@@ -1130,6 +1190,21 @@
 		$(function () {
 
             $(".item").matchHeight();
+            $(".with-drop").click(function ()
+            {
+                $(this).offsetParent().css("height", $(".drop-category").outerHeight());
+                $(this).parent().addClass("page-from-center-to-left");
+                $(".drop-category").show().addClass("page-from-right-to-center");
+
+                return false;
+            });
+
+            $(".to-prev-stage").on("click", function ()
+            {
+                $(this).parent().removeClass("page-from-right-to-center").addClass("page-from-center-to-right").removeClass("page-from-center-to-right");
+                $(this).parent().prev().removeClass("page-from-center-to-left")
+            });
+
 //            var currentTallest = 0,
 //                    currentRowStart = 0,
 //                    rowDivs = new Array(),

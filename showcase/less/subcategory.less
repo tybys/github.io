@@ -279,15 +279,15 @@
 			border-radius: 2px;
 			background-color: white;
 			margin-right: 5px;
-			&:before {
-				content: "";
-				position: absolute;
-				background: url("../images/tree.svg") no-repeat;
-				width: 11px;
-				height: 22px;
-				top: -15px;
-				left: -10px;
-			}
+//			&:before {
+//				content: "";
+//				position: absolute;
+//				background: url("../images/tree.svg") no-repeat;
+//				width: 11px;
+//				height: 22px;
+//				top: -15px;
+//				left: -10px;
+//			}
 		}
 		&.checkbox-wraps {
 
@@ -295,12 +295,13 @@
 		span.checkbox-state {
 
 		}
-		&.checkboxChecked {
+		&.checkbox-checked {
 			border-color: @ch-active;
 			background: white url("../images/ch-checked.png") no-repeat 3px 3px;
 		}
 	}
 	label {
+        //display: inline;
 		font-size: 16px;
 		font-weight: 300;
 		cursor: pointer;
@@ -340,15 +341,154 @@
 	}
 }
 
-.root-wrap {
-	&.with-drop {
-		&:after {
-			content: "";
-			background: url("../images/drops-next.png") no-repeat;
-			width: 6px;
-			height: 9px;
-			display: block;
-		}
-	}
+
+.root-cat {
+    padding: 0;
+    list-style: none;
+    margin-top: 17px;
+    width: 100%;
+    li {
+        margin-bottom: 8px;
+        a {
+            padding-left: 23px;
+            color: @GrayText;
+            font-weight: 300;
+        }
+        &.with-drop {}
+        &.with-drop.back {
+            background: #5A6D7A url("../images/drops-back.png") no-repeat 10px center;
+            font-size: 14px;
+            a {
+                padding-left: 23px;
+                color: white;
+            }
+        }
+        &.with-drop.next {
+            background: transparent url("../images/drops-next.png") no-repeat 95% center;
+            font-weight: 300;
+            font-size: 14px;
+            a {
+                padding-left: 23px;
+                span {
+                    border-bottom: 1px dotted;
+                }
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
-.child-wrap {}
+
+.drop-category {
+    display: none;
+    background: #EEF2F4;
+    .to-prev-stage {
+        background: #5A6D7A url("../images/drops-back.png") no-repeat 10px center;
+        font-size: 14px;
+        display: block;
+        color: white;
+        padding-left: 23px;
+        margin-bottom: 8px;
+    }
+    & > div {
+        padding: 0 10px;
+    }
+    label {
+        width: 85%;
+    }
+}
+
+.proposal-type {
+    position: relative;
+    overflow: hidden;
+    ul {
+//        position: absolute;
+        top: 0;
+    }
+    .drop-category {
+        position: absolute;
+        top: 0;
+    }
+}
+
+.page-on-left {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.page-from-center-to-left {
+    -webkit-animation: pageFromCenterToLeft 400ms forwards;
+    animation: pageFromCenterToLeft 400ms forwards;
+}
+.page-from-left-to-center {
+    -webkit-animation: pageFromLeftToCenter 400ms forwards;
+    animation: pageFromLeftToCenter 400ms forwards;
+}
+.page-from-right-to-center {
+    -webkit-animation: pageFromRightToCenterDegrade 500ms forwards;
+    animation: pageFromRightToCenterDegrade 500ms forwards;
+}
+.page-from-center-to-right {
+    -webkit-animation: pageFromCenterToRightDegrade 500ms forwards;
+    animation: pageFromCenterToRightDegrade 500ms forwards;
+}
+
+@-webkit-keyframes pageFromCenterToLeft {
+    from {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    to {
+        opacity: 0.9;
+        -webkit-transform: translate3d(-20%, 0, 0);
+    }
+}
+@-webkit-keyframes pageFromLeftToCenter {
+    from {
+        opacity: 0.9;
+        -webkit-transform: translate3d(-20%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes pageFromCenterToLeft {
+    from {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        opacity: 0.9;
+        transform: translate3d(-20%, 0, 0);
+    }
+}
+@keyframes pageFromLeftToCenter {
+    from {
+        opacity: 0.9;
+        transform: translate3d(-20%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+@-webkit-keyframes pageFromRightToCenterDegrade {
+    from {
+        -webkit-transform: translate3d(100%, 0, 0);
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+@-webkit-keyframes pageFromCenterToRightDegrade {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    to {
+        -webkit-transform: translate3d(100%, 0, 0);
+    }
+}
