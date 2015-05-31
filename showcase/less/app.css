@@ -537,6 +537,27 @@ a.stair span.red i {
 .items-horizontal .price-panel .actual-price {
   float: none;
 }
+.price-panel.large {
+  height: auto;
+}
+.price-panel.large .sale {
+  display: inline-block;
+  margin-right: 30px;
+  vertical-align: middle;
+}
+.price-panel.large .sale i {
+  font-size: 32px !important;
+  width: 100px !important;
+}
+.price-panel.large .sale i:after {
+  background-size: contain;
+}
+.price-panel.large .actual-price {
+  vertical-align: middle;
+  float: none;
+  display: inline-block;
+  font-size: 62px;
+}
 .price-panel {
   height: 41px;
   border-top: 1px solid #BCCBD4;
