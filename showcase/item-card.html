@@ -566,15 +566,25 @@
 				</ol>
 				<h3>VolksWagen Golf</h3>
 
-				<div>
+				<div class="IC-slider-area">
 					<div id="ICCarousel" class="item-card-carousel">
-						<div><img src="images/temp/ic1.jpg"></div>
-						<div><img src="images/temp/ic2.jpg"></div>
-						<div><img src="images/temp/ic3.jpg"></div>
-						<div><img src="images/temp/ic4.jpg"></div>
-						<div><img src="images/temp/ic5.jpg"></div>
+						<div><img src="images/temp/ic1.jpg" height="390"></div>
+						<div><img src="images/temp/ic2.jpg" height="390"></div>
+						<div><img src="images/temp/ic3.jpg" height="390"></div>
+						<div><img src="images/temp/ic4.jpg" height="390"></div>
+						<div><img src="images/temp/ic5.jpg" height="390"></div>
 					</div>
-					<div class="slider-nav"></div>
+					<div class="slider-nav-wrap">
+						<span id="tPrev"></span>
+						<div class="slider-nav">
+							<div><img src="images/temp/ic1.jpg" height="81"></div>
+							<div><img src="images/temp/ic2.jpg" height="81"></div>
+							<div><img src="images/temp/ic3.jpg" height="81"></div>
+							<div><img src="images/temp/ic4.jpg" height="81"></div>
+							<div><img src="images/temp/ic5.jpg" height="81"></div>
+						</div>
+						<span id="tNext"></span>
+					</div>
 				</div>
 
 				<div class="item-specs">
@@ -690,19 +700,24 @@
 
 $(function () {
 	$('#ICCarousel').slick({
-		slidesToShow: 1.5,
+		slidesToShow: 1,
 		slidesToScroll: 1,
-		arrows: true,
-		fade: true,
+		arrows: false,
+		variableWidth: true,
+		centerPadding: 0,
+		//fade: true,
 		asNavFor: '.slider-nav'
 	});
 	$('.slider-nav').slick({
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		asNavFor: '.slider-for',
+		asNavFor: '.item-card-carousel',
 		dots: true,
 		centerMode: true,
-		focusOnSelect: true
+		vertical: true,
+		focusOnSelect: true,
+		prevArrow: $("#tPrev"),
+		nextArrow: $("#tNext")
 	});
 
 	$(".navbar-right").hover(function () {

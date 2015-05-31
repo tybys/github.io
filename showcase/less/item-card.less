@@ -3,10 +3,23 @@
 
 		//
 		.item-specs {
+			margin-top: 460px;
 			width: 760px;
 			float: left;
 		}
 
+
+		#tPrev,
+		#tNext  {
+			width: 16px;
+			height: 8px;
+			background: url("../images/link-arrow.svg") no-repeat;
+			position: absolute;
+		}
+		#tPrev {
+			top: -15px;
+			transform: rotate(270deg);
+		}
 
 		.item-info {
 
@@ -40,5 +53,31 @@
 			img {}
 		}
 
+		.IC-slider-area {
+			position: relative;
+
+			.item-card-carousel {
+				position: absolute;
+				top: 0;
+				left: 166px;
+			}
+			.slider-nav-wrap {
+				position: relative;
+				&:before {
+					content: "";
+					width: 120px;
+					height: 22px;
+					display: block;
+					background: url("../images/bezier.png") no-repeat;
+				}
+			}
+			.slick-slider.slider-nav {
+				position: absolute;
+				top: 32px;
+				left: 0;
+				width: 122px;
+
+			}
+		}
 	}
 }
