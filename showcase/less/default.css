@@ -14,9 +14,68 @@
   padding-right: 0;
   padding-left: 24px;
 }
+.btn {
+  padding: 9px 17px;
+}
+.btn.btn-default {
+  background: #a3abb6;
+  border: none;
+  color: #383c47;
+  font-size: 16px;
+  font-weight: 300;
+}
+.btn.btn-default:hover {
+  border: none;
+}
+.btn.btn-info {
+  background: #0071ce;
+  border-color: #0071ce;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+}
+.btn.btn-blue {
+  background: #0070cd;
+  color: white;
+  border-radius: 2px;
+}
+.btn.extra-large {
+  font-size: 32px;
+  font-weight: 300;
+}
+.btn.medium {
+  font-size: 16px;
+  font-weight: 300;
+}
 .container {
   padding-left: 0;
   padding-right: 0;
+}
+.tags {
+  width: 145px;
+  text-align: right;
+  margin: 90px 0 0 auto;
+}
+.tags span {
+  color: #0070CD;
+  font-size: 16px;
+  font-weight: 300;
+}
+.shares {
+  margin-top: 50px;
+  text-align: right;
+}
+.shares p {
+  font-weight: 300;
+  color: #383c47;
+}
+.shares .sprite:nth-child(5) {
+  margin-left: 10px;
+}
+.shares .sprite {
+  float: none;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 h2,
 h3 {
@@ -94,4 +153,114 @@ ol.breadcrumb ~ h3 {
 .pagi .pagination a:hover {
   box-shadow: inset 0 0 0 2px #ffffff;
   background-color: rgba(0, 112, 205, 0.15);
+}
+.col-md-2 .short-navi {
+  margin-top: 37px;
+  margin-bottom: 18px;
+}
+.col-md-2 .short-navi a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #393c47;
+  position: relative;
+  float: right;
+}
+.col-md-2 .short-navi a:before {
+  content: "";
+  background: url("../images/link-arrow.svg") no-repeat left center;
+  width: 8px;
+  height: 16px;
+  float: left;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin-top: 3px;
+  margin-right: 10px;
+}
+.col-md-2 .short-navi:after {
+  clear: both;
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: block;
+}
+.col-md-2 .widget {
+  margin-top: 11px;
+}
+.col-md-2 .widget.check-settings {
+  padding-right: 30px;
+}
+.col-md-2 .widget input {
+  float: left;
+}
+.col-md-2 .widget input ~ p {
+  margin-left: 22px;
+}
+.col-md-2 .widget.white-text {
+  margin-top: 50px;
+}
+.col-md-2 .widget h3 {
+  font-size: 16px;
+  font-weight: 900;
+  font-style: italic;
+  color: #21202C;
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+.col-md-2 .widget p {
+  font-size: 11px;
+  font-weight: 300;
+  color: #393c47;
+}
+.col-md-2 .widget a {
+  color: #0070cd;
+  display: block;
+  text-align: right;
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 300;
+}
+.col-md-2 .widget a:hover {
+  text-decoration: none;
+}
+.col-md-2 .widget a span {
+  display: block;
+}
+.col-md-2 .widget a span i {
+  color: inherit;
+  border-bottom: 1px solid;
+}
+.col-md-2 .widget.white-text h3 {
+  color: white;
+}
+.col-md-2 .widget.colored-shadowed .dmd {
+  width: 100%;
+  height: 1px;
+  clear: both;
+}
+.col-md-2 .widget.colored-shadowed h3 {
+  display: inline;
+  float: right;
+  background: white;
+  padding: 4px 4px 7px 7px;
+  margin-bottom: 6px;
+  position: relative;
+}
+.col-md-2 .widget.colored-shadowed h3:after {
+  content: "";
+  background: url("../images/shadow-black.png") no-repeat;
+  width: 100%;
+  height: 6px;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+.col-md-2 .widget.colored-shadowed a {
+  display: inline-block;
+  padding: 4px 4px 7px 7px;
+  float: right;
+  background: white;
 }

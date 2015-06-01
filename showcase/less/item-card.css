@@ -51,6 +51,16 @@
 .item-card.full .bottom-shadow {
   bottom: 0;
 }
+.item-card.full .item-info .fl {
+  float: left;
+}
+.item-card.full .item-info .item-actions {
+  width: 240px;
+}
+.item-card.full .item-info .item-actions a {
+  min-width: 100%;
+  margin-bottom: 10px;
+}
 .item-card.full .IC-slider-area {
   position: relative;
 }
