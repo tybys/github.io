@@ -55,7 +55,8 @@
                             <a class="exit" href="">Вход</a>
                             <a class="reg" href="">Регистрация</a>
                             <a class="sale" href="">Получить скидку</a>
-                            <a class="cart" href="">Ваша корзина: пуста</a>
+                            <a class="cart" href=""><span>Ваша корзина: пуста</span></a>
+                            <a href="#" class="burg"><i>меню</i></a>
                         </div>
                     </div>
                     <div class="row">
@@ -133,9 +134,9 @@
         </header>
 
 
-        <header style="opacity:0.1;" id="header">
+        <header style="opacity:0.1;" id="header" hidden="">
             <div>
-                <div class="container">
+                <div class="container" hidden="">
                     <div class="row">
                         <div id="header_logo">
                             <a href="http://oooamper.ru.mastertest.ru/" title="Светотехническая компания «Ампер»">
@@ -348,7 +349,7 @@
             </div>
         </header>
     </div>
-    <div class="columns-container">
+    <div class="columns-container" hidden="">
         <div id="columns" class="container">
 
             <!-- Breadcrumb -->
@@ -514,31 +515,21 @@
                             </div>
                         </form>
                     </div>
+                    <section id="social_block">
+                        <h3>Присоединяйтесь к нам:</h3>
+                        <div>
+                            <i class="sprite sprite-tw" data-toggle="tooltip" title="" data-original-title=".sprite.sprite-tw"></i>
+                            <i class="sprite sprite-fb" data-toggle="tooltip" title="" data-original-title=".sprite.sprite-fb"></i>
+                            <i class="sprite sprite-ye" data-toggle="tooltip" title="" data-original-title=".sprite.sprite-ye"></i>
+                            <i class="sprite sprite-sk" data-toggle="tooltip" title="" data-original-title=".sprite.sprite-sk"></i>
+                            <i class="sprite sprite-fe" data-toggle="tooltip" title="" data-original-title=".sprite.sprite-fe"></i>
+                        </div>
+                    </section>
                 </div>
-                <!-- /Block Newsletter module-->
-                <section id="social_block">
-                    <ul>
-                        <li class="facebook">
-                            <a target="_blank" href="http://www.facebook.com/prestashop">
-                                <span>Facebook</span>
-                            </a>
-                        </li>
-                        <li class="twitter">
-                            <a target="_blank" href="http://www.twitter.com/prestashop">
-                                <span>Twitter</span>
-                            </a>
-                        </li>
-                        <li class="rss">
-                            <a target="_blank" href="http://www.prestashop.com/blog/en/feed/">
-                                <span>RSS</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <h4>Присоединяйтесь к нам:</h4>
-                </section>
+
                 <div class="clearfix"></div>
                 <!-- MODULE Block footer -->
-                <section class="footer-block col-xs-12 col-sm-2" id="block_various_links_footer">
+                <section class="footer-block col-xs-6 col-sm-2" id="block_various_links_footer">
                     <h4>Информация</h4>
                     <ul class="toggle-footer">
                         <li class="item">
@@ -586,7 +577,7 @@
                 </section>
                 <!-- /MODULE Block footer -->
                 <!-- Block myaccount module -->
-                <section class="footer-block col-xs-12 col-sm-4">
+                <section class="footer-block col-xs-6 col-sm-4">
                     <h4><a href="http://oooamper.ru.mastertest.ru/index.php?controller=my-account" title="Управление моей учетной записью покупателя" rel="nofollow">Моя учетная запись</a></h4>
                     <div class="block_content toggle-footer">
                         <ul class="bullet">
@@ -696,7 +687,6 @@
         $("#block_contact_infos h4").unbind("click")
         $("#block_various_links_footer h4").unbind("click")
     })
-    $('a.zakaz_zvonka_btn').fancybox();
 
     $('#zakaz_zvonka_form input[name=client_phone]').mask('+7 (999) 999-9999');
 
