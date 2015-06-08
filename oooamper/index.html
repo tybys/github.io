@@ -10,7 +10,7 @@
     <title>Мой аккаунт - Светотехническая компания «Ампер»</title>
     <meta name="generator" content="PrestaShop" />
     <meta name="robots" content="index,follow" />
-    <meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="icon" type="image/vnd.microsoft.icon" href="/img/favicon.ico?1429359857" />
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico?1429359857" />
@@ -691,6 +691,11 @@
 <script type="text/javascript" src="http://oooamper.ru.mastertest.ru//themes/amper-corp/js/modules/blocktopmenu/js/superfish-modified.js"></script>
 <script type="text/javascript" src="http://oooamper.ru.mastertest.ru//themes/amper-corp/js/modules/blocktopmenu/js/blocktopmenu.js"></script>
 <script type="text/javascript">
+    $(function () {
+        $(".footer-block h4").unbind("click")
+        $("#block_contact_infos h4").unbind("click")
+        $("#block_various_links_footer h4").unbind("click")
+    })
     $('a.zakaz_zvonka_btn').fancybox();
 
     $('#zakaz_zvonka_form input[name=client_phone]').mask('+7 (999) 999-9999');
@@ -711,6 +716,9 @@
             }
         });
     });
+
+
+
 </script>
 </body>
 </html>

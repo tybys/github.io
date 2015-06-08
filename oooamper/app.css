@@ -499,3 +499,60 @@ button.old {
 .old.c:before {
 
 }
+
+
+@media only screen and (min-device-width : 320px) {
+    .menu {
+        display: none;
+    }
+    .girl {
+        display: none;
+    }
+    .cc {
+        display: none !important;
+    }
+    .phones hr {
+        display: none;
+    }
+    .history-box {
+        display: none;
+    }
+    .block-custom {
+        display: none;
+    }
+
+    .top-panel a {
+        margin-right: 0;
+    }
+    a.cart {
+        text-indent: -1000px;
+    }
+
+    #header_logo,
+    .phones {
+        width: 50%;
+        float: left;
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .phones span {
+        font-size: 18px !important;
+    }
+    .c-b {
+        width: auto;
+    }
+
+    .footer-container .container {
+        background-color: white;
+    }
+    .footer-container #footer h4 {
+        color: black;
+    }
+    .footer-block .toggle-footer {
+        display: block !important;
+    }
+
+
+}
