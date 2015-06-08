@@ -47,6 +47,21 @@
   font-size: 16px;
   font-weight: 300;
 }
+.old-price {
+  color: #383c47;
+  position: relative;
+  display: inline-block;
+}
+.old-price:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: calc(50% - 1px);
+  top: -webkit-calc(50% - 1px);
+  background: #E52620;
+  transform: rotate(-10deg);
+}
 .container {
   padding-left: 0;
   padding-right: 0;

@@ -1,8 +1,25 @@
+.item-card.full .left {
+  float: left;
+}
+.item-card.full .right {
+  width: 160px;
+  float: right;
+  margin-right: 70px;
+}
+.item-card.full .right h6 {
+  color: #a3abb6;
+  font-size: 16px;
+  font-weight: 300;
+}
+.item-card.full .detail-info td {
+  font-weight: 300;
+}
+.item-card.full .detail-info td:first-of-type {
+  width: 120px;
+  color: #a3abb6;
+}
 .item-card.full .sprite {
   border-radius: 10px;
-}
-.item-card.full hr {
-  max-width: 760px;
 }
 .item-card.full .desc td {
   color: #383c47;
@@ -16,7 +33,9 @@
   margin-top: 90px;
 }
 .item-card.full .item-specs {
-  width: 760px;
+  max-width: 760px;
+  min-width: 460px;
+  width: 100%;
   float: left;
 }
 .item-card.full #tPrev,
@@ -54,8 +73,12 @@
 .item-card.full .item-info .fl {
   float: left;
 }
+.item-card.full .item-info .left {
+  width: 760px;
+}
 .item-card.full .item-info .item-actions {
   width: 240px;
+  float: right;
 }
 .item-card.full .item-info .item-actions a {
   min-width: 100%;

@@ -996,73 +996,73 @@
        });
     });
 </script>
-<!--<script>-->
-    <!--;(function ($) {-->
-        <!--'use strict'-->
+<script>
+    ;(function ($) {
+        'use strict'
 
-        <!--$.srSmoothscroll = function (options) {-->
+        $.srSmoothscroll = function (options) {
 
-            <!--var self = $.extend({-->
-                <!--step: 55,-->
-                <!--speed: 400,-->
-                <!--ease: 'swing',-->
-                <!--target: $('body'),-->
-                <!--container: $(window)-->
-            <!--}, options || {})-->
+            var self = $.extend({
+                step: 55,
+                speed: 400,
+                ease: 'swing',
+                target: $('body'),
+                container: $(window)
+            }, options || {})
 
-            <!--// private fields & init-->
-            <!--var container = self.container-->
-                    <!--, top = 0-->
-                    <!--, step = self.step-->
-                    <!--, viewport = container.height()-->
-                    <!--, wheel = false-->
+            // private fields & init
+            var container = self.container
+                    , top = 0
+                    , step = self.step
+                    , viewport = container.height()
+                    , wheel = false
 
-            <!--var target-->
-            <!--if (self.target.selector == 'body') {-->
-                <!--target = (navigator.userAgent.indexOf('AppleWebKit') !== -1) ? self.target : $('html')-->
-            <!--} else {-->
-                <!--target = container-->
-            <!--}-->
+            var target
+            if (self.target.selector == 'body') {
+                target = (navigator.userAgent.indexOf('AppleWebKit') !== -1) ? self.target : $('html')
+            } else {
+                target = container
+            }
 
-            <!--// events-->
-            <!--self.target.mousewheel(function (event, delta) {-->
+            // events
+            self.target.mousewheel(function (event, delta) {
 
-                <!--wheel = true-->
+                wheel = true
 
-                <!--if (delta < 0) // down-->
-                    <!--top = (top+viewport) >= self.target.outerHeight(true) ? top : top+=step-->
+                if (delta < 0) // down
+                    top = (top+viewport) >= self.target.outerHeight(true) ? top : top+=step
 
-                <!--else // up-->
-                    <!--top = top <= 0 ? 0 : top-=step-->
+                else // up
+                    top = top <= 0 ? 0 : top-=step
 
-                <!--target.stop().animate({scrollTop: top}, self.speed, self.ease, function () {-->
-                    <!--wheel = false-->
-                <!--})-->
+                target.stop().animate({scrollTop: top}, self.speed, self.ease, function () {
+                    wheel = false
+                })
 
-                <!--return false-->
-            <!--})-->
+                return false
+            })
 
-            <!--container-->
-                    <!--.on('resize', function (e) {-->
-                        <!--viewport = container.height()-->
-                    <!--})-->
-                    <!--.on('scroll', function (e) {-->
-                        <!--if (!wheel)-->
-                            <!--top = container.scrollTop()-->
-                    <!--})-->
+            container
+                    .on('resize', function (e) {
+                        viewport = container.height()
+                    })
+                    .on('scroll', function (e) {
+                        if (!wheel)
+                            top = container.scrollTop()
+                    })
 
-        <!--}-->
-    <!--})(jQuery);-->
+        }
+    })(jQuery);
 
 
-    <!--$(function () {-->
-        <!--$.srSmoothscroll({-->
-            <!--target: $('body')-->
-            <!--//container: $('#container1')-->
-        <!--})-->
-    <!--})-->
+    $(function () {
+        $.srSmoothscroll({
+            target: $('body')
+            //container: $('#container1')
+        })
+    })
 
-<!--</script>-->
+</script>
 
 
         </div>

@@ -609,9 +609,35 @@
                             </div>
                         </div>
 
+						<table class="detail-info">
+							<tr>
+								<td>Старая цена</td>
+								<td>
+									<span class="old-price">45 999 999</span>
+								</td>
+							</tr>
 
+							<tr>
+								<td>В наличии</td>
+								<td>3 штуки</td>
+							</tr>
+
+							<tr>
+								<td>Доставка</td>
+								<td>Самовывоз, Почта РФ, Круьером</td>
+							</tr>
+						</table>
+						<hr/>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et scelerisque orci, eu mollis nisl. Donec nec facilisis diam. Duis ex dolor, auctor finibus tortor in, blandit posuere lorem. Donec vitae sollicitudin nibh. Nam vel leo ultricies, tristique diam ut, finibus augue. Aenean in lorem eu nisi consectetur iaculis. Pellentesque condimentum augue in euismod laoreet. Vestibulum et neque ac ex porttitor fringilla. Suspendisse ac neque mollis, finibus nunc sed, dictum magna. Quisque orci enim, vestibulum non tristique ac, sodales eget eros. Phasellus imperdiet posuere lacus, in tincidunt ante egestas nec. Etiam lobortis velit sed condimentum accumsan.</p>
+
+						<p>Morbi ut ultricies metus. Suspendisse hendrerit scelerisque lacus, non auctor augue posuere eu. Sed dui orci, ornare in augue quis, pulvinar congue massa. Vestibulum nisl magna, pretium et nunc in, maximus blandit arcu. Nunc ullamcorper nibh vitae risus condimentum scelerisque. Maecenas venenatis arcu ante, laoreet facilisis lorem mollis eu. Donec pharetra, tellus non maximus blandit, nunc sapien malesuada ex, quis bibendum magna velit vitae risus. Sed placerat turpis at quam sodales, et congue felis aliquet. Praesent eu odio augue. Aliquam ac venenatis eros, et facilisis mauris. Morbi mattis leo non nisi consequat, vel consequat ligula vulputate. Vestibulum a luctus leo, vitae efficitur sem. Curabitur ac tempor nulla. Sed leo tellus, bibendum nec commodo et, placerat vel tellus. Nunc pharetra neque at mauris consequat sollicitudin. Nam efficitur nisl dolor, at ornare odio condimentum in.</p>
+
+						<p>Donec varius, lacus quis venenatis hendrerit, lacus libero molestie enim, id fringilla neque nisi eget ipsum. Donec nibh ex, rhoncus at nisi vel, feugiat efficitur purus. In tortor mi, placerat volutpat lobortis et, ornare sit amet libero. Aenean orci nisi, vehicula vitae euismod eu, accumsan a tortor. Phasellus varius interdum lectus egestas ultrices. Nullam tempor libero nisi, non rutrum arcu porttitor in. Cras malesuada mi eros, vel consectetur ante sodales quis. Duis lacinia lectus justo, in hendrerit ligula hendrerit eget. Donec at sem id erat consectetur volutpat.</p>
                     </div>
-                    <div class="right"></div>
+                    <div class="right">
+						<h6>Продавец</h6>
+                    </div>
                 </div>
 
 				<!--<div class="item-specs">-->
@@ -737,7 +763,9 @@ $(function () {
 		slidesToScroll: 1,
 		arrows: false,
 		variableWidth: true,
+		focusOnSelect: true,
 		centerPadding: 0,
+
 		//fade: true,
         draggable: false,
 		asNavFor: '.slider-nav'

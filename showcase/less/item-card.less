@@ -2,11 +2,34 @@
 
 .item-card {
 	&.full {
+		.left {
+			float: left;
+			//margin-right: 40px;
+		}
+		.right {
+			width: 160px;
+			float: right;
+			margin-right: 70px;
+			h6 {
+				color: rgb(163, 171, 182);
+				font-size: 16px;
+				font-weight: 300;
+			}
+		}
+		.detail-info {
+			td {
+				font-weight: 300;
+				&:first-of-type {
+					width: 120px;
+					color: rgb(163, 171, 182);
+				}
+				&:last-of-type {
+
+				}
+			}
+		}
         .sprite {
             border-radius: 10px;
-        }
-        hr {
-            max-width: 760px;
         }
         .desc {
             td {
@@ -23,8 +46,9 @@
         }
 		//
 		.item-specs {
-//			margin-top: 460px;
-			width: 760px;
+			max-width: 760px;
+			min-width: 460px;
+			width: 100%;
 			float: left;
 		}
 
@@ -68,22 +92,14 @@
             }
 		}
 		.item-info .left {
-
+			width: 760px;
 		}
-		.item-info .left .price-panel {
-
-		}
-		.item-info .left table {}
-		.item-info .left tr {}
-		.item-info .left td {}
-
 
 		//
-		.item-info .right {
 
-		}
 		.item-info .item-actions {
             width: 240px;
+			float: right;
 		}
 		.item-info .item-actions a {
             min-width: 100%;

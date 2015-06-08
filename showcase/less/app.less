@@ -301,6 +301,14 @@
 			}
 		}
 	}
+	&.item-card {
+		.container {
+			.col-md-10 {
+				width: ~"calc(100% - 240px)";
+				width: ~"-webkit-calc(100% - 240px)";
+			}
+		}
+	}
 	&.most-popular {
 		.container {
 			padding-top: 65px;
@@ -384,6 +392,7 @@
 		background: #21202C;
 	}
 	&.footer {
+		border-top: 1px solid #BDCCD4;
 		.col-md-2 {
 			min-width: 270px !important;
 			padding-left: 0;
@@ -714,10 +723,19 @@ a {
 }
 
 .price-panel.large {
+	background: none;
+	border: none;
     position: relative;
-    //min-height: 125px;
+    padding: 0;
 
     height: auto;
+	&:after {
+		content: "";
+		width: 100%;
+		height: 1px;
+		display: block;
+		clear: both;
+	}
     .sale {
         margin-right: 30px;
         line-height: 44px;
