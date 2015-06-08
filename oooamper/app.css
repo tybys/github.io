@@ -770,4 +770,66 @@ button.old {
         margin-top: 8px;
         margin-right: 11px;
     }
+
+    /**/
+    .drop-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #FFF;
+        width: 100%;
+        z-index: 5;
+    }
+    .drop-menu ul {
+        width: calc(100% - 31px);
+        width: -webkit-calc(100% - 31px);
+        padding-left: 33px;
+    }
+    .drop-menu ul li ul:before {
+        position: absolute;
+        left: -23px;
+        content: "";
+        display: block;
+        width: calc(100% + 33px);
+        height: 1px;
+        border-top: 1px solid #959595;
+    }
+
+    .drop-menu ul li ul {
+        position: relative;
+        padding-left: 0;
+        margin-left: 22.5px;
+    }
+    .drop-menu ul li ul li:last-of-type {
+        border-bottom: none;
+    }
+    .drop-menu li {
+        line-height: 55px;
+    }
+    .drop-menu li {
+        border-bottom: 1px solid #959595
+    }
+    .drop-menu li,
+    .drop-menu li a {
+        text-transform: uppercase;
+        font-size: 24px;
+        padding-left: 0;
+    }
+
+    .drop-menu .first {
+        background-image: url("img/menu-close.jpg");
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: 5%;
+    }
+    .drop-menu > ul > li.with-drop {
+        background-position: right 11%;
+    }
+    .drop-menu > ul > li {
+        background-image: url("img/menu-arrow.jpg");
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: 5%;
+    }
+
 }
