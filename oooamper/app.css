@@ -831,5 +831,33 @@ button.old {
         background-repeat: no-repeat;
         background-size: 5%;
     }
+}
 
+.footer-container .container {
+    background: url("img/footer-img.jpg") repeat-x;
+}
+#footer #newsletter_block_left {
+    width: 67%;
+}
+#footer #newsletter_block_left .form-group .form-control {
+    height: 34px;
+    background: white;
+    border: none;
+}
+#footer #newsletter_block_left .form-group .button-small:hover {
+    color: #cfcccc !important;
+}
+#footer #newsletter_block_left .form-group {
+    position: relative;
+}
+#footer #newsletter_block_left .form-group .button-small:before {
+    /*content: "\f18e" !important;*/
+}
+#footer #newsletter_block_left .newsletter-input {
+    max-width: 351px !important;
+}
+#footer #newsletter_block_left .form-group .button-small {
+    position: absolute;
+    top: -4px;
+    right: -4px;
 }
