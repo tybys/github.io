@@ -294,7 +294,8 @@ h2.username {
     padding-left: 29px;
 }
 
-button.old {
+button.old,
+a.old {
     font-size: 16px;
     font-weight: 600;
     background: #fefefe;
@@ -309,7 +310,7 @@ button.old {
 	position: relative;
     border: 1px solid #b3b3b3;
     border-radius: 10px;
-    padding: 14px 34px 14px 54px;
+    padding: 9px 34px 9px 54px;
 }
 
 .exit {
@@ -334,7 +335,7 @@ button.old {
 	height: 29px;
 	position: absolute;
 	left: 18px;
-	top: 10px;
+	top: 5px;
 }
 .android:before {
 	content: "";
@@ -345,7 +346,7 @@ button.old {
 	height: 29px;
 	position: absolute;
 	left: 18px;
-	top: 10px;
+	top: 5px;
 }
 .c-b {
 	width: 380px;
@@ -359,11 +360,13 @@ button.old {
 
 .phones {
     width: 380px;
-    margin: 30px auto 0 auto;
+    margin: 23px auto 0 auto;
+    white-space: nowrap;
 }
 .phones hr {
+    border-color: black;
 	margin-top: 16px;
-	margin-bottom: 8px;
+	margin-bottom: 17px;
 }
 .phones a {
     font-size: 18px;
@@ -372,6 +375,7 @@ button.old {
 .phones .cc {
     display: block;
     text-align: center;
+    font-size: 23px;
 }
 .phones a span {
     font-size: 24px;
@@ -481,12 +485,19 @@ button.old {
 	right: 0;
 	top: 0;
 }
-.row.buttons .girl button {
+.row.buttons .girl button,
+.row.buttons .girl a {
 	padding-left: 34px;
 	position: relative;
 	z-index: 40;
 }
-.row.buttons .girl button:before {
+
+.row.buttons .girl a {
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.row.buttons .girl a:before {
 	content: "";
 	background: url("img/girl.jpg");
 	width: 93px;
@@ -833,52 +844,158 @@ button.old {
     }
 }
 
-.footer-container .container {
-    background: url("img/footer-img.jpg") repeat-x;
+
+@media all and (min-width: 768px) {
+    #footer #newsletter_block_left .form-group .form-control {
+        width: 60%;
+    }
+    #footer #newsletter_block_left {
+        width: 100%;
+    }
+    #footer #newsletter_block_left .block_content {
+        width: 49%;
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+    }
+    .footer-container #footer #social_block {
+        display: inline-block;
+        vertical-align: middle;
+        width: 50%;
+        float: none;
+        text-align: right;
+        padding-top: 0;
+    }
+    .footer-container #footer #social_block h3 {
+        margin-top: 0;
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+        margin-right: 7px;
+    }
+    #social_block > div {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .sprite {
+        background-image: url(img/soc-sp.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .sprite-fb {
+        width: 26px;
+        height: 26px;
+        background-position: -5px -5px;
+    }
+
+    .sprite-fe {
+        width: 26px;
+        height: 26px;
+        background-position: -41px -5px;
+    }
+
+    .sprite-sk {
+        width: 25px;
+        height: 26px;
+        background-position: -77px -5px;
+    }
+
+    .sprite-tw {
+        width: 25px;
+        height: 26px;
+        background-position: -112px -5px;
+    }
+
+    .sprite-ye {
+        width: 25px;
+        height: 26px;
+        background-position: -147px -5px;
+    }
 }
-#footer #newsletter_block_left {
-    width: 67%;
+@media all and (min-width: 990px) and (max-width: 1900px) {
+    #footer #newsletter_block_left {
+        width: 100%;
+    }
+    #footer #newsletter_block_left .block_content {
+        width: 49%;
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+    }
+    .footer-container #footer #social_block {
+        display: inline-block;
+        vertical-align: middle;
+        width: 50%;
+        float: none;
+        text-align: right;
+        padding-top: 0;
+    }
+    .footer-container #footer #social_block h3 {
+        margin-top: 0;
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+        margin-right: 7px;
+    }
+    #social_block > div {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .sprite {
+        background-image: url(img/soc-sp.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .sprite-fb {
+        width: 26px;
+        height: 26px;
+        background-position: -5px -5px;
+    }
+
+    .sprite-fe {
+        width: 26px;
+        height: 26px;
+        background-position: -41px -5px;
+    }
+
+    .sprite-sk {
+        width: 25px;
+        height: 26px;
+        background-position: -77px -5px;
+    }
+
+    .sprite-tw {
+        width: 25px;
+        height: 26px;
+        background-position: -112px -5px;
+    }
+
+    .sprite-ye {
+        width: 25px;
+        height: 26px;
+        background-position: -147px -5px;
+    }
 }
-#footer #newsletter_block_left .form-group .form-control {
-    height: 34px;
-    background: white;
-    border: none;
-}
-#footer #newsletter_block_left .form-group .button-small:hover {
-    color: #cfcccc !important;
-}
-#footer #newsletter_block_left .form-group {
-    position: relative;
-}
-#footer #newsletter_block_left .form-group .button-small:before {
-    /*content: "\f18e" !important;*/
-}
-#footer #newsletter_block_left .newsletter-input {
-    max-width: 351px !important;
-}
-#footer #newsletter_block_left .form-group .button-small {
-    position: absolute;
-    top: -4px;
-    right: -4px;
-}
-.footer-container #footer h4 a:hover {
-	color: #333333;
+#block_various_links_footer {
+    border-right: 1px solid #8C7C7C;
 }
 .footer-container #footer ul li a:hover {
-	color: #333333;
+    color: #333333;
 }
-.footer-container #footer ul li a:hover
-.footer-container #footer ul li,
-.footer-container #footer ul li span {
-	color: #333333 !important;
+.footer-container #footer .footer-block {
+    margin-top: 25px;
 }
 .footer-container #footer h4,
-.footer-container #footer h4 a {
-	color: #333333;
+.footer-container #footer h4 a,
+.footer-container #footer h4 a:hover,
+.footer-container #footer #block_contact_infos > div ul li,
+.footer-container #footer #block_contact_infos > div ul li > span {
+    color: #333333;
 }
-#block_various_links_footer ~ section {
-	border-left: 1px solid rgb(140, 124, 124);
-}
-#footer #newsletter_block_left .block_content {
-	max-width: 351px;
+#newsletter_block_left h4 {
+    color: white !important;
 }
