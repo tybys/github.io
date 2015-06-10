@@ -861,3 +861,24 @@ button.old {
     top: -4px;
     right: -4px;
 }
+.footer-container #footer h4 a:hover {
+	color: #333333;
+}
+.footer-container #footer ul li a:hover {
+	color: #333333;
+}
+.footer-container #footer ul li a:hover
+.footer-container #footer ul li,
+.footer-container #footer ul li span {
+	color: #333333 !important;
+}
+.footer-container #footer h4,
+.footer-container #footer h4 a {
+	color: #333333;
+}
+#block_various_links_footer ~ section {
+	border-left: 1px solid rgb(140, 124, 124);
+}
+#footer #newsletter_block_left .block_content {
+	max-width: 351px;
+}
