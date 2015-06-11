@@ -999,3 +999,17 @@ a.old {
 #newsletter_block_left h4 {
     color: white !important;
 }
+
+@media all and (max-width: 1199px) {
+	.menu li {
+		width: 149px;
+	}
+}
+
+@media all and (max-width: 990px) {
+	.menu li {
+		width: 112px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
