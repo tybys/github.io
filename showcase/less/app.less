@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 @import "app-vars.less";
 
 
@@ -1747,4 +1748,156 @@ p {
 			}
 		}
 	}
+=======
+// Conf
+.container {
+  min-width: 960px;
+  width: 100%;
+  max-width: 1880px;
+}
+
+//@Some vars
+//blue text & border in head
+@blue: #0971ce;
+
+
+//Multi selectors
+.cbtn {
+  color: #0971ce;
+  vertical-align: top;
+  line-height: 42px;
+  span {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    border: 1px solid #0971ce;
+    border-radius: 100%;
+  }
+  &.favs {
+    span {background: white url("../images-trash/favs.png") center no-repeat}
+  }
+  &.cart {
+    span {background: white url("../images-trash/cart.png") center no-repeat}
+  }
+  &.auth {
+    span {background: white url("../images-trash/user.png") center no-repeat}
+  }
+} // circle btns with icons
+
+
+
+
+
+.col-md-2 {
+  &.left {
+    width: ~"calc(16.666666666666664% + 11px)";
+    width: ~"-webkit-calc(16.666666666666664% + 11px)";
+  }
+}
+.col-md-10 {
+  &.right {
+    width: ~"calc(83.33333333333334% - 11px)";
+    width: ~"-webkit-calc(83.33333333333334% - 11px)";
+  }
+}
+
+.row {
+  &.head {
+    .menu {
+      display: inline-block;
+      vertical-align: top;
+      a {
+        border: 1px solid @blue;
+        width: 38px;
+        height: 38px;
+        background: url("../images-trash/burger.png") center no-repeat;
+        display: block;
+      }
+
+
+      @keyframes bounce {
+        0%, 20%, 53%, 80%, 100% {
+          transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+          transform: translate3d(0,0,0);
+        }
+
+        40%, 43% {
+          transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+          transform: translate3d(0, -30px, 0);
+        }
+
+        70% {
+          transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+          transform: translate3d(0, -15px, 0);
+        }
+
+        90% {
+          transform: translate3d(0,-4px,0);
+        }
+      }
+      @-webkit-keyframes bounce {
+        0%, 20%, 53%, 80%, 100% {
+          transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+          transform: translate3d(0,0,0);
+        }
+
+        40%, 43% {
+          transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+          transform: translate3d(0, -30px, 0);
+        }
+
+        70% {
+          transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+          transform: translate3d(0, -15px, 0);
+        }
+
+        90% {
+          transform: translate3d(0,-4px,0);
+        }
+      }
+
+      @keyframes shadow {
+        0%, 20%, 50%, 70%, 90%, 100% {
+          opacity: 0.6;
+          transform: scale(1,1);
+        }
+
+        35%, 75% {
+          opacity: 0.3;
+          transform: scale(0.7, 1);
+        }
+
+        45%  {
+          opacity: 0.3;
+          transform: scale(0.5,1);
+        }
+      }
+
+      svg {
+//        position: absolute;
+//        left: 45%;
+//        top:10em;
+        width: 50px;
+        min-height: 0;
+      }
+
+      #burger-body {
+        //animation: bounce 1s 0 infinite;
+        animation: bounce 1s 0;
+      }
+
+      #burger-shadow {
+        transform-origin:center center;
+        //animation:shadow 1s 0 infinite;
+        animation:shadow 1s 0;
+      }
+    }
+    form {
+      display: inline-block;
+      span {
+        display: block;
+      }
+    }
+  } // head
+>>>>>>> Stashed changes
 }

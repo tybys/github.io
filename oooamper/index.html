@@ -51,32 +51,34 @@
             <div>
                 <div class="container">
                     <div class="row">
-                        <div class="top-panel">
-                            <a class="exit" href="">Вход</a>
-                            <a class="reg" href="">Регистрация</a>
-                            <a class="sale" href="">Получить скидку</a>
-                            <a class="cart" href=""><span>Ваша корзина: пуста</span></a>
-                            <a href="#" class="burg"><i>меню</i></a>
-
+                        <div class="container">
+                            <div class="top-panel">
+                                <a class="exit" href="">Вход</a>
+                                <a class="reg" href="">Регистрация</a>
+                                <a class="sale" href="">Получить скидку</a>
+                                <form>
+                                    <input type="text" placeholder="Поиск по сайту"/>
+                                    <input type="image" src="img/submit.jpg"/>
+                                </form>
+                                <a class="cart" href=""><span>Ваша корзина: пуста</span></a>
+                                <a href="#" class="burg"><i>меню</i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div id="header_logo">
-                            <a href="http://oooamper.ru.mastertest.ru/" title="Светотехническая компания «Ампер»">
-                                <img class="logo img-responsive" src="http://oooamper.ru.mastertest.ru/img/svetotekhnicheskaya-kompaniya-amper-1404157608.jpg" alt="Светотехническая компания «Ампер»" width="300" height="88"/>
-                            </a>
-                        </div>
+                        <div class="container">
+                            <div id="header_logo">
+                                <a href="http://oooamper.ru.mastertest.ru/" title="Светотехническая компания «Ампер»">
+                                    <img class="logo img-responsive" src="http://oooamper.ru.mastertest.ru/img/svetotekhnicheskaya-kompaniya-amper-1404157608.jpg" alt="Светотехническая компания «Ампер»" width="300" height="88"/>
+                                </a>
+                            </div>
 
-                        <div class="phones">
-                            <a href="">+7(495) <span>987 13 38</span></a>
-                            <a href="">+7(495) <span>668 65 88</span></a>
-                            <hr/>
-                            <a href="" class="cc">заказать звонок</a>
-                        </div>
-
-                        <div class="callback">
-
-
+                            <div class="phones">
+                                <a href="">+7(495) <span>987 13 38</span></a>
+                                <a href="">+7(495) <span>668 65 88</span></a>
+                                <hr/>
+                                <a href="" class="cc">заказать звонок</a>
+                            </div>
                         </div>
                     </div>
 
@@ -89,16 +91,18 @@
 					</div>
 
                     <div class="row">
-                        <div class="menu">
-                            <ul>
-                                <li class="active"><a href="">Главная</a></li>
-                                <li><a href="">О компании</a></li>
-                                <li><a href="">Продукция</a></li>
-                                <li><a href="">Акция</a></li>
-                                <li><a href="">Услуги</a></li>
-                                <li><a href="">Контакты</a></li>
-                            </ul>
-							<div class="palka"></div>
+                        <div class="container">
+                            <div class="menu">
+                                <ul>
+                                    <li class="active"><a href="">Главная</a></li>
+                                    <li><a href="">О компании</a></li>
+                                    <li><a href="">Продукция</a></li>
+                                    <li><a href="">Акция</a></li>
+                                    <li><a href="">Услуги</a></li>
+                                    <li><a href="">Контакты</a></li>
+                                </ul>
+                                <div class="palka"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -350,7 +354,55 @@
             </div>
         </header>
     </div>
-    <div class="columns-container" hidden="">
+
+    <div class="gallery">
+        <div class="container">
+            <span id="left" class="left"></span>
+            <span id="right" class="right"></span>
+            <div class="items-container">
+
+
+                <div class="item">
+                    <img src="img/item1.png" />
+                    <p>Универсам группы<br/>компаний «АЛМИ»</p>
+                </div>
+                <div class="item">
+                    <img src="img/item3.png" />
+                    <p>Универсам группы<br/>компаний «АЛМИ»</p>
+                </div>
+                <div class="item">
+                    <img src="img/item2.png" />
+                    <p>Универсам группы<br/>компаний «АЛМИ»</p>
+                </div>
+                <div class="item">
+                    <img src="img/item1.png" />
+                    <p>Универсам группы<br/>компаний «АЛМИ»</p>
+                </div>
+                <div class="item">
+                    <img src="img/item3.png" />
+                    <p>Универсам группы<br/>компаний «АЛМИ»</p>
+                </div>
+                <div class="item">
+                    <img src="img/item3.png" />
+                    <p>Универсам группы<br/>компаний «АЛМИ»</p>
+                </div>
+                <div class="item">
+                    <img src="img/item2.png" />
+                    <p>Универсам группы<br/>компаний «АЛМИ»</p>
+                </div>
+                <div class="item">
+                    <img src="img/item1.png" />
+                    <p>Универсам группы<br/>компаний «АЛМИ»</p>
+                </div>
+                <div class="item">
+                    <img src="img/item3.png" />
+                    <p>Универсам группы<br/>компаний «АЛМИ»</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns-container">
         <div id="columns" class="container">
 
             <!-- Breadcrumb -->
@@ -686,6 +738,51 @@
 <script type="text/javascript" src="http://oooamper.ru.mastertest.ru//themes/amper-corp/js/modules/blocktopmenu/js/blocktopmenu.js"></script>
 <script type="text/javascript">
     $(function () {
+
+        // Simple carousel, sc
+        gItems = $(".items-container");
+        gItem = $(".gallery .item");
+        gWidth = (gItem.outerWidth(true) * gItem.length);
+        gHeight = gItem.outerHeight();
+        gIndex = 0;
+        gSpeed = 1000;
+
+        gItems.width(gWidth);
+        $(".gallery .container").height(gHeight);
+
+        function carouselSlide(gIndex) {
+            gItems.stop().animate({
+               left: - gIndex * gItem.outerWidth(true)
+            }, gSpeed);
+        }
+
+        $("#left").on("click", function () {
+            gIndex -= 1;
+            carouselSlide(gIndex = (gIndex < 0) ? gItem.length -1 : gIndex);
+        })
+
+        $("#right").on("click", function () {
+            gIndex += 1;
+            carouselSlide(gIndex = (gIndex > gItem.length - 1) ? 0 : gIndex);
+        });
+
+//        $(".items-container").css("width", gWidth);
+//        $(".gallery .container").css("height", gHeight);
+//
+//        $("#left").click("click", function () {
+//            $(".items-container").animate({
+//                left: -gIndex + "-=" + gItem.outerWidth()
+//            }, speed);
+//        });
+//
+//        $("#right").click("click", function () {
+//            $(".items-container").animate({
+//                left: "+="+gItem.outerWidth()
+//            }, speed);
+//        });
+
+
+
         $(".footer-block h4").unbind("click")
         $("#block_contact_infos h4").unbind("click")
         $("#block_various_links_footer h4").unbind("click")
