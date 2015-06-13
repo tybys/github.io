@@ -2,13 +2,9 @@
 <html>
 <head>
     <!--Import materialize.css-->
-<<<<<<< Updated upstream
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
-    <link rel="stylesheet" href="style.css"></link>
-=======
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
         .out {
             display: none;
@@ -21,180 +17,87 @@
             vertical-align: middle;
         }
     </style>
->>>>>>> Stashed changes
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 </head>
-
 <body>
+    <div class="wrap">
+        <div class="admin-panel left">
+            <form class="">
+                <input tabindex="1" id="LkuGraph" type="text" class="" placeholder="lku">
+                <input tabindex="2" id="LkfGraph" type="text" class="" placeholder="lkf">
+                <input tabindex="3" id="RbGraph" type="text" class="" placeholder="rb">
+                <input tabindex="4" id="RestGraph" type="text" class="" placeholder="rest">
+                <input tabindex="5" id="Rb_Payments" type="text" class="" placeholder="rb_payments">
+                <input tabindex="6" id="Showcase" type="text" class="" placeholder="showcase">
 
-<div class="g">
-    <div class="g-row">
-        <div class="f-col-2">
-            <div class="f-column">
-                <h1>Отчёт frontend цеха</h1>
+
+                <div><a tabindex="11" class="btn" id="GraphCollector">Stuff</a></div>
+                <div><textarea tabindex="7" id="lku" class="" placeholder="lku"></textarea></div>
+                <div><textarea tabindex="8" id="lkf" class="" placeholder="lkf"></textarea></div>
+                <div><textarea tabindex="9" id="rb" class="" placeholder="rb"></textarea></div>
+                <div><textarea tabindex="10" id="rest" class="" placeholder="rest"></textarea></div>
+            </form>
+        </div>
+        <div class="content right">
+            <h1>Отчёт frontend цеха</h1>
+            <p id="day"></p>
+            <p id="year"></p>
+
+            <!--graph-->
+            <div class="ct-chart"></div>
+
+            <!--projects info-->
+            <div class="lku" data-id="lku">
+                <h3>Личный кабинет юр. лиц</h3><p></p>
             </div>
-<<<<<<< Updated upstream
-            <div class="f-column">
-                <code class="code" id="month"></code>
-=======
-        </nav>
-    </div>
-    <div class="row">
-        <ul>
-            <li><i class="mdi-av-timer prefix"></i></li>
-            <li class=""><p id="day"></p></li>
-            <li><p id="month"></p></li>
-            <li><p id="year"></p></li>
-        </ul>
-    </div>
-    <div class="row">   
-        <div class="col s6 edit">
-            <div class="row">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <textarea id="lku" class="materialize-textarea"></textarea>
-                            <label for="lku">lku</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <textarea id="lkf" class="materialize-textarea"></textarea>
-                            <label for="lkf">lkf</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <textarea id="rb" class="materialize-textarea"></textarea>
-                            <label for="rb">rb</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <textarea id="rest" class="materialize-textarea"></textarea>
-                            <label for="rest">rest</label>
-                        </div>
-
-                        <div class="input-field col s2 out">
-                            <i class="mdi-action-account-box prefix"></i>
-                            <input id="icon_prefix" type="text" class="validate chart">
-                            <label for="icon_prefix">lku</label>
-                        </div>
-                        <div class="input-field col s2 out">
-                            <i class="mdi-action-account-circle prefix"></i>
-                            <input id="icon_prefix" type="text" class="validate chart">
-                            <label for="icon_prefix">lkf</label>
-                        </div>
-                        <div class="input-field col s2 out">
-                            <i class="mdi-action-android prefix"></i>
-                            <input id="icon_prefix" type="text" class="validate chart">
-                            <label for="icon_prefix">rb</label>
-                        </div>
-                        <div class="input-field col s2 out">
-                            <i class="mdi-device-now-widgets prefix"></i>
-                            <input id="icon_prefix" type="text" class="validate chart">
-                            <label for="icon_prefix">rest</label>
-                        </div>
-                    </div>
-                </form>
->>>>>>> Stashed changes
+            <div class="lkf" data-id="lkf">
+                <h3>Личный кабинет физ. лиц</h3><p></p>
+            </div>
+            <div class="rb" data-id="rb">
+                <h3>Сайт - Robokassa</h3><p></p>
+            </div>
+            <div class="rest" data-id="rest">
+                <h3>Остальные сервисы и проекты</h3><p></p>
             </div>
         </div>
     </div>
-
-    <div class="g-row">
-        <div class="f-col-2">
-            <div class="f-column">
-                &nbsp;
-            </div>
-            <div class="f-column">
-                <div class="ct-chart"></div>
-            </div>
-        </div>
-    </div>
-    <div class="g-row">
-        <div class="lku" data-id="lku">
-            <h3>Личный кабинет юр. лиц</h3><p></p>
-        </div>
-        <div class="lkf" data-id="lkf">
-            <h3>Личный кабинет физ. лиц</h3><p></p>
-        </div>
-        <div class="rb" data-id="rb">
-            <h3>Сайт - Robokassa</h3><p></p>
-        </div>
-        <div class="rest" data-id="rest">
-            <h3>Остальные сервисы и проекты</h3><p></p>
-        </div>
-    </div>
-</div>
-
-
-<form class="">
-    <div><input id="LkuGraph" type="text" class="" placeholder="lku"></div>
-    <div><input id="LkfGraph" type="text" class="" placeholder="lkf"></div>
-    <div><input id="RbGraph" type="text" class="" placeholder="rb"></div>
-    <div><input id="RestGraph" type="text" class="" placeholder="rest"></div>
-    <div><input id="Rb_Payments" type="text" class="" placeholder="rb_payments"></div>
-    <div><input id="Showcase" type="text" class="" placeholder="showcase"></div>
-
-
-    <div><a class="btn" id="GraphCollector">Stuff</a></div>
-    <div><textarea id="lku" class="" placeholder="lku"></textarea></div>
-    <div><textarea id="lkf" class="" placeholder="lkf"></textarea></div>
-    <div><textarea id="rb" class="" placeholder="rb"></textarea></div>
-    <div><textarea id="rest" class="" placeholder="rest"></textarea></div>
-</form>
-
-
-
-
-
-
 
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<<<<<<< Updated upstream
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>-->
 <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
-<script>
-=======
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+
 <script type="text/javascript" src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
 <script type="text/javascript">
->>>>>>> Stashed changes
     (function ($)
     {
         $(function ()
         {
-<<<<<<< Updated upstream
+            // date of report creating
+            function DateReport ()
+            {
+                months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                today = new Date();
 
-            var months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-            var today = new Date();
+                $("#day").text(today.getDate());
+                $("#year").text(today.getFullYear());
 
-            today.setTime(today.getTime());
-            $("#month").text(months[today.getMonth()]).append("<sup>"+today.getFullYear()+"</sup>");
-=======
-//            var months = [
-//                'Января',
-//                'Февраля',
-//                'Марта',
-//                'Апреля',
-//                'Мая',
-//                'June',
-//                'July',
-//                'August',
-//                'September',
-//                'October',
-//                'November',
-//                'December'
-//            ];
-            var today = new Date();
+                // Strange shit
+                //$("#month").text(months[today.getMonth()]).append("<sup>"+today.getFullYear()+"</sup>");
+                //today.setTime(today.getTime());
+                //$("#day").text(today.getDate() < 10 ? '0' + today.getDay() +'.' : "");
+                //$("#month").text(today.getMonth() < 10 ? '0' + today.getMonth() +'.' : "");
+                //$("#year").text(today.getFullYear());
+            }
+            DateReport();
 
-            //today.setTime(today.getTime());
-            $("#day").text(today.getDate() < 10 ? '0' + today.getDate() +'.' : "");            
-            $("#month").text(today.getMonth() < 10 ? '0' + today.getMonth() +'.' : "");
-            $("#year").text(today.getFullYear());
->>>>>>> Stashed changes
+
+
 
             $("textarea").change(function (id)
             {
-
                 //var str = document.getElementById('comma').value.replace('\r', '');
                 //var result = str.split('\n');
 
@@ -209,8 +112,8 @@
             });
 
             // graph array creation
-            $("#GraphCollector").on("click", function () 
-            { 
+            $("#GraphCollector").on("click", function ()
+            {
                 var partner = $("#LkuGraph").val();
                 var my = $("#LkfGraph").val();
                 var main = $("#RbGraph").val();
@@ -221,14 +124,14 @@
                 GraphArray = new Array(partner, my, main, rest, rb_payments, showcase);
                 graph();
             });
-           
+
 
             // chart
             function graph(event) {
                 new Chartist.Bar('.ct-chart', {
                     labels: ['lku', 'lkf', 'rb', 'rest', 'rb_payments', 'showcase'],
                     series: [
-                        //[1, 2, 3, 4.5]                       
+                        //[1, 2, 3, 4.5]
                         GraphArray
                     ]
                 }, {
