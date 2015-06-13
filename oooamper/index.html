@@ -38,7 +38,7 @@
 
 
     <link rel="stylesheet" href="app.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,600" type="text/css" media="all" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,500" type="text/css" media="all" />
     <!--[if IE 8]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -60,7 +60,7 @@
                                     <input type="text" placeholder="Поиск по сайту"/>
                                     <input type="image" src="img/submit.jpg"/>
                                 </form>
-                                <a class="cart" href=""><span>Ваша корзина: пуста</span></a>
+                                <a class="cart" href=""><span>Ваша корзина: <i>Пуста</<i></span></a>
                                 <a href="#" class="burg"><i>меню</i></a>
                             </div>
                         </div>
@@ -84,8 +84,8 @@
 
 					<div class="row buttons">
 						<div class="c-b">
-							<button class="old ios">скачать</button>
-							<button class="old android">скачать</button>
+							<button class="old ios">Скачать</button>
+							<button class="old android">Скачать</button>
 						</div>
 						<div class="girl"><a href="#" class="old c">Обратная связь</a></div>
 					</div>
@@ -357,17 +357,16 @@
 
     <div class="gallery">
         <div class="container">
+            <h2>Галлерея работ</h2>
             <span id="left" class="left"></span>
             <span id="right" class="right"></span>
             <div class="items-container">
-
-
                 <div class="item">
-                    <img src="img/item1.png" />
+                    <img src="img/item1.png" data-src="img/item1.png" />
                     <p>Универсам группы<br/>компаний «АЛМИ»</p>
                 </div>
                 <div class="item">
-                    <img src="img/item3.png" />
+                    <img src="img/item3.png" data-src="img/Close-icon.png" />
                     <p>Универсам группы<br/>компаний «АЛМИ»</p>
                 </div>
                 <div class="item">
@@ -632,7 +631,7 @@
                 </section>
                 <!-- /MODULE Block footer -->
                 <!-- Block myaccount module -->
-                <section class="footer-block col-xs-6 col-sm-3">
+                <section class="footer-block col-xs-6 col-sm-3 second-block">
                     <h4><a href="http://oooamper.ru.mastertest.ru/index.php?controller=my-account" title="Управление моей учетной записью покупателя" rel="nofollow">Моя учетная запись</a></h4>
                     <div class="block_content toggle-footer">
                         <ul class="bullet">
@@ -650,14 +649,20 @@
                     <div>
                         <h4>Информация о магазине</h4>
                         <ul class="toggle-footer">
+                            <li class="first">
+                                <i class="icon-map-marker"></i>
+                                <span>
+                                    Светотехническая компания «Ампер»,<br/>
+                                    143409, Московская область, Красногорский район, д. Гольёво,<br/>
+                                    ул. Центральная, дом 3
+                                </span>
+                            </li>
                             <li>
-                                <i class="icon-map-marker"></i>Светотехническая компания «Ампер», 143409, Московская область,
-                                Красногорский район,
-                                д. Гольёво,
-                                ул. Центральная, дом 3            	</li>
-                            <li>
-                                <i class="icon-phone"></i>Звоните нам:
-                                <span>+7 (495) 987-13-38,  +7 (926) 157-89-85</span>
+                                <i class="icon-phone"></i>
+                                <strong>Звоните нам:</strong>
+                                <span>
+                                +7 (495) 987-13-38,<br/>
+                                +7 (926) 157-89-85</span>
                             </li>
                         </ul>
                     </div>
@@ -738,49 +743,71 @@
 <script type="text/javascript" src="http://oooamper.ru.mastertest.ru//themes/amper-corp/js/modules/blocktopmenu/js/blocktopmenu.js"></script>
 <script type="text/javascript">
     $(function () {
-
         // Simple carousel, sc
-        gItems = $(".items-container");
-        gItem = $(".gallery .item");
-        gWidth = (gItem.outerWidth(true) * gItem.length);
-        gHeight = gItem.outerHeight();
-        gIndex = 0;
-        gSpeed = 1000;
+        var gItems = $(".items-container");
+        var gItem = $(".gallery .item");
+        var gWidth = (gItem.outerWidth(true) * gItem.length);
+        var gHeight = gItem.outerHeight();
+        var gIndex = 0;
+        var gSpeed = 1000;
 
         gItems.width(gWidth);
-        $(".gallery .container").height(gHeight);
+        $(".gallery .container").height(gHeight + 58);
 
-        function carouselSlide(gIndex) {
-            gItems.stop().animate({
-               left: - gIndex * gItem.outerWidth(true)
-            }, gSpeed);
+        function carouselSlide(gIndex)
+        {
+            gItems
+                .stop()
+                .animate({
+                    left: - gIndex * gItem.outerWidth(true)
+                }, gSpeed);
         }
 
-        $("#left").on("click", function () {
+        $("#left").on("click", function ()
+        {
             gIndex -= 1;
             carouselSlide(gIndex = (gIndex < 0) ? gItem.length -1 : gIndex);
         })
 
-        $("#right").on("click", function () {
+        $("#right").on("click", function ()
+        {
             gIndex += 1;
             carouselSlide(gIndex = (gIndex > gItem.length - 1) ? 0 : gIndex);
         });
 
-//        $(".items-container").css("width", gWidth);
-//        $(".gallery .container").css("height", gHeight);
-//
-//        $("#left").click("click", function () {
-//            $(".items-container").animate({
-//                left: -gIndex + "-=" + gItem.outerWidth()
-//            }, speed);
-//        });
-//
-//        $("#right").click("click", function () {
-//            $(".items-container").animate({
-//                left: "+="+gItem.outerWidth()
-//            }, speed);
-//        });
+        // lightbox gallery
+        gItem.on("click", function ()
+        {
+            var largeImg = $(this).children("img");
+            var largeImgWidth = $(this).children("img").outerWidth();
+            var largeImgHeight = $(this).children("img").outerHeight();
 
+            $("#shadow")
+                .show()
+                .after()
+                .append(
+                    "<div class='pseudo-lightbox'>"
+                        + "<div style='position: relative' >"
+                            + "<span id='close'/>"
+                            + "<img src='"+largeImg.attr("data-src")+"'>"
+                        + "</div>"
+                    + "</div>");
+
+            $("body").css("overflow", "hidden");
+
+            $(".pseudo-lightbox").css({
+                width: largeImgWidth + 20,
+                height: largeImgHeight + 20,
+                left: ($("#shadow").outerWidth() - largeImgWidth) / 2,
+                top: ($("#shadow").outerHeight() - largeImgHeight) / 2,
+                padding: 10
+            });
+
+            $("#close").on("click", function () {
+                $("#shadow").hide().children().remove();
+                $("body").css("overflow", "auto")
+            });
+        });
 
 
         $(".footer-block h4").unbind("click")
@@ -806,9 +833,7 @@
             }
         });
     });
-
-
-
 </script>
+<div id="shadow"></div>
 </body>
 </html>
