@@ -1,0 +1,37 @@
+<?php
+    include_once 'conf/database.php';
+?>
+
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>report</title>
+</head>
+<body>
+<form action="actions/report_data.php" method="post">
+<!--    <input tabindex="1" name="LkuGraph" id="LkuGraph" type="text" class="" placeholder="lku">-->
+<!--    <input tabindex="2" name="LkfGraph" id="LkfGraph" type="text" class="" placeholder="lkf">-->
+<!--    <input tabindex="3" name="RbGraph" id="RbGraph" type="text" class="" placeholder="rb">-->
+<!--    <input tabindex="4" name="RestGraph" id="RestGraph" type="text" class="" placeholder="rest">-->
+<!--    <input tabindex="5" name="Rb_Payments" id="Rb_Payments" type="text" class="" placeholder="rb_payments">-->
+<!--    <input tabindex="6" name="Showcase" id="Showcase" type="text" class="" placeholder="showcase">-->
+
+    <input type="text" name="graph" id="graph" placeholder="for example: 1,1,1,1,1,1" />
+
+
+
+    <textarea tabindex="7" name="lku" id="lku" class="" placeholder="lku"></textarea>
+    <textarea tabindex="8" name="lkf" id="lkf" class="" placeholder="lkf"></textarea>
+    <textarea tabindex="9" name="rb" id="rb" class="" placeholder="rb"></textarea>
+    <textarea tabindex="9" name="sc" id="sc" class="" placeholder="showcase"></textarea>
+    <textarea tabindex="9" name="pp" id="pp" class="" placeholder="pp"></textarea>
+    <textarea tabindex="10" name="rest" id="rest" class="" placeholder="rest"></textarea>
+
+    <input type="submit"/>
+
+<!--    <div><a tabindex="11" class="btn" id="GraphCollector">Stuff</a></div>-->
+    <a href="view.html">view</a>
+</form>
+</body>
+</html>
