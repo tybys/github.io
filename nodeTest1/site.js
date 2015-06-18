@@ -10,7 +10,11 @@ var staticSiteOptions = {
 
     app.set('view', __dirname + 'app/view');
     app.set('view_engine', 'jade');
-    app.use(app.mountpath);
+    //app.get('/', function (req, res)
+    //{
+    //    console.log(app.mountpath);
+    //    res.send('/')
+    //});
 
 
 app.get('/', function (req, res)
