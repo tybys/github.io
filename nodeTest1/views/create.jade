@@ -1,14 +1,16 @@
 extends tpls/layout
 
 block content
-    ul.nav
+    ul
+        li
+            a(href="/") index
         li
             a(href="/reports") reports
         li
             a(href="/create") create
 
     div(class="left")
-        form
+        form(action="/", method="post")
             div
                 input(tabindex="1", id="LkuGraph", type="text", class="", placeholder="lku")
                 input(tabindex="2", id="LkfGraph", type="text", class="", placeholder="lkf")
@@ -24,7 +26,8 @@ block content
                 textarea(tabindex="9", id="sc", class="", placeholder="showcase")
                 textarea(tabindex="9", id="pp", class="", placeholder="pp")
                 textarea(tabindex="10", id="rest", class="", placeholder="rest")
-
+            div
+                input(type="submit", value="submit")
             div
                 a(href="#", id="GraphCollector", tabindex="11") gen
 
@@ -58,3 +61,5 @@ block content
         div(class="rest", data-id="rest")
             h3 Остальные сервисы и проекты
             p
+
+include tpls/footer

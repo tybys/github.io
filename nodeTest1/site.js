@@ -31,7 +31,29 @@ app.get('/create', function (req, res)
     })
 });
 
-app.listen(80);
+app.post('/report', function (req, res)
+{
+    console.log(1)
+});
+
+var mysql      = require('mysql');
+var connection = mysql.createConnection({
+    host     : 'localhost',
+    user     : 'root',
+    password : 'tabasov.dunichev.rysin.kfrhfvf'
+});
+
+
+connection.query('SELECT 1 + 1 AS solution', function(err, rows, fields) {
+    if (err) throw err;
+    console.log('The solution is: ', rows[0].solution);
+});
+
+connection.end();
+connection.connect();
+
+
+app.listen(8080);
 
 //express().use(express.static(
 //    path.join(__dirname, 'static'),
