@@ -1,0 +1,60 @@
+extends tpls/layout
+
+block content
+    ul.nav
+        li
+            a(href="/reports") reports
+        li
+            a(href="/create") create
+
+    div(class="left")
+        form
+            div
+                input(tabindex="1", id="LkuGraph", type="text", class="", placeholder="lku")
+                input(tabindex="2", id="LkfGraph", type="text", class="", placeholder="lkf")
+                input(tabindex="3", id="RbGraph", type="text", class="", placeholder="rb")
+                input(tabindex="4", id="RestGraph", type="text", class="", placeholder="rest")
+                input(tabindex="5", id="Rb_Payments", type="text", class="", placeholder="rb_payments")
+                input(tabindex="6", id="Showcase", type="text", class="", placeholder="showcase")
+
+            div
+                textarea(tabindex="7", id="lku", class="", placeholder="lku")
+                textarea(tabindex="8", id="lkf", class="", placeholder="lkf")
+                textarea(tabindex="9", id="rb", class="", placeholder="rb")
+                textarea(tabindex="9", id="sc", class="", placeholder="showcase")
+                textarea(tabindex="9", id="pp", class="", placeholder="pp")
+                textarea(tabindex="10", id="rest", class="", placeholder="rest")
+
+            div
+                a(href="#", id="GraphCollector", tabindex="11") gen
+
+    div(class="right")
+        h1 Отчёт frontend цеха
+        p(id="day")
+        p(id="year")
+
+        div(class="ct-chart")
+
+        div(class="lku", data-id="lku")
+            h3 Личный кабинет юр. лиц
+            p
+
+        div(class="lkf", data-id="lkf")
+            h3 Личный кабинет физ. лиц
+            p
+
+        div(class="rb", data-id="rb")
+            h3 Сайт - Robokassa
+            p
+
+        div(class="showcase", data-id="showcase")
+            h3 Showcase
+            p
+
+        div(class="pp", data-id="pp")
+            h3 Платёжные страницы
+            p
+
+        div(class="rest", data-id="rest")
+            h3 Остальные сервисы и проекты
+            p
