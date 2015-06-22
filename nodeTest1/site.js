@@ -35,12 +35,14 @@ app.get('/reports', function (req, res)
         }
         else
         {
-            console.log(req.body.graph)
-            console.log(1)
-            res.send('success');
+            //res.send('success');
+            res.render('reports.jade', {});
+            var sqlResults = results;
+            console.log(sqlResults);
         }
     });
-    res.render('reports.jade', {});
+
+
 });
 
 app.get('/create', function (req, res)
@@ -72,7 +74,7 @@ app.get('/create', function (req, res)
 function BD() {
     var connection = mysql.createConnection({
         user: 'root',
-        password: '',
+        password: 'tabasov.dunichev.rysin.kfrhfvf',
         host: 'localhost',
         database: 'express'
     });
@@ -96,6 +98,8 @@ app.post('/create', function (req, res)
         rest: req.body.rest
     };
 
+
+
     objBD.query('INSERT INTO report (graph, lku, lkf, rb, sc, pp, rest) values ("'+req.body.graph+'", "'+req.body.lku+'", "'+req.body.lkf+'", "'+req.body.rb+'", "'+req.body.sc+'", "'+req.body.pp+'", "'+req.body.rest+'")', function (err, results, fields)
     {
         if (err)
@@ -109,8 +113,9 @@ app.post('/create', function (req, res)
         }
     });
 
+    objBD.end();
 
 });
 
 
-app.listen(85);
+app.listen(8000);
