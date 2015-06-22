@@ -25,6 +25,21 @@ app.get('/', function (req, res)
 
 app.get('/reports', function (req, res)
 {
+    var objBD = BD();
+
+    objBD.query('SELECT * FROM report', function (err, results, fields)
+    {
+        if (err)
+        {
+            throw err;
+        }
+        else
+        {
+            console.log(req.body.graph)
+            console.log(1)
+            res.send('success');
+        }
+    });
     res.render('reports.jade', {});
 });
 
@@ -32,9 +47,6 @@ app.get('/create', function (req, res)
 {
     res.render('create.jade', {});
 });
-
-
-
 
 
 //var connection = mysql.createConnection({
@@ -96,6 +108,8 @@ app.post('/create', function (req, res)
             res.send('success');
         }
     });
+
+
 });
 
 
