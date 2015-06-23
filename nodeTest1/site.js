@@ -44,7 +44,8 @@ app.get('/reports', function (req, res)
         else
         {
             res.render('reports.jade', {
-                data: results
+                data: results,
+                reportPicker: req.query.reportPicker
             });
         }
     });
@@ -74,7 +75,9 @@ app.get('/getReport', function (req, res, err)
         else
         {
             console.log(results)
-            res.send('success');
+            //res.render('reports.jade', {
+            //    data:
+            //})
         }
     });
     objBD.end();

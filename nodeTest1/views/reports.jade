@@ -15,13 +15,16 @@ ul
     pre(style="word-wrap: break-word")
         !{JSON.stringify(data)}
 
-form(method="get", action="getReport")
+form(method="get", action="reports")
     select(name="reportPicker")
         each _data in data
             option(value=_data.id) #{_data._date}
     input(type="text", value="neok", id="neok", name="neok")
     input(type="submit", value="ok")
 
+
+
+    #{reportPicker}
 //
     [
         {
