@@ -19,6 +19,7 @@ form(method="get", action="getReport")
     select(name="reportPicker")
         each _data in data
             option(value=_data.id) #{_data._date}
+    input(type="text", value="neok", id="neok", name="neok")
     input(type="submit", value="ok")
 
 //

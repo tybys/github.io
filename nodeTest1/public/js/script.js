@@ -5,7 +5,6 @@ window.addEventListener('load', function()
 {
     // date
     var _dateStr = today.getDate().toString() + " " + months[today.getMonth()].toString();
-    //var _dateInput = document.getElementById("_date").setAttribute("value", _dateStr);
-
-
+    var _dateInput = document.getElementById("_date");
+    _dateInput ? _dateInput.setAttribute('value', _dateStr) : '';
 });
