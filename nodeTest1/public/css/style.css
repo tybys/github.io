@@ -1,3 +1,13 @@
-body {
-
+body ul:first-of-type {
+    padding-left: 0;
+}
+ul:first-of-type li {
+    background: #000;
+    display: inline-block;
+    margin: 0 2.5px;
+    padding: 5px;
+}
+ul:first-of-type li a {
+    color: white;
+    font-weight: 900;
 }
