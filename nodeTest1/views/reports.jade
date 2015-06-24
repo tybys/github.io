@@ -1,40 +1,44 @@
-include tpls/header
+extends tpls/layout
+block content
+    ul
+        li
+            a(href="/") index
+        li
+            a(href="/reports") reports
+        li
+            a(href="/create") create
 
-ul
-    li
-        a(href="/") index
-    li
-        a(href="/reports") reports
-    li
-        a(href="/create") create
+    form(method="get", action="reports")
+        select(name="reportPicker")
+            each _data in data
+                option(value=_data.id) #{_data._date}
+        input(type="submit", value="ok")
 
-form(method="get", action="reports")
-    select(name="reportPicker")
-        each _data in data
-            option(value=_data.id) #{_data._date}
-    input(type="submit", value="ok")
+    - if (actualRow) {
+        ul.rep
+            li
+                | <strong>graph</strong>
+                input(type='hidden', id='GraphCollector', name='GraphCollector', value=actualRow.graph)
+                //p(id='GraphCollector') #{actualRow.graph}
+                div(class='ct-chart')
+            li
+                | <strong>личный кабинет юр. лиц</strong>
+                p #{actualRow.lku}
+            li
+                | <strong>личный кабинет физ. лиц</strong>
+                p #{actualRow.lkf}
+            li
+                | <strong>сайт Робокасса</strong>
+                p #{actualRow.rb}
+            li
+                | <strong>проект Витрина</strong>
+                p #{actualRow.sc}
+            li
+                | <strong>платежные страницы</strong>
+                p #{actualRow.pp}
+            li
+                | <strong>остальные сервисы и проекты</strong>
+                p #{actualRow.rest}
+    -}
 
-ul.rep
-    li
-        | <strong>graph</strong>
-        input(type='hidden', id='GraphCollector', name='GraphCollector', value=actualRow.graph)
-        //p(id='GraphCollector') #{actualRow.graph}
-        div(class='ct-chart')
-    li
-        | <strong>личный кабинет юр. лиц</strong>
-        p #{actualRow.lku}
-    li
-        | <strong>личный кабинет физ. лиц</strong>
-        p #{actualRow.lkf}
-    li
-        | <strong>сайт Робокасса</strong>
-        p #{actualRow.rb}
-    li
-        | <strong>проект Витрина</strong>
-        p #{actualRow.sc}
-    li
-        | <strong>платежные страницы</strong>
-        p #{actualRow.pp}
-    li
-        | <strong>остальные сервисы и проекты</strong>
-        p #{actualRow.rest}
+    include tpls/footer

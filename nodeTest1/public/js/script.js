@@ -50,33 +50,43 @@ window.addEventListener('load', function()
     */
 
 
-    GraphArray = new Array($('#GraphCollector').val().split(""));
-    numbarr = [GraphArray];
-    _GraphArray = JSON.parse("["+numbarr+"]");
-
-
-
-    // chart
-    function graph(event) {
-        new Chartist.Bar('.ct-chart', {
-            labels: ['lku', 'lkf', 'rb', 'rest', 'rb_payments', 'showcase'],
-            series: [
-                //[1, 2, 3, 4.5]
-                _GraphArray
-            ]
-        }, {
-            low: 0,
-            scaleMinSpace: 1,
-            height: 250,
-            high: 10
-        }).on('draw', function(data) {
-                if (data.type === 'bar')
-                {
-                    data.element.attr({
-                        style: 'stroke-width: 30px'
-                    });
-                }
-            });
-    }
-    graph();
 });
+
+(function ($)
+{
+    $(function ( )
+    {
+        if ($('#GraphCollector').length > 0)
+        {
+            GraphArray = new Array($('#GraphCollector').val().split(""));
+            numbarr = [GraphArray];
+            _GraphArray = JSON.parse("["+numbarr+"]");
+
+
+
+            // chart
+            function graph(event) {
+                new Chartist.Bar('.ct-chart', {
+                    labels: ['lku', 'lkf', 'rb', 'rest', 'rb_payments', 'showcase'],
+                    series: [
+                        //[1, 2, 3, 4.5]
+                        _GraphArray
+                    ]
+                }, {
+                    low: 0,
+                    scaleMinSpace: 1,
+                    height: 250,
+                    high: 10
+                }).on('draw', function(data) {
+                        if (data.type === 'bar')
+                        {
+                            data.element.attr({
+                                style: 'stroke-width: 30px'
+                            });
+                        }
+                    });
+            }
+            graph();
+        }
+    });
+})(jQuery);
