@@ -1,6 +1,4 @@
 include tpls/header
-script.
-    //_data = !{JSON.stringify(data)}
 
 ul
     li
@@ -10,55 +8,15 @@ ul
     li
         a(href="/create") create
 
-
-//
-    pre(style="word-wrap: break-word")
-        !{JSON.stringify(data)}
-
 form(method="get", action="reports")
     select(name="reportPicker")
         each _data in data
             option(value=_data.id) #{_data._date}
-    input(type="text", value="neok", id="neok", name="neok")
     input(type="submit", value="ok")
 
+// data
 
-
-    #{reportPicker}
-//
-    [
-        {
-            "id":2,
-            "graph":0,
-            "lku":"лкю, текст",
-            "lkf":"лкф текст",
-            "rb":"робокасса сайт",
-            "sc":"витрина",
-            "pp":"платежные страницы",
-            "rest":"остальное"
-        },{
-            "id":3,
-            "graph":0,
-            "lku":"sdfsdf",
-            "lkf":"vbd",
-            "rb":"rghtr",
-            "sc":"g5g45",
-            "pp":"23f",
-            "rest":"vfhgmj"
-        }
-    ]
-
-//
-    for (var i=0; i < results.length; i++)
-    {
-        var obj = results[i];
-        console.log(obj.id)
-    }
-
-//
-    for(var i = 0; i < cubes.length; i++) {
-    var cube = cubes[i];
-        for(var j = 0; j < cube.length; j++) {
-            display("cube[" + i + "][" + j + "] = " + cube[j]);
-        }
-    }
+table
+    each item, i in data2
+        p #{item}
+//#{data2.graph}

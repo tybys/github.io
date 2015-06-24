@@ -17,6 +17,8 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 app.use(multer());
+require(__dirname + '/js_server/helpers.js');
+//var reports = require(__dirname + '/js_server/Controllers/Reports.js');
 
 /**
  * getting /main page
@@ -32,24 +34,31 @@ app.get('/', function (req, res)
  * return row from db
  */
 app.get('/reports', function (req, res)
-{
-    var objBD = BD();
-
-    objBD.query('SELECT * FROM report', function (err, results, fields)
     {
-        if (err)
+        var objBD = BD();
+
+        objBD.query('SELECT * FROM report', function (err, results, fields)
         {
-            throw err;
-        }
-        else
-        {
-            res.render('reports.jade', {
-                data: results,
-                reportPicker: req.query.reportPicker
-            });
-        }
-    });
-});
+            if (err)
+            {
+                throw err;
+            }
+            else
+            {
+                var data2 = function () {
+                    return results.getObject(req.query.reportPicker, 'id');
+                };
+
+                res.render('reports.jade', {
+                    data: results,
+                    data2: data2(),
+                    reportPicker: req.query.reportPicker
+                });
+                console.log(data2())
+            }
+        });
+    }
+);
 
 /**
  * /create page
@@ -66,7 +75,6 @@ app.get('/getReport', function (req, res, err)
     var objBD = BD();
 
     objBD.query('SELECT * FROM report WHERE id = "'+req.query.reportPicker+'" ', function (err, results, fields)
-    //objBD.query('SELECT * FROM report WHERE id', function (err, results, fields)
     {
         if (err)
         {
@@ -87,7 +95,8 @@ app.get('/getReport', function (req, res, err)
 function BD() {
     var connection = mysql.createConnection({
         user: 'root',
-        password: 'tabasov.dunichev.rysin.kfrhfvf',
+        //password: 'tabasov.dunichev.rysin.kfrhfvf',
+        password: '',
         host: 'localhost',
         database: 'express'
     });
