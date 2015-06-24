@@ -45,16 +45,16 @@ app.get('/reports', function (req, res)
             }
             else
             {
-                var data2 = function () {
+                var actualRow = function () {
                     return results.getObject(req.query.reportPicker, 'id');
                 };
 
                 res.render('reports.jade', {
                     data: results,
-                    data2: data2(),
+                    actualRow: actualRow(),
                     reportPicker: req.query.reportPicker
                 });
-                console.log(data2())
+                console.log(actualRow())
             }
         });
     }
@@ -95,8 +95,8 @@ app.get('/getReport', function (req, res, err)
 function BD() {
     var connection = mysql.createConnection({
         user: 'root',
-        //password: 'tabasov.dunichev.rysin.kfrhfvf',
-        password: '',
+        password: 'tabasov.dunichev.rysin.kfrhfvf',
+        //password: '',
         host: 'localhost',
         database: 'express'
     });

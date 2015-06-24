@@ -1,3 +1,7 @@
+body {
+    font-family: 'PT Serif', serif;
+}
+
 body ul:first-of-type {
     padding-left: 0;
 }
@@ -10,4 +14,23 @@ ul:first-of-type li {
 ul:first-of-type li a {
     color: white;
     font-weight: 900;
+}
+
+ul.rep {
+    transition: 1s all ease;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul.rep strong {
+    display: block;
+    background-color: #19426f;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
 }

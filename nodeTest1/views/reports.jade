@@ -14,9 +14,27 @@ form(method="get", action="reports")
             option(value=_data.id) #{_data._date}
     input(type="submit", value="ok")
 
-// data
-
-table
-    each item, i in data2
-        p #{item}
-//#{data2.graph}
+ul.rep
+    li
+        | <strong>graph</strong>
+        input(type='hidden', id='GraphCollector', name='GraphCollector', value=actualRow.graph)
+        //p(id='GraphCollector') #{actualRow.graph}
+        div(class='ct-chart')
+    li
+        | <strong>личный кабинет юр. лиц</strong>
+        p #{actualRow.lku}
+    li
+        | <strong>личный кабинет физ. лиц</strong>
+        p #{actualRow.lkf}
+    li
+        | <strong>сайт Робокасса</strong>
+        p #{actualRow.rb}
+    li
+        | <strong>проект Витрина</strong>
+        p #{actualRow.sc}
+    li
+        | <strong>платежные страницы</strong>
+        p #{actualRow.pp}
+    li
+        | <strong>остальные сервисы и проекты</strong>
+        p #{actualRow.rest}
