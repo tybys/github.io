@@ -1,3 +1,16 @@
+/** gmail ************************************************/
+
+var fs = require('fs');
+var readline = require('readline');
+var google = require('googleapis');
+var googleAuth = require('google-auth-library');
+
+var scopes  = ['https://www.goggleapis.com/auth/gmail.readonly'];
+var TOKEN_DIR = (process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE) + '/.credentials/';
+var TOKEN_PATH = TOKEN_DIR + 'gmail-api-quickstart.json';
+
+/** end-gmail ********************************************/
+
 var mysql = require('mysql');
 var bodyParser = require('body-parser');
 var path = require('path');
@@ -5,6 +18,9 @@ var express = require('express');
 var multer = require('multer');
 var app = express();
 var colors = require('colors/safe'); // does not alter string prototype
+// for the parse
+var request = require('request');
+var cheerio = require('cheerio');
 
 
 app.set('view_engine', 'jade');
@@ -18,21 +34,19 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(multer());
 require(__dirname + '/js_server/helpers.js');
-//var reports = require(__dirname + '/js_server/Controllers/Reports.js');
 
-/**
- * getting /main page
- * return index tpl
- */
+var testData = 'data';
 app.get('/', function (req, res)
 {
-    res.render('index.jade', {});
+    res.render('index.jade', {
+        data: request(testData, function (error, response, html) {
+            if (!error && response.statusCode == 200) {
+                console.log(html);
+            }
+        })
+    });
 });
 
-/**
- * getting /report page
- * return row from db
- */
 app.get('/reports', function (req, res)
     {
 
@@ -62,16 +76,11 @@ app.get('/reports', function (req, res)
     }
 );
 
-/**
- * /create page
- * posting form-data to bd
- */
 app.get('/create', function (req, res)
 {
     res.render('create.jade', {});
 });
 
-// getting data from BD
 app.get('/getReport', function (req, res, err)
 {
     var objBD = BD();
@@ -84,10 +93,7 @@ app.get('/getReport', function (req, res, err)
         }
         else
         {
-            console.log(results)
-            //res.render('reports.jade', {
-            //    data:
-            //})
+            //console.log(results)
         }
     });
     objBD.end();
