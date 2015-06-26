@@ -9,6 +9,8 @@ var scopes  = ['https://www.goggleapis.com/auth/gmail.readonly'];
 var TOKEN_DIR = (process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE) + '/.credentials/';
 var TOKEN_PATH = TOKEN_DIR + 'gmail-api-quickstart.json';
 
+//console.log(TOKEN_PATH)
+
 /** end-gmail ********************************************/
 
 var mysql = require('mysql');
@@ -35,16 +37,11 @@ app.use(bodyParser.urlencoded({
 app.use(multer());
 require(__dirname + '/js_server/helpers.js');
 
-var testData = 'data';
+//
+
 app.get('/', function (req, res)
 {
-    res.render('index.jade', {
-        data: request(testData, function (error, response, html) {
-            if (!error && response.statusCode == 200) {
-                console.log(html);
-            }
-        })
-    });
+    res.render('index.jade', {});
 });
 
 app.get('/reports', function (req, res)
@@ -103,8 +100,8 @@ app.get('/getReport', function (req, res, err)
 function BD() {
     var connection = mysql.createConnection({
         user: 'root',
-        //password: 'tabasov.dunichev.rysin.kfrhfvf',
-        password: '',
+        password: 'tabasov.dunichev.rysin.kfrhfvf',
+        //password: '',
         host: 'localhost',
         database: 'express'
     });
