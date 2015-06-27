@@ -1,25 +1,29 @@
+require('coffee-script/register'); // странная хуйня с кофе, впрочем кофе то хуйня
+
 var fs = require('fs');
 var readline = require('readline');
 var google = require('googleapis');
 var googleAuth = require('google-auth-library');
+var gapi = require('gapi');
 
 var SCOPES = ['https://www.googleapis.com/auth/gmail.readonly'];
-var TOKEN_DIR = (process.env.HOME || process.env.HOMEPATH ||
-    process.env.USERPROFILE) + '/.credentials/';
+var TOKEN_DIR = (process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE) + '/.credentials/';
 var TOKEN_PATH = TOKEN_DIR + 'gmail-api-quickstart.json';
 
-console.log('token_dir', TOKEN_DIR)
-console.log('token_path', TOKEN_PATH)
-
 // Load client secrets from a local file.
-fs.readFile('/js_server/client_secret.json', function processClientSecrets(err, content) {
+/* fdg gffghgf*/
+//dfgdfgdfg
+
+fs.readFile('/tybys/nodeTest1/js_server/client_secret.json', function processClientSecrets(err, content) {
     if (err) {
         console.log('Error loading client secret file: ' + err);
         return;
     }
     // Authorize a client with the loaded credentials, then call the
     // Gmail API.
-    authorize(JSON.parse(content), listLabels);
+    //authorize(JSON.parse(content), listLabels);
+    authorize(JSON.parse(content), listMessages);
+
 });
 
 /**
@@ -97,29 +101,33 @@ function storeToken(token) {
 }
 
 /**
- * Lists the labels in the user's account.
+ * Retrieve Messages in user's mailbox matching query.
  *
- * @param {google.auth.OAuth2} auth An authorized OAuth2 client.
+ * @param  {String} userId User's email address. The special value 'me'
+ * can be used to indicate the authenticated user.
+ * @param  {String} query String used to filter the Messages listed.
+ * @param  {Function} callback Function to call when the request is complete.
  */
-function listLabels(auth) {
-    var gmail = google.gmail('v1');
-    gmail.users.labels.list({
-        auth: auth,
-        userId: 'me',
-    }, function(err, response) {
-        if (err) {
-            console.log('The API returned an error: ' + err);
-            return;
-        }
-        var labels = response.labels;
-        if (labels.length == 0) {
-            console.log('No labels found.');
-        } else {
-            console.log('Labels:');
-            for (var i = 0; i < labels.length; i++) {
-                var label = labels[i];
-                console.log('- %s', label.name);
+function listMessages(userId, query, callback) {
+    var getPageOfMessages = function(request, result) {
+        request.execute(function(resp) {
+            result = result.concat(resp.messages);
+            var nextPageToken = resp.nextPageToken;
+            if (nextPageToken) {
+                request = gapi.client.gmail.users.messages.list({
+                    'userId': 'me',
+                    'pageToken': nextPageToken,
+                    'q': 'from:tfs@roboxchange.com:'
+                });
+                getPageOfMessages(request, result);
+            } else {
+                callback(result);
             }
-        }
+        });
+    };
+    var initialRequest = gapi.client.gmail.users.messages.list({
+        'userId': userId,
+        'q': query
     });
+    getPageOfMessages(initialRequest, []);
 }

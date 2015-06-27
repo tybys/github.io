@@ -100,8 +100,8 @@ app.get('/getReport', function (req, res, err)
 function BD() {
     var connection = mysql.createConnection({
         user: 'root',
-        password: 'tabasov.dunichev.rysin.kfrhfvf',
-        //password: '',
+        //password: 'tabasov.dunichev.rysin.kfrhfvf',
+        password: '',
         host: 'localhost',
         database: 'express'
     });
