@@ -1,29 +1,9 @@
-/** gmail ************************************************/
-
-var fs = require('fs');
-var readline = require('readline');
-var google = require('googleapis');
-var googleAuth = require('google-auth-library');
-
-var scopes  = ['https://www.goggleapis.com/auth/gmail.readonly'];
-var TOKEN_DIR = (process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE) + '/.credentials/';
-var TOKEN_PATH = TOKEN_DIR + 'gmail-api-quickstart.json';
-
-//console.log(TOKEN_PATH)
-
-/** end-gmail ********************************************/
-
 var mysql = require('mysql');
 var bodyParser = require('body-parser');
 var path = require('path');
 var express = require('express');
 var multer = require('multer');
 var app = express();
-var colors = require('colors/safe'); // does not alter string prototype
-// for the parse
-var request = require('request');
-var cheerio = require('cheerio');
-
 
 app.set('view_engine', 'jade');
 app.set('views', __dirname + '/views');
@@ -125,7 +105,7 @@ app.post('/create', function (req, res)
         //rest: req.body.rest
     };
 
-    objBD.query('INSERT INTO report (graph, lku, lkf, rb, sc, pp, rest, _date) values ("'+req.body.graph+'", "'+req.body.lku+'", "'+req.body.lkf+'", "'+req.body.rb+'", "'+req.body.sc+'", "'+req.body.pp+'", "'+req.body.rest+'", "'+req.body._date+'")', function (err, results, fields)
+    objBD.query('INSERT INTO report (graph, lku, lkf, rb, sc, pp, rest, _date, taskRow) values ("'+req.body.graph+'", "'+req.body.lku+'", "'+req.body.lkf+'", "'+req.body.rb+'", "'+req.body.sc+'", "'+req.body.pp+'", "'+req.body.rest+'", "'+req.body._date+'", "'+req.body.taskRow+'")', function (err, results, fields)
     {
         if (err)
         {

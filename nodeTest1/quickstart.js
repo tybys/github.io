@@ -4,7 +4,7 @@ var fs = require('fs');
 var readline = require('readline');
 var google = require('googleapis');
 var googleAuth = require('google-auth-library');
-var gapi = require('gapi');
+
 
 var SCOPES = ['https://www.googleapis.com/auth/gmail.readonly'];
 var TOKEN_DIR = (process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE) + '/.credentials/';
@@ -22,7 +22,7 @@ fs.readFile('/tybys/nodeTest1/js_server/client_secret.json', function processCli
     // Authorize a client with the loaded credentials, then call the
     // Gmail API.
     //authorize(JSON.parse(content), listLabels);
-    authorize(JSON.parse(content), listMessages);
+    authorize(JSON.parse(content), getMessage);
 
 });
 
@@ -100,34 +100,21 @@ function storeToken(token) {
     console.log('Token stored to ' + TOKEN_PATH);
 }
 
+var gmail = google.gmail('v1');
+var gapi = require('gapi');
 /**
- * Retrieve Messages in user's mailbox matching query.
+ * Get Message with given ID.
  *
  * @param  {String} userId User's email address. The special value 'me'
  * can be used to indicate the authenticated user.
- * @param  {String} query String used to filter the Messages listed.
- * @param  {Function} callback Function to call when the request is complete.
- */
-function listMessages(userId, query, callback) {
-    var getPageOfMessages = function(request, result) {
-        request.execute(function(resp) {
-            result = result.concat(resp.messages);
-            var nextPageToken = resp.nextPageToken;
-            if (nextPageToken) {
-                request = gapi.client.gmail.users.messages.list({
-                    'userId': 'me',
-                    'pageToken': nextPageToken,
-                    'q': 'from:tfs@roboxchange.com:'
-                });
-                getPageOfMessages(request, result);
-            } else {
-                callback(result);
-            }
-        });
-    };
-    var initialRequest = gapi.client.gmail.users.messages.list({
-        'userId': userId,
-        'q': query
+ * @param  {String} messageId ID of Message to get.
+ * @param  {Function} callback Function to call when the request is complete.*/
+function getMessage(userId, messageId, callback) {
+    console.log(gapi)
+    console.log(gapi.client)
+    var request = gapi.client.gmail.users.messages.get({
+        'userId': 'me',
+        'id': '14e2bd07d975d3dc'
     });
-    getPageOfMessages(initialRequest, []);
+    request.execute(callback);
 }
