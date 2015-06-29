@@ -8,6 +8,36 @@ window.addEventListener('load', function()
     var _dateInput = document.getElementById("_date");
     _dateInput ? _dateInput.setAttribute('value', _dateStr) : '';
 
+    foo = [
+        {
+            id: 1,
+            graph: '983454',
+            lku: 'lku text',
+            lkf: 'lkf text',
+            rb: 'rb text',
+            sc: 'sc text',
+            pp: 'pp tet',
+            rest: 'rest text',
+            _date: '27 June',
+            taskRow: 'qwertyui'
+        },
+        {
+            id: 1,
+            graph: '983454',
+            lku: 'lku text',
+            lkf: 'lkf text',
+            rb: 'rb text',
+            sc: 'sc text',
+            pp: 'pp tet',
+            rest: 'rest text',
+            _date: '27 June',
+            taskRow: 'uioytrewq'
+        }];
+
+    for (i in foo) {
+        console.log(foo[i].taskRow)
+    }
+
 
     //marr = [
     //    {

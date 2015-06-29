@@ -25,33 +25,39 @@ app.get('/', function (req, res)
 });
 
 app.get('/reports', function (req, res)
+{
+    var objBD = BD();
+    objBD.query('SELECT id, graph, lku, lkf, rb, sc, pp, rest, _date, taskRow FROM report', function (err, results, fields)
     {
-
-        var objBD = BD();
-
-        objBD.query('SELECT * FROM report', function (err, results, fields)
+        if (err)
         {
-            if (err)
+            throw err;
+        }
+        else
+        {
+            var actualRow = function ()
             {
-                throw err;
-            }
-            else
-            {
-                var actualRow = function () {
-                    return results.getObject(req.query.reportPicker, 'id');
-                };
+                return results.getObject(req.query.reportPicker, 'id');
+            };
 
-                res.render('reports.jade', {
-                    data: results,
-                    title: "title",
-                    header: "header",
-                    actualRow: actualRow(),
-                    reportPicker: req.query.reportPicker
-                });
+            var lonelyField = function ()
+            {
+                for (i in results) {
+                    return console.log(results[i].taskRow)
+                }
             }
-        });
-    }
-);
+
+            res.render('reports.jade',
+            {
+                data: results,
+                data2: lonelyField(),
+                actualRow: actualRow(),
+                reportPicker: req.query.reportPicker
+            });
+          //  process.exit();
+        }
+    });
+});
 
 app.get('/create', function (req, res)
 {
@@ -105,7 +111,10 @@ app.post('/create', function (req, res)
         //rest: req.body.rest
     };
 
-    objBD.query('INSERT INTO report (graph, lku, lkf, rb, sc, pp, rest, _date, taskRow) values ("'+req.body.graph+'", "'+req.body.lku+'", "'+req.body.lkf+'", "'+req.body.rb+'", "'+req.body.sc+'", "'+req.body.pp+'", "'+req.body.rest+'", "'+req.body._date+'", "'+req.body.taskRow+'")', function (err, results, fields)
+    var Buffer = require('buffer').Buffer;
+    var taskRowB64 = new Buffer(req.body.taskRow).toString('base64')
+
+    objBD.query('INSERT INTO report (graph, lku, lkf, rb, sc, pp, rest, _date, taskRow) values ("'+req.body.graph+'", "'+req.body.lku+'", "'+req.body.lkf+'", "'+req.body.rb+'", "'+req.body.sc+'", "'+req.body.pp+'", "'+req.body.rest+'", "'+req.body._date+'", "'+taskRowB64+'")', function (err, results, fields)
     {
         if (err)
         {
