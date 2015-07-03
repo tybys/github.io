@@ -42,15 +42,22 @@ app.get('/reports', function (req, res)
 
             var lonelyField = function ()
             {
-                for (i in results) {
-                    return console.log(results[i].taskRow)
-                }
+                //for (i in results) {
+                    //return results[i].taskRow
+                //}
+
+                var Buffer = require('buffer').Buffer;
+                var b64 = results.getObject(req.query.reportPicker, 'taskRow');
+
+                console.log(typeof(b64))
+
+                //return new Buffer(b64, 'base64').toString('ascii');
             }
 
             res.render('reports.jade',
             {
                 data: results,
-                data2: lonelyField(),
+                lonelyField: lonelyField(),
                 actualRow: actualRow(),
                 reportPicker: req.query.reportPicker
             });

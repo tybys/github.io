@@ -35,7 +35,7 @@ window.addEventListener('load', function()
         }];
 
     for (i in foo) {
-        console.log(foo[i].taskRow)
+        //console.log(foo[i].taskRow)
     }
 
 

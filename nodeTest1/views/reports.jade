@@ -39,11 +39,9 @@ block content
             li
                 | <strong>остальные сервисы и проекты</strong>
                 p #{actualRow.rest}
-        - if (data2) {
             li
-                | <strong>таблица задач и багов</strong>
-                p #{data2.taskRow}
-        - }
+                p #{actualRow.taskRow}
+
     -}
 
     include tpls/footer
