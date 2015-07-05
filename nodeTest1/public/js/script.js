@@ -9,76 +9,59 @@ window.addEventListener('load', function()
     _dateInput ? _dateInput.setAttribute('value', _dateStr) : '';
 
     foo = [
-        {
-            id: 1,
-            graph: '983454',
-            lku: 'lku text',
-            lkf: 'lkf text',
-            rb: 'rb text',
-            sc: 'sc text',
-            pp: 'pp tet',
-            rest: 'rest text',
-            _date: '27 June',
-            taskRow: 'qwertyui'
-        },
-        {
-            id: 1,
-            graph: '983454',
-            lku: 'lku text',
-            lkf: 'lkf text',
-            rb: 'rb text',
-            sc: 'sc text',
-            pp: 'pp tet',
-            rest: 'rest text',
-            _date: '27 June',
-            taskRow: 'uioytrewq'
-        }];
+    {
+        id: 1,
+        graph: '983454',
+        lku: 'lku text',
+        lkf: 'lkf text',
+        rb: 'rb text',
+        sc: 'sc text',
+        pp: 'pp tet',
+        rest: 'rest text',
+        _date: '27 June',
+        taskRow: 'qwertyui'
+    },
+    {
+        id: 2,
+        graph: '983454',
+        lku: 'lku text',
+        lkf: 'lkf text',
+        rb: 'rb text',
+        sc: 'sc text',
+        pp: 'pp tet',
+        rest: 'rest text',
+        _date: '27 June',
+        taskRow: 'uioytrewq'
+    }];
 
-    for (i in foo) {
-        //console.log(foo[i].taskRow)
+    Array.prototype.getObject = function(name, param)
+    {
+        for(var i = 0; i < this.length; i++)
+        {
+            var el = this[i];
+
+            if (el[param] == name)
+            {
+                return el;
+            }
+        }
     }
 
-
-    //marr = [
+    //te = foo.getObject('2', 'id');
+    //fid = [];
+    //for (var key in te) {
+    //    if (te.hasOwnProperty(key))
     //    {
-    //        id: 18,
-    //        graph: 654112,
-    //        lku: 'все плохо',
-    //        lkf: 'плановых работ не ведется',
-    //        rb: 'странный сайт, вроде бы живой и давно умерший',
-    //        sc: 'активно не верстается',
-    //        pp: 'аналогично витрине',
-    //        rest: 'все идет согласно плану',
-    //        _date: '23 June'
-    //    },
-    //    {
-    //        id: 17,
-    //        graph: 123432,
-    //        lku: 'wip on 3.3 iteration and some bugs!',
-    //        lkf: 'new auth page!',
-    //        rb: 'nothing',
-    //        sc: 'step by step we mark our site :)',
-    //        pp: 'woops',
-    //        rest: 'well, we are great!',
-    //        _date: '13 September'
+    //        fid.push(te['id']);
     //    }
-    //];
+    //    break;
+    //}
 
-    /*
-    $("#GraphCollector").on("click", function ()
-    {
-        var partner = $("#LkuGraph").val();
-        var my = $("#LkfGraph").val();
-        var main = $("#RbGraph").val();
-        var rest = $("#RestGraph").val();
-        var rb_payments = $("#Rb_Payments").val();
-        var showcase = $("#Showcase").val();
-
-        GraphArray = new Array(partner, my, main, rest, rb_payments, showcase);
-        graph();
-    });
-    */
-
+    //uniq = foo.getObject('2', 'id');
+    //for (var i=0;i<uniq.length;i++){
+    //    console.log(uniq[i])
+    //}
+    // results.getObject(req.query.reportPicker, 'id');
 
 });
 

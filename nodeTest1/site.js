@@ -3,6 +3,7 @@ var bodyParser = require('body-parser');
 var path = require('path');
 var express = require('express');
 var multer = require('multer');
+var Buffer = require('buffer').Buffer;
 var app = express();
 
 app.set('view_engine', 'jade');
@@ -27,7 +28,7 @@ app.get('/', function (req, res)
 app.get('/reports', function (req, res)
 {
     var objBD = BD();
-    objBD.query('SELECT id, graph, lku, lkf, rb, sc, pp, rest, _date, taskRow FROM report', function (err, results, fields)
+    objBD.query('SELECT id, graph, lku, lkf, rb, sc, pp, rest, _date, _taskRow FROM report', function (err, results, fields)
     {
         if (err)
         {
@@ -40,25 +41,29 @@ app.get('/reports', function (req, res)
                 return results.getObject(req.query.reportPicker, 'id');
             };
 
-            var lonelyField = function ()
+            var ff = function ()
             {
-                //for (i in results) {
-                    //return results[i].taskRow
-                //}
+                te = results.getObject(req.query.reportPicker, 'id');
+                fid = [];
+                for (var key in te)
+                {
+                    if (te.hasOwnProperty(key))
+                    {
+                        fid.push(new Buffer(te['_taskRow'], 'base64').toString('utf8'));
+                    }
+                    break;
+                }
 
-                var Buffer = require('buffer').Buffer;
-                var b64 = results.getObject(req.query.reportPicker, 'taskRow');
-
-                console.log(typeof(b64))
-
-                //return new Buffer(b64, 'base64').toString('ascii');
+                return fid;
             }
 
+            //http://jaukia.github.io/zoomooz/
             res.render('reports.jade',
             {
                 data: results,
-                lonelyField: lonelyField(),
                 actualRow: actualRow(),
+                tf: ff(),
+                //test: new Buffer(actualRow()._taskRow, 'base64').toString('utf8'),
                 reportPicker: req.query.reportPicker
             });
           //  process.exit();
@@ -118,10 +123,9 @@ app.post('/create', function (req, res)
         //rest: req.body.rest
     };
 
-    var Buffer = require('buffer').Buffer;
     var taskRowB64 = new Buffer(req.body.taskRow).toString('base64')
 
-    objBD.query('INSERT INTO report (graph, lku, lkf, rb, sc, pp, rest, _date, taskRow) values ("'+req.body.graph+'", "'+req.body.lku+'", "'+req.body.lkf+'", "'+req.body.rb+'", "'+req.body.sc+'", "'+req.body.pp+'", "'+req.body.rest+'", "'+req.body._date+'", "'+taskRowB64+'")', function (err, results, fields)
+    objBD.query('INSERT INTO report (graph, lku, lkf, rb, sc, pp, rest, _date, _taskRow) values ("'+req.body.graph+'", "'+req.body.lku+'", "'+req.body.lkf+'", "'+req.body.rb+'", "'+req.body.sc+'", "'+req.body.pp+'", "'+req.body.rest+'", "'+req.body._date+'", "'+taskRowB64+'")', function (err, results, fields)
     {
         if (err)
         {
@@ -129,7 +133,6 @@ app.post('/create', function (req, res)
         }
         else
         {
-            console.log(req.body.graph,req.body.lku,req.body.lkf,req.body.rb,req.body.sc,req.body.pp,req.body.rest)
             res.send('success');
         }
     });
