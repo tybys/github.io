@@ -34,3 +34,19 @@ ul.rep strong {
     padding-bottom: 5px;
     padding-right: 5px;
 }
+
+.notclosed {
+    background: #F4C63D;
+    padding: 0 5px;
+    color: white;
+}
+.fixed {
+    background: #D70206;
+    padding: 0 5px;
+    color: white;
+}
+.closed {
+    background: #F05B4F;
+    padding: 0 5px;
+    color: white;
+}

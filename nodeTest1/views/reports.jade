@@ -18,6 +18,7 @@ block content
         ul.rep
             li
                 | <strong>graph</strong>
+                p(id="tasks")
                 input(type='hidden', id='GraphCollector', name='GraphCollector', value=actualRow.graph)
                 //p(id='GraphCollector') #{actualRow.graph}
                 div(class='ct-chart')
@@ -41,8 +42,6 @@ block content
                 p #{actualRow.rest}
             li
                 !{tf}
-
-
     -}
 
     include tpls/footer
