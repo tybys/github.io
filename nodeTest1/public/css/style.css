@@ -50,3 +50,7 @@ ul.rep strong {
     padding: 0 5px;
     color: white;
 }
+
+table {
+    width: 100%;
+}

@@ -22,11 +22,7 @@ require(__dirname + '/js_server/helpers.js');
 
 app.get('/', function (req, res)
 {
-    res.render('index.jade', {});
-});
-
-app.get('/reports', function (req, res)
-{
+    //res.render('index.jade', {});
     var objBD = BD();
     objBD.query('SELECT id, graph, lku, lkf, rb, sc, pp, rest, _date, _taskRow FROM report', function (err, results, fields)
     {
@@ -58,17 +54,22 @@ app.get('/reports', function (req, res)
             }
 
             //http://jaukia.github.io/zoomooz/
-            res.render('reports.jade',
-            {
-                data: results,
-                actualRow: actualRow(),
-                tf: ff(),
-                //test: new Buffer(actualRow()._taskRow, 'base64').toString('utf8'),
-                reportPicker: req.query.reportPicker
-            });
-          //  process.exit();
+            res.render('index.jade',
+                {
+                    data: results,
+                    actualRow: actualRow(),
+                    tf: ff(),
+                    //test: new Buffer(actualRow()._taskRow, 'base64').toString('utf8'),
+                    reportPicker: req.query.reportPicker
+                });
+            //  process.exit();
         }
     });
+});
+
+app.get('/reports', function (req, res)
+{
+
 });
 
 app.get('/create', function (req, res)
@@ -107,22 +108,9 @@ function BD() {
 }
 
 // form handling
-app.post('/create', function (req, res)
+app.post('/create', function (req, res, next)
 {
     var objBD = BD();
-
-    var post = {
-        //Graph: req.body.Graph,
-        //Rb_Payments: req.body.Rb_Payments,
-        //Showcase: req.body.Showcase,
-        //lku: req.body.lku,
-        //lkf: req.body.lkf,
-        //rb: req.body.rb,
-        //sc: req.body.sc,
-        //pp: req.body.pp,
-        //rest: req.body.rest
-    };
-
     var taskRowB64 = new Buffer(req.body.taskRow).toString('base64')
 
     objBD.query('INSERT INTO report (graph, lku, lkf, rb, sc, pp, rest, _date, _taskRow) values ("'+req.body.graph+'", "'+req.body.lku+'", "'+req.body.lkf+'", "'+req.body.rb+'", "'+req.body.sc+'", "'+req.body.pp+'", "'+req.body.rest+'", "'+req.body._date+'", "'+taskRowB64+'")', function (err, results, fields)
@@ -134,6 +122,8 @@ app.post('/create', function (req, res)
         else
         {
             res.send('success');
+
+            //next();
         }
     });
     objBD.end();
