@@ -54,3 +54,15 @@ ul.rep strong {
 table {
     width: 100%;
 }
+
+.item.left {
+    float: left;
+    width: 50%;
+}
+.item.right {
+    float: right;
+    width: 50%;
+}
+.item.right+.item {
+    clear: both;
+}

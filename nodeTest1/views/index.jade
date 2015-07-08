@@ -1,6 +1,6 @@
 extends tpls/layout
 block content
-    ul
+    //ul
         li
             a(href="/") index
         li
@@ -9,9 +9,12 @@ block content
             a(href="/create") create
 
     div(id="users", class="users")
-        |petrov <strong>just nothing</strong>
-        |korhakovcki <strong>task #000111</strong>
-        |tabasov <strong>divide et impera</strong>
+        div(class="item left")
+            | petrov <strong>just nothing</strong>
+        div(class="item right")
+            | korhakovcki <strong>task #000111</strong>
+        div(class="item")
+            | tabasov <strong>divide et impera</strong>
 
     form(method="get", action="/")
         select(name="reportPicker")
