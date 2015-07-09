@@ -16,6 +16,12 @@ block content
         div(class="item")
             | tabasov <strong>divide et impera</strong>
 
+    form(method="post", action="/testAct", enctype="")
+        input(type="text", name="tabasov", id="tabasov", placeholder="tabasov")
+        input(type="text", name="korshakovcki", id="korshakovcki", placeholder="korshakovcki")
+        input(type="text", name="petrov", id="petrov", placeholder="petrov")
+        input(type="submit", value="ok")
+
     form(method="get", action="/")
         select(name="reportPicker")
             each _data in data

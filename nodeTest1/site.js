@@ -67,11 +67,6 @@ app.get('/', function (req, res)
     });
 });
 
-app.get('/reports', function (req, res)
-{
-
-});
-
 app.get('/create', function (req, res)
 {
     res.render('create.jade', {});
@@ -95,12 +90,29 @@ app.get('/getReport', function (req, res, err)
     objBD.end();
 });
 
+app.get('/testAct', function (req, res, err)
+{
+    var objBD = BD();
+    objBD.query('INSERT INTO workers (tabasov, korshakovcki, petrov) values ("'+req.body.tabasov+'", "'+req.body.korshakovcki+'", "'+req.body.petrov+'")', function (err, results, fields)
+    {
+        if (err)
+        {
+            throw err;
+        }
+        else
+        {
+            res.send('success');
+        }
+    });
+    objBD.end();
+});
+
 // MYSQL
 function BD() {
     var connection = mysql.createConnection({
         user: 'root',
-        password: 'tabasov.dunichev.rysin.kfrhfvf',
-        //password: '',
+        //password: 'tabasov.dunichev.rysin.kfrhfvf',
+        password: '',
         host: 'localhost',
         database: 'express'
     });
