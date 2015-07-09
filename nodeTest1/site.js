@@ -18,12 +18,39 @@ app.use(bodyParser.urlencoded({
 app.use(multer());
 require(__dirname + '/js_server/helpers.js');
 
-//
+function BD() {
+    var connection = mysql.createConnection({
+        user: 'root',
+        password: 'tabasov.dunichev.rysin.kfrhfvf',
+        //password: '',
+        host: 'localhost',
+        database: 'express'
+    });
+    return connection;
+}
 
 app.get('/', function (req, res)
 {
-    //res.render('index.jade', {});
     var objBD = BD();
+
+    //var objDBWorkers = BD();
+    //objDBWorkers.query('SELECT * FROM workers', function (err, results, fields)
+    //{
+    //    if (err)
+    //    {
+    //        debugger;
+    //        throw err;
+    //
+    //    }
+    //    else
+    //    {
+    //        res.render('index.jade',
+    //        {
+    //           workers: results
+    //        });
+    //    }
+    //});
+
     objBD.query('SELECT id, graph, lku, lkf, rb, sc, pp, rest, _date, _taskRow FROM report', function (err, results, fields)
     {
         if (err)
@@ -55,14 +82,15 @@ app.get('/', function (req, res)
 
             //http://jaukia.github.io/zoomooz/
             res.render('index.jade',
-                {
-                    data: results,
-                    actualRow: actualRow(),
-                    tf: ff(),
-                    //test: new Buffer(actualRow()._taskRow, 'base64').toString('utf8'),
-                    reportPicker: req.query.reportPicker
-                });
-            //  process.exit();
+            {
+                data: results,
+                actualRow: actualRow(),
+                tf: ff(),
+                //test: new Buffer(actualRow()._taskRow, 'base64').toString('utf8'),
+                reportPicker: req.query.reportPicker
+            }, function (err, results) {
+                console.log('end')
+            });
         }
     });
 });
@@ -72,11 +100,10 @@ app.get('/create', function (req, res)
     res.render('create.jade', {});
 });
 
-app.get('/getReport', function (req, res, err)
+app.post('/two', function (req, res, err)
 {
     var objBD = BD();
-
-    objBD.query('SELECT * FROM report WHERE id = "'+req.query.reportPicker+'" ', function (err, results, fields)
+    objBD.query('UPDATE workers SET tabasov = ?, korshakovcki = ?, petrov = ? WHERE id = ?', [req.body.tabasov, req.body.korshakovcki, req.body.petrov, 9], function (err, results, fields)
     {
         if (err)
         {
@@ -84,42 +111,15 @@ app.get('/getReport', function (req, res, err)
         }
         else
         {
-            //console.log(results)
+            res.send({
+                workers: fields
+            });
         }
     });
+
     objBD.end();
 });
 
-app.get('/testAct', function (req, res, err)
-{
-    var objBD = BD();
-    objBD.query('INSERT INTO workers (tabasov, korshakovcki, petrov) values ("'+req.body.tabasov+'", "'+req.body.korshakovcki+'", "'+req.body.petrov+'")', function (err, results, fields)
-    {
-        if (err)
-        {
-            throw err;
-        }
-        else
-        {
-            res.send('success');
-        }
-    });
-    objBD.end();
-});
-
-// MYSQL
-function BD() {
-    var connection = mysql.createConnection({
-        user: 'root',
-        //password: 'tabasov.dunichev.rysin.kfrhfvf',
-        password: '',
-        host: 'localhost',
-        database: 'express'
-    });
-    return connection;
-}
-
-// form handling
 app.post('/create', function (req, res, next)
 {
     var objBD = BD();
@@ -138,7 +138,6 @@ app.post('/create', function (req, res, next)
             //next();
         }
     });
-    objBD.end();
 });
 
 app.listen(8000);

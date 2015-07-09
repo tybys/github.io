@@ -10,14 +10,14 @@ block content
 
     div(id="users", class="users")
         div(class="item left")
-            | petrov <strong>just nothing</strong>
+
         div(class="item right")
             | korhakovcki <strong>task #000111</strong>
         div(class="item")
             | tabasov <strong>divide et impera</strong>
 
-    form(method="post", action="/testAct", enctype="")
-        input(type="text", name="tabasov", id="tabasov", placeholder="tabasov")
+    form(method="post", action="/two", enctype="")
+        //input(type="text", name="tabasov", id="tabasov", placeholder="tabasov")
         input(type="text", name="korshakovcki", id="korshakovcki", placeholder="korshakovcki")
         input(type="text", name="petrov", id="petrov", placeholder="petrov")
         input(type="submit", value="ok")
@@ -34,7 +34,6 @@ block content
                 | <strong>graph</strong>
                 p(id="tasks")
                 input(type='hidden', id='GraphCollector', name='GraphCollector', value=actualRow.graph)
-                //p(id='GraphCollector') #{actualRow.graph}
                 div(class='ct-chart')
             li
                 | <strong>личный кабинет юр. лиц</strong>
