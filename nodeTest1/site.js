@@ -12,9 +12,7 @@ app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
 
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(multer());
 require(__dirname + '/js_server/helpers.js');
 
@@ -22,8 +20,8 @@ require(__dirname + '/js_server/helpers.js');
 function BD() {
     var connection = mysql.createConnection({
         user: 'root',
-        //password: 'tabasov.dunichev.rysin.kfrhfvf',
-        password: '',
+        password: 'tabasov.dunichev.rysin.kfrhfvf',
+        //password: '',
         host: 'localhost',
         database: 'express'
     });
@@ -32,6 +30,30 @@ function BD() {
 
 app.get('/', function (req, res)
 {
+    var TasksRow = function (results)
+    {
+        var te = results.getObject(req.query.reportPicker, 'id');
+        var fid = [];
+        for (var key in te)
+        {
+            if (te.hasOwnProperty(key))
+            {
+                fid.push(new Buffer(te['_taskRow'], 'base64').toString('utf8'));
+            }
+            break;
+        }
+        return fid;
+    }
+
+    function view (model)
+    {
+        res.render('index.jade', model);
+    }
+
+    //function view (viewname, model)
+    //{
+    //    res.render(viewname, model);
+    //}
 
     var objBD = BD();
     objBD.query('SELECT id, graph, lku, lkf, rb, sc, pp, rest, _date, _taskRow FROM report', function (err, results, fields)
@@ -42,52 +64,30 @@ app.get('/', function (req, res)
         }
         else
         {
-            var actualRow = function ()
-            {
-                return results.getObject(req.query.reportPicker, 'id');
+            var model = {
+                data: results,
+                actualRow: results.getObject(req.query.reportPicker, 'id'),
+                tf: TasksRow(results)
             };
 
-            var ff = function ()
+            var objBD = BD();
+            objBD.query('SELECT * FROM workers', function (err, results, fields)
             {
-                var te = results.getObject(req.query.reportPicker, 'id');
-                var fid = [];
-                for (var key in te)
+                if (err)
                 {
-                    if (te.hasOwnProperty(key))
-                    {
-                        fid.push(new Buffer(te['_taskRow'], 'base64').toString('utf8'));
-                    }
-                    break;
+                    throw err;
                 }
-                return fid;
-            }
-
-            var workerStatus = function ()
-            {
-                var objBD = BD();
-                objBD.query('SELECT * FROM workers', function (err, results, fields)
+                else
                 {
-                    if (err)
-                    {
-                        throw err;
-                    }
-                    else
-                    {
-                        var workderId = results.getObject(9, 'id');
-                    }
-                });
-            }
+                    model.workers = results.getObject(9, 'id');
+                    view(model);
+                    //view('index.jadde');
+                }
+            });
+
         }
 
-        res.render('index.jade',
-            {
-                data: results,
-                actualRow: actualRow(),
-                tf: ff(),
-                //test: new Buffer(actualRow()._taskRow, 'base64').toString('utf8'),
-                reportPicker: req.query.reportPicker,
-                workers: workerStatus()
-            });
+
     });
 });
 

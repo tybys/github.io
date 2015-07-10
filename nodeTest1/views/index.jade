@@ -9,19 +9,14 @@ block content
             a(href="/create") create
 
     div(id="users", class="users")
-        div(class="item left")
-            !{workers}
+        //div(class="item left")
+            !{workers.petrov}
 
-        div(class="item right")
-            | korhakovcki <strong>task #000111</strong>
-        div(class="item")
-            | tabasov <strong>divide et impera</strong>
+        //div(class="item right")
+            !{workers.tabasov}
 
-    form(method="post", action="/two", enctype="")
-        //input(type="text", name="tabasov", id="tabasov", placeholder="tabasov")
-        input(type="text", name="korshakovcki", id="korshakovcki", placeholder="korshakovcki")
-        input(type="text", name="petrov", id="petrov", placeholder="petrov")
-        input(type="submit", value="ok")
+        //div(class="item")
+            !{workers.korshakovcki}
 
     form(method="get", action="/")
         select(name="reportPicker")
@@ -30,32 +25,59 @@ block content
         input(type="submit", value="ok")
 
     - if (actualRow) {
-        ul.rep
-            li
-                | <strong>graph</strong>
-                p(id="tasks")
-                input(type='hidden', id='GraphCollector', name='GraphCollector', value=actualRow.graph)
-                div(class='ct-chart')
-            li
-                | <strong>личный кабинет юр. лиц</strong>
-                p #{actualRow.lku}
-            li
-                | <strong>личный кабинет физ. лиц</strong>
-                p #{actualRow.lkf}
-            li
-                | <strong>сайт Робокасса</strong>
-                p #{actualRow.rb}
-            li
-                | <strong>проект Витрина</strong>
-                p #{actualRow.sc}
-            li
-                | <strong>платежные страницы</strong>
-                p #{actualRow.pp}
-            li
-                | <strong>остальные сервисы и проекты</strong>
-                p #{actualRow.rest}
-            li
-                !{tf}
+        div.article-wrap
+            article.piece
+                div.piece-visuel
+                    | <strong>graph</strong>
+                    p(id="tasks")
+                    input(type='hidden', id='GraphCollector', name='GraphCollector', value=actualRow.graph)
+                    div(class='ct-chart')
+                div.piece-description
+                    div.vcenter
+                        div.inner
+                            header
+                                h1 <strong>личный кабинет юр. лиц</strong>
+                                span.piece-by tratata
+
+                            p #{actualRow.lku} lkjlskdjf
+
+            article.piece
+                div.piece-visuel
+                    | <strong>личный кабинет физ. лиц</strong>
+                    p #{actualRow.lkf}
+                div.piece-description
+                    div.vcenter
+                        div.inner
+                            header
+                                h1 <strong>сайт Робокасса</strong>
+                                span.piece-by trarara2
+
+                            p #{actualRow.rb}
+
+            article.piece
+                div.piece-visuel
+                    | <strong>проект Витрина</strong>
+                    p #{actualRow.sc}
+                div.piece-description
+                    div.vcenter
+                        div.inner
+                            header
+                                h1 <strong>платежные страницы</strong>
+                                span.piece-by trololo
+
+                            p #{actualRow.pp}
+
+            article.piece
+                div.piece-visuel
+                    | <strong>остальные сервисы и проекты</strong>
+                    p #{actualRow.rest}
+                div.piece-description
+                    div.vcenter
+                        div.inner
+                            header
+                                h1 tasks
+                                span.piece-by
+                            !{tf}
     -}
 
 include tpls/footer
