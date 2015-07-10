@@ -18,11 +18,12 @@ app.use(bodyParser.urlencoded({
 app.use(multer());
 require(__dirname + '/js_server/helpers.js');
 
+
 function BD() {
     var connection = mysql.createConnection({
         user: 'root',
-        password: 'tabasov.dunichev.rysin.kfrhfvf',
-        //password: '',
+        //password: 'tabasov.dunichev.rysin.kfrhfvf',
+        password: '',
         host: 'localhost',
         database: 'express'
     });
@@ -31,26 +32,8 @@ function BD() {
 
 app.get('/', function (req, res)
 {
+
     var objBD = BD();
-
-    //var objDBWorkers = BD();
-    //objDBWorkers.query('SELECT * FROM workers', function (err, results, fields)
-    //{
-    //    if (err)
-    //    {
-    //        debugger;
-    //        throw err;
-    //
-    //    }
-    //    else
-    //    {
-    //        res.render('index.jade',
-    //        {
-    //           workers: results
-    //        });
-    //    }
-    //});
-
     objBD.query('SELECT id, graph, lku, lkf, rb, sc, pp, rest, _date, _taskRow FROM report', function (err, results, fields)
     {
         if (err)
@@ -66,8 +49,8 @@ app.get('/', function (req, res)
 
             var ff = function ()
             {
-                te = results.getObject(req.query.reportPicker, 'id');
-                fid = [];
+                var te = results.getObject(req.query.reportPicker, 'id');
+                var fid = [];
                 for (var key in te)
                 {
                     if (te.hasOwnProperty(key))
@@ -76,22 +59,35 @@ app.get('/', function (req, res)
                     }
                     break;
                 }
-
                 return fid;
             }
 
-            //http://jaukia.github.io/zoomooz/
-            res.render('index.jade',
+            var workerStatus = function ()
+            {
+                var objBD = BD();
+                objBD.query('SELECT * FROM workers', function (err, results, fields)
+                {
+                    if (err)
+                    {
+                        throw err;
+                    }
+                    else
+                    {
+                        var workderId = results.getObject(9, 'id');
+                    }
+                });
+            }
+        }
+
+        res.render('index.jade',
             {
                 data: results,
                 actualRow: actualRow(),
                 tf: ff(),
                 //test: new Buffer(actualRow()._taskRow, 'base64').toString('utf8'),
-                reportPicker: req.query.reportPicker
-            }, function (err, results) {
-                console.log('end')
+                reportPicker: req.query.reportPicker,
+                workers: workerStatus()
             });
-        }
     });
 });
 
@@ -134,8 +130,6 @@ app.post('/create', function (req, res, next)
         else
         {
             res.send('success');
-
-            //next();
         }
     });
 });
