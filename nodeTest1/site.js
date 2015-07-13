@@ -20,8 +20,8 @@ require(__dirname + '/js_server/helpers.js');
 function BD() {
     var connection = mysql.createConnection({
         user: 'root',
-        password: 'tabasov.dunichev.rysin.kfrhfvf',
-        //password: '',
+        //password: 'tabasov.dunichev.rysin.kfrhfvf',
+        password: '',
         host: 'localhost',
         database: 'express'
     });

@@ -30,6 +30,40 @@ window.addEventListener('load', function()
 
         $('#tasks').html(text.ta+', '+text.ns+', '+text.rs+', '+text.cs);
 
+        //
+        $(".workers p:contains('занят')").addClass('busy');
+        $(".workers p:contains('свободен')").addClass('free');
+
+        //
+        $('body').css({
+            'padding-top': $(window).height()
+        });
+        $('.dvl p').css({
+            left: ($(window).width() - $('.dvl p').width()) / 2,
+            top: ($(window).height() - $('.dvl p').height()) /2
+        });
+        var s = $('.dvl p').html();
+        var result = '';
+
+        for (var i=0;i<s.length;i++)
+        {
+            result += "<" + "span>" + s[i] + "</" + "span>";
+        }
+        $('.dvl p').html(result);
+
+
+
+            setInterval(function()
+            {
+                $.each($('.dvl p span'), function( index, value ) {
+                    $(this).fadeTo("fast", (Math.random() * 0.5)+ 0.2);
+                });
+            }, 4000);
+
+
+
+
+
         if ($('#GraphCollector').length > 0)
         {
             //GraphArray = new Array($('#GraphCollector').val().split(""));

@@ -26,58 +26,84 @@ block content
 
     - if (actualRow) {
         div.article-wrap
-            article.piece
+            div
+                //| <strong>graph</strong>
+                p(id="tasks")
+                input(type='hidden', id='GraphCollector', name='GraphCollector', value=actualRow.graph)
+                div(class='ct-chart')
+
+            article.piece.workers
                 div.piece-visuel
-                    | <strong>graph</strong>
-                    p(id="tasks")
-                    input(type='hidden', id='GraphCollector', name='GraphCollector', value=actualRow.graph)
-                    div(class='ct-chart')
+                    div.vcenter
+                        div.inner
+                            header
+                                h1 личный кабинет юр. лиц
+                                    span.piece-by tratata
+
+                                p #{actualRow.lku} lkjlskdjf
+
                 div.piece-description
                     div.vcenter
                         div.inner
                             header
-                                h1 <strong>личный кабинет юр. лиц</strong>
-                                span.piece-by tratata
-
-                            p #{actualRow.lku} lkjlskdjf
-
+                                h1 загруженность
+                                    span обновляется раз в 3 часа
+                                p Петров !{workers.petrov} <span></span>
+                                p Табасов !{workers.tabasov} <span></span>
+                                p Коршаковский !{workers.korshakovcki} <span></span>
             article.piece
                 div.piece-visuel
-                    | <strong>личный кабинет физ. лиц</strong>
-                    p #{actualRow.lkf}
+                    div.vcenter
+                        div.inner
+                            header
+                                h1 личный кабинет физ. лиц
+                                span osdf
+
+                            p #{actualRow.lkf}
                 div.piece-description
                     div.vcenter
                         div.inner
                             header
-                                h1 <strong>сайт Робокасса</strong>
+                                h1 сайт Робокасса
                                 span.piece-by trarara2
 
                             p #{actualRow.rb}
 
             article.piece
                 div.piece-visuel
-                    | <strong>проект Витрина</strong>
-                    p #{actualRow.sc}
+                    div.vcenter
+                        div.inner
+                            header
+                                h1 проект Витрина
+                                span sdl;jkf
+                            p #{actualRow.sc}
                 div.piece-description
                     div.vcenter
                         div.inner
                             header
-                                h1 <strong>платежные страницы</strong>
+                                h1 платежные страницы
                                 span.piece-by trololo
 
                             p #{actualRow.pp}
 
             article.piece
                 div.piece-visuel
-                    | <strong>остальные сервисы и проекты</strong>
-                    p #{actualRow.rest}
+                    div.vcenter
+                        div.inner
+                            header
+                                h1 остальные сервисы и проекты
+                                span 0-ol
+                            p #{actualRow.rest}
                 div.piece-description
                     div.vcenter
                         div.inner
                             header
-                                h1 tasks
+                                h1
                                 span.piece-by
-                            !{tf}
+
+            div.report
+                !{tf}
+
     -}
 
 include tpls/footer
