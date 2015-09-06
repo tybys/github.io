@@ -1,0 +1,23 @@
+/* Fonts styles
+ *
+ */
+
+@font-face {
+  font-family: 'NeoSansPro-Light';
+  src: url(font-path('NeoSansPro-Light.eot'));
+  src: url(font-path('NeoSansPro-Light.eot')) format('embedded-opentype'),
+  url(font-path('NeoSansPro-Light.woff2')) format('woff2'),
+  url(font-path('NeoSansPro-Light.woff')) format('woff'),
+  url(font-path('NeoSansPro-Light.ttf')) format('truetype'),
+  url(font-path('NeoSansPro-Light.svg') + '#NeoSansPro-Light') format('svg');
+}
+
+@font-face {
+  font-family: 'NeoSansPro-Regular';
+  src: url(font-path('NeoSansPro-Regular.eot'));
+  src: url(font-path('NeoSansPro-Regular.eot')) format('embedded-opentype'),
+  url(font-path('NeoSansPro-Regular.woff2')) format('woff2'),
+  url(font-path('NeoSansPro-Regular.woff')) format('woff'),
+  url(font-path('NeoSansPro-Regular.ttf')) format('truetype'),
+  url(font-path('NeoSansPro-Regular.svg') + '#NeoSansPro-Regular') format('svg');
+}

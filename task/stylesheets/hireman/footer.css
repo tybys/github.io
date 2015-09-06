@@ -1,0 +1,24 @@
+/* Footer styles
+ *
+ */
+/* line 5, ../../sass/hireman/footer.scss */
+.footer-content {
+  position: relative;
+  max-width: 1280px;
+  min-width: 1000px;
+  margin: 0 auto;
+  padding-left: 65px;
+  line-height: 93px;
+  text-align: center;
+}
+
+/* line 15, ../../sass/hireman/footer.scss */
+.footer-copy {
+  float: left;
+}
+
+/* line 19, ../../sass/hireman/footer.scss */
+.footer-link {
+  margin: 0 22px;
+  color: #979491;
+}

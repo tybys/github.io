@@ -1,0 +1,2580 @@
+/* line 1, ../../sass/hireman/main.scss */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+@media all and (min-width: 320px) {
+  /* line 7, ../../sass/hireman/main.scss */
+  body {
+    overflow-x: hidden;
+  }
+}
+/* line 11, ../../sass/hireman/main.scss */
+html {
+  position: relative;
+  display: block;
+  min-width: 1280px;
+  margin: 0 auto;
+  zoom: 1;
+}
+
+/* line 18, ../../sass/hireman/main.scss */
+body {
+  width: 100%;
+  font: 16px/18px 'NeoSansPro-Regular', sans-serif;
+  color: #b3c4c6;
+}
+
+/*Common Start*/
+/* line 24, ../../sass/hireman/main.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 29, ../../sass/hireman/main.scss */
+body,
+button,
+input,
+select {
+  text-rendering: optimizeLegibility;
+}
+
+/* line 35, ../../sass/hireman/main.scss */
+a {
+  color: #71a0a1;
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 40, ../../sass/hireman/main.scss */
+a:hover {
+  color: #D1D9DA;
+}
+
+/* line 43, ../../sass/hireman/main.scss */
+a:focus {
+  outline: none;
+}
+
+/* line 46, ../../sass/hireman/main.scss */
+h1 {
+  font-size: 35px;
+  line-height: 37px;
+  font-weight: 400;
+}
+
+/* line 51, ../../sass/hireman/main.scss */
+h2 {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #a6bec0;
+}
+
+/* line 57, ../../sass/hireman/main.scss */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 61, ../../sass/hireman/main.scss */
+p {
+  margin: 0;
+}
+
+/* line 64, ../../sass/hireman/main.scss */
+button {
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* line 70, ../../sass/hireman/main.scss */
+button:focus {
+  outline: none;
+}
+
+/* line 73, ../../sass/hireman/main.scss */
+input {
+  font-family: 'NeoSansPro-Light', sans-serif;
+}
+
+/* line 76, ../../sass/hireman/main.scss */
+input,
+input:focus {
+  outline: none;
+}
+
+/* line 80, ../../sass/hireman/main.scss */
+.border-right {
+  border-right: 1px solid #364A51;
+}
+
+/* line 83, ../../sass/hireman/main.scss */
+.no-right-padding {
+  padding-right: 0 !important;
+}
+
+/* line 86, ../../sass/hireman/main.scss */
+.dark-link {
+  color: #071f23;
+  border-bottom-color: #071f23;
+}
+
+/* line 90, ../../sass/hireman/main.scss */
+.dark-link:hover {
+  border-bottom-color: #D1D9DA;
+}
+
+/* line 93, ../../sass/hireman/main.scss */
+.light-link {
+  color: #b3c4c6;
+  border-bottom-color: #b3c4c6;
+}
+
+/* line 97, ../../sass/hireman/main.scss */
+.light-link:hover {
+  border-bottom-color: #D1D9DA;
+}
+
+/* line 100, ../../sass/hireman/main.scss */
+.decorated-link {
+  border-width: 1px;
+  border-style: dashed;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+/* line 107, ../../sass/hireman/main.scss */
+.btn-pink {
+  color: #fff;
+  background-color: #f15158;
+  border-color: #f15158;
+}
+
+/* line 112, ../../sass/hireman/main.scss */
+.no-float {
+  float: none !important;
+}
+
+/* line 115, ../../sass/hireman/main.scss */
+.light-family {
+  font-family: 'NeoSansPro-Light', sans-serif;
+}
+
+/* line 118, ../../sass/hireman/main.scss */
+.container {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Input group
+---------------------------------------------- */
+/* line 125, ../../sass/hireman/main.scss */
+.row-column {
+  margin: 0 -15px;
+}
+
+/* line 129, ../../sass/hireman/main.scss */
+.row-column:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+/* line 135, ../../sass/hireman/main.scss */
+.input-group {
+  position: relative;
+}
+
+/* line 139, ../../sass/hireman/main.scss */
+.input-group.two-column {
+  width: 50%;
+  float: left;
+  padding: 0 15px;
+}
+
+/* line 145, ../../sass/hireman/main.scss */
+.input-group label {
+  display: block;
+  color: #729fa2;
+  font-size: 24px;
+  text-align: left;
+  line-height: normal;
+  margin: 15px 0 10px;
+}
+
+/* line 154, ../../sass/hireman/main.scss */
+.input-group:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+/* line 160, ../../sass/hireman/main.scss */
+.input-group input {
+  float: left;
+  width: 100%;
+}
+
+/*Common End*/
+/*Parts Start*/
+/* line 167, ../../sass/hireman/main.scss */
+.page-wrapper {
+  position: relative;
+  top: 0;
+  min-height: 100%;
+  margin-bottom: -110px;
+  overflow-x: hidden !important;
+}
+
+/* line 174, ../../sass/hireman/main.scss */
+.page-wrapper:after {
+  content: "";
+  display: block;
+}
+
+/* line 178, ../../sass/hireman/main.scss */
+.site-footer,
+.page-wrapper:after {
+  height: 110px;
+}
+
+/* line 182, ../../sass/hireman/main.scss */
+.page-content,
+.footer-content {
+  position: relative;
+  margin: 0 auto;
+}
+
+/* line 187, ../../sass/hireman/main.scss */
+.site-footer {
+  color: #979491;
+  background: #3a3939;
+}
+
+/*Main Screen Start*/
+/* line 193, ../../sass/hireman/main.scss */
+.main-screen-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* line 202, ../../sass/hireman/main.scss */
+.main-screen-wrapper:after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -117px;
+  width: 795px;
+  background: url('../../images/main-screen-bg-full-combined.png?1441543075') 0 0 no-repeat;
+  z-index: -1;
+}
+
+/* line 212, ../../sass/hireman/main.scss */
+.main-screen-wrapper:before {
+  content: '';
+  position: absolute;
+  left: -100%;
+  width: 300%;
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.6), transparent);
+  background: -webkit-gradient(linear, left bottom, right top, rgba(0, 0, 0, 0.6), transparent);
+  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.6), transparent);
+  background: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.6), transparent);
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.6), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  z-index: -1;
+}
+
+/* line 226, ../../sass/hireman/main.scss */
+.main-screen-container {
+  position: relative;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+/* line 231, ../../sass/hireman/main.scss */
+.main-screen-left {
+  min-height: 558px;
+  vertical-align: middle;
+}
+
+/* line 236, ../../sass/hireman/main.scss */
+.main-screen-logo {
+  margin-bottom: 27px;
+}
+
+/* line 239, ../../sass/hireman/main.scss */
+.main-screen-title {
+  padding-bottom: 30px;
+}
+
+/* line 242, ../../sass/hireman/main.scss */
+.main-screen-subtitle {
+  line-height: 30px;
+  font-family: 'NeoSansPro-Light', sans-serif;
+}
+
+/* line 246, ../../sass/hireman/main.scss */
+.main-screen-subtitle:hover {
+  color: #ACBCBF;
+}
+
+/* line 249, ../../sass/hireman/main.scss */
+.main-screen-subtitle:hover .dark-link {
+  color: #D1D9DA;
+  border-bottom-color: #D1D9DA;
+}
+
+/*Main Screen End*/
+/*Find Employee Screen Start*/
+/* line 256, ../../sass/hireman/main.scss */
+.find-screen-wrapper {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+}
+
+/* line 261, ../../sass/hireman/main.scss */
+.anchor {
+  position: absolute;
+  bottom: 54px;
+}
+
+/* line 265, ../../sass/hireman/main.scss */
+.find-screen-wrapper-pink {
+  background-color: #f15158;
+}
+
+/* line 269, ../../sass/hireman/main.scss */
+.find-screen-wrapper-pistache {
+  background-color: #d9f1a0;
+}
+
+/* line 272, ../../sass/hireman/main.scss */
+.find-screen-wrapper-standart {
+  background-color: #264950;
+}
+
+/* line 275, ../../sass/hireman/main.scss */
+.find-screen-wrapper-white {
+  background-color: #fff;
+  padding: 70px 0;
+}
+
+/* line 279, ../../sass/hireman/main.scss */
+.find-screen-wrapper-gray {
+  background-color: #686765;
+}
+
+/* line 282, ../../sass/hireman/main.scss */
+.find-screen-container {
+  max-width: 1280px;
+  min-width: 1000px;
+  margin: 0 auto;
+  padding: 55px 0;
+  text-align: center;
+}
+
+/* line 290, ../../sass/hireman/main.scss */
+.find-screen-container.offset-bottom {
+  padding-bottom: 0;
+}
+
+/* line 294, ../../sass/hireman/main.scss */
+.find-screen-wrapper-pistache .find-screen-container {
+  padding: 55px 140px 55px 0;
+  background: url('../../images/person-man.png?1441543075') no-repeat 92% center;
+}
+
+/* line 299, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses {
+  width: 100%;
+  margin: 0 15px;
+}
+
+/* line 304, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses thead tr th h3 {
+  color: #284a51;
+  font-size: 24px;
+  line-height: normal;
+  padding: 0 0 15px;
+  border-bottom: 1px dashed #bcc6c8;
+}
+
+/* line 312, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses tbody tr {
+  border-bottom: 1px dashed #bcc6c8;
+}
+
+/* line 316, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses tbody tr td {
+  padding: 18px 0;
+  vertical-align: top;
+}
+
+/* line 321, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses tbody tr td + td {
+  padding-left: 20px;
+}
+
+/* line 325, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses tbody tr td + td + td {
+  vertical-align: bottom;
+}
+
+/* line 329, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses tbody tr td.status {
+  text-align: right;
+}
+
+/* line 333, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses tbody tr td.avatar a {
+  display: inline-block;
+  padding: 3px;
+  border: 1px solid #bcc6c9;
+  border-radius: 3px;
+}
+
+/* line 340, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses tbody tr td.avatar a img {
+  display: block;
+}
+
+/* line 344, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses tbody tr td.title a {
+  display: block;
+  color: #284a51;
+  font-size: 24px;
+  line-height: normal;
+}
+
+/* line 351, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses tbody tr td.title a:hover {
+  text-decoration: underline;
+}
+
+/* line 355, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses tbody tr td.title span {
+  position: relative;
+  display: inline-block;
+  color: #284a51;
+  font-size: 16px;
+  margin: 15px 5px 0 0;
+  padding-right: 15px;
+}
+
+/* line 364, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses tbody tr td.title span:first-of-type:after {
+  position: absolute;
+  content: '|';
+  top: 0;
+  right: 0;
+}
+
+/* line 371, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses tbody tr td.title span + span {
+  color: #729fa2;
+}
+
+/* line 375, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses tbody tr td.exp strong {
+  color: #284a51;
+  border: 2px solid #284a51;
+  border-radius: 5px;
+  padding: 0 6px;
+  margin-right: 15px;
+}
+
+/* line 383, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses tbody tr td.exp span {
+  color: #729fa2;
+}
+
+/* line 387, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses tbody tr td.job span {
+  position: relative;
+  display: block;
+  color: #729fa2;
+  padding-left: 40px;
+}
+
+/* line 394, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses tbody tr td.job span:after {
+  position: absolute;
+  content: '';
+  height: 24px;
+  width: 24px;
+  top: -2px;
+  left: 0;
+  background: url('../../images/sprite.png?1441543075') no-repeat left -331px;
+}
+
+/* line 404, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses tbody tr td.status span {
+  display: inline-block;
+  padding: 16px 0;
+  color: #fff;
+  width: 100%;
+  max-width: 160px;
+  text-align: center;
+  font-size: 14px;
+  background: #729fa2;
+  border-radius: 5px;
+}
+
+/* line 416, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses tbody tr td.status span.displayed {
+  background: #284a51;
+}
+
+/* line 420, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses tbody tr td.status span.rejected {
+  background: #f05455;
+}
+
+/* line 424, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses tbody tr td.status span.closed {
+  background: #a7a9ac;
+}
+
+/* line 428, ../../sass/hireman/main.scss */
+.find-screen-wrapper .find-screen-container .responses tbody tr td.status span.contact {
+  background: #39b54a;
+}
+
+/* line 432, ../../sass/hireman/main.scss */
+.find-screen-container .profile {
+  float: left;
+  text-align: left;
+  width: 100%;
+  overflow: hidden;
+  padding-right: 550px;
+  padding-left: 15px;
+}
+
+/* line 441, ../../sass/hireman/main.scss */
+.find-screen-container .profile-panel {
+  float: left;
+  text-align: left;
+  width: 350px;
+  padding-right: 15px;
+  margin-left: -350px;
+}
+
+/* line 449, ../../sass/hireman/main.scss */
+.find-screen-container .profile-panel .upload-file:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+/* line 455, ../../sass/hireman/main.scss */
+.find-screen-container .profile-panel .upload-file a {
+  float: left;
+  color: #729fa2;
+  font-size: 18px;
+  margin: 30px 0;
+  line-height: normal;
+}
+
+/* line 463, ../../sass/hireman/main.scss */
+.find-screen-container .profile-panel .upload-file a:hover {
+  color: #d1d9da;
+}
+
+/* line 467, ../../sass/hireman/main.scss */
+.find-screen-container .profile-panel .upload-file.video a {
+  color: #f05455;
+}
+
+/* line 471, ../../sass/hireman/main.scss */
+.find-screen-container .profile-panel .upload-file.video a:hover {
+  color: #f8a5a6;
+}
+
+/* line 475, ../../sass/hireman/main.scss */
+.find-screen-container .profile-panel .upload-file img {
+  float: left;
+}
+
+/* line 479, ../../sass/hireman/main.scss */
+.find-screen-container .profile-panel .upload-file.video img {
+  margin-left: 26px;
+}
+
+/* line 483, ../../sass/hireman/main.scss */
+.find-screen-container .profile-panel .file-info {
+  margin: 30px 0;
+}
+
+/* line 487, ../../sass/hireman/main.scss */
+.find-screen-container .profile-panel .file-info h3 {
+  color: #284a51;
+  font-size: 24px;
+  margin: 0 0 15px;
+}
+
+/* line 493, ../../sass/hireman/main.scss */
+.find-screen-container .profile-panel .file-info.video h3 {
+  color: #f05455;
+}
+
+/* line 497, ../../sass/hireman/main.scss */
+.find-screen-container .profile-panel .file-info .action {
+  display: inline-block;
+  height: 21px;
+  width: 21px;
+  margin-right: 10px;
+  background: url('../../images/icons-file-action.png?1441543075') no-repeat;
+}
+
+/* line 505, ../../sass/hireman/main.scss */
+.find-screen-container .profile-panel .file-info .action.search {
+  background-position: left center;
+}
+
+/* line 509, ../../sass/hireman/main.scss */
+.find-screen-container .profile-panel .file-info .action.edit {
+  background-position: -38px center;
+}
+
+/* line 513, ../../sass/hireman/main.scss */
+.find-screen-container .profile-panel .file-info .action.delete {
+  background-position: -75px center;
+}
+
+/* line 517, ../../sass/hireman/main.scss */
+.find-screen-container .profile-panel .file-info .action.reload {
+  background-position: -111px center;
+}
+
+/* line 521, ../../sass/hireman/main.scss */
+.find-screen-container .profile .upload-avatar {
+  float: left;
+  text-align: center;
+}
+
+/* line 526, ../../sass/hireman/main.scss */
+.find-screen-container .profile .upload-avatar .image {
+  padding: 6px;
+  margin: 0 0 10px;
+  border: 1px solid #d2e1e1;
+  border-radius: 3px;
+}
+
+/* line 533, ../../sass/hireman/main.scss */
+.find-screen-container .profile .upload-avatar .image img {
+  display: block;
+}
+
+/* line 537, ../../sass/hireman/main.scss */
+.find-screen-container .profile .upload-avatar a:hover {
+  text-decoration: underline;
+}
+
+/* line 541, ../../sass/hireman/main.scss */
+.find-screen-container .profile .data-user {
+  overflow: hidden;
+  padding-left: 25px;
+}
+
+/* line 546, ../../sass/hireman/main.scss */
+.find-screen-container .profile .data-user .input-group {
+  margin: 0 0 5px;
+}
+
+/* line 550, ../../sass/hireman/main.scss */
+.find-screen-container .profile .data-user .input-group input {
+  margin-right: 32px;
+}
+
+/* line 554, ../../sass/hireman/main.scss */
+.find-screen-container .profile .data-user .edit {
+  position: absolute;
+  top: 0;
+  right: -32px;
+  width: 18px;
+  height: 100%;
+  background: url('../../images/icons-file-action.png?1441543075') no-repeat -38px center;
+}
+
+/* line 563, ../../sass/hireman/main.scss */
+.find-screen-container .profile .data-user .user-name {
+  max-width: 345px;
+}
+
+/* line 567, ../../sass/hireman/main.scss */
+.find-screen-container .profile .data-user .user-birthdate {
+  max-width: 195px;
+}
+
+/* line 571, ../../sass/hireman/main.scss */
+.find-screen-container .profile .data-user .user-phone {
+  max-width: 245px;
+}
+
+/* line 575, ../../sass/hireman/main.scss */
+.find-screen-container .profile .data-user .user-email {
+  max-width: 295px;
+}
+
+/* line 579, ../../sass/hireman/main.scss */
+.find-screen-container .profile .about-user .user-tags {
+  margin-top: 25px;
+}
+
+/* line 583, ../../sass/hireman/main.scss */
+.find-screen-container .profile .about-user .user-tags input {
+  max-width: 400px;
+}
+
+/* line 587, ../../sass/hireman/main.scss */
+.find-screen-container .profile .about-user .user-tags .add-tag {
+  height: 41px;
+  float: left;
+  margin-left: 15px;
+  border: 0;
+  color: #fff;
+  padding: 0 60px;
+  border-radius: 5px;
+  background: #aac5c7;
+}
+
+/* line 598, ../../sass/hireman/main.scss */
+.find-screen-container .profile .about-user .tag-container {
+  margin: 10px 0 0;
+}
+
+/* line 602, ../../sass/hireman/main.scss */
+.find-screen-container .profile .about-user .tag-container .tag {
+  position: relative;
+  padding: 10px 45px 10px 18px;
+  background: #7e9297;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 8px 10px 0;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* line 613, ../../sass/hireman/main.scss */
+.find-screen-container .profile .about-user .tag-container .tag span {
+  display: block;
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  cursor: pointer;
+  top: 8px;
+  right: 11px;
+  background: url('../../images/sprite.png?1441543075') no-repeat -4px bottom;
+}
+
+/* line 624, ../../sass/hireman/main.scss */
+.screen-header {
+  margin: 0;
+  font-size: 40px;
+  line-height: 42px;
+  color: #f15158;
+  font-weight: normal;
+}
+
+/* line 631, ../../sass/hireman/main.scss */
+.screen-header-inverse {
+  color: #fff;
+}
+
+/* line 634, ../../sass/hireman/main.scss */
+.screen-header-dark {
+  color: #71a0a1;
+}
+
+/* line 638, ../../sass/hireman/main.scss */
+.screen-header-big {
+  font-family: 'NeoSansPro-Light', sans-serif;
+  color: #729fa2;
+  font-size: 63px;
+  margin: 0 0 55px;
+}
+
+/* line 645, ../../sass/hireman/main.scss */
+.screen-header-gray {
+  color: #284a51;
+  font-size: 35px;
+  margin: 110px 0 50px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 653, ../../sass/hireman/main.scss */
+.screen-header-lightgreen {
+  color: #d9f09c;
+  font-size: 36px;
+}
+
+/* line 658, ../../sass/hireman/main.scss */
+.screen-header-pink {
+  color: #f58b8b;
+  font-size: 36px;
+}
+
+/* line 663, ../../sass/hireman/main.scss */
+.screen-header-light {
+  font-family: 'NeoSansPro-Light', sans-serif;
+  color: #2f4b4d;
+  font-size: 30px;
+  margin: 0 0 110px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* line 672, ../../sass/hireman/main.scss */
+.screen-header-title {
+  font-size: 33px;
+  margin: 15px 0;
+}
+
+/* line 677, ../../sass/hireman/main.scss */
+.screen-header-title.red {
+  color: #e67e81;
+}
+
+/* line 681, ../../sass/hireman/main.scss */
+.screen-header-title.green {
+  color: #6dc497;
+}
+
+/* line 685, ../../sass/hireman/main.scss */
+.screen-header-title.purple {
+  color: #8068ae;
+}
+
+/* line 689, ../../sass/hireman/main.scss */
+.screen-header-title.blue {
+  color: #a2d7f4;
+}
+
+/* line 693, ../../sass/hireman/main.scss */
+.screen-header-title.lightgreen {
+  color: #b3e597;
+}
+
+/* line 697, ../../sass/hireman/main.scss */
+.screen-header-title.yellow {
+  color: #e6d649;
+}
+
+/* line 701, ../../sass/hireman/main.scss */
+.screen-correct {
+  font-family: 'NeoSansPro-Light', sans-serif;
+  color: #729fa2;
+  line-height: 27px;
+  font-size: 24px;
+  margin: 30px 0;
+}
+
+/* line 709, ../../sass/hireman/main.scss */
+.screen-description {
+  line-height: 22px;
+  color: #9b9794;
+  font-size: 18px;
+  margin: 0 0 50px;
+}
+
+/* line 716, ../../sass/hireman/main.scss */
+.three-column-container {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  margin: 50px -50px 0;
+}
+/* line 721, ../../sass/hireman/main.scss */
+.three-column-container .column {
+  width: 303px;
+}
+
+/* line 726, ../../sass/hireman/main.scss */
+.three-column-container.bottom {
+  margin-bottom: 50px;
+}
+
+/* line 730, ../../sass/hireman/main.scss */
+.three-column-container .column {
+  width: 303px;
+}
+
+/* line 734, ../../sass/hireman/main.scss */
+.three-column-container.fluid .column {
+  width: 25%;
+  max-width: 100%;
+  margin: 0 2%;
+}
+
+/* line 740, ../../sass/hireman/main.scss */
+.two-column-container {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  margin: 50px 0 8px;
+}
+
+/* line 747, ../../sass/hireman/main.scss */
+.two-column-container.fluid {
+  width: 100%;
+}
+
+/* line 751, ../../sass/hireman/main.scss */
+.two-column-container.fluid .column {
+  width: 36%;
+  max-width: 100%;
+  margin: 0 5%;
+}
+
+/* line 757, ../../sass/hireman/main.scss */
+.column .smile {
+  margin: 70px 0;
+}
+
+/* line 761, ../../sass/hireman/main.scss */
+.column {
+  position: relative;
+  display: inline-block;
+  max-width: 303px;
+  margin: 0 50px;
+  vertical-align: top;
+}
+
+/* line 768, ../../sass/hireman/main.scss */
+.column-bordered {
+  max-width: 375px;
+  min-height: 268px;
+  margin: 0 49px 34px;
+  padding: 30px 28px;
+}
+
+/* line 774, ../../sass/hireman/main.scss */
+.pink-content-wrapper {
+  position: relative;
+  top: -9px;
+}
+
+/* line 778, ../../sass/hireman/main.scss */
+.svg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 378px;
+  height: 268px;
+}
+
+/* line 786, ../../sass/hireman/main.scss */
+.column-header {
+  margin: 30px 0 15px;
+  font-size: 24px;
+  line-height: 26px;
+  color: #f15158;
+}
+
+/* line 792, ../../sass/hireman/main.scss */
+.column-header-inverse {
+  color: #fff;
+}
+
+/* line 795, ../../sass/hireman/main.scss */
+.bordered-column-header {
+  margin: 35px 0 15px;
+  font-size: 33px;
+  line-height: 35px;
+  color: #cd7d7f;
+}
+
+/* line 801, ../../sass/hireman/main.scss */
+.bordered-column-header.violet {
+  margin-top: 20px;
+}
+
+/* line 804, ../../sass/hireman/main.scss */
+.column-content {
+  font-size: 18px;
+  line-height: 20px;
+  color: #5e8687;
+}
+
+/* line 809, ../../sass/hireman/main.scss */
+.three-column-container .column-content {
+  font-family: 'NeoSansPro-Light', sans-serif;
+}
+
+/* line 812, ../../sass/hireman/main.scss */
+.find-screen-wrapper-pink .column-content {
+  color: #6f393f;
+  font-family: 'NeoSansPro-Light', sans-serif;
+}
+
+/* line 816, ../../sass/hireman/main.scss */
+.column-content-pink {
+  margin: 0;
+  font-size: 18px;
+  line-height: 20px;
+  color: #cd7d7f;
+  font-family: 'NeoSansPro-Light', sans-serif;
+}
+
+/* line 823, ../../sass/hireman/main.scss */
+.column-content-pink.violet,
+.column-content-pink.yellow {
+  padding: 0 36px;
+}
+
+/* line 827, ../../sass/hireman/main.scss */
+.column-content-pink.blue {
+  padding: 0 16px;
+}
+
+/* line 830, ../../sass/hireman/main.scss */
+.column-content-narrow {
+  padding: 0 50px;
+}
+
+/* line 833, ../../sass/hireman/main.scss */
+.green {
+  color: #8bc196;
+}
+
+/* line 836, ../../sass/hireman/main.scss */
+.violet {
+  color: #7968a9;
+}
+
+/* line 839, ../../sass/hireman/main.scss */
+.blue {
+  color: #b1d5f2;
+}
+
+/* line 842, ../../sass/hireman/main.scss */
+.yellow {
+  color: #dae49a;
+}
+
+/* line 845, ../../sass/hireman/main.scss */
+.orange {
+  color: #d5af83;
+}
+
+/*Find Employee Screen Start*/
+/*Find Categores Screen Start*/
+/* line 851, ../../sass/hireman/main.scss */
+.find-job {
+  position: relative;
+  max-width: 1280px;
+  min-width: 1000px;
+  margin: 0 auto;
+  padding: 44px 150px 90px 65px;
+  overflow: hidden;
+}
+
+/* line 859, ../../sass/hireman/main.scss */
+.find-categories {
+  float: left;
+}
+
+/* line 862, ../../sass/hireman/main.scss */
+.find-categories-place {
+  float: right;
+}
+
+/* line 865, ../../sass/hireman/main.scss */
+.find-categories-header {
+  margin: 0 0 16px;
+  color: #d9d8d8;
+}
+
+/* line 869, ../../sass/hireman/main.scss */
+.find-categories-item-wrapper {
+  display: inline-block;
+  margin: -9px 160px -9px 0;
+  vertical-align: top;
+}
+
+/* line 874, ../../sass/hireman/main.scss */
+.find-categories-item {
+  margin: 9px 0;
+}
+
+/* line 877, ../../sass/hireman/main.scss */
+.find-categories-link {
+  color: #d9d8d8;
+}
+
+/* line 880, ../../sass/hireman/main.scss */
+.find-categories-link:hover {
+  color: #fff;
+}
+
+/*Find Categores Screen End*/
+/*Search Results Screen Start*/
+/* line 886, ../../sass/hireman/main.scss */
+.search-result-screen-wrapper, .todo12-screen-wrapper {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+}
+
+/* line 891, ../../sass/hireman/main.scss */
+.search-results-screen-container, .todo12-screen-container {
+  position: relative;
+  max-width: 1280px;
+  min-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 68px 0 61px;
+}
+
+/* line 898, ../../sass/hireman/main.scss */
+.search-result-area {
+  position: relative;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+/* line 902, ../../sass/hireman/main.scss */
+.search-result-area .buttons-area {
+  display: block;
+  clear: both;
+}
+
+/* line 907, ../../sass/hireman/main.scss */
+.search-result-area-bordered {
+  border-bottom: 1px dashed #c0c6c9;
+}
+
+/* line 910, ../../sass/hireman/main.scss */
+.company-logo-container,
+.information-area,
+.search-result-area {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 916, ../../sass/hireman/main.scss */
+.company-logo-container {
+  width: 123px;
+  height: 123px;
+  padding: 5px;
+  line-height: 105px;
+  text-align: center;
+  border: 1px solid #c0c6c9;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/* line 927, ../../sass/hireman/main.scss */
+.company-logo {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* line 932, ../../sass/hireman/main.scss */
+.information-area {
+  width: 740px;
+  margin: 0 32px;
+}
+
+/* line 937, ../../sass/hireman/main.scss */
+.search-result-area-small .information-area {
+  width: 500px;
+  margin: 0 0 0 32px;
+}
+
+/* line 942, ../../sass/hireman/main.scss */
+.information-header {
+  margin: 0 0 13px;
+}
+
+/* line 945, ../../sass/hireman/main.scss */
+.information-header-link {
+  color: #274a51;
+}
+
+/* line 948, ../../sass/hireman/main.scss */
+.information-header-link:hover {
+  color: #f15354;
+}
+
+/* line 951, ../../sass/hireman/main.scss */
+.company-country-info {
+  float: left;
+}
+
+/* line 954, ../../sass/hireman/main.scss */
+.company-name {
+  color: #274a51;
+}
+
+/* line 957, ../../sass/hireman/main.scss */
+.separator {
+  display: inline-block;
+  width: 1px;
+  height: 13px;
+  margin: 0 10px;
+  background-color: #274a51;
+}
+
+/* line 964, ../../sass/hireman/main.scss */
+.country-name {
+  color: #71a0a1;
+}
+
+/* line 967, ../../sass/hireman/main.scss */
+.job-expierence-category {
+  float: right;
+  width: 50%;
+  margin: -10px -16px 0 0;
+}
+
+/* line 972, ../../sass/hireman/main.scss */
+.expierense,
+.job-area {
+  margin: 0 20px 0 16px;
+  color: #71a0a1;
+}
+
+/* line 977, ../../sass/hireman/main.scss */
+.expierense {
+  position: relative;
+}
+
+/* line 980, ../../sass/hireman/main.scss */
+.expierence-icon {
+  position: relative;
+  display: inline-block;
+  top: -2px;
+  height: 20px;
+  padding: 2px 8px 0 8px;
+  margin-right: -3px;
+  color: #274a51;
+  line-height: 16px;
+  border: 2px solid #274a51;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  vertical-align: middle;
+}
+
+/* line 995, ../../sass/hireman/main.scss */
+.expierense:hover.expierence-icon:hover {
+  color: #274a51;
+}
+
+/* line 998, ../../sass/hireman/main.scss */
+.job-area {
+  position: relative;
+}
+
+/* line 1001, ../../sass/hireman/main.scss */
+.job-area:before {
+  content: '';
+  position: relative;
+  display: inline-block;
+  top: 5px;
+  left: -10px;
+  width: 26px;
+  height: 24px;
+  background: url('../../images/sprite.png?1441543075') 0 -331px no-repeat;
+}
+
+/* line 1011, ../../sass/hireman/main.scss */
+.company-information {
+  position: relative;
+  clear: both;
+  overflow: hidden;
+}
+
+/* line 1016, ../../sass/hireman/main.scss */
+.company-information-content {
+  margin-top: 23px;
+  margin-bottom: 0;
+  color: #6d6e71;
+}
+
+/* line 1021, ../../sass/hireman/main.scss */
+.company-information-content:before {
+  content: '-';
+  position: relative;
+}
+
+/* line 1025, ../../sass/hireman/main.scss */
+.send-resume {
+  margin-top: 48px;
+}
+
+/* line 1028, ../../sass/hireman/main.scss */
+.search-result-area .buttons-area {
+  float: right;
+  margin: 30px 0 0 0;
+}
+
+/* line 1032, ../../sass/hireman/main.scss */
+.btn-send-resume {
+  min-width: 155px;
+  margin: 0;
+  border-color: #f15158;
+  color: #f15158;
+}
+
+/* line 1038, ../../sass/hireman/main.scss */
+.btn-send-resume:hover {
+  background-color: #f15158;
+  color: #fff;
+}
+
+/* line 1042, ../../sass/hireman/main.scss */
+.btn-send-resume:active {
+  background-color: #f5887b;
+  border-color: #f5887b;
+  color: #fff;
+}
+
+/*Search Results Screen End*/
+/*Pagination Start*/
+/* line 1049, ../../sass/hireman/main.scss */
+.pagination-wrapper {
+  background-color: #fff;
+}
+
+/* line 1052, ../../sass/hireman/main.scss */
+.pagination-container {
+  position: relative;
+  max-width: 1280px;
+  min-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 0;
+  text-align: center;
+}
+
+/* line 1060, ../../sass/hireman/main.scss */
+.pagination-list {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 1066, ../../sass/hireman/main.scss */
+.pagination-item {
+  display: inline-block;
+}
+
+/* line 1069, ../../sass/hireman/main.scss */
+.dots {
+  margin: 0 -10px;
+}
+
+/* line 1072, ../../sass/hireman/main.scss */
+.pagination-link {
+  display: block;
+  margin: 0 5px;
+  padding: 0 12px;
+  color: #979491;
+  line-height: 30px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/* line 1082, ../../sass/hireman/main.scss */
+.pagination-link:hover {
+  color: #686765;
+}
+
+/* line 1085, ../../sass/hireman/main.scss */
+.pagination-link-current {
+  background-color: #979491;
+  color: #fff;
+}
+
+/* line 1089, ../../sass/hireman/main.scss */
+.pagination-link-current:hover {
+  background-color: #686765;
+  color: #fff;
+}
+
+/* line 1093, ../../sass/hireman/main.scss */
+.previous,
+.next {
+  position: relative;
+  display: block;
+  top: 2px;
+  left: -17px;
+  border: 8px solid transparent;
+  border-right: 8px solid #979491;
+}
+
+/* line 1102, ../../sass/hireman/main.scss */
+.next {
+  left: auto;
+  right: -17px;
+  border-left: 8px solid #979491;
+  border-right: 8px solid transparent;
+}
+
+/* line 1108, ../../sass/hireman/main.scss */
+.previous:hover {
+  border-right-color: #686765;
+}
+
+/* line 1111, ../../sass/hireman/main.scss */
+.next:hover {
+  border-left-color: #686765;
+}
+
+/*Pagination End*/
+/*Find No Result Screen Start*/
+/* line 1116, ../../sass/hireman/main.scss */
+.find-screen-wrapper-noresult {
+  background-color: #979491;
+}
+
+/* line 1119, ../../sass/hireman/main.scss */
+.find-screen-wrapper-noresult .find-screen-container {
+  position: relative;
+  padding-bottom: 80px;
+  background: url('../../images/woman.png?1441543075') 100px 98px no-repeat;
+}
+
+/* line 1124, ../../sass/hireman/main.scss */
+.screen-header-subtitle {
+  margin: 18px 0 0;
+  font-size: 25px;
+  line-height: 27px;
+  color: #cbcac8;
+}
+
+/* line 1130, ../../sass/hireman/main.scss */
+.write-to-us {
+  position: relative;
+  width: 900px;
+  margin: 53px 0 0 -150px;
+}
+/* line 1134, ../../sass/hireman/main.scss */
+.write-to-us input {
+  height: 52px;
+  line-height: 52px;
+  padding-top: 5px;
+}
+/* line 1139, ../../sass/hireman/main.scss */
+.write-to-us button {
+  border: none;
+  min-width: 110px;
+  color: #fff;
+  float: left;
+}
+
+/* line 1146, ../../sass/hireman/main.scss */
+.input-wrapper-inline {
+  position: relative;
+  float: left;
+}
+
+/* line 1150, ../../sass/hireman/main.scss */
+.bordered {
+  width: 315px;
+  height: 50px;
+  padding: 8px 25px;
+  font-size: 22px;
+  line-height: 22px;
+  color: #cbcac8;
+  background-color: transparent;
+  border: 1px solid #cbcac8;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/* line 1163, ../../sass/hireman/main.scss */
+.bordered-light {
+  color: #cbcac8;
+  margin: 0 4px;
+}
+
+/* line 1167, ../../sass/hireman/main.scss */
+.bordered-light::placeholder {
+  color: #cbcac8;
+}
+
+/* line 1170, ../../sass/hireman/main.scss */
+.bordered-light:focus {
+  color: #fff;
+  border-color: #fff;
+}
+
+/* line 1174, ../../sass/hireman/main.scss */
+.write-to-us .btn {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  line-height: 46px;
+}
+
+/* line 1179, ../../sass/hireman/main.scss */
+.btn-light {
+  min-width: 125px;
+  color: #979491;
+  background-color: #cbcac8;
+  border-color: #cbcac8;
+  vertical-align: top;
+}
+
+/* line 1186, ../../sass/hireman/main.scss */
+.btn-light:hover {
+  color: #979491;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+/* line 1191, ../../sass/hireman/main.scss */
+.btn-light:active {
+  color: #979491;
+  background-color: #d3cfcd;
+  border-color: #d3cfcd;
+}
+
+/* line 1197, ../../sass/hireman/main.scss */
+.bordered-bluer {
+  color: #284a51;
+  font-size: 24px;
+  height: auto;
+  line-height: normal;
+  padding: 5px 15px;
+  border-color: #729fa2;
+}
+
+/* line 1206, ../../sass/hireman/main.scss */
+.bordered-bluer::-webkit-input-placeholder {
+  color: #729fa2;
+}
+
+/* line 1210, ../../sass/hireman/main.scss */
+.bordered-bluer::-moz-placeholder {
+  color: #729fa2;
+}
+
+/* line 1214, ../../sass/hireman/main.scss */
+.bordered-bluer:-ms-input-placeholder {
+  color: #729fa2;
+}
+
+/* line 1218, ../../sass/hireman/main.scss */
+.bordered-bluer::placeholder {
+  color: #729fa2;
+}
+
+/*Search Results Screen Start*/
+/* line 1223, ../../sass/hireman/main.scss */
+.back-to-search-list {
+  position: relative;
+  display: block;
+  margin-top: 23px;
+  padding-left: 43px;
+  color: #274a51;
+}
+
+/* line 1230, ../../sass/hireman/main.scss */
+.back-to-search-list:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: -3px;
+  left: 0;
+  width: 32px;
+  height: 19px;
+  background: url('../../images/sprite.png?1441543075') -25px -330px no-repeat;
+}
+
+/* line 1240, ../../sass/hireman/main.scss */
+.back-to-search-list:hover:before {
+  background: url('../../images/sprite.png?1441543075') -59px -330px no-repeat;
+}
+
+/* line 1243, ../../sass/hireman/main.scss */
+.back-to-search-list:hover {
+  color: #f15354;
+}
+
+/* line 1246, ../../sass/hireman/main.scss */
+.search-result-area-small {
+  position: relative;
+  display: inline-block;
+  width: 65%;
+  padding-bottom: 60px;
+}
+
+/* line 1252, ../../sass/hireman/main.scss */
+.search-result-area-small .company-logo-container {
+  margin-bottom: 12px;
+}
+
+/* line 1255, ../../sass/hireman/main.scss */
+.information-area-blocks .information-header-link {
+  color: #f15354;
+}
+
+/* line 1258, ../../sass/hireman/main.scss */
+.information-area-blocks .job-expierence-category {
+  margin: 30px 0 0;
+}
+
+/* line 1261, ../../sass/hireman/main.scss */
+.website-area {
+  display: block;
+  margin: 10px 0 0 0;
+  padding-left: 0;
+  color: #274a51;
+}
+
+/* line 1267, ../../sass/hireman/main.scss */
+.website-area:hover {
+  color: #f15354;
+}
+
+/* line 1270, ../../sass/hireman/main.scss */
+.website-area:before {
+  background: none;
+}
+
+/* line 1275, ../../sass/hireman/main.scss */
+.vacancy-information h2 {
+  padding: 20px 0;
+}
+
+/* line 1280, ../../sass/hireman/main.scss */
+.vacancy-information-header {
+  color: #71a0a1;
+}
+
+/* line 1283, ../../sass/hireman/main.scss */
+.vacancy-information-list {
+  color: #6d6e71;
+}
+
+/* line 1286, ../../sass/hireman/main.scss */
+.vacancy-information-item {
+  list-style: none;
+  color: #6d6e71;
+  line-height: 20px;
+}
+
+/* line 1291, ../../sass/hireman/main.scss */
+.vacancy-information-item:before {
+  content: '- ';
+}
+
+/* line 1294, ../../sass/hireman/main.scss */
+.vacancy-information-item:after {
+  content: ',';
+}
+
+/* line 1297, ../../sass/hireman/main.scss */
+.vacancy-information-item:last-child:after {
+  content: '.';
+}
+
+/* line 1300, ../../sass/hireman/main.scss */
+.payment-block {
+  margin-top: 70px;
+  margin-bottom: 0;
+  color: #3a3939;
+  font-size: 30px;
+}
+
+/*Search Results Screen End*/
+/*Form Area Start*/
+/* line 1308, ../../sass/hireman/main.scss */
+.form-area {
+  display: inline-block;
+  margin: -8px auto;
+  vertical-align: top;
+  width: 30%;
+}
+
+/* line 1314, ../../sass/hireman/main.scss */
+.get-tarifs .btn-rectangle {
+  margin: 0 4px;
+  border: none;
+}
+
+/* line 1318, ../../sass/hireman/main.scss */
+.input-wrapper {
+  position: relative;
+  margin: 8px 0;
+}
+
+/* line 1322, ../../sass/hireman/main.scss */
+.input-wrapper-small {
+  max-width: 220px;
+}
+
+/* line 1325, ../../sass/hireman/main.scss */
+.bordered-dark {
+  color: #828d93;
+  border-color: #828d93;
+}
+
+/* line 1329, ../../sass/hireman/main.scss */
+.bordered-dark:focus {
+  color: #5c6d75;
+  border-color: #5c6d75;
+}
+
+/* line 1333, ../../sass/hireman/main.scss */
+.btn-dark {
+  color: #fff;
+  background-color: #828d93;
+  border-color: #828d93;
+}
+
+/* line 1338, ../../sass/hireman/main.scss */
+.btn-dark:hover {
+  color: #fff;
+  background-color: #5c6d75;
+  border-color: #5c6d75;
+}
+
+/* line 1343, ../../sass/hireman/main.scss */
+.btn-dark:active {
+  color: #fff;
+  background-color: #71a0a1;
+  border-color: #71a0a1;
+}
+
+/* line 1348, ../../sass/hireman/main.scss */
+.btn-full {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  color: #fff;
+  font-size: 22px;
+  font-family: 'NeoSansPro-Light', sans-serif;
+}
+
+/* line 1356, ../../sass/hireman/main.scss */
+.send-resume .btn {
+  min-width: 155px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 1361, ../../sass/hireman/main.scss */
+.send-resume .btn-pink-inverse {
+  margin-top: 10px;
+}
+
+/* line 1364, ../../sass/hireman/main.scss */
+input[type="checkbox"] {
+  position: absolute;
+  display: none;
+  top: 5px;
+  z-index: 10;
+}
+
+/* line 1370, ../../sass/hireman/main.scss */
+input[type="checkbox"] + label {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 34px;
+  height: 34px;
+  background-color: #fff;
+  border: 1px solid #5c6d75;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  cursor: pointer;
+}
+
+/* line 1383, ../../sass/hireman/main.scss */
+.chekbox-condition[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: -1px;
+  top: -1px;
+  width: 34px;
+  height: 34px;
+  background-color: #5c6d75;
+  border-color: #5c6d75;
+  border-radius: 4px;
+  background-image: url('../../images/sprite.png?1441543075');
+  background-repeat: no-repeat;
+  background-position: -101px -323px;
+}
+
+/* line 1398, ../../sass/hireman/main.scss */
+.label-condition {
+  position: relative;
+  left: 55px;
+  color: #6d6e71;
+}
+
+/* line 1403, ../../sass/hireman/main.scss */
+#respond_button {
+  margin-top: 30px;
+  font-size: 16px;
+  background-color: #f15354;
+  border-color: #f15354;
+  cursor: pointer;
+}
+
+/* line 1410, ../../sass/hireman/main.scss */
+#respond_button:hover {
+  background-color: #f5887b;
+  border-color: #f5887b;
+}
+
+/* line 1414, ../../sass/hireman/main.scss */
+#respond_button:active {
+  background-color: #fbc9be;
+  border-color: #fbc9be;
+}
+
+/* line 1418, ../../sass/hireman/main.scss */
+#respond_button:disabled {
+  background-color: #fbc9be;
+  border-color: #fbc9be;
+  cursor: default;
+}
+
+/* line 1423, ../../sass/hireman/main.scss */
+#respond_button:disabled:hover {
+  background-color: #fbc9be;
+  border-color: #fbc9be;
+}
+
+/*Form Area End*/
+/*Main Screen Start*/
+/* line 1430, ../../sass/hireman/main.scss */
+.main-screen-wrapper-violet:after {
+  top: auto;
+  right: -125px;
+  bottom: 0;
+  width: 827px;
+  height: 460px;
+}
+
+/* line 1437, ../../sass/hireman/main.scss */
+.main-screen-wrapper-violet .main-screen-left {
+  position: relative;
+  top: 25px;
+  max-width: 570px;
+}
+
+/* line 1442, ../../sass/hireman/main.scss */
+.wrapper-violet {
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 300%;
+  height: 100%;
+  z-index: -2;
+}
+
+/* line 1450, ../../sass/hireman/main.scss */
+.additional-menu-container {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  line-height: 59px;
+  z-index: 5;
+}
+
+/* line 1457, ../../sass/hireman/main.scss */
+#block-fixed.fixed {
+  position: fixed;
+  top: -6px;
+  left: 0;
+  width: 100%;
+  background-color: #745ca2;
+  -webkit-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+/* line 1469, ../../sass/hireman/main.scss */
+#block-fixed.fixed.additional-menu-container:after {
+  border-bottom-color: transparent;
+}
+
+/* line 1472, ../../sass/hireman/main.scss */
+#block-fixed.fixed.additional-menu-link {
+  line-height: 3;
+}
+
+/* line 1475, ../../sass/hireman/main.scss */
+.additional-menu-container:after {
+  content: '';
+  position: relative;
+  display: block;
+  left: -100%;
+  bottom: 1px;
+  width: 300%;
+  border-bottom: 1px solid #e2deec;
+}
+
+/* line 1484, ../../sass/hireman/main.scss */
+.additional-menu-item {
+  display: inline-block;
+  list-style: none;
+}
+
+/* line 1488, ../../sass/hireman/main.scss */
+.additional-menu-link {
+  display: block;
+  margin: 0 28px;
+  color: #e2deec;
+  font-size: 22px;
+  font-family: 'NeoSansPro-Light', sans-serif;
+  line-height: 2;
+}
+
+/* line 1496, ../../sass/hireman/main.scss */
+.additional-menu-link:hover {
+  color: #eef6fb;
+}
+
+/* line 1499, ../../sass/hireman/main.scss */
+.additional-menu-link:active {
+  color: #d7e6f2;
+}
+
+/* line 1502, ../../sass/hireman/main.scss */
+.header-chapter-current-violet {
+  color: #e2deec;
+  background-color: #745ca2;
+}
+
+/* line 1506, ../../sass/hireman/main.scss */
+.header-chapter-current-violet:hover {
+  color: #e2deec;
+}
+
+/* line 1509, ../../sass/hireman/main.scss */
+.find-lozung {
+  font-size: 37px;
+  line-height: 45px;
+  color: #e2deec;
+  font-family: 'NeoSansPro-Light', sans-serif;
+}
+
+/* line 1515, ../../sass/hireman/main.scss */
+.bordered-violet {
+  color: #cbcac8;
+  border-color: #8779a6;
+}
+
+/* line 1519, ../../sass/hireman/main.scss */
+.bordered-violet::placeholder {
+  color: #8779a6;
+}
+
+/* line 1522, ../../sass/hireman/main.scss */
+.bordered-violet:focus {
+  color: #fff;
+  border-color: #fff;
+}
+
+/* line 1526, ../../sass/hireman/main.scss */
+.find-employee {
+  margin-top: 25px;
+}
+
+/* line 1529, ../../sass/hireman/main.scss */
+.find-employee .btn {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 1534, ../../sass/hireman/main.scss */
+.header-chapter.current {
+  color: #284a51;
+  background: #fff;
+}
+
+/* line 1539, ../../sass/hireman/main.scss */
+.header-chapter .label {
+  background: #8dc63f;
+  color: #fff;
+  padding: 2px 8px;
+  margin-left: 8px;
+  border-radius: 3px;
+}
+
+/*Main Screen End*/
+/*How It Work Screen Start*/
+/* line 1549, ../../sass/hireman/main.scss */
+.screen-header-violet {
+  color: #745ca2;
+}
+
+/* line 1552, ../../sass/hireman/main.scss */
+.column-container {
+  margin-top: 55px;
+  padding: 0 140px;
+}
+
+/* line 1556, ../../sass/hireman/main.scss */
+.stages {
+  position: relative;
+  display: table;
+  width: 100%;
+  margin-bottom: 40px;
+  color: #262424;
+}
+
+/* line 1563, ../../sass/hireman/main.scss */
+.stages-text {
+  display: table-cell;
+  width: auto;
+  padding-right: 123px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* line 1570, ../../sass/hireman/main.scss */
+.stages-text-right {
+  padding-right: 0;
+  padding-left: 120px;
+}
+
+/* line 1574, ../../sass/hireman/main.scss */
+.stages-text-large {
+  padding-right: 84px;
+}
+
+/* line 1577, ../../sass/hireman/main.scss */
+.stages-text-header {
+  margin-bottom: 15px;
+  font-size: 33px;
+  line-height: 35px;
+  color: #745ca2;
+}
+
+/* line 1583, ../../sass/hireman/main.scss */
+.stages-text-content {
+  font: 18px/20px 'NeoSansPro-Light', sans-serif;
+  color: #6d6e71;
+}
+
+/* line 1587, ../../sass/hireman/main.scss */
+.stages-image {
+  position: relative;
+  display: table-cell;
+  width: 515px;
+  height: 365px;
+  vertical-align: middle;
+}
+
+/* line 1594, ../../sass/hireman/main.scss */
+.svg-mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 515px;
+  height: 365px;
+}
+
+/* line 1601, ../../sass/hireman/main.scss */
+.step-counter {
+  position: absolute;
+  display: block;
+  top: 172px;
+  left: -33px;
+  min-width: 77px;
+  height: 77px;
+  margin-top: -33px;
+  color: #fff;
+  font-size: 40px;
+  line-height: 77px;
+  background-color: #745ca2;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+/* line 1616, ../../sass/hireman/main.scss */
+.step-counter-right {
+  left: auto;
+  right: -33px;
+}
+
+/* line 1620, ../../sass/hireman/main.scss */
+.column-container .buttons-area {
+  margin-top: 75px;
+}
+
+/* line 1623, ../../sass/hireman/main.scss */
+.btn-polygon-violet {
+  color: #745ca2;
+  background: url('../../images/border-violet.svg?1441543074') 0 0 no-repeat;
+}
+
+/* line 1627, ../../sass/hireman/main.scss */
+.btn-polygon-violet:hover {
+  background: url('../../images/button-violet.svg?1441543074') 0 0 no-repeat;
+}
+
+/* line 1630, ../../sass/hireman/main.scss */
+.btn-polygon-violet:active {
+  background: url('../../images/button-violet-pressed.svg?1441543074') 0 0 no-repeat;
+}
+
+/*How It Work Screen End*/
+/*Pros Screen Start*/
+/* line 1635, ../../sass/hireman/main.scss */
+.find-screen-wrapper-green {
+  background-color: #8bc196;
+}
+
+/* line 1638, ../../sass/hireman/main.scss */
+.column-shorted {
+  margin: 50px 106px 50px;
+}
+
+/* line 1641, ../../sass/hireman/main.scss */
+.column-icon-clock-large,
+.column-icon-purse-large,
+.column-icon-globe-large,
+.column-icon-double-large {
+  width: 120px;
+  height: 144px;
+  margin-bottom: 33px;
+}
+
+/* line 1649, ../../sass/hireman/main.scss */
+.column-icon-clock-large {
+  background-position: -152px -114px;
+}
+
+/* line 1652, ../../sass/hireman/main.scss */
+.column-icon-purse-large {
+  background-position: -281px -96px;
+}
+
+/* line 1655, ../../sass/hireman/main.scss */
+.column-icon-globe-large {
+  background-position: -404px -114px;
+}
+
+/* line 1658, ../../sass/hireman/main.scss */
+.column-icon-double-large {
+  width: 128px;
+  background-position: -525px -132px;
+  margin: 20px 0 10px 70px;
+}
+
+/* line 1663, ../../sass/hireman/main.scss */
+.column-content-white {
+  font-size: 23px;
+  line-height: 25px;
+  color: #fff;
+}
+
+/* line 1669, ../../sass/hireman/main.scss */
+.column-icon-video {
+  width: 130px;
+  height: 110px;
+  background: url('../../images/video.png?1441543075') no-repeat center top;
+}
+
+/* line 1675, ../../sass/hireman/main.scss */
+.column-icon-camera {
+  width: 110px;
+  height: 110px;
+  background: url('../../images/camera.png?1441543074') no-repeat center top;
+}
+
+/* line 1681, ../../sass/hireman/main.scss */
+.column-icon-question {
+  width: 132px;
+  height: 110px;
+  background: url('../../images/question.png?1441543075') no-repeat center top;
+}
+
+/*Pros Screen End*/
+/*Tarifs Screen Start*/
+/* line 1688, ../../sass/hireman/main.scss */
+.screen-header-black {
+  color: #262424;
+}
+
+/* line 1691, ../../sass/hireman/main.scss */
+.table-wrapper {
+  margin-bottom: 35px;
+}
+
+/* line 1694, ../../sass/hireman/main.scss */
+.tafirs-table {
+  width: 100%;
+  color: #686765;
+  border-spacing: 0;
+}
+
+/* line 1699, ../../sass/hireman/main.scss */
+.tafirs-table thead td {
+  font-size: 33px;
+  line-height: 67px;
+  text-align: center;
+}
+
+/* line 1704, ../../sass/hireman/main.scss */
+.tafirs-table thead td:nth-of-type(2) {
+  text-transform: uppercase;
+}
+
+/* line 1707, ../../sass/hireman/main.scss */
+.tafirs-table thead td:nth-of-type(3) {
+  color: #f15354;
+  text-transform: uppercase;
+}
+
+/* line 1711, ../../sass/hireman/main.scss */
+.tafirs-table tbody td {
+  position: relative;
+  padding: 25px 55px;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  border-top: 1px solid #686765;
+  border-left: 1px solid #686765;
+}
+
+/* line 1720, ../../sass/hireman/main.scss */
+.tafirs-table tbody td:last-child {
+  border-right: 1px solid #686765;
+}
+
+/* line 1723, ../../sass/hireman/main.scss */
+.tafirs-table tbody td:first-child {
+  width: 70%;
+  text-align: left;
+}
+
+/* line 1727, ../../sass/hireman/main.scss */
+.tafirs-table tbody tr:first-child td:first-child {
+  border-top-left-radius: 15px;
+}
+
+/* line 1730, ../../sass/hireman/main.scss */
+.tafirs-table tbody tr:first-child td:last-child {
+  border-top-right-radius: 15px;
+}
+
+/* line 1733, ../../sass/hireman/main.scss */
+.tafirs-table tbody tr:last-child td {
+  border-bottom: 1px solid #686765;
+}
+
+/* line 1736, ../../sass/hireman/main.scss */
+.tafirs-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 15px;
+}
+
+/* line 1739, ../../sass/hireman/main.scss */
+.tafirs-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 15px;
+}
+
+/* line 1742, ../../sass/hireman/main.scss */
+.checked-gray,
+.checked-pink {
+  display: block;
+  position: absolute;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  margin-left: -15px;
+  background: url('../../images/sprite.png?1441543075') -2px -358px no-repeat;
+}
+
+/* line 1753, ../../sass/hireman/main.scss */
+.checked-pink {
+  background-position: -2px -392px;
+}
+
+/* line 1756, ../../sass/hireman/main.scss */
+strong {
+  color: red;
+}
+
+/* line 1759, ../../sass/hireman/main.scss */
+.tab-quote {
+  padding: 25px 0 0 55px;
+  text-align: left;
+}
+/* line 1762, ../../sass/hireman/main.scss */
+.tab-quote a {
+  text-decoration: underline;
+}
+
+/* line 1767, ../../sass/hireman/main.scss */
+.stages-tarifs-form {
+  margin-bottom: 0;
+}
+
+/* line 1770, ../../sass/hireman/main.scss */
+.stages-tarifs-form .stages-text {
+  padding: 0;
+}
+
+/* line 1773, ../../sass/hireman/main.scss */
+.stages-tarifs-form .stages-text-header {
+  font-size: 37px;
+  line-height: 39px;
+  color: #f15158;
+  text-align: center;
+  font-family: 'NeoSansPro-Light', sans-serif;
+}
+
+/* line 1780, ../../sass/hireman/main.scss */
+.get-tarifs {
+  text-align: center;
+}
+
+/* line 1786, ../../sass/hireman/main.scss */
+.get-tarifs .bordered-light:focus {
+  color: #626261;
+  border-color: #626261;
+}
+
+/* line 1790, ../../sass/hireman/main.scss */
+.btn-gray {
+  float: left;
+  margin: 0 4px;
+  color: #fff;
+  background-color: #ABAAA8;
+  border-color: #ABAAA8;
+}
+
+/* line 1797, ../../sass/hireman/main.scss */
+.btn-gray:hover {
+  color: #fff;
+  background-color: #626261;
+  border-color: #626261;
+}
+
+/* line 1802, ../../sass/hireman/main.scss */
+.btn-gray:active {
+  color: #fff;
+  background-color: #7F8083;
+  border-color: #7F8083;
+}
+
+/*Tarifs Screen End*/
+/*
+-------------------------
+Vacancy Page End
+-------------------------
+*/
+/* line 1813, ../../sass/hireman/main.scss */
+#lean_overlay {
+  position: fixed;
+  z-index: 10005;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none;
+}
+
+/* line 1823, ../../sass/hireman/main.scss */
+.modal-entrance {
+  display: none;
+  width: 490px;
+  color: #d9e2e3;
+  background-color: #71a0a1;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* line 1835, ../../sass/hireman/main.scss */
+.close-modal {
+  position: absolute;
+  display: block;
+  top: 10px;
+  right: 10px;
+  width: 23px;
+  height: 23px;
+  text-indent: -9999px;
+  background: url('../../images/sprite.png?1441543075') -3px -427px no-repeat;
+  outline: none;
+}
+
+/* line 1846, ../../sass/hireman/main.scss */
+.modal-header-wrapper {
+  padding: 35px 45px 20px;
+  border-bottom: 1px solid #d9e2e3;
+}
+
+/* line 1850, ../../sass/hireman/main.scss */
+.modal-header {
+  font: 26px/28px 'NeoSansPro-Light', sans-serif;
+}
+
+/* line 1853, ../../sass/hireman/main.scss */
+.modal-content-wrapper {
+  padding: 40px 45px 0;
+}
+
+/* line 1856, ../../sass/hireman/main.scss */
+.modal-form {
+  position: relative;
+  margin: -13px 0;
+}
+
+/* line 1860, ../../sass/hireman/main.scss */
+.modal-form .input-wrapper {
+  margin: 0;
+}
+
+/* line 1863, ../../sass/hireman/main.scss */
+.bordered-modal {
+  width: 100%;
+  margin: 13px 0;
+  font-size: 16px;
+  text-align: center;
+  color: #bfced0;
+  border-color: #bfced0;
+}
+
+/* line 1871, ../../sass/hireman/main.scss */
+.bordered-modal::placeholder {
+  color: #bfced0;
+}
+
+/* line 1874, ../../sass/hireman/main.scss */
+.bordered-modal:focus {
+  color: #fff;
+  border-color: #fff;
+}
+
+/* line 1878, ../../sass/hireman/main.scss */
+.btn-modal {
+  display: block;
+  margin: 13px auto;
+  color: #71a0a1;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+/* line 1885, ../../sass/hireman/main.scss */
+.btn-modal:hover {
+  color: #71a0a1;
+  background-color: #bfced0;
+  border-color: #bfced0;
+}
+
+/* line 1890, ../../sass/hireman/main.scss */
+.btn-modal:active {
+  color: #71a0a1;
+  background-color: #d1dcdd;
+  border-color: #d1dcdd;
+}
+
+/* line 1895, ../../sass/hireman/main.scss */
+.forgot-password {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'NeoSansPro-Light', sans-serif;
+}
+
+/* line 1902, ../../sass/hireman/main.scss */
+.user-conditions-modal {
+  margin: 27px 0 15px;
+}
+
+/* line 1905, ../../sass/hireman/main.scss */
+.modal-enter-link {
+  color: #fff;
+}
+
+/* line 1908, ../../sass/hireman/main.scss */
+.modal-enter-link:hover {
+  color: #d9e2e3;
+}
+
+/* line 1911, ../../sass/hireman/main.scss */
+.user-license,
+.forgot-password {
+  color: #d9e2e3;
+}
+
+/* line 1915, ../../sass/hireman/main.scss */
+.user-license:hover,
+.forgot-password:hover {
+  color: #fff;
+}
+
+/* line 1919, ../../sass/hireman/main.scss */
+.success-registered {
+  color: #d9e2e3;
+}
+
+/* line 1922, ../../sass/hireman/main.scss */
+.modal-footer {
+  padding: 30px 45px 20px;
+  text-align: center;
+  font-family: 'NeoSansPro-Light', sans-serif;
+}
+
+/* line 1927, ../../sass/hireman/main.scss */
+.modal-enter-link,
+.yet-registered {
+  margin: 0 8px;
+}
+
+/* line 1931, ../../sass/hireman/main.scss */
+.modal-enter-link {
+  position: relative;
+  padding-left: 10px;
+}
+
+/* line 1935, ../../sass/hireman/main.scss */
+.modal-enter-link:before {
+  content: '';
+  position: relative;
+  display: inline-block;
+  top: 2px;
+  left: -5px;
+  width: 13px;
+  height: 18px;
+  background: url('../../images/sprite.png?1441543075') -47px -382px no-repeat;
+}
+
+/* line 1945, ../../sass/hireman/main.scss */
+.modal-enter-link-nobg {
+  padding: 0;
+}
+
+/* line 1948, ../../sass/hireman/main.scss */
+.modal-enter-link-nobg:before {
+  width: 0;
+  background: none;
+}
+
+/* line 1952, ../../sass/hireman/main.scss */
+.modal-enter-link:hover:before {
+  background-position: -47px -359px;
+}

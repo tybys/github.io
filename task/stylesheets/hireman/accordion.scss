@@ -1,0 +1,67 @@
+/* Accordion styles files
+ * 
+ */
+
+/*----- Accordion -----*/
+.accordion, .accordion * {
+  -webkit-box-sizing:border-box; 
+  -moz-box-sizing:border-box; 
+  box-sizing:border-box;
+}
+
+.accordion {
+  @include border-radius(5px);
+  overflow: hidden;
+  padding-bottom: 200px;
+}
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+  @include border-radius(5px);
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px 15px 10px 15px;
+  display: inline-block;
+  background: #fff;
+  border: solid #3a3937 1px;
+  transition: all linear 0.15s;
+  font-family: 'NeoSansPro-Light', sans-serif;
+  font-size: 24px;
+  color: #9A9693;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 45%;
+    right: 20px;
+    border-style: solid;
+    border-width: 8px 8px 0 8px;
+    border-color: #3a3937 transparent transparent transparent;
+  }
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+  background: #3a3937;
+  color: #fff;
+  text-decoration:none;
+  &:before {
+    top: 42%;
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #fff transparent;
+  }
+}
+
+.accordion-section:last-child .accordion-section-title {
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+  display: none;
+  padding: 20px;
+  line-height: 26px;
+  font-family: 'NeoSansPro-Light', sans-serif;
+  font-size: 24px;
+  color: #393938;
+}

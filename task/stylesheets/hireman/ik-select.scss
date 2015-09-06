@@ -1,0 +1,142 @@
+.ik_select_link
+{
+    position: relative;
+    margin-bottom: 20px;
+    padding: 16px 35px 16px 15px;
+
+    color: #fff;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    background: transparent;
+    border: solid #a5a5a5 1px;
+    color: #3a3937;
+    font-size: 18px;
+    font-family: 'NeoSansPro-Light', sans-serif;
+}
+
+.bordered-select {
+    width: 100%;
+    padding: 0
+}
+
+.bordered-select .ik_select_link {
+    margin: 0;
+    padding: 5px 15px;
+    color: #284a51;
+    border-color: #729fa2;
+    font-size: 24px;
+}
+
+.ik_select_link:after,
+.intro-select2-link .ik_select_link_inner:after
+{
+ content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 45%;
+  right: 15px;
+  border-style: solid;
+  border-width: 6px 6px 0 6px;
+  border-color: #3a3937 transparent
+}
+.ik_select_link.ik_select_link_disabled
+{
+    opacity: .5;
+
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+        filter: alpha(opacity=50);
+}
+.ik_select_link_text
+{
+    display: block;
+    overflow: hidden;
+
+    white-space: nowrap;
+       text-overflow: ellipsis;
+
+    -o-text-overflow: ellipsis;
+}
+.ik_select_dropdown
+{
+    top: 41px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    background: #aad263;
+}
+.ik_select_dropdown p
+{
+    margin: 0;
+    padding: 5px 15px;
+}
+.ik_select_filter_wrap,
+.ik_select_nothing_found
+{
+    padding: 5px 15px;
+}
+.ik_select_filter
+{
+    font-weight: 300;
+
+    padding: 3px 14px;
+
+
+    border: solid #a5a5a5 1px;
+
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+}
+.ik_select_filter:focus
+{
+    outline: none;
+}
+.ik_select_list
+{
+    padding: 10px 0;
+
+    color: #fff;
+}
+.ik_select_list .ik_select_option
+{
+    padding: 10px 15px;
+}
+.ik_select_list .ik_select_option.ik_select_hover
+{
+    color: #fff;
+    background-color: #a5a5a5;
+}
+.ik_select_list .ik_select_option_disabled
+{
+    opacity: .5;
+
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+        filter: alpha(opacity=50);
+}
+.ik_select_list .ik_select_optgroup
+{
+    padding: 5px 15px;
+}
+.ik_select_list .ik_select_optgroup .ik_select_option
+{
+    margin: 0 -15px;
+    padding: 0 30px;
+}
+.ik_select_list .ik_select_optgroup_label
+{
+    font-size: 12px;
+
+    padding-bottom: 2px;
+
+    color: rgba(255,255,255,.5);
+}
+.ik_select_list
+{
+    cursor: default;
+
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    border: solid #a5a5a5 1px;
+    color: #a5a5a5;
+    background-color: #fff;
+}
+

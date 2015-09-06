@@ -1,0 +1,39 @@
+/* line 3, ../../sass/hireman/modal.sass */
+.modal-entrance#sharing a {
+  color: #d9e2e3;
+}
+/* line 5, ../../sass/hireman/modal.sass */
+.modal-entrance#sharing a:hover {
+  color: white;
+}
+/* line 8, ../../sass/hireman/modal.sass */
+.modal-entrance#sharing table.sharing-list {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
+}
+/* line 13, ../../sass/hireman/modal.sass */
+.modal-entrance#sharing table.sharing-list thead th {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+/* line 16, ../../sass/hireman/modal.sass */
+.modal-entrance#sharing table.sharing-list tbody {
+  border-top: 1px #d9e2e3 dashed;
+}
+/* line 19, ../../sass/hireman/modal.sass */
+.modal-entrance#sharing table.sharing-list tbody tr:hover {
+  background-color: #4c6b6c;
+}
+/* line 21, ../../sass/hireman/modal.sass */
+.modal-entrance#sharing table.sharing-list tbody td {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+/* line 25, ../../sass/hireman/modal.sass */
+.modal-entrance#sharing .validation-errors {
+  display: block;
+  margin-bottom: 15px;
+  margin-left: 0;
+  margin-right: 0;
+}

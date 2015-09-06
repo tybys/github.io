@@ -1,0 +1,168 @@
+/* Navigation styles
+ *
+ */
+
+/*Header Find Chapter Start*/
+.header-chapter {
+    float: left;
+    padding: 0 31px;
+    line-height: 59px;
+    &.active {
+        color: #D1D9DA;
+    }
+}
+
+.header-chapter-dark {
+    color: #264950;
+}
+
+.header-chapter:hover .enter {
+    background: image-url('sprite.png') 0 -80px no-repeat;
+}
+
+.header-chapter:hover .exit {
+    background: image-url('sprite.png') -89px -382px no-repeat;
+}
+/*Header Find Chapter End*/
+
+/*Header Right Block Start*/
+.header-right-block {
+    position: relative;
+    float: right;
+    padding-right: 88px;
+}
+
+.enter {
+    position: relative;
+    display: inline-block;
+    top: 3px;
+    width: 13px;
+    height: 18px;
+    margin-right: 10px;
+    background: image-url('sprite.png') 0 -61px no-repeat;
+}
+
+.exit {
+    position: relative;
+    display: inline-block;
+    top: 7px;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    background: image-url('sprite.png') -89px -358px no-repeat;
+}
+
+.mail-item {
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+    text-align: right;
+    &:after {
+        position: absolute;
+        content: ' ';
+        width: 17px;
+        height: 45px;
+        background-color: #021e20;
+        top: 0;
+        right: 0;
+    }
+}
+
+/*Header Right Block End*/
+
+/*Header Navigation Start*/
+.push-link {
+    position: relative;
+    display: inline-block;
+    top: 20px;
+    left: 42px;
+    width: 22px;
+    height: 20px;
+    cursor: pointer;
+}
+.cbp-spmenu-vertical {
+    position: fixed;
+    width: 265px;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+    /*padding-top: 59px;*/
+    padding-left: 0;
+    background: #71a0a1;
+}
+    .header-nav {
+        list-style: none;
+    }
+        .cbp-spmenu a {
+            display: block;
+            padding: 0 36px 0;
+            line-height: 58px;
+            color: #D1D9DA;
+            border-bottom: 1px solid #D1D9DA;
+        }
+        .cbp-spmenu a:hover {
+            color: #fff;
+        }
+        .cbp-spmenu a:active {
+            color: #fff;
+        }
+.cbp-spmenu-right {
+    right: -265px;
+}
+.cbp-spmenu-right.cbp-spmenu-open {
+    right: 0px;
+}
+.cbp-spmenu-push {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+}
+.cbp-spmenu-push-toleft {
+    left: -265px;
+}
+.cbp-spmenu,
+.cbp-spmenu-push {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.header-menu-stripe {
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 3px;
+    margin-bottom: 4px;
+    background-color: #71a0a1;
+}
+.push-link:hover .header-menu-stripe {
+    background-color: #d1d9da;
+}
+.cbp-spmenu-push-toleft .header-menu-stripe {
+    background-color: #d1d9da;
+}
+.cbp-spmenu-push-toleft .push-link:hover .header-menu-stripe {
+    background-color: #fff;
+}
+.cbp-spmenu-push-toleft .push-link {
+    top: 28px;
+}
+.cbp-spmenu-push-toleft .stripe-first {
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+.cbp-spmenu-push-toleft .stripe-second {
+    display: none;
+}
+.cbp-spmenu-push-toleft .stripe-third {
+    top: -7px;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+
+/*Header Navigation End*/

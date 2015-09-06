@@ -1,0 +1,213 @@
+/* Wizard pages styles
+ *
+ */
+
+.interview-steps-wrap {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.interview-steps-header {
+  height: 176px;
+  padding: 40px 70px;
+  .interview-steps-header-title {
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: 'NeoSansPro-Light', sans-serif;
+    font-weight: normal;
+    color: #000;
+  }
+}
+
+.interview-steps-logo-link {
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+.interview-steps-container {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.interview-steps-block-left {
+  float: left;
+  color: #38B449;
+  .interview-steps-block {
+    border: solid #38B449 1px;
+  }
+}
+
+.interview-steps-block-right {
+  float: right;
+  color: #F05454;
+  .interview-steps-block {
+    border: solid #F05454 1px;
+  }
+}
+
+.interview-steps-block-title {
+  margin-bottom: 20px;
+  font-size: 33px;
+  line-height: 36px;
+  font-family: 'NeoSansPro-Light', sans-serif;
+  text-align: center;
+}
+
+.interview-steps-block {
+  @include border-radius(15px);
+  margin-bottom: 120px;
+  width: 420px;
+  height: 210px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.interview-steps-title {
+  padding-top: 10px;
+  font-size: 21px;
+  font-family: 'NeoSansPro-Light', sans-serif;
+  line-height: 24px;
+}
+
+.interview-steps-content {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 35px;
+}
+
+.interview-steps-btn {
+  display: inline-block;
+  padding: 5px 25px 0 25px;
+  margin: 0 20px 0 0;
+  font-size: 18px;
+  line-height: 38px;
+  background-color: red;
+  &:hover {
+    background-color: #9A9693;
+    color: #fff;
+  }
+}
+
+
+//
+
+.interview-steps-container2 {
+  padding: 0 70px;
+}
+
+.interview-steps-webcam-container {
+  position: relative;
+  float: left;
+  width: 525px;
+  height: 300px;
+}
+
+.interview-steps-webcam-container2 {
+  position: relative;
+  float: left;
+  width: 220px;
+  height: 160px;
+  margin-top: 20px;
+}
+
+
+.webcam-rec-flag, .webcam-rec-flag-red {
+  @include border-radius(50px);
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 80px;
+  background-color: #9A9693;
+  &.webcam-rec-flag-red {
+    background-color: #ef5356;
+  }
+}
+
+.interview-steps-webcam-block {
+  z-index: 20;
+  position: relative;
+  width: 400px;
+  height: 280px;
+  padding: 10px;
+  &.webcam-bg {
+    background: image-url("webcam-bg.png") 50% 50% no-repeat;
+  }
+  &.envelop-bg {
+    background: image-url("envelop-bg.png") 50% 50% no-repeat;
+  }
+}
+
+.interview-steps-webcam-block2 {
+  z-index: 20;
+  position: relative;
+  width: 200px;
+  height: 150px;
+  padding: 10px;
+  &.webcam-bg {
+    background: image-url("webcam-bg.png") 50% 50% no-repeat;
+    background-size: 40%;
+  }
+  &.webcam-bg2 {
+    background: image-url("webcam2-bg.png") 50% 50% no-repeat;
+  }
+}
+
+.interview-steps-webcam-border {
+  z-index: 10;
+  position: absolute;
+  width: 400px;
+  top: 0;
+}
+
+.interview-steps-webcam-border2 {
+  z-index: 10;
+  position: absolute;
+  width: 200px;
+  top: 0;
+}
+
+.interview-steps-question-container {
+  margin: 0 0 0 525px;
+  .interview-steps-block-title {
+    margin-bottom: 40px;
+    text-align: left;
+    color: #393938;
+  }
+}
+
+.interview-steps-quotes {
+  @include border-radius(15px);
+  position: relative;
+  min-height: 120px;
+  margin-bottom: 50px;
+  padding: 25px 25px 20px 25px;
+  border: solid #9A9693 1px;
+  color: #393938;
+  font-size: 22px;
+  line-height: 26px;
+  font-family: 'NeoSansPro-Light', sans-serif;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -18px;
+    left: 25px;
+    border-style: solid;
+    border-width: 0 18px 18px 18px;
+    border-color: transparent transparent #9A9693 transparent;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -16px;
+    left: 26px;
+    border-style: solid;
+    border-width: 0 17px 17px 17px;
+    border-color: transparent transparent #fff transparent;
+  }
+}
