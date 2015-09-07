@@ -513,7 +513,7 @@ input:focus {
   width: 24px;
   top: -2px;
   left: 0;
-  background: url('../../images/sprite.png?1441543075') no-repeat left -331px;
+  background: url('../../images/sprite.png?1441570333') no-repeat left -331px;
 }
 
 /* line 404, ../../sass/hireman/main.scss */
@@ -773,7 +773,7 @@ input:focus {
   cursor: pointer;
   top: 8px;
   right: 11px;
-  background: url('../../images/sprite.png?1441543075') no-repeat -4px bottom;
+  background: url('../../images/sprite.png?1441570333') no-repeat -4px bottom;
 }
 
 /* line 624, ../../sass/hireman/main.scss */
@@ -1286,7 +1286,7 @@ input:focus {
   left: -10px;
   width: 26px;
   height: 24px;
-  background: url('../../images/sprite.png?1441543075') 0 -331px no-repeat;
+  background: url('../../images/sprite.png?1441570333') 0 -331px no-repeat;
 }
 
 /* line 1011, ../../sass/hireman/main.scss */
@@ -1593,12 +1593,12 @@ input:focus {
   left: 0;
   width: 32px;
   height: 19px;
-  background: url('../../images/sprite.png?1441543075') -25px -330px no-repeat;
+  background: url('../../images/sprite.png?1441570333') -25px -330px no-repeat;
 }
 
 /* line 1240, ../../sass/hireman/main.scss */
 .back-to-search-list:hover:before {
-  background: url('../../images/sprite.png?1441543075') -59px -330px no-repeat;
+  background: url('../../images/sprite.png?1441570333') -59px -330px no-repeat;
 }
 
 /* line 1243, ../../sass/hireman/main.scss */
@@ -1809,7 +1809,7 @@ input[type="checkbox"] + label {
   background-color: #5c6d75;
   border-color: #5c6d75;
   border-radius: 4px;
-  background-image: url('../../images/sprite.png?1441543075');
+  background-image: url('../../images/sprite.png?1441570333');
   background-repeat: no-repeat;
   background-position: -101px -323px;
 }
@@ -2015,20 +2015,200 @@ input[type="checkbox"] + label {
   border-radius: 3px;
 }
 
+/* line 1549, ../../sass/hireman/main.scss */
+.hiw h3 {
+  font-family: 'NeoSansPro-Light';
+  font-size: 63px;
+  margin-bottom: 50px;
+}
+/* line 1555, ../../sass/hireman/main.scss */
+.hiw .three-column-container {
+  background-image: url("../images/arrows.png");
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+}
+/* line 1562, ../../sass/hireman/main.scss */
+.hiw .three-column-container .column img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 1572, ../../sass/hireman/main.scss */
+.hiw .three-column-container .column:first-of-type p:first-of-type, .hiw .three-column-container .column:nth-child(2) p:first-of-type, .hiw .three-column-container .column:nth-child(3) p:first-of-type, .hiw .three-column-container .column:nth-child(4) p:first-of-type, .hiw .three-column-container .column:nth-child(5) p:first-of-type {
+  font-family: 'NeoSansPro-Light';
+  font-size: 24px;
+}
+/* line 1577, ../../sass/hireman/main.scss */
+.hiw .three-column-container .column:first-of-type p:last-of-type, .hiw .three-column-container .column:nth-child(2) p:last-of-type, .hiw .three-column-container .column:nth-child(3) p:last-of-type, .hiw .three-column-container .column:nth-child(4) p:last-of-type, .hiw .three-column-container .column:nth-child(5) p:last-of-type {
+  font-size: 15px;
+  text-align: left;
+}
+/* line 1584, ../../sass/hireman/main.scss */
+.hiw .three-column-container .column:first-of-type p {
+  color: #b9add3;
+}
+/* line 1585, ../../sass/hireman/main.scss */
+.hiw .three-column-container .column:nth-child(2) p {
+  color: #f58788;
+}
+/* line 1586, ../../sass/hireman/main.scss */
+.hiw .three-column-container .column:nth-child(3) p {
+  color: #29abe2;
+}
+/* line 1588, ../../sass/hireman/main.scss */
+.hiw .three-column-container .column:nth-child(4) p {
+  color: #729fa2;
+}
+/* line 1589, ../../sass/hireman/main.scss */
+.hiw .three-column-container .column:nth-child(4) p:first-of-type {
+  white-space: nowrap;
+}
+/* line 1593, ../../sass/hireman/main.scss */
+.hiw .three-column-container .column:nth-child(5) p {
+  color: #8cc541;
+}
+
+/* line 1598, ../../sass/hireman/main.scss */
+.recruit h3 {
+  font-family: 'NeoSansPro-Light';
+  width: 50%;
+  margin: 0 auto;
+  line-height: 100%;
+  font-size: 63px;
+  color: white;
+  margin-bottom: 27px;
+}
+/* line 1606, ../../sass/hireman/main.scss */
+.recruit h3 + p {
+  font-family: 'NeoSansPro-Regular';
+  font-size: 33px;
+  color: white;
+  margin-bottom: 120px;
+}
+
+/* line 1615, ../../sass/hireman/main.scss */
+.benefits h3 {
+  font-family: 'NeoSansPro-Light';
+  font-size: 63px;
+  color: #729fa2;
+}
+/* line 1622, ../../sass/hireman/main.scss */
+.benefits .two-column-container .column {
+  max-width: 370px;
+  margin: 50px 65px 50px;
+}
+/* line 1625, ../../sass/hireman/main.scss */
+.benefits .two-column-container .column:nth-child(4) {
+  max-width: 360px;
+}
+/* line 1627, ../../sass/hireman/main.scss */
+.benefits .two-column-container .column:nth-child(4) .column-icon-double-large {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 1637, ../../sass/hireman/main.scss */
+.benefits .two-column-container .column:first-of-type p:first-of-type, .benefits .two-column-container .column:nth-child(2) p:first-of-type, .benefits .two-column-container .column:nth-child(3) p:first-of-type, .benefits .two-column-container .column:nth-child(4) p:first-of-type {
+  font-size: 33px;
+  color: #729fa2;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+/* line 1644, ../../sass/hireman/main.scss */
+.benefits .two-column-container .column:first-of-type p:last-of-type, .benefits .two-column-container .column:nth-child(2) p:last-of-type, .benefits .two-column-container .column:nth-child(3) p:last-of-type, .benefits .two-column-container .column:nth-child(4) p:last-of-type {
+  font-size: 22px;
+  color: #696765;
+}
+/* line 1650, ../../sass/hireman/main.scss */
+.benefits .two-column-container .column:first-of-type p {
+  color: #b9add3;
+}
+/* line 1651, ../../sass/hireman/main.scss */
+.benefits .two-column-container .column:nth-child(2) p {
+  color: #f58788;
+}
+/* line 1652, ../../sass/hireman/main.scss */
+.benefits .two-column-container .column:nth-child(3) p {
+  color: #29abe2;
+}
+/* line 1657, ../../sass/hireman/main.scss */
+.benefits .tarifs-pane a {
+  font-size: 45px;
+  font-family: 'NeoSansPro-Regular';
+  color: #FFF;
+  position: relative;
+  width: 551px;
+  height: 152px;
+  display: block;
+  z-index: 1;
+}
+/* line 1666, ../../sass/hireman/main.scss */
+.benefits .tarifs-pane a:after {
+  content: '';
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  width: 551px;
+  height: 152px;
+  display: block;
+  background: #735ba7;
+}
+/* line 1676, ../../sass/hireman/main.scss */
+.benefits .tarifs-pane a i {
+  font-family: 'NeoSansPro-Light';
+  font-size: 25px;
+}
+/* line 1680, ../../sass/hireman/main.scss */
+.benefits .tarifs-pane a span:first-of-type {
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: 100%;
+}
+/* line 1686, ../../sass/hireman/main.scss */
+.benefits .tarifs-pane a span:last-of-type {
+  padding: 25px;
+  text-align: left;
+  display: block;
+  position: relative;
+}
+/* line 1691, ../../sass/hireman/main.scss */
+.benefits .tarifs-pane a span:last-of-type:before {
+  display: block;
+  border-radius: 10px;
+  background: #e3deed;
+  content: '';
+  width: 551px;
+  height: calc(100% + 152px);
+  height: -webkit-calc(100% + 152px);
+  position: absolute;
+  top: -152px;
+  left: 0;
+}
+/* line 1704, ../../sass/hireman/main.scss */
+.benefits .tarifs-pane a ul {
+  position: relative;
+}
+/* line 1707, ../../sass/hireman/main.scss */
+.benefits .tarifs-pane a ul li {
+  font-family: 'NeoSansPro-Light';
+  font-size: 18px;
+  color: #231f20;
+}
+
 /*Main Screen End*/
 /*How It Work Screen Start*/
-/* line 1549, ../../sass/hireman/main.scss */
-.screen-header-violet {
+/* line 1720, ../../sass/hireman/main.scss */
+.screen-header-violet,
+h3.screen-header-violet {
   color: #745ca2;
 }
 
-/* line 1552, ../../sass/hireman/main.scss */
+/* line 1724, ../../sass/hireman/main.scss */
 .column-container {
   margin-top: 55px;
   padding: 0 140px;
 }
 
-/* line 1556, ../../sass/hireman/main.scss */
+/* line 1728, ../../sass/hireman/main.scss */
 .stages {
   position: relative;
   display: table;
@@ -2037,41 +2217,41 @@ input[type="checkbox"] + label {
   color: #262424;
 }
 
-/* line 1563, ../../sass/hireman/main.scss */
+/* line 1735, ../../sass/hireman/main.scss */
 .stages-text {
   display: table-cell;
   width: auto;
-  padding-right: 123px;
+  padding-right: 100px;
   text-align: left;
   vertical-align: middle;
 }
 
-/* line 1570, ../../sass/hireman/main.scss */
+/* line 1743, ../../sass/hireman/main.scss */
 .stages-text-right {
   padding-right: 0;
   padding-left: 120px;
 }
 
-/* line 1574, ../../sass/hireman/main.scss */
+/* line 1747, ../../sass/hireman/main.scss */
 .stages-text-large {
   padding-right: 84px;
 }
 
-/* line 1577, ../../sass/hireman/main.scss */
+/* line 1750, ../../sass/hireman/main.scss */
 .stages-text-header {
   margin-bottom: 15px;
   font-size: 33px;
   line-height: 35px;
-  color: #745ca2;
+  color: white;
 }
 
-/* line 1583, ../../sass/hireman/main.scss */
+/* line 1756, ../../sass/hireman/main.scss */
 .stages-text-content {
-  font: 18px/20px 'NeoSansPro-Light', sans-serif;
-  color: #6d6e71;
+  font: 22px/24px 'NeoSansPro-Light', sans-serif;
+  color: white;
 }
 
-/* line 1587, ../../sass/hireman/main.scss */
+/* line 1761, ../../sass/hireman/main.scss */
 .stages-image {
   position: relative;
   display: table-cell;
@@ -2080,7 +2260,7 @@ input[type="checkbox"] + label {
   vertical-align: middle;
 }
 
-/* line 1594, ../../sass/hireman/main.scss */
+/* line 1768, ../../sass/hireman/main.scss */
 .svg-mask {
   position: absolute;
   top: 0;
@@ -2088,9 +2268,18 @@ input[type="checkbox"] + label {
   width: 515px;
   height: 365px;
 }
+/* line 1775, ../../sass/hireman/main.scss */
+.svg-mask + img {
+  position: absolute;
+  top: 2.5%;
+  right: 2.5%;
+  width: 95%;
+  height: 95%;
+}
 
-/* line 1601, ../../sass/hireman/main.scss */
+/* line 1783, ../../sass/hireman/main.scss */
 .step-counter {
+  border: 1px solid white;
   position: absolute;
   display: block;
   top: 172px;
@@ -2106,46 +2295,58 @@ input[type="checkbox"] + label {
   vertical-align: middle;
 }
 
-/* line 1616, ../../sass/hireman/main.scss */
+/* line 1801, ../../sass/hireman/main.scss */
 .step-counter-right {
   left: auto;
   right: -33px;
 }
 
-/* line 1620, ../../sass/hireman/main.scss */
+/* line 1805, ../../sass/hireman/main.scss */
 .column-container .buttons-area {
   margin-top: 75px;
 }
 
-/* line 1623, ../../sass/hireman/main.scss */
+/* line 1808, ../../sass/hireman/main.scss */
 .btn-polygon-violet {
   color: #745ca2;
   background: url('../../images/border-violet.svg?1441543074') 0 0 no-repeat;
 }
 
-/* line 1627, ../../sass/hireman/main.scss */
+/* line 1812, ../../sass/hireman/main.scss */
 .btn-polygon-violet:hover {
   background: url('../../images/button-violet.svg?1441543074') 0 0 no-repeat;
 }
 
-/* line 1630, ../../sass/hireman/main.scss */
+/* line 1815, ../../sass/hireman/main.scss */
 .btn-polygon-violet:active {
   background: url('../../images/button-violet-pressed.svg?1441543074') 0 0 no-repeat;
 }
 
 /*How It Work Screen End*/
 /*Pros Screen Start*/
-/* line 1635, ../../sass/hireman/main.scss */
+/* line 1822, ../../sass/hireman/main.scss */
+.main-screen-wrapper-violet-invert {
+  background: #584681;
+  background: -moz-linear-gradient(top, #584681 0%, #5d4a88 3%, #735ba7 13%, #735ba7 13%, #735ba7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #584681), color-stop(3%, #5d4a88), color-stop(13%, #735ba7), color-stop(13%, #735ba7), color-stop(100%, #735ba7));
+  background: -webkit-linear-gradient(top, #584681 0%, #5d4a88 3%, #735ba7 13%, #735ba7 13%, #735ba7 100%);
+  background: -o-linear-gradient(top, #584681 0%, #5d4a88 3%, #735ba7 13%, #735ba7 13%, #735ba7 100%);
+  background: -ms-linear-gradient(top, #584681 0%, #5d4a88 3%, #735ba7 13%, #735ba7 13%, #735ba7 100%);
+  background: linear-gradient(to bottom, #584681 0%, #5d4a88 3%, #735ba7 13%, #735ba7 13%, #735ba7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#584681', endColorstr='#735ba7',GradientType=0 );
+}
+
+/* line 1835, ../../sass/hireman/main.scss */
 .find-screen-wrapper-green {
   background-color: #8bc196;
 }
 
-/* line 1638, ../../sass/hireman/main.scss */
+/* line 1838, ../../sass/hireman/main.scss */
 .column-shorted {
   margin: 50px 106px 50px;
 }
 
-/* line 1641, ../../sass/hireman/main.scss */
+/* line 1841, ../../sass/hireman/main.scss */
 .column-icon-clock-large,
 .column-icon-purse-large,
 .column-icon-globe-large,
@@ -2155,50 +2356,50 @@ input[type="checkbox"] + label {
   margin-bottom: 33px;
 }
 
-/* line 1649, ../../sass/hireman/main.scss */
+/* line 1849, ../../sass/hireman/main.scss */
 .column-icon-clock-large {
   background-position: -152px -114px;
 }
 
-/* line 1652, ../../sass/hireman/main.scss */
+/* line 1852, ../../sass/hireman/main.scss */
 .column-icon-purse-large {
   background-position: -281px -96px;
 }
 
-/* line 1655, ../../sass/hireman/main.scss */
+/* line 1855, ../../sass/hireman/main.scss */
 .column-icon-globe-large {
   background-position: -404px -114px;
 }
 
-/* line 1658, ../../sass/hireman/main.scss */
+/* line 1858, ../../sass/hireman/main.scss */
 .column-icon-double-large {
   width: 128px;
   background-position: -525px -132px;
   margin: 20px 0 10px 70px;
 }
 
-/* line 1663, ../../sass/hireman/main.scss */
+/* line 1863, ../../sass/hireman/main.scss */
 .column-content-white {
   font-size: 23px;
   line-height: 25px;
   color: #fff;
 }
 
-/* line 1669, ../../sass/hireman/main.scss */
+/* line 1869, ../../sass/hireman/main.scss */
 .column-icon-video {
   width: 130px;
   height: 110px;
   background: url('../../images/video.png?1441543075') no-repeat center top;
 }
 
-/* line 1675, ../../sass/hireman/main.scss */
+/* line 1875, ../../sass/hireman/main.scss */
 .column-icon-camera {
   width: 110px;
   height: 110px;
   background: url('../../images/camera.png?1441543074') no-repeat center top;
 }
 
-/* line 1681, ../../sass/hireman/main.scss */
+/* line 1881, ../../sass/hireman/main.scss */
 .column-icon-question {
   width: 132px;
   height: 110px;
@@ -2207,42 +2408,42 @@ input[type="checkbox"] + label {
 
 /*Pros Screen End*/
 /*Tarifs Screen Start*/
-/* line 1688, ../../sass/hireman/main.scss */
+/* line 1888, ../../sass/hireman/main.scss */
 .screen-header-black {
   color: #262424;
 }
 
-/* line 1691, ../../sass/hireman/main.scss */
+/* line 1891, ../../sass/hireman/main.scss */
 .table-wrapper {
   margin-bottom: 35px;
 }
 
-/* line 1694, ../../sass/hireman/main.scss */
+/* line 1894, ../../sass/hireman/main.scss */
 .tafirs-table {
   width: 100%;
   color: #686765;
   border-spacing: 0;
 }
 
-/* line 1699, ../../sass/hireman/main.scss */
+/* line 1899, ../../sass/hireman/main.scss */
 .tafirs-table thead td {
   font-size: 33px;
   line-height: 67px;
   text-align: center;
 }
 
-/* line 1704, ../../sass/hireman/main.scss */
+/* line 1904, ../../sass/hireman/main.scss */
 .tafirs-table thead td:nth-of-type(2) {
   text-transform: uppercase;
 }
 
-/* line 1707, ../../sass/hireman/main.scss */
+/* line 1907, ../../sass/hireman/main.scss */
 .tafirs-table thead td:nth-of-type(3) {
   color: #f15354;
   text-transform: uppercase;
 }
 
-/* line 1711, ../../sass/hireman/main.scss */
+/* line 1911, ../../sass/hireman/main.scss */
 .tafirs-table tbody td {
   position: relative;
   padding: 25px 55px;
@@ -2253,43 +2454,43 @@ input[type="checkbox"] + label {
   border-left: 1px solid #686765;
 }
 
-/* line 1720, ../../sass/hireman/main.scss */
+/* line 1920, ../../sass/hireman/main.scss */
 .tafirs-table tbody td:last-child {
   border-right: 1px solid #686765;
 }
 
-/* line 1723, ../../sass/hireman/main.scss */
+/* line 1923, ../../sass/hireman/main.scss */
 .tafirs-table tbody td:first-child {
   width: 70%;
   text-align: left;
 }
 
-/* line 1727, ../../sass/hireman/main.scss */
+/* line 1927, ../../sass/hireman/main.scss */
 .tafirs-table tbody tr:first-child td:first-child {
   border-top-left-radius: 15px;
 }
 
-/* line 1730, ../../sass/hireman/main.scss */
+/* line 1930, ../../sass/hireman/main.scss */
 .tafirs-table tbody tr:first-child td:last-child {
   border-top-right-radius: 15px;
 }
 
-/* line 1733, ../../sass/hireman/main.scss */
+/* line 1933, ../../sass/hireman/main.scss */
 .tafirs-table tbody tr:last-child td {
   border-bottom: 1px solid #686765;
 }
 
-/* line 1736, ../../sass/hireman/main.scss */
+/* line 1936, ../../sass/hireman/main.scss */
 .tafirs-table tbody tr:last-child td:first-child {
   border-bottom-left-radius: 15px;
 }
 
-/* line 1739, ../../sass/hireman/main.scss */
+/* line 1939, ../../sass/hireman/main.scss */
 .tafirs-table tbody tr:last-child td:last-child {
   border-bottom-right-radius: 15px;
 }
 
-/* line 1742, ../../sass/hireman/main.scss */
+/* line 1942, ../../sass/hireman/main.scss */
 .checked-gray,
 .checked-pink {
   display: block;
@@ -2299,40 +2500,40 @@ input[type="checkbox"] + label {
   height: 30px;
   margin-top: -15px;
   margin-left: -15px;
-  background: url('../../images/sprite.png?1441543075') -2px -358px no-repeat;
+  background: url('../../images/sprite.png?1441570333') -2px -358px no-repeat;
 }
 
-/* line 1753, ../../sass/hireman/main.scss */
+/* line 1953, ../../sass/hireman/main.scss */
 .checked-pink {
   background-position: -2px -392px;
 }
 
-/* line 1756, ../../sass/hireman/main.scss */
+/* line 1956, ../../sass/hireman/main.scss */
 strong {
   color: red;
 }
 
-/* line 1759, ../../sass/hireman/main.scss */
+/* line 1959, ../../sass/hireman/main.scss */
 .tab-quote {
   padding: 25px 0 0 55px;
   text-align: left;
 }
-/* line 1762, ../../sass/hireman/main.scss */
+/* line 1962, ../../sass/hireman/main.scss */
 .tab-quote a {
   text-decoration: underline;
 }
 
-/* line 1767, ../../sass/hireman/main.scss */
+/* line 1967, ../../sass/hireman/main.scss */
 .stages-tarifs-form {
   margin-bottom: 0;
 }
 
-/* line 1770, ../../sass/hireman/main.scss */
+/* line 1970, ../../sass/hireman/main.scss */
 .stages-tarifs-form .stages-text {
   padding: 0;
 }
 
-/* line 1773, ../../sass/hireman/main.scss */
+/* line 1973, ../../sass/hireman/main.scss */
 .stages-tarifs-form .stages-text-header {
   font-size: 37px;
   line-height: 39px;
@@ -2341,18 +2542,18 @@ strong {
   font-family: 'NeoSansPro-Light', sans-serif;
 }
 
-/* line 1780, ../../sass/hireman/main.scss */
+/* line 1980, ../../sass/hireman/main.scss */
 .get-tarifs {
   text-align: center;
 }
 
-/* line 1786, ../../sass/hireman/main.scss */
+/* line 1986, ../../sass/hireman/main.scss */
 .get-tarifs .bordered-light:focus {
   color: #626261;
   border-color: #626261;
 }
 
-/* line 1790, ../../sass/hireman/main.scss */
+/* line 1990, ../../sass/hireman/main.scss */
 .btn-gray {
   float: left;
   margin: 0 4px;
@@ -2361,14 +2562,14 @@ strong {
   border-color: #ABAAA8;
 }
 
-/* line 1797, ../../sass/hireman/main.scss */
+/* line 1997, ../../sass/hireman/main.scss */
 .btn-gray:hover {
   color: #fff;
   background-color: #626261;
   border-color: #626261;
 }
 
-/* line 1802, ../../sass/hireman/main.scss */
+/* line 2002, ../../sass/hireman/main.scss */
 .btn-gray:active {
   color: #fff;
   background-color: #7F8083;
@@ -2381,7 +2582,7 @@ strong {
 Vacancy Page End
 -------------------------
 */
-/* line 1813, ../../sass/hireman/main.scss */
+/* line 2013, ../../sass/hireman/main.scss */
 #lean_overlay {
   position: fixed;
   z-index: 10005;
@@ -2393,7 +2594,7 @@ Vacancy Page End
   display: none;
 }
 
-/* line 1823, ../../sass/hireman/main.scss */
+/* line 2023, ../../sass/hireman/main.scss */
 .modal-entrance {
   display: none;
   width: 490px;
@@ -2407,7 +2608,7 @@ Vacancy Page End
   -moz-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* line 1835, ../../sass/hireman/main.scss */
+/* line 2035, ../../sass/hireman/main.scss */
 .close-modal {
   position: absolute;
   display: block;
@@ -2416,38 +2617,38 @@ Vacancy Page End
   width: 23px;
   height: 23px;
   text-indent: -9999px;
-  background: url('../../images/sprite.png?1441543075') -3px -427px no-repeat;
+  background: url('../../images/sprite.png?1441570333') -3px -427px no-repeat;
   outline: none;
 }
 
-/* line 1846, ../../sass/hireman/main.scss */
+/* line 2046, ../../sass/hireman/main.scss */
 .modal-header-wrapper {
   padding: 35px 45px 20px;
   border-bottom: 1px solid #d9e2e3;
 }
 
-/* line 1850, ../../sass/hireman/main.scss */
+/* line 2050, ../../sass/hireman/main.scss */
 .modal-header {
   font: 26px/28px 'NeoSansPro-Light', sans-serif;
 }
 
-/* line 1853, ../../sass/hireman/main.scss */
+/* line 2053, ../../sass/hireman/main.scss */
 .modal-content-wrapper {
   padding: 40px 45px 0;
 }
 
-/* line 1856, ../../sass/hireman/main.scss */
+/* line 2056, ../../sass/hireman/main.scss */
 .modal-form {
   position: relative;
   margin: -13px 0;
 }
 
-/* line 1860, ../../sass/hireman/main.scss */
+/* line 2060, ../../sass/hireman/main.scss */
 .modal-form .input-wrapper {
   margin: 0;
 }
 
-/* line 1863, ../../sass/hireman/main.scss */
+/* line 2063, ../../sass/hireman/main.scss */
 .bordered-modal {
   width: 100%;
   margin: 13px 0;
@@ -2457,18 +2658,18 @@ Vacancy Page End
   border-color: #bfced0;
 }
 
-/* line 1871, ../../sass/hireman/main.scss */
+/* line 2071, ../../sass/hireman/main.scss */
 .bordered-modal::placeholder {
   color: #bfced0;
 }
 
-/* line 1874, ../../sass/hireman/main.scss */
+/* line 2074, ../../sass/hireman/main.scss */
 .bordered-modal:focus {
   color: #fff;
   border-color: #fff;
 }
 
-/* line 1878, ../../sass/hireman/main.scss */
+/* line 2078, ../../sass/hireman/main.scss */
 .btn-modal {
   display: block;
   margin: 13px auto;
@@ -2477,21 +2678,21 @@ Vacancy Page End
   border-color: #fff;
 }
 
-/* line 1885, ../../sass/hireman/main.scss */
+/* line 2085, ../../sass/hireman/main.scss */
 .btn-modal:hover {
   color: #71a0a1;
   background-color: #bfced0;
   border-color: #bfced0;
 }
 
-/* line 1890, ../../sass/hireman/main.scss */
+/* line 2090, ../../sass/hireman/main.scss */
 .btn-modal:active {
   color: #71a0a1;
   background-color: #d1dcdd;
   border-color: #d1dcdd;
 }
 
-/* line 1895, ../../sass/hireman/main.scss */
+/* line 2095, ../../sass/hireman/main.scss */
 .forgot-password {
   display: block;
   margin-top: 30px;
@@ -2500,58 +2701,58 @@ Vacancy Page End
   font-family: 'NeoSansPro-Light', sans-serif;
 }
 
-/* line 1902, ../../sass/hireman/main.scss */
+/* line 2102, ../../sass/hireman/main.scss */
 .user-conditions-modal {
   margin: 27px 0 15px;
 }
 
-/* line 1905, ../../sass/hireman/main.scss */
+/* line 2105, ../../sass/hireman/main.scss */
 .modal-enter-link {
   color: #fff;
 }
 
-/* line 1908, ../../sass/hireman/main.scss */
+/* line 2108, ../../sass/hireman/main.scss */
 .modal-enter-link:hover {
   color: #d9e2e3;
 }
 
-/* line 1911, ../../sass/hireman/main.scss */
+/* line 2111, ../../sass/hireman/main.scss */
 .user-license,
 .forgot-password {
   color: #d9e2e3;
 }
 
-/* line 1915, ../../sass/hireman/main.scss */
+/* line 2115, ../../sass/hireman/main.scss */
 .user-license:hover,
 .forgot-password:hover {
   color: #fff;
 }
 
-/* line 1919, ../../sass/hireman/main.scss */
+/* line 2119, ../../sass/hireman/main.scss */
 .success-registered {
   color: #d9e2e3;
 }
 
-/* line 1922, ../../sass/hireman/main.scss */
+/* line 2122, ../../sass/hireman/main.scss */
 .modal-footer {
   padding: 30px 45px 20px;
   text-align: center;
   font-family: 'NeoSansPro-Light', sans-serif;
 }
 
-/* line 1927, ../../sass/hireman/main.scss */
+/* line 2127, ../../sass/hireman/main.scss */
 .modal-enter-link,
 .yet-registered {
   margin: 0 8px;
 }
 
-/* line 1931, ../../sass/hireman/main.scss */
+/* line 2131, ../../sass/hireman/main.scss */
 .modal-enter-link {
   position: relative;
   padding-left: 10px;
 }
 
-/* line 1935, ../../sass/hireman/main.scss */
+/* line 2135, ../../sass/hireman/main.scss */
 .modal-enter-link:before {
   content: '';
   position: relative;
@@ -2560,21 +2761,21 @@ Vacancy Page End
   left: -5px;
   width: 13px;
   height: 18px;
-  background: url('../../images/sprite.png?1441543075') -47px -382px no-repeat;
+  background: url('../../images/sprite.png?1441570333') -47px -382px no-repeat;
 }
 
-/* line 1945, ../../sass/hireman/main.scss */
+/* line 2145, ../../sass/hireman/main.scss */
 .modal-enter-link-nobg {
   padding: 0;
 }
 
-/* line 1948, ../../sass/hireman/main.scss */
+/* line 2148, ../../sass/hireman/main.scss */
 .modal-enter-link-nobg:before {
   width: 0;
   background: none;
 }
 
-/* line 1952, ../../sass/hireman/main.scss */
+/* line 2152, ../../sass/hireman/main.scss */
 .modal-enter-link:hover:before {
   background-position: -47px -359px;
 }

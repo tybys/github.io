@@ -1632,6 +1632,21 @@ input:focus {
                 }
 /*How It Work Screen End*/
 /*Pros Screen Start*/
+
+//$tabasov
+
+.main-screen-wrapper-violet-invert {
+  background: #735ba7;
+  background: -moz-linear-gradient(top,  #735ba7 0%, #5d4a88 80%, #584681 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#735ba7), color-stop(80%,#5d4a88), color-stop(100%,#584681));
+  background: -webkit-linear-gradient(top,  #735ba7 0%,#5d4a88 80%,#584681 100%);
+  background: -o-linear-gradient(top,  #735ba7 0%,#5d4a88 80%,#584681 100%);
+  background: -ms-linear-gradient(top,  #735ba7 0%,#5d4a88 80%,#584681 100%);
+  background: linear-gradient(to bottom,  #735ba7 0%,#5d4a88 80%,#584681 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#735ba7', endColorstr='#584681',GradientType=0 );
+}
+
+
 .find-screen-wrapper-green {
     background-color: #8bc196;
 }
