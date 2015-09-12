@@ -52,7 +52,7 @@ body {
   transform: translate(0, 0);
   transition: transform 0.5s ease;
   -webkit-transform: translate(0, 0);
-  -webkit-transition: transform 0.5s ease;
+  -webkit-transition: -webkit-transform 0.5s ease;
 }
 body .cap ul {
   display: none;
@@ -61,7 +61,7 @@ body .cap ul {
   transform: translate(-84%, 0);
   transition: transform 0.5s ease;
   -webkit-transform: translate(-84%, 0);
-  -webkit-transition: transform 0.5s ease;
+  -webkit-transition: -webkit-transform 0.5s ease;
 }
 .m-opened .cap ul {
   display: block;
