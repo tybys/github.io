@@ -9,6 +9,38 @@ body {
 @catlink: rgb(224, 81, 71);
 
 //
+.buttons {
+	display: block;
+	max-width: 231px;
+	height: 50px;
+	line-height: 54px;
+	background: transparent;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	margin: 0 auto;
+	text-align: center;
+	&:hover {
+		color: white;
+		text-decoration: none;
+	}
+	&.show {
+		background: #ea5245;
+		i {
+			background: url('../images/show-ico.png') no-repeat;
+			width: 16px;
+			height: 13px;
+			display: inline-block;
+			position: relative;
+			left: 13px;
+			top: -1px;
+			vertical-align: middle;
+		}
+	}
+}
+
+//
 #nav-toggle {
 	position: absolute;
 	right: 18px;
