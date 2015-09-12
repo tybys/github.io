@@ -3,67 +3,19 @@
   <component name="LessManager">
     <option name="lessProfileMap">
       <map>
-        <entry key="15">
+        <entry key="19">
           <value>
             <LessProfile>
               <option name="cssDirectories">
                 <list>
                   <CssDirectory>
-                    <option name="path" value="D:\te\tybys\es" />
+                    <option name="path" value="$PROJECT_DIR$/supermarine/css" />
                   </CssDirectory>
                 </list>
               </option>
-              <option name="id" value="15" />
-              <option name="lessDirPath" value="D:\te\tybys\es" />
-              <option name="name" value="sdfsdf" />
-            </LessProfile>
-          </value>
-        </entry>
-        <entry key="16">
-          <value>
-            <LessProfile>
-              <option name="cssDirectories">
-                <list>
-                  <CssDirectory>
-                    <option name="path" value="D:\te\tybys\rb" />
-                  </CssDirectory>
-                </list>
-              </option>
-              <option name="id" value="16" />
-              <option name="lessDirPath" value="D:\te\tybys\rb" />
-              <option name="name" value="sd" />
-            </LessProfile>
-          </value>
-        </entry>
-        <entry key="17">
-          <value>
-            <LessProfile>
-              <option name="cssDirectories">
-                <list>
-                  <CssDirectory>
-                    <option name="path" value="D:\te\tybys\showcase\less" />
-                  </CssDirectory>
-                </list>
-              </option>
-              <option name="id" value="17" />
-              <option name="lessDirPath" value="D:\te\tybys\showcase\less" />
-              <option name="name" value="sc" />
-            </LessProfile>
-          </value>
-        </entry>
-        <entry key="18">
-          <value>
-            <LessProfile>
-              <option name="cssDirectories">
-                <list>
-                  <CssDirectory>
-                    <option name="path" value="D:\src\github\tybys\showcase\less" />
-                  </CssDirectory>
-                </list>
-              </option>
-              <option name="id" value="18" />
-              <option name="lessDirPath" value="D:\src\github\tybys\showcase\less" />
-              <option name="name" value="sfsdf" />
+              <option name="id" value="19" />
+              <option name="lessDirPath" value="$PROJECT_DIR$/supermarine/boots-less" />
+              <option name="name" value="supermarine" />
             </LessProfile>
           </value>
         </entry>
@@ -71,4 +23,3 @@
     </option>
   </component>
 </project>
-
