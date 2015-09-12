@@ -7,6 +7,55 @@ body {
 @darkblue: rgb(27, 33, 62);
 @darkred: rgb(237, 63, 51);
 @catlink: rgb(224, 81, 71);
+@redbutton: rgb(233, 65, 55);
+
+//
+.buttons-area {
+	&:after {
+		content: '';
+		width: 100%;
+		height: 1px;
+		display: block;
+		clear: both;
+	}
+}
+
+//
+.soc-cont {
+	padding: 0 20px;
+	text-align: center;
+	position: relative;
+	min-height: 269px;
+	.sel {
+		span {
+			background: #4380ac;
+			color: white;
+		}
+	}
+	& > div {
+		position: absolute;
+		top: 0;
+		left: 20px;
+		span {
+			display: block;
+			width: 139px;
+			height: 39px;
+			line-height: 43px;
+			background: transparent;
+			font-size: 16px;
+			float: left;
+		}
+		div {
+
+		}
+		
+		&:last-of-type {
+			span {
+				float: right;
+			}
+		}
+	}
+}
 
 //
 .buttons {
@@ -26,7 +75,7 @@ body {
 		text-decoration: none;
 	}
 	&.show {
-		background: #ea5245;
+		background: @redbutton;
 		i {
 			background: url('../images/show-ico.png') no-repeat;
 			width: 16px;
@@ -36,6 +85,96 @@ body {
 			left: 13px;
 			top: -1px;
 			vertical-align: middle;
+		}
+	}
+
+	&.query {
+		margin-bottom: 12px;
+		background: @darkred;
+		font-size: 18px;
+		text-transform: none;
+		max-width: 300px;
+		i {
+			background: url('../images/check.png') no-repeat;
+			width: 19px;
+			height: 20px;
+			display: inline-block;
+			position: relative;
+			left: -10px;
+			top: -1px;
+			vertical-align: middle;
+		}
+	}
+	&.credit {
+		margin-top: 12px;
+		background: @redbutton;
+		font-size: 18px;
+		text-transform: none;
+		max-width: 300px;
+		i {
+			background: url('../images/time.png') no-repeat;
+			width: 20px;
+			height: 20px;
+			display: inline-block;
+			position: relative;
+			left: -10px;
+			top: -1px;
+			vertical-align: middle;
+		}
+	}
+
+	&.price {
+		margin-top: 2px;
+		margin-bottom: 2px;
+		font-size: 30px;
+		line-height: 57px;
+		text-transform: uppercase;
+		color: black;
+		background: white;
+		max-width: 300px;
+		span {
+			text-transform: none;
+		}
+	}
+
+	&.catalog {
+		margin-bottom: 12px;
+		background: @redbutton;
+		font-size: 18px;
+		text-transform: none;
+		max-width: 300px;
+		i {
+			background: url('../images/tocat.png') no-repeat;
+			width: 18px;
+			height: 15px;
+			display: inline-block;
+			position: relative;
+			left: -10px;
+			top: -1px;
+			vertical-align: middle;
+		}
+	}
+	&.available {
+		margin-bottom: 12px;
+		background: @redbutton;
+		font-size: 18px;
+		text-transform: none;
+		max-width: 300px;
+	}
+	&.pair {
+		float: left;
+		width: 50%;
+		background: @darkblue;
+		font-size: 15px;
+		text-transform: none;
+		height: auto;
+		max-width: 149px;
+		margin: 0 0 0 10px;
+
+		&:last-of-type {
+			margin-left: 0;
+			margin-right: 10px;
+			float: right;
 		}
 	}
 }
@@ -418,6 +557,189 @@ body {
 			&:before {right: -20px}
 		}
 	}
+
+	//
+	&.item-card {
+		.item {
+			display: block;
+			width: 100%;
+
+			& ~ span {
+				display: block;
+				width: 100%;
+				height: 50px;
+				line-height: 53px;
+				color: white;
+				font-size: 18px;
+				background: #003b8b;
+				text-align: center;
+			}
+		}
+
+		.category {
+			&.purple {
+				background: rgb(255, 255, 255);
+
+				& > a {
+					background: rgb(51, 51, 63);
+				}
+				i {
+					background-color: rgb(37, 37, 46);
+				}
+
+				ul {
+					width: 90%;
+					display: none;
+					margin: 0;
+					padding: 10px 0 6px 20px;
+					text-align: left;
+					text-transform: none;
+					list-style-type: square;
+				}
+				li {
+					margin: 0 0 0 20px;
+					margin-bottom: 30px;
+					color: @darkred;
+					span {
+						color: black;
+					}
+					&:first-of-type {
+						margin-left: 0;
+					}
+					a {
+						display: block;
+						font-size: 16px;
+						color: white;
+					}
+				}
+			}
+			&.opened {
+				i {
+					transform: rotate(180deg);
+					-webkit-transform: rotate(180deg);
+					-moz-transform: rotate(180deg);
+					-ms-transform: rotate(180deg);
+				}
+			}
+		}
+
+		.category {
+			background: rgb(221, 57, 52);
+			& > a {
+				// $temp shit
+
+				font-size: 14px;
+				color: white;
+
+				text-transform: uppercase;
+				text-decoration: none;
+
+				position: relative;
+				height: 50px;
+				width: 100%;
+				padding: 18px 14px 12px 14px;
+
+				background: @catlink;
+
+				//text-align: center;
+				vertical-align: middle;
+				display: inline-block;
+				display: -webkit-inline-box;
+				display: -moz-inline-box;
+				display: -ms-inline-flexbox;
+				display: -webkit-inline-flex;
+				display: inline-flex;
+				/* vertical centering for legacy, horizontal centering for modern */
+				-webkit-box-pack: center;
+				-moz-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: left;
+				/* modern Flexbox only */
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+				/* legacy Flexbox only */
+				-webkit-box-orient: vertical;
+				-moz-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-moz-box-direction: normal;
+				span {
+					width: 85%;
+				}
+				i {
+					position: absolute;
+					top: 0;
+					right: 0;
+					display: block;
+					width: 50px;
+					height: 50px;
+					background: url('../images/catarow.png') rgb(221, 57, 52) no-repeat center;
+				}
+			}
+			a {
+				text-decoration: none;
+				&:first-child {
+
+				}
+
+				span {}
+			}
+			ul {
+				display: none;
+				list-style-type: none;
+				margin: 0;
+				padding: 10px 0 6px 0;
+				text-align: center;
+				text-transform: uppercase;
+
+			}
+			li {
+				color: white;
+				a {
+					line-height: 30px;
+					display: block;
+					font-size: 14px;
+					color: white;
+				}
+			}
+		}
+	}
+
+	&.similiar {
+		.col-xs-12 {
+			padding: 0 44px;
+			margin-bottom: 17px;
+			img {
+				border: 4px solid white;
+				margin-bottom: 3px;
+				display: block;
+				width: 100%;
+			}
+		}
+		.sim-item {
+			border: 1px solid #bfbdbd;
+			color: white;
+			padding: 25px;
+			text-align: left;
+			a {
+				color: @darkblue;
+				font-size: 18px;
+				text-transform: uppercase;
+			}
+			span {
+				color: #5b5b5b;
+				text-transform: uppercase;
+				font-size: 18px;
+				display: block;
+			}
+			p {
+				font-size: 16px;
+				color: black;
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 
 //footer
@@ -682,7 +1004,7 @@ p.copyrightmarine2 a {
 	text-align: center;
 	font-size: 18px;
 	color: #464d65;
-	margin-top: 7px;
+	margin-top: 13px;
 	margin-bottom: 0;
 }
 .megahr {
