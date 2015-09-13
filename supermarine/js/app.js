@@ -3,6 +3,29 @@
  */
 (function ($) {
 	$(function () {
+		var mainSl = $('.slide').bxSlider({
+			mode: 'horizontal',
+			controls: true,
+			infiniteLoop: true,
+			//auto: true,
+			//pager: true,
+			pagerActiveClass: 'active',
+			pagerCustom: '#slmenu',
+			pause: 10000,
+			speed: 1000
+		});
+
+		// footer cols height, in css file :1243.less, .foot_clear column-count
+		var col = $('.foot_clear').find('.col-sm-4');
+
+		$.each($(col), function (key, val) {
+			var h = $(this).height()
+
+			$(this).css('height', h);
+		});
+
+		// string $abstract
+
 		$('#nav-toggle').click(function () {
 			$('body').toggleClass('m-opened');
 
