@@ -34,7 +34,7 @@
 			$('.cap').find('ul').height(wh);
 		});
 
-		$('.centering').width('auto');
+		$('.centering').width('100%');
 
 		//title
 		$('.title').on('click', '.arrows', function () {
