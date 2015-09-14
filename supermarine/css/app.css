@@ -227,7 +227,7 @@ body {
   background: #e94137;
 }
 .buttons.show i {
-  background: url('http://supermarine.ru/images/show-ico.png') no-repeat;
+  background: url('../images/show-ico.png') no-repeat;
   width: 16px;
   height: 13px;
   display: inline-block;
@@ -512,7 +512,7 @@ body .cap ul {
   -ms-transform: rotate(180deg);
 }
 .row.items .category {
-  background: #dd3934;
+  background: #ea5245;
 }
 .row.items .category > a {
   font-size: 14px;
@@ -523,7 +523,7 @@ body .cap ul {
   height: 50px;
   width: 100%;
   padding: 18px 14px 12px 14px;
-  background: #e05147;
+  background: #ec6a5a;
   vertical-align: middle;
   display: inline-block;
   display: -webkit-inline-box;
@@ -557,7 +557,7 @@ body .cap ul {
   display: block;
   width: 50px;
   height: 50px;
-  background: url('../images/catarow.png') #dd3934 no-repeat center;
+  background: url('../images/pink_arrow.png') #ea5245 no-repeat center;
 }
 .row.items .category a {
   text-decoration: none;
@@ -704,9 +704,6 @@ body .cap ul {
 .row.content .address p img {
   float: left;
 }
-.row.content .address p:last-of-type {
-  padding: 0 65px;
-}
 .row.content h2,
 .row.content h1 {
   font-size: 18px;
@@ -761,6 +758,14 @@ body .cap ul {
 .row.item-card .category {
   margin-bottom: 2px;
 }
+.row.item-card .category.white {
+  background: white;
+  font-size: 14px;
+}
+.row.item-card .category.white li {
+  text-transform: none;
+  color: black;
+}
 .row.item-card .category.purple {
   background: #ffffff;
 }
@@ -769,6 +774,7 @@ body .cap ul {
 }
 .row.item-card .category.purple i {
   background-color: #25252e;
+  background-image: url('../images/purple_arrow.png');
 }
 .row.item-card .category.purple ul {
   width: 90%;
@@ -814,7 +820,7 @@ body .cap ul {
   height: 50px;
   width: 100%;
   padding: 18px 14px 12px 14px;
-  background: #e05147;
+  background: #ec6a5a;
   vertical-align: middle;
   display: inline-block;
   display: -webkit-inline-box;
@@ -848,7 +854,7 @@ body .cap ul {
   display: block;
   width: 50px;
   height: 50px;
-  background: url('../images/catarow.png') #dd3934 no-repeat center;
+  background: url('../images/pink_arrow.png') #ea5245 no-repeat center;
 }
 .row.item-card .category a {
   text-decoration: none;
@@ -891,6 +897,7 @@ body .cap ul {
 .row.similiar .sim-item {
   border: 1px solid #bfbdbd;
   color: white;
+  background: white;
   padding: 25px;
   text-align: left;
 }
@@ -1402,5 +1409,19 @@ p.copyrightmarine2 a {
     padding: 0 18px;
     display: inline-block;
     vertical-align: top;
+  }
+  .centering {
+    width: 100% !important;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .centering a:nth-of-type(2) {
+    padding: 0 25px !important;
+  }
+  .centering a:nth-of-type(3) {
+    padding: 0 22px !important;
+  }
+  .centering a:nth-of-type(4) {
+    padding: 0 23px !important;
   }
 }

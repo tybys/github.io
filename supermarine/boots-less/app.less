@@ -6,8 +6,11 @@ body {
 // vars
 @darkblue: rgb(27, 33, 62);
 @darkred: rgb(237, 63, 51);
-@catlink: rgb(224, 81, 71);
+@catlink: #ec6a5a;
 @redbutton: rgb(233, 65, 55);
+
+
+@arrows: #ea5245;
 
 //ipads slider
 .banner .hidden-xs {
@@ -278,7 +281,7 @@ body {
 	&.show {
 		background: @redbutton;
 		i {
-			background: url('http://supermarine.ru/images/show-ico.png') no-repeat;
+			background: url('../images/show-ico.png') no-repeat;
 			width: 16px;
 			height: 13px;
 			display: inline-block;
@@ -599,7 +602,8 @@ body {
 			}
 		}
 		.category {
-			background: rgb(221, 57, 52);
+			//background: rgb(221, 57, 52);
+			background: #ea5245;
 			& > a {
 				// $temp shit
 
@@ -649,7 +653,7 @@ body {
 					display: block;
 					width: 50px;
 					height: 50px;
-					background: url('../images/catarow.png') rgb(221, 57, 52) no-repeat center;
+					background: url('../images/pink_arrow.png') @arrows no-repeat center;
 				}
 			}
 			a {
@@ -820,7 +824,7 @@ body {
 					float: left;
 				}
 				&:last-of-type {
-					padding: 0 65px;
+//					padding: 0 55px;
 				}
 			}
 		}
@@ -882,6 +886,15 @@ body {
 
 		.category {
 			margin-bottom: 2px;
+			&.white {
+				background: white;
+				font-size: 14px;
+
+				li {
+					text-transform: none;
+					color: black;
+				}
+			}
 			&.purple {
 				background: rgb(255, 255, 255);
 
@@ -890,6 +903,7 @@ body {
 				}
 				i {
 					background-color: rgb(37, 37, 46);
+					background-image: url('../images/purple_arrow.png');
 				}
 
 				ul {
@@ -980,7 +994,7 @@ body {
 					display: block;
 					width: 50px;
 					height: 50px;
-					background: url('../images/catarow.png') rgb(221, 57, 52) no-repeat center;
+					background: url('../images/pink_arrow.png') @arrows no-repeat center;
 				}
 			}
 			a {
@@ -1034,6 +1048,7 @@ body {
 		.sim-item {
 			border: 1px solid #bfbdbd;
 			color: white;
+			background: white;
 			padding: 25px;
 			text-align: left;
 			a {
@@ -1691,5 +1706,19 @@ body {
 			display: inline-block;
 			vertical-align: top;
 		}
+	}
+	.centering {
+		width: 100% !important;
+	}
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+	.centering a:nth-of-type(2) {
+		padding: 0 25px !important;
+	}
+	.centering a:nth-of-type(3) {
+		padding: 0 22px !important;
+	}
+	.centering a:nth-of-type(4) {
+		padding: 0 23px !important;
 	}
 }
