@@ -255,7 +255,7 @@ body {
 }
 .buttons.credit {
   margin-top: 12px;
-  background: #ca343a;
+  background: #e94137;
   font-size: 18px;
   text-transform: none;
   max-width: 300px;
@@ -1155,6 +1155,7 @@ body .cap ul {
     margin-right: 4px;
   }
   .row.item-card .buttons.query {
+    background: #ca343a;
     margin-right: 0;
   }
   .row.similiar {
@@ -1423,5 +1424,19 @@ p.copyrightmarine2 a {
   }
   .centering a:nth-of-type(4) {
     padding: 0 23px !important;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .buttons.catalog,
+  .buttons.available {
+    max-width: calc(100% - 88px);
+    max-width: -webkit-calc(100% - 88px);
+  }
+  .buttons.pair {
+    margin-left: 44px;
+    max-width: calc(149px + 88px);
+  }
+  .buttons.pair:last-of-type {
+    margin-right: 44px;
   }
 }
