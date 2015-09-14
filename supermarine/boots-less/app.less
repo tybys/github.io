@@ -207,7 +207,6 @@ body {
 
 }
 
-
 //
 .buttons-area {
 	margin-bottom: 26px;
@@ -501,6 +500,9 @@ body {
 #nav-toggle.active span:after {
 	transform: rotate(-45deg);
 }
+.m-opened-p {
+
+}
 body {
 	transform: translate(0, 0);
 	transition: transform 0.5s ease;
@@ -516,11 +518,13 @@ body {
 }
 .m-opened {
 
-	transform: translate(-84%, 0);
+	transform: translate(-300px, 0);
 	transition: transform 0.5s ease;
 
-	-webkit-transform: translate(-84%, 0);
+	-webkit-transform: translate(-300px, 0);
 	-webkit-transition: -webkit-transform 0.5s ease;
+
+    position: fixed;
 	.cap {
 		ul {
 			display: block;
@@ -644,7 +648,7 @@ body {
 				-webkit-box-direction: normal;
 				-moz-box-direction: normal;
 				span {
-					width: 85%;
+					width: 82%;
 				}
 				i {
 					position: absolute;
@@ -1497,8 +1501,8 @@ body {
 		display: block;
 		line-height: 60px;
 		padding: 0 30px;
-		border-right: 1px solid #272727;
-		border-left: 1px solid #2d2d2e
+//		border-right: 1px solid #272727;
+//		border-left: 1px solid #2d2d2e
 	}
 
 	#footlinks a:first-child {

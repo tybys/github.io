@@ -62,6 +62,7 @@
 			var wh = $(window).height();
 
 			$('.cap').find('ul').height(wh);
+
 		});
 
 		$('.centering').width('100%');

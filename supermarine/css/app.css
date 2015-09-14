@@ -448,10 +448,11 @@ body .cap ul {
   display: none;
 }
 .m-opened {
-  transform: translate(-84%, 0);
+  transform: translate(-300px, 0);
   transition: transform 0.5s ease;
-  -webkit-transform: translate(-84%, 0);
+  -webkit-transform: translate(-300px, 0);
   -webkit-transition: -webkit-transform 0.5s ease;
+  position: fixed;
 }
 .m-opened .cap ul {
   display: block;
@@ -548,7 +549,7 @@ body .cap ul {
   -moz-box-direction: normal;
 }
 .row.items .category > a span {
-  width: 85%;
+  width: 82%;
 }
 .row.items .category > a i {
   position: absolute;
@@ -1256,8 +1257,6 @@ body .cap ul {
   display: block;
   line-height: 60px;
   padding: 0 30px;
-  border-right: 1px solid #272727;
-  border-left: 1px solid #2d2d2e;
 }
 #footlinks a:first-child {
   border-left: none;
