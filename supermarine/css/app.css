@@ -1268,6 +1268,7 @@ body .cap ul {
   vertical-align: middle;
 }
 .centering {
+  width: 100% !important;
   padding-top: 15px !important;
 }
 #footcontacts {
@@ -1416,6 +1417,17 @@ p.copyrightmarine2 a {
   .megann {
     color: inherit;
   }
+  .category {
+    position: relative;
+  }
+  .category ul {
+    position: absolute;
+    background: #ea5245;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .centering a:nth-of-type(2) {
@@ -1436,6 +1448,10 @@ p.copyrightmarine2 a {
   .buttons.available {
     max-width: calc(100% - 88px);
     max-width: -webkit-calc(100% - 88px);
+  }
+  .centering a {
+    width: 50%;
+    float: left;
   }
   .buttons.pair {
     margin-left: 44px;
