@@ -3,6 +3,36 @@
  */
 (function ($) {
 	$(function () {
+
+        $("#SliderSingleM").slider({
+            from         : 0,
+            to           : 20000000,
+            heterogeneity: ['0/0'],
+            step         : 10000,
+            onstatechange: function(){
+            },
+            callback     : slider_callback
+        });
+
+        // PRICE SLIDER
+        var slider_callback = function(value){
+            $.post('.', {
+                action: 'Catalog.getItemsCount',
+                rubric: $('.pricesearchtab.activetab').attr('rub'), //$('#search-rubric').val(),
+                price : $("#SliderSingle").val()
+            }, function(result){
+                var text = '??????' + num_ending(result.count, '?,?,?') + ' ' + result.count + ' ?????' + num_ending(result.count, '?,?,??');
+                text += ( $('.pricesearchtab.activetab').attr('rub') == 1 ) ? ' ???' : ' ???????'
+                if(result.count > 0){
+                    $('.zebraaftertoggle input').show();
+                } else{
+                    $('.zebraaftertoggle input').hide();
+                }
+                $('.zebraaftertoggle span').text(text);
+            }, 'json');
+
+        };
+
 		var mainSl = $('.slide').bxSlider({
 			mode: 'horizontal',
 			controls: true,

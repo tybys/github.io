@@ -224,7 +224,7 @@ body {
   text-decoration: none;
 }
 .buttons.show {
-  background: #e94137;
+  background: #ca343a;
 }
 .buttons.show i {
   background: url('../images/show-ico.png') no-repeat;
@@ -244,7 +244,7 @@ body {
   max-width: 300px;
 }
 .buttons.query i {
-  background: url('http://supermarine.ru/images/check.png') no-repeat;
+  background: url('../images/check.png') no-repeat;
   width: 19px;
   height: 20px;
   display: inline-block;
@@ -255,13 +255,13 @@ body {
 }
 .buttons.credit {
   margin-top: 12px;
-  background: #e94137;
+  background: #ca343a;
   font-size: 18px;
   text-transform: none;
   max-width: 300px;
 }
 .buttons.credit i {
-  background: url('http://supermarine.ru/images/time.png') no-repeat;
+  background: url('../images/time.png') no-repeat;
   width: 20px;
   height: 20px;
   display: inline-block;
@@ -285,13 +285,13 @@ body {
 }
 .buttons.catalog {
   margin-bottom: 12px;
-  background: #e94137;
+  background: #ca343a;
   font-size: 18px;
   text-transform: none;
   max-width: 300px;
 }
 .buttons.catalog i {
-  background: url('http://supermarine.ru/images/tocat.png') no-repeat;
+  background: url('../images/tocat.png') no-repeat;
   width: 18px;
   height: 15px;
   display: inline-block;
@@ -302,7 +302,7 @@ body {
 }
 .buttons.available {
   margin-bottom: 12px;
-  background: #e94137;
+  background: #ca343a;
   font-size: 18px;
   text-transform: none;
   max-width: 300px;
