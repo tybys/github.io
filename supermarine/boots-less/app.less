@@ -518,10 +518,14 @@ body {
 }
 .m-opened {
 
-	transform: translate(-300px, 0);
-	transition: transform 0.5s ease;
+    &.phone {
+        transform: translate(-190px, 0);
+        -webkit-transform: translate(-190px, 0);
+    }
 
+	transform: translate(-300px, 0);
 	-webkit-transform: translate(-300px, 0);
+    transition: transform 0.5s ease;
 	-webkit-transition: -webkit-transform 0.5s ease;
 
     position: fixed;

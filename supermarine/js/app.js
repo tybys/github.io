@@ -97,9 +97,10 @@
 
 		$('.item, .item-card .category').on('click', function (e) {
 			var t = $(this);
+            var ul = t.find('ul');
 
 			t.toggleClass('opened');
-			t.find('ul').stop(true).slideToggle();
+			ul.stop(true).slideToggle();
 
 			e.preventDefault();
 		});
