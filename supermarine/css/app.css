@@ -536,7 +536,7 @@ body .cap ul {
   -webkit-box-pack: center;
   -moz-box-pack: center;
   -ms-flex-pack: center;
-  -webkit-justify-content: center;
+  -webkit-justify-content: left;
   justify-content: left;
   /* modern Flexbox only */
   -ms-flex-align: center;
