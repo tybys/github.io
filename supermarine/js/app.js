@@ -104,10 +104,83 @@
 			e.preventDefault();
 		});
 
+		Navigator();
+		browser_detect();
+
 		//$temp shit
 	});
 
 	$.fn.Exists = function () {
 		return this.length > 0
 	}
+
+	// browser detect
+	function browser_detect() {
+		navigator.sayswho = (function () {
+			var navi = navigator.appName,
+				ua = navigator.userAgent,
+				tem,
+				reMatch = ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
+
+			if (reMatch && (tem = ua.match(/version\/([\.\d]+)/i)) != null) {
+				reMatch[2] = tem[1];
+			}
+
+			if (reMatch) {
+				reMatch = [reMatch[1], reMatch[2]];
+			} else {
+				reMatch = [navi, '-?'];
+			}
+
+			// short code for ie8 detection
+			var bversion = reMatch[1],
+				compClass = bversion.split('.', 1),
+				cC = compClass.toString();
+
+			$('body').addClass(reMatch[0]).addClass(cC);
+		})();
+	}
+
+	/*
+	 Changing class of body
+	 depending on - platform, devices and screen resolution
+	 for example <body class="desctop windows" />*/
+	switch (!!navigator.platform.match) {
+		case '/linux/i':
+			$('body').addClass('linux');
+			break;
+		case '/win/i':
+			$('body').addClass('windows');
+			break;
+		case '/iphone/i':
+			$('body').addClass('iphone ios');
+			break;
+		case '/ipad/i':
+			$('body').addClass('ipad ios');
+			break;
+
+			break;
+	}
+
+	function Navigator() {
+		if (!!navigator.platform.match(/linux/i)) {
+			$('body').addClass('linux');
+		} else if (!!navigator.platform.match(/win/i)) {
+			$('body').addClass('windows');
+		} else if (!!navigator.platform.match(/iphone/i)) {
+			$('body').addClass('iphone ios');
+		} else if (!!navigator.platform.match(/ipad/i)) {
+			$('body').addClass('ipad ios');
+		}
+
+		var windowWidth = parseInt($(window).width(), 10);
+		if (windowWidth > 1000) {
+			$('body').addClass('desktop');
+		} else if (windowWidth > 758) {
+			$('body').addClass('tablet');
+		} else {
+			$('body').addClass('phone');
+		}
+	}
+
 })(jQuery);
