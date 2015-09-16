@@ -139,7 +139,7 @@
 		browser_detect();
 
 		//$temp shit
-		//alert($(window).outerWidth() + ' ' + $(window).outerHeight() + ' ' + $('body').attr('class'))
+		alert($(window).outerWidth() + ' ' + $(window).outerHeight() + ' ' + $('body').attr('class'))
 	});
 
 	$.fn.Exists = function () {
