@@ -1519,3 +1519,8 @@ p.copyrightmarine2 a {
   margin-top: -2px;
   text-align: center;
 }
+.row.conf .filter {
+  position: relative;
+  height: 273px;
+  background: url('../images/katerbar.jpg') no-repeat left 50px;
+}
