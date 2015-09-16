@@ -1393,7 +1393,7 @@ p.copyrightmarine2 a {
   color: #afafaf;
   float: left;
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1280px) {
   .fw .foot_clear {
     -moz-column-count: 3;
     -moz-column-gap: 0;
