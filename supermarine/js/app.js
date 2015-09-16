@@ -3,7 +3,7 @@
  */
 (function ($) {
 	$(function () {
-		alert($(window).outerWidth() + ' ' + $(window).outerHeight())
+
         $("#SliderSingleM").slider({
             from         : 0,
             to           : 20000000,
@@ -139,6 +139,7 @@
 		browser_detect();
 
 		//$temp shit
+		alert($(window).outerWidth() + ' ' + $(window).outerHeight() + ' ' + $('body').attr('class'))
 	});
 
 	$.fn.Exists = function () {
