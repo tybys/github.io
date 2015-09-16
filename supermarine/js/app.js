@@ -3,7 +3,7 @@
  */
 (function ($) {
 	$(function () {
-
+		alert($(window).outerWidth() + ' ' + $(window).outerHeight())
         $("#SliderSingleM").slider({
             from         : 0,
             to           : 20000000,
