@@ -1472,8 +1472,9 @@ p.copyrightmarine2 a {
     margin-right: 44px;
   }
 }
-@media only screen and (min-device-width: 568px) and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2) {
-  .phone.linux .notbug {
+@media only screen and (min-device-width: 568px) and (max-device-width: 800px) {
+  .phone.linuxj .notbug,
+  .phone.Safari .notbug {
     display: none !important;
   }
   .phone .row .pricesearchtab {
