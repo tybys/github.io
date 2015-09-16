@@ -1484,6 +1484,9 @@ p.copyrightmarine2 a {
     padding: 0 10px;
   }
 }
+.megann {
+  color: inherit;
+}
 @media only screen and (min-device-width: 926px) and (orientation: landscape) {
   .linux.tablet .items .item {
     width: 206px !important;
