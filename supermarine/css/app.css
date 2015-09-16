@@ -1496,7 +1496,9 @@ p.copyrightmarine2 a {
   display: block !important;
 }
 .phone.linux .notbug,
-.tablet.linux .notbug {
+.tablet.linux .notbug,
+.Safari.tablet .notbug,
+.desktop.Safari .notbug {
   display: none !important;
 }
 .row #pricesearch {
