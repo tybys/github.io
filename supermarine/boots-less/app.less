@@ -1790,17 +1790,20 @@ body {
     }
 }
 
-@media only screen and (min-device-width: 568px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 568px) and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2) {
 	.phone {
+		&.linux {
+			.notbug {
+				display: none !important;
+			}
+
+		}
 //		.bug {
 //			display: block !important;
 //		}
 //		.notbug {
 //			display: none !important;
 //		}
-		.notbug {
-			display: none !important;
-		}
 
 
 		.row .pricesearchtab {
