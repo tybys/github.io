@@ -138,16 +138,14 @@
 		Navigator();
 		browser_detect();
 
-		//$temp shit
-
 		$(window).resize(function () {
-			alert(1)
+			//alert(1)
 			$('.linux.phone .notbug').hide();
 		});
 
 		$('.linux.phone .notbug').hide();
 
-		alert($(window).outerWidth() + ' ' + $(window).outerHeight() + ' ' + $('body').attr('class'))
+		//alert($(window).outerWidth() + ' ' + $(window).outerHeight() + ' ' + $('body').attr('class'))
 	});
 
 	$.fn.Exists = function () {
