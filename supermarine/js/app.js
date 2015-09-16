@@ -45,6 +45,21 @@
 			speed: 1000
 		});
 
+        // accordeon
+        $('.item-card').on('click', '.category', function (e) {
+            var parent = $(this).parents('.category');
+            var ul = $(this).find('ul');
+
+            $('.category').removeClass('sel');
+            $(this, parent).addClass('sel');
+
+            console.log(ul)
+            ul.slideDown()
+            //$(this, parent).hasClass('sel') ? ul.slideUp() : ul.slideDown();
+
+            e.preventDefault('fast');
+        });
+
 		// footer cols height, in css file :1243.less, .foot_clear column-count
 		var col = $('.foot_clear').find('.col-sm-4');
 
@@ -55,14 +70,14 @@
 		});
 
 		// string $abstract
+		$('#nav-toggle').click(function (e) {
 
-		$('#nav-toggle').click(function () {
+            e.preventDefault();
+
+            var wh = $(window).height();
+
 			$('body').toggleClass('m-opened');
-
-			var wh = $(window).height();
-
 			$('.cap').find('ul').height(wh);
-
 		});
 
 		$('.centering').width('100%');
@@ -95,7 +110,7 @@
 			}
 		});
 
-		$('.item, .item-card .category').on('click', function (e) {
+		$('.item, .item-card .category:not(.accord)').on('click', function (e) {
 			var t = $(this);
             var ul = t.find('ul');
 

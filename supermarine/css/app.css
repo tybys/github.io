@@ -771,38 +771,38 @@ body .cap ul {
   text-transform: none;
   color: black;
 }
-.row.item-card .category.purple {
+.row.item-card .category.sel {
   background: #ffffff;
 }
-.row.item-card .category.purple > a {
+.row.item-card .category.sel > a {
   background: #33333f;
 }
-.row.item-card .category.purple i {
+.row.item-card .category.sel i {
   background-color: #25252e;
   background-image: url('../images/purple_arrow.png');
 }
-.row.item-card .category.purple ul {
+.row.item-card .category.sel ul {
   width: 90%;
-  display: none;
+  display: block;
   margin: 0;
   padding: 10px 0 6px 20px;
   text-align: left;
   text-transform: none;
   list-style-type: square;
 }
-.row.item-card .category.purple li {
+.row.item-card .category.sel li {
   margin: 0 0 0 20px;
   margin-bottom: 30px;
   color: #ed3f33;
 }
-.row.item-card .category.purple li span {
+.row.item-card .category.sel li span {
   color: black;
 }
-.row.item-card .category.purple li:first-of-type {
+.row.item-card .category.sel li:first-of-type {
   margin-left: 0;
   list-style-type: none;
 }
-.row.item-card .category.purple li a {
+.row.item-card .category.sel li a {
   display: block;
   font-size: 16px;
   color: white;
