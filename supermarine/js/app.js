@@ -53,11 +53,9 @@
             $('.category').removeClass('sel');
             $(this, parent).addClass('sel');
 
-            console.log(ul)
-            ul.slideDown()
-            //$(this, parent).hasClass('sel') ? ul.slideUp() : ul.slideDown();
+            $(ul, $(this)).slideDown('slow');
 
-            e.preventDefault('fast');
+            e.preventDefault();
         });
 
 		// footer cols height, in css file :1243.less, .foot_clear column-count

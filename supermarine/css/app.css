@@ -783,7 +783,6 @@ body .cap ul {
 }
 .row.item-card .category.sel ul {
   width: 90%;
-  display: block;
   margin: 0;
   padding: 10px 0 6px 20px;
   text-align: left;
