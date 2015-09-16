@@ -1484,6 +1484,9 @@ p.copyrightmarine2 a {
     padding: 0 10px;
   }
 }
+.linux.phone .bug.hidden-xs {
+  display: block !important;
+}
 .phone.linux .notbug,
 .tablet.linux .notbug {
   display: none !important;
