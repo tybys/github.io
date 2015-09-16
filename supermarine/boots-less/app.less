@@ -893,6 +893,7 @@ body {
 		}
 
 		.category {
+			background: rgb(255, 255, 255) !important;
 			margin-bottom: 2px;
 			&.white {
 				background: white;
@@ -901,21 +902,26 @@ body {
 				li {
 					text-transform: none;
 					color: black;
+					a {
+						display: block;
+						font-size: 16px;
+						color: white;
+					}
 				}
 			}
 			&.sel {
-				background: rgb(255, 255, 255);
+
 				& > a {
 					background: rgb(51, 51, 63);
 				}
 				i {
 					background-color: rgb(37, 37, 46);
 					background-image: url('../images/purple_arrow.png');
+					transform: rotate(180deg);
 				}
 
 				ul {
 					width: 90%;
-					//display: block;
 					margin: 0;
 					padding: 10px 0 6px 20px;
 					text-align: left;
@@ -925,7 +931,7 @@ body {
 				li {
 					margin: 0 0 0 20px;
 					margin-bottom: 30px;
-					color: @darkred;
+//					color: @darkred;
 					span {
 						color: black;
 					}

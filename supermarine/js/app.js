@@ -46,17 +46,34 @@
 		});
 
         // accordeon
-        $('.item-card').on('click', '.category', function (e) {
-            var parent = $(this).parents('.category');
-            var ul = $(this).find('ul');
 
-            $('.category').removeClass('sel');
-            $(this, parent).addClass('sel');
+		var acords = $('.category', '.item-card'),
+			uls = $('ul', acords);
 
-            $(ul, $(this)).slideDown('slow');
+		acords.each(function(){
+			var $this = $(this);
 
-            e.preventDefault();
-        });
+			$this.data().ul = $('ul', $this);
+		});
+
+		acords.on('click', function(e){ e.preventDefault();
+			var $this = $(this),
+				ul = $this.data().ul,
+				is_opened = $this.is('.sel');
+
+			acords.removeClass('sel');
+			uls.each(function(){
+				var _this = $(this);
+
+				_this.stop(true).slideUp('fast');
+			});
+
+			if(is_opened) return;
+
+			$this.addClass('sel');
+
+			ul.stop(true).slideDown('fast');
+		});
 
 		// footer cols height, in css file :1243.less, .foot_clear column-count
 		var col = $('.foot_clear').find('.col-sm-4');

@@ -761,6 +761,7 @@ body .cap ul {
   text-align: center;
 }
 .row.item-card .category {
+  background: #ffffff !important;
   margin-bottom: 2px;
 }
 .row.item-card .category.white {
@@ -771,8 +772,10 @@ body .cap ul {
   text-transform: none;
   color: black;
 }
-.row.item-card .category.sel {
-  background: #ffffff;
+.row.item-card .category.white li a {
+  display: block;
+  font-size: 16px;
+  color: white;
 }
 .row.item-card .category.sel > a {
   background: #33333f;
@@ -780,6 +783,7 @@ body .cap ul {
 .row.item-card .category.sel i {
   background-color: #25252e;
   background-image: url('../images/purple_arrow.png');
+  transform: rotate(180deg);
 }
 .row.item-card .category.sel ul {
   width: 90%;
@@ -792,7 +796,6 @@ body .cap ul {
 .row.item-card .category.sel li {
   margin: 0 0 0 20px;
   margin-bottom: 30px;
-  color: #ed3f33;
 }
 .row.item-card .category.sel li span {
   color: black;
