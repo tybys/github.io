@@ -695,7 +695,13 @@ body {
 	// items, ipad
 
 
-
+	&.conf {
+		.jslider {
+			width: ~"calc(100% - 40px)";
+			width: ~"-webkit-calc(100% - 40px)";
+			left: 17px !important;
+		}
+	}
 	@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
 		&.banner {
 			.hidden-sm.hidden-md {

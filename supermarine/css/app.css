@@ -581,6 +581,11 @@ body .cap ul {
   font-size: 14px;
   color: white;
 }
+.row.conf .jslider {
+  width: calc(100% - 40px);
+  width: -webkit-calc(100% - 40px);
+  left: 17px !important;
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .row.banner .hidden-sm.hidden-md {
     padding: 10px 10px 0 10px;
