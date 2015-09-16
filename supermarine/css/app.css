@@ -1484,6 +1484,9 @@ p.copyrightmarine2 a {
     padding: 0 10px;
   }
 }
+.phone.linux .notbug {
+  display: none !important;
+}
 .row #pricesearch {
   width: 100%;
   margin: 0 auto;
